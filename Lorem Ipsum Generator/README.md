@@ -7,7 +7,7 @@ This script is used to generate the given number of paragraphs of Lorem Ipsum te
 
 pip install lorem_text  
 
-![image](https://github.com)
+![image]()
 
 
 
