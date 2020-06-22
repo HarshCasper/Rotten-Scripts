@@ -11,6 +11,9 @@ A HTTP Web Server is nothing but a process that is running on your machine/lapto
 
 **Python Version used: 3.8.0**
 
+## Code
+![image](https://github.com/seema1711/Rotten-Scripts-1/blob/my-scripts-seema/Initialize%20a%20HTTP%20server/http.png)
+
 ## Explanation of the Code  
 
 - To create HTTP server we need two modules: **http.server**, **socketserver**
@@ -21,4 +24,12 @@ For TCP server to instantiate, we need:
     1. TCP address (IP address, Port number)
     2. Handler
 
-- **serve_forever** is a method on the TCPServer instance that starts the server and begins listening and responding to incoming requests.
+- **serve_forever** is a method on the TCPServer instance that starts the server and begins listening and responding to incoming requests.  
+
+## To run the code
+
+![image](https://github.com/seema1711/Rotten-Scripts-1/blob/my-scripts-seema/Initialize%20a%20HTTP%20server/run.png)
+
+## Output of the code
+
+![image](https://github.com/seema1711/Rotten-Scripts-1/blob/my-scripts-seema/Initialize%20a%20HTTP%20server/output.png)
