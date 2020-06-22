@@ -28,7 +28,7 @@ For TCP server to instantiate, we need:
 
 ## To run the code
 
-![image](https://github.com/seema1711/Rotten-Scripts-1/blob/my-scripts-seema/Initialize%20a%20HTTP%20server/run.png)
+$ python httpServer.py  
 
 ## Output of the code
 
