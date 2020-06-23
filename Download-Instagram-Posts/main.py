@@ -9,6 +9,9 @@ from bs4 import BeautifulSoup
 
 driver = webdriver.Firefox()
 
+def parseURL(url):
+  return url.replace("&amp;", "&")
+
 def downloadImages(page_source, query):
   soup = BeautifulSoup(page_source, 'html.parser')
   images = soup.findAll("img", {"class": ["FFVAD"]})
@@ -16,15 +19,17 @@ def downloadImages(page_source, query):
   image_count = 1
   for image in images:
     img_src = re.search(r'src="(.*?)"', str(image)).group(1)
-    print(img_src)
+    img_src = parseURL(img_src)
 
     if re.match(r'http.*?', img_src):
       img_count_str = f'{image_count:03}'
       image_count += 1
 
       filename = img_count_str + ".jpg"
+      print(img_src)
       subprocess.run(["wget", img_src, "-O", filename])
       print("+ Saved", filename)
+      break;
   
 def fetchImageSources(query):
   driver.get("https://www.instagram.com/{}".format(query))  
