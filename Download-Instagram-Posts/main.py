@@ -48,6 +48,8 @@ def downloadImages(page_source, query):
   soup = BeautifulSoup(page_source, 'html.parser')
   images = soup.findAll("img", {"class": ["FFVAD"]})
 
+  print("Got {} Images".format(len(images)))
+
   image_count = 1
   for image in images:
     img_src = re.search(r'src="(.*?)"', str(image)).group(1)
@@ -79,10 +81,12 @@ def fetchImageSources(query):
 
   downloadImages(driver.page_source, query)
 
-queries = ["sanket_m2"]
+if __name__ == "__main__":
+  setup()
 
-setup()
-for query in queries:
-  fetchImageSources(query)
+  queries = ["sanket_m2"]
 
-driver.close()
+  for query in queries:
+    fetchImageSources(query)
+
+  driver.close()
