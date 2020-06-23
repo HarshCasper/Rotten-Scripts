@@ -2,7 +2,6 @@ import os
 import re
 import time
 import wget
-import subprocess
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -27,7 +26,9 @@ def createAccountDirectory(query):
   try:
     os.mkdir(dest)
   except FileExistsError:
-    print("Using existing '{}' directory".format(dest))
+    os.rmdir(dest)
+    os.mkdir(dest)
+    print("Cleared {} folder".format(dest))
   except:
     print("Unable to create '{}' folder".format(dest))
     exit(1)
@@ -50,9 +51,9 @@ def downloadImages(page_source, query):
       image_count += 1
 
       filename = img_count_str + ".jpg"
-      subprocess.run(["wget", img_src, "-O", "{}/{}".format(dest, filename)])
+      wget.download(img_src, "{}/{}".format(dest, filename))
 
-      print("+ Saved", "{}/{}".format(dest, filename))
+      print(" Saved", "{}/{}".format(dest, filename))
   
 def fetchImageSources(query):
   driver.get("https://www.instagram.com/{}".format(query))  
