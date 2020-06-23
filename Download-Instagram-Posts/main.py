@@ -2,12 +2,26 @@ import os
 import re
 import time
 import wget
+import errno
 
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from bs4 import BeautifulSoup
+from selenium.webdriver.firefox.options import Options
 
-driver = webdriver.Firefox()
+options = Options()
+options.headless = True
+
+driver = webdriver.Firefox(options=options)
+
+def mkdir_p(path):
+  try:
+    os.makedirs(path)
+  except OSError as exc:  # Python ≥ 2.5
+    if exc.errno == errno.EEXIST and os.path.isdir(path):
+      pass
+    else:
+      raise
 
 def parseURL(url):
   return url.replace("&amp;", "&")
@@ -23,15 +37,8 @@ def setup():
 
 def createAccountDirectory(query):
   dest = "images/{}".format(query)
-  try:
-    os.mkdir(dest)
-  except FileExistsError:
-    os.rmdir(dest)
-    os.mkdir(dest)
-    print("Cleared {} folder".format(dest))
-  except:
-    print("Unable to create '{}' folder".format(dest))
-    exit(1)
+
+  mkdir_p(dest)
 
   return dest
 
@@ -61,7 +68,7 @@ def fetchImageSources(query):
 
   while True:
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(2)
+    time.sleep(3)
 
     new_height = driver.execute_script("return document.body.scrollHeight")
 
