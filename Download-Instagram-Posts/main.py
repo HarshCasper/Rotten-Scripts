@@ -26,15 +26,6 @@ def mkdir_p(path):
 def parseURL(url):
   return url.replace("&amp;", "&")
 
-def setup():
-  try:
-    os.mkdir("images")
-  except FileExistsError:
-    print("Using existing 'images/' directory")
-  except:
-    print("Unable to create 'images/' folder")
-    exit(1)
-
 def createAccountDirectory(query):
   dest = "images/{}".format(query)
 
@@ -82,11 +73,8 @@ def fetchImageSources(query):
   downloadImages(driver.page_source, query)
 
 if __name__ == "__main__":
-  setup()
-
-  queries = ["sanket_m2"]
-
-  for query in queries:
-    fetchImageSources(query)
+  mkdir_p("images")
+  query = input("Username: ")
+  fetchImageSources(query)
 
   driver.close()
