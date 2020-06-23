@@ -1,7 +1,8 @@
+import os
 import re
 import time
+import wget
 import subprocess
-import base64
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -12,7 +13,30 @@ driver = webdriver.Firefox()
 def parseURL(url):
   return url.replace("&amp;", "&")
 
+def setup():
+  try:
+    os.mkdir("images")
+  except FileExistsError:
+    print("Using existing 'images/' directory")
+  except:
+    print("Unable to create 'images/' folder")
+    exit(1)
+
+def createAccountDirectory(query):
+  dest = "images/{}".format(query)
+  try:
+    os.mkdir(dest)
+  except FileExistsError:
+    print("Using existing '{}' directory".format(dest))
+  except:
+    print("Unable to create '{}' folder".format(dest))
+    exit(1)
+
+  return dest
+
 def downloadImages(page_source, query):
+  dest = createAccountDirectory(query)
+
   soup = BeautifulSoup(page_source, 'html.parser')
   images = soup.findAll("img", {"class": ["FFVAD"]})
 
@@ -26,10 +50,9 @@ def downloadImages(page_source, query):
       image_count += 1
 
       filename = img_count_str + ".jpg"
-      print(img_src)
-      subprocess.run(["wget", img_src, "-O", filename])
-      print("+ Saved", filename)
-      break;
+      subprocess.run(["wget", img_src, "-O", "{}/{}".format(dest, filename)])
+
+      print("+ Saved", "{}/{}".format(dest, filename))
   
 def fetchImageSources(query):
   driver.get("https://www.instagram.com/{}".format(query))  
@@ -45,12 +68,12 @@ def fetchImageSources(query):
       break
 
     last_height = new_height
-    break
 
   downloadImages(driver.page_source, query)
 
 queries = ["sanket_m2"]
 
+setup()
 for query in queries:
   fetchImageSources(query)
 
