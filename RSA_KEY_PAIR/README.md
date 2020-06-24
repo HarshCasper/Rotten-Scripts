@@ -21,8 +21,7 @@ An example of asymmetric cryptography :
 
 ## Output
 The output will be in the form of JSON Object named keys, having public and private keys
-1. Public key-keys.publicKey
-2. Private key-keys.privateKey
+![OUTPUT](https://github.com/mbcse/Rotten-Scripts/blob/rsa_key_generator/RSA_KEY_PAIR/rsa.png)
 
 
 **CODE BY MOHIT BHAT(https://www.mbcse.co)**
