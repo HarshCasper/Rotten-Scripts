@@ -13,6 +13,11 @@ An example of asymmetric cryptography :
 
 **The Public key is used to encrypt the data and Private key is used for decrypting the data**
 
+## Explanation of code
+- We have used forge package of node to create RSA keys
+- First we import the package node-forge and use PUblic Key Infrastructure(pki) module of forge package to generate RSA keys
+- rsa.generateKeyPair creates a new key pair with random modulus. The first parameter specifies the modulus/key size in bits, second  the exponent
+
 ## To run the code
 1. Clone the folder
 2. Inside the project directory open command line
