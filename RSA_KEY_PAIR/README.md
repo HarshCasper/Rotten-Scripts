@@ -11,15 +11,18 @@ An example of asymmetric cryptography :
 - Client receives this data and decrypts it.
 - Since this is asymmetric, nobody else except browser can decrypt the data even if a third party has public key of browser
 
-**The public key is used to encrypt the data and Private key is used for decrypting the data**
+**The Public key is used to encrypt the data and Private key is used for decrypting the data**
 
 ## To run the code
-1.Clone the folder
-2.Inside the project directory open command line
-3.npm Install
-4.node rsa.js
+1. Clone the folder
+2. Inside the project directory open command line
+3. npm Install
+4. node rsa.js
 
 ## Output
 The output will be in the form of JSON Object named keys, having public and private keys
-1.Public key-keys.publicKey
-2.Private key-keys.privateKey
+1. Public key-keys.publicKey
+2. Private key-keys.privateKey
+
+
+**CODE BY MOHIT BHAT(https://www.mbcse.co)**
