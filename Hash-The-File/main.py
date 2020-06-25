@@ -7,7 +7,9 @@ if len(sys.argv) < 2:
 
 filenames = sys.argv[1:]
 
-m = hashlib.md5()
-m.update(b"Sankey")
-
-print(m.hexdigest())
+for filename in filenames:
+  fd = open(filename, "r")
+  content = fd.read()
+  m = hashlib.md5(str.encode(content))
+  print(m.hexdigest() + "  " + filename)
+  fd.close()
