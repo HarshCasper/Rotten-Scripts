@@ -31,7 +31,13 @@ if potential_flag[:2] == "--":
   flag = potential_flag
 
 if flag:
-  hsh = HASH_MAP[flag]
+  try:
+    hsh = HASH_MAP[flag]
+  except KeyError:
+    print("Invalid flag", flag)
+    exit(1)
+  except:
+    raise
 else:
   hsh = hashlib.md5
 
