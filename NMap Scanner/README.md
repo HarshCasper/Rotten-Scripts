@@ -19,7 +19,7 @@ pip install python-nmap
 
 ## Understanding the code
 
-![image](https://github.com/seema1711/Rotten-Scripts-1/blob/master/NMap%20Scanner/carbon.png)
+![image](https://raw.githubusercontent.com/HarshCasper/Rotten-Scripts/09359d3c6bc96388240f48469e90c7897cdc56a6/NMap%20Scanner/carbon.png)
 
 ```
 >>> import nmap
