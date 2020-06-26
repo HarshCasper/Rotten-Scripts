@@ -22,9 +22,14 @@ HASH_MAP = {
 }
 
 def help():
+  print("Usage: python main.py [--<method>] filenames")
   print("Available hash methods")
   for method in HASH_MAP:
     print("   ", method)
+
+if len(sys.argv) < 2:
+  help()
+  exit(0)
 
 offset = 1
 flag = False
@@ -52,7 +57,7 @@ else:
 filenames = sys.argv[offset:]
 
 if len(filenames) == 0:
-  print("Usage: python main.py [--<method>] filenames")
+  help()
   exit(1)
 
 for filename in filenames:
