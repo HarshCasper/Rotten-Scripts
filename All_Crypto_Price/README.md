@@ -12,8 +12,9 @@ Coinbase is a digital currency exchange headquartered in San Francisco, Californ
 
 ## To run the code
 - Clone the folder
-- Inside the folder open cmd and do *npm install*
-- run *node cryptoprice.js*
+- Inside the folder open command line and run
+- npm install
+- node cryptoprice.js
 
 ## Output 
 You will see the cryptocurrency name and live price as output 
