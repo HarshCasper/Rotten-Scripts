@@ -7,7 +7,7 @@ host_path = "C:\Windows\System32\drivers\etc\hosts"
 redirect = "127.0.0.1"
 
 #list of all the websites we want to block
-website_list = ["facebook.com", "www.facebook.com"]
+website_list = ["facebook.com", "www.facebook.com", "www.youtube.com", "www.instagram.com"]
 
 #Enter the start and end dates for blocking the list of websites
 start_date = dt(2020,6,25)
