@@ -1,6 +1,9 @@
 import sys 
 import hashlib
 
+# Some functions may not be available in some
+# systems and in python2
+
 HASH_MAP = {
   "--md5": hashlib.md5,
   "--sha1": hashlib.sha1,
@@ -18,9 +21,10 @@ HASH_MAP = {
   "--shake_256": hashlib.shake_256
 }
 
-if len(sys.argv) < 2:
-  print("Usage: python main.py filename")
-  exit(1)
+def help():
+  print("Available hash methods")
+  for method in HASH_MAP:
+    print("   ", method)
 
 offset = 1
 flag = False
@@ -31,6 +35,9 @@ if potential_flag[:2] == "--":
   flag = potential_flag
 
 if flag:
+  if flag == "--help":
+    help()
+    exit(0)
   try:
     hsh = HASH_MAP[flag]
   except KeyError:
@@ -39,9 +46,14 @@ if flag:
   except:
     raise
 else:
+  print("No method specified. Using md5.")
   hsh = hashlib.md5
 
 filenames = sys.argv[offset:]
+
+if len(filenames) == 0:
+  print("Usage: python main.py [--<method>] filenames")
+  exit(1)
 
 for filename in filenames:
   fd = open(filename, "r")
