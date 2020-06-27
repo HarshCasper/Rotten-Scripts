@@ -10,7 +10,7 @@ sudo apt-get install nmap
 ```
 This is for Ubuntu.  
 
-2. If you're using Windows, then download nmap from this ![link](https://nmap.org/download.html).
+2. If you're using Windows, then download nmap from this [link](https://nmap.org/download.html).
 
 
 ```
