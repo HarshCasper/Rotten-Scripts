@@ -1,0 +1,19 @@
+{
+  "name": "cryptocurrency_price",
+  "version": "1.0.0",
+  "description": "Javascript code to fetch all cryptocurrency price fron coinbase database",
+  "main": "cryptoprice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "price",
+    "crypto",
+    "cryptocurrency"
+  ],
+  "author": "Mohit Bhat",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
