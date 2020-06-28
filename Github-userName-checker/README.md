@@ -10,4 +10,4 @@ Go
   $ go run main.go
   ``` 
 
-![image](/code.png)
+![image](https://github.com/Sanketwable/Rotten-Scripts/blob/githubusername/Github-userName-checker/code.png)
