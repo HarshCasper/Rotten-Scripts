@@ -62,6 +62,7 @@ $ git push -u origin Branch_Name
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
 <img width="677" alt="pr" src="https://user-images.githubusercontent.com/44089458/86090744-4b6ece80-bac8-11ea-9d69-a0098e9d4874.PNG">
 
+<img width="882" alt="pullr" src="https://user-images.githubusercontent.com/44089458/86092345-fed8c280-baca-11ea-9a04-95991d9c60d2.PNG">
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
 ## Need more help?🤔
