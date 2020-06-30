@@ -7,7 +7,7 @@ This code is the simplest one to automate the task.
 
 ## Understanding the code
 
-![image]()
+![image](https://raw.githubusercontent.com/HarshCasper/Rotten-Scripts/bd26cd399fb08b0394391dc7f44a7830782c5330/Automate%20Commiting%20using%20Git/carbon.png)
 
 ```
 import subprocess
