@@ -16,7 +16,7 @@ Let's get started!
 
 ## Understanding the Code
 
-![image]()
+![image](https://raw.githubusercontent.com/HarshCasper/Rotten-Scripts/131d7b893456f23e7c047e8e0d283b9a1e98c78c/Upload%20File%20as%20a%20Github%20Gist/carbon.png)
 
 ```
 GITHUB_API="https://api.github.com"
@@ -68,5 +68,5 @@ Finally, we've uploaded the contents of ```payload``` to our gist. Congratulatio
 
 ## Final result
 
-![image]()
+![image](https://raw.githubusercontent.com/HarshCasper/Rotten-Scripts/131d7b893456f23e7c047e8e0d283b9a1e98c78c/Upload%20File%20as%20a%20Github%20Gist/GistDemoDone.png)
 
