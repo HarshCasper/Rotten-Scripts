@@ -57,7 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://harshbardhanmishra.me"><img src="https://avatars1.githubusercontent.com/u/47351025?v=4" width="100px;" alt=""/><br /><sub><b>Harsh Bardhan Mishra</b></sub></a><br /><a href="#projectManagement-harshcasper" title="Project Management">📆</a> <a href="#question-harshcasper" title="Answering Questions">💬</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/pulls?q=is%3Apr+reviewed-by%3Aharshcasper" title="Reviewed Pull Requests">👀</a> <a href="#talk-harshcasper" title="Talks">📢</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=harshcasper" title="Code">💻</a></td>
-    <td align="center"><a href="https://linkedin.com/in/seemasaharan"><img src="https://avatars2.githubusercontent.com/u/48756444?v=4" width="100px;" alt=""/><br /><sub><b>Seema Saharan</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=seema1711" title="Code">💻</a> <a href="#ideas-seema1711" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://linkedin.com/in/seemasaharan"><img src="https://avatars2.githubusercontent.com/u/48756444?v=4" width="100px;" alt=""/><br /><sub><b>Seema Saharan</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=seema1711" title="Code">💻</a> <a href="#ideas-seema1711" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=seema1711" title="Documentation">📖</a></td>
   </tr>
 </table>
 
