@@ -1,6 +1,6 @@
 # Rotten Scripts
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
@@ -61,6 +61,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://www.mbcse.co"><img src="https://avatars0.githubusercontent.com/u/43911437?v=4" width="100px;" alt=""/><br /><sub><b>MOHIT BHAT</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=mbcse" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=mbcse" title="Documentation">📖</a></td>
     <td align="center"><a href="https://sanket143.github.io"><img src="https://avatars1.githubusercontent.com/u/26973649?v=4" width="100px;" alt=""/><br /><sub><b>Sanket Chaudhari</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sanket143" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sanket143" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/AnkitaBIT"><img src="https://avatars3.githubusercontent.com/u/44089458?v=4" width="100px;" alt=""/><br /><sub><b>Ankita Priya</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AnkitaBIT" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AnkitaBIT" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://wablesanket.xyz"><img src="https://avatars0.githubusercontent.com/u/43716242?v=4" width="100px;" alt=""/><br /><sub><b>Wable Sanket</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Sanketwable" title="Code">💻</a></td>
   </tr>
 </table>
 
