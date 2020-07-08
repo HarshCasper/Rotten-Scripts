@@ -28,6 +28,15 @@
         "ideas",
         "doc"
       ]
+    },
+    {
+      "login": "mbcse",
+      "name": "MOHIT BHAT",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/43911437?v=4",
+      "profile": "http://www.mbcse.co",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
