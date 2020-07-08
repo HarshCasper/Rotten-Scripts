@@ -1,6 +1,6 @@
 # Rotten Scripts
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
@@ -59,6 +59,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://harshbardhanmishra.me"><img src="https://avatars1.githubusercontent.com/u/47351025?v=4" width="100px;" alt=""/><br /><sub><b>Harsh Bardhan Mishra</b></sub></a><br /><a href="#projectManagement-harshcasper" title="Project Management">📆</a> <a href="#question-harshcasper" title="Answering Questions">💬</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/pulls?q=is%3Apr+reviewed-by%3Aharshcasper" title="Reviewed Pull Requests">👀</a> <a href="#talk-harshcasper" title="Talks">📢</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=harshcasper" title="Code">💻</a></td>
     <td align="center"><a href="https://linkedin.com/in/seemasaharan"><img src="https://avatars2.githubusercontent.com/u/48756444?v=4" width="100px;" alt=""/><br /><sub><b>Seema Saharan</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=seema1711" title="Code">💻</a> <a href="#ideas-seema1711" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=seema1711" title="Documentation">📖</a></td>
     <td align="center"><a href="http://www.mbcse.co"><img src="https://avatars0.githubusercontent.com/u/43911437?v=4" width="100px;" alt=""/><br /><sub><b>MOHIT BHAT</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=mbcse" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=mbcse" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://sanket143.github.io"><img src="https://avatars1.githubusercontent.com/u/26973649?v=4" width="100px;" alt=""/><br /><sub><b>Sanket Chaudhari</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sanket143" title="Code">💻</a></td>
   </tr>
 </table>
 
