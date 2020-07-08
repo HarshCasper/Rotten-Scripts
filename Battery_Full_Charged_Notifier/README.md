@@ -6,7 +6,7 @@ This Python script helps you to get a notification, when your laptop get 100% ch
 **In this code I have also made script to notify you when battery is 90% charged and plugged, you can remove it, if you don't want that part**
 
 ## To run the code
-- clone the folder Battery_Full_Charged_Notifier
+- Clone the folder- Battery_Full_Charged_Notifier
 - You must have python installed
 - In cmd do:
   - pip install psutil
