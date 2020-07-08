@@ -17,6 +17,17 @@
         "talk",
         "code"
       ]
+    },
+    {
+      "login": "seema1711",
+      "name": "Seema Saharan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/48756444?v=4",
+      "profile": "https://linkedin.com/in/seemasaharan",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
