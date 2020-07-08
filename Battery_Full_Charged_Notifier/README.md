@@ -3,6 +3,8 @@ As a laptop user you must take caution about your battery because the battery is
 If you are using an old laptop then you might be a wonder to protect your battery from getting overcharged!
 This Python script helps you to get a notification, when your laptop get 100% charged. This script can run in background or you can paste it in starup folder so that everytime you open your laptop, this script starts running automatically
 
+**In this code I have also made script to notify you when battery is 90% charged and plugged, you can remove it, if you don't want that part**
+
 ## To run the code
 - You must have python installed
 - In cmd do:
