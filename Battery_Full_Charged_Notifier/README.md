@@ -10,9 +10,9 @@ This Python script helps you to get a notification, when your laptop get 100% ch
   - pip install pyttsx3
   - pip install win10toast
   - Also check for any package that's need to be installed, on cmd
-  - Python python fullCharged.pyw
+  - the run by typing **python python fullCharged.pyw**
 
-** Note after running successfully for first time, you can then run by just double clicing on the script, like to run as a program **  
+**Note after running successfully for first time, you can then run by just double clicing on the script, like to run as a program**  
 
 ## Explanation of code
 - We have used python libraries like psutil to get information about the system, this is the package that gives information about battery.
@@ -20,7 +20,7 @@ This Python script helps you to get a notification, when your laptop get 100% ch
 - win10toast is used to create the notification, that is what you see normally in our Pc's
 
 ## Output
-![image](https://github.com/seema1711/Rotten-Scripts-1/blob/my-scripts-seema/Initialize%20a%20HTTP%20server/output.png)
+![image](https://github.com/mbcse/Rotten-Scripts/blob/batterychargedscript/Battery_Full_Charged_Notifier/batteryOutput.png)
 
 
 Made by Mohit Bhat(https://www.mbcse.co)
