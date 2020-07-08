@@ -12,11 +12,9 @@
       "profile": "http://harshbardhanmishra.me",
       "contributions": [
         "projectManagement",
-        "question",
-        "review",
-        "talk",
         "code",
-        "a11y"
+        "a11y",
+        "review"
       ]
     }
   ],
