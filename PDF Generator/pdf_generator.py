@@ -1,34 +1,11 @@
-import img2pdf
 import os
-from PIL import Image
+import img2pdf
 
-def removealpha(inpath):
-    print('Converting Image into non alpha channel image')
-    for file in os.listdir(inpath):
-        img = Image.open(inpath+file)
-        size = img.size
-        imgnew = Image.new('RGB',size,255)
-        imgnew.paste(img,(0,0))
-        imgnew.save('out/'+file)
-    print('Image Conversion done.')
+'''
+- Change "output_filename.pdf" with the name of the output pdf file you want
+- "os.listdir('.')" points to the present working directory, change it to "os.listdir('the/directory/path/where/you/want/to/get/images/from')"
+- Change "i.endswith(".jpg")" to your desired input image format
+'''
 
-def pdfGen(inpath,outpath):
-    l = os.listdir(inpath)
-    lst = []
-    print('PDF Creating...')
-    for i in l:
-        lst.append(open((inpath+i),'rb'))
-    with open('out.pdf','wb') as f:
-        f.write(img2pdf.convert(lst))
-        
-    print('PDF Generation done.')
-
-def main():
-    inpath = 'ada/'
-    outpath = 'result/'
-    removealpha(inpath)
-    pdfGen('out/',outpath)
-
-    
-if __name__ == "__main__":
-    main()
+with open("output_filename.pdf", "wb") as f:
+    f.write(img2pdf.convert([i for i in os.listdir('.') if i.endswith(".jpg")]))
