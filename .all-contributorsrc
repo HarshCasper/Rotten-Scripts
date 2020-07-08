@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "harshcasper",
+      "name": "Harsh Bardhan Mishra",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/47351025?v=4",
+      "profile": "http://harshbardhanmishra.me",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Rotten-Scripts",
+  "projectOwner": "HarshCasper",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
