@@ -14,7 +14,9 @@
         "projectManagement",
         "question",
         "review",
-        "talk"
+        "talk",
+        "code",
+        "a11y"
       ]
     }
   ],
