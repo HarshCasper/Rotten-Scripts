@@ -1,6 +1,6 @@
 # Rotten Scripts
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
@@ -66,6 +66,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/Prahitha"><img src="https://avatars2.githubusercontent.com/u/44160152?v=4" width="100px;" alt=""/><br /><sub><b>Prahitha</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Prahitha" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Prahitha" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Namyalg"><img src="https://avatars1.githubusercontent.com/u/53875297?v=4" width="100px;" alt=""/><br /><sub><b>Namya LG</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Namyalg" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Namyalg" title="Documentation">📖</a> <a href="#ideas-Namyalg" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
