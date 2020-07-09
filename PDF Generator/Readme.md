@@ -10,6 +10,6 @@ A simple Python Script to generate PDF using Images and vice-versa.
 
 ## file.pdf to output_images_folder_name/page_no.jpg convertor
 
-- Change `file.pdf` to the name of the file you want to convert to images
-- Change `output_images_folder_name/page_{}.jpg` to `folder_name_that_stores_the_output_images/output_image_name_{}.jpg`
-- `{}` should not be removed if you want to store the page no. with the output image name so that you don't loose track of different pages
+- Change `input_filename.pdf` to the name of the file you want to convert to images
+- Change `output_images_folder_name/output_page_{}.jpg` to `folder_name_that_stores_the_output_images/output_image_name_{}.jpg`
+- `{}` **should not be removed** if you want to store the page no. with the output image name so that you don't loose track of different pages

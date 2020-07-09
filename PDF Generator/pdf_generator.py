@@ -7,8 +7,8 @@ with open("output_filename.pdf", "wb") as f:
     f.write(img2pdf.convert([i for i in os.listdir('.') if i.endswith(".jpg")]))
 
 # file.pdf to output_images_folder_name/page_no.jpg convertor
-pages = convert_from_path('file.pdf', 500)
-page_no = 1
+pages = convert_from_path('input_filename.pdf', 500)
+page_no = 0
 for page in pages:
-    pages[i].save('output_images_folder_name/page_{}.jpg'.format(page_no), 'JPEG')      # output_images_folder_name = folder needs to be created manually to store all images
+    pages[page_no].save('output_images_folder_name/output_page_{}.jpg'.format(page_no + 1), 'JPEG')      # output_images_folder_name = folder needs to be created manually to store all images
     page_no += 1
