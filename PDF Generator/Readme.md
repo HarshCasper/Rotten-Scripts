@@ -2,6 +2,12 @@
 
 A simple Python Script to generate PDF using Images and vice-versa.
 
+# Usage
+
+- Create a virtual environment `$ python3 -m venv /path/to/new/virtual/env`
+- Install required packages using `$ pip install -r requirements.txt` for Python2 and `$ pip3 install -r requirements.txt` for Python3
+
+# Script Explanation
 ## *.jpg to output_filename.pdf convertor
 
 - Change `output_filename.pdf` with the name of the output pdf file you want
