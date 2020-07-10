@@ -1,5 +1,4 @@
 #import pytube
-
 from pytube import YouTube
 
 #Asking for all the video links
