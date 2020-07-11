@@ -1,34 +1,14 @@
-import img2pdf
 import os
-from PIL import Image
+import img2pdf
+from pdf2image import convert_from_path
 
-def removealpha(inpath):
-    print('Converting Image into non alpha channel image')
-    for file in os.listdir(inpath):
-        img = Image.open(inpath+file)
-        size = img.size
-        imgnew = Image.new('RGB',size,255)
-        imgnew.paste(img,(0,0))
-        imgnew.save('out/'+file)
-    print('Image Conversion done.')
+# *.jpg to output_filename.pdf convertor
+with open("output_filename.pdf", "wb") as f:
+    f.write(img2pdf.convert([i for i in os.listdir('.') if i.endswith(".jpg")]))
 
-def pdfGen(inpath,outpath):
-    l = os.listdir(inpath)
-    lst = []
-    print('PDF Creating...')
-    for i in l:
-        lst.append(open((inpath+i),'rb'))
-    with open('out.pdf','wb') as f:
-        f.write(img2pdf.convert(lst))
-        
-    print('PDF Generation done.')
-
-def main():
-    inpath = 'ada/'
-    outpath = 'result/'
-    removealpha(inpath)
-    pdfGen('out/',outpath)
-
-    
-if __name__ == "__main__":
-    main()
+# file.pdf to output_images_folder_name/page_no.jpg convertor
+pages = convert_from_path('input_filename.pdf', 500)
+page_no = 0
+for page in pages:
+    pages[page_no].save('output_images_folder_name/output_page_{}.jpg'.format(page_no + 1), 'JPEG')      # output_images_folder_name = folder needs to be created manually to store all images
+    page_no += 1
