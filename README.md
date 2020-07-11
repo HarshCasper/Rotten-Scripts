@@ -67,7 +67,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/Prahitha"><img src="https://avatars2.githubusercontent.com/u/44160152?v=4" width="100px;" alt=""/><br /><sub><b>Prahitha</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Prahitha" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Prahitha" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Namyalg"><img src="https://avatars1.githubusercontent.com/u/53875297?v=4" width="100px;" alt=""/><br /><sub><b>Namya LG</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Namyalg" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Namyalg" title="Documentation">📖</a> <a href="#ideas-Namyalg" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/Puneet-Pal-Singh"><img src="https://avatars3.githubusercontent.com/u/46601256?v=4" width="100px;" alt=""/><br /><sub><b>Puneet Pal Singh</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Puneet-Pal-Singh" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Puneet-Pal-Singh"><img src="https://avatars3.githubusercontent.com/u/46601256?v=4" width="100px;" alt=""/><br /><sub><b>Puneet Pal Singh</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Puneet-Pal-Singh" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Puneet-Pal-Singh" title="Documentation">📖</a></td>
   </tr>
 </table>
 
