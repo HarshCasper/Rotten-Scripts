@@ -100,6 +100,15 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "HeroicHitesh",
+      "name": "Hitesh Kumar",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/37622734?v=4",
+      "profile": "https://www.linkedin.com/in/hitesh-kumar-a03a2b16b/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
