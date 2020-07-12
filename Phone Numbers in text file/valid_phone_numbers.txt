@@ -1,4 +1,3 @@
-
 Valid Phone Numbers
 123-2345675
 123-2345673
