@@ -1,4 +1,4 @@
-# PDF Generator
+# Valid Phone Number extractor
 
 A simple Python Script to spit out all the mobile numbers or phone numbers or both (according to user's requirements) to the output text file while taking text from the input text file.
 
