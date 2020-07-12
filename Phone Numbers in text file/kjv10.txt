@@ -1,0 +1,19 @@
+The argparse module makes it easy to write user-friendly 123-2345675 command-line interfaces. The program defines what 95594-48336 arguments it requires, and argparse will 123-2345673 figure out how to parse 123-2345678 those out of sys.argv. The argparse module 95594-48338 also automatically generates help and usage 95594-48368 messages 
+and issues errors 5-693821991 when users give the program invalid arguments.
+
+Example
+
+The argparse module makes it easy to write user-friendly 123-2345675 
+command-line interfaces. The program defines what 95594-48336 arguments it requires, and argparse will 123-2345673 figure out how to parse 123-2345678 those out of sys.argv. The argparse module 95594-48338 also automatically generates help and usage 95594-48368 messages and issues errors 5-693821991 when users give the program invalid arguments.
+
+Example
+
+The argparse module makes it easy to write user-friendly 123-2345675 command-line interfaces. The program defines what 95594-48336 arguments it requires, and argparse will 123-2345673 
+figure out how to parse 123-2345678 those out of sys.argv. The argparse module 95594-48338 also automatically generates help and usage 95594-48368 messages and issues errors 5-693821991 when users give the program invalid arguments.
+
+Example
+
+The argparse module makes it easy to write user-friendly 123-2345675 command-line interfaces. The program defines what 95594-48336 arguments it requires, and argparse will 123-2345673 figure out how to parse 123-2345678 those out of sys.argv. The argparse module 95594-48338 also automatically generates help and usage 95
+594-48368 messages and issues errors 5-693821991 when users give the program invalid arguments.
+
+Example
