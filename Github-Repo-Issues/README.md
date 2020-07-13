@@ -11,4 +11,4 @@ Go
   $ go run main.go
   ``` 
 
-![image](https://github.com/Sanketwable/Rotten-Scripts/Github-Repo-Issues/terminal.png)
+![image](https://github.com/HarshCasper/Rotten-Scripts/blob/master/Github-Repo-Issues/Terminal.png)
