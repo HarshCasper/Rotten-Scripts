@@ -80,4 +80,4 @@ try:
     mail.quit()
 except:
     
-    print("ERROR... check your mailID/password or make sure that you have enabled access to Google Account... for more plz contact the developer")
+    print("ERROR... Here's what to do \n1. Check your Internet Connection. \n2. Check your email and password. \n3. Make sure you have allowed less secure app option.")
