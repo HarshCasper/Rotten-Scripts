@@ -1,6 +1,6 @@
 # Rotten Scripts
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
@@ -69,6 +69,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Namyalg"><img src="https://avatars1.githubusercontent.com/u/53875297?v=4" width="100px;" alt=""/><br /><sub><b>Namya LG</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Namyalg" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Namyalg" title="Documentation">📖</a> <a href="#ideas-Namyalg" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/Puneet-Pal-Singh"><img src="https://avatars3.githubusercontent.com/u/46601256?v=4" width="100px;" alt=""/><br /><sub><b>Puneet Pal Singh</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Puneet-Pal-Singh" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Puneet-Pal-Singh" title="Documentation">📖</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/hitesh-kumar-a03a2b16b/"><img src="https://avatars3.githubusercontent.com/u/37622734?v=4" width="100px;" alt=""/><br /><sub><b>Hitesh Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=HeroicHitesh" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=HeroicHitesh" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Anushka-S10"><img src="https://avatars0.githubusercontent.com/u/61749789?v=4" width="100px;" alt=""/><br /><sub><b>Anushka-S10</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Anushka-S10" title="Documentation">📖</a></td>
   </tr>
 </table>
 
