@@ -1,0 +1,1 @@
+This script written in python and is capable of sending HTML template emails(like those used by brands like Flipkart for advertisment). The details of the sender and receiver are entered into the script. The sender must enable the less secure apps mode in order to send the email.
