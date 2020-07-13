@@ -130,6 +130,16 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "mohitacecode",
+      "name": "mohit",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/39158356?v=4",
+      "profile": "https://github.com/mohitacecode",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
