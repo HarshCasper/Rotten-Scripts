@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+
+
+ 
+
+    <title>Udhaari Visualizer</title>
+</head>
+<body>
+  <div class="container" id="second_body_element">
+
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Udhaari Visualizer</span>
+    </nav>
+  <br>
+  <p id="second-all-names-tag"></p>
+  <br>
+  <button class="add-btn" onclick="func1()"  >add</button>
+
+      <form id="myForm" action="/get_graph_values" method="POST">
+       
+            <input required type="text" name="gave_1" class="form-control" placeholder="Who gave it?"> 
+            <input required type="text" name="took_1"  class="form-control" placeholder="Who took it?">
+            <input required type="text" name="amount_1" class="form-control" placeholder="Amount in numbers">
+           
+      
+      </form>
+        
+        <button class = "submit-btn" type="submit" form="myForm" value="Submit">Submit</button>
+
+    </div>
+
+    
+
+
+    <div class="container" id="first_body_element">
+
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Udhaari Visualizer</span>
+        </nav>
+
+        <div class="jumbotron">
+
+            <p class="lead">Telling out who took what.</p>
+          
+            <p>Easy way to get the data visualized in a sleek and optimised way.</p>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Know How it works?
+                </button>
+            
+        </div>
+     
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" style="font-weight: bold; " id="exampleModalLabel">The Grand Motive</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                We must have been through times where we found ourselves and at times others owing money to , or vice versa. The thing gets more complex when there are
+                multiple number of people associated in a network of money. To make things simple , this is a visualizer to get the data of the money network so one has less of a tendency to direct another money heist. 
+                <br>
+                <br>
+                <span class="badge badge-danger">info</span> Names must be in relation to each other
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+    
+ 
+      
+  <div class="input-group">
+    <input  type="text" class="form-control" id='textbox1' name ='mytext' placeholder = "Enter a name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-success" type="button" id='addButton'>Add</button>
+      <button class="btn btn-danger" type="button" id='removeButton'>Remove last name</button>
+    </div>
+  </div>
+  <br>
+  <input class="btn btn-primary active" type="submit" name="submitbtn" id="submitbtn">
+  <br>
+  <p style="padding: 10px; " id="all_names_group">
+    <br>
+  </p>
+<br>
+
+    </div>
+    
+
+    <script>
+      var i = 2;  
+      function func1(){
+          var x = document.createElement("HR");
+          document.getElementById("myForm").appendChild(x);
+    
+          var no_to_string =  i.toString() ;
+          console.log(no_to_string);
+     
+    
+         var y1 = document.createElement("INPUT");
+         y1.setAttribute("class", "form-control");
+         y1.setAttribute("name", "gave_" + no_to_string);
+         y1.setAttribute("type", "text");
+         y1.setAttribute("required", "");
+         y1.setAttribute("placeholder", "Who gave it?");
+    
+    
+         var y2 = document.createElement("INPUT");
+         y2.setAttribute("class", "form-control");
+         y2.setAttribute("name", "took_" + no_to_string);
+         y2.setAttribute("placeholder", "Who took it?");
+         y2.setAttribute("type", "text");
+         y2.setAttribute("required", "");
+    
+         var y3 = document.createElement("INPUT");
+         y3.setAttribute("class", "form-control");
+         y3.setAttribute("placeholder", "Amount in numbers");
+         y3.setAttribute("name", "amount_" + no_to_string);
+         y3.setAttribute("type", "text");
+         y3.setAttribute("required", "");
+    
+      
+    
+     
+          document.getElementById("myForm").appendChild(y1);
+         document.getElementById("myForm").appendChild(y2);
+         document.getElementById("myForm").appendChild(y3);
+        i++;
+        console.log(i);
+    
+          
+    }
+    </script>   
+    
+        <script>
+          var all_names = [];
+          $(document).ready(function(){
+            $("#second_body_element").css("display", "none");
+    
+            $("#addButton").click(function(){
+              if (($("#textbox1").val()).trim() == ""){
+                alert("Input can't be blank");
+    
+              }
+              else{
+    
+                all_names.push(($("#textbox1").val()).trim());
+                console.log(all_names);
+                $("#textbox1").val( " ") ;
+                document.getElementById("all_names_group").innerHTML = all_names;
+                document.getElementById("second-all-names-tag").innerHTML =  " <h2> Names </h2>" +  all_names;
+              }
+    
+            });
+    
+            $("#removeButton").click(function(){
+              all_names.pop();
+              document.getElementById("all_names_group").innerHTML =    all_names;
+              document.getElementById("second-all-names-tag").innerHTML =  " <h2> Names </h2>" + all_names;
+            });
+    
+            $('#submitbtn').click(function() {
+            
+              console.log(all_names);
+              if(all_names.length == 0){
+                alert("You haven't entered anything");
+    
+              }
+    
+              else {
+    
+                if(all_names.length < 2 ){
+    
+                  alert("Atleast enter two names");
+    
+                }
+    
+                else {
+    
+                  $.ajax({
+                    type: "POST",
+                    contentType: "application/json;charset=utf-8",
+                    url: "/get_names",
+                    traditional: "true",
+                    data: JSON.stringify({all_names}),
+                    dataType: "json"
+                    });
+                  
+                    $("#first_body_element").css("display", "none");
+        
+                    $("#second_body_element").css("display", "block ");
+        
+                    
+                  }
+    
+                }
+    
+    
+          });
+            
+          });
+              
+        </script>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+<head>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+
+    }
+    body{
+        display: flex;
+        justify-content: center; /* center horizontally */
+        align-items: center; /* center vertically */
+        overflow: visible;
+    }
+    #springydemo{
+  
+       transform: scale(1.2);
+       margin-right:auto;
+
+       margin-left:auto;
+       
+       
+    }
+
+    @media screen and (max-width: 600px) {
+      #springydemo{
+  
+        transform: scale(1.1);   
+     }
+    }
+  </style>
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='springy.js') }}"></script>
+<script src="{{ url_for('static', filename='springyui.js') }}"></script>
+<script>
+
+var randomColor  = () => {
+ ret_value =  "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+ return ret_value
+}
+
+
+var graph = new Springy.Graph();
+
+{% for nameslist in name_list %}
+graph.addNodes("{{nameslist }}")
+{% endfor %}
+ 
+ 
+{% for value1, value2, value3 in gave_list|zip(took_list,amount_list) %}
+
+ 
+graph.addEdges(
+  ['{{ value1 }}', '{{ value2 }}', {color: randomColor() , label: '{{value3}}' }  ]
+);
+
+{% endfor %}
+
+
+
+
+jQuery(function(){
+  var springy = jQuery('#springydemo').springy({
+    graph: graph
+  });
+});
+</script>
+
+
+
+<canvas id="springydemo"   />
+
+<script>
+  var canvas = document.getElementById('springydemo');
+var heightRatio = 1.5;
+canvas.style.width = window.innerWidth / 2.3;
+
+canvas.style.height = canvas.style.width * heightRatio;
+
+</script>
+
+</body>
+</html>

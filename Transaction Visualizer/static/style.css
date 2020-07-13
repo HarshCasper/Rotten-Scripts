@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+}
+
+.jumbotron{
+    background-color: aliceblue;
+}
+
+.submit-btn{
+    border-radius: 10px;
+    border-color: blue;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px; 
+    margin-bottom: 14px;
+}
+
+.form-row{
+    margin-top: 15px; 
+}
+
+ .navbar-brand.mb-0.h1 {
+     font-size: 22px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .btn.btn-primary {
+     margin-top: 20px;
+ }
+
+ .btn.btn-primary:focus {
+    border-color: transparent;
+}
+
+#myForm{
+    margin-top: 10px; 
+    padding: 10px;
+}
+
+.form-control {
+    margin-bottom: 8px;
+}
+
+hr{
+    border : 0;
+    height: 1px; 
+    margin-top: 19px; 
+    margin-bottom: 19px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+
+.add-btn{
+    margin-left: 10px;
+    background-color: black;
+    font-size: 20px;
+    color: aqua;
+    font-weight: lighter;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+
+ 
+
+#TextBoxesGroup{
+    padding: 16px;
+}
+
+#TextBoxesGroup input {
+    border-radius: 10px;
+    border-color: blue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-group{
+    width: fit-content;
+}
