@@ -13,8 +13,7 @@ Github being the top choice for open source and storing our Projects code, it be
 - Clone the folder
 - Inside the folder open command line and run
 - npm install
-- Then *node repo your_username* <br>
-*Your Repositories will start downloading*
+- Then *node repo your_username*<br>*Your Repositories will start downloading*
 
 ## Output 
 ![image](https://github.com/mbcse/Rotten-Scripts/blob/download_repositories/Download_All_Repos/repo_output.png)
