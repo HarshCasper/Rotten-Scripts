@@ -6,12 +6,18 @@ It can be accessed by everyone who uses telegram.
 The bot built here has many functionalities.
 
 /joke, LOL
+
 /riddle, try thinking a little :)
 I'll give you the answer to it anyway:joy:
+
 /insult, ready to face the blows
+
 /proghumor, for those glued to the computer all day long
+
 /meme, Wanna meme ?
+
 /template, Wanna make a meme?
+
 /markov , A markov meme maybe?
 
 The script bot.py is the most important script.
