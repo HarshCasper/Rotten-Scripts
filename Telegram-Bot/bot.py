@@ -1,3 +1,4 @@
+#Imports and dependencies
 from telegram.ext import Updater, InlineQueryHandler, CommandHandler , MessageHandler
 import re
 import requests
@@ -16,13 +17,13 @@ import pyjokes
 from memetemplates import template
 from mem import tenpages
 
+#get access to a server
 PORT = int(os.environ.get('PORT' , 5000))
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
-#TOKEN = '1291976479:AAG7tNHDFKTOnor7n5Vt2smqv6aJ5eiLv_o'
 
-TOKEN = '1146664617:AAFIP3oaku20q9KKW83PrV5n6iFqOZ2ZL0E'
+TOKEN = 'Your bot\'s token key'
 
 def get_joke():
     index = random.randint(1 ,79)
