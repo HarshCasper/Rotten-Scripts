@@ -1,4 +1,4 @@
-# Nodejs Script to Download all user repositories
+# Nodejs Script to Download all user Repositories
 
 ## About 
 Github being the top choice for open source and storing our Projects code, it becomes very difficult for us to clone each and every Repository. This is time consuming when we want to have a copy of all our github repositories in our PC. So keeping this in mind I have developed a script to download all your github repositories(Public) in once!
@@ -14,6 +14,7 @@ Github being the top choice for open source and storing our Projects code, it be
 - Inside the folder open command line and run
 - npm install
 - Then *node repo your_username*
+
 **Your Repositories will start downloading**
 
 ## Output 
