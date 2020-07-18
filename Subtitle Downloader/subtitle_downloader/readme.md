@@ -9,7 +9,7 @@ But what if we automate this with Python, and with just one command we can downl
 ## Prerequisites 
 
 1. Python must be installed in your laptop/system. If you don't, install it from [here](https://www.python.org/downloads/).
-2. ```pip install subtitle-downloader```
+2. ```pip install subtitle-downloader-python3==0.1.0```
 
 ## Understanding the Code - subtitle.py
 
