@@ -5,6 +5,8 @@ It can be accessed by everyone who uses telegram.
 
 The bot built here has many functionalities.
 
+![Image](bot_can_do.PNG)
+
 /joke, LOL
 
 /riddle, try thinking a little :)
