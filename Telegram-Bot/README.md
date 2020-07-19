@@ -13,11 +13,11 @@ The bot built here has many functionalities.
 
 ![Image](bot_can_do.PNG)
 
-/joke, LOL
+* /joke *
 
 ![Image](joke.PNG)
 
-/riddle
+* /riddle *
 
 ![Image](riddle.PNG)
 
