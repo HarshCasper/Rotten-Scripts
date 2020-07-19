@@ -13,31 +13,31 @@ The bot built here has many functionalities.
 
 ![Image](bot_can_do.PNG)
 
-* /joke *
+**/joke**
 
 ![Image](joke.PNG)
 
-* /riddle *
+**/riddle**
 
 ![Image](riddle.PNG)
 
-/insult, ready to face the blows
+**/insult**
 
 ![Image](insult.PNG)
 
-/proghumor, for those glued to the computer all day long
+**/proghumor**
 
 ![Image](proghumor.PNG)
 
-/meme
+**/meme**
 
 ![Image](meme.PNG)
 
-/template, Wanna make a meme?
+**/template**
 
 ![Image](template.PNG)
 
-/markov , A markov meme maybe?
+**/markov**
 
 ![Image](markov.PNG)
 
