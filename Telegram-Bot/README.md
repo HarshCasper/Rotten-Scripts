@@ -1,5 +1,9 @@
 # Python-Telegram Bot #
 
+![Image](Lol.PNG)
+
+This is what your bot will look like!!
+
 - The scripts, that are a part of this repository are used to build a Telegram bot.
 - Python offers a very powerful and easy-to-use wrapper, to build the same.
 - The bot can be hosted on Heroku, a cloud platform.
@@ -37,10 +41,12 @@ The bot built here has many functionalities.
 
 ![Image](markov.PNG)
 
-The script bot.py is the most important script.
+The script bot.py is the most important script in this repository.
 
 This describes the process of setting up the bot and getting it functional
 https://medium.com/@namyalg/hello-i-am-a-chatbot-9777ff53417a?source=friends_link&sk=e01c0872a9e2ebad149cc9a037fb151a
+
+The Python-Telegram documentation is a great place to learn and understand the basics!!
 
 ## Steps to set up the bot ##
 
@@ -71,6 +77,8 @@ In order to host it on heroku, one can follow these simple steps:
 12.heroku git:remote -a name of the application generated
 
 11.git push heroku master, to push all the contents
+
+![Image](commit.PNG)
 
 If the creation fails, the logs can be viewed using heroku logs --tail
 
