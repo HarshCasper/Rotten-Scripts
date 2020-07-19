@@ -9,20 +9,31 @@ The bot built here has many functionalities.
 
 /joke, LOL
 
-/riddle, try thinking a little :)
-I'll give you the answer to it anyway:joy:
+![Image](joke.PNG)
+
+/riddle
+
+![Image](riddle.PNG)
 
 /insult, ready to face the blows
 
+![Image](insult.PNG)
+
 /proghumor, for those glued to the computer all day long
 
-/meme, Wanna meme ?
+![Image](proghumor.PNG)
 
-![Image](/mnt/f/meme.PNG)
+/meme
+
+![Image](meme.PNG)
 
 /template, Wanna make a meme?
 
+![Image](template.PNG)
+
 /markov , A markov meme maybe?
+
+![Image](markov.PNG)
 
 The script bot.py is the most important script.
 
