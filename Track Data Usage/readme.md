@@ -20,7 +20,7 @@ Firstly, you have to use a Linux system for this program, because the ```vnstat`
 
 2. Now, let's understand the code.
 
-![image]()
+![image](https://raw.githubusercontent.com/HarshCasper/Rotten-Scripts/cee304d0124575ad9927b892e9592d44df66b903/Track%20Data%20Usage/carbon.png)
 
 ```
 #!/usr/bin/python3
