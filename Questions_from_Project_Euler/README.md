@@ -2,9 +2,9 @@
 
 ![Image](euler_home.PNG)
 
-Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve.
+Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve
 
-This script written in Python, gets all the 700+ questions across 15 pages which is written into a CSV file.
+This script written in Python, gets all the 700+ questions across 15 pages which is written into a CSV file named Project_Euler.csv
 
 Beautiful Soup is used for scraping the URL : https://projecteuler.net/archives
 
@@ -25,3 +25,5 @@ Each question has the following components
 ![Image](question1.PNG)
 
 The contents are parsed and stored using Beautiful Soup, a library built for web scraping
+
+
