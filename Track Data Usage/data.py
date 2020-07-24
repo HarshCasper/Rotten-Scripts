@@ -4,8 +4,6 @@ import sys
 import time
 import threading
 import subprocess as sp
-from tkinter import *
-from tkinter import messagebox
 
 class network():
 	def monitor(self, limit, unit):
@@ -24,11 +22,6 @@ class network():
 				pass
 		if unit==l[5] and limit < l[4]:
 			print("Network usage limit exceeded!")
-			top = tk.Tk()
-			def hello():
-				tkMessageBox.showinfo("Limit Exceeded")
-			B1 = tk.Button(top, text="Warning", command=hello)
-			B1.pack()
 			top.mainloop()
 		arg = [limit, unit]
 		threading.Timer(60.0, monitor, arg).start()

@@ -8,9 +8,8 @@ Now, the world is all about internet, and the data! We have now apps for trackin
 
 1. vnstat
 2. Python3
-3. Tkinter
-4. Linux OS
-5. WiFi connection to your system.
+3. Linux OS
+4. WiFi connection to your system.
 
 ## Understanding the Code
 
@@ -20,7 +19,7 @@ Firstly, you have to use a Linux system for this program, because the ```vnstat`
 
 2. Now, let's understand the code.
 
-![image](https://raw.githubusercontent.com/HarshCasper/Rotten-Scripts/cee304d0124575ad9927b892e9592d44df66b903/Track%20Data%20Usage/carbon.png)
+![image]()
 
 ```
 #!/usr/bin/python3
@@ -30,8 +29,6 @@ import sys
 import time
 import threading
 import subprocess as sp
-from tkinter import *
-from tkinter import messagebox
 ```
 
 The ```os``` module in python provides functions for interacting with the operating system. OS, comes under Python's standard utility modules. This module provides a portable way of using operating system dependent functionality.  
@@ -42,12 +39,7 @@ The Python ```time``` module provides many ways of representing time in code, su
 
 ```threading``` module constructs higher-level threading interfaces on top of the lower level _thread module. To know more, visit [here](https://docs.python.org/3/library/threading.html).  
 
-The ```subprocess``` module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.  
-
-The ```tkinter``` package (“Tk interface”) is the standard Python interface to the Tk GUI toolkit.
-To install tkinter in use:  ```pip install tk```.  
-
-The ```tkMessageBox``` module is used to display message boxes in your applications. This module provides a number of functions that you can use to display an appropriate message.  
+The ```subprocess``` module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.   
 
 Now, I have implemented a class ```network```, so that we can access this program from anywhere, in which there are two functions i.e. ```main``` and ```monitor```.  
 
