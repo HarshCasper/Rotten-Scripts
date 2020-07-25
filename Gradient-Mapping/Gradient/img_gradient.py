@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 #Read Image in GrayScale
 img = cv2.imread("scene.jpg", cv2.IMREAD_GRAYSCALE)
 
-titles = ['Grey']
+titles = ['image']
 images = [img]
 
 #Applying gradient
