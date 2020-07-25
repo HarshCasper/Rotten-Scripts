@@ -29,7 +29,7 @@ NOTE - ```numpy``` package automatically installs while installing ```opencv-pyt
 ## Gradient Application 
 
 ```
-$ python img_grad.py
+$ python img_gradient.py
 ```
 
 |Original|Gradient|
