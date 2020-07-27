@@ -5,7 +5,7 @@ A simple timer that can be used to track runtime. The purpose of this is to prov
 - The app will notify the user that the time has ended.
 
 ### Language
--[X] Python
+- [X] Python
 
 ### Checklist
 Name | About
