@@ -3,18 +3,11 @@ import cv2
 from PIL import Image
 import time
 
-
-
 str = input("Please input your message here >>> ")
-
-print('It\'s happening........ Please wait!!!')
 now = time.time()
 
 img2 = cv2.imread('input.jpg')
 shape_original = np.shape(img2)
-
-
-
 arr =[]
 
 def two_dim_conv(x):
@@ -24,11 +17,7 @@ def two_dim_conv(x):
 
               arr.append(k)
     return arr
-
-
 two_dim_conv(img2)
-
-
 l = len(str)
 c=1
 for i in range(0,len(arr)):
@@ -40,25 +29,18 @@ for i in range(0,len(arr)):
         c+=1
     else:
         break
-
-
-
-
-
+        
 arr2= np.reshape(arr,shape_original)
-
 svimg= Image.fromarray(arr2.astype('uint8'))
-
 
 b, g, r = svimg.split()
 svimg = Image.merge("RGB", (r, g, b))
 
 svimg.save('output.png')
-print("DONE!!!")
+print("DONE!")
 print("Total time taken: ",end=' ')
 print(time.time()-now)
 
-#WinterSoldier13
 
 
 
