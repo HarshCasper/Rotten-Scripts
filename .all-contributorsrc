@@ -151,6 +151,15 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "azhanali",
+      "name": "Azhan ",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/43489763?v=4",
+      "profile": "https://github.com/azhanali",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
