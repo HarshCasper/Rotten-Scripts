@@ -6,4 +6,4 @@
     3. Run $ python3 main.py
 
 ## OUTPUT:
-<img src = "/output.png">
+<img src = "output.png">
