@@ -1,6 +1,6 @@
 ## Open Port Scanner in Python
 
-It scans all the ports from 0 to 1024 whiich are reserved and also it is implemented with the help of multi threading which improves the scanning speed and reduces the time to scan the particular host or server.
+It scans all the ports from 0 to 1024 which are reserved and also it is implemented with the help of multi threading which improves the scanning speed and reduces the time to scan the particular host or server.
 
 ### Setup
 1. Create a Virtual Environment.
