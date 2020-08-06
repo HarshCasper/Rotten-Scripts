@@ -1,7 +1,6 @@
 from faker import Faker
 import numpy as np
-fake = Faker()
-
+country = {'English':"en_US", 'Hindi':"hi_IN" }
 def show_methods():
     print("These are the types of random data you can generate: \n")
     methods = list(fake.__dict__.keys())
@@ -10,8 +9,15 @@ def show_methods():
     return methods
 
 if __name__ == '__main__': 
+    coun = input("Select the language of data you want English(0) or Hindi(anything other than 0)" )
+    if(coun == '0'):
+        fake = Faker(country['English'])
+    else:
+        fake = Faker(country['Hindi'])
+    
     method = show_methods()
     cols = []
+
     while True:
         col_name = input("Enter the type of data in the same as shown above \n")
         if col_name not in method:
