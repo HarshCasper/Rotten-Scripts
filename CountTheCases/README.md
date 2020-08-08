@@ -16,4 +16,4 @@
 
 ![Image](lose.PNG)
 
-- The scripts run on the Python shell as this requires a graphical interface.
+- The scripts run on the Python shell as this requires a graphical interface
