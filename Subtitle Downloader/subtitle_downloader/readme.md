@@ -41,3 +41,5 @@ from .subtitle import main
 It is used to add the subtitles to your file i.e. movie/series.
 
 You can find this package [here](https://pypi.org/project/subtitle-downloader-python3/0.1.0/).
+
+How to publish a Python package on PyPI? [Check the video here](https://www.youtube.com/watch?v=TgCCbV_2C7s&t=6s)
