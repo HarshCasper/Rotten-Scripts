@@ -94,18 +94,25 @@ feasible, price_range = price_check(URL, budget)
 #The price_check function will execute every 12 hours to check, the prices will also be logged so that a comparison can be made
 while not feasible:
     feasible, price_range = price_check(URL, budget)
+    
     if len(price_range) == 1: 
         cost = "The cost of the product is  " + str(price_range[0])
     else:
         cost = "The cost of the product is within the range " + str(price_range[0]) + " and " + str(price_range[1])
+    
     current_time = datetime.datetime.now()  
+    
+    #Logging records into the text file.
     with open("price_logger.txt" , "w") as file:
         file.write(cost + " at " + str(current_time))
         file.write("\n")
-    if feasible == True:
+    
+    if feasible:
         break
     else:
+        #Sleeps for 12 hours and then checks for the same
         time.sleep(43200)
 
+#The user will be notified through an email
 send_confirmation(sender_email, receiver_email, password, price_range)
 

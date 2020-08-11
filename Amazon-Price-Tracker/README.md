@@ -40,3 +40,7 @@
 - The user enters 700 rupees as the budget, as the price is lesser than the budget the following email is sent, else the program continues to run till the condition is satisfied.
 
 ![Image](confirm.png)
+
+- The prices are also logged into the file price_logger.txt as shown, so the user will have an account of the changes the price underwent.
+
+![Image](change.png)
