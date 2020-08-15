@@ -1,0 +1,16 @@
+{
+  "name": "extract_comments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "extract.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohit Bhat",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "comment-extractor": "^0.8.1",
+    "extract-comments": "^1.1.0"
+  }
+}
