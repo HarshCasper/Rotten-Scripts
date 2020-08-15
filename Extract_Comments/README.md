@@ -11,5 +11,5 @@ Comments Plays an important role while writing effecient and clean code. Comment
 
 ## Output 
 You will see the Line, Block and all type of comments present in file on the console 
-![image](https://github.com/mbcse/Rotten-Scripts/blob/crypto_price/All_Crypto_Price/cryptoprice.png)
+![image](https://github.com/mbcse/Rotten-Scripts/blob/commentsscript/Extract_Comments/extractcomments.png)
 code by Mohit Bhat(https://www.mbcse.co)
