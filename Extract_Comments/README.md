@@ -8,8 +8,10 @@ Comments Plays an important role while writing effecient and clean code. Comment
 - Inside the folder open command line and run
 - npm install
 - node extract.js < Your source code file path>
+- All comments will be written to an output.md file in the current directory
 
 ## Output 
-You will see the Line, Block and all type of comments present in file on the console 
-![image](https://github.com/mbcse/Rotten-Scripts/blob/commentsscript/Extract_Comments/extractcomments.png)
+You will see the Line, Block and all type of comments written in output.md file 
+![image](https://github.com/mbcse/Rotten-Scripts/blob/commentsscript/Extract_Comments/extractcomment.png)
+![image](https://github.com/mbcse/Rotten-Scripts/blob/commentsscript/Extract_Comments/outputmd.png)
 code by Mohit Bhat(https://www.mbcse.co)
