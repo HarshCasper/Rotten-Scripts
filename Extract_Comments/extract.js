@@ -27,13 +27,4 @@ else{
 
 
 
-// pass a string of JavaScript
 
-// extracts comments from a source file
-// var commentList = commentExtractor.extractCommentsFromFile('extract.js');
-//  console.log(commentList);
-// extracts comments from a source code
-//var commentList = commentExtractor.extractCommentsFromString('source code', {language: ''});
- 
-// extracts TODOs contained in comments
-//var todoList = commentExtractor.extractTodosFromComments(commentList);
