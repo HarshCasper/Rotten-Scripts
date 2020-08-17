@@ -12,5 +12,5 @@ A website may have admin panels associated with them, but for security and other
 - The links with status green could be potential admin login link
 
 ## Output 
-![image](https://github.com/mbcse/Rotten-Scripts/blob/commentsscript/Extract_Comments/extractcomment.png)
+![image](https://github.com/mbcse/Rotten-Scripts/blob/bruteadmin/Brute_Force_Admin/brute.png)
 code by Mohit Bhat(https://www.mbcse.co)
