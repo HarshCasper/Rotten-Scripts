@@ -9,7 +9,7 @@ users in your contacts.
 ```
 ### Demo of my app
 
-[Demo](./resources/demo.gif)
+[](./resources/demo.gif)
 
 ### Requirements
 
