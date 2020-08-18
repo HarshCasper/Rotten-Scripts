@@ -1,1 +1,1 @@
-my_contacts= ["Ankita","Bhai","Papa 2","Ankur Cse","abc","mmamam"]
+my_contacts= ["Ankita","Bhai","Papa 2","Ankur Cse"]
