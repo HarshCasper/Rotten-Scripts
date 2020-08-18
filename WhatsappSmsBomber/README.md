@@ -9,7 +9,7 @@ users in your contacts.
 ```
 ### Demo of my app
 
-[](./resources/demo.gif)
+![demo](https://github.com/bagofcodes/Rotten-Scripts/blob/whatsappbomber/WhatsappSmsBomber/resources/demo.gif)
 
 ### Requirements
 
