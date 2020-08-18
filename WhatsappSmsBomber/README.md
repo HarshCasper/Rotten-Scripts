@@ -16,7 +16,7 @@ users in your contacts.
 ```
 - Python 3.6 or above
 - Selenium library
-- Chrome Driver downloaded from the [URL](https://chromedriver.chromium.org/downloads) based upon the version of Chrome 
+- Chrome Driver downloaded from the url given below in the links section based upon the version of Chrome 
   you are using.
 
 ```
@@ -24,7 +24,7 @@ users in your contacts.
 ### How to Use
 
 ```
-- Install Python 3.6 or above from the [Official Website](https://www.python.org/downloads/)
+- Install Python 3.6 or above from the url given in the links section.
 - Run "pip install selenium" in your cmd terminal to install Selenium.
 - Download the chrome webdriver from the above Url and place that in  "C:\WebDriver\bin".
 - Create the WebDriver and bin folder and place your downloaded file and add that to your path in enviroment variable.
@@ -32,3 +32,7 @@ users in your contacts.
 - Edit the "mycontacts.py" and add your contacts in the given format
 - Run the program.Enjoy
 ```
+
+### Links
+[To download ChromeDriver](https://chromedriver.chromium.org/downloads)
+[Official Website to download Python](https://www.python.org/downloads/)
