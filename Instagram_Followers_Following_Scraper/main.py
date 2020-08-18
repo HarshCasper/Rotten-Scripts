@@ -9,6 +9,7 @@ def get_users(user_type, insta_id):
     '''Takes the user_type( a string named followers or following) 
     and a username as argument and returns an array of the user's 
     followers or following repectively'''
+
     # select followers/following button
     button = browser.find_element_by_css_selector(
         "a[href='/"+insta_id+"/"+user_type+"/']")
@@ -48,6 +49,7 @@ def get_users(user_type, insta_id):
 def convert_to_csv(followers, following, insta_id):
     '''Takes arrays of followers and following and a username 
     as arguments and creates <username>.csv file to store the data'''
+
     final_arr = []
     for i in range(0, max(len(followers), len(following))):
         follower_account = ""
@@ -74,6 +76,7 @@ def convert_to_csv(followers, following, insta_id):
 
 
 if __name__ == "__main__":
+
     username = input("Enter your Instagram username: ")
     password = input("Enter your Instagram password: ")
     insta_id = input("Enter user's Instagram username for scraping: ")
