@@ -29,5 +29,6 @@ users in your contacts.
 - Download the chrome webdriver from the above Url and place that in  "C:\WebDriver\bin".
 - Create the WebDriver and bin folder and place your downloaded file and add that to your path in enviroment variable.
 - Clone the repo in your local machine.
+- Edit the "mycontacts.py" and add your contacts in the given format
 - Run the program.Enjoy
 ```
