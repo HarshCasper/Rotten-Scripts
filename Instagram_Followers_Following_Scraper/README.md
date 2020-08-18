@@ -15,8 +15,8 @@ This script scraps an Instagram user's following and followers and stores them i
 1. Enter the user's instagram username to scrap their followers and following
 1. The user's followers and following will be stored in a csv file <username>.csv
 
-### Demo Video
-[Watch the demo video](https://www.google.com/)
+### Demo
+[Watch the demo video](https://drive.google.com/file/d/165eaVN8FsYdt5E2Ztkfrhfvl3DEvAT10/view?usp=sharing) and see the obviouslyveganfood.csv file for result.
 
 ### Disclaimer
 This script is developed for educational purposes only. Any misuse of this script is not allowed. You are responsible for your own actions.
