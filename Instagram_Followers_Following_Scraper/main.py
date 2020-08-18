@@ -9,30 +9,40 @@ def get_users(user_type, insta_id):
     '''Takes the user_type( a string named followers or following) 
     and a username as argument and returns an array of the user's 
     followers or following repectively'''
+    # select followers/following button
     button = browser.find_element_by_css_selector(
-        "a[href='/"+insta_id+"/"+user_type+"/']")  # select followers/following button
-    no = (int)(button.text.strip().split()[0])  # count of followers/following
-    button.click()  # click on followers/following button to open dialog
+        "a[href='/"+insta_id+"/"+user_type+"/']")
+    # count of followers/following
+    no = (int)(button.text.strip().split()[0])
+    # click on followers/following button to open dialog
+    button.click()
+    # for selecting the dialog
     users = browser.find_element_by_class_name(
-        "PZuss")  # for selecting the dialog
+        "PZuss")
+    # for getting list of users
     users = users.find_elements_by_css_selector(
-        "li")  # for getting list of users
+        "li")
     view = browser.find_element_by_class_name("isgrP")
     actionChain = webdriver.ActionChains(browser)
     # for handeling scroll event on dialog
     actionChain.context_click(on_element=view)
-    n = len(users)  # no of followers/following in the list
+    # no of followers/following in the list
+    n = len(users)
     # while number of followers in the list is less than total number of followers of the user
     while(n < no):
+        # for scrolling down
         actionChain.key_down(Keys.SPACE).key_up(
-            Keys.SPACE).perform()  # for scrolling down
+            Keys.SPACE).perform()
+        # selecting users
         users = browser.find_element_by_class_name("PZuss")
-        users = users.find_elements_by_css_selector("li")  # selecting users
-        n = len(users)  # updating the number of users in the list
+        # updating the number of users in the list
+        users = users.find_elements_by_css_selector("li")
+        n = len(users)
+    # extracting text
     for j in range(len(users)):
-        users[j] = users[j].text  # extracting text
+        users[j] = users[j].text
     browser.get("https://www.instagram.com/"+insta_id)
-    return users  # return array of all the followers/following of the user
+    return users
 
 
 def convert_to_csv(followers, following, insta_id):
@@ -57,8 +67,10 @@ def convert_to_csv(followers, following, insta_id):
             "Following Name": following_name,
         }
         final_arr.append(user)
-    df = pd.DataFrame(final_arr)  # convert to data frame
-    df.to_csv(insta_id+".csv", index=None)  # convert to csv
+    # convert to data frame
+    df = pd.DataFrame(final_arr)
+    # convert to csv
+    df.to_csv(insta_id+".csv", index=None)
 
 
 if __name__ == "__main__":
@@ -66,7 +78,8 @@ if __name__ == "__main__":
     password = input("Enter your Instagram password: ")
     insta_id = input("Enter user's Instagram username for scraping: ")
 
-    PATH = "C:\Program Files (x86)\chromedriver.exe"  # path to chromedriver
+    # path to chromedriver
+    PATH = "C:\Program Files (x86)\chromedriver.exe"
     browser = webdriver.Chrome(PATH)
     browser.implicitly_wait(5)
     browser.get("https://www.instagram.com/")
