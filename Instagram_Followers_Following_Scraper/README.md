@@ -1,4 +1,4 @@
-# Instagram Followers Following Scraper
+# Instagram User's Followers and Following Scraper
 This script scraps an Instagram user's following and followers and stores them in a csv file.
 
 ### Dependencies
