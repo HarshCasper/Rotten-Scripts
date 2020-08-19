@@ -169,6 +169,46 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "AkM-2018",
+      "name": "Akhil Manoj",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/50191787?v=4",
+      "profile": "https://github.com/AkM-2018",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "avinashkranjan",
+      "name": "Avinash Kr. Ranjan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/55796944?v=4",
+      "profile": "http://avinashkranjan.github.io",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "kaustubhgupta",
+      "name": "Kaustubh ",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/43691873?v=4",
+      "profile": "https://www.kaustubhgupta.xyz/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "AdityaJ7",
+      "name": "Aditya Jetely",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/42397096?v=4",
+      "profile": "http://www.linkedin.com/in/aditya-jetely",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
