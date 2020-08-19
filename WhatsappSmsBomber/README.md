@@ -9,12 +9,13 @@ users in your contacts.
 ```
 ### Demo of my app
 
-![demo](https://github.com/bagofcodes/Rotten-Scripts/blob/whatsappbomber/WhatsappSmsBomber/resources/demo.gif)
+![demo](https://github.com/bagofcodes/Rotten-Scripts/blob/whatsappbomber/WhatsappSmsBomber/resources/Screenshot%20(113).png)
 
 ### Requirements
 
 ```
 - Python 3.6 or above
+- Google Chrome
 - Selenium library
 - Chrome Driver downloaded from the url given below in the links section based upon the version of Chrome 
   you are using.
