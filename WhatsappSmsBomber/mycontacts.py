@@ -1,1 +1,2 @@
-my_contacts= ["Ankita","Bhai","Papa 2","Ankur Cse"]
+my_contacts= ["Ankita","Bhai"] 
+#Note that the names you add here should match the format of your contact list in your whatsapp
