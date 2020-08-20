@@ -1,6 +1,6 @@
 # Links Finder
 
-This Script extracts all the links given in a Web Page.
+This Script extracts all the links given on a Web Page.
 
 > Enter the desired webpage link in output console. It will extract all the links and display it. 
 
