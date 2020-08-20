@@ -1,6 +1,6 @@
 # Convert Frames to Video
 
-This python script will convert all the frames from a folder into a video. This is accomplished using OpenCV, a highly optimized library for computer vison applications. Specifically, we use the VideoWriter function to combine images(in a particular fps) and obtain a video.
+This python script will convert all the frames from a folder into a video. This is accomplished using OpenCV, a highly optimized library for computer vision applications. Specifically, we use the VideoWriter function to combine images(in a particular fps) and obtain a video.
 
 ## Setting up:
 
