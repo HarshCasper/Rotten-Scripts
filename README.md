@@ -1,7 +1,7 @@
 # Rotten Scripts
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
@@ -90,6 +90,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://avinashkranjan.github.io"><img src="https://avatars2.githubusercontent.com/u/55796944?v=4" width="100px;" alt=""/><br /><sub><b>Avinash Kr. Ranjan</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinashkranjan" title="Documentation">📖</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinashkranjan" title="Code">💻</a></td>
     <td align="center"><a href="https://www.kaustubhgupta.xyz/"><img src="https://avatars3.githubusercontent.com/u/43691873?v=4" width="100px;" alt=""/><br /><sub><b>Kaustubh </b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=kaustubhgupta" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=kaustubhgupta" title="Documentation">📖</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/aditya-jetely"><img src="https://avatars3.githubusercontent.com/u/42397096?v=4" width="100px;" alt=""/><br /><sub><b>Aditya Jetely</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AdityaJ7" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AdityaJ7" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/avishmehta68710"><img src="https://avatars0.githubusercontent.com/u/69706506?v=4" width="100px;" alt=""/><br /><sub><b>avish mehta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avishmehta68710" title="Code">💻</a></td>
   </tr>
 </table>
 
