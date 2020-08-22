@@ -11,3 +11,4 @@ md_file = open(output_md,'w')
 for data in html_file:
     result = html2markdown.convert(data)
     md_file.write(result)
+    md_file.write("\n")
