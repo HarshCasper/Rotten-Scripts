@@ -1,0 +1,5 @@
+pytest-shutil
+pillow
+fpdf
+selenium
+urllib3
