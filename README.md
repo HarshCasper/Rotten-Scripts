@@ -93,7 +93,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/avishmehta68710"><img src="https://avatars0.githubusercontent.com/u/69706506?v=4" width="100px;" alt=""/><br /><sub><b>avish mehta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avishmehta68710" title="Code">💻</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/bagofcodes"><img src="https://avatars0.githubusercontent.com/u/37397899?v=4" width="100px;" alt=""/><br /><sub><b>ANSHUMALI SHAW</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/bagofcodes"><img src="https://avatars0.githubusercontent.com/u/37397899?v=4" width="100px;" alt=""/><br /><sub><b>ANSHUMALI SHAW</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Documentation">📖</a></td>
   </tr>
 </table>
 
