@@ -32,4 +32,4 @@ from re import findall
   2.  Run the program.
   3. It will check if a string contains the specified search pattern. 
 
- __Note__ :-  Users can modify the regex pattern & paragraphs according to their need and can match the pattern.
+ __Note__ :-  Users can set the path to their file and enter the pattern to match the regex.
