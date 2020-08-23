@@ -218,6 +218,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "bagofcodes",
+      "name": "ANSHUMALI SHAW",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/37397899?v=4",
+      "profile": "https://github.com/bagofcodes",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
