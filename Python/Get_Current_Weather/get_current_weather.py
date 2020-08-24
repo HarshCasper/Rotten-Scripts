@@ -2,7 +2,8 @@ import sys, requests, json, datetime
 
 # each key can respond to a maximum of 60 calls per minute
 # and 1,000,000 calls per month
-api_key = "c4129d312f4233641eb5e5b8c65e3647"
+# use your own api key which you can get from openweathermap
+api_key = "c4129d312f42336xxxxxe5b8c65e3647"
 
 # the first argument is the script name
 # the second argument is the city name

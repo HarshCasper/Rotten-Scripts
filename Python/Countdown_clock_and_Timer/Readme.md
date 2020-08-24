@@ -21,7 +21,7 @@ import time
   
 ### Instructions to run this application
 
-  1.  Download and Run the __countdown_timer.py__
+  1.  Download and Run the __countdown_clock_and_timer.py__
   2. Set the countdown time.
   3. Enter the hours, minutes and seconds .
   4. Timer will be set according to the given input by the user.

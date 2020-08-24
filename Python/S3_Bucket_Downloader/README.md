@@ -1,10 +1,10 @@
-# s3 Bucket Downloader
+# S3 Bucket Downloader
 
 A simple Python Script to install and configure AWS CLI and use it to download s3 bucket.
 
 # Usage
 
-- Run `$ python3 s3_bucket_downloader.py` and enter the asked details.
+- Run `$ python3 S3_bucket_downloader.py` and enter the asked details.
 
 # Script Explanation
 

@@ -7,9 +7,9 @@ from sys import argv
 
 #imports and dependencies
 
-api_key = "26efcdb88222e7ef85b472051b4e49d0"
+api_key = "26efcdb88222e7exxxxxx2051b4e49d0"
 
-#api key got from openweathermap
+#api key got from openweathermap (use your own api key)
 
 base_url = "http://api.openweathermap.org/data/2.5/weather?" 
 

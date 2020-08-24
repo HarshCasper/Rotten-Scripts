@@ -6,19 +6,24 @@ This python script will download articles from GeeksForGeeks and save them as a 
 
 - Create a virtual environment and activate it.
 
--  Install the requirements
+- Install the requirements
 
-``` sh
+```sh
   $ pip install -r requirements.txt
 ```
+
 ## Running the script:
-``` sh
-  $ python download.py [url]  #without the brackets  
+
+```sh
+  $ python geeksforgeeks_article_downloader.py [url]  #without the brackets
 ```
+
 ## Example running the script :
-``` sh
-  $ python download.py https://www.geeksforgeeks.org/shortest-path-faster-algorithm/?ref=leftbar-rightbar
+
+```sh
+  $ python geeksforgeeks_article_downloader.py https://www.geeksforgeeks.org/shortest-path-faster-algorithm/?ref=leftbar-rightbar
 ```
+
 The program will ask you to enter a filename(without '.pdf'). The pdf will be created in the same folder.
 
-![article screenshot](article_screenshot.JPG)
+![article screenshot](geeksforgeeks_article_downloader.JPG)

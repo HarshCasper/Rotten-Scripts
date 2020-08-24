@@ -2,7 +2,7 @@
   "name": "extract_comments",
   "version": "1.0.0",
   "description": "",
-  "main": "extract.js",
+  "main": "extractComments.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "comment-extractor": "^0.8.1",
-    "extract-comments": "^1.1.0"
+    "extract-comments": "^1.1.0",
+    "package.json": "^2.0.1"
   }
 }

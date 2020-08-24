@@ -40,7 +40,7 @@ try:
 
         # Signature Content
         draw.text((1500, 2250), "Hackathon Intiator", (0, 0, 0), font=id_font)
-        img.save("Certificates/" + str(name) + ".jpg")
+        img.save("Certificates/" + str(name.replace(" ", "_")) + ".jpg")
         print("Certificate Created for {}".format(name))
 except Exception:
     print('Something went wrong.!')

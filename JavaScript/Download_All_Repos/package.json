@@ -2,7 +2,7 @@
   "name": "download_repos",
   "version": "1.0.0",
   "description": "Script to download all user repositories",
-  "main": "repo.js",
+  "main": "downloadAllRepos.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "https": "^1.0.0",
+    "package.json": "^2.0.1",
     "parse-link-header": "^1.0.1",
     "shelljs": "^0.8.4"
   }

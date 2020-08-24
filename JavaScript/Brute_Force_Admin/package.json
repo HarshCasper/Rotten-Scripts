@@ -2,13 +2,14 @@
   "name": "bruteforceadminpanels",
   "version": "1.0.0",
   "description": "",
-  "main": "brute.js",
+  "main": "bruteForceAdmin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mohit Bhat",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "package.json": "^2.0.1"
   }
 }

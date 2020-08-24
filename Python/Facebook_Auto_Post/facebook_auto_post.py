@@ -9,7 +9,7 @@ import time
 
 
 try:
-    driver = webdriver.Chrome('<===============ENTER YOUR CHROME DRIVE PATH===========>')
+    driver = webdriver.Chrome('<===============ENTER YOUR CHROME DRIVER PATH===========>')
     driver.get('https://www.facebook.com/')
     print("Facebook Open Succesfully...!")
     time.sleep(5)

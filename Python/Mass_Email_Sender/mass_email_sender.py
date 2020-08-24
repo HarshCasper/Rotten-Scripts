@@ -71,7 +71,7 @@ def main():
             print("                             Error Occured")
             print("------+------+-------+-------+------+------+------+------+------+------")
             print("No commands provided...")
-            print("Type python main.py -h")
+            print("Type python mass_email_sender.py -h")
             print("------+------+-------+-------+------+------+------+------+------+------")
             exit()
 

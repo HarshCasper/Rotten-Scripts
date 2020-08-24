@@ -1,14 +1,16 @@
 # Download Instagram Posts
 
 ### Requirement
+
 - Python3
 - [wget](https://pypi.org/project/wget/)
 - [beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
 - [selenium](https://pypi.org/project/selenium/)
 
 ### Instructions
+
 ```sh
-$ python main.py
+$ python download_instagram_posts.py
 Username: google
 Got 30 Images
 100% [..............................................................................] 56223 / 56223 Saved images/google/001.jpg

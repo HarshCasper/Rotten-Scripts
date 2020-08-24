@@ -1,14 +1,11 @@
-# Lorem Ipsum Text Generator  
+# Lorem Ipsum Text Generator
+
 Don't have the demo text to your website?  
 No worries, this will help you!  
-This script is used to generate the given number of paragraphs of Lorem Ipsum text.  
+This script is used to generate the given number of paragraphs of Lorem Ipsum text.
 
-### Prerequisites:  
+### Prerequisites:
 
-pip install lorem_text  
+pip install lorem_text
 
-![image](https://github.com/seema1711/Rotten-Scripts-1/blob/my-scripts-seema/Lorem%20Ipsum%20Generator/lorem.png)
-
-
-
-
+![image](lorem_ipsum_generator.png)

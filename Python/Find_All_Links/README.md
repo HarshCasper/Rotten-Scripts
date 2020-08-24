@@ -1,8 +1,9 @@
 # Find all links
 
-### Usage
+### Example Usage
+
 ```sh
-$ python main.py https://github.com
+$ python find_all_links.py https://github.com
 https://github.githubassets.com
 https://avatars0.githubusercontent.com
 https://avatars1.githubusercontent.com

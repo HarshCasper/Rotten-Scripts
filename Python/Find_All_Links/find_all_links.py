@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def help():
-  print("Usage: python main.py <url>")
+  print("Usage: python find_all_links.py <url>")
 
 def parseURL(url):
   return url.replace("&amp;", "&")

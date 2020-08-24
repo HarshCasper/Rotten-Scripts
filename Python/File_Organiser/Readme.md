@@ -1,7 +1,5 @@
 # File Organiser Script
 
-
-
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 This is a Simple Python Script which works as **File Organiser** .

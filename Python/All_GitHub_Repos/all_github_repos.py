@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#to convert it into a script by running sudo chmod +x All_github_repos.py
+#to convert it into a script by running sudo chmod +x all_github_repos.py
 
 import requests
 import sys

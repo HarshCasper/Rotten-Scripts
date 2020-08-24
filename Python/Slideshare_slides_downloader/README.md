@@ -8,18 +8,21 @@ For any SlideShare link, the script grabs the urls of all the elements with clas
 - Create a virtual environment and activate it
 
 - Install the requirements
-``` sh
+
+```sh
   $ pip install -r requirements.txt
 ```
 
 ## Running the script:
-``` sh
-  $ python slideDownloader.py [url]  #without the brackets  
+
+```sh
+  $ python slide_downloader.py [url]  #without the brackets
 ```
 
 ## Example running the script:
-``` sh
-  $ python slideDownloader.py https://www.slideshare.net/fadirra/free-ai-kit-game-theory 
+
+```sh
+  $ python slide_downloader.py https://www.slideshare.net/fadirra/free-ai-kit-game-theory
 ```
 
-The code asks you for a filename for the pdf and done!! The pdf will be saved in the same directory. 
+The code asks you for a filename for the pdf and done!! The pdf will be saved in the same directory.

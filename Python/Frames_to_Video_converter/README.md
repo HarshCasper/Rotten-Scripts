@@ -7,15 +7,19 @@ This python script will convert all the frames from a folder into a video. This 
 - Create a virtual environment and activate it
 
 - Install the requirements
-``` sh
+
+```sh
   $ pip install opencv-python
 ```
 
 ## Running the script:
-``` sh
-  $ python frames_to_vid.py [image_folder_path]  #without the brackets  
+
+```sh
+  $ python frames_to_video_converter.py [image_folder_path]  #without the brackets
 ```
+
 The script will ask you for the needed 'fps' and a video name.
+
 ## Note:
 
 The images in the folder should be numbered in the order in which they appear in the video.
@@ -24,4 +28,4 @@ The images in the folder should be numbered in the order in which they appear in
 
 After running the script, the video will be created in the directory where the script is running.
 
-![frames_video](frames.gif)
+![frames_video](video.gif)
