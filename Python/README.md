@@ -1,6 +1,6 @@
 ## What is Python?
 
-Python is a high-level general purpose programming language created by Guido van Rossum. It is an easy to use interpreted language which can be used for a wide varity tasks including and not limited to automation, data science, machine learning, image processing and web development.
+Python is a high-level general purpose programming language created by Guido van Rossum. It is an easy to use interpreted language which can be used for a wide varity of tasks including and not limited to automation, data science, machine learning, image processing and web development.
 
 The main reason behind its success is the presence of vast variety of libraries and  its super helpful developer community.
 
@@ -8,7 +8,7 @@ The main reason behind its success is the presence of vast variety of libraries 
 ## Python scripts associated with this project:
 
 
-Sr no | Name of Script | Directory Link |  Author
+S. No | Name of Script | Directory Link |  Author
 --- | --- | --- | ---
 1 | All Github Repos | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/All_GitHub_Repos | [Namya LG](https://github.com/Namyalg)
 2 | Amazon Product Price Tracker | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Amazon_Product_Price_Tracker | [Namya LG](https://github.com/Namyalg)
