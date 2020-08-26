@@ -1,0 +1,26 @@
+{
+  "name": "githubGraphPopulator",
+  "version": "1.0.0",
+  "description": "Script to manipulate GitHub graph timestamps to create fake commits",
+  "main": "githubGraphPopulator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeroicHitesh/github-bot.git"
+  },
+  "author": "Hitesh Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeroicHitesh/github-bot/issues"
+  },
+  "homepage": "https://github.com/HeroicHitesh/github-bot#readme",
+  "dependencies": {
+    "jsonfile": "^6.0.1",
+    "moment": "^2.25.0",
+    "package.json": "^2.0.1",
+    "random": "^2.2.0",
+    "simple-git": "^2.2.0"
+  }
+}

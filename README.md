@@ -2,7 +2,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -12,30 +12,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
-
-## STUDENT CODE-IN
-
-**About SCI**
-
-Student Code-In is a global program that helps students grow with Open Source Contribution. It is a 2 months long Open-Source initiative which provides you the best platform to improve your skills and abilities by contributing to vast variety of Open Source Projects Projects. In this, all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team.
-
-<p align="center">
-  <a href="https://scodein.tech/">
-    <img src="https://avatars1.githubusercontent.com/u/63442932?s=200&v=4" alt="Logo">
-  </a>
-
-## PClub Summer of Code (PSoC)
-
-**About PSoC**
-
-PClub Summer of Code is the 2 month long Open Source program during summers conducted by Programming Club, UIET, with an aim to help beginners get started with Open Source Development while encouraging diversity. Throughout the program, participants contribute to different projects under guidance of experienced mentors. Mentors get to make their ideas alive and Mentees get to learn tech.
-
-PSoC is targeted at audience who want to dwell in OpenSource Development as well as who are already into FOSS development. This program will help students for other opensource programs like Gsoc, Outreachy, etc.
-
-<p align="center">
-  <a href="http://www.pclubsummerofcode.in">
-    <img src="https://avatars2.githubusercontent.com/u/32352672?s=200&v=4" alt="Logo">
-  </a>
 
 ## 📌 Introduction
 
@@ -88,6 +64,14 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/azhanali"><img src="https://avatars0.githubusercontent.com/u/43489763?v=4" width="100px;" alt=""/><br /><sub><b>Azhan </b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=azhanali" title="Documentation">📖</a></td>
     <td align="center"><a href="http://gaushik.netlify.app"><img src="https://avatars3.githubusercontent.com/u/59677936?v=4" width="100px;" alt=""/><br /><sub><b>Gaushik M.R</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=gaushikmr" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/AkM-2018"><img src="https://avatars0.githubusercontent.com/u/50191787?v=4" width="100px;" alt=""/><br /><sub><b>Akhil Manoj</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AkM-2018" title="Documentation">📖</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AkM-2018" title="Code">💻</a></td>
+    <td align="center"><a href="http://avinashkranjan.github.io"><img src="https://avatars2.githubusercontent.com/u/55796944?v=4" width="100px;" alt=""/><br /><sub><b>Avinash Kr. Ranjan</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinashkranjan" title="Documentation">📖</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinashkranjan" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.kaustubhgupta.xyz/"><img src="https://avatars3.githubusercontent.com/u/43691873?v=4" width="100px;" alt=""/><br /><sub><b>Kaustubh </b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=kaustubhgupta" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=kaustubhgupta" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/aditya-jetely"><img src="https://avatars3.githubusercontent.com/u/42397096?v=4" width="100px;" alt=""/><br /><sub><b>Aditya Jetely</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AdityaJ7" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AdityaJ7" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/avishmehta68710"><img src="https://avatars0.githubusercontent.com/u/69706506?v=4" width="100px;" alt=""/><br /><sub><b>avish mehta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avishmehta68710" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/bagofcodes"><img src="https://avatars0.githubusercontent.com/u/37397899?v=4" width="100px;" alt=""/><br /><sub><b>ANSHUMALI SHAW</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Documentation">📖</a></td>
   </tr>
 </table>
 
@@ -105,8 +89,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 |                                                                                      **[Harsh Bardhan Mishra](https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173//)**                                                                                       |
 | <a href="https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
 
-> **_Need help?_**
-> **_Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**
+> **_Need help? Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**
 
 ## ⚡ Mentors
 
