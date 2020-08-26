@@ -1,0 +1,2 @@
+pyttsx==3.2.90
+SpeechRecognition==2.1.3
