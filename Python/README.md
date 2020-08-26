@@ -60,7 +60,7 @@ Sr no | Name of Script | Directory Link |  Author
 48 | PDF Generator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/PDF_Generator | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
 49 | Port Scanner | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Port_Scanner | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
 50 | Python Library Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Python_Library_Downloader | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-51 | Questions from Project Euler | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Questions_from_Project_Euler | [Namya LG](https://github.com/Namyalg
+51 | Questions from Project Euler | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Questions_from_Project_Euler | [Namya LG](https://github.com/Namyalg)
 52 | Reddit Wallpaper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Reddit_Wallpaper | [Prahitha](https://github.com/Prahitha)
 53 | S3 Bucket Creator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/S3_Bucket_Creator | [sameer srivastava](https://github.com/sameersrivastava13)
 54 | S3 Bucket Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/S3_Bucket_Downloader | [Hitesh Kumar](https://github.com/HeroicHitesh)
