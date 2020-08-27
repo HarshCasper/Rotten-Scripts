@@ -35,4 +35,4 @@ The following example creates a bucket. The request specifies an AWS region wher
     CreateBucketConfiguration={
         'LocationConstraint': 'eu-west-1',
     }
-)
+)`
