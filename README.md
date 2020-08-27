@@ -90,15 +90,3 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 | <a href="https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
 
 > **_Need help? Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**
-
-## ⚡ Mentors
-
-|                                 <a href="https://github.com/abhishekmankuskar"><img src="https://avatars1.githubusercontent.com/u/55200658?s=460&u=6dde1c68c953f40de5720c21165eed8e1cda7a1d&v=4" width=150px height=150px /></a>                                  |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                        **[ABHISHEK MANKUSKAR](https://www.linkedin.com/in/abhishek-mankuskar-03790018b/)**                                                                                        |
-| <a href="https://www.linkedin.com/in/abhishek-mankuskar-03790018b/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
-
-|                                    <a href="https://github.com/som23ya"><img src="https://avatars1.githubusercontent.com/u/43650322?s=400&u=92ee0c4df8e65d8679a4864af03f79a784e396bd&v=4" width=150px height=150px /></a>                                     |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                          **[Somya Upadhyay](https://www.linkedin.com/in/somya-upadhyay-5b2028166/)**                                                                                          |
-| <a href="https://www.linkedin.com/in/somya-upadhyay-5b2028166/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
