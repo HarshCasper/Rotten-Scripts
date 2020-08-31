@@ -97,4 +97,5 @@ S. No | Name of Script | Directory Link |  Author
 85 | Youtube Bot | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Youtube_Bot | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
 86 | Youtube Video Download | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Youtube_Video_Download | [Anushka-S10](https://github.com/Anushka-S10)
 87 | Zipper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Zipper | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh)
- 
+88 | IMDB Scrapper |  https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/IMDB_scrapper | [Aditya Jetely](https://github.com/AdityaJ7)
+89 | Codechef Problem Scrapper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Codechef_Problem_Scrapper | [Aditya Jetely](https://github.com/AdityaJ7)
