@@ -1,0 +1,21 @@
+{
+  "name": "rsa_key_pair_generator",
+  "version": "1.0.0",
+  "description": "Simple Script to Genearte RSA Public and Private Keys",
+  "main": "rsaKeyPairGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RSA",
+    "public",
+    "private",
+    "keys"
+  ],
+  "author": "MOHIT BHAT",
+  "license": "ISC",
+  "dependencies": {
+    "node-forge": "^0.9.1",
+    "package.json": "^2.0.1"
+  }
+}

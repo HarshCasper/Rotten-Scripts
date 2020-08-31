@@ -4,15 +4,16 @@ Please include a summary of the issue.
 
 ## Language
 
-- [ ] Javascript
-- [ ] Python
 - [ ] Bash
+- [ ] Go
+- [ ] Javascript
 - [ ] Powershell
+- [ ] Python
 - [ ] Other (Please specify)
 
 ## Type of issue
 
-*Please delete options that are not relevant.*
+_Please delete options that are not relevant._
 
 - [ ] Feature
 - [ ] Bug
@@ -21,9 +22,9 @@ Please include a summary of the issue.
 
 - **For Feature**
 
-|name|about|labels|assignees|
-|----|-----|------|---------|
-|Feature request|Details (Motivation behind) about your feature request|feature|self-assign if you want to work on this issue else leave blank|
+| name            | about                                                  | labels  | assignees                                                      |
+| --------------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------- |
+| Feature request | Details (Motivation behind) about your feature request | feature | self-assign if you want to work on this issue else leave blank |
 
 **Is your feature request related to a problem? Please describe.**: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
@@ -33,9 +34,9 @@ Please include a summary of the issue.
 
 - **For Bug**
 
-|name|about|labels|assignees|
-|----|-----|------|---------|
-|Bug|Found a bug! File it using this template!|bug|self-assign if you want to work on this issue else leave blank|
+| name | about                                     | labels | assignees                                                      |
+| ---- | ----------------------------------------- | ------ | -------------------------------------------------------------- |
+| Bug  | Found a bug! File it using this template! | bug    | self-assign if you want to work on this issue else leave blank |
 
 **Steps to reproduce**: List out the steps to reproduce the steps
 
