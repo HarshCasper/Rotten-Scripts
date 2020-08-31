@@ -1,5 +1,5 @@
 # Quora Bookmarked Topics Downloader
-This python scrpit will download your Quora Bookmarked post into a pdf file. Just enter your quora credientials and selenium will take care for the rest of the part.
+This python script will download your Quora Bookmarked post into a pdf file. Just enter your quora credentials and selenium will take care of the rest of the part.
 
 # How to run?
 ```$ python app.py```
