@@ -1,0 +1,11 @@
+# vscode
+.vscode
+
+# produced pdf
+answers.pdf
+
+# python
+__pycache__/
+
+# chrome driver
+chromedriver.exe
