@@ -9,3 +9,4 @@ The system should have **python** and **tweepy** installed. Also, the user shoul
 3.Then enter the tweet to be searched.  
 Simply run the script!  
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
