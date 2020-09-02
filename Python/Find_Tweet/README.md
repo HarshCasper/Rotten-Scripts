@@ -7,8 +7,13 @@ The system should have **python** and **tweepy** installed. Also, the user shoul
 1.Open the script in any text editor/IDE.  
 2.Get the credentials from the app created by you on twitter developer account and enter them here.  
 3.Then enter the tweet to be searched.  
-![Entering information](Enter_info.jpg?raw=true)
-Simply run the script!  
+
+![Entering information](Enter_info.jpg?raw=true)  
+
+
+4.Simply run the script!  
+
+
 ![Output](Result.jpg?raw=true)
 
 
