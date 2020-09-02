@@ -6,6 +6,6 @@ The system should have **python** and **tweepy** installed. Also, the user shoul
 ### To run:
 1.Open the script in any text editor/IDE.  
 2.Get the credentials from the app created by you on twitter developer account and enter them here.  
-3.Then enter the tweet to be searched.
-Simply run the script!
+3.Then enter the tweet to be searched.  
+Simply run the script!  
 
