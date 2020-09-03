@@ -2,7 +2,7 @@
 Computer Vision as we know is a very powerful tool with immense possibilities.<br>
 So, why not to use it?<br>
 Here, I have implemented a script that will read the original image and convert the original image into cartoonified image.<br>
-The original image is converted into cartoonified image as well as there is an another approach by using '<cv2.stylization()>'
+The original image is converted into cartoonified image as well as there is an another approach by using 'cv2.stylization()'
 
 ### Results:
 
