@@ -35,6 +35,6 @@ c1.resize2
 c1.resize3
 cv2.imshow("original_image", c1.resize1)
 cv2.imshow("cartoonified_image", c1.resize2)
-cv2.imshow("cartoonified_image_intensified", c1.resize3)
+cv2.imshow("cartoonified_image_2", c1.resize3)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
