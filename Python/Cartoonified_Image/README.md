@@ -12,5 +12,5 @@ The original image is converted into cartoonified image as well as there is an a
 #### Cartoon Image
 <img src ="https://github.com/sharur7/Rotten-Scripts/blob/sharur7/Python/Cartoonified_Image/cartoonified_image.jpg?raw=true" alt="Cartoonified_image" width="400" height="300">
 
-#### Cartoon Image Intensified
-<img src ="https://github.com/sharur7/Rotten-Scripts/blob/sharur7/Python/Cartoonified_Image/cartoonified_image_intensified.jpg?raw=true" alt="Intense_Cartoonified_image" width="400" height="300">
+#### Cartoon Image using `cv2.stylization()`
+<img src ="https://github.com/sharur7/Rotten-Scripts/blob/sharur7/Python/Cartoonified_Image/cartoonified_image_2.jpg?raw=true" alt="Intense_Cartoonified_image" width="400" height="300">
