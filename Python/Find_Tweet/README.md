@@ -14,6 +14,6 @@ The system should have **python** and **tweepy** installed. Also, the user shoul
 4.Simply run the script!  
 
 
-![Output](Result.jpg?raw=true)
+![Output](https://raw.githubusercontent.com/HarshCasper/Rotten-Scripts/9fba0edecfa37b981bc78d3f8fb394ca0cfad54b/Python/Find_Tweet/Result.jpg)
 
 
