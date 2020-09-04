@@ -3,7 +3,6 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 
-
 def setup_chromedriver():
     #Path to chromedriver.exe
     PATH = input("Enter the path where the chromedriver has been installed ")
