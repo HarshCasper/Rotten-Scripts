@@ -37,7 +37,6 @@ def login():
     driver.find_element_by_xpath("/html/body/main/section[1]/div[2]/form/button").click()
     time.sleep(time_wait_two)
 
-
 def send_request():
     done = one
     #The user can send out multiple connection requests from the endpoint https://www.linkedin.com/mynetwork/ with a customized message
@@ -68,10 +67,8 @@ def send_request():
                     time.sleep(time_wait_two)
                 except:
                     print("Cannot connect")
-
         except:
             print("Cannot connect")
-
         print("Do you want to make another connection? ")
         done = input(input("Enter 1 to continue, 0 to stop "))
         if done == 1:
