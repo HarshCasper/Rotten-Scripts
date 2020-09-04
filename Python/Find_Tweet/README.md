@@ -8,7 +8,7 @@ The system should have **python** and **tweepy** installed. Also, the user shoul
 2.Get the credentials from the app created by you on twitter developer account and enter them here.  
 3.Then enter the tweet to be searched.  
 
-![Entering information](Enter_info.jpg?raw=true)  
+![Entering information](https://github.com/basketcase03/Rotten-Scripts/raw/FindTweet/Python/Find_Tweet/Enter_info.jpg?raw=true)  
 
 
 4.Simply run the script!  
