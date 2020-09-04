@@ -1,26 +1,23 @@
-#Import and dependencies
+#Imports and dependencies
 from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 
-#Here the process of automation is achieved by using the framework Selenium.
-#Selenium is a portable framework for testing and automating web applications web applications
 
-#Path to chromedriver.exe
-chrome_path = r"C:\Users\giril\AppData\Local\Programs\Python\Python36-32\chromedriver.exe"
-
-#Initiating and setting up the driver
-driver = webdriver.Chrome(chrome_path)
+def setup_chromedriver():
+    #Path to chromedriver.exe
+    PATH = input("Enter the path where the chromedriver has been installed ")
+    chrome_path = PATH
+    #Initiating and setting up the driver
+    driver = webdriver.Chrome(chrome_path)
 
 def login():
-
     #For logging into web telegram, the user must verify the phone number
     URL = "https://web.telegram.org/#/login"
     driver.get(URL)
     time.sleep(60)
 
 def automate_telegram():
-
     #This process is automated using the XML path of the elements that can be found on inspecting the page using Developer Tools
     user = 1
     while user:
@@ -45,6 +42,7 @@ def automate_telegram():
             return("All messages sent")
 
 if __name__ == "__main__":
+    setup_chromedriver()
     login()
     automate_telegram()
         
