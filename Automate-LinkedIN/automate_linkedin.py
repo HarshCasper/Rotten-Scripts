@@ -12,17 +12,14 @@ endpoint = "https://www.linkedin.com/mynetwork/"
 #Here the process of automation is achieved by using the framework Selenium.
 #Selenium is a portable framework for testing and automating web applications web applications
 
-def setup_chromedriver():
+def automate_linkedin():
     PATH = input("Enter the file path of the chromedriver ")
     chrome_path = PATH
     #Initiating and setting up the driver
     driver = webdriver.Chrome(chrome_path)
     driver.get(URL)
-
-#The script is made to wait, to ensure that the page is loaded
-time.sleep(time_wait_five)
-
-def login():
+    #The script is made to wait, to ensure that the page is loaded
+    time.sleep(time_wait_five)
     #This process is used to implement the login details
     driver.find_element_by_xpath("/html/body/main/section[1]/div[2]/form/div[2]/div[1]/input").click()
     name = input("Enter your username ")
@@ -36,11 +33,9 @@ def login():
     time.sleep(time_wait_two)
     driver.find_element_by_xpath("/html/body/main/section[1]/div[2]/form/button").click()
     time.sleep(time_wait_two)
-
-def send_request():
-    done = one
+    send_request = 1
     #The user can send out multiple connection requests from the endpoint https://www.linkedin.com/mynetwork/ with a customized message
-    while done:
+    while send_request:
         driver.get(endpoint)
         time.sleep(time_wait_ten)
         driver.find_element_by_xpath("/html/body/div[8]/div[3]/div/div/div/div/div/div/ul/li[1]/ul/li[1]/div/section/div[1]/a").click()
@@ -70,14 +65,11 @@ def send_request():
         except:
             print("Cannot connect")
         print("Do you want to make another connection? ")
-        done = input(input("Enter 1 to continue, 0 to stop "))
-        if done == 1:
+        send_request = input(input("Enter 1 to continue, 0 to stop "))
+        if send_request == 1:
             continue
         else:
             return("Sent all requests")
     
 if __name__ == "__main__":
-    setup_chromedriver()
-    login()
-    send_request()
-
+    automate_linkedin()
