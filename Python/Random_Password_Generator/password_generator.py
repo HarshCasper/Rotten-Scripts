@@ -5,9 +5,10 @@ from string import ascii_lowercase, ascii_uppercase
 
 def generate_password(password_size):
     # Creates one big string with all available characters
-    # ' !"#...ABC...xyz'
+    # ' !"#...0123...ABC...xyz'
+    numbers = '0123456789'
     symbols = ' !"#$%&\'()*+,-./:;<=>?@[\\^_`{|}'
-    available_characters = symbols + ascii_lowercase + ascii_uppercase
+    available_characters = numbers + symbols + ascii_lowercase + ascii_uppercase
 
     # Iterate password_size times, each time taking a new random character
     # from our list of available_characters
