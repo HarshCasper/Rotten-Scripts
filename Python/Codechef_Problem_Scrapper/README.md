@@ -1,6 +1,6 @@
 ## Codechef Problem Scrapper
 
-This script takes a problem code from the user and fetches the related problem from the codechef website and stores the problem in a pdf.
+This script takes a problem code from the user and fetches the related problem from the codechef website and stores the problem statement in a text file.
 
 ### How to use this script?
 
@@ -24,7 +24,7 @@ It will request a problem code from you.
 
 Type your problem code and see the script in action.
 
-### A sample pdf generated using this script:
+### A sample text file generated using this script:
 
 <p align = "center">
 	<img src="sample.PNG" alt="sample_pdf">

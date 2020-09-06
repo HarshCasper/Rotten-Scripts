@@ -1,3 +1,4 @@
 Pillow==7.2.0
 selenium==3.141.0
 urllib3==1.25.10
+beautifulsoup4==4.9.1
