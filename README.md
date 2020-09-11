@@ -6,7 +6,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/HarshCasper/Rotten-Scripts/network/)
-[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/HarshCasper/Rotten_scripts/stargazers/)
+[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
 
 
 [![GitHub issues](https://img.shields.io/github/issues/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/issues)
