@@ -1,12 +1,10 @@
 # Rotten Scripts
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/HarshCasper/Rotten-Scripts/network/)
-[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/HarshCasper/Rotten_scripts/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
+[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
 
 
 [![GitHub issues](https://img.shields.io/github/issues/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/issues)
@@ -95,12 +93,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/bagofcodes"><img src="https://avatars0.githubusercontent.com/u/37397899?v=4" width="100px;" alt=""/><br /><sub><b>ANSHUMALI SHAW</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://linkedin.com/in/afroz-chakure-489780168"><img src="https://avatars3.githubusercontent.com/u/40469121?v=4" width="100px;" alt=""/><br /><sub><b>Afroz Chakure</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=afrozchakure" title="Documentation">📖</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
