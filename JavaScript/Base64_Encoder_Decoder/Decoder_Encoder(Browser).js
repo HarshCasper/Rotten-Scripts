@@ -14,7 +14,7 @@ This way our data is secured.
 let myStr = 'Rotten Scripts are awesome!!';
 
 // encodedStr contains the value of Encoded String of our myStr
-let encodedStr = btoa(str);
+let encodedStr = btoa(myStr);
 
 // Printing encodedStr
 console.log(encodedStr);        // Um90dGVuIFNjcmlwdHMgYXJlIGF3ZXNvbWUhIQ==
