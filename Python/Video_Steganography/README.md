@@ -30,7 +30,7 @@ secret =  lsb.hide("file.png", "text")
 ```
 - To save the encoded image in a file named e_file.png
 ```
-secret.save("e_encoded.png")
+secret.save("e_file.png")
 ```
 - To decode the secret from the file e_file.png
 ```
