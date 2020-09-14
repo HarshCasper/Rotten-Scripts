@@ -1,5 +1,5 @@
 # Image to Sepia image
-The original image is converted into Sepia filtered image image.
+The original image is converted into Sepia filtered image.
 
 ### Results:
 
