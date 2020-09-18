@@ -15,7 +15,7 @@
   "author": "MOHIT BHAT",
   "license": "ISC",
   "dependencies": {
-    "node-forge": "^0.9.1",
+    "node-forge": "^0.10.0",
     "package.json": "^2.0.1"
   }
 }
