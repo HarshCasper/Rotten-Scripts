@@ -1,0 +1,1 @@
+# Python Script to Encode and Decode BASE 64 String to utf-8 string and vice versa.## About ScriptThis script is capable of converting some special/secret text into 64 BASE Encoded String ## To run the codeimport ConvertToBase64and to rerun import ConvertToBase64 importlib.reload(ConvertToBase64)
