@@ -13,6 +13,7 @@ args = parser.parse_args()
 def ConvertToBase64(string):
 
     # encoding the string to base64
+    print("Encoded String:")
     string = base64.b64encode(string.encode('utf-8'))
     print(string)
 
