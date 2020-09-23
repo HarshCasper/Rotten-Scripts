@@ -1,0 +1,18 @@
+name: Mark Stale issues
+on:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/stale@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'The issue labelled as stale because it has been open for more than 7 days with inactivity.'
+        days-before-stale: 7
+        days-before-close: -1
+        stale-issue-label: 'Stale'
+        exempt-issue-labels: 'Announcement,Pinned'
+        remove-stale-when-updated: true
