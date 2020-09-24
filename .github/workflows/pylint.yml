@@ -1,6 +1,10 @@
 name: Pylint
 
-on: [push]
+on: 
+  push:
+    paths: 
+      - '**.py'
+      - '**.yml'
 
 jobs:
   build:
@@ -15,8 +19,10 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
+        sudo apt-get install libssl-dev libcurl4-openssl-dev
         python -m pip install --upgrade pip
+        python -m pip install -r requirements.txt
         pip install pylint
-    - name: Analysing the code with pylint
+    - name: pylint
       run: |
-        pylint `ls -R|grep .py$|xargs`
+        pylint pypackage.py --const-rgx='[a-z\_][a-z0-9\_]{2,30}$' --disable=line-too-long
