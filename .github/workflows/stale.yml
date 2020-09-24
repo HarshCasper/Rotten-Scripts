@@ -1,7 +1,7 @@
 name: Mark Stale issues
 on:
   schedule:
-  - cron: "0 0 * * *"
+  - cron: "30 1 * * *"
 
 jobs:
   stale:
