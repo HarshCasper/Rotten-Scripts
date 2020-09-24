@@ -10,5 +10,7 @@ Before running the script, make sure you have the required dependicies. Not sure
 
 `pip install -r reqirements.txt`
 
+Also you will require latest chrome driver. Download latest one from [here](https://chromedriver.chromium.org/downloads) and place in the same location where script lies.
+
 # Working Demo
 ![](preview.gif)
