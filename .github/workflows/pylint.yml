@@ -19,4 +19,4 @@ jobs:
         pip install pylint
     - name: Test with pytest
       run: |
-        pylint `ls -R|grep .py$|xargs` "--disable=F0001, E0611, C0303, C0114, W0611, W0621, W0703, C0116, C0103, E0401, C0301, C0304"
+        pylint `ls -R|grep .py$|xargs` 
