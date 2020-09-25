@@ -1,41 +1,25 @@
 # Rotten Scripts
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
+[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
+
+
+[![GitHub issues](https://img.shields.io/github/issues/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/issues)
+[![GitHub issues closed](https://img.shields.io/github/issues-closed/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/pulls)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/pulls?q=is%3Apr+is%3Aclosed)
+
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-go.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
-
-## STUDENT CODE-IN
-
-**About SCI**
-
-Student Code-In is a global program that helps students grow with Open Source Contribution. It is a 2 months long Open-Source initiative which provides you the best platform to improve your skills and abilities by contributing to vast variety of Open Source Projects Projects. In this, all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team.
-
-<p align="center">
-  <a href="https://scodein.tech/">
-    <img src="https://avatars1.githubusercontent.com/u/63442932?s=200&v=4" alt="Logo">
-  </a>
-
-## PClub Summer of Code (PSoC)
-
-**About PSoC**
-
-PClub Summer of Code is the 2 month long Open Source program during summers conducted by Programming Club, UIET, with an aim to help beginners get started with Open Source Development while encouraging diversity. Throughout the program, participants contribute to different projects under guidance of experienced mentors. Mentors get to make their ideas alive and Mentees get to learn tech.
-
-PSoC is targeted at audience who want to dwell in OpenSource Development as well as who are already into FOSS development. This program will help students for other opensource programs like Gsoc, Outreachy, etc.
-
-<p align="center">
-  <a href="http://www.pclubsummerofcode.in">
-    <img src="https://avatars2.githubusercontent.com/u/32352672?s=200&v=4" alt="Logo">
-  </a>
 
 ## 📌 Introduction
 
@@ -46,6 +30,7 @@ that can make Life Easier for you, as a Developer, and find a utility of coding 
 
 You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 
+- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SL5KKdmvJ1U)
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
@@ -53,11 +38,23 @@ You can refer to the following articles on basics of Git and Github and also con
 
 ## 💥 How to Contribute?
 
-- Take a look at the Existing Issues or create your own Issues!
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+- Take a look at the Existing [Issues](https://github.com/HarshCasper/Rotten-Scripts/issues) or create your own Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
 - Fork the Repo and create a Branch for any Issue that you are working upon.
+- Read the [Code of Conduct](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CODE_OF_CONDUCT.md)
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
+- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CONTRIBUTING.md) for detailed explanation.
+
+## 💻 Languages used in this project
+
+- [Python](https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python)
+- [JavaScript](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript)
+- [GoLang](https://github.com/HarshCasper/Rotten-Scripts/tree/master/Go)
+
 
 ## Contributors ✨
 
@@ -88,12 +85,20 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/azhanali"><img src="https://avatars0.githubusercontent.com/u/43489763?v=4" width="100px;" alt=""/><br /><sub><b>Azhan </b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=azhanali" title="Documentation">📖</a></td>
     <td align="center"><a href="http://gaushik.netlify.app"><img src="https://avatars3.githubusercontent.com/u/59677936?v=4" width="100px;" alt=""/><br /><sub><b>Gaushik M.R</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=gaushikmr" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/AkM-2018"><img src="https://avatars0.githubusercontent.com/u/50191787?v=4" width="100px;" alt=""/><br /><sub><b>Akhil Manoj</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AkM-2018" title="Documentation">📖</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AkM-2018" title="Code">💻</a></td>
+    <td align="center"><a href="http://avinashkranjan.github.io"><img src="https://avatars2.githubusercontent.com/u/55796944?v=4" width="100px;" alt=""/><br /><sub><b>Avinash Kr. Ranjan</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinashkranjan" title="Documentation">📖</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinashkranjan" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.kaustubhgupta.xyz/"><img src="https://avatars3.githubusercontent.com/u/43691873?v=4" width="100px;" alt=""/><br /><sub><b>Kaustubh </b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=kaustubhgupta" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=kaustubhgupta" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/aditya-jetely"><img src="https://avatars3.githubusercontent.com/u/42397096?v=4" width="100px;" alt=""/><br /><sub><b>Aditya Jetely</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AdityaJ7" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AdityaJ7" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/avishmehta68710"><img src="https://avatars0.githubusercontent.com/u/69706506?v=4" width="100px;" alt=""/><br /><sub><b>avish mehta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avishmehta68710" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/bagofcodes"><img src="https://avatars0.githubusercontent.com/u/37397899?v=4" width="100px;" alt=""/><br /><sub><b>ANSHUMALI SHAW</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://linkedin.com/in/afroz-chakure-489780168"><img src="https://avatars3.githubusercontent.com/u/40469121?v=4" width="100px;" alt=""/><br /><sub><b>Afroz Chakure</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=afrozchakure" title="Documentation">📖</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
@@ -105,17 +110,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 |                                                                                      **[Harsh Bardhan Mishra](https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173//)**                                                                                       |
 | <a href="https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
 
-> **_Need help?_**
-> **_Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**
-
-## ⚡ Mentors
-
-|                                 <a href="https://github.com/abhishekmankuskar"><img src="https://avatars1.githubusercontent.com/u/55200658?s=460&u=6dde1c68c953f40de5720c21165eed8e1cda7a1d&v=4" width=150px height=150px /></a>                                  |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                        **[ABHISHEK MANKUSKAR](https://www.linkedin.com/in/abhishek-mankuskar-03790018b/)**                                                                                        |
-| <a href="https://www.linkedin.com/in/abhishek-mankuskar-03790018b/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
-
-|                                    <a href="https://github.com/som23ya"><img src="https://avatars1.githubusercontent.com/u/43650322?s=400&u=92ee0c4df8e65d8679a4864af03f79a784e396bd&v=4" width=150px height=150px /></a>                                     |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                          **[Somya Upadhyay](https://www.linkedin.com/in/somya-upadhyay-5b2028166/)**                                                                                          |
-| <a href="https://www.linkedin.com/in/somya-upadhyay-5b2028166/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
+> **_Need help? Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**
