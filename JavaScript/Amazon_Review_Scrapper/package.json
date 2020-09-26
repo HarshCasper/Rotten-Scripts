@@ -1,0 +1,16 @@
+{
+  "name": "amazon_reviews_scrapper",
+  "version": "1.0.0",
+  "description": "A Script to scrape reviews from Amazon.",
+  "main": "script.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "got": "^11.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sanket Mhatre",
+  "license": "ISC"
+}
