@@ -11,4 +11,4 @@ Before running the script, make sure you have the required dependicies. Not sure
 `pip install -r reqirements.txt`
 
 # Working Demo
-![](preview.PNG)
+![image](preview.png)
