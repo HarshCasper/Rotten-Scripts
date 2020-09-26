@@ -1,8 +1,11 @@
 # Importing libraries
 import cv2
 import numpy as np
+from PIL import Image
 
-img = cv2.imread('taj_mahal.jpg')
+# Taking input from the user
+filename = input("Enter the file name: ")
+img = Image.open("C:/Users/Sharvari/Desktop/Internships/Courses & Events/HackinCodes/Image To Sepia Effect/Image To Sepia Effect/"+ filename)
 original = img.copy()
 # Converting into float
 img = np.array(img, dtype=np.float64)
@@ -13,6 +16,8 @@ img = cv2.transform(img, np.matrix([[0.272, 0.534, 0.131],
 img[np.where(img > 255)] = 255
 # Converting into integer again
 img = np.array(img, dtype=np.uint8)
+original = np.array(original, dtype=np.uint8)
+original = cv2.cvtColor(original, cv2.COLOR_BGR2RGB)
 cv2.imshow("original", original)
 cv2.imshow("sepia", img)
 cv2.waitKey(0)
