@@ -103,3 +103,4 @@ S. No | Name of Script | Directory Link |  Author
 91 | Youtube Bot | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Youtube_Bot | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
 92 | Youtube Video Download | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Youtube_Video_Download | [Anushka-S10](https://github.com/Anushka-S10)
 93 | Zipper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Zipper | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh)
+94 | Image Steganography | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Image_Steganography | [Akhil Manoj](https://github.com/AkM-2018)
