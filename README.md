@@ -1,7 +1,7 @@
 # Rotten Scripts
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -23,12 +23,11 @@
 
 ## 📌 Introduction
 
-Collection of Awesome Scripts in Javascript, Python, Bash, Powershell and more. This is your personal space to find or add any new script
-that can make Life Easier for you, as a Developer, and find a utility of coding to burst out of boredom. Get started with coding exhilarating scripts that you can use to download PDFs from an Online Source or just to randomly like everyone's Instagram Post.
+Rotten Scripts contains amazing and awesome scripts written in Python, JavaScript, Bash, Powershell, and more. Consider this repository as your personal space to find or add any new script that can make life easier for us and the Open Source community too, as a Developer, and find a utility of coding to burst out of boredom. Get started with coding exhilarating scripts that you can use to download PDFs from an Online Source or just to randomly like everyone's Instagram Post.
 
 ## ⭐ How to get started?
 
-You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck:
+You can refer to the following articles on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 
 - [Watch this video to get started, if you have no clue about open source](https://youtu.be/SL5KKdmvJ1U)
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
@@ -47,7 +46,7 @@ You can refer to the following articles on basics of Git and Github and also con
 - Read the [Code of Conduct](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CODE_OF_CONDUCT.md)
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
-- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CONTRIBUTING.md) for detailed explanation.
+- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CONTRIBUTING.md) for a detailed explanation.
 
 ## 💻 Languages used in this project
 
@@ -94,6 +93,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/bagofcodes"><img src="https://avatars0.githubusercontent.com/u/37397899?v=4" width="100px;" alt=""/><br /><sub><b>ANSHUMALI SHAW</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Documentation">📖</a></td>
     <td align="center"><a href="http://linkedin.com/in/afroz-chakure-489780168"><img src="https://avatars3.githubusercontent.com/u/40469121?v=4" width="100px;" alt=""/><br /><sub><b>Afroz Chakure</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=afrozchakure" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/narayan2111"><img src="https://avatars2.githubusercontent.com/u/66173390?v=4" width="100px;" alt=""/><br /><sub><b>Lakshmi Narayan Dwivedi</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=narayan2111" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=narayan2111" title="Documentation">📖</a></td>
   </tr>
 </table>
 
