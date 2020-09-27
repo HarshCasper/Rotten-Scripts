@@ -2,25 +2,25 @@
 
 ## Script generates QR code for data listed in a csv file
 
-How to use
+## How to use
 
 ```
 python qrcode_generator.py --f <csv input file>
 ```
 
-Example:
+## Example
 
 ```
 python qrcode_generator.py --f input.csv
 ```
 
-### Format of input file
+## Input File
 
-extension: `.csv`<br>
-contains 2 columns(without headings, i.e. data starts from row 0)<br>
-1st column = file name with which qr code should be saved.<br>
-2nd column = data for which qr code should be generated.<br>
+* Script takes input from a csv file
+* Input file should contain 2 columns(without headings, i.e. data starts from row 0)
+* 1st column = file name with which qr code should be saved.
+* 2nd column = data for which qr code should be generated.
 
-#### snap of sample input
+## Snap of sample input
 
 ![alt](Capture.PNG)
