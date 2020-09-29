@@ -5,7 +5,7 @@ from PIL import Image
 
 # Taking input from the user
 filename = input("Enter the file name: ")
-img = Image.open("C:/Users/Sharvari/Desktop/Internships/Courses & Events/HackinCodes/Image To Sepia Effect/Image To Sepia Effect/"+ filename)
+img = Image.open(filename)
 original = img.copy()
 # Converting into float
 img = np.array(img, dtype=np.float64)
