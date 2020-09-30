@@ -1,0 +1,8 @@
+# vscode
+.vscode
+
+# chrome driver
+chromedriver.exe
+
+# output file
+Data.csv
