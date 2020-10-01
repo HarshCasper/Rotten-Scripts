@@ -104,3 +104,5 @@ S. No | Name of Script | Directory Link |  Author
 92 | Youtube Video Download | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Youtube_Video_Download | [Anushka-S10](https://github.com/Anushka-S10)
 93 | Zipper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Zipper | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh)
 94 | Image Steganography | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Image_Steganography | [Akhil Manoj](https://github.com/AkM-2018)
+95 | PDF tables extractor | https://github.com/rutujadhanawade/Rotten-Scripts/tree/imdb/Python/pdf_tables_extractor | [Rutuja Dhanawade](https://github.com/rutujadhanawade)
+96 | Imdb Top movies scraper | https://github.com/rutujadhanawade/Rotten-Scripts/tree/imdb/Python/IMDB%20TOP%20MOVIES | [Rutuja Dhanawade](https://github.com/rutujadhanawade)
