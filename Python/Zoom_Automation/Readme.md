@@ -5,7 +5,7 @@
 
 ## Setting up:
 ### Prerequisite:
-- Download the zoom desktop application from [here]()
+- Download the zoom desktop application from [here](https://zoom.us/download)
 - Make sure that the img folder and the script are in the same folder.
 
 ### Install the requirements using
