@@ -1,0 +1,41 @@
+Application which take the root url of the E-store and extracts useful information like name,price,url,rating etc of the products available, and store it in a database.
+
+Design
+The crawler is created using Scrapy and BeautifulSoup.
+
+Working of the crawler:
+This crawler is for Flipkart.com
+The spider (spider/test.py) takes start URL to begin crawling and then crawls flipkart.com according to given rules.
+The response received from the webpage is parsed using BeautifulSoup to get the product's name, description, price, rating, number of reviews, data and time of retrieval. The functions used for this purpose are written in the file spiders/appdefs.py which is imported in the spiders/test.py file.
+Then all the product details are inserted into the database through pipeline pipelines.py using python-MySQLdb.
+Rules for crawler:
+Only domain name 'flipkart.com' is allowed.
+2 seconds delay after every request.
+Depth limit is set to 10.
+Redirect of URL is disabled to avoid problems in crawling.
+How to Run
+Steps to deploy the crawler:
+In the config.py file:
+Change the server address, username, password and database name.
+If xampp is used, set the value of SERVERXAMPP to True, else False.
+Command to run the crawler:
+Goto the MyApp folder.
+Command: scrapy crawl MyApp
+Frontend:
+It is made using Html and PHP to view the data stored in database.
+
+Steps to deploy the website which shows the product information:
+Copy the 'website' folder and paste it in '/var/www/' folder.
+In 'connection.php', change the username and password.
+Import the csl_assignment.sql file. This will create a database with name "csl_assignment".
+Open http://localhost/index.php in browser along with path of the folder.
+Updating the existing the database
+To be executed daily via scheduler such as crontab
+
+'update/update.py' file should be run to update the database.
+It fetches all the URLs from the database, parses the response from these pages and adds a new entry for each product in the database.
+How to run:
+In the config.py file:
+Change the server address, username, password and database name.
+If xampp is used, set the value of SERVERXAMPP to True, else False.
+Execute update.py file present in the 'update' folder.
