@@ -23,7 +23,7 @@
 
 ## 📌 Introduction
 
-Rotten Scripts contains amazing and awesome scripts written in Python, JavaScript, Bash, Powershell, and more. Consider this repository as your personal space to find or add any new script that can make life easier for us and the Open Source community too, as a Developer, and find a utility of coding to burst out of boredom. Get started with coding exhilarating scripts that you can use to download PDFs from an Online Source or just to randomly like everyone's Instagram Post.
+Rotten Scripts contains amazing and awesome scripts written in Python, JavaScript, Bash, Powershell, and more. Consider this repository as your personal space to find or add any new script that can make life easier for us and the Open Source community too, as a Developer, and find a utility of coding to burst out of boredom. Get started with coding exhilarating scripts that you can use to download PDFs from an Online Source or just to randomly like everyone's Instagram and LinkedIn Post.
 
 ## ⭐ How to get started?
 
