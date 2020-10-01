@@ -16,7 +16,7 @@ for b in SOUP.select('td.posterColumn span[name=ir]'):
 
 IMDB = []
 # Store each item into dictionary (data), then put those into a list (imdb)
-for index in range(0,(MOVIES)):
+for index in range(0, len(MOVIES)):
     movie_string = MOVIES[index].get_text()
     movie = (' '.join(movie_string.split()).replace('.', ''))
     movie_title = movie[len(str(index)) + 1:-7]
