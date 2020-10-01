@@ -4,7 +4,11 @@
   - Open the Zoom Class keeping Camera/Audio off.
 
 ## Setting up:
-Install the requirements using
+### Prerequisite:
+- Download the zoom desktop application from [here]()
+- Make sure that the img folder and the script are in the same folder.
+
+### Install the requirements using
 ```sh
 $ pip3 install pyautogui
 $ pip3 install opencv-python
