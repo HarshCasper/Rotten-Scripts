@@ -6,8 +6,7 @@
 
 # Audiobook 
 
-Read any audio book from pdf using python.
-
+Read any audio book from pdf using python.  
 ### Modules used:
     1. PyPDF2
     2. Pyttsx3
