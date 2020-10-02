@@ -13,16 +13,20 @@ It enables interactive web pages and thus is an essential part of web applicatio
 
 | S. No | Name of Script |  Author |
 --- | --- | ---
-1 | [Automate Tinder](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Automate_Tinder) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
-2 | [Base64 Encoder Decoder](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Base64_Encoder_Decoder) | [Piyush Gupta](https://github.com/gupta-piyush19)
-3 | [Brute Force Admin](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Brute_Force_Admin) | [Mohit Bhat](https://github.com/mbcse)
-4 | [Cryptoprice](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Cryptoprice) | [Mohit Bhat](https://github.com/mbcse)
-5 | [Download_All_Repos](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Download_All_Repos) | [Mohit Bhat](https://github.com/mbcse)
-6 | [Edit_Webpage](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Edit_Webpage) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
-7 | [Extract_Comments](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Extract_Comments) | [Mohit Bhat](https://github.com/mbcse)
-8 | [Follow Instagram](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Follow_Instagram) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
-9 | [Github Graph Populator](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/GitHub_Graph_Populator) | -
-10 | [Instagram Like](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Instagram_Like) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
-11 | [RSA Key Pair Generator](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/RSA_Key_Pair_Generator) | [Mohit Bhat](https://github.com/mbcse)
-12 | [Send emails](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Send_Emails) | [Namya LG](https://github.com/Namyalg)
-13 | [Who don't follow you](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Who_Don't_Follow_You) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
+1 | [Amazon_Review_Scrapper](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Amazon_Review_Scrapper) | -
+2 | [Automate Tinder](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Automate_Tinder) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
+3 | [Base64 Encoder Decoder](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Base64_Encoder_Decoder) | [Piyush Gupta](https://github.com/gupta-piyush19)
+4 | [Blog Image Finder](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Blog_Image_Finder) | [Piyush Gupta](https://github.com/gupta-piyush19)
+5 | [Brute Force Admin](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Brute_Force_Admin) | [Mohit Bhat](https://github.com/mbcse)
+6 | [Bulk LinkedIn Requests](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Bulk_LinkedIn_requests) | -
+7 | [Cryptoprice](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Cryptoprice) | [Mohit Bhat](https://github.com/mbcse)
+8 | [Download_All_Repos](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Download_All_Repos) | [Mohit Bhat](https://github.com/mbcse)
+9 | [Edit_Webpage](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Edit_Webpage) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
+10 | [Extract_Comments](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Extract_Comments) | [Mohit Bhat](https://github.com/mbcse)
+11 | [Follow Instagram](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Follow_Instagram) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
+12 | [Github Graph Populator](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/GitHub_Graph_Populator) | -
+13 | [Html to markdown](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Html%20to%20markdown) | -
+14 | [Instagram Like](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Instagram_Like) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
+15 | [RSA Key Pair Generator](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/RSA_Key_Pair_Generator) | [Mohit Bhat](https://github.com/mbcse)
+16 | [Send emails](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Send_Emails) | [Namya LG](https://github.com/Namyalg)
+17 | [Who don't follow you](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Who_Don't_Follow_You) | [Harsh Barshan Mishra](https://github.com/HarshCasper)
