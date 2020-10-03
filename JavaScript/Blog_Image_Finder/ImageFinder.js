@@ -1,6 +1,9 @@
 // All DOM variables
 let container = document.querySelector('.container');
-let key = 'fjWKDve02zbReHxiCHd9mwClRzeA-3KRHTC6XlCRz0I';
+
+// Enter your Unsplash API key here
+let key = '';
+
 let btn = document.querySelector('#btn');
 let input = document.querySelector('#query');
 
