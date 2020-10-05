@@ -1,0 +1,17 @@
+{
+  "name": "bibtex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@citation-js/plugin-bibtex": "^0.5.0-alpha.7",
+    "citation-js": "^0.5.0-alpha.7",
+    "citation.js": "^0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
