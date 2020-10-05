@@ -1,0 +1,10 @@
+var result = TemplateEngine.render({
+  user: {
+    '~~~for': "users as user, id",
+    '${user}': {
+      id: "${id}"
+    }
+  }
+}, {
+  users: ["Bob", "Alise"]
+});
