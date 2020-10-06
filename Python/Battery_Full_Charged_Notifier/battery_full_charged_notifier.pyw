@@ -24,7 +24,6 @@ def monitor():
       battery = psutil.sensors_battery()
       plugged = battery.power_plugged
       percent = int(battery.percent)
-
       if percent == 100:
          if plugged == True:
             processThread = threading.Thread(target=show_notification, args=("Laptop Fully Charged",))  # <- note extra ','
@@ -39,6 +38,11 @@ def monitor():
                x.say("Your battery at 90% ")
                x.runAndWait()
                count = count + 1
-
+      elif percent <=20:
+         if plugged == False:
+            processThread = threading.Thread(target=show_notification,args=("Battery Low!,Please Plug in",))  # <- note extra ','
+            processThread.start()
+            x.say("You Battery Percent is very low,please plug in")
+            x.runAndWait()
 if __name__ == "__main__":
    monitor()
