@@ -1,4 +1,4 @@
-# Facts Deskop Notifier (Reddit Version)
+# Facts Desktop Notifier (Reddit Version)
 
 This script fetches top 10 post from corresponding subreddit and then randomly selects one of them to be pushed to the notification area. The subreddit, time interval can be defined at the startup.
 

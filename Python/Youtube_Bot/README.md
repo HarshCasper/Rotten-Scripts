@@ -1,15 +1,15 @@
 ### Youtube Bot
 
-This bot is used to increase the number of views for a specific yutube video based on the given url.
+This bot is used to increase the number of views for a specific YouTube video based on the given url.
 
-### Requirments
+### Requirements
 
 1. Chrome Driver (that matches your chrome version.) -- platform dependent.
 
 ### Setup
 
 1. Create a Virtual Environment.
-2. Install the requiremnts by using `pip3 install -r requiremnts.txt`
+2. Install the requirements by using `pip3 install -r requiremnts.txt`
 3. Hurray.! You're ready to use the bot to increase youtube videos.
 
 ### Running the Bot

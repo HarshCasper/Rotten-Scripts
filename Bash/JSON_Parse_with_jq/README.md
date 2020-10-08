@@ -1,6 +1,6 @@
 ### json parsing in bash
 
-`find_flag.sh` sctipt will tell you how to use [jq](https://stedolan.github.io/jq/) command to parse JSON file in bash with an example (`sample.json`)
+`find_flag.sh` script will tell you how to use [jq](https://stedolan.github.io/jq/) command to parse JSON file in bash with an example (`sample.json`)
 
 The script will run below 3 commands and find the flag from the `sample.json` file
 

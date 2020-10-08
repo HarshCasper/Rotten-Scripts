@@ -3,7 +3,7 @@ This script uses Python requests library to grab the url of the linkedin post pr
 
 
 # How to use?
-- Install the dependicies required for this script (tqdm & requests):
+- Install the dependencies required for this script (tqdm & requests):
 
     ```pip install requirements.txt```
 

@@ -1,4 +1,4 @@
-# Video/Images to GIF conerter in golang
+# Video/Images to GIF converter in golang
 
 ## Use [ffmpeg](https://ffmpeg.org/) before using script
 

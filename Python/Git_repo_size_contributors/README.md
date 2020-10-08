@@ -6,7 +6,7 @@ This script will return a CSV file containing Size of the repository and details
 `python app.py username_of_repo name_of_repo personal_access_token`
 
 
-Before running the script, make sure you have the required dependicies. Not sure about them? Run the following command before running the actual script:
+Before running the script, make sure you have the required dependencies. Not sure about them? Run the following command before running the actual script:
 
 `pip install -r reqirements.txt`
 

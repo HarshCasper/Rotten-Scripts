@@ -4,7 +4,7 @@ Send mails to masses by rendering Text files and HTML templates.
 
 # Prerequisites:
 
-- Create a CSV file, say `mails.csv` consisting a column, `Email`, spelled as it is, and add the list of all the reciever's email to be sent in
+- Create a CSV file, say `mails.csv` consisting a column, `Email`, spelled as it is, and add the list of all the receiver's email to be sent in
   that column.
 
           Email
@@ -12,7 +12,7 @@ Send mails to masses by rendering Text files and HTML templates.
           pqr.we@outlook.com
           xyz@yahoo.com
 
-- Create a Template that you want to send to the recievers.
+- Create a Template that you want to send to the receivers.
   This can be:
 
   - A TEXT file &emsp;(sample shown [here](templates/sample.txt))

@@ -8,17 +8,17 @@ You will need the following things to be able to use it:
 
 1.Chrome Browser
 
-2.Chromedriver accroding to the version of your chrome browser.Put this in the same directory as your script.
+2.Chromedriver according to the version of your chrome browser.Put this in the same directory as your script.
 
 3.Some external python libraries which you can get by running the following command:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 4.And yes, a stable internet connection too.
 
 After fulfilling the above necessities run the following command:
 
-python codechef_problem_solver.py
+`python3 codechef_problem_solver.py`
 
 It will request a problem code from you.
 

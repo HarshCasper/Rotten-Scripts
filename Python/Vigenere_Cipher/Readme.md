@@ -4,7 +4,7 @@ This Script will Encrypted and Decrypted your text.
 
 # How to use it.
 
-> python3 vigenere_cipher.py
+`python3 vigenere_cipher.py`
 
 It will ask whether you want to encode or decode your text.
 
