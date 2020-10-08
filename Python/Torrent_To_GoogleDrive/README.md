@@ -30,11 +30,11 @@
 ## Screenshots
 
 Magnet Link - 
-![Pasting the Magnet Link](DownloadSuccess.svg)
+![Pasting the Magnet Link](MagnetLink.svg)
 
 
 Successful Download - 
-![Successful Download](MagnetLink.svg)
+![Successful Download](DownloadSuccess.svg)
 
 Verification in Google Drive -
 ![](Google_Drive.svg)

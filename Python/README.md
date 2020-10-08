@@ -106,3 +106,4 @@ S. No | Name of Script | Directory Link |  Author
 94 | Image Steganography | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Image_Steganography | [Akhil Manoj](https://github.com/AkM-2018)
 95 | PDF tables extractor | https://github.com/rutujadhanawade/Rotten-Scripts/tree/imdb/Python/pdf_tables_extractor | [Rutuja Dhanawade](https://github.com/rutujadhanawade)
 96 | Imdb Top movies scraper | https://github.com/rutujadhanawade/Rotten-Scripts/tree/imdb/Python/IMDB%20TOP%20MOVIES | [Rutuja Dhanawade](https://github.com/rutujadhanawade)
+97 | Torrent to Google Drive | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Torrent_To_GoogleDrive | [Vybhav Chaturvedi](https://github.com/vybhav72954)
