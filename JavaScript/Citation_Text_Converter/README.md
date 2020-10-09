@@ -2,7 +2,7 @@
 
 ## BACKGROUND:
 
-Probably the most boring yet important task for any researcher, reviewer, manuscript writer is to provide references/citations to the prior art or the referenced work of other research papers, articles or bibliography which is often referred as "Citation Text". 
+Probably the most boring yet important task for any researcher, reviewer, manuscript writer is to provide references/citations to the prior art or the referenced work of other research papers, articles or bibliography which is often referred as "Citation Text".
 
 ---
 
@@ -28,25 +28,24 @@ Citation Text converter can easily convert your DOI, BibTeX and other well known
 ```
 git clone <URL here>
 ```
-
 #### Step 2: Spin up local Environment
-
 ```
 cd <path to the cloned folder>
 ```
-
 #### Step 3: Install the dependancies
 ```
 npm install 
 ```
-
-#### Step 4: 
+#### Step 4: Run the index.js file in the terminal (make sure you are in the right directory)
+```
+node index.js 
+```
+#### Step 5: 
 
 Copy and Reuse this Script in your Project 
 OR 
 To use: See the test cases in index.js file!
 Provide the BibTeX/DOI to the functions to get your Citation Text in seconds!
-
 
 ---
 
@@ -57,13 +56,3 @@ Provide the BibTeX/DOI to the functions to get your Citation Text in seconds!
 ---
 
 Made with 😎 by [Soham Shah](https://github.com/sohamsshah) (codeFlayer)
-
-
-
-
-
-
-
-
-
-
