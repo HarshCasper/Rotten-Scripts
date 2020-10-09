@@ -7,7 +7,7 @@ Or it can open up a sound file that can be played.
 
 Python has the low-level functionality to be able to open up any program on your operating, just as if you had double-clicked on it (to get it started).
 
-You can do this in Python using the subprocess.Popen() function.
+You can do this in Python using the `subprocess.Popen()` function.
 
 Using this function, all you have to do is pass in the program that you want to open up in its parameters.
 
