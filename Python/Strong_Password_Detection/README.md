@@ -1,6 +1,6 @@
 ## Strong Password Detection
 
-The password is strong if it satisfies the following condtions:
+The password is strong if it satisfies the following conditions:
 
 1) length of the entered password should be not be greater than 15 
 2) The entered password should have at least one numeral 

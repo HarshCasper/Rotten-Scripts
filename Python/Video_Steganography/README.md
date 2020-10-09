@@ -1,5 +1,5 @@
-# Video Steganogrpahy
-Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. It has existed for a long time, and nowadays, digital steganography is used to hide data inside images. We can hide all kinds of data by using different digital steganographic methods.
+# Video Steganography
+Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. It has existed for a long time, and nowadays, digital steganography is used to hide data inside images. We can hide all kinds of data by using different digital stenographic methods.
 
 ## Steganography
 A digital image is a representation of pixel values, and every pixel value will have numbers containing information regarding the pixel. A digital color image will have **red, green, and blue channels** and eight bits to represent each channel, so every channel can take a value from **0-255**, and this value represents the intensity of the pixel.
@@ -19,7 +19,7 @@ This is a pixel array, and we want to hide A in it. The ASCII value of A is 65. 
 (R,G, B)= (11101010 11101001 11001010),(10111000,11001010,11101000),(11001000 00100101 11101001)
 ```
 ## Image Steganography
-Image steganography can be simply done using the stegano package in python.
+Image steganography can be simply done using the `stegano` package in python.
 - First we will import lsb
 ```
 from stegano import lsb

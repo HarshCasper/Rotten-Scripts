@@ -8,7 +8,7 @@ Just type:
 
 `python video_to_frames.py file-location`
 
-Example 1: When file is located in the same directory as of the scrpit.
+Example 1: When file is located in the same directory as of the script.
 
 `python video_to_frames.py video.mp4`
 

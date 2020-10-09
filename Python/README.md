@@ -14,7 +14,7 @@ S. No | Name of Script | Directory Link |  Author
 2 | Amazon Product Price Tracker | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Amazon_Product_Price_Tracker | [Namya LG](https://github.com/Namyalg)
 3 | ASCIIfy Image | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/ASCIIfy_Image | [Akhil Manoj](https://github.com/AkM-2018)
 4 | Audio Converter | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Audio_Converter | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-5 | Automate Commiting Using Git | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Automate_Commiting_Using_Git | [Seema Saharan](https://github.com/seema1711)
+5 | Automate Committing Using Git | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Automate_Commiting_Using_Git | [Seema Saharan](https://github.com/seema1711)
 6 | Battery Full Charged Notifier | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Battery_Full_Charged_Notifier | [MOHIT BHAT](https://github.com/mbcse)
 7 | Book Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Book_Downloader | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
 8 | Bulk Certificate Generator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Bulk_Certificate_Generator | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)

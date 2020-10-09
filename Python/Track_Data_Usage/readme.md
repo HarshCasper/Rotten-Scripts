@@ -1,6 +1,6 @@
 # Track Data Usage
 
-Now, the world is all about internet, and the data! We have now apps for tracking the usage of data but they consume a lot of space in our smart phone, so how can we tackle that? Well, there is one way, using Python. Yes, we can use Python to automate this stuff to track oour data usage.
+Now, the world is all about internet, and the data! We have now apps for tracking the usage of data but they consume a lot of space in our smart phone, so how can we tackle that? Well, there is one way, using Python. Yes, we can use Python to automate this stuff to track our data usage.
 
 ![image](https://windowsloop.com/wp-content/uploads/2019/09/Windows-10-bandwidth-usage-featured.jpg)
 

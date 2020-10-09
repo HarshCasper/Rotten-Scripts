@@ -4,7 +4,7 @@ This Script will give you the meaning of an english word.
 
 # How to use it.
 
-> python3 word_meaning.py
+`python3 word_meaning.py`
 
 It will ask word for which you want to know the meaning.
 
