@@ -50,7 +50,7 @@ function citationText(data, customized = undefined) {
 
 // 1: Parsing the Data from Wikidata format and with output in custom template
 console.log(citationText(`Q30000000`, customizedPlugin))
-  
+// Logs: The Synergistic Activity of Thyroid Transcription Factor 1 and Pax 8 Relies on the Promoter/Enhancer Interplay , Stefania Miccadei , S. Miccadei , Rossana De Leo , Enrico Zammarchi , Pier Giorgio Natali , Donato Civitareale}
 
 // 2: Parsing the Data from BibTex Format
 console.log(citationText(`@article{woo2008robotic,
@@ -63,6 +63,8 @@ console.log(citationText(`@article{woo2008robotic,
    year={2008},
    publisher={Elsevier}
  }`))
+//Logs: Information fetched:  Woo, S., Hong, D., Lee, W.-C., Chung, J.-H., & Kim, T.-H. (2008). A robotic system for road lane painting. Automation in Construction, 17(2), 122–129. [Retrieved on 10/9/2020]
 
 // 3: Parsing the Data from DOI format
 console.log(citationText('https://doi.org/10.3390/robotics8010010'))
+//Logs: Information fetched:  Scalera, L., Seriani, S., Gasparetto, A., & Gallina, P. (2019). Non-Photorealistic Rendering Techniques for Artistic Robotic Painting. Robotics, 8(1), 10. https://doi.org/10.3390/robotics8010010 [Retrieved on 10/9/2020]
