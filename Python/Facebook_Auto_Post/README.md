@@ -2,14 +2,14 @@
 
 This script helps to post the content on Facebook. It is very handy to post the content on facebook.
 
-### Requirments
+### Requirements
 
 1. Chrome Driver (that matches your chrome version.) -- platform dependent.
 
 ### Setup
 
 1. Create a Virtual Environment.
-2. Install the requiremnts by using `pip3 install -r requiremnts.txt`
+2. Install the requirements by using `pip3 install -r requiremnts.txt`
 3. Hurray.! You're ready to use the script to post the content on facebook.
 
 ### Running a File
