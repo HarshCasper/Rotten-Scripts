@@ -247,6 +247,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "frbimo",
+      "name": "frbimo",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26115956?v=4",
+      "profile": "https://github.com/frbimo",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
