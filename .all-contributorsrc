@@ -244,10 +244,10 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/51725975?v=4",
       "profile": "https://github.com/rohankumawat",
       "contributions": [
-         "doc"
-       ]
-      },
-      {
+        "doc"
+      ]
+    },
+    {
       "login": "narayan2111",
       "name": "Lakshmi Narayan Dwivedi",
       "avatar_url": "https://avatars2.githubusercontent.com/u/66173390?v=4",
@@ -262,6 +262,16 @@
       "name": "frbimo",
       "avatar_url": "https://avatars1.githubusercontent.com/u/26115956?v=4",
       "profile": "https://github.com/frbimo",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "gupta-piyush19",
+      "name": "Piyush Gupta",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/56182734?v=4",
+      "profile": "https://github.com/gupta-piyush19",
       "contributions": [
         "code",
         "doc"
