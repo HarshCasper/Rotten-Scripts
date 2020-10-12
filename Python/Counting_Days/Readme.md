@@ -13,10 +13,10 @@ Name | About
 Counting Days | Shows the number of days between today and (date) given
 
 ### Usage
-To access the `timer`, this application imports the following modules.
+To access the `counter`, this application imports the following modules.
 ```python
 import os
-import time
+from datetime import date
 ```
   
 ### Instructions to run this application
