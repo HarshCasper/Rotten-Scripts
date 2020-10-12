@@ -1,0 +1,17 @@
+name: "Label Hacktoberfest Issues"
+
+on:
+  issues:
+    types: [opened, edited, unlabeled]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: github/issue-labeler@v2.0
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/hacktoberfest_issues_labeler.yml
+          not-before: 2020-10-01
+          not-after: 2020-10-31
+          enable-versioned-regex: 0

@@ -11,18 +11,18 @@ enhancement:
 CH20:
   - "(CH20)"
 Easy:
-  - "(Easy|easy)"  
+  - "(Easy|easy)"
 Medium:
   - "(Medium|medium)"
 Hard:
   - "(Hard|hard)"
 bug:
-  - "(bug|Bug|BUG)"  
+  - "(bug|Bug|BUG)"
 Up-For-Grab:
-  - "(up for grab)"  
+  - "(up for grab)"
 Urgent:
-  - "(urgent|URGENT|Urgent)"  
+  - "(urgent|URGENT|Urgent)"
 documentation:
   - "(documentation)"
 No-Code:
-  - "(No Code)"  
+  - "(No Code)"
