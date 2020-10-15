@@ -1,10 +1,11 @@
 # Contributing Guidelines
 
-This documentation contains a set ofguidelines to help you during the contribution process. 
+This documentation contains a set of guidelines to help you during the contribution process. 
 We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project. Thank you for helping out and remember, **no contribution is too small.**
 
 # Submitting Contributions👩‍💻👨‍💻
 Below you will find the process and workflow used to review and merge your changes.
+
 ## Step 0 : Find an issue
 - Take a look at the Existing Issues or create your **own** Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
@@ -44,7 +45,7 @@ $ git add .
 - To commit give a descriptive message for the convenience of reveiwer by:
 ```
 # This message get associated with all files you have changed
-$ git commit -m 'message
+$ git commit -m 'message'
 ```
 - **NOTE**: A PR should have only one commit. Multiple commits should be squashed.
 ## Step 5 : Work Remotely
