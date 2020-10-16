@@ -3,14 +3,17 @@ import os
 from glob import glob
 import pydub
 import mutagen
+import keyboard
 
 # Directory containing the audio File
-song_dir = 'C:\\Users\\asus\\Desktop\\Songs\\*.mp3'  # Extension is according the the file type before conversion.
+# Extension is according the the file type before conversion.
+song_dir = './*.mp3'
 
 
 def conversion(song):
     for song in song:
-        mp3_song = os.path.splitext(song)[0] + '.wav'  # Extension in which file is supposed to be convert
+        # Extension in which file is supposed to be converted
+        mp3_song = os.path.splitext(song)[0] + '.wav'
         """
         Support .mp3,
                 .mp4,
@@ -22,8 +25,19 @@ def conversion(song):
                 .wav
         """
         sound = pydub.AudioSegment.from_mp3(song)
-        sound.export(mp3_song, format="wav")  # Change the extension to the desired format
-        os.remove(song)  # If you want to keep  the old format, comment this line
+        # Change the extension to the desired format
+        sound.export(mp3_song, format="wav")
+        # If you want to keep the old format, Press anything other than [y]
+        print("Converted", os.path.basename(mp3_song), "Do you want to delete the original files? Press [y] for Yes.\n")
+        while True:
+            if keyboard.read_key() == "y":
+                print("Deleting Duplicate File\n")
+                os.remove(song)
+                print("Thank You\n")
+                break
+            else:
+                print("Nothing Deleted!!!\n")
+                break
     print("Conversion Done")
 
 
@@ -35,7 +49,8 @@ def parameters(song):
 
 def main():
     print(song_dir)
-    song = glob(song_dir)  # Glob for file selection
+    # Glob for file selection
+    song = glob(song_dir)
     print(song)
     parameters(song)
     conversion(song)

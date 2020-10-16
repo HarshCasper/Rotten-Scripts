@@ -25,6 +25,7 @@ the Audio file.
 - Install the dependencies using ```pip3 install -r requiremnts.txt```
 - You are all set and the [script](Audio_File_Converter.py) is Ready to run.
 - Follow the Instructions already provided in the script.
+- Carefully provide the *Keyboard Interrupt* in order to ensure that the required files are deleted only.
 
 ## Detailed explanation of script, if needed
 
