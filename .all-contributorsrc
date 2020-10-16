@@ -276,6 +276,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "sohamsshah",
+      "name": "Soham Shah",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/47717492?v=4",
+      "profile": "https://github.com/sohamsshah",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
