@@ -1,0 +1,10 @@
+The easiest and simplest way to establish connection with your flask app :
+- after installing Flask-SQLalchemy
+
+Step 1 : Install mysqlclient using command- pip install mysqlclient
+Step 2 : Download and install XAMPP in your system, link for downloading XAMPP - https://www.apachefriends.org/index.html
+Step 3 : Open XAMPP Control Panel, start Apache and MySQL. You will see start button under Actions.
+Step 4 : Open your browser, and enter - localhost/phpmyadmin/
+Step 5 : Click New and create a new database.
+
+Now you r redy to rock THE web :)  
