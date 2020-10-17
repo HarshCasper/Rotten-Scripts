@@ -6,7 +6,7 @@ As it is a command line utility, simply run the file in given format:
 
 `python app.py linkedin_username linkedin_password linkedin_post_link`
 
-Before running the script, make sure you have the required dependicies. Not sure about them? Run the following command before running the actual script:
+Before running the script, make sure you have the required dependencies. Not sure about them? Run the following command before running the actual script:
 
 `pip install -r reqirements.txt`
 

@@ -1,6 +1,6 @@
 # Cricbuzz srapper
 
- This python script will scrap cricbuzz.com to get live scores.
+ This python script will scrap [cricbuzz](www.cricbuzz.com) to get live scores.
 
 ## Technologies used:
 - urllib.request

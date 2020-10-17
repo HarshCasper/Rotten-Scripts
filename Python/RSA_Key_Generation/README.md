@@ -6,9 +6,11 @@
 
 ## To run the script:
 1. Install the dependencies by running following command in terminal.
-    + pip install pycryptodome
+
+   `pip install pycryptodome`
 2. Run the script.
-    + python rsa_key_generation.py
+
+    `python rsa_key_generation.py`
     
 In case, if you want to know more, Read complete documentation [here](https://pycryptodome.readthedocs.io/en/latest/src/public_key/rsa.html)
     

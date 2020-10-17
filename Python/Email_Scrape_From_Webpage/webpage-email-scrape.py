@@ -3,10 +3,10 @@
 # Importing required libraries and modules.
 import re                               # For regular expression operations
 import requests                         # For sending HTTP request to server 
-from urllib.parse import urlsplit       # For Spliting the URL 
+from urllib.parse import urlsplit       # For Splitting the URL
 from collections import deque           # A list-like container
 from bs4 import BeautifulSoup           # A Python package for parsing HTML and XML documents 
-import requests.exceptions              # For handling eceptions
+import requests.exceptions              # For handling exceptions
 
 # Enter here the webpage to scrape in the original_url. 
 original_url = input("Enter the webpage url: ")
@@ -20,7 +20,7 @@ processed_urls = set()
 # a set of fetched emails to save fetched emails
 emails = set()
 
-# moving unsraped_url from the queue to scraped_urls set
+# moving unscraped_url from the queue to scraped_urls set
 url = unprocessed_urls.popleft()
 # Remove and return an element from the left side of the deque.
 processed_urls.add(url)

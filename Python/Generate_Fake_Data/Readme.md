@@ -1,4 +1,4 @@
-# Generate your random fake data and save it into .npz file. Use it in Data Modeling, Machine Learning, Data Science and many more usefull places to do wonderful things.
+# Generate your random fake data and save it into .npz file. Use it in Data Modeling, Machine Learning, Data Science and many more useful places to do wonderful things.
 
 This Script will Generate random fake data and save it into npz file.
 

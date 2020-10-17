@@ -1,4 +1,4 @@
-### Download Reddit image and set it as Destop Wallpaper
+### Download Reddit image and set it as Desktop Wallpaper
 
 ##### Using the script
 
