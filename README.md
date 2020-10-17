@@ -1,7 +1,7 @@
 # Rotten Scripts
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -97,6 +97,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/narayan2111"><img src="https://avatars2.githubusercontent.com/u/66173390?v=4" width="100px;" alt=""/><br /><sub><b>Lakshmi Narayan Dwivedi</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=narayan2111" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=narayan2111" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/frbimo"><img src="https://avatars1.githubusercontent.com/u/26115956?v=4" width="100px;" alt=""/><br /><sub><b>frbimo</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=frbimo" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=frbimo" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/gupta-piyush19"><img src="https://avatars0.githubusercontent.com/u/56182734?v=4" width="100px;" alt=""/><br /><sub><b>Piyush Gupta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=gupta-piyush19" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=gupta-piyush19" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/sohamsshah"><img src="https://avatars0.githubusercontent.com/u/47717492?v=4" width="100px;" alt=""/><br /><sub><b>Soham Shah</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sohamsshah" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sohamsshah" title="Documentation">📖</a></td>
   </tr>
 </table>
 
