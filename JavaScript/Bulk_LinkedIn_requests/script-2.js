@@ -69,16 +69,13 @@ async function connect(profile, i) {
     } catch (e) {
         console.error(e);
         if (profile) {
-            connect(
-                profile,
-                i
-            );
+            connect(profile );
         }
     }
 }
 
-var connected = [];
-var profiles = [];
+let connected = [];
+let profiles = [];
 
 async function run() {
     window.scrollTo(0, document.body.scrollHeight);
@@ -101,10 +98,7 @@ async function run() {
         await sleep(3500);
         run();
     } else {
-        connect(
-            profiles[connected.length],
-            connected.length
-        );
+        connect(profiles[connected.length]);
     }
 }
 
