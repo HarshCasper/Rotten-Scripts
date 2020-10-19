@@ -3,8 +3,8 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
-[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
+[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
 
 
 [![GitHub issues](https://img.shields.io/github/issues/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/issues)
