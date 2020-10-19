@@ -1,109 +1,119 @@
-## What is Python?
+![ChatterBot: Machine learning in Python](https://i.imgur.com/b3SCmGT.png)
 
-Python is a high-level general purpose programming language created by Guido van Rossum. It is an easy to use interpreted language which can be used for a wide varity of tasks including and not limited to automation, data science, machine learning, image processing and web development.
+# ChatterBot
 
-The main reason behind its success is the presence of vast variety of libraries and  its super helpful developer community.
+ChatterBot is a machine-learning based conversational dialog engine build in
+Python which makes it possible to generate responses based on collections of
+known conversations. The language independent design of ChatterBot allows it
+to be trained to speak any language.
 
+[![Package Version](https://img.shields.io/pypi/v/chatterbot.svg)](https://pypi.python.org/pypi/chatterbot/)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Django 2.0](https://img.shields.io/badge/Django-2.0-blue.svg)](https://docs.djangoproject.com/en/2.1/releases/2.0/)
+[![Requirements Status](https://requires.io/github/gunthercox/ChatterBot/requirements.svg?branch=master)](https://requires.io/github/gunthercox/ChatterBot/requirements/?branch=master)
+[![Build Status](https://travis-ci.org/gunthercox/ChatterBot.svg?branch=master)](https://travis-ci.org/gunthercox/ChatterBot)
+[![Documentation Status](https://readthedocs.org/projects/chatterbot/badge/?version=stable)](http://chatterbot.readthedocs.io/en/stable/?badge=stable)
+[![Coverage Status](https://img.shields.io/coveralls/gunthercox/ChatterBot.svg)](https://coveralls.io/r/gunthercox/ChatterBot)
+[![Code Climate](https://codeclimate.com/github/gunthercox/ChatterBot/badges/gpa.svg)](https://codeclimate.com/github/gunthercox/ChatterBot)
+[![Join the chat at https://gitter.im/chatterbot/Lobby](https://badges.gitter.im/chatterbot/Lobby.svg)](https://gitter.im/chatterbot/Lobby?utm_source=badge&utm_medium=badge&utm_content=badge)
 
-## Python scripts associated with this project:
+An example of typical input would be something like this:
 
+> **user:** Good morning! How are you doing?  
+> **bot:**  I am doing very well, thank you for asking.  
+> **user:** You're welcome.  
+> **bot:** Do you like hats?  
 
-S. No | Name of Script | Directory Link |  Author
---- | --- | --- | ---
-1 | All Github Repos | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/All_GitHub_Repos | [Namya LG](https://github.com/Namyalg)
-2 | Amazon Product Price Tracker | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Amazon_Product_Price_Tracker | [Namya LG](https://github.com/Namyalg)
-3 | ASCIIfy Image | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/ASCIIfy_Image | [Akhil Manoj](https://github.com/AkM-2018)
-4 | Audio Converter | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Audio_Converter | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-5 | Automate Committing Using Git | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Automate_Commiting_Using_Git | [Seema Saharan](https://github.com/seema1711)
-6 | Battery Full Charged Notifier | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Battery_Full_Charged_Notifier | [MOHIT BHAT](https://github.com/mbcse)
-7 | Book Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Book_Downloader | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-8 | Bulk Certificate Generator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Bulk_Certificate_Generator | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-9 | Codechef Contests | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Codechef_Contests | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-10 | Codechef Problem Scrapper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Codechef_problem_scrapper | [Aditya Jetely](https://github.com/AdityaJ7)
-11 | Countdown clock and Timer | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Countdown_clock_and_Timer | [Anushka-S10](https://github.com/Anushka-S10)
-12 | Create Word Cloud | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Create_Word_Cloud | [Prahitha](https://github.com/Prahitha)
-13 | Currency Converter | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Currency_Converter | [Prahitha](https://github.com/Prahitha)
-14 | Desktop notifier | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Desktop_notifier | [Anushka-S10](https://github.com/Anushka-S10)
-15 | Download Instagram Posts | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Download_Instagram_Posts | [Sanket Chaudhari](https://github.com/sanket143)
-16 | Download Instagram Videos | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Download_Instagram_Videos | [Prahitha](https://github.com/Prahitha)
-17 | Download Mangas | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Download_Mangas | [Prahitha](https://github.com/Prahitha)
-18 | Encrypt Text | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Encrypt_Text | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-19 | Extract Image Metadata | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Extract_Image_Metadata | [Amandeep](https://github.com/amandp13)
-20 | Facebook Auto Post | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Facebook_Auto_Post | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-21 | Facts Deskop Notifier | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Facts_Deskop_Notifier | [Kaustubh](https://github.com/kaustubhgupta)
-22 | File Organiser | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/File_Organiser | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh)
-23 | Find All Links | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Find_All_Links | [Sanket Chaudhari](https://github.com/sanket143)
-24 | Find Tweets | https://github.com/basketcase03/Rotten-Scripts/tree/FindTweet/Python/Find_Tweet | [Muskan Khajuria](https://github.com/basketcase03)
-25 | Frames to Video converter | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Frames_to_Video_converter | [Akhil Manoj](https://github.com/AkM-2018)
-26 | GeeksForGeeks Article Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/GeeksForGeeks_Article_Downloader | [Akhil Manoj](https://github.com/AkM-2018)
-27 | Generate Fake Data | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Generate_Fake_Data | [Mohit Gupta](https://github.com/mohitacecode)
-28 | Get Current Weather | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Get_Current_Weather | [Prahitha](https://github.com/Prahitha)
-29 | Get Lyrics | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Get_Lyrics | [Prahitha](https://github.com/Prahitha)
-30 | Gradient Mapping | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Gradient_Mapping | [Ankita Priya](https://github.com/AnkitaBIT)
-31 | Hash The File | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Hash_The_File | [Sanket Chaudhari](https://github.com/sanket143)
-32 | Heat Your System | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Heat_Your_System | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-33 | Image Encoder | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Image_Encoder | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-34 | Image filters | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Image_filters | [Namya LG](https://github.com/Namyalg)
-35 | Image flip meme templates | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Image_flip_meme_templates | [Namya LG](https://github.com/Namyalg)
-36 | IMDB Scrapper |  https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/IMDB_scrapper | [Aditya Jetely](https://github.com/AdityaJ7)
-37 | Initialize HTTP Server | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Initialize_HTTP_Server | [Seema Saharan](https://github.com/seema1711)
-38 | Instagram Followers Following Scraper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Instagram_Followers_Following_Scraper | [Aastha](https://github.com/aastha985)
-39 | Instagram Profile Pic Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Instagram_Profile_Pic_Downloader | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-40 | Invisible Cloak | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Invisible_Cloak | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-41 | Json to yaml | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Json_to_yaml | [Aditya Jetely](https://github.com/AdityaJ7)
-42 | JSON to Excel | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/JSON-to-Excel | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-43 | Keylogger | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Keylogger | [Avinash Kr. Ranjan](https://github.com/avinashkranjan)
-44 | Launch Computer Programs Using Python | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/launching_programs_from_python | [sameer srivastava](https://github.com/sameersrivastava13)
-45 | Labelling Binarizer Instance | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Labelling_Binarizer_Instance | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-46 | Large File Identifier | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Large_File_Identifier | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-47 | Lorem Ipsum Generator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Lorem_Ipsum_Generator | [Seema Saharan](https://github.com/seema1711)
-48 | markovmemes | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/markovmemes | N/A
-49 | Mass Email Sender | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Mass_Email_Sender | [Deepraj](https://github.com/deepraj1729)
-50 | Medium article downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Medium_article_downloader | [Namya LG](https://github.com/Namyalg)
-51 | Meet Strangers | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Meet_Strangers | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-52 | Net Connection | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Net_Connection | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-53 | PDF Generator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/PDF_Generator | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-54 | Port Scanner | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Port_Scanner | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-55 | Python Library Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Python_Library_Downloader | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-56 | Questions from Project Euler | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Questions_from_Project_Euler | [Namya LG](https://github.com/Namyalg)
-57 | Reddit Wallpaper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Reddit_Wallpaper | [Prahitha](https://github.com/Prahitha)
-58 | S3 Bucket Creator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/S3_Bucket_Creator | [sameer srivastava](https://github.com/sameersrivastava13)
-59 | S3 Bucket Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/S3_Bucket_Downloader | [Hitesh Kumar](https://github.com/HeroicHitesh)
-60 | Screen Grabber | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Screen_Grabber | [Ankita Priya](https://github.com/AnkitaBIT)
-61 | Search File | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Search_File | [Mohit Gupta](https://github.com/mohitacecode)
-62 | Send Emails | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Send_Emails | [Namya LG](https://github.com/Namyalg)
-63 | Shutdown Your System | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Shutdown_Your_System | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-64 | Slideshare slides downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Slideshare_slides_downloader | [Akhil Manoj](https://github.com/AkM-2018)
-65 | Sports Score Updates | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Sports_Score_Updates | [Prahitha](https://github.com/Prahitha)
-66 | Stock Market Data | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Stock_Market_Data | [Mohit Gupta](https://github.com/mohitacecode)
-67 | Strong Password Detection | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Strong_Password_Detection | [Aditya Ashvin](https://github.com/AdityaAshvin)
-68 | Substitution Cypher | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Substitution_Cypher | [Mohit Gupta](https://github.com/mohitacecode)
-69 | Subtitle Downloader | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Subtitle_Downloader | [Seema Saharan](https://github.com/seema1711)
-70 | Telegram Bot | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Telegram_Bot | [Namya LG](https://github.com/Namyalg)
-71 | Test Typing Speed | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Test_Typing_Speed | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-72 | Text To Speech | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Text_To_Speech | [Namya LG](https://github.com/Namyalg)
-73 | Time Conversion | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Time_Conversion | [Prahitha](https://github.com/Prahitha)
-74 | Times Of India | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Times_Of_India | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-75 | Track Data Usage | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Track_Data_Usage | [Seema Saharan](https://github.com/seema1711)  
-76 | Twitter Bot | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Twitter_Bot | [Seema Saharan](https://github.com/seema1711)
-77 | Upload File As Github Gist | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Upload_File_As_Github_Gist | [Seema Saharan](https://github.com/seema1711)
-78 | URL Shortner | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/URL_Shortner | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-79 | Valid Phone Number Extractor | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Valid_Phone_Number_Extractor | [Hitesh Kumar](https://github.com/HeroicHitesh)
-80 | Video To Frames | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Video_To_Frames | [Kaustubh](https://github.com/kaustubhgupta)
-81 | Vigenere Cipher | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Vigenere_Cipher | [Mohit Gupta](https://github.com/mohitacecode)
-82 | Watermark It | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Watermark_it | [Aditya Jetely](https://github.com/AdityaJ7)
-83 | Weather using Open Weather Map | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Weather_using_OpenWeatherMap | [Namya LG](https://github.com/Namyalg)
-84 | Website Blocker | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Website_Blocker | [Ankita Priya](https://github.com/AnkitaBIT)
-85 | Website Cloner | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Website_Cloner | [Avinash Kr. Ranjan](https://github.com/avinashkranjan)
-86 | WhatsApp Message Automation | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/WhatsApp_Message_Automation | [Namya LG](https://github.com/Namyalg)
-87 | WhatsApp Sms Bomber | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Whatsapp_Sms_Bomber | [ANSHUMALI SHAW](https://github.com/bagofcodes)
-88 | Who is Online On WhatsApp | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Who_Is_Online_On_WhatsApp | [Wable Sanket](https://github.com/Sanketwable)
-89 | Word Meaning | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Word_Meaning | [Mohit Gupta](https://github.com/mohitacecode)
-90 | XML To CSV | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/XML_To_CSV | [Harsh Bardhan Mishra](https://github.com/HarshCasper)
-91 | Youtube Bot | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Youtube_Bot | [Sri Manikanta Palakollu](https://github.com/srimani-programmer)
-92 | Youtube Video Download | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Youtube_Video_Download | [Anushka-S10](https://github.com/Anushka-S10)
-93 | Zipper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Zipper | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh)
-94 | Image Steganography | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Image_Steganography | [Akhil Manoj](https://github.com/AkM-2018)
-95 | PDF tables extractor | https://github.com/rutujadhanawade/Rotten-Scripts/tree/imdb/Python/pdf_tables_extractor | [Rutuja Dhanawade](https://github.com/rutujadhanawade)
-96 | Imdb Top movies scraper | https://github.com/rutujadhanawade/Rotten-Scripts/tree/imdb/Python/IMDB%20TOP%20MOVIES | [Rutuja Dhanawade](https://github.com/rutujadhanawade)
-97 | Torrent to Google Drive | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Torrent_To_GoogleDrive | [Vybhav Chaturvedi](https://github.com/vybhav72954)
+## How it works
+
+An untrained instance of ChatterBot starts off with no knowledge of how to communicate. Each time a user enters a statement, the library saves the text that they entered and the text that the statement was in response to. As ChatterBot receives more input the number of responses that it can reply and the accuracy of each response in relation to the input statement increase. The program selects the closest matching response by searching for the closest matching known statement that matches the input, it then returns the most likely response to that statement based on how frequently each response is issued by the people the bot communicates with.
+
+## Installation
+
+This package can be installed from [PyPi](https://pypi.python.org/pypi/ChatterBot) by running:
+
+```
+pip install chatterbot
+```
+
+## Basic Usage
+
+```
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+chatbot = ChatBot('Ron Obvious')
+
+# Create a new trainer for the chatbot
+trainer = ChatterBotCorpusTrainer(chatbot)
+
+# Train the chatbot based on the english corpus
+trainer.train("chatterbot.corpus.english")
+
+# Get a response to an input statement
+chatbot.get_response("Hello, how are you today?")
+```
+
+# Training data
+
+ChatterBot comes with a data utility module that can be used to train chat bots.
+At the moment there is training data for over a dozen languages in this module.
+Contributions of additional training data or training data
+in other languages would be greatly appreciated. Take a look at the data files
+in the [chatterbot-corpus](https://github.com/gunthercox/chatterbot-corpus)
+package if you are interested in contributing.
+
+```
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+# Create a new trainer for the chatbot
+trainer = ChatterBotCorpusTrainer(chatbot)
+
+# Train based on the english corpus
+trainer.train("chatterbot.corpus.english")
+
+# Train based on english greetings corpus
+trainer.train("chatterbot.corpus.english.greetings")
+
+# Train based on the english conversations corpus
+trainer.train("chatterbot.corpus.english.conversations")
+```
+
+**Corpus contributions are welcome! Please make a pull request.**
+
+# [Documentation](https://chatterbot.readthedocs.io/)
+
+View the [documentation](https://chatterbot.readthedocs.io/)
+for ChatterBot on Read the Docs.
+
+To build the documentation yourself using [Sphinx](http://www.sphinx-doc.org/), run:
+
+```
+sphinx-build -b html docs/ build/
+```
+
+# Examples
+
+For examples, see the [examples](https://github.com/gunthercox/ChatterBot/tree/master/examples)
+directory in this project's git repository.
+
+There is also an example [Django project using ChatterBot](https://github.com/gunthercox/ChatterBot/tree/master/examples), as well as an example [Flask project using ChatterBot](https://github.com/chamkank/flask-chatterbot).
+
+# History
+
+See release notes for changes https://github.com/gunthercox/ChatterBot/releases
+
+# Development pattern for contributors
+
+1. [Create a fork](https://help.github.com/articles/fork-a-repo/) of
+   the [main ChatterBot repository](https://github.com/gunthercox/ChatterBot) on GitHub.
+2. Make your changes in a branch named something different from `master`, e.g. create
+   a new branch `my-pull-request`.
+3. [Create a pull request](https://help.github.com/articles/creating-a-pull-request/).
+4. Please follow the [Python style guide for PEP-8](https://www.python.org/dev/peps/pep-0008/).
+5. Use the projects [built-in automated testing](https://chatterbot.readthedocs.io/en/latest/testing.html).
+   to help make sure that your contribution is free from errors.
+
+# License
+
+ChatterBot is licensed under the [BSD 3-clause license](https://opensource.org/licenses/BSD-3-Clause).
