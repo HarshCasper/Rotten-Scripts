@@ -1,0 +1,3 @@
+Libraries which will be required and need to be installed are:
+ 
+1) bs4 library
