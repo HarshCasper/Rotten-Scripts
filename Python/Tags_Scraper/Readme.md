@@ -1,6 +1,6 @@
 # Introduction
 
-Tags Scraper is working set of Python scripts which crawls over the URLs of Google Searches and gives out the result of most frequently used words by webpages of the search result. Having idea regarding the most used keywords can help in optimising 
+Tags Scraper is working set of Python scripts which crawls over the URLs of Google Searches and gives out the result of most frequently used words by webpages of the search result. Having idea regarding the most used keywords can help in optimizing webpage for organic indexing in search results
 
 # Description
 
