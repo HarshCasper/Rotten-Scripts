@@ -3,6 +3,8 @@ A Python Script to implement Caesar Cipher. The technique is really basic.
 # It shifts every character by a certain number (Shift Key)
 # This number is secret and only the sender, receiver knows it.
 # Using Such a Key, the message can be easily decoded as well.
+
+# This Script Focuses on Encryption Part
 """
 
 
@@ -44,12 +46,3 @@ if __name__ == "__main__":
     print('Text before Encryption: ', imput_string)
     print('Shift Key: ', shift)
     print('Encrypted text: ', cipher(imput_string, shift))
-
-'''
-Sample Output:
-Enter the text to be encrypted: Manchester is BLUE
-Enter the shift key: 5
-Text before Encryption:  Manchester is BLUE
-Shift Key:  5
-Encrypted text:  Rfshmjxyjw nx GQZJ
-'''
