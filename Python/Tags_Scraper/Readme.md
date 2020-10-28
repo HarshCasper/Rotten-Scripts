@@ -26,3 +26,5 @@ the driver module. Run in in the CLI or in IDE.
 ![searching](https://github.com/GoswamiTushar/Rotten-Scripts/blob/master/Python/Tags_Scraper/images/query.png)
 
 ![results](https://github.com/GoswamiTushar/Rotten-Scripts/blob/master/Python/Tags_Scraper/images/result.png)
+
+- This will create a keywordsData.txt where you can find the top keywords used in different tags.
