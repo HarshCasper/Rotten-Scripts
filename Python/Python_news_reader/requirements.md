@@ -8,3 +8,5 @@ open the command promt in your machine and type 'pip install pywin32' to install
 
 ### 3. Install requests module
 open the command promt in your machine and type 'pip install requests' to install requests module.
+
+#### Now you are good to go!
