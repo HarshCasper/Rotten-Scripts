@@ -1,0 +1,11 @@
+
+        TOP 20 Alternative Tag Data : <class 'list'>
+
+
+        TOP 20 Title Tag Data : [('Google', 14), ('to', 12), ('Data', 11), ('Web', 10), ('Scrape', 9), ('Scraper', 8), ('Scraping', 8), ('How', 8), ('search', 7), ('2020', 6), ('google', 6), ('for', 5), ('from', 5), ('a', 5), ('scraper', 5), ('Results', 4), ('Python', 4), ('·', 4), ('scraping', 4), ('in', 4)]
+
+
+        TOP 20 H2 Tag Data : [('of', 17), ('to', 15), ('Data', 11), ('a', 11), ('The', 10), ('the', 10), ('and', 10), ('with', 8), ('from', 8), ('How', 8), ('by', 7), ('Search', 7), ('scraper', 7), ('More', 6), ('Python', 6), ('for', 6), ('Google', 6), ('Scrape', 6), ('What', 6), ('robots.txt', 6)]
+
+
+        TOP 20 H3 Tag Data : [('Google', 30), ('in', 20), ('Data', 19), ('for', 18), ('to', 17), ('Search', 17), ('and', 16), ('API', 14), ('robots.txt', 13), ('Scraper', 12), ('file', 10), ('access', 9), ('from', 8), ('Extractor', 8), ('a', 7), ('Scraping', 7), ('Software', 7), ('class', 7), ('have', 7), ('Web', 6)]

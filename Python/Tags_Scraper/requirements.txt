@@ -1,0 +1,6 @@
+beautifulsoup4==4.8.2
+bs4==0.0.1
+html5lib==1.1
+oauth==1.0.1
+oauth2==1.9.0.post1
+oauthlib==3.1.0
