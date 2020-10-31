@@ -3,7 +3,7 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  
 
-[![Built Jupyter](https://img.shields.io/badge/Built%20Using-Jupyter-orange?style=for-the-badge&logo=Jupyter)]()
+[![Built Jupyter](https://img.shields.io/badge/Built%20Using-Jupyter-orange?style=for-the-badge&logo=Jupyter)](table_convert.ipynb)
 
 *This README explains various things that one must know before using the script.* **KINDLY** *go through the whole file.*  
   
