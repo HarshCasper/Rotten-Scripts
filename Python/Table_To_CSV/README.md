@@ -21,7 +21,7 @@ All the steps are properly mentioned as comments in the script.
 
 ## Dependency
 
-This script has multiple dependencies, see [requiremnts.txt](requirements.txt). Most Notable ones are-
+This script has multiple dependencies, see [requirements.txt](requirements.txt). Most Notable ones are-
 
 1. [Numpy](https://numpy.org/) 
 2. [Pandas](https://pandas.pydata.org/)

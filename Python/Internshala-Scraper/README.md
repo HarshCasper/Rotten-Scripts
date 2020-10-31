@@ -1,4 +1,4 @@
-## Internshapa Scraper
+## Internshala Scraper
 
 Select field, select number of pages and the script saves internships to a csv.
 

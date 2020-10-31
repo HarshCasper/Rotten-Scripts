@@ -32,7 +32,7 @@ git clone <URL here>
 ```
 cd <path to the cloned folder>
 ```
-#### Step 3: Install the dependancies
+#### Step 3: Install the dependencies
 ```
 npm install 
 ```
