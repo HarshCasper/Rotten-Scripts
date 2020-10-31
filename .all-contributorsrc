@@ -286,6 +286,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "CSY54",
+      "name": "CSY54",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/18496305?v=4",
+      "profile": "https://csy54.github.io/",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
