@@ -249,6 +249,8 @@ cmake-build-*/
 .pytype/
 
 ### VisualStudioCode ###
+
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -289,3 +291,7 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,python,macos,linux,go,visualstudiocode
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
+
+
+# Chrome driver
+chromedriver.exe
