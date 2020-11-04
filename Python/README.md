@@ -107,3 +107,6 @@ S. No | Name of Script | Directory Link |  Author
 95 | PDF tables extractor | https://github.com/rutujadhanawade/Rotten-Scripts/tree/imdb/Python/pdf_tables_extractor | [Rutuja Dhanawade](https://github.com/rutujadhanawade)
 96 | Imdb Top movies scraper | https://github.com/rutujadhanawade/Rotten-Scripts/tree/imdb/Python/IMDB%20TOP%20MOVIES | [Rutuja Dhanawade](https://github.com/rutujadhanawade)
 97 | Torrent to Google Drive | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Torrent_To_GoogleDrive | [Vybhav Chaturvedi](https://github.com/vybhav72954)
+98 | Audio Format Converter | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Audio_Format_Converter | [Vybhav Chaturvedi](https://github.com/vybhav72954)
+99 | Caesar Cipher | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Caesar_Cipher | [Vybhav Chaturvedi](https://github.com/vybhav72954)
+100 | Table to CSV | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Table_To_CSV | [Vybhav Chaturvedi](https://github.com/vybhav72954)
