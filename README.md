@@ -11,7 +11,7 @@
 [![GitHub issues closed](https://img.shields.io/github/issues-closed/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/pulls)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/pulls?q=is%3Apr+is%3Aclosed)
-
+![GitHub repo size](https://img.shields.io/github/repo-size/HarshCasper/Rotten-Scripts?color=yellow)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
