@@ -1,6 +1,9 @@
-""" Simple backup script which just creates the root structure in an other
-folder and syncs everything which recursively lies within one of the source
-folders. For files bigger than a threshold they are first gziped."""
+"""
+A basic Backup script, that can sync all the files in a folder to a different folder
+ultimately creating a backup of the main folder.
+Uses MultiThreading for additional speed. Takes a Threshold as user input and compresses
+the file bigger than threshold using gzip.
+"""
 
 import argparse
 import gzip
@@ -106,10 +109,5 @@ if __name__ == '__main__':
 
 """
 Example Usage-
-> python Auto_Backup.py --target ./Backup_Folder --source ./Source_Folder
-"""
-
-"""
-Example Usage-
-> python Auto_Backup.py --target ./Backup_Folder --source ./Source_Folder
+> python Auto_Backup.py --target ./Backup_Folder --source ./Source_Folder -c Threshold
 """
