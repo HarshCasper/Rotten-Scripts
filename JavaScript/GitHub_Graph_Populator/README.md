@@ -4,7 +4,7 @@ A simple JavaScript script to manipulate timestamps of GitHub contribution graph
 
 # Usage
 
-- Create a private repository in your account(if you don't want everone to know that you are making fake commits)
+- Create a private repository in your account(if you don't want everyone to know that you are making fake commits)
 - Clone this repository and your private repository on your device
 - Copy `GitHub Graph Populator` folder contents to your private cloned repository
 - Open command line interface (CLI) and run

@@ -2,7 +2,7 @@
 
 ## About Script
 
-Comments Plays an important role while writing effecient and clean code. Comments provide a great understanding of what is happening in the code and provides better readability. while working on big codebases a lot of comments are present. To automate fetching of comments from source file for documentation and other purposes this script is made
+Comments Plays an important role while writing efficient and clean code. Comments provide a great understanding of what is happening in the code and provides better readability. while working on big codebases a lot of comments are present. To automate fetching of comments from source file for documentation and other purposes this script is made
 
 ## To run the code
 

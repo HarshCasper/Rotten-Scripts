@@ -1,4 +1,4 @@
-# Cricbuzz srapper
+# Cricbuzz scrapper
 
  This python script will scrap [cricbuzz](www.cricbuzz.com) to get live scores.
 

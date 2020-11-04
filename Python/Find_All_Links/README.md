@@ -13,5 +13,4 @@ https://github-cloud.s3.amazonaws.com
 https://user-images.githubusercontent.com/
 https://github.githubassets.com/assets/frameworks-next-33eaceaeba85d4949f45eb897becf7b5.css
 https://github.githubassets.com/assets/site-next-7dbb92872a8f95d6138b81f09e806b04.css
-...
 ```

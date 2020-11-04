@@ -1,6 +1,6 @@
 # Instagram Profile Pic Downloader
 
-This Script helps to download the Instagram profile pictures with the help of Instagarm Handlers
+This Script helps to download the Instagram profile pictures with the help of Instagram Handlers
 
 ### Environment Setup
 
