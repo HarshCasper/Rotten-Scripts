@@ -1,0 +1,23 @@
+name: Labeling Issues
+on:
+  issues:
+    types: [opened, edited]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Renato66/auto-label@v2
+        with:
+          # Change this to "repo-token: ${{ secrets.GITHUB_USER_TOKEN }}" if you want message to say that User Assigned issue rather than bot
+          # Generate a Secret GITHUB_USER_TOKEN beforehand
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # The keywords in comments are ignored
+          ignore-comments: true
+          # Keywords - [In JSON Format]
+          # Syntax - "Label":["Synonym_1","Synonym_2"]
+          # Mind the spaces in Syntax
+          labels-synonyms: '{"bug":["error","need fix","not working","bug","Bug","BUG"],"enhancement":["upgrade","feature","enhancement"],"question":["help"],"BASH":["Bash","bash","BASH"],"JavaScript":["JavaScript","JAVASCRIPT","Javascript","javascript","JS","js"],"Python":["Python","PYTHON","python"],"Easy":["easy","EASY","Easy"],"Medium":["Medium","medium","MEDIUM"],"Urgent":["urgent","URGENT","Urgent"],"Golang":["Go","GO","Golang","GOLANG"],"Hard":["Hard","hard","HARD"],"documentation":["documentation","Documentation"],"No-Code":["No Code"],"SLoP":["SLoP"]}'
+          # Labels that cant be declared by this function
+          labels-not-allowed: '["good first issue","invalid","Urgent","Priority","Announcement","High Priority","Not Needed","plagiarism","spam"]'
+          # Default abel, Dont change without opening an issue
+          default-labels: '["Up-For-Grab"]'
