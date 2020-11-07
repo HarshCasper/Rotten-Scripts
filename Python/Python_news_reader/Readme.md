@@ -7,13 +7,20 @@ News API is a simple HTTP REST API for searching and retrieving live articles fr
 
 
 ## -Steps to run this script on your local machine:
-#### 1. Open the requirements.md and install modules that mentioned in the file.
-#### 2. Now, clone this folder 'Rotten-Scripts/Python/Python_news_reader' in your local machine.
-#### 3. Visit newsapi.org and copy your API key from there.
-#### 4. Open the file 'Url.txt' from 'Rotten-Scripts/Python/Python_news_reader' and paste your API key in the last of the link (i.e in the place of "Paste_your_API_key_here") and        save the "Url.txt" file by pressing ctrl+s command.
-#### 5. Now, open the "Python news reader.py" file and enjoye listening the top news from all over the world.
+-Step 1. Firstly, download the file "Rotten-Scripts/Python/Python_news_reader" on your machine.
+-Step 2. In the same downloaded directory, open the Window PowerShell and run the following command to install the dependencies:
+```
+pip install -r requirements.txt
 
+```
+-Step 3. Make a file of **.env** extension and make a **API_Key=** variable in that file(Take reference from **.env.example** file) and save the file.
+-Step 4. Visit newsapi.org and copy your API key from there. Now assign your API Key to enviroment variable that you made previously in **.env** file and save the file.
+i.e
+```
+API_Key=YOUR_API_URL_HERE
 
+```
+-Step 5. Make sure you have a proper internet connection. Now, you are all set to use this script. Open the "Python news reader.py" file to run the script.
 
-
+*Now, Enjoy listening to top news from all over the world.*
 
