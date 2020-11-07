@@ -5,17 +5,20 @@ News API is a simple and easy-to-use API that returns JSON metadata for headline
 Visit newsapi.org for documentation and for your API key
 '''
 
+import os
 import time
 from win32com.client import Dispatch
 import requests
+from dotenv import load_dotenv
 
-file = open("Url.txt", 'r+')
-#Fetching the link with API key from Url.txt file.
-url_from_file = file.read()
+load_dotenv()
 
-def func(url_from_file):
+api_Key = os.getenv("API_Key")
+#Fetching API key from .env file.
+main_news_url = f"http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey={api_Key}"
 
-    url = (url_from_file)
+def func(url):
+
     response = requests.get(url)
     json_news_content = response.json()
     print(json_news_content)
@@ -45,6 +48,7 @@ def func(url_from_file):
 
 if __name__ == "__main__":
 
-    func(url_from_file)
+    func(main_news_url)
 
 #End_of_program
+
