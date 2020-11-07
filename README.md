@@ -101,7 +101,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://csy54.github.io/"><img src="https://avatars1.githubusercontent.com/u/18496305?v=4" width="100px;" alt=""/><br /><sub><b>CSY54</b></sub></a><br /><a href="#maintenance-CSY54" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/KmrAnish04"><img src="https://avatars0.githubusercontent.com/u/58399776?v=4" width="100px;" alt=""/><br /><sub><b>Anish Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=KmrAnish04" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/KmrAnish04"><img src="https://avatars0.githubusercontent.com/u/58399776?v=4" width="100px;" alt=""/><br /><sub><b>Anish Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=KmrAnish04" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=KmrAnish04" title="Documentation">📖</a></td>
   </tr>
 </table>
 
