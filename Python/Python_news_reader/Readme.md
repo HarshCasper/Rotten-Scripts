@@ -14,7 +14,7 @@ News API is a simple HTTP REST API for searching and retrieving live articles fr
 ```
 pip install -r requirements.txt
 ```
--Step 3. Make a file of **.env** extension and make a **API_Key=** variable in that file(Take reference from **.env.example** file) and save that file.
+-Step 3. Make a file of **.env** extension and make a **API_Key=** variable in that file (Take reference from **.env.example** file.) and save that file.
 
 -Step 4. Visit newsapi.org and copy your API key from there. Now assign your API Key to enviroment variable that you made previously in **.env** file and save the file.
 i.e
