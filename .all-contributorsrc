@@ -295,6 +295,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "KmrAnish04",
+      "name": "Anish Kumar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58399776?v=4",
+      "profile": "https://github.com/KmrAnish04",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
