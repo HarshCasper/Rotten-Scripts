@@ -1,0 +1,17 @@
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.slider{
+  width: 90%;
+}
+
+.channel-desc-modal-content{
+  margin-top: 100px;
+  width: 600px;
+}
