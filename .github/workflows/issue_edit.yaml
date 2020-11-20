@@ -1,7 +1,7 @@
 name: Labeling Issues
 on:
   issues:
-    types: [opened]
+    types: [edited]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,5 +19,3 @@ jobs:
           labels-synonyms: '{"bug":["error","need fix","not working","bug","Bug","BUG"],"enhancement":["upgrade","feature","enhancement"],"question":["help"],"BASH":["Bash","bash","BASH"],"JavaScript":["JavaScript","JAVASCRIPT","Javascript","javascript","JS","js"],"Python":["Python","PYTHON","python"],"Urgent":["urgent","URGENT","Urgent"],"Golang":["Golang","GOLANG"],"documentation":["documentation","Documentation"],"No-Code":["No Code"],"SLoP":["SLoP"]}'
           # Labels that cant be declared by this function
           labels-not-allowed: '["good first issue","invalid","Urgent","Priority","Announcement","High Priority","Not Needed","plagiarism","spam","Assigned","Easy","Hard","Medium"]'
-          # Default label, Dont change without opening an issue
-          default-labels: '["Up-For-Grab"]'
