@@ -1,0 +1,25 @@
+name: Assign
+
+on:
+  schedule:
+    - cron: '*/59 * * * *'
+  issue_comment:
+    types: [created]
+
+jobs:
+  slash_assign:
+    # If the acton was triggered by a new comment that starts with `/assign`
+    # or a on a schedule
+    if: >
+      (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/assign')) ||
+      github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign the user or unassign stale assignments
+        uses: JasonEtco/slash-assign-action@v0.0.3
+        with:
+          required_label: Up-For-Grab
+          assigned_label: Assigned
+          days_until_warning: 7
+          days_until_unassign: 14
+          stale_assignment_label: Open
