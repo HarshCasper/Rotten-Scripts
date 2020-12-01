@@ -8,7 +8,7 @@ var T = new Twit({
 })
  
 // post tweet 
-var text = "Hey there!! "
+var text = "ENTER_TWEET_TEXT"
 T.post('statuses/update', { status: text }, function(err, data, response) {
   console.log("tweeted", text)
 })
@@ -16,14 +16,14 @@ T.post('statuses/update', { status: text }, function(err, data, response) {
 //
 // post a tweet with media
 //
-var imagePath ='gh.png'
-var caption = 'Every flower is a soul blossoming in nature.'
+var imagePath ='ENTER_IMAGE_PATH'
+var caption = 'ENTER_CAPTION'
 
 var b64content = fs.readFileSync(imagePath, { encoding: 'base64' })
 
 T.post('media/upload', { media_data: b64content }, function (err, data, response) {
   var mediaIdStr = data.media_id_string
-  var altText = "Beautiful small flowers"
+  var altText = "ENTER_ALT_TEXT"
   var meta_params = { media_id: mediaIdStr, alt_text: { text: altText } }
  
   T.post('media/metadata/create', meta_params, function (err, data, response) {
