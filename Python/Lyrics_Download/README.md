@@ -16,6 +16,10 @@ Lyrics of Top 3 Songs by coldplay -
 
 ![](img/lyrics.PNG)
 
+Resulting Text File - 
+
+![](img/result.PNG)
+
 ## Author(s)  
   
 Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/).
