@@ -4,7 +4,7 @@ A lot of times, a remote host, gets bound to a port and starts running a process
 I made a set of two scripts, in order to solve the mess. One to check the currently active ports, another one to kill the process running on them.
 
 The Script uses `psutil` module to solve the purpose, unarguably the `lsof` package provided in Linux is way better.
-But as it is not cross platform, I have hardcoded using `psutil`.
+But as it is not cross platform, I have hardcoded using [`psutil`](https://psutil.readthedocs.io/en/latest/).
 ## Setup instructions  
   
 There are 2 scripts.  
@@ -14,6 +14,7 @@ There are 2 scripts.
 1. Setup a Virtual Environment.
 1. Install dependencies using `pip3 install -r requirements.txt`
 1. Go through the comments and the interactive options. 
+1. For `ports_kill.py` Sample - `python3 ports_kill.py <port number>`
   
 ## Output  
   
