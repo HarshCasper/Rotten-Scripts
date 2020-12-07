@@ -5,6 +5,8 @@ import numpy as np
 cap = cv2.VideoCapture(0)
 
 #Defining upper and lower ranges for yellow color
+#If you don't have a yellow marker feel free to change the RGB values
+
 Lower = np.array([20, 100, 100])
 Upper = np.array([30, 255, 255])
 
