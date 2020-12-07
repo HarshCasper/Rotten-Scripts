@@ -1,6 +1,9 @@
+# shutil is used to save image locally
 import requests
-import shutil # to save image locally
-imagePath=input("Please enter the path of image to toonify : ")
+import sys 
+import shutil 
+
+imagePath=sys.argv[1]
 api_key=input("Please enter your api key")
 r = requests.post(
     "https://api.deepai.org/api/toonify",
