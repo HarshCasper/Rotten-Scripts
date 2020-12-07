@@ -110,3 +110,4 @@ S. No | Name of Script | Directory Link |  Author
 98 | Audio Format Converter | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Audio_Format_Converter | [Vybhav Chaturvedi](https://github.com/vybhav72954)
 99 | Caesar Cipher | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Caesar_Cipher | [Vybhav Chaturvedi](https://github.com/vybhav72954)
 100 | Table to CSV | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Table_To_CSV | [Vybhav Chaturvedi](https://github.com/vybhav72954)
+101 | TSV to CSV | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/TSV%20to%20CSV | [Siddhant Khare](https://github.com/Siddhant-K-code)
