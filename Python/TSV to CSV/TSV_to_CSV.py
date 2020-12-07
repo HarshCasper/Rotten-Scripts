@@ -6,7 +6,8 @@ tsv_content = tsv_file.read()
 
 csv_content = tsv_content.replace("\t", ",")
 
-csv_file = open('converted-csv.csv', 'w')
+file_name = input("Enter the file name with extension name .csv : ")
+csv_file = open(file_name, 'w')
 
 csv_file.write(csv_content)
 csv_file.close()
