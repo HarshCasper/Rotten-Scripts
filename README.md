@@ -1,17 +1,22 @@
 # Rotten Scripts
 
+<!-- Banner -->
+<div class="container-fluid">
+  <img class="mx-auto" src="assets/banner.png">
+</div>
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-30-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
-[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=2592000)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
+[![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
 
 
 [![GitHub issues](https://img.shields.io/github/issues/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/issues)
 [![GitHub issues closed](https://img.shields.io/github/issues-closed/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/pulls)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/pulls?q=is%3Apr+is%3Aclosed)
-
+![GitHub repo size](https://img.shields.io/github/repo-size/HarshCasper/Rotten-Scripts?color=yellow)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -93,7 +98,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/bagofcodes"><img src="https://avatars0.githubusercontent.com/u/37397899?v=4" width="100px;" alt=""/><br /><sub><b>ANSHUMALI SHAW</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=bagofcodes" title="Documentation">📖</a></td>
     <td align="center"><a href="http://linkedin.com/in/afroz-chakure-489780168"><img src="https://avatars3.githubusercontent.com/u/40469121?v=4" width="100px;" alt=""/><br /><sub><b>Afroz Chakure</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=afrozchakure" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/rohankumawat"><img src="https://avatars0.githubusercontent.com/u/51725975?v=4" width="100px;" alt=""/><br /><sub><b>Rohan Kumawat</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=rohankumawat" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/narayan2111"><img src="https://avatars2.githubusercontent.com/u/66173390?v=4" width="100px;" alt=""/><br /><sub><b>Lakshmi Narayan Dwivedi</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=narayan2111" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=narayan2111" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/frbimo"><img src="https://avatars1.githubusercontent.com/u/26115956?v=4" width="100px;" alt=""/><br /><sub><b>frbimo</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=frbimo" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=frbimo" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/gupta-piyush19"><img src="https://avatars0.githubusercontent.com/u/56182734?v=4" width="100px;" alt=""/><br /><sub><b>Piyush Gupta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=gupta-piyush19" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=gupta-piyush19" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/sohamsshah"><img src="https://avatars0.githubusercontent.com/u/47717492?v=4" width="100px;" alt=""/><br /><sub><b>Soham Shah</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sohamsshah" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sohamsshah" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://csy54.github.io/"><img src="https://avatars1.githubusercontent.com/u/18496305?v=4" width="100px;" alt=""/><br /><sub><b>CSY54</b></sub></a><br /><a href="#maintenance-CSY54" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/KmrAnish04"><img src="https://avatars0.githubusercontent.com/u/58399776?v=4" width="100px;" alt=""/><br /><sub><b>Anish Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=KmrAnish04" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=KmrAnish04" title="Documentation">📖</a></td>
   </tr>
 </table>
 
@@ -111,3 +124,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 | <a href="https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
 
 > **_Need help? Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**
+
+## Stargazers over time 🤗
+
+[![Stargazers over time](https://starchart.cc/HarshCasper/Rotten-Scripts.svg)](https://starchart.cc/HarshCasper/Rotten-Scripts)

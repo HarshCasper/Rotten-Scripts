@@ -5,17 +5,17 @@ I guess everyone who have used github or is using Github, then you have probably
 Well, here's how you can do that.  
 Let's get started!
 
-## Prequisites
+## Prerequisites
 
 1. json, though it is a built in function in Python, so no need to install it.
 
-   **Use of `json` in Python:** The JSON module is mainly used to convert the python dictionary above into a JSON string that can be written into a file. While the JSON module will convert strings to Python datatypes, normally the JSON functions are used to read and write directly from JSON files
+   **Use of `json` in Python:** The JSON module is mainly used to convert the python dictionary above into a JSON string that can be written into a file. While the JSON module will convert strings to Python datatype, normally the JSON functions are used to read and write directly from JSON files
 
 2. `pip install requests`
 
    **Use of `requests` module in Python:** The requests module allows you to send HTTP requests using Python. The HTTP request returns a Response Object with all the response data (content, encoding, status, etc).
 
-3. And ofcourse, a Github account, if you don't have one, then make one from [here](https://github.com).
+3. And of course, a Github account, if you don't have one, then make one from [here](https://github.com).
 
 ## Understanding the Code
 

@@ -1,11 +1,11 @@
 # Instagram Profile Pic Downloader
 
-This Script helps to download the Instagram profile pictures with the help of Instagarm Handlers
+This Script helps to download the Instagram profile pictures with the help of Instagram Handlers
 
 ### Environment Setup
 
 1. Create a Virtual Environment.
-2. Install the requiremnts by using `pip3 install -r requiremnts.txt`
+2. Install the requirements by using `pip3 install -r requirements.txt`
 3. Hurray.! You're ready to use the instagram bot
 
 ### Running the Script

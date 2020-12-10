@@ -27,8 +27,8 @@ Before running the script, just run the command
 
 `pip install -r requirements.txt`
 
-and all dependices will be installed
+and all dependencies will be installed
 
 # Sample 
 
-![](preview.png)
+![](preview.PNG)

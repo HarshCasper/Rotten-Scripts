@@ -239,10 +239,68 @@
       ]
     },
     {
+      "login": "rohankumawat",
+      "name": "Rohan Kumawat",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/51725975?v=4",
+      "profile": "https://github.com/rohankumawat",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
       "login": "narayan2111",
       "name": "Lakshmi Narayan Dwivedi",
       "avatar_url": "https://avatars2.githubusercontent.com/u/66173390?v=4",
       "profile": "https://github.com/narayan2111",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "frbimo",
+      "name": "frbimo",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26115956?v=4",
+      "profile": "https://github.com/frbimo",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "gupta-piyush19",
+      "name": "Piyush Gupta",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/56182734?v=4",
+      "profile": "https://github.com/gupta-piyush19",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "sohamsshah",
+      "name": "Soham Shah",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/47717492?v=4",
+      "profile": "https://github.com/sohamsshah",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "CSY54",
+      "name": "CSY54",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/18496305?v=4",
+      "profile": "https://csy54.github.io/",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "KmrAnish04",
+      "name": "Anish Kumar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58399776?v=4",
+      "profile": "https://github.com/KmrAnish04",
       "contributions": [
         "code",
         "doc"

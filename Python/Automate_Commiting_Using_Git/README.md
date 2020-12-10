@@ -2,7 +2,7 @@
 
 ![image](https://steadylearner.com/static/images/post/Python/python-github-by-Steadylearner.png)
 
-Are you tired of adding, commiting and pushing you code everytime you change it? If so, you can use this Python script to automate this boring stuff.
+Are you tired of adding, committing and pushing you code everytime you change it? If so, you can use this Python script to automate this boring stuff.
 This code is the simplest one to automate the task.
 
 ## Understanding the code
@@ -25,7 +25,7 @@ _subprocess.getoutput:_ Return output (stdout and stderr) of executing cmd in a 
 message = input("Enter commit message")
 ```
 
-Now, you can simply understand that we'e taking an input message to give it to the commit message in the next command.
+Now, you can simply understand that we are taking an input message to give it to the commit message in the next command.
 
 ```
 subprocess.getoutput('git commit -m ' + message)
@@ -44,4 +44,4 @@ subprocess.getoutput('git push origin ' + branchname)
 ```
 
 Finally, to push our code we are using, `git push origin <branch-name>`.  
-You can also add a variable to the remoteurl for defining the origin, but by default it is origin.
+You can also add a variable to the remote url for defining the origin, but by default it is origin.
