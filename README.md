@@ -6,7 +6,7 @@
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-30-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-31-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -107,6 +107,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://csy54.github.io/"><img src="https://avatars1.githubusercontent.com/u/18496305?v=4" width="100px;" alt=""/><br /><sub><b>CSY54</b></sub></a><br /><a href="#maintenance-CSY54" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/KmrAnish04"><img src="https://avatars0.githubusercontent.com/u/58399776?v=4" width="100px;" alt=""/><br /><sub><b>Anish Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=KmrAnish04" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=KmrAnish04" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://prathyusha-guduru.github.io/Prathyusha-Portfolio/"><img src="https://avatars2.githubusercontent.com/u/59722558?v=4" width="100px;" alt=""/><br /><sub><b>Prathyusha Guduru</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Prathyusha-Guduru" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Prathyusha-Guduru" title="Documentation">📖</a></td>
   </tr>
 </table>
 
