@@ -11,6 +11,7 @@ There are 2 functions in the Script.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This function converts the provided audio file
 into a file with desired format. 
 - parameters
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This can be used to find the Sample Rate of 
 the Audio file.
 

@@ -1,6 +1,6 @@
 ### Audio Converter
 
-This Automation Script is used to convert the any type of video file into audio file. It supports the various audio and video formats for the conversion.
+This Automation Script is used to convert any type of video file into an audio file. It supports the various audio and video formats for the conversion.
 
 ### Setup
 

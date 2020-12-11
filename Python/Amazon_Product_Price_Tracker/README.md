@@ -2,7 +2,7 @@
 
 - This script built in Python is an Amazon Price Tracker.
 - The user enters :
-  - The URL of the product of which he would like to track the price of.
+  - The URL of the product of which he would like to track of the price.
   - His/Her budget for the product.
   - His/Her Email credentials.
 - The script runs continuously and checks on the price of the product every 12 hours.
