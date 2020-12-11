@@ -2,9 +2,10 @@
 import requests
 import sys 
 import shutil 
+from decouple import config
 
 imagePath=sys.argv[1]
-api_key=input("Please enter your api key")
+api_key=config("API_KEY")
 r = requests.post(
     "https://api.deepai.org/api/toonify",
     files={
