@@ -1,4 +1,4 @@
-# STUDENT CODE-IN (SCI)
+<h1 align="center"> STUDENT CODE-IN (SCI) </h1>
 
 ## About SCI
 
@@ -8,3 +8,4 @@ Student Code-In is a global program that helps students grow with Open Source Co
   <a href="https://scodein.tech/">
     <img src="https://avatars1.githubusercontent.com/u/63442932?s=200&v=4" alt="Logo">
   </a>
+</p>

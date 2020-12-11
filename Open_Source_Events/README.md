@@ -6,3 +6,5 @@ List of Open Source Events in which we have participated.
 - STUDENT CODE-IN (SCI)
 - Contributor's Hack 2020 (CH20)
 - Semester Long Projects (SLoP)
+- Kharagpur Winter of Code (KWOC)
+- NJACK Winter of Code (NWOC)
