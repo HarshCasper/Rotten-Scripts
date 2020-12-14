@@ -46,26 +46,38 @@ if __name__ == "__main__":
         config = yaml.safe_load(fp)
 
     update_frequency = config["update_frequency"]  # Uodate time in seconds
+    
+    # Update time in seconds
     pie_chart_update_frequency = config[
         "pie_chart_update_frequency"
-    ]  # Uodate time in seconds
-    applist = []  # List that stores all apps names
-    winlist = []  # List that stores corresponding information to those apps in applist
-
-    logdir = os.getcwd()  # Logs folder within the same working directory
+    ]
+    # List that stores all apps names
+    applist = []
+    
+    # List that stores corresponding information to those apps in applist
+    winlist = []
+    
+    # Logs folder within the same working directory
+    logdir = os.getcwd()
 
     while True:
-        time.sleep(update_frequency)  # Wait for the update frequency
+        # Wait for the update frequency
+        time.sleep(update_frequency)
+
+        # Get the current opened window process id
         frpid = execute_terminal_command(
             ["xdotool", "getactivewindow", "getwindowpid"]
-        )  # Get the current opened window process id
+        )
+
+        # Get the current opened window name
         frname = execute_terminal_command(
             ["xdotool", "getactivewindow", "getwindowname"]
-        )  # Get the current opened window name
+        )
 
+        # Obtain the app name using ps terminal command
         app = execute_terminal_command(
             ["ps", "-p", frpid, "-o", "comm="]
-        )  # Obtain the app name using ps terminal command
+        )
 
         # adding the app to the app list
         if not app in applist:
@@ -78,6 +90,4 @@ if __name__ == "__main__":
                 winlist[checklist.index(frname)][2] + 1 * update_frequency
             )
 
-        # TODO: Make pie-chart update is based on pie_chart_update_frequency variable
-        # TODO: Organize pie charts and maybe don't delete previous pie charts and appreviate from them instead
         update_pie_chart(applist, [x[-1] for x in winlist], logdir)
