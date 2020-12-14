@@ -1,4 +1,4 @@
-# CONTRIBUTOR's HACK 2020 (CH20)
+<h1 align="center"> CONTRIBUTOR's HACK 2020 (CH20) </h1>
 
 ## About CH20
 
@@ -9,3 +9,4 @@ Contributor's Hack 2020 is a global program that helps students grow with **OPEN
   <a href="https://hakincodes.tech/">
     <img src="https://user-images.githubusercontent.com/54139847/87952512-882a5600-cac7-11ea-939d-8304a641d8a9.png" alt="Logo">
   </a>
+</p>

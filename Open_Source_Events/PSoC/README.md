@@ -1,4 +1,4 @@
-# PClub Summer of Code (PSoC)
+<h1 align="center"> PClub Summer of Code (PSoC) </h1>
 
 ## About PSoC
 
@@ -10,3 +10,4 @@ PSoC is targeted at audience who want to dwell in OpenSource Development as well
   <a href="http://www.pclubsummerofcode.in">
     <img src="https://avatars2.githubusercontent.com/u/32352672?s=200&v=4" alt="Logo">
   </a>
+</p>

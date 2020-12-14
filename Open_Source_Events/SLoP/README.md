@@ -1,5 +1,4 @@
-
-# Semester Long Projects (SLoP)  
+<h1 align="center"> Semester Long Projects (SLoP) </h1>
   
 ## About SLoP  
   
@@ -11,3 +10,4 @@ The objective is to increase the development culture and involvement of students
   <a href="https://slop.dscdaiict.in/">  
     <img src="https://avatars0.githubusercontent.com/u/16758973?v=4&s=200" alt="Logo">  
   </a>
+</p>
