@@ -1,6 +1,6 @@
 # ASCIIfy your image
 
-This python script converts the input image to an ascii version of itself. This is achieved by giving different range of grayscale value to different special characters from the ASCII set. The whole image is then converted based on this.
+This python script converts the input image to an ASCII version of itself. This is achieved by giving a different range of grayscale values to different special characters from the ASCII set. The whole image is then converted based on this.
 
 ## Setting up:
 

@@ -1,0 +1,81 @@
+# .github/workflows/lint.yaml
+
+name: PyLint Runner
+
+on: [pull_request]
+  #pull_request:
+  #  branches:
+  #    - master
+  #    - smurfer
+  #    - another
+  #    - again
+
+    #paths:
+    #  - 'Python/**.py'
+    #  - '**/**.py'
+    #  - '!.github/**'
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: ${{github.event.pull_request.head.ref}}
+        repository: ${{github.event.pull_request.head.repo.full_name}}
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+
+    - name: Install Requirements
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint
+    #- name: Paths Changes Filter
+    #  uses: dorny/paths-filter@v2.5.1
+    #  id: changes
+    #  with:
+    #    filters: |
+    #      Python: path
+    #        - '**/**.py'
+
+    - name: Changed Files Exporter
+      id: files
+      uses: futuratrepadeira/changed-files@v3.2.1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        pattern: '^.*\.(md|py)$'
+
+    - name: Detect Files
+      uses: dorny/paths-filter@v2.6.0
+      id: filter
+      with:
+        # Enable listing of files matching each filter.
+        # Paths to files will be available in `${FILTER_NAME}_files` output variable.
+        # Paths will be escaped and space-delimited.
+        # Output is usable as command line argument list in linux shell
+        list-files: shell
+
+        # In this example changed files will be checked by linter.
+        # It doesn't make sense to lint deleted files.
+        # Therefore we specify we are only interested in added or modified files.
+        filters: |
+          python:
+            - added|modified: '**.py'
+    #- name: PyLint Python
+    #  if: ${{ steps.filter.outputs.python == 'true' }}
+    #  run: python pyLint.py --path ${{ steps.filter.outputs.python_files }} --threshold 10
+
+    - name: Run lint check
+      continue-on-error: true
+      env:
+        FILES: '${{ steps.files.outputs.files_updated }} ${{ steps.files.outputs.files_created }}'
+      run: |
+        str='./'
+        echo "The Following files were changed or created:"
+        echo $FILES
+        for FILE in $FILES; do python pyLint.py --path $FILE --threshold 2; done
