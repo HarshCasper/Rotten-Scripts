@@ -20,12 +20,5 @@ python time_tracker.py
 The outpus should be in script directory:
 
 ![pie_chart_example](time_tracking_pie_chart.png)
-#### Steps to create the virtual environment (for windows)
-1. pip install virtualenv
-2. pip install pipenv
-3. pipenv --help (for help)
-4. pipenv install
-5. pipenv shell
-6. pip install the packages
-7. execute the program
+
 
