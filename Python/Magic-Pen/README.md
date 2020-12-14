@@ -7,10 +7,10 @@ Ever dreamed of drawing stuff on the screen just by waving your pen in the air..
 - Clone the folder- Magic-Pen
 - You must have python ,opencv and numpy installed
 - In cmd do:
-  - pip install numpy
-  - pip install opencv-python
+  - `pip install numpy`
+  - `pip install opencv-python`
   - Also check for any package that's need to be installed, on cmd
-  - then run the script in jupyter lab/notebok!
+  - then run the script in jupyter lab/notebook!
 
 
 ![](demo.gif)
