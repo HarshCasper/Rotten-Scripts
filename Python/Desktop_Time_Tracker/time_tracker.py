@@ -46,17 +46,15 @@ if __name__ == "__main__":
         config = yaml.safe_load(fp)
 
     update_frequency = config["update_frequency"]  # Uodate time in seconds
-    
+
     # Update time in seconds
-    pie_chart_update_frequency = config[
-        "pie_chart_update_frequency"
-    ]
+    pie_chart_update_frequency = config["pie_chart_update_frequency"]
     # List that stores all apps names
     applist = []
-    
+
     # List that stores corresponding information to those apps in applist
     winlist = []
-    
+
     # Logs folder within the same working directory
     logdir = os.getcwd()
 
@@ -65,9 +63,7 @@ if __name__ == "__main__":
         time.sleep(update_frequency)
 
         # Get the current opened window process id
-        frpid = execute_terminal_command(
-            ["xdotool", "getactivewindow", "getwindowpid"]
-        )
+        frpid = execute_terminal_command(["xdotool", "getactivewindow", "getwindowpid"])
 
         # Get the current opened window name
         frname = execute_terminal_command(
@@ -75,9 +71,7 @@ if __name__ == "__main__":
         )
 
         # Obtain the app name using ps terminal command
-        app = execute_terminal_command(
-            ["ps", "-p", frpid, "-o", "comm="]
-        )
+        app = execute_terminal_command(["ps", "-p", frpid, "-o", "comm="])
 
         # adding the app to the app list
         if not app in applist:
