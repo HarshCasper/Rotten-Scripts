@@ -9,10 +9,7 @@ This script is written in python and can be used to track user time used on Desk
 ### Installation
 ```bash
 $ sudo apt-get install xdotool
-$ pip install subprocess
-$ pip install time
-$ pip install matplotlib
-$ pip install yaml
+$ pip install -r requirements.txt
 ``` 
 
 ### Usage
