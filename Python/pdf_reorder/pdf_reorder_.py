@@ -8,12 +8,15 @@ from pdfrw import PdfReader, PdfWriter
 def input_and_parse(n):
     print("="*20)
     print("enter the current page and the page you want it to be on seperate values by a comma ',' \n") 
-    lst=[input().split(',') for _ in range(n)]
-    dic={int(curr):int(new) for curr,new in lst}
-    ## now I sort it to the required needs of reorder function
-    lst=list(zip(dic.values(),dic.keys()))
+    # store the input in a list and then convert the input string into 
+    #using map function to convert the data in lists into int values
+    lst=list(map(lambda x:[int(x[0]),int(x[1])],[input().split(',') for _ in range(n)]))
+    ## Swapping the position of the lst values to better parse it in dictionary
+    lst=[[x[1],x[0]] for x in lst]
+    #lst=list(zip([x[1] for x in lst],[x[0] for x in lst]))
     lst.sort(key=lambda x:x[0])
-    dic=dict(lst)
+    dic={curr:new for curr,new in lst}
+    ## now I sort the dic to the required needs of reorder function
     return dic
  
  
@@ -22,12 +25,21 @@ def input_and_parse(n):
 #order
 
 def reorder(path,dic):
+    #create a pdf object using PdfReader that could be read
     pdf_obj = PdfReader(path)
+    #pdf_obj.pages attribute gives the length of the pages in pdf
     total_pages = len(pdf_obj.pages)
+    #Initialising the writer object 
+    #Using this we would create a new modified Pdf
     writer = PdfWriter()
+    #new and old here mean the new position of the "old" page location
+	
     for new,old in dic.items():
+	#indexing pages list
         writer.addpage(pdf_obj.pages[old-1])
         print(f"page{new} added from {old}")
+
+    #accesing the name of the file without .pdf to save it with a new one
     writer.write(path[:-4]+"-modified.pdf")
 
 if __name__=="__main__":
