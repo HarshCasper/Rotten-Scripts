@@ -22,11 +22,11 @@ which takes an input of length of the pdf.
 
 Then using the reorder() function we can get the desired file after rearranging
 
-[See the code here for more information about how the script works]()
+[See the code here for more information about how the script works](https://github.com/Rahul555-droid/Rotten-Scripts/blob/mohta-rahul's-branch/Python/pdf_reorder/pdf_reorder_.py)
 
 Also for testing the script you can make your own pdf using the **generate_pdf.py script
 
 Using this script you will get A pdf with wrong pages like the wrong.pdf in this folder
 In the wrong.pdf file The pages have info about the current page but in wrong order.
 
-[wrong.pdf]()
+[wrong.pdf](https://github.com/Rahul555-droid/Rotten-Scripts/blob/mohta-rahul's-branch/Python/pdf_reorder/wrong.pdf)
