@@ -1,32 +1,34 @@
 
-## A pdf reorder or Rearranging Script
+## A PDF reordering script
 
-#### I used the pdfrw library 
-It is built purely in python
+This scrip can be used for reordering a pdf file which may have pages in wrong order.
 
-A more efficient,faster and non python built alternatives is PyMuPDF.
-The PyMuPDF library can dependency issues hence we will go for a more simpler **pdfrw library
+We used **pdfrw** library for this script 
 
-You can download pdfrw using
-	pip install pdfrw
+A more efficient,faster alternatives is PyMuPDF.
+The PyMuPDF library can have dependency issues with versions of visual C++ hence we used a more simpler library pdfrw
+
+ Download pdfrw using
+	```pip install pdfrw```
 	
-[more information on pdfrw on PyPi page ](https://pypi.org/project/pdfrw/#id25)
+[More information on pdfrw on PyPi page ](https://pypi.org/project/pdfrw/#id25)
 
 
-####Now About the script pdf_reorder.py
+**Now About the script pdf_reorder_.py
 
-It takes path of the file as an Input
-Then it takes current page and the page you want it to be on seperate values by a comma ','
-It parses and sorts the input values by the function input_and_parse(n) 
-which takes an input of length of the pdf.
+* It takes path of the file as an Input.
+* Then it takes current page which is in the wrong order 
+* and the right page no. it should be on seperate values by a comma ',' and line by line.
+  * Example:- 
+	1,2 
+	3,1
+	2,3
+    *here the 1st page in the pdf should be on the 2nd page instead and so on.
 
-Then using the reorder() function we can get the desired file after rearranging
+* The script parses and sorts the input values by the function input_and_parse(n) 
+  which takes no. of pages in pdf file as input.
+* Then using the reorder() function we can get the desired file after rearranging
 
-[See the code here for more information about how the script works](https://github.com/Rahul555-droid/Rotten-Scripts/blob/mohta-rahul's-branch/Python/pdf_reorder/pdf_reorder_.py)
+[See the code here for more information about how the script works](https://github.com/HarshCasper/Rotten-Scripts/Python/pdf_reorder/pdf_reorder_.py)
 
-Also for testing the script you can make your own pdf using the **generate_pdf.py script
-
-Using this script you will get A pdf with wrong pages like the wrong.pdf in this folder
-In the wrong.pdf file The pages have info about the current page but in wrong order.
-
-[wrong.pdf](https://github.com/Rahul555-droid/Rotten-Scripts/blob/mohta-rahul's-branch/Python/pdf_reorder/wrong.pdf)
+Also for testing the script one can use the [wrong.pdf](https://github.com/HarshCasper/Rotten-Scripts/Python/pdf_reorder/wrong.pdf) file. 
