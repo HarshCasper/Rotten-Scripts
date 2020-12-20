@@ -1,11 +1,10 @@
 ##Crypto Currency Converter
  
-**this is a cryptocurrency converter using coinapi
+This is a cryptocurrency converter using coinbase api
 
-###Coinbase API
+* __Coinbase API__
+    
+    *We have used coinbase API to get exchange rates.
+    *getting exchange rates through coinbase API is free and doesn't requires an API key.
 
-I have used coinbase API to get exchange rates.
-getting exchange rates through coinbase API is free and doesn't requires
-an API key
-
-**[More info Here](https://developers.coinbase.com/api/v2?python#get-exchange-rates)
+[More info on coinbase API](https://developers.coinbase.com/api/v2?python#get-exchange-rates)
