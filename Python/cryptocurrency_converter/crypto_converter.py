@@ -9,7 +9,7 @@ def exchange_rates(cryptocurrency):
     """
     This function gets exhange rates.
     The coinbase API returns the JSON for an input cryptocurrency with
-    data or exhangerate of one coin to all known "normal" currencies
+    data or exhangerate of one coin to all known "normal" fiat currencies
     like BTC(input) to INR,USD,etc.
     """
 
@@ -17,7 +17,7 @@ def exchange_rates(cryptocurrency):
     cryptocurrency = cryptocurrency.upper()
 
     # These are the cryptocurrency available currently by the API.
-    # "BTC" is for Bitcoin,"ETH" is for Ethirium and so on
+    # "BTC" is for Bitcoin,"ETH" is for Ethereum and so on
     available_cryptocurrencies = [
         'BTC', 'ETH', 'ETC', 'BCH', 'LTC', 'ZEC', 'ZRX']
 
@@ -73,7 +73,38 @@ def convert_crypto_to_currency(amount, cryptocurrency, currency):
     return float(current_price)*amount
 
 
-# Just a test should print 1.0
+if __name__ == "__main__":
+    STRING = """
+    ################################################################
 
-print(convert_currency_to_crypto(
-    convert_crypto_to_currency(1, 'BTC', 'USD'), 'USD', 'BTC'))
+    examples of fiat currencies :INR,USD,etc.
+    examples of Cryptocurrencies :BTC,ETH,etc.
+    
+    ################################################################
+
+    Choose one of the below options:
+
+    Convert Cryptocurrency to fiat currency (Enter 1)  
+    Convert fiat currency to Cryptocurrency (Enter 2) 
+    Quit (Enter Q)
+    """
+
+    while True:
+        print(STRING)
+        user_inp = input()
+        currency = input("Enter fiat currency type:").upper()
+        cryptocurrency = input("Enter Cryptocurrency type:").upper()
+        amount = int(input("Enter Cryptocurrency amount:"))
+        print("\n")
+        if user_inp == "1":
+            result = convert_crypto_to_currency(
+                amount, cryptocurrency, currency)
+            print(f"{amount} {cryptocurrency} in {currency} is {result}")
+        elif user_inp == "2":
+            result = convert_crypto_to_currency(
+                amount, cryptocurrency, currency)
+            print(f"{amount} {currency} in {cryptocurrency} is {result}")
+        elif user_inp == "Q":
+            break
+        else:
+            print("Wrong Input! try again")
