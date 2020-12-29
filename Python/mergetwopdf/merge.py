@@ -2,8 +2,8 @@ import PyPDF2
 import sys
 
 # Open the pdf file
-file1=sys.argv[1]
-file2=sys.argv[2]
+file1 = sys.argv[1]
+file2 = sys.argv[2]
 pdf1 = open(file1, 'rb')
 pdf2 = open(file2, 'rb')
 
