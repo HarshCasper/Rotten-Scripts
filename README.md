@@ -115,7 +115,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://avinal.is-a.dev"><img src="https://avatars2.githubusercontent.com/u/74113200?v=4" width="100px;" alt=""/><br /><sub><b>Avinal Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinal" title="Code">💻</a></td>
-    <td align="center"><a href="http://dylancorriveau.ca"><img src="https://avatars1.githubusercontent.com/u/1254251?v=4" width="100px;" alt=""/><br /><sub><b>Dylan Corriveau</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=dcorriveau" title="Code">💻</a></td>
+    <td align="center"><a href="http://dylancorriveau.ca"><img src="https://avatars1.githubusercontent.com/u/1254251?v=4" width="100px;" alt=""/><br /><sub><b>Dylan Corriveau</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=dcorriveau" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=dcorriveau" title="Documentation">📖</a></td>
   </tr>
 </table>
 
