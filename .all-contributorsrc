@@ -335,6 +335,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "DevChoganwala",
+      "name": "Dev Choganwala",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9624545?v=4",
+      "profile": "https://github.com/DevChoganwala",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
