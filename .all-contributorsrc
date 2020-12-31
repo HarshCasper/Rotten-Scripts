@@ -351,10 +351,18 @@
       "name": "Aditya Ashvin",
       "avatar_url": "https://avatars0.githubusercontent.com/u/53205379?v=4",
       "profile": "https://adityaashvin.github.io/",
-
       "contributions": [
         "code",
         "doc"
+      ]
+    },
+    {
+      "login": "avinal",
+      "name": "Avinal Kumar",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/74113200?v=4",
+      "profile": "https://avinal.is-a.dev",
+      "contributions": [
+        "code"
       ]
     }
   ],
