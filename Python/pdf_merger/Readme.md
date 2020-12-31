@@ -9,8 +9,8 @@
 `python pdf_merger.py`
 
 ## Screenshots:
-![Input1](pdf_merger/images/Capture.jpg)
-![Input2](pdf_merger/images/Capture2.jpg)
+![Input1](images/Capture.jpg)
+![Input2](images/Capture2.jpg)
 
 # Output
-![Output](pdf_merger/images/Capture3.jpg)
+![Output](images/Capture3.jpg)
