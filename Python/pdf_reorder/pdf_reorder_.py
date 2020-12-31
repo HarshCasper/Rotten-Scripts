@@ -1,17 +1,21 @@
 from pdfrw import PdfReader, PdfWriter
-"""
-The function input_and_parse gathers the inputs and parses and then sorts them in
-the order required by reorder(path,dic) function
-It takes one argument which is page length of pdf 'n'
-"""
 
 
 def input_and_parse(n):
+    """
+    The function input_and_parse gathers the inputs and parses and then sorts them in
+    the order required by reorder(path,dic) function
+
+    Parameters:
+        n (int):No. of pages in the PDF file.
+
+    Returns:
+       dic :A parsed dictionary.
+    """
+
     print("enter the current page and the page you want it to be on seperate values by a comma ',' \n")
-    """
-    store the input in a list and then convert the input string into
-    using map function to convert the data in lists into int values
-    """
+    # store the input in a list and then convert the input string into
+    # using map function to convert the data in lists into int values
     lst = list(map(lambda x: [int(x[0]), int(x[1])],
                    [input().split(',') for _ in range(n)]))
     # Swapping the position of the lst values to better parse it in dictionary
@@ -22,14 +26,19 @@ def input_and_parse(n):
     return dic
 
 
-"""
-The function reorder takes two arguments path and dic
-path is the path of the source pdf file which is in wrong
-order
-"""
-
-
 def reorder(path, dic):
+    """
+    The function reorder takes two arguments path and dic
+    path is the path of the source pdf file which is in wrong
+    order and then creates a modified pdf file with pages in the right order.
+
+    Parameters:
+        path : Path of the pdf file to be modified
+        dic  : A dictionary with key value pairs of pages.
+
+    Returns:
+        None    
+    """
     # create a pdf object using PdfReader that could be read
     pdf_obj = PdfReader(path)
     # pdf_obj.pages attribute gives the length of the pages in pdf
