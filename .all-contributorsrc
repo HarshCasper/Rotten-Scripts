@@ -364,6 +364,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "dcorriveau",
+      "name": "Dylan Corriveau",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1254251?v=4",
+      "profile": "http://dylancorriveau.ca",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
