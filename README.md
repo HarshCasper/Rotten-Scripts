@@ -6,7 +6,7 @@
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-38-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-39-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -117,6 +117,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://avinal.is-a.dev"><img src="https://avatars2.githubusercontent.com/u/74113200?v=4" width="100px;" alt=""/><br /><sub><b>Avinal Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinal" title="Code">💻</a></td>
     <td align="center"><a href="http://dylancorriveau.ca"><img src="https://avatars1.githubusercontent.com/u/1254251?v=4" width="100px;" alt=""/><br /><sub><b>Dylan Corriveau</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=dcorriveau" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=dcorriveau" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/vybhav72954"><img src="https://avatars3.githubusercontent.com/u/49750343?v=4" width="100px;" alt=""/><br /><sub><b>vybhav72954</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=vybhav72954" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=vybhav72954" title="Documentation">📖</a> <a href="#maintenance-vybhav72954" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/sharvari-raut-a62a99171"><img src="https://avatars1.githubusercontent.com/u/57194200?v=4" width="100px;" alt=""/><br /><sub><b>Sharvari Raut</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sharur7" title="Code">💻</a></td>
   </tr>
 </table>
 
