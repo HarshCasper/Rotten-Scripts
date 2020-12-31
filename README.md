@@ -6,7 +6,7 @@
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-34-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-36-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -112,6 +112,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Vishal-raj-1"><img src="https://avatars3.githubusercontent.com/u/59874304?v=4" width="100px;" alt=""/><br /><sub><b>Vishal Rajput</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Vishal-raj-1" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Vishal-raj-1" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/DevChoganwala"><img src="https://avatars0.githubusercontent.com/u/9624545?v=4" width="100px;" alt=""/><br /><sub><b>Dev Choganwala</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=DevChoganwala" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=DevChoganwala" title="Documentation">📖</a></td>
     <td align="center"><a href="https://adityaashvin.github.io/"><img src="https://avatars0.githubusercontent.com/u/53205379?v=4" width="100px;" alt=""/><br /><sub><b>Aditya Ashvin</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AdityaAshvin" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=AdityaAshvin" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://avinal.is-a.dev"><img src="https://avatars2.githubusercontent.com/u/74113200?v=4" width="100px;" alt=""/><br /><sub><b>Avinal Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=avinal" title="Code">💻</a></td>
   </tr>
 </table>
 
