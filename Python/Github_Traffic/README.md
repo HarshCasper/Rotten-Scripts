@@ -1,4 +1,4 @@
-# Human_Detector
+# Github_Traffic
 
 This script, can help one determine all the unique viewers on his/her Repository.
 By using `access-token` one can determine the viewers and number of time they viewed the Repo.
