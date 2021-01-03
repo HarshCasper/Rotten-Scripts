@@ -4,8 +4,18 @@ import json
 import argparse
 import sys
 
-# Collect Information for Databse
+
 def collect(user, repo, token, org):
+    """
+    Function for Collection of Data.
+    Counts the total number of views (Unique and total) on a Repo.
+
+    Parameters:
+        user (str): The Github Username
+        repo (str): The Name of Repo
+        token (str): The Personal Access Token
+        org (str): The Name of Organization [Optional]
+    """
     if org is None:
         org = user
 
@@ -45,6 +55,12 @@ def collect(user, repo, token, org):
 
 
 def view(repo):
+    """
+    Function for viewing the Results obtained in the collect function
+
+    Parameters:
+        repo (str): Name of the Repo
+    """
     db = __load_db(repo=repo)
     timestamps = db.getall()
     for ts in sorted(timestamps):
@@ -53,6 +69,13 @@ def view(repo):
 
 
 def __load_db(repo):
+    """
+    The attribute to Load the information present in the Database
+
+    Parameters:
+        repo (str): The name of the Repo
+    """
+
     return pickledb.load('{repo}_views.db'.format(repo=repo), False)
 
 

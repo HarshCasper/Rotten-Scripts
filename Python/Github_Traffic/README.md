@@ -3,7 +3,7 @@
 This script, can help one determine all the unique viewers on his/her Repository.
 By using `access-token` one can determine the viewers and number of time they viewed the Repo.
 Currently data of only 14 days is possible (limitation of GitHib-API), but in future by using the GraphQL queries, this limitation can be answered.
-Te script uses PickleDB, the data can be imported in CSV as well, although the functionality hasn't been added till this point of time.
+The script uses PickleDB, the data can be imported in CSV as well, although the functionality hasn't been added till this point of time.
 
 ## Note
 
@@ -20,12 +20,12 @@ These are summarised in `requirement.txt`
 
 ## Setup
 
-1. A virtual environment (recommended)
-1. `pip install -r requirements.txt`
-1. Generate your own access token from [here](https://github.com/settings/tokens) (If you already have one with `repo` rights, it can be used as well)
-1. It is recommended to paste this token somewhere, as one cant review it again.
-1. Determine the Repository whose traffic you want to view.
-1. Run the Script
+- A virtual environment (recommended)
+- `pip install -r requirements.txt`
+- Generate your own access token from [here](https://github.com/settings/tokens) (If you already have one with `repo` rights, it can be used as well)
+- It is recommended to paste this token somewhere, as one cant review it again.
+- Determine the Repository whose traffic you want to view.
+- Run the Script
 
 ## Usage
 
