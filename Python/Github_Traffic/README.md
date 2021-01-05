@@ -14,6 +14,7 @@ This script can be converted in a Bot, Action or GitHub app!!!
 
 - githubpy
 - PickleDB
+- python-decouple
 
 These are summarised in `requirement.txt`
 
@@ -22,8 +23,9 @@ These are summarised in `requirement.txt`
 
 - A virtual environment (recommended)
 - `pip install -r requirements.txt`
-- Generate your own access token from [here](https://github.com/settings/tokens) (If you already have one with `repo` rights, it can be used as well)
-- It is recommended to paste this token somewhere, as one cant review it again.
+- Generate your own access token from [here](https://github.com/settings/tokens)
+- Paste the token in a `.env` file (Take [`.env.example`](.env.example) as an example)
+- It is recommended to paste this token somewhere, as one can't review it again.
 - Determine the Repository whose traffic you want to view.
 - Run the Script
 
@@ -32,7 +34,7 @@ These are summarised in `requirement.txt`
 Sample Usage -
 
 `
-python github_traffic.py collect -u vybhav72954 -r Music-Mood-Analysis -t *********
+python github_traffic.py collect -u vybhav72954 -r Music-Mood-Analysis
 `
 
 Output -
@@ -52,13 +54,13 @@ Generalized Usage -
 - collect (Collect Information for first time in Database)
 
 `
-python3 github_traffic.py collect -u [github-user] -r [github-repo] -t [github-access-token]
+python3 github_traffic.py collect -u [github-user] -r [github-repo]
 `
 
 - view (View Information already stored in Database)
 
 `
-python3 github_traffic.py view -u [github-user] -r [github-repo] -t [github-access-token]
+python3 github_traffic.py view -u [github-user] -r [github-repo]
 `
 
 `
