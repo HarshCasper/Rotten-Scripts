@@ -11,14 +11,9 @@ import PyPDF2
 ### How to use it :
 1. Download or clone the repository
 2. Install Required Libraries
-3. Run merge.py by giving pdf file through command line
-sample statement for running the file
-python merge.py pdf1 pdf2
-4. you will get the merged pdf in the same directory
-
-### Output
-I have added the merged pdf file named as MergedFiles.pdf which is formed from pdf1.pdf pdf2.pdf .
-You can check the final output in MergedFiles.pdf File
+3. Run the script by providing the pdfs intended to be merged in a list and providing the name of the supposed output.
+4. You will get the merged pdf in the same directory
+Note: The pdf to be  merged should in the same directory as the script.
 
 ### PDF File 1
 
@@ -35,3 +30,5 @@ You can check the final output in MergedFiles.pdf File
 ![built with love](https://forthebadge.com/images/badges/built-with-love.svg)
 
 Check out my Github profile [Tejas1510!](https://github.com/Tejas1510)
+
+Improved by [temitayo](https://github.com/temitayopelumi)

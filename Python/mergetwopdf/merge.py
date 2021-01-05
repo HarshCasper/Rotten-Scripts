@@ -1,34 +1,20 @@
-import PyPDF2
-import sys
+from PyPDF2 import PdfFileReader, PdfFileWriter
 
-# Open the pdf file
-file1 = sys.argv[1]
-file2 = sys.argv[2]
-pdf1 = open(file1, 'rb')
-pdf2 = open(file2, 'rb')
+def merge_pdf(files, output):
+    pdf_writer = PdfFileWriter()
 
-# Read the files
-reader1 = PyPDF2.PdfFileReader(pdf1)
-reader2 = PyPDF2.PdfFileReader(pdf2)
+    for f in files:
+        pdf_reader = PdfFileReader(f)
+        for page in range(pdf_reader.getNumPages()):
+            # Add each page to the writer object
+            pdf_writer.addPage(pdf_reader.getPage(page))
 
-# Create a new PdfFileWriter object which represents a blank PDF document
-writer = PyPDF2.PdfFileWriter()
+    # Write out the merged PDF
+    with open(output, 'wb') as out:
+        pdf_writer.write(out)
 
-# Loop through all the pagenumbers for the first document
-for i in range(reader1.numPages):
-    pages = reader1.getPage(i)
-    writer.addPage(pages)
 
-# Loop through all the pagenumbers for the second document
-for i in range(reader2.numPages):
-    pages = reader2.getPage(i)
-    writer.addPage(pages)
-
-# Now that you have copied all the pages in both the documents, write them into the a new document
-mergedfile = open('MergedFiles.pdf', 'wb')
-writer.write(mergedfile)
-
-# Close all the files - Created as well as opened
-mergedfile.close()
-pdf1.close()
-pdf2.close()
+#driver code
+if __name__ == '__main__':
+    paths = ['Logic_and_Discrete_Mathematics_-_Willem.pdf', 'Deep Learning with Keras_ Implementing deep learning models and neural networks with the power of Python.pdf']
+    merge_pdf(paths, output='merged.pdf')
