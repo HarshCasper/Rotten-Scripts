@@ -4,27 +4,30 @@
 
 Text extraction form Images, OCR, Tesseract, Basic Image manipulation are all important yet very basic scripts.
 
-If you have a folder full of images that has some text which needs to be extracted into a separate folder with the corresponding image file name or in a single file, then this is the perfect code you are looking for.
-
-The code is relatively simple, full of comments and long variable names XD.
+This script uses ```pytesseract``` for text extraction from images, considering it only recognizes text and can 
+only print it, this script additionally adds a functionality to write the text in a `txt` and/or `csv` file.
 
 ## Setup instructions
 
 - Setup a `python 3.x` virtual environment.
 - `Activate` the environment
-- Install the dependencies using ```pip3 install -r requiremnts.txt```
+- Install the dependencies using ```pip3 install -r requirements.txt```
 - You are all set and the [script](text_extract.py) is Ready to run.
 - Carefully follow the Instructions.
 
 ## Further Readings
 
-Some newcomers for the first time struggle with Tesseract, this is a direct link to the [installer](https://github.com/UB-Mannheim/tesseract/wiki)
+Some newcomers for the first time struggle with Tesseract, this is a direct link to the 
+[installer](https://github.com/UB-Mannheim/tesseract/wiki)
 
-Setting up OCR can be found [here](https://stackoverflow.com/questions/50951955/pytesseract-tesseractnotfound-error-tesseract-is-not-installed-or-its-not-i)
+Setting up OCR can be found [here](http://bit.ly/2MClAwD)
+
+__PATH__ env variable can help in optimizing the code. 
+[This](http://bit.ly/35d3c3Q) and [this](http://bit.ly/3ba0zmZ) link will help you in order to achieve that.
 
 ## Usage
 
-Just make sure that Tessaract is in proper directory, run the code according the comments and guidelines.
+Just make sure that Tesseract is in proper directory, run the code according the comments and guidelines.
 
 ```
 Smaple - 
