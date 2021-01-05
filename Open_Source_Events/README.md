@@ -8,3 +8,4 @@ List of Open Source Events in which we have participated.
 - Semester Long Projects (SLoP)
 - Kharagpur Winter of Code (KWOC)
 - NJACK Winter of Code (NWOC)
+- DevScript Winter of Code (DWOC)
