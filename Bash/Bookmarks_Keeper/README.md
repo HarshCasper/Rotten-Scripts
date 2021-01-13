@@ -48,7 +48,7 @@ To change the location where the markdown file will be stored, you can modify th
 
 ## Output
 
-![sample-output](sample-output.png)
+![sample-output](https://imgur.com/zV7HCU8.png)
 
 ## Author(s)
 
