@@ -49,7 +49,7 @@ To provide the username as an argument to the script, run the following command:
 
 ## Output
 
-![sample-output](sample-output.png)
+![sample-output](https://imgur.com/PurqZtD.png)
 
 ## Author(s)
 
