@@ -11,8 +11,6 @@ function github() {
 	fi
 }
 
-
-
 function reddit() {
 	baseUrl="https://www.reddit.com/user"
 	for i in {1..5}; do
@@ -54,8 +52,6 @@ function huntSocialMedia() {
 	devTo
 
 }
-
-
 
 username=$1
 if [ -z $1 ]; then
