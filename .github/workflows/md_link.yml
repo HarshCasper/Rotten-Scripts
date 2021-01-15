@@ -40,3 +40,4 @@ jobs:
         use-verbose-mode: 'yes'
         config-file: '.github/linters/mlc_config.json'
         max-depth: -1
+        check-modified-files-only: 'yes'
