@@ -84,7 +84,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 72 | Internshala Scrapper | [Click Here](/Python/Internshala_Scrapper/) | [twozero88](https://github.com/twozero88)| beautifulsoup4, csv
 73 | Invisible Cloak | [Click Here](/Python/Invisible_Cloak) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | cv2, time, numpy
 74 | JSON To Excel | [Click Here](/Python/JSON_to_Excel) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | json, xlwt, sys
-75 | JSON To Yaml | [Click Here](/Python/Json_to_yaml) | [Aditya Jetely](https://github.com/AdityaJ7) | json, yaml, argparse
+75 | JSON To Yaml | [Click Here](/Python/JSON_to_YAML) | [Aditya Jetely](https://github.com/AdityaJ7) | json, yaml, argparse
 76 | Keylogger | [Click Here](/Python/Keylogger) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | keyboard, pypiwin32
 77 | Labelling Binarizer Instance | [Click Here](/Python/Labelling_Binarizer_Instance) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | sklearn.preprocessing, numpy,  pickle
 78 | Large File Identifier | [Click Here](/Python/Large_File_Identifier) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | os
