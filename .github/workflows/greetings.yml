@@ -10,4 +10,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Hi thanks for creating your first issue at Rotten Scripts, hope you followed the guidelines.'
-        pr-message: 'Congratulations!! for making your first PR at  Rotten Scripts, our mentors will review it soon.'
+        pr-message: 'Congratulations!! for making your first PR at Rotten Scripts, our mentors will review it soon.'

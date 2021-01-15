@@ -1,0 +1,42 @@
+#########################
+#########################
+## Spellchecker Action ##
+#########################
+#########################
+
+name: Check Spellings
+
+###########################
+# Start the job on all PR #
+###########################
+on:
+  pull_request:
+    branches: [ master ]
+
+###############
+# Set the Job #
+###############
+jobs:
+  build:
+    # Name the Job
+    name: Check Spelling
+    # Set the agent to run on
+    runs-on: ubuntu-latest
+
+    ##################
+    # Load all steps #
+    ##################
+    steps:
+
+      ##########################
+      # Checkout the code base #
+      ##########################
+    - uses: actions/checkout@master
+
+      ####################################
+      # Run Spellcheck against code base #
+      ####################################
+    - uses: rojopolis/spellcheck-github-actions@master
+      name: Check Spelling
+      with:
+        config_path: .github/linters/.spellcheck.yml
