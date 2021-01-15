@@ -27,7 +27,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 15 | Caesar Cipher | [Click Here](/Python/Caesar_Cipher) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | -
 16 | Cartoonified_Image | [Click Here](/Python/Cartoonified_Image) | [Sharvari Raut](https://github.com/sharur7) | skimage, numpy, cv2
 17 | Codechef Contests | [Click Here](/Python/Codechef_Contests) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | prettytable, bs4, requests
-18 | Codechef Problem Scrapper | [Click Here](/Python/Codechef_problem_scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | selenium, bs4, time
+18 | Codechef Problem Scrapper | [Click Here](/Python/Codechef_Problem_Scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | selenium, bs4, time
 19 | Countdown Clock and Timer | [Click Here](/Python/Countdown_clock_and_Timer) | [Anushka-S10](https://github.com/Anushka-S10) | os, time
 20 | Counting Days | [Click Here](/Python/Counting_Days) | [Dylan Corriveau](https://github.com/dcorriveau) | os, datetime
 21 | Create Word Cloud | [Click Here](/Python/Create_Word_Cloud) | [Prahitha](https://github.com/Prahitha) | argparse, wordcloud, numpy
@@ -83,7 +83,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 71 | Instagram Profile Pic Downloader | [Click Here](/Python/Instagram_Profile_Pic_Downloader) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | selenium
 72 | Internshala Scrapper | [Click Here](/Python/Internshala_Scrapper/) | [twozero88](https://github.com/twozero88)| beautifulsoup4, csv
 73 | Invisible Cloak | [Click Here](/Python/Invisible_Cloak) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | cv2, time, numpy
-74 | JSON To Excel | [Click Here](/Python/JSON-to-Excel) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | json, xlwt, sys
+74 | JSON To Excel | [Click Here](/Python/JSON_to_Excel) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | json, xlwt, sys
 75 | JSON To Yaml | [Click Here](/Python/Json_to_yaml) | [Aditya Jetely](https://github.com/AdityaJ7) | json, yaml, argparse
 76 | Keylogger | [Click Here](/Python/Keylogger) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | keyboard, pypiwin32
 77 | Labelling Binarizer Instance | [Click Here](/Python/Labelling_Binarizer_Instance) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | sklearn.preprocessing, numpy,  pickle
