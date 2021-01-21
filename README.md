@@ -2,7 +2,7 @@
 
 <!-- Banner -->
 <div class="container-fluid">
-  <img class="mx-auto" src="assets/banner.png">
+  <img class="mx-auto" src="https://i.imgur.com/7TSaSl8.png">
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->

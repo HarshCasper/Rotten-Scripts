@@ -10,7 +10,7 @@ users in your contacts.
 
 ### Demo of my app
 
-![demo](resources/whatsapp_sms_bomber.png)
+![demo](https://i.imgur.com/GIJIBQf.png)
 
 ### Requirements
 

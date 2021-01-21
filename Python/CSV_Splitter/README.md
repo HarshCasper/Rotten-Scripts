@@ -8,7 +8,7 @@ Just make sure you have the CSV with you :)
 All the Steps have been properly mentioned as comments.
 
 ```
-Example Usage - 
+Example Usage -
 
 >python csv_splitter.py
 
@@ -28,22 +28,21 @@ OR
 
 ## Output
 
-![Input Image](img/Input_File.PNG)
+![Input Image](https://i.imgur.com/lb4iVFp.png)
 upto 1745 rows
 
-Command Line Argument (No destination path given) - 
+Command Line Argument (No destination path given) -
 
-![CLI](img/CLI.PNG)
+![CLI](https://i.imgur.com/5pHYouw.png)
 
-![Output](img/output.PNG)
+![Output](https://i.imgur.com/4VP6YUg.png)
 
-With Destination Path - 
+With Destination Path -
 
-![CLI2](img/cli2.PNG)
+![CLI2](https://i.imgur.com/49ZJVyf.png)
 
-![Destination](img/destinatiion.PNG)
+![Destination](https://i.imgur.com/2Qpf7ll.png)
 
 ## Author(s)
 
 Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/)
-

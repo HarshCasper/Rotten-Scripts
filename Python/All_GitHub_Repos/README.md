@@ -3,4 +3,4 @@ Details of the repository such as name, date of creation, and so on are displaye
 The library PyGithub, which is built on Python is used.
 The requests library is also used, in order to interact and obtain data from Github.
 
-![Result](all_github_repos.jpg)
+![Result](https://i.imgur.com/l38Zw5S.jpg)

@@ -13,7 +13,7 @@ A HTTP Web Server is nothing but a process that is running on your machine/lapto
 
 ## Code
 
-![image](initialize_http_server.png)
+![image](https://i.imgur.com/Ltty3Oj.png)
 
 ## Explanation of the Code
 
@@ -31,4 +31,4 @@ A HTTP Web Server is nothing but a process that is running on your machine/lapto
 
 ## Output of the code
 
-![image](output.png)
+![image](https://i.imgur.com/Zt3ikSP.png)
