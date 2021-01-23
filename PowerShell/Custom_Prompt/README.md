@@ -26,6 +26,15 @@ Git must be installed in order to utilise full potential of the script. Or you c
 
 5. Save and exit Notepad and relaunch PowerShell. 
 
+## Output
+- Simple mode
+
+<a href="https://imgur.com/W9kOmLA"><img src="https://i.imgur.com/W9kOmLA.png" title="source: imgur.com" align=center /></a>
+
+- Admin Mode
+
+<a href="https://imgur.com/XBMLkJM"><img src="https://i.imgur.com/XBMLkJM.png" title="source: imgur.com" align=center /></a>
+
 ## Author(s)
 
 Created by [Avinal Kumar](https://github.com/avinal)
