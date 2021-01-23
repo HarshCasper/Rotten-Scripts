@@ -1,6 +1,6 @@
 from ipregistry import IpregistryClient
 
-client = IpregistryClient("tryout")  
-ipInfo = client.lookup() 
+user = IpregistryClient("tryout")  
+ipInfo = user.lookup() 
 print(ipInfo)
 
