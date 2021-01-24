@@ -53,7 +53,7 @@ Here is a list of the Features.
 
 For those interested, [this](https://librosa.org/doc/latest/index.html) and
 [this](https://github.com/vybhav72954/Audio_Features) link will provide explanations about these and many more useful
-Audio Features. The features extracted are contained in a [CSV](Database/GTZAN.csv), which can be used by anyone
+Audio Features. The features extracted are contained in a [CSV](Features/GTZAN.csv), which can be used by anyone
 if the user wants to test accuracy of another classifier using the same features extracted.
 
 ## Setup
@@ -118,6 +118,8 @@ Non-trainable params: 0
 _________________________________________________________________
 
 ```
+In order to access the pre-trained model, click 
+[here](https://drive.google.com/drive/folders/1H5Sj-5eZ_ABCb0AF1wAqq5Waowk2__Pi?usp=sharing)
 
 ## Note
 
@@ -146,8 +148,9 @@ Here the attained accuracy is closer to 80%.
 
 Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/)
 
-If you like this script, I have made Repos related to Music Classification, Music Mood Classification, Music Human Emotion mapping,
-Music Feature Classification.
+If you like this script, I have made Repos related to 
+[Music Classification and Music Human Emotion mapping](https://github.com/vybhav72954/Music-Mood-Analysis) ,
+[Music Feature Classification](https://github.com/vybhav72954/Audio_Features).
 
 
 

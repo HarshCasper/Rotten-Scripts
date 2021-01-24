@@ -17,23 +17,26 @@ header += ' label'
 header = header.split()
 
 # Creating a CSV File
-
-file = open('GTZAN.csv', 'w', newline='')
+csv_path = input('Enter the path for CSV file containing the features: ')
+file = open(csv_path, 'w', newline='')
 with file:
     writer = csv.writer(file)
     writer.writerow(header)
 
 # The Genres in Dataset
 genres = 'blues classical country disco hiphop jazz metal pop reggae rock'.split()
+print("Enter the path of where you downloaded the Database"
+      "Example - C:/Users/<user-name>/Downloads/GTZAN/")
 
+database_path = input("Path: ")
 for g in genres:
     # Traversing through various genres in the Dataset
     # Feed the complete path of the GTZAN folder
-    for filename in os.listdir(f'Database/GTZAN/{g}'):
+    for filename in os.listdir(database_path + '/' + g):
 
         # Traversing through various songs in a particular genre.
-        songname = f'C:/Users/asus/PycharmProjects/Music_Classification/Database/GTZAN/{g}/{filename}'
 
+        songname = database_path + '/' + g + '/' + filename
         # Using LibRosa to determine the features
         y, sr = librosa.load(songname, mono=True, duration=30)
         chroma_stft = librosa.feature.chroma_stft(y=y, sr=sr)
@@ -49,7 +52,7 @@ for g in genres:
         to_append += f' {g}'
 
         # Writing all the information in the CSV
-        file = open('GTZAN.csv', 'a', newline='')
+        file = open(csv_path, 'a', newline='')
         with file:
             writer = csv.writer(file)
             writer.writerow(to_append.split())
