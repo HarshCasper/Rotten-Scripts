@@ -3,7 +3,7 @@
 [![Bash Shell](https://img.shields.io/static/v1?label=MADE%20WITH&message=BASH&color=red&style=for-the-badge&logo=gnu-bash)](https://shields.io/)
 [![Linux](https://img.shields.io/static/v1?label=MADE%20FOR&message=LINUX&color=red&style=for-the-badge&logo=linux)](https://shields.io/)
 
-Bash scripting is very powerful and can be used to perform difficult tasks as web scraping too. In general `grep` is a popular tools for finding text in a file and so many other applications. Combined with other tools like `lynx`, `sed, `awk` and `curl`, bash script can be used to extract url from a web page direcy from the terminal.
+Bash scripting is very powerful and can be used to perform difficult tasks as web scraping too. In general `grep` is a popular tools for finding text in a file and so many other applications. Combined with other tools like `lynx`, `sed, `awk` and `curl`, bash script can be used to extract url from a web page directly from the terminal.
 
 ## Prerequisite
 
