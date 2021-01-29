@@ -21,3 +21,6 @@ Check main.py file
 After running the main.py file go to chrome browser where dino game is opened(chrome://dino) and then start game by pressing space bar and it will play automatically.
 
 I had attached a gif to show how it plays.
+
+
+![Demo of the Game](demo_dinogame.gif)
