@@ -1,4 +1,4 @@
-## Chrome Dino Game Automation Using Pyhton
+## Chrome Dino Game Automation Using Python
 
 For doing automation I had used python libraries such as pyautogui and pillow .
 
