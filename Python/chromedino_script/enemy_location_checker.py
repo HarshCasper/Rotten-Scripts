@@ -2,6 +2,7 @@ import pyautogui
 from PIL import Image, ImageGrab
 import time
 
+# To check the obstacles
 while True:
     image = ImageGrab.grab().convert('L') # translating to greyscale (faster)
     data = image.load()

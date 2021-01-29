@@ -14,7 +14,7 @@ total_time = 0
 y_search_cactus, x_start, x_end = 350, 350, 380
 y_search_bird = 275 # for the birds
 
-
+                                                                                                                                                                                                           
 time.sleep(4)                                                   
 while True:
     t1 = time.time()
