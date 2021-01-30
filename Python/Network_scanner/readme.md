@@ -1,6 +1,6 @@
 
 # Network Scanner in Python
-Python script that can scan all networks connected to same router and give's thier IP and MAC adsress.
+Python script that can scan all networks connected to same router and give's thier respectieve IP and MAC address.
 
 # Packages Used
 1. Scapy
