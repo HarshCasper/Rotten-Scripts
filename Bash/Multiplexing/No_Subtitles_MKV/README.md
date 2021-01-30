@@ -19,19 +19,19 @@ After adding a permanent alias, this command has been executed to get the follow
 - The `VideosDirectory` had `mkv` files. 
 - After the command is executed, a `nosubsmkv` folder will be created with mkv files. 
 
-![Command Execution](https://github.com/KamalDGRT/static/blob/master/RottenScripts/img/03_nosubsmkv_command.png)
+![Command Execution](https://i.imgur.com/1w4DikS.png)
 
 #### *Track listing of the original files*
 
 Let's see the various tracks available in the matroska files.
 
-![Checking](https://github.com/KamalDGRT/static/blob/master/RottenScripts/img/04_trackinfo_original.png)
+![Checking](https://i.imgur.com/nTk9y9r.png)
 
 #### *Track listing of the new files*
 
 Let's see the various tracks available in the new matroska files.
 
-![Checking](https://github.com/KamalDGRT/static/blob/master/RottenScripts/img/05_trackinfo_new.png)
+![Checking](https://i.imgur.com/2weAkRa.png)
 
 ## Author
 
