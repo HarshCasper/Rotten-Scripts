@@ -4,7 +4,7 @@ We watch a lot of videos with subtitles. Sometimes, these videos will not have s
 
 That's where `emptysubs.sh` comes in handy.
 
-## Setup instructions
+## Setup Instructions
 
 - The recommended way is to add a permanent alias to this script file in your Linux distro.
 - To know how to add permanent aliases, you can refer to this [link](https://www.tecmint.com/create-alias-in-linux/).
@@ -18,7 +18,7 @@ After adding a permanent alias, this command has been executed to get the follow
 - The `VideosDirectory` had `mp4` files. So, the `-c` (container) argument is `mp4`.
 - After the command is executed, a folder will be created with the subtitle files inside of it.
 
-![Command Execution](https://github.com/KamalDGRT/static/blob/master/RottenScripts/img/01_command.png)
+![Command Execution](https://imgur.com/oEqw8Ry)
 
 #### *Checking if the files are created*
 
@@ -27,7 +27,7 @@ Let's check if the files have been created:
 1. Using the Command Line Interface.
 2. Using the Graphical Interface.
 
-![Checking](https://github.com/KamalDGRT/static/blob/master/RottenScripts/img/02_output.png)
+![Checking](https://imgur.com/5kBRVpQ)
 
 ## Author
 
