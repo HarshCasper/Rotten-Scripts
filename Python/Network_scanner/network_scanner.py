@@ -2,7 +2,10 @@ import scapy.all as scapy
 import optparse
 
 
-def get_arguments():      # function to pass input in console
+def get_arguments():      
+    """
+    # function to pass input in console
+    """
     parser = optparse.OptionParser()
     parser.add_option("-t", "--target", dest="target",
                       help="Target IP / IP range.")
@@ -11,7 +14,12 @@ def get_arguments():      # function to pass input in console
 
 
 def scan(ip):
-    arp_request = scapy.ARP(pdst=ip)  # destinationn ip
+    """
+    function to scan ip adsress
+    """
+    
+     #destinationn ip
+    arp_request = scapy.ARP(pdst=ip)  
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
     arp_request_broadcast = broadcast/arp_request
     # print(arp_request_broadcast.summary())
@@ -31,6 +39,9 @@ def scan(ip):
 
 
 def print_result(result_list):
+    """
+    # printing the result in console
+    """
     print("IP\t\t\tMAC ADDRESS\n..........................................................................")
     for client in result_list:
         print(client["ip"]+"\t\t"+client["mac"])
