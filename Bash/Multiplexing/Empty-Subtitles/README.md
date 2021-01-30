@@ -18,7 +18,7 @@ After adding a permanent alias, this command has been executed to get the follow
 - The `VideosDirectory` had `mp4` files. So, the `-c` (container) argument is `mp4`.
 - After the command is executed, a folder will be created with the subtitle files inside of it.
 
-![Command Execution](https://imgur.com/oEqw8Ry)
+![Command Execution](https://imgur.com/oEqw8Ry.png)
 
 #### *Checking if the files are created*
 
@@ -27,7 +27,7 @@ Let's check if the files have been created:
 1. Using the Command Line Interface.
 2. Using the Graphical Interface.
 
-![Checking](https://imgur.com/5kBRVpQ)
+![Checking](https://imgur.com/5kBRVpQ.png)
 
 ## Author
 
