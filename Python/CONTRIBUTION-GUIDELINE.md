@@ -1,10 +1,10 @@
-#  Python Contribution Guidelines
+# Python Contribution Guidelines
 
 Welcome Contributors!!!
 
 This guide is all about Python, how to code clean, quick and most importantly smart.
 
-There is a lot o Python scripts in this repository, and we are constantly trying to update the code quality and guess 
+There is a lot o Python scripts in this repository, and we are constantly trying to update the code quality and guess
 what!!! You can help us!!!.
 
 __How?__ Just follow the below mentioned steps and you are good to go!
@@ -77,7 +77,7 @@ Refer to this [script](Github_Traffic) for a working example.
 place**
 - But as an example you should push a `.env.example` (It is a must). The file should be exactly similar to your `.env`
 file but the API secret is replaced by `x` or anything.
-  - Note this file serves only as an example, it cant cause any security issue, unless you push your API key, kindly 
+  - Note this file serves only as an example, it cant cause any security issue, unless you push your API key, kindly
   double check everytime.
   
 #### Auto Styling
@@ -99,29 +99,33 @@ We recommend using these auto formatting tools:
 In order to auto format your files, follow these steps:
 
 - Setup a `python 3.x virtual` environment.
-- Activate the environment
-- Install the dependencies using 
-```py 
+- Activate the environment.
+- Install the dependencies using
+
+```py
 pip3 install yapf black autopep8
 ```
+
 - Copy paste your python file in the Virtual environment, say the name of file is `main.py`.
 - Now you can run
 
 ```bash
-$ autopep8 --in-place main.py
-$ yapf --in-place main.py
-$ black main.py
+autopep8 --in-place main.py
+yapf --in-place main.py
+black main.py
 ```
 
 You can use any of the above code formatter or any combination to auto format your code as well.
 In order to determine whether your code is up to the mark or not, we suggest using `PyLint`.
 
 - Install `PyLint` using
+
 ```bash
 pip3 insatll pylint
 ```
 
 - Run on CLI
+
 ```bash
 pylint simplecaeser.py
 ```

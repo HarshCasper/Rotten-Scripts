@@ -5,7 +5,7 @@ These are the sets of rules that **must** be followed before making any contribu
 Kindly note the fact, that even your working pull request might be rejected if it doesn't follow the below-mentioned
 rules.
 
-The maintainers are here to help you at any point in time, In case you have doubts, questions, and/or suggestions, 
+The maintainers are here to help you at any point in time, In case you have doubts, questions, and/or suggestions,
 feel free to start a discussion [here](https://github.com/HarshCasper/Rotten-Scripts/discussions).
 
 Go though our [Code of conduct](CODE_OF_CONDUCT.md).
@@ -13,9 +13,9 @@ Go though our [Code of conduct](CODE_OF_CONDUCT.md).
 We have tried our best to keep the guideline beginner-friendly and reasonable, but do note the fact that a minimal
 understanding of styling is a must if you want to contribute to bigger projects and organizations.
 
-## Flow 
+## Flow
 
-1. [Prerequisites](#prerequisites) 
+1. [Prerequisites](#prerequisites)
 2. [Basics](#basics)
 3. [Language Specific README](#Langauge-Specefic-README)
 4. [Python](#python)
@@ -26,7 +26,7 @@ understanding of styling is a must if you want to contribute to bigger projects 
 ### Prerequisites
 
 Every pull request you make for adding a new script, fixing/upgrading an old script, fixing a bug must contain
-these things - 
+these things -
 
 - Script file with the proper extension (.py|.js|.go).
 - `README.md` explaining the working of the script.
@@ -59,16 +59,17 @@ failing to which will lead to a delay in merging the PR, or worse might lead to 
 
 A list of Language-specific README can be found here:
 
-- Python
-- JavaScript
-- Go
-- Bash
-- Powershell
+- [Python](Python/CONTRIBUTION-GUIDELINE.md)
+- JavaScript (TODO)
+- Go (TODO)
+- Bash (TODO)
+- Powershell (TODO)
 
 Contributors are requested to ensure that they are updating these README files with proper format, to maintain the
 aesthetics of the Repository.
 
 #### Actions
+
 This Repository is driven by multiple styles checking actions. The actions focus on -
 
 1. Styling of Python file
@@ -102,7 +103,7 @@ maintained but also will help the contributors by encouraging them towards clean
 - **Line-Length** - Limit all lines to a maximum of 79 characters. (Although this is highly debated, but is a standard
 of PEP-8), this rule is not strict but is still recommended as multiple popular projects stick to this rule.
 
-For Example - 
+For Example -
 
 ```py
 # BAD:  
@@ -171,7 +172,7 @@ sum(positive1
 
 Overriding these rules is not recommended unless it is done for a reason, in that case, a separate comment
 is a must to explain the name.
- 
+
 - **Comments** - Writing comments should be a common habit for everyone, they are helpful for writer, viewer, reviewer,
 and user. But comments that contradict the code are worse than no comments. For Rotten-Scripts comments are really
 important as the repository comprises scripts written by different people and used by many others. The styling of
@@ -183,7 +184,7 @@ comments is of utmost importance.
   inline comment.
   - Do write your comments in the proper English language.
   - Follow proper indentations if writing comments in classes or methods.
-    
+
   For example:
 
 ```py
@@ -196,7 +197,7 @@ comments is of utmost importance.
 """Inline Comment"""
 
 # BAD:
-x = x + 1		# Some comment
+x = x + 1    # Some comment
 
 # GOOD:
 
@@ -214,30 +215,30 @@ Docstrings. Although PEP-257 contain a long  list of rules, we generally stress 
   - Docstring convention:
 
 ```py
-     def function(arg1, arg2):
- """Write a summary of the function
- 
- Arguments:
- arg1: What is arg1?
- arg2: What is arg2?
+def function(arg1, arg2):
+"""Write a summary of the function
+
+Arguments:
+arg1: What is arg1?
+arg2: What is arg2?
 
 :return: What function returns?
-  """
+"""
 ```
-	
-	 Example:
-	 
+
+Example:
+
 ```py
 def build_similarity_matrix(sentences, stop_words):  
 """  
- Build the similarity index of words in sentences  
- 
+Build the similarity index of words in sentences  
+
 :param sentences: Clean sentences
 :param stop_words: Words to be ignored in Vectors (Read README.md)
 :return: Similarity index (Tokenized words)  
- """
+"""
 ```
-	
+
 - **Top of the file** - A shebang i.e. `#!/usr/bin/python` is not required **_unless_** the python file is meant
 to be executable.
 - **Imports** - Imports should be on top of the file, after a comment `# Imports`, it is recommended that the
@@ -271,7 +272,7 @@ from my_module.utils.encoding import (
     encode_thing,
 )
 ```
-	
+
 - **Parsing** - It is highly recommended that programmers should use the python method `input('Input something')` and
 [Argument Parser](https://docs.python.org/3/howto/argparse.html) module for making the code more interactive and
 flexible.
@@ -385,7 +386,7 @@ Results in proper syntax highlighting.
 
 ### JavaScript
 
-**TODO**
+TODO
 
 [//]: # (This is a Markdown Comment!!! How are you? If you are editing this file for the JS style guide,
 can you follow the markdown styling strictly as well? In case you have questions, find my GitHub at @vybhav72954.
