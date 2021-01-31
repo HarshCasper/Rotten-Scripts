@@ -9,8 +9,8 @@ import (
 	
 )
 
-var wg sync.WaitGroup
 
+var wg sync.WaitGroup
 func main(){
 
 	var option int
@@ -30,14 +30,11 @@ func main(){
 		scanSelectedPorts(ip,typeOfPort)
 	} else {
 		fmt.Println("Please chose valid option")
-	}
-	
-	
+	}	
 }
 
+// function for scanning all Ports
 func scanAllPorts(ip string, typeOfPort string)  {
-	
-
 	wg.Add(65535)
 	for port := 1 ;port<65535;port++{
 		hostIp := fmt.Sprintf("%s:%d", ip, port)
@@ -53,15 +50,12 @@ func scanAllPorts(ip string, typeOfPort string)  {
 		
 	wg.Done()
 }
-
+// function for scanning specific Ports
 func scanSelectedPorts(ip string, typeOfPort string)  {
-
 	var portsInput string
 	fmt.Print("[+] Enter Ports to scan: ")
 	fmt.Scan(&portsInput)
-	
 	ports := strings.Split(portsInput, ",")
-	
 	for _, port := range ports{
 		hostIp := fmt.Sprintf("%s:%s", ip, port)
 		_, err := net.DialTimeout(typeOfPort,hostIp, 80 * time.Millisecond)
@@ -69,7 +63,6 @@ func scanSelectedPorts(ip string, typeOfPort string)  {
 			fmt.Printf("Port %s is closed \n", port)
 		} else{
 			fmt.Printf("Port %s is open \n", port)
-
 		}
 	}
 }
