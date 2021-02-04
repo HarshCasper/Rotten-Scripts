@@ -17,8 +17,8 @@ python network_scanner.py
 ```
 ## Output
 
-![](https://imgur.com/qAZY9tu)
-![](https://imgur.com/NyKQ0UW)
+![](https://i.imgur.com/qAZY9tu.png)
+![](https://i.imgur.com/NyKQ0UW.png)
 
 ## Author
   Pritam Pawar.
