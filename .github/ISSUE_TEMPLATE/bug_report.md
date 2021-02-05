@@ -7,8 +7,48 @@ assignees: ''
 
 ---
 
-**Describe the bug**
+# Description 
 A clear and concise description of what the bug is.
+
+<!--
+_________________________________________________THESE ARE COMMENTS____________________________________________________
+Name of the bug is as simple as it sounds, just name the bug.
+_________________________________________________THESE ARE COMMENTS____________________________________________________
+-->
+
+<!--
+_________________________________________________THESE ARE COMMENTS____________________________________________________
+
+About - Now Summarize your bug in as few words as possible. Use something like this now:
+"Found a bug in this."
+_________________________________________________THESE ARE COMMENTS____________________________________________________
+-->
+
+<!--
+_________________________________________________THESE ARE COMMENTS____________________________________________________
+Maybe you want a specific Label?
+Participating in a competition?
+Put the label here.
+Remember to check the Labels beforehand though :)
+If you are not sure, the acronym usually is the label.
+Still, if you are unsure, just put the Acronym here, one of the mods will deal with it.
+_________________________________________________THESE ARE COMMENTS____________________________________________________
+-->
+
+
+<!--
+_________________________________________________THESE ARE COMMENTS____________________________________________________
+Assignees - We know that you want to work on your script, lets just make it official :)
+Just enter your GitHub Handle in the column (USE @). For Example @vybhav72954
+Maybe you dont want to work, just leave that column empty, and see the magic of our contributors.
+_________________________________________________THESE ARE COMMENTS____________________________________________________
+-->
+
+## Checklist
+
+|name|about|labels|assignees|
+|----|-----|------|---------|
+|Bug|Found a bug! File it using this template!|bug|self-assign if you want to work on this issue else leave blank|
 
 **To Reproduce**
 Steps to reproduce the behavior:
@@ -22,17 +62,6 @@ A clear and concise description of what you expected to happen.
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
 
 **Additional context**
 Add any other context about the problem here.
