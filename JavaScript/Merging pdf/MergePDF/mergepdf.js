@@ -20,7 +20,7 @@ async function run(){
         doc.addPage(page);
     }
 
-    //Adding first pdf to the empty doc
+    //Adding second pdf to the empty doc
     const second = await doc.copyPages(pdf2, pdf2.getPageIndices());
     for (const page of second){
         doc.addPage(page);
