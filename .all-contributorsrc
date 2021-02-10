@@ -454,6 +454,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "GoswamiTushar",
+      "name": "Tushar Goswami",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59055924?v=4",
+      "profile": "https://github.com/GoswamiTushar",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
