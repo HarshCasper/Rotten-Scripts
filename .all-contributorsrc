@@ -414,6 +414,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "kritikaparmar-programmer",
+      "name": "Kritika Parmar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59971890?v=4",
+      "profile": "https://kritikaparmar-programmer.github.io/MyPortfolio/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
