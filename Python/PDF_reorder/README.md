@@ -31,21 +31,21 @@ This script can be used for reordering a pdf file which may have pages in wrong 
 A short demo of how the script works
 
 Here We have a pdf file MyPDF.pdf which has pages in wrong order we also have the script that will make it right!
-![Image 1](https://imgur.com/sTMG9KD)
+![Imgur](https://i.imgur.com/sTMG9KD.png)
 
 We can see in the below two images that in the PDF file contents of page 2 are on page 1,contents of page 4 are on page 2 and so on.
-![Image 2](https://imgur.com/QBf5Jv5)
-![Image 3](https://imgur.com/GKfUD5r)
+![Imgur](https://i.imgur.com/QBf5Jv5.png)
+![Imgur](https://i.imgur.com/GKfUD5r.png)
 
 After entering the required input like the path of the file and the current page which is in the wrong order and the right page no. it should be on seperated by commas ','.
 The script runs a modified file is created.
-![Image 4](https://imgur.com/ivBZvko)
+![Imgur](https://i.imgur.com/ivBZvko.png)
 
 We can see the contents of the directory and the modified file will be present there.
-![Image 5](https://imgur.com/7EyVNuE)
+![Imgur](https://i.imgur.com/7EyVNuE.png)
 
 Voila! the pages are in the right order now.
-![Image 6](https://imgur.com/ROVMocW)
+![Imgur](https://i.imgur.com/ROVMocW.png)
 
 ## Author:
 
