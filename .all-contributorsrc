@@ -414,6 +414,56 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "kritikaparmar-programmer",
+      "name": "Kritika Parmar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59971890?v=4",
+      "profile": "https://kritikaparmar-programmer.github.io/MyPortfolio/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "Sumit-Sahu",
+      "name": "Sumit-Sahu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54719814?v=4",
+      "profile": "https://github.com/Sumit-Sahu",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "howardshin1",
+      "name": "Howard Shin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54039054?v=4",
+      "profile": "https://github.com/howardshin1",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "twozero88",
+      "name": "twozero88",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44749717?v=4",
+      "profile": "https://github.com/twozero88",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "GoswamiTushar",
+      "name": "Tushar Goswami",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59055924?v=4",
+      "profile": "https://github.com/GoswamiTushar",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
