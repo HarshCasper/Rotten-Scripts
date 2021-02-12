@@ -1,0 +1,30 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - website-rst
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: python3 -m pip install -r ./requirements.txt
+
+      - run: make html
+
+      - name: Deploy
+        run: |
+          git config user.name "avinal"
+          git config user.email "185067@nith.ac.in"
+          touch build/html/.nojekyll
+          ghp-import -m "Generate Handbook site" -b gh-pages "build/html" 
+          git push -f origin gh-pages
