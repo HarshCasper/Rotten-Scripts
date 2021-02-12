@@ -16,7 +16,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 4 | Audio Backup | [Click Here](/Python/Auto_Backup) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | gzip, argparse
 5 | Audio Converter | [Click Here](/Python/Audio_Converter) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | moviepy
 6 | Audio Format Converter | [Click Here](/Python/Audio_Format_Converter) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | pudub, mutagen
-7 | Automate Committing Using Git | [Click Here](/Python/Automate_Commiting_Using_Git) | [Seema Saharan](https://github.com/seema1711) | subprocess
+7 | Automate Committing Using Git | [Click Here](/Python/Automate_Commiting_using_Git) | [Seema Saharan](https://github.com/seema1711) | subprocess
 8 | Automate LinkedIN | [Click Here](/Python/Automate_LinkedIN) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | Selenium
 9 | Automate Telegram | [Click Here](/Python/Automate_Telegram) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | Selenium
 10 | AWS Scripts | [Click Here](/Python/AWS_Scripts) | [Sameer Srivastava](https://github.com/sameersrivastava13) | boto3
@@ -28,17 +28,17 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 16 | Cartoonified_Image | [Click Here](/Python/Cartoonified_Image) | [Sharvari Raut](https://github.com/sharur7) | skimage, numpy, cv2
 17 | Codechef Contests | [Click Here](/Python/Codechef_Contests) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | prettytable, bs4, requests
 18 | Codechef Problem Scrapper | [Click Here](/Python/Codechef_Problem_Scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | selenium, bs4, time
-19 | Countdown Clock and Timer | [Click Here](/Python/Countdown_clock_and_Timer) | [Anushka-S10](https://github.com/Anushka-S10) | os, time
+19 | Countdown Clock and Timer | [Click Here](/Python/Countdown_Clock_and_Timer) | [Anushka-S10](https://github.com/Anushka-S10) | os, time
 20 | Counting Days | [Click Here](/Python/Counting_Days) | [Dylan Corriveau](https://github.com/dcorriveau) | os, datetime
 21 | Create Word Cloud | [Click Here](/Python/Create_Word_Cloud) | [Prahitha](https://github.com/Prahitha) | argparse, wordcloud, numpy
 22 | Cricbuzz scrapper | [Click Here](/Python/CRICBUZZ%20scraper) | [Rutuja Dhanawade](https://github.com/rutujadhanawade) | bs4, urllib.request
 23 | Crypto Currency Converter | [Click Here](/Python/cryptocurrency_converter) | [Mohta Rahul Suresh](https://github.com/Rahul555-droid) | requests
 24 | CSV Splitter | [Click Here](/Python/CSV_Splitter) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | os, csv
 25 | Currency Converter | [Click Here](/Python/Currency_Converter) | [Prahitha](https://github.com/Prahitha) | requests, argparse
-26 | Customized Blog Headers | [Click Here](/Python/Customized_blog_headers) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | cv2, PIL, sys, os
-27 | Desktop Notifier | [Click Here](/Python/Desktop_notifier) | [Anushka-S10](https://github.com/Anushka-S10) | feedparser, notify2, pygame
+26 | Customized Blog Headers | [Click Here](/Python/Customized_Blog_Headers) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | cv2, PIL, sys, os
+27 | Desktop Notifier | [Click Here](/Python/Desktop_Notifier) | [Anushka-S10](https://github.com/Anushka-S10) | feedparser, notify2, pygame
 28 | Desktop Time Tracker | [Click Here](/Python/Desktop_Time_Tracker) | [Abdallah Ahmed](https://github.com/abdallah1097) | os, subprocess, argparse
-29 | Discord Bot | [Click Here](/Python/Discord_bot) | [KILR](https://github.com/KILR007) | discord, json, datetime 
+29 | Discord Bot | [Click Here](/Python/Discord_Bot) | [KILR](https://github.com/KILR007) | discord, json, datetime 
 30 | Download Instagram Posts | [Click Here](/Python/Download_Instagram_Posts) | [Sanket Chaudhari](https://github.com/sanket143) | re, time, wget, errno
 31 | Download Instagram Videos | [Click Here](/Python/Download_Instagram_Videos) | [Prahitha](https://github.com/Prahitha) | urllib.request, requests, json, re, sys
 32 | Download Mangas | [Click Here](/Python/Download_Mangas) | [Prahitha](https://github.com/Prahitha) | webdriver-manager, selenium, bs4
@@ -51,7 +51,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 39 | Facebook Auto Post | [Click Here](/Python/Facebook_Auto_Post) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | selenium
 40 | Facts Desktop Notifier | [Click Here](/Python/Facts_Deskop_Notifier) | [Kaustubh](https://github.com/kaustubhgupta) | pyler, praw
 41 | File Organiser | [Click Here](/Python/File_Organiser) | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh) | glob Module
-42 | Find All Links | [Click Here](/Python/Find_All_Links) | [Sanket Chaudhari](https://github.com/sanket143) | BeautifulSoup
+42 | Find All Links | [Click Here](/Python/Find_all_Links) | [Sanket Chaudhari](https://github.com/sanket143) | BeautifulSoup
 43 | Find Tweets | [Click Here](/Python/Find_Tweet) | [Muskan Khajuria](https://github.com/basketcase03) | Tweepy 
 44 | Flask Directory Initiator | [Click Here](/Python/Flask_Directory_Initiator) | [Dev Choganwala](https://github.com/DevChoganwala) | firelock, distlib
 45 | Frames to Video converter | [Click Here](https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Frames_to_Video_converter) | [Akhil Manoj](https://github.com/AkM-2018) | OpenCV
@@ -74,7 +74,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 62 | Image Filters | [Click Here](/Python/Image_filters) | [Namya LG](https://github.com/Namyalg) | numpy, cv2
 63 | Image Flip Meme Templates | [Click Here](/Python/Image_Flip_Meme_Templates) | [Namya LG](https://github.com/Namyalg) | urllib, requests
 64 | IMDb_Recommendation | [Click Here](/Python/IMDb_Recommendation) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | beautifulsoup, lxml
-65 | IMDB Scrapper | [Click Here](/Python/IMDB_scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | requests, BeautifulSoup, argparse
+65 | IMDB Scrapper | [Click Here](/Python/IMDB_Scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | requests, BeautifulSoup, argparse
 66 | Image Sketch | [Click Here](/Python/Image_Sketch) | [Sharvari Raut](https://github.com/sharur7) | cv2, numpy, skimage
 67 | Image Steganography | [Click Here](/Python/Image_Steganography) | [Akhil Manoj](https://github.com/AkM-2018)|sys, os, Image 
 68 | IMDB Top Movies | [Click Here](/Python/IMDb_Top_Movies) | [Rutuja Dhanawade](https://github.com/rutujadhanawade)| pandas, BeautifulSoup 
@@ -89,8 +89,8 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 77 | Keylogger | [Click Here](/Python/Keylogger) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | keyboard, pypiwin32
 78 | Labelling Binaries Instance | [Click Here](/Python/Labelling_Binarizer_Instance) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | sklearn.preprocessing, numpy,  pickle
 79 | Large File Identifier | [Click Here](/Python/Large_File_Identifier) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | os
-80 | Launch Computer Programs Using Python | [Click Here](/Python/launching_programs_from_python) | [sameer srivastava](https://github.com/sameersrivastava13) | subprocess
-81 | LinkedIN Post Emails Scrapper | [Click Here](/Python/Linkedin_post_emails_scrapper) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | selenium, pandas
+80 | Launch Computer Programs Using Python | [Click Here](/Python/Launching_Programs_from_Python) | [sameer srivastava](https://github.com/sameersrivastava13) | subprocess
+81 | LinkedIN Post Emails Scrapper | [Click Here](/Python/Linkedin_Post_Emails_Scrapper) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | selenium, pandas
 82 | LinkedIN Video Downloader | [Click Here](/Python/Linkedin_Video_Downloader) | [Kaustubh Gupta](https://github.com/kaustubhgupta) |tqdm, requests, html
 83 | Lorem Ipsum Generator | [Click Here](/Python/Lorem_Ipsum_Generator) | [Seema Saharan](https://github.com/seema1711) | lorem_text
 84 | Lyrics Downloader | [Click Here](/Python/Lyrics_Download) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | lyricsgenius 
@@ -102,15 +102,15 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 90 | Merge 2 PDF Files | [Click Here](/Python/Merge_2_PFDs) | [Tejas1510](https://github.com/Tejas1510) | PyPDF2, sys
 91 | Music Genre Classification | [Click Here](/Python/Music_Genre_Classification) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | Keras, TensorFlow, pandas, scikit, scipy
 92 | Net Connection | [Click Here](/Python/Net_Connection) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | socket, time, subprocess
-93 | OCR To Google Question Papers | [Click Here](/Python/OCR_To_Google_Question_Papers) | [Sanket Mhatre](https://github.com/SANKET7738)| pytesseract, nltk.data, re, newspaper, googlesearch 
+93 | OCR To Google Question Papers | [Click Here](/Python/OCR_to_Google_Question_Papers) | [Sanket Mhatre](https://github.com/SANKET7738)| pytesseract, nltk.data, re, newspaper, googlesearch 
 94 | Pagespeed API | [Click Here](/Python/Pagespeed_API) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | requests
 95 | PDF Generator | [Click Here](/Python/PDF_Generator) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | os, pdf2image, img2pdf
 96 | PDF Tables Extractor | [Click Here](/Python/PDF_Tables_Extractor) | [Rutuja Dhanawade](https://github.com/rutujadhanawade) | sys, tabula
 97 | Port Scanner | [Click Here](/Python/Port_Scanner) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | socket, Threading, time, queue
 98 | Ports Scan | [Click Here](/Python/Ports_Scan) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | socket, subprocess, datetime
 99 | Python Library Downloader | [Click Here](/Python/Python_Library_Downloader) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | os, platform 
-100 | Python News Reader | [Click Here](/Python/Python_news_reader) | [Anish Kumar](https://github.com/KmrAnish04) | os, time, dotenv
-101 | QR Code Generator | [Click Here](/Python/QR_code_generator) | madirarama | pyqrcode, argparse, csv
+100 | Python News Reader | [Click Here](/Python/Python_NEWS_Reader) | [Anish Kumar](https://github.com/KmrAnish04) | os, time, dotenv
+101 | QR Code Generator | [Click Here](/Python/QR_Code_Generator) | madirarama | pyqrcode, argparse, csv
 102 | Query Links Script | [Click Here](/Python/Query_Links_Script) | [Shivesh Choudhary](https://github.com/shiveshchoudhary) | googlesearch
 103 | Questions from Project Euler | [Click Here](/Python/Questions_from_Project_Euler) | [Namya LG](https://github.com/Namyalg) | requests, BeautifulSoup, re
 104 | Quora Bookmark Topics Downloader | [Click Here](/Python/Quora_Bookmark_Topics_Downloader) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | selenium, time
@@ -127,7 +127,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 115 | Send Email Using Gmail API | [Click Here](/Python/Send_Email_Using_Gmail_Api) | [Sumit-Sahu](https://github.com/Sumit-Sahu) | pickle, base64, argparse, __future__
 116 | Send SMS using Twilio | [Click Here](/Python/Send_SMS_Using_Twilio_In_Python) | [Sanket Mhatre](https://github.com/SANKET7738) | twilio.rest
 117 | Shutdown Your System | [Click Here](/Python/Shutdown_Your_System) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | os
-118 | Slideshare slides downloader | [Click Here](/Python/Slideshare_slides_downloader) | [Akhil Manoj](https://github.com/AkM-2018) | urllib.request, shutil, selenium, fpdf      
+118 | Slideshare slides downloader | [Click Here](/Python/Slideshare_Slides_Downloader) | [Akhil Manoj](https://github.com/AkM-2018) | urllib.request, shutil, selenium, fpdf      
 119 | Social Media Links | [Click Here](/Python/Social_Media_Links) | [Vybhav Chaturvedi](https://github.com/vybhav72954) |requests, html_to_etree, extract_social_media 
 120 | Song Popularity | [Click Here](/Python/Song_Popularity) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | lyricsgenius
 121 | Speech To Text | [Click Here](/Python/Speech_to_Text) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | pyttsx, SpeechRecognition
@@ -137,17 +137,17 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 125 | Story Reader | [Click Here](/Python/Story_Reader) | [Simarpreet Singh](https://github.com/simarpreetsingh-019) | pyttsx3, PyPDF2
 126 | Substitution Cypher | [Click Here](/Python/Substitution_Cypher) | [Mohit Gupta](https://github.com/mohitacecode) | string, sys
 127 | Subtitle Downloader | [Click Here](/Python/Subtitle_Downloader) | [Seema Saharan](https://github.com/seema1711) | urllib,  hashlib, sys
-128 | Tables To CSV | [Click Here](/Python/Table_To_CSV) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | Pandas, numpy, re, cv2
+128 | Tables To CSV | [Click Here](/Python/Table_to_CSV) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | Pandas, numpy, re, cv2
 129 | Tags Scrapper | [Click Here](/Python/Tags_Scraper) | [Tushar Goswami](https://github.com/GoswamiTushar) | BeautifulSoup, requests, os
 130 | Telegram Bot | [Click Here](/Python/Telegram_Bot) | [Namya LG](https://github.com/Namyalg) | bs4, decorator, Flask, notify2, parso, opencv, Pillow
 131 | Test Typing Speed | [Click Here](/Python/Test_Typing_Speed) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | time
 132 | Text Extract | [Click Here](/Python/Text_Extract) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | pytesseract, pathlib
 133 | Text Summarizer | [Click Here](/Python/Text_Summary) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | sumy, spaCy, nltk, neologdn
-134 | Text To Speech | [Click Here](/Python/Text_To_Speech) | [Namya LG](https://github.com/Namyalg) | gtts, os
+134 | Text To Speech | [Click Here](/Python/Text_to_Speech) | [Namya LG](https://github.com/Namyalg) | gtts, os
 135 | Time Conversion | [Click Here](/Python/Time_Conversion) | [Prahitha](https://github.com/Prahitha) | pytz, datetime, argparse
 136 | Times Of India | [Click Here](/Python/Times_Of_India) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | urllib, BeautifulSoup, datetime
 137 | Toonify Image | [Click Here](/Python/Toonify_Image) | [Tejas Sudhir Tapas](https://github.com/Tejas1510) | requests, shutil, decouple
-138 | Torrent To GoogleDrive | [Click Here](/Python/Torrent_To_GoogleDrive) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | time, libtorrent, datetime
+138 | Torrent To GoogleDrive | [Click Here](/Python/Torrent_to_GoogleDrive) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | time, libtorrent, datetime
 139 | Track Data Usage | [Click Here](/Python/Track_Data_Usage) | [Seema Saharan](https://github.com/seema1711) | threading, time, subprocess
 140 | TSV To CSV | [Click Here](/Python/TSV_to_CSV) | [Siddhant Khare](https://github.com/Siddhant-K-code) | -
 141 | Twitter Bot | [Click Here](/Python/Twitter_Bot) | [Seema Saharan](https://github.com/seema1711) | tweepy, time
@@ -155,16 +155,16 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 143 | URL Shortener | [Click Here](/Python/URL_Shortner) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | requests, json
 144 | Valid Phone Number Extractor | [Click Here](/Python/Valid_Phone_Number_Extractor) | [Hitesh Kumar](https://github.com/HeroicHitesh) | re, argparse
 145 | Video Steganography | [Click Here](/Python/Video_Steganography) | [Vedansh Vijaywargiya](https://github.com/vvHacker007) | numpy, cv2, math, subprocess
-146 | Video To Frames | [Click Here](/Python/Video_To_Frames) | [Kaustubh](https://github.com/kaustubhgupta) | cv2, sys
+146 | Video To Frames | [Click Here](/Python/Video_to_Frames) | [Kaustubh](https://github.com/kaustubhgupta) | cv2, sys
 147 | Video to Images(req. FPS/Frate) | [Click Here](/Python/vid_2_img_fps) | [Rutvik J](https://github.com/RutvikJ77) | cv2, sys, args
 148 | Video Watermarker | [Click Here](/Python/Video_Watermarker) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | cv2, tqdm, moviepy.ediotr
 149 | Vigenere Cipher | [Click Here](/Python/Vigenere_Cipher) | [Mohit Gupta](https://github.com/mohitacecode) | -
-150 | Watermark It | [Click Here](/Python/Watermark_it) | [Aditya Jetely](https://github.com/AdityaJ7) | pdfrw, sys, os
+150 | Watermark It | [Click Here](/Python/Watermark_It) | [Aditya Jetely](https://github.com/AdityaJ7) | pdfrw, sys, os
 151 | Website Blocker | [Click Here](/Python/Website_Blocker) | [Ankita Priya](https://github.com/AnkitaBIT) | datetime
 152 | Website Cloner | [Click Here](/Python/Website_Cloner) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | logging, cssutils, BeautifulSoup
 153 | Weather Using Open Weather Map | [Click Here](/Python/Weather_using_OpenWeatherMap) | [Namya LG](https://github.com/Namyalg) | requests, json, sys
 154 | WhatsApp Message Automation | [Click Here](/Python/WhatsApp_Message_Automation) | [Namya LG](https://github.com/Namyalg) | selenium, time
-155 | WhatsApp SMS Bomber | [Click Here](/Python/Whatsapp_Sms_Bomber) | [ANSHUMALI SHAW](https://github.com/bagofcodes) | selenium, tkinter, xpath
+155 | WhatsApp SMS Bomber | [Click Here](/Python/Whatsapp_SMS_Bomber) | [ANSHUMALI SHAW](https://github.com/bagofcodes) | selenium, tkinter, xpath
 156 | Who's Online On WhatsApp | [Click Here](/Python/Who's_Online_WhatsApp) | [Wable Sanket](https://github.com/Sanketwable) | selenium, time, users
 157 | Word Meaning | [Click Here](/Python/Word_Meaning) | [Mohit Gupta](https://github.com/mohitacecode) | PyDictionary
 158 | Wifi Speed Tester | [Click Here](/Python/Wifi_Speed_Tester) | [Vedansh Vijaywargiya](https://github.com/vvHacker007) | win10toast, speedtest
