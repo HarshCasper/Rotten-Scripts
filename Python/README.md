@@ -73,11 +73,11 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 61 | Image Encoder | [Click Here](/Python/Image_Encoder) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | argparse, base64, json, time
 62 | Image Filters | [Click Here](/Python/Image_filters) | [Namya LG](https://github.com/Namyalg) | numpy, cv2
 63 | Image Flip Meme Templates | [Click Here](/Python/Image_Flip_Meme_Templates) | [Namya LG](https://github.com/Namyalg) | urllib, requests
-64 | IMDb_Recommendation | [Click Here](/Python/IMDb_Recommendation) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | beautifulsoup, lxml
-65 | IMDB Scrapper | [Click Here](/Python/IMDB_Scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | requests, BeautifulSoup, argparse
+64 | IMDb Recommendation | [Click Here](/Python/IMDb_Recommendation) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | beautifulsoup, lxml
+65 | IMDb Scrapper | [Click Here](/Python/IMDB_Scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | requests, BeautifulSoup, argparse
 66 | Image Sketch | [Click Here](/Python/Image_Sketch) | [Sharvari Raut](https://github.com/sharur7) | cv2, numpy, skimage
 67 | Image Steganography | [Click Here](/Python/Image_Steganography) | [Akhil Manoj](https://github.com/AkM-2018)|sys, os, Image 
-68 | IMDB Top Movies | [Click Here](/Python/IMDb_Top_Movies) | [Rutuja Dhanawade](https://github.com/rutujadhanawade)| pandas, BeautifulSoup 
+68 | IMDb Top Movies | [Click Here](/Python/IMDb_Top_Movies) | [Rutuja Dhanawade](https://github.com/rutujadhanawade)| pandas, BeautifulSoup 
 69 | Image To Sepia | [Click Here](/Python/Image_to_Sepia) | [Shravari Raut](https://github.com/sharur7)| cv2, numpy
 70 | Initialize HTTP Server | [Click Here](/Python/Initialize_HTTP_Server) | [Seema Saharan](https://github.com/seema1711) | http.server, socketserver
 71 | Instagram Followers Following Scraper | [Click Here](/Python/Instagram_Followers_Following_Scraper) | [Aastha](https://github.com/aastha985) | selenium, BeautifulSoup
@@ -156,7 +156,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 144 | Valid Phone Number Extractor | [Click Here](/Python/Valid_Phone_Number_Extractor) | [Hitesh Kumar](https://github.com/HeroicHitesh) | re, argparse
 145 | Video Steganography | [Click Here](/Python/Video_Steganography) | [Vedansh Vijaywargiya](https://github.com/vvHacker007) | numpy, cv2, math, subprocess
 146 | Video To Frames | [Click Here](/Python/Video_to_Frames) | [Kaustubh](https://github.com/kaustubhgupta) | cv2, sys
-147 | Video to Images(req. FPS/Frate) | [Click Here](/Python/vid_2_img_fps) | [Rutvik J](https://github.com/RutvikJ77) | cv2, sys, args
+147 | Video to Images(FPS) | [Click Here](/Python/Video_to_Image(FPS)) | [Rutvik J](https://github.com/RutvikJ77) | cv2, sys, args
 148 | Video Watermarker | [Click Here](/Python/Video_Watermarker) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | cv2, tqdm, moviepy.ediotr
 149 | Vigenere Cipher | [Click Here](/Python/Vigenere_Cipher) | [Mohit Gupta](https://github.com/mohitacecode) | -
 150 | Watermark It | [Click Here](/Python/Watermark_It) | [Aditya Jetely](https://github.com/AdityaJ7) | pdfrw, sys, os
