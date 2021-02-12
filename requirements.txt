@@ -3,3 +3,4 @@ sphinx-book-theme==0.0.39
 sphinx-tabs==2.0.1
 sphinx-intl==2.0.1
 ghp-import==1.0.1
+sphinx-copybutton
