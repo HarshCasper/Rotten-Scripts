@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Rotten Scripts'
-copyright = '2021'
-author = 'Harsh Casper'
+copyright = '2021, Harsh Bardhan Sharma'
+author = 'Avinal Kumar'
 
 # The full version, including alpha/beta/rc tags
 release = "1.0.0"
@@ -44,7 +44,6 @@ exclude_patterns = []
 
 master_doc = 'index'
 
-script_base = 'https://github.com/HarshCasper/Rotten-Scripts/tree/master/'
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -52,7 +51,7 @@ script_base = 'https://github.com/HarshCasper/Rotten-Scripts/tree/master/'
 #
 html_theme = 'sphinx_book_theme'
 html_logo = "assets/banner.png"
-html_title = "Rotten Sphinx"
+html_title = "Rotten Scripts"
 html_copy_source = True
 html_sourcelink_suffix = ""
 html_favicon = "assets/banner.png"
@@ -67,7 +66,7 @@ html_theme_options = {
     "use_repository_button": True,
 }
 
-html_baseurl = "https://avinal.space/rotten-scripts"
+html_baseurl = "https://HarshCasper.github.io/rotten-scripts"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
