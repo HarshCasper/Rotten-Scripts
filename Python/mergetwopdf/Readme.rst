@@ -1,20 +1,19 @@
 Merge two pdf Files
 ===================
 
-Third Party Libraries Required :
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|checkout|
+
+Third Party Libraries Required : 
 
 1.PyPDF2
 
-How to install above Library
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How to install above Library 
 
-::
+.. code-block:: bash
 
    import PyPDF2
 
 How to use it :
-~~~~~~~~~~~~~~~
 
 1. Download or clone the repository
 2. Install Required Libraries
@@ -23,40 +22,28 @@ How to use it :
 4. you will get the merged pdf in the same directory
 
 Output
-~~~~~~
+------
 
 I have added the merged pdf file named as MergedFiles.pdf which is
 formed from pdf1.pdf pdf2.pdf . You can check the final output in
 MergedFiles.pdf File
 
-PDF File 1
-~~~~~~~~~~
+PDF File 1 
 
 .. figure:: https://media.giphy.com/media/oUoIpReh0bV67tvVbF/giphy.gif
    :alt: pdf1
 
-   pdf1
-
 PDF File 2
-~~~~~~~~~~
 
 .. figure:: https://media.giphy.com/media/5AiytDDSxCOQrhFylS/giphy.gif
    :alt: pdf1
 
-   pdf1
-
-Merged File
-~~~~~~~~~~~
+Merged File 
 
 .. figure:: https://media.giphy.com/media/q03Je7x4uy85VeNvcT/giphy.gif
    :alt: MERGED
 
-   MERGED
+Check out my Github profile `Tejas1510 <https://github.com/Tejas1510>`__
 
-.. figure:: https://forthebadge.com/images/badges/built-with-love.svg
-   :alt: built with love
-
-   built with love
-
-Check out my Github profile
-`Tejas1510! <https://github.com/Tejas1510>`__
+.. |checkout| image:: https://forthebadge.com/images/badges/check-it-out.svg
+  :target: https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/mergetwopdf/
