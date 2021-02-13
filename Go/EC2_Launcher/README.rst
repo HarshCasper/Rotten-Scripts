@@ -16,7 +16,7 @@ AWS IAM account
 Usage Example
 -------------
 
-.. code-block:: powershell
+.. code-block::
 
    go run --help
    Usage of C:\Users\frbimo\AppData\Local\Temp\go-build379111111\b001\exe\main.exe:
