@@ -30,7 +30,7 @@ Also reverse the loop for dino to get searched from back of screenshot to identi
 
 
 
-** All the requirements for this script is mentioned in **requirements.txt** file.
+#### All the requirements for this script is mentioned in **requirements.txt** file.
 
 
 
