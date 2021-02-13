@@ -6,7 +6,7 @@
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-41-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-46-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -120,6 +120,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.linkedin.com/in/sharvari-raut-a62a99171"><img src="https://avatars1.githubusercontent.com/u/57194200?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sharvari Raut</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sharur7" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sharur7" title="Documentation">📖</a></td>
     <td align="center"><a href="http://blastoise.github.io"><img src="https://avatars0.githubusercontent.com/u/24838843?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ashutosh Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Blastoise" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Blastoise" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/CharvyJain"><img src="https://avatars0.githubusercontent.com/u/69421337?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CharvyJain</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=CharvyJain" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://kritikaparmar-programmer.github.io/MyPortfolio/"><img src="https://avatars.githubusercontent.com/u/59971890?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kritika Parmar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=kritikaparmar-programmer" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=kritikaparmar-programmer" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/Sumit-Sahu"><img src="https://avatars.githubusercontent.com/u/54719814?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sumit-Sahu</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Sumit-Sahu" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Sumit-Sahu" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/howardshin1"><img src="https://avatars.githubusercontent.com/u/54039054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Howard Shin</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=howardshin1" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=howardshin1" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/twozero88"><img src="https://avatars.githubusercontent.com/u/44749717?v=4?s=100" width="100px;" alt=""/><br /><sub><b>twozero88</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=twozero88" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=twozero88" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/GoswamiTushar"><img src="https://avatars.githubusercontent.com/u/59055924?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tushar Goswami</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=GoswamiTushar" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=GoswamiTushar" title="Documentation">📖</a></td>
   </tr>
 </table>
 

@@ -1,0 +1,2 @@
+Recently , content - based music information retrieval ( MIR ) systems for mobile devices have attracted great interest .
+In this study , we evaluate various pre - processing methods for a hash - based fingerprint system and determine the best one by determining the accuracy of searching for a query from an LUT .

@@ -18,7 +18,8 @@ In terms of style checking we have these actions -
 We also have our own separate [STYLING GUIDELINES](../../README.md) as well, you are kindly requested to go through
 that file in order to solve all the CODE related errors.
 
-Please be advised that we may even reject a Working Pull Request, if it fails the minimum `Programming Styles and Standarads`.
+Please be advised that we may even reject a Working Pull Request, if it fails the minimum
+`Programming Styles and Standarads`.
 
 In this Troubleshoot guide, we will help you to sort out all the errors related to.
 
@@ -30,7 +31,8 @@ In this Troubleshoot guide, we will help you to sort out all the errors related 
 
 All the Possible Error Codes are mentioned down below. Match your error-code and click on the Link.
 
-This will take you to [markdownlint](https://github.com/DavidAnson/markdownlint). The rules of styling and possible errors have been taken from this Repository only.
+This will take you to [markdownlint](https://github.com/DavidAnson/markdownlint).
+The rules of styling and possible errors have been taken from this Repository only.
 
 - **[MD001](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md001)** *heading-increment/header-increment* - Heading levels should only increment by one level at a time
 - **[MD003](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md003)** *heading-style/header-style* - Heading style
@@ -74,9 +76,13 @@ This will take you to [markdownlint](https://github.com/DavidAnson/markdownlint)
 
 ## Check Spellings
 
-This action lists out all the possible spelling mistakes in your `README.md` file. It is strongly suggested that you spellcheck all your files before uploading anything to maintain the aesthetics of the Repo. If there are spelling mistakes in your file, the action will fail, you can check the incorrect spelling as well.
+This action lists out all the possible spelling mistakes in your `README.md` file.
+It is strongly suggested that you spellcheck all your files before uploading anything to maintain the aesthetics
+of the Repo. If there are spelling mistakes in your file, the action will fail,
+you can check the incorrect spelling as well.
 
-It is strongly advised to correct those spellings or the PR might be outright rejected. For more help Read our [STYLING GUIDELINES](../../README.md).
+It is strongly advised to correct those spellings or the PR might be outright rejected.
+For more help Read our [STYLING GUIDELINES](../../README.md).
 
 If you believe that some words are wrongly pointed out and/or you want your name to be ignored by the Action.
 
@@ -84,17 +90,42 @@ It is recommended that you add the word to the [wordlist](.wordlist.txt).
 
 Kindly note that any wrong edit can cause breaking changes.
 
-Steps to Consider
+Steps to Consider:
 
 - Use `git checkout` to navigate to the branch in your remote which was used to open the PR.
 - Add the required words in [wordlist](.wordlist.txt) **in your branch**.
-- Remember to add a New Line after every word.
-- `git add .`
-- `git commit -m "Added Words in Wordlist"`
-- `git push -u origin <branch>`
+- Remember to add every word in a new line.
+- Run the following command
+
+```bash
+git add .
+git commit -m "Added Words in Wordlist"
+git push -u origin <branch>`
+```
 
 ## Check Markdown links
 
 This action checks for dead links/broken links.
 
-Kindly ensure that all the links are working before you finalize your Pull Request.
+Kindly ensure that all the links are working before you finalize your Pull Request. A list of possible status code,
+and the workaround can be found below.
+
+- 200: Active code - Your link is working properly :grinning:
+- 206: Partial success - Only a part of request is being successful, None the less, link is active :grinning:
+- 400: Bad Request - A client side error, is there any typographical mistake, Recheck your README, try visiting the
+site from your browser too! :thinking:
+- 404: Not Found - The website is not responding, is it dead, recheck your README asap, correct the link or add an
+alternative. :raised_eyebrow:
+- 429: Too many requests - Overwhelming! Just surpassed the rate limit of the website, it's fine, the site is up and
+running. :dizzy_face:
+- 999: Blocked by agent - Everything is working fine, some agent like LinkedIN and Spotify block multiple request
+from their side. It is recommended that you mention this in your PR, so that maintainers can affectively deal
+with the error. :roll_eyes:
+
+Don't worry maintainers are trying their best to keep the repository fully automated with minimal errors,
+in case you find something you are more than welcome to mention it in your
+[Pull Request](https://github.com/HarshCasper/Rotten-Scripts/pulls), open an
+[Issue](https://github.com/HarshCasper/Rotten-Scripts/issues), or start a
+[Discussion](https://github.com/HarshCasper/Rotten-Scripts/discussions).
+
+**To know more about the _GitHub Actions_, consider checking _[Styling Guidelines](../../STYLE_GUIDELINES.md)_.**
