@@ -14,7 +14,7 @@ This python scripts enables chrome dinosaur to play chrome dino game automatical
 * See how it plays and press a key to interrupt/stop the game.
 
 
-##Features of files
+## Features of files
 ### Coordinates.py:
 To know the coordinates of screen first we need to find the X and Y locations of screen .
 
