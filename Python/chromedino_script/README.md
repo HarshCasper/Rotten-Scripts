@@ -1,26 +1,40 @@
-## Chrome Dino Game Automation Using Python
+# Chrome Dino Game Automation Using Python
 
-For doing automation I had used python libraries such as pyautogui and pillow .
+## Description
+This python scripts enables chrome dinosaur to play chrome dino game automatically.
 
-To play dino game we need to take care of two obstacles : first the cactus coming in between and second the bird flying above.
 
-To know the location of the obstacles first we need to find the X and Y locations of them on screen . Check coordinates.py file
+## Execution 
+* Run `pip install -r requirements.txt` .
+* Run `python coordinates.py` for knowing the cooridnates of your screen.
+* Go to the `chrome://dino` in your Google Chrome Browser.
+* Run `python enemy_location_checker.py` to know the location of cactus and bird (obstacles for dino).
+* Now , Run `python main.py`  
+* Then go to the `chrome://dino` in your Google Chrome Browser and press any key from keyboard to start the game.
+* See how it plays and press a key to interrupt/stop the game.
 
-# To identify enemies
-Then to make dino identify the cactus and bird , captured the image of two make a frame of it and trained dino to escape it.
-Luckily , we have only three colors in this game : black(for night) , white(for day)  and gray.(for obstacles and dino)
-So , we have to match the gray pixels and if obstacle  is close to dino then  make a jump. For this take a image with obstacles coming in between using ImageGrab from pillow library and then find out the pixels in which the obstacles are coming. Check enemy_location_checker.py file
 
-# To run bot
-First increase the search width for evey second the bot goes (Use time module from python) to simulate the dino acceleration.
-Second get the background color (night and day) .
-Third reverse loop for dino to get searched from back of screenshot to identify obstacle and it will speed up the program.
+##Features of files
+### Coordinates.py:
+To know the coordinates of screen first we need to find the X and Y locations of screen .
 
-Check main.py file
+### enemy_location_checker.py:
+To make dino identify the cactus and bird , captured the image of two make a frame of it and trained dino to escape it.
+As , there are only three colors present in this game : black(for night) , white(for day)  and gray(for obstacles and dino)
+So , To match the gray pixels of obstacle to make identify dino for obstacle and if obstacle is close to dino then make a jump. 
+For this take a image with obstacles coming in between using **ImageGrab from pillow library** and then find out the pixels in which the obstacles are coming. 
 
-After running the main.py file go to chrome browser where dino game is opened(chrome://dino) and then start game by pressing space bar and it will play automatically.
+### main.py
+As game continues, search width has to be increased for bot.For this **time module from python** helps to simulate the dino acceleration.
+Also reverse the loop for dino to get searched from back of screenshot to identify obstacle and it will speed up the program.
 
-I had attached a gif to show how it plays.
+
+
+** All the requirements for this script is mentioned in **requirements.txt** file.
+
+
+
+
 
 
 ![Demo of the Game](demo_dinogame.gif)
