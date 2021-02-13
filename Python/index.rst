@@ -1,0 +1,188 @@
+***************
+What is Python?
+***************
+
+Python is a high-level general purpose programming language created by
+Guido van Rossum. It is an easy to use interpreted language which can be
+used for a wide varity of tasks including and not limited to automation,
+data science, machine learning, image processing and web development.
+
+The main reason behind its success is the presence of vast variety of
+libraries and its super helpful developer community.
+
+Python scripts associated with this project:
+--------------------------------------------
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Python Scripts
+    
+    ASCIIfy_Image/README
+    AWS_Scripts/README
+    All_GitHub_Repos/README
+    Amazon_Product_Price_Tracker/README
+    Audio_Converter/README
+    Audio_Format_Converter/README
+    Auto_Backup/README
+    Automate-LinkedIN/README
+    Automate-Telegram/README
+    Automate_Commiting_Using_Git/README
+    Base64_Encoder_Decoder/README
+    Battery_Full_Charged_Notifier/README
+    Book_Downloader/README
+    Bulk_Certificate_Generator/README
+    CRICBUZZ_scraper/README
+    CSV_Splitter/README
+    Caesar_Cipher/README
+    Cartoonified_Image/README
+    Codechef_Contests/README
+    Codechef_Problem_Scrapper/README
+    Countdown_clock_and_Timer/README
+    Counting_Days/README
+    Create_Word_Cloud/README
+    CRICBUZZ_scraper/README.rst
+    cryptocurrency_converter/README
+    Currency_Converter/README
+    Customized_blog_headers/README
+    DSC_Event_Scrapper/README
+    Desktop_Time_Tracker/README
+    Desktop_notifier/README
+    Discord_bot/README
+    Download_Instagram_Posts/README
+    Download_Instagram_Videos/README
+    Download_Mangas/README
+    Duplicate_Image/README
+    Email_Scrape_From_Webpage/README
+    Encrypt_Text/README
+    Execution_time/README
+    Extract_Image_Metadata/README
+    Facebook_Auto_Post/README
+    Facts_Deskop_Notifier/README
+    File_Organiser/README
+    Find_All_Links/README
+    Find_Tweet/README
+    Flask_Directory_Initiator/README
+    Frames_to_Video_converter/README
+    GeeksForGeeks_Article_Downloader/README
+    Generate_Fake_Data/README
+    Get_BBC_News/README
+    Get_Current_Weather/README
+    Get_Lyrics/README
+    Git_Repo_Size_Contributors/README
+    Github_Bomb_Issues/README
+    Github_Traffic/README
+    Google-News-Scrapper/README
+    Gradient_Mapping/README
+    HTML_to_Markdown/README
+    HackerNews_scrapper/README
+    Hash_The_File/README
+    Heat_Your_System/README
+    Human_Detector/README
+    IMDB_scrapper/README
+    IMDb_Recommendation/README
+    IMDb_Top_Movies/README
+    Image_Encoder/README
+    Image_Sketch/README
+    Image_Steganography/README
+    Image_filters/README
+    Image_flip_meme_templates/README
+    Image_to_Sepia/README
+    Initialize_HTTP_Server/README
+    Instagram_Followers_Following_Scraper/README
+    Instagram_Followers_Following_Scraper/Using_BeautifulSoup/README
+    Instagram_Followers_Following_Scraper/UsingSelenium/README
+    Instagram_Profile_Pic_Downloader/README
+    Internshala_Scrapper/README
+    Invisible_Cloak/README
+    JSON_to_Excel/README
+    JSON_to_YAML/README
+    Keylogger/README
+    Labelling_Binarizer_Instance/README
+    Large_File_Identifier/README
+    launching_programs_from_python/README
+    Linkedin_Video_Downloader/README
+    Linkedin_post_emails_scrapper/README
+    Lorem_Ipsum_Generator/README
+    Lyrics_Download/README
+    Magic_Pen/README
+    markovmemes/README
+    Mass_Email_Sender/README
+    Medium_article_downloader/README
+    Meet_Strangers/README
+    mergetwopdf/Readme
+    Music_Genre_Classification/README
+    Net_Connection/README
+    Network_scanner/README
+    OCR_To_Google_Question_Papers/README
+    PDF_Generator/README
+    PDF_Tables_Extractor/README
+    Pagespeed_API/README
+    Port_Scanner/README
+    Ports_Scan/README
+    Python_Library_Downloader/README
+    Python_news_reader/README
+    QR_code_generator/README
+    Query_Links_Script/README
+    Questions_from_Project_Euler/README
+    Quora_Bookmark_Topics_Downloader/README
+    ROT13/README
+    RSA_Key_Generation/README
+    Random_Password_Generator/README
+    Reddit_Wallpaper/README
+    S3_Bucket_Creator/README
+    S3_Bucket_Downloader/README
+    Scrap_Restaurants_using_ZomatoAPI/README
+    Scrape_Twitter/README
+    Screen_Grabber/README
+    Search_File/README
+    Send_Email_Using_Gmail_Api/README
+    Send_Emails/README
+    Send_SMS_Using_Twilio_In_Python/README
+    Shutdown_Your_System/README
+    Slideshare_slides_downloader/README
+    Social_Media_Links/README
+    Song_Popularity/README
+    Speech_to_Text/README
+    Speech_to_Text/README
+    Sports_Score_Updates/README
+    Stock_Market_Data/README
+    Story_Reader/README
+    Strong_Password_Detection/README
+    Substitution_Cypher/README
+    Subtitle_Downloader/README
+    TSV_to_CSV/README
+    Table_To_CSV/README
+    Tags_Scraper/README
+    Telegram_Bot/README
+    Test_Typing_Speed/README
+    Text_Extract/README
+    Text_To_Speech/README
+    Time_Conversion/README
+    Times_Of_India/README
+    ToonifyImage/README
+    Torrent_To_GoogleDrive/README
+    Track_Data_Usage/README
+    Track_Data_Usage/README
+    Twitter_Bot/README
+    URL_Shortner/README
+    Upload_File_As_Github_Gist/README
+    Valid_Phone_Number_Extractor/README
+    Video_Steganography/README
+    Video_To_Frames/README
+    Video_Watermarker/README
+    Vigenere_Cipher/README
+    Watermark_it/README
+    Weather_using_OpenWeatherMap/README
+    Website_Blocker/README
+    Website_Cloner/README
+    WhatsApp_Message_Automation/README
+    Whatsapp_Sms_Bomber/README
+    Who_Is_Online_On_WhatsApp/README
+    Wifi_Speed_Tester/README
+    Word_Meaning/README
+    XML_To_CSV/README
+    YouTube_Video-Audio_Download/README
+    Youtube_Bot/README
+    Youtube_Video_Download/README
+    Zipper/README
+    Zoom_Automation/README
