@@ -19,6 +19,6 @@ Blogs are like caffeine for writers for which they always tries to find interest
 - Then search images of which category/genre you want.
 
 ## Output
-![image]([img]https://i.imgur.com/jiTQVJf.png[/img])
+![image](https://i.imgur.com/jiTQVJf.png)
 
 Made by [Piyush Gupta](https://github.com/gupta-piyush19)
