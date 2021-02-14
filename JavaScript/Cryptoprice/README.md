@@ -22,5 +22,5 @@ Coinbase is a digital currency exchange headquartered in San Francisco, Californ
 ## Output
 
 You will see the cryptocurrency name and live price as output
-![image](cryptoprice.png)
+![image]([img]https://i.imgur.com/koTZWbA.png[/img])
 code by [Mohit Bhat](https://www.mbcse.co)

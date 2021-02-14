@@ -15,5 +15,5 @@ A website may have admin panels associated with them, but for security and other
 
 ## Output
 
-![image](bruteForceAdmin.png)
+![image]([img]https://i.imgur.com/TG5Dx1W.png[/img])
 code by [Mohit Bhat](https://www.mbcse.co)

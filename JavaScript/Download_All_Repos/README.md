@@ -22,5 +22,5 @@ Github being the top choice for open source and storing our Projects code, it be
 
 ## Output
 
-![image](downloadAllRepos.png)
+![image]([img]https://i.imgur.com/LLJGgZY.png[/img])
 **code by [Mohit Bhat](https://www.mbcse.co)**

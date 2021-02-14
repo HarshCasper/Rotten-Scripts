@@ -15,6 +15,6 @@ Comments Plays an important role while writing efficient and clean code. Comment
 ## Output
 
 You will see the Line, Block and all type of comments written in output.md file
-![image](extractComments.png)
-![image](outputmd.png)
+![image]([img]https://i.imgur.com/15VMKHf.png[/img])
+![image]([img]https://i.imgur.com/ILeAwMv.png[/img])
 code by [Mohit Bhat](https://www.mbcse.co)
