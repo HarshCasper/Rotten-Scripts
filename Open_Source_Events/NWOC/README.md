@@ -7,6 +7,6 @@ Blockchain, IoT and many more. It also aims to prepare them for bigger programs 
 
 <p align="center">
   <a href="https://njackwinterofcode.github.io/">
-    <img src="./nwoc.jpg" alt="Logo" />
+    <img src="https://i.imgur.com/bELrDwO.jpg" alt="Logo" />
   </a>
 </p>
