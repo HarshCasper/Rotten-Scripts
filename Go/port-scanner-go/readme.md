@@ -1,18 +1,14 @@
-
 # Port scanner in Go
 Go-lang script for scanning specific or all open ports of the device.
-
 # Packages Used
-1. fmt
-2. time
-3. sync
-4. strings
-5. net
+- fmt
+- time
+- sync
+- strings
+- net
 
 # How to run
-
-** Navigate to the project directory.
-
+Navigate to the project directory.
 ```bash
 cd Rotten-Scripts/Go/port-scanner-go
 ```
@@ -26,4 +22,4 @@ go run port_scanner.go
 ![](https://i.imgur.com/tMiEYNk.jpg)
 
 ## Author
-  Pritam Pawar.
+- [Pritam Pawar](https://github.com/pritamp17)
