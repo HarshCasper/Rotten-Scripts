@@ -2,4 +2,4 @@
 
 A simple Python Script to scrap Times of India News and store it for future reference.
 
-![image](times_of_india.png)
+![image](https://snipboard.io/KSWiNU.jpg)
