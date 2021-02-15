@@ -29,9 +29,9 @@ These are summarised in `requirement.txt`
 
 ## Output
 
-- Using Images 
+- Using Images
 
-![](asset/output_img.PNG)
+![](https://snipboard.io/I7xMgY.jpg)
 
 - Using Video
 
@@ -47,4 +47,3 @@ These are summarised in `requirement.txt`
 ## Author(s)  
 
 Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/)
-

@@ -8,20 +8,20 @@ The script uses [Genius API](https://docs.genius.com/). It is a dedicated platfo
 - You need an API client, (it's free) follow the steps [here](https://docs.genius.com/).
 - `pip install lyricsgenius` to install dedicated package.
 - Good to go, Follow guidelines mentioned as comments in code.
-- The script is pretty much interactive, ensure you follow the guidelines. 
+- The script is pretty much interactive, ensure you follow the guidelines.
 
 # Output
 
-Lyrics of Top 3 Songs by coldplay - 
+Lyrics of Top 3 Songs by coldplay -
 
-![](img/lyrics.PNG)
+![](https://snipboard.io/QNArZf.jpg)
 
-Resulting Text File - 
+Resulting Text File -
 
-![](img/result.PNG)
+![](https://snipboard.io/Vl2vye.jpg)
 
 ## Author(s)  
-  
+
 Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/).
 
 ## Disclaimers, if any

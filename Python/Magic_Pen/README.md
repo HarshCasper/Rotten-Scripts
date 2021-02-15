@@ -13,4 +13,4 @@ Ever dreamed of drawing stuff on the screen just by waving your pen in the air..
   - then run the script in jupyter lab/notebook!
 
 
-![](demo.gif)
+![](https://i.imgur.com/HpJvYRK.gif)

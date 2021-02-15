@@ -24,9 +24,9 @@ This python script converts the input image to an ASCII version of itself. This 
   $ python asciify.py input.jpg  
 ```
 
-![Input image](input.jpg)
+![Input image](https://i.imgur.com/O9F9ULa.jpg)
 
 ### Will be converted to....
 <br>
 
-![Converted image](image.png)
+![Converted image](https://i.imgur.com/k8ZzEsZ.png)

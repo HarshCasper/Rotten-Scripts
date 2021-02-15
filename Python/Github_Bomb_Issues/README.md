@@ -1,6 +1,6 @@
 # Bomb Issues on a Github Repository
 
-This python script bombs specified number of issues on a Github Repository. 
+This python script bombs specified number of issues on a Github Repository.
 
 ### Libraries used:
 
@@ -18,6 +18,6 @@ This python script bombs specified number of issues on a Github Repository.
 
 3. Run ``` python bomb-issues.py ```.
 
-***A demo:*** 
+***A demo:***
 
-![](Snippets\how-to.png)
+![](https://snipboard.io/SH5tfu.jpg)

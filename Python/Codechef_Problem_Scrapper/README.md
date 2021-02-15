@@ -27,7 +27,5 @@ Type your problem code and see the script in action.
 ### A sample text file generated using this script:
 
 <p align = "center">
-	<img src="sample.PNG" alt="sample_pdf">
+	<img src="https://i.imgur.com/TtmdLJQ.png" alt="sample_pdf">
 </p>
-
-

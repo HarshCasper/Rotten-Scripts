@@ -15,7 +15,7 @@ from PIL.ExifTags import TAGS
 
 #Enter your Image here
 image_file = 'image.jpg'   # This image is copyrighted under © 2010 Hartswood Films.
-                         
+
 # on execution an object of Image type is returned and stored in image_file variable.
 
 try:
@@ -27,14 +27,14 @@ except IOError:
 # dictionary to store metadata keys and value pairs.
 exif = {}
 
-# iterating over the dictionary 
+# iterating over the dictionary
 for tag, value in image._getexif().items():
 
 #extarcting all the metadata as key and value pairs and converting them from numerical value to string values
     if tag in TAGS:
         exif[TAGS[tag]] = value
 
-#checking if image is copyrighted      
+#checking if image is copyrighted
 try:
     if 'Copyright' in exif:
         print("Image is Copyrighted, by ", exif['Copyright'])
@@ -44,6 +44,3 @@ except KeyError:
 print()
 print("Displaying all the metadatas of the image: \n")
 print(exif)
-
-
-

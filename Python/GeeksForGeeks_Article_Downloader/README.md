@@ -26,4 +26,4 @@ This python script will download articles from GeeksForGeeks and save them as a 
 
 The program will ask you to enter a filename(without '.pdf'). The pdf will be created in the same folder.
 
-![article screenshot](geeksforgeeks_article_downloader.JPG)
+![article screenshot](https://snipboard.io/KNtJ3X.jpg)

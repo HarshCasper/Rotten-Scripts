@@ -20,5 +20,5 @@ python imdb_scrapper.py -l <movie_name>
 ## Sample of the script in action:
 
 <p align = "center">
-	<img src="sample.PNG" alt="movies">
+	<img src="https://snipboard.io/6KrTYP.jpg" alt="movies">
 </p>
