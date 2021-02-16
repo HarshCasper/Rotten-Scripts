@@ -6,6 +6,6 @@ CrossWoC is a six-week-long opensource event organised by IEEE DTU & IEEE DTU CS
 
 <p align="center">
   <a href="https://crosswoc.ieeedtu.in/">
-    <img src="./cwoc.jpg" alt="Logo" />
+    <img src="./cwoc.jpg" alt="JPG" />
   </a>
 </p>
