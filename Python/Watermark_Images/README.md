@@ -12,6 +12,6 @@
 
 <h3>Examples:</h3>
 <p align="center">
-<img src="https://github.com/madhurima99/Rotten-Scripts/blob/WatermarkImages/Python/Watermark_Images/Outputs/Food_cover.png" alt="Food-cover" border="0">
-<img src="https://github.com/madhurima99/Rotten-Scripts/blob/WatermarkImages/Python/Watermark_Images/Outputs/Sky_Cover.png" alt="Sky-Cover" border="0">
+<img src="https://github.com/madhurima99/Rotten-Scripts/blob/WatermarkImages/Python/Watermark_Images/Outputs/Food_cover.png" alt="Food-cover" height="300" width="700">
+<img src="https://github.com/madhurima99/Rotten-Scripts/blob/WatermarkImages/Python/Watermark_Images/Outputs/Sky_Cover.png" alt="Sky-Cover" height="400" width="650">
 </p>
