@@ -25,3 +25,8 @@ API_Key=YOUR_API_URL_HERE
 
 *Now, Enjoy listening to top news from all over the world. 👍*
 
+Screenshot:
+![](https://snipboard.io/svfLhw.jpg)
+
+Pylint result:
+![](https://snipboard.io/u8Hr4n.jpg)

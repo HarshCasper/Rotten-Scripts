@@ -13,4 +13,4 @@ Go
  $ go run main.go
 ```
 
-![image](code.png)
+![image](https://i.imgur.com/MRcCiCP.png)

@@ -13,4 +13,4 @@ Before running the script, make sure you have the required dependencies. Not sur
 Also you will require latest chrome driver. Download latest one from [here](https://chromedriver.chromium.org/downloads) and place in the same location where script lies.
 
 # Working Demo
-![image](preview.gif)
+![image](https://i.imgur.com/3eJkqgU.gif)

@@ -2,7 +2,7 @@
 
 <!-- Banner -->
 <div class="container-fluid">
-  <img class="mx-auto" src="assets/banner.png">
+  <img class="mx-auto" src="https://i.imgur.com/7TSaSl8.png">
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -142,7 +142,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 |                                     <a href="https://github.com/harshcasper"><img src="https://avatars1.githubusercontent.com/u/47351025?s=460&u=e6985588320978737a51ac23c8a624005fce5e18&v=4" width=150px height=150px /></a>                                      |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                      **[Harsh Bardhan Mishra](https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173//)**                                                                                       |
+|                                                                                      **[Harsh Bardhan Mishra](https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/)**                                                                                       |
 | <a href="https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
 
 > **_Need help? Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**

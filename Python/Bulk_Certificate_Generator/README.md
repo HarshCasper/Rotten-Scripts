@@ -22,13 +22,13 @@ This Script is used to generate large number of certificates in a short period o
 
 ### Generated Certificates using this tool
 
-![](Certificates/Aravind_Medamoni.jpg)
+![](https://snipboard.io/RbcynO.jpg)
 
-![](Certificates/Sai_Vardhan_Poloju.jpg)
+![](https://snipboard.io/ID2XtG.jpg)
 
-![](Certificates/Arun_Sai_Reddy.jpg)
+![](https://snipboard.io/wnNE56.jpg)
 
-![](Certificates/Sri_Manikanta_Palakollu.jpg)
+![](https://snipboard.io/jCgHK2.jpg)
 
 ### Note
 

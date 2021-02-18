@@ -9,10 +9,10 @@ There are 2 functions in the Script.
 - conversion
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This function converts the provided audio file
-into a file with desired format. 
+into a file with desired format.
 - parameters
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This can be used to find the Sample Rate of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This can be used to find the Sample Rate of
 the Audio file.
 
 ## Dependencies
@@ -31,30 +31,30 @@ the Audio file.
 ## Detailed explanation of script, if needed
 
 While working on a research project based on Audio File Processing. I found that ```.wav``` and `.flac` are best for
-Audio Processing. 
+Audio Processing.
 
 **The Problem?**
 
 It is so easy to download `mp3` files but ```.wav``` and `.flac` are not easily available and considering there huge
-file, downloading 100s of them are impractical also. Now there are online Audio Converter, but the problem of 
-downloading huge files still remain, moreover such converter usually cause a dramatic loss in quality and that is not 
+file, downloading 100s of them are impractical also. Now there are online Audio Converter, but the problem of
+downloading huge files still remain, moreover such converter usually cause a dramatic loss in quality and that is not
 acceptable (at least for research purposes). Although the converter I made can be used for more than 10 file types.
 
 So I decided to make my own File Converter for that purpose. Hope it will help you too.
 
 ## Output
 
-Original Files - 
-![Original Files](img/Wav%20Format.PNG)
+Original Files -
+![Original Files](https://i.imgur.com/7S3fY1t.png)
 
-Script - 
-![Script](img/convert.PNG)
+Script -
+![Script](https://i.imgur.com/H0r4RZx.png)
 
-Output - 
-![Output](img/Result.PNG)
+Output -
+![Output](https://i.imgur.com/hvKBwcq.png)
 
-Files in Converted format - 
-![Original Files](img/mp3%20Result.PNG)
+Files in Converted format -
+![Original Files](https://i.imgur.com/yK3aPSa.png)
 
 ## Author(s)
 

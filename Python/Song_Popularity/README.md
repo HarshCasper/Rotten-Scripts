@@ -11,12 +11,12 @@ The script uses [Genius API](https://docs.genius.com/). It is a dedicated platfo
 
 # Output
 
-Top 3 Songs by coldplay - 
+Top 3 Songs by coldplay -
 
-![](img/snap.PNG)
+![](https://snipboard.io/BEtQXh.jpg)
 
 ## Author(s)  
-  
+
 Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/).
 
 ## Disclaimers, if any

@@ -2,4 +2,4 @@
 
 A simple Python Script to shut down your System.
 
-![image](shutdown_your_system.png)
+![image](https://i.imgur.com/Bh9WlWR.png)

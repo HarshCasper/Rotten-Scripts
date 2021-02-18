@@ -24,4 +24,4 @@ Before running the script, just install open-cv for python using this command:
 
 # Working Demo
 
-![](video_to_frames.gif)
+![](https://i.imgur.com/2cqvdsl.gif)

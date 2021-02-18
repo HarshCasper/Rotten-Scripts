@@ -30,6 +30,6 @@ An example of asymmetric cryptography :
 ## Output
 
 The output will be in the form of JSON Object named keys, having public and private keys
-![OUTPUT](rsaKeyPairGenerator.png)
+![OUTPUT](https://i.imgur.com/ltPXBjG.png[/img])
 
 **CODE BY [MOHIT BHAT](https://www.mbcse.co)**

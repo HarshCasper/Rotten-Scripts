@@ -5,4 +5,4 @@
 - This script uses API to get JSON data and parses the data to get events and store in a csv file
 
 ## Sample output file
-![Sample Output](Sample_output.png)
+![Sample Output](https://i.imgur.com/LizxEJt.png)
