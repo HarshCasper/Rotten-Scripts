@@ -10,17 +10,19 @@ const node_fetch = require("node-fetch");
 //require fs for memory of old and updated data
 const fs = require("fs");
 
-// require diff to find the diff
 let url = `https://api.github.com/users/${Username}/followers`;
 
 let current = JSON.parse(fs.readFileSync("old.json"));
 console.table(current);
+
+// fetch data and store in set
 node_fetch(url)
   .then((res) => res.json())
   .then((out) => {
     let i = 0;
     let set = new Set();
-
+    
+    // find the followers username on github from the returned json by github API
     for (i in out) {
       set.add(out[i]["login"]);
     }
