@@ -5,8 +5,8 @@ python script which will give info about searched anime such as :
 - Total episodes released till date
 - Active years
 # Packages Used
-- bs4 module (for web scraping)
--  requests module
+- bs4 (for web scraping)
+-  requests 
 # How to run
 Navigate to the project directory.
 ```bash
