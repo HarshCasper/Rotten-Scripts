@@ -16,3 +16,6 @@ STL are mainly used to create 3D maps of environments like cityscapes and height
 When you use City Generator, kindly delete or store the domain.stl file before running the combine.py script as it will result in the creation of flat mesh instead of a 3D one.
 
 Further you can use [Blender](https://www.blender.org/) which is one of the most amazing and Open Source 3D asset and animation creation tool out there.
+
+![3D Cityscape in paint3D](https://imgur.com/a/5mRG4OG)
+![STL View in Python](https://imgur.com/a/FGjxC6P)
