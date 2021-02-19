@@ -13,6 +13,9 @@ Navigate to the project directory.
 cd Rotten-Scripts/python/Anime-tracker
 ```
 ```bash
+pip install -r requirements.txt
+```
+```bash
 python tracker.py
 ```
 ## Output
