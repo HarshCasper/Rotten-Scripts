@@ -13,7 +13,7 @@ Navigate to the project directory.
 cd Rotten-Scripts/python/Anime-tracker
 ```
 ```bash
-python tracker.go 
+python tracker.py
 ```
 ## Output
 ![](https://i.imgur.com/qSVsSjb.png)
