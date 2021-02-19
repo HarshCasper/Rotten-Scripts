@@ -1,11 +1,10 @@
 
-
 try:
     import requests
     from bs4 import BeautifulSoup
     import urllib.parse as parse
     import re
-    import argparse
+    
 
 except ImportError:
     print('Some modules are not installed! ')
@@ -13,13 +12,15 @@ except ImportError:
 # mainly bs4 lib is used for extracting html from web pages
 
 def details(soup):
-
-    info = soup.find('div', {'class': 'pure-1 md-3-5'})                                                 # selecting div with class pure...
-    print("\nAbout  the Anime : \n", "\t\t", info.find('p').getText(), "\n")                              # now extracting the text for p tag of the div 
+    # selecting div with class pure...
+    info = soup.find('div', {'class': 'pure-1 md-3-5'})  
+    # now extracting the text for p tag of the div 
+    print("\nAbout  the Anime : \n", "\t\t", info.find('p').getText(), "\n")                              
 
     total_episodes = soup.find('div', {'class': 'pure-1 md-1-5'})
     print("\nTotal number of episodes :\t",
-          re.sub("[^0-9]", "", total_episodes.find('span').getText()))      # usimg regex for only selecting numbers
+           # usimg regex for only selecting numbers
+          re.sub("[^0-9]", "", total_episodes.find('span').getText()))     
 
     Active_years = soup.find('span', {'class': 'iconYear'})
     print("\n Years Active (From-To)\t:\t",
@@ -51,7 +52,8 @@ def entry():
     source_code = requests.get(search_url)
     content = source_code.content
     global soup
-    soup = BeautifulSoup(content, features="html.parser")    # to parse the selectd HTML
+    # to parse the selectd HTML
+    soup = BeautifulSoup(content, features="html.parser")    
     # print(soup.prettify)
 
     try:
