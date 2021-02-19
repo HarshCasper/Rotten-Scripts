@@ -6,7 +6,7 @@ import glob
 
 def combine_stl(data_dir):
 	#storing all the stl file in a directory 
-	stl_dir = '/content/model/*.stl'
+	stl_dir = 'data_dir/*.stl'
 
 	#Creating an Empty mesh to concatenate all the stl file in a directory
 	data = numpy.zeros(0, dtype=mesh.Mesh.dtype)
