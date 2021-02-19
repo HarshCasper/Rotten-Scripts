@@ -6,6 +6,7 @@ This is a script to track recent unfollowers on github.
 # Setup instructions
 * cd to Rotten-Scripts\JavaScript\Github_unfollowers.
 * Run `npm install` to install all dependencies.
+* Check whether there is [] in old.json in the beginning.
 * Run `node Github_unfollowers.js` and unleash the magic ✨✨.
 
 # Output
