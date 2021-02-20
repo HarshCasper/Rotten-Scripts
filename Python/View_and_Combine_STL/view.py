@@ -3,7 +3,13 @@ from mpl_toolkits import mplot3d
 from matplotlib import pyplot
 
 def view_stl():
-'''The following function renders a 3D geometry mesh in Matplotlib, if helps you visualize a 3D object in a simple and fast way''''
+"""The following function renders a 3D geometry mesh in Matplotlib, if helps you visualize a 3D object in a simple and fast way
+   Params: file_dir = to store the directory location
+   	   figure = to create an empty Pyplot figure
+	   axes = subgraph to plot the mesh
+	   view_mesh = stores the 3D mesh from the directory
+	   scale = stores the relative scale of vertices:plot size
+"""
 	file_dir = "REPLACE WITH THE LOCATION OF THE FILE" #example "c:\users\username\..."
 	figure = pyplot.figure(figsize=(30,30))
 	axes = mplot3d.Axes3D(figure)
