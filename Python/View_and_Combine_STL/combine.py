@@ -5,6 +5,7 @@ import numpy
 import glob
 
 def combine_stl(data_dir):
+'''This function combines all the STL file in a directory and merges them together'''
 	#storing all the stl file in a directory 
 	stl_dir = 'data_dir/*.stl'
 
@@ -15,7 +16,7 @@ def combine_stl(data_dir):
 	files = glob.glob(stl_dir)
 
 	for fl in files:
-  	stl_fl = mesh.Mesh.from_file(fl)
-  	combine = mesh.Mesh(numpy.concatenate([stl_fl.data, combine.data]))
+  		stl_fl = mesh.Mesh.from_file(fl)
+  		combine = mesh.Mesh(numpy.concatenate([stl_fl.data, combine.data]))
 
 	combine.save('combine.stl', mode=stl.Mode.ASCII)
