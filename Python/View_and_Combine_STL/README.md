@@ -24,6 +24,22 @@ When ever you open the website a city is pre-rendered for you, and you can downl
 
 The scripts make it easier to view and combine STL files on the go with one click with the need of heavy 3D render engines, sometimes which can cost a lot.
 
+```python
+#in combine.py remember to replace the directory
+data_dir = "REPLACE WITH DIRECTORY OF THE STL FILES" #example "c:\users\username\..."
+```
+```python
+#in view.py remember to replace the directory
+file_dir = "REPLACE WITH THE LOCATION OF THE FILE" #example "c:\users\username\..."
+```
+
+**Running** 
+
+``` $python3 view.py```
+
+``` $python3 combine.py```
+
+
 Further you can use [Blender](https://www.blender.org/) which is one of the most amazing and Open Source 3D asset and animation creation tool out there.
 
 ![3D Cityscape in paint3D](https://github.com/HarshCasper/Rotten-Scripts/blob/master/Python/View_and_Combine_STL/images/building_3d.png)
