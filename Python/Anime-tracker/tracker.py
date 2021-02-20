@@ -45,7 +45,7 @@ def entry():
     source_code = requests.get(search_url)
     content = source_code.content
     global soup
-    # to parse the selectd HTML
+    # to parse the selected HTML
     soup = BeautifulSoup(content, features="html.parser")    
 
     try:
