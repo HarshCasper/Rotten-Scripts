@@ -22,6 +22,3 @@ python tracker.py
 ![](https://i.imgur.com/qSVsSjb.png)
 ## Author
 - [Pritam Pawar](https://github.com/pritamp17)
-
-
-
