@@ -5,7 +5,12 @@ import numpy
 import glob
 
 def combine_stl():
-'''This function combines all the STL file in a directory and merges them together'''
+'''This function combines all the STL file in a directory and merges them together
+   Params: data_dir = stores the directory of stl files
+   	   stl_dir = list all the stl files
+	   data = total number of vertices and their value
+	   combine = Combines all the stl files relative to their location as placed originally 
+'''
 	#storing all the stl file in a directory
 	data_dir = "REPLACE WITH DIRECTORY OF THE STL FILES" #example "c:\users\username\..."
 	stl_dir = 'data_dir/*.stl'
