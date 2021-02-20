@@ -4,7 +4,7 @@ from matplotlib import pyplot
 
 def view_stl():
 '''The following function renders a 3D geometry mesh in Matplotlib, if helps you visualize a 3D object in a simple and fast way''''
-	file_dir = "LOCATION OF THE FILE" #example "c:\users\username\..."
+	file_dir = "REPLACE WITH THE LOCATION OF THE FILE" #example "c:\users\username\..."
 	figure = pyplot.figure(figsize=(30,30))
 	axes = mplot3d.Axes3D(figure)
 
