@@ -5,8 +5,8 @@ STL files are an important part of 3D asset creation and management. STL files p
 STL are mainly used to create 3D maps of environments like cityscapes and heightmaps of terrain. 
 
 ## Running the Script
-* Create a virtual env
-* install numpy-stl, numpy and matplotlib or use requirements.txt
+* Initialize and start a Virtual Environment
+* Install the Packages by running the command: pip install -r requirements.txt
 * You can use combine.py to concatenate multiple STL files(recommended for assets designed in same 3D space or domain)
 * Or you can simply run view.py to view the STL file in a pyplot env.(set the target size to your liking)
 
