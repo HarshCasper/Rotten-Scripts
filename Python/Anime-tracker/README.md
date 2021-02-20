@@ -1,12 +1,12 @@
-# Anime tracker  in python
-python script which will give info about searched anime such as :
+# Anime Tracker in Python
+Python Script which will fetch information about a particular anime. The information fetched includes:
 - Tags (Genre)
 - Rating
 - Total episodes released till date
 - Active years
 # Packages Used
-- bs4 (for web scraping)
--  requests 
+- [bs4](https://pypi.org/project/bs4/)
+-  [requests](https://pypi.org/project/requests/)
 # How to run
 Navigate to the project directory.
 ```bash
