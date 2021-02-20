@@ -4,9 +4,10 @@ from stl import mesh
 import numpy
 import glob
 
-def combine_stl(data_dir):
+def combine_stl():
 '''This function combines all the STL file in a directory and merges them together'''
-	#storing all the stl file in a directory 
+	#storing all the stl file in a directory
+	data_dir = "REPLACE WITH DIRECTORY OF THE STL FILES" #example "c:\users\username\..."
 	stl_dir = 'data_dir/*.stl'
 
 	#Creating an Empty mesh to concatenate all the stl file in a directory
