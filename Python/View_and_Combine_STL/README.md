@@ -42,8 +42,6 @@ file_dir = "REPLACE WITH THE LOCATION OF THE FILE" #example "c:\users\username\.
 
 Further you can use [Blender](https://www.blender.org/) which is one of the most amazing and Open Source 3D asset and animation creation tool out there.
 
-![3D Cityscape in paint3D](https://github.com/HarshCasper/Rotten-Scripts/blob/master/Python/View_and_Combine_STL/images/building_3d.png)
-![STL View in Python](https://github.com/HarshCasper/Rotten-Scripts/blob/master/Python/View_and_Combine_STL/images/building_py_view.png)
 
-![Road 3D](https://github.com/HarshCasper/Rotten-Scripts/blob/master/Python/View_and_Combine_STL/images/road_3d.PNG)
-![Road Py View](https://github.com/HarshCasper/Rotten-Scripts/blob/master/Python/View_and_Combine_STL/images/road_py_view.PNG)
+![Imgur](https://imgur.com/0kUJV5f)
+
