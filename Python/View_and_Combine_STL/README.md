@@ -43,5 +43,5 @@ file_dir = "REPLACE WITH THE LOCATION OF THE FILE" #example "c:\users\username\.
 Further you can use [Blender](https://www.blender.org/) which is one of the most amazing and Open Source 3D asset and animation creation tool out there.
 
 
-![Imgur](https://imgur.com/0kUJV5f)
+![STL ROADS](https://imgur.com/0kUJV5f.png)
 
