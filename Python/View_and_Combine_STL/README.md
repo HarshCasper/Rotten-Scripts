@@ -43,5 +43,7 @@ file_dir = "REPLACE WITH THE LOCATION OF THE FILE" #example "c:\users\username\.
 Further you can use [Blender](https://www.blender.org/) which is one of the most amazing and Open Source 3D asset and animation creation tool out there.
 
 
-![STL ROADS](https://imgur.com/0kUJV5f.png)
-
+![STL Buildings](https://imgur.com/0kUJV5f.png)
+![STL Buildings Py](https://imgur.com/XWux4Q3.png)
+![STL Paths](https://imgur.com/X98x8sl.png)
+![STL Paths Py](https://imgur.com/Ezjrv2M.png)
