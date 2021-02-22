@@ -1,35 +1,40 @@
-# Imports and dependencies
-from selenium import webdriver
-import tweepy
-from itertools import zip_longest
-from bs4 import BeautifulSoup
-import time
-import random
+"""
+This script extracts all Tweets, Retweets, Images, Videos, Hashtags,
+Likes and Pinned tweet of a specific user in a .csv file.
+"""
+
 import csv
+import random
+import time
+from itertools import zip_longest
+
+import tweepy
+from bs4 import BeautifulSoup
+from selenium import webdriver
 
 # Authenticate to Twitter
-CONSUMER_KEY = '<your-consumer-or-API-key-goes-here>'
-CONSUMER_SECRET = '<your-consumer-or-API-secret-goes-here>'
-ACCESS_KEY = '<your-access-key-goes-here>'
-ACESS_SECRET = '<your-access-secret-goes-here>'
-
+CONSUMER_KEY = "<your-consumer-or-API-key-goes-here>"
+CONSUMER_SECRET = "<your-consumer-or-API-secret-goes-here>"
+ACCESS_KEY = "<your-access-key-goes-here>"
+ACESS_SECRET = "<your-access-secret-goes-here>"
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACESS_SECRET)
 api = tweepy.API(auth)
 
 URL = "https://twitter.com"
-PATH_CHROME_DRIVER = '<===============ENTER YOUR CHROME DRIVER PATH===========>'
+PATH_CHROME_DRIVER = "<===============ENTER YOUR CHROME DRIVER PATH===========>"
 random_time_2_to_5 = random.randint(2, 5)
 random_time_5_to_10 = random.randint(5, 10)
 
 
 def login(driver, username, password):
     """
-    Function to log in to Twitter
+    Function to log in to Twitter with Selenium
     """
     try:
         # Phone, email or user
-        driver.find_element_by_name("session[username_or_email]").send_keys(username)
+        driver.find_element_by_name(
+            "session[username_or_email]").send_keys(username)
         # Password
         driver.find_element_by_name("session[password]").send_keys(password)
         # Login Button
@@ -57,10 +62,14 @@ def extract_pinned_tweet(driver, user_to_scrape):
         driver.get(URL + "/" + user_to_scrape)
         time.sleep(random_time_5_to_10)
 
-        driver.find_elements_by_css_selector('[data-testid="tweet"]')[0].click()
+        # Select the user's first Tweet
+        driver.find_elements_by_css_selector(
+            '[data-testid="tweet"]')[0].click()
         time.sleep(random_time_5_to_10)
 
         soup = BeautifulSoup(driver.page_source, "lxml")
+
+        # Find pinned tweet image
         pinned = soup.find_all(
             "svg",
             attrs={
@@ -69,6 +78,7 @@ def extract_pinned_tweet(driver, user_to_scrape):
             },
         )
 
+        # If exists
         if len(pinned) > 0:
             print("Pinned Tweet: True")
             pinned_tweet.append(driver.current_url)
@@ -98,7 +108,6 @@ def extract_tweets(user_to_scrape):
         all_tweets = []
         url_tweets = []
         url_retweets = []
-        url_medias = []
         url_images = []
         url_videos = []
         hashtags = []
@@ -132,16 +141,12 @@ def extract_tweets(user_to_scrape):
                 url_videos.append(
                     extended_entities[0]["video_info"]["variants"][0]["url"]
                 )
-                url_medias.append(
-                    extended_entities[0]["video_info"]["variants"][0]["url"]
-                )
             except Exception:
                 pass
 
             # If image exists
             if len(media) > 0:
                 url_images.append(media[0]["media_url"])
-                url_medias.append(media[0]["media_url"])
 
             # Check if Retweet
             if hasattr(tweet, "retweeted_status"):
@@ -184,10 +189,12 @@ def extract_likes(user_to_scrape):
 
         print("Extracting Likes, please wait...!")
 
-        favorites = tweepy.Cursor(api.favorites, user_to_scrape, count=200).items()
+        favorites = tweepy.Cursor(
+            api.favorites, user_to_scrape, count=200).items()
 
         for tweet in favorites:
-            url_favorites.append("https://twitter.com/i/web/status/" + tweet.id_str)
+            url_favorites.append(
+                "https://twitter.com/i/web/status/" + tweet.id_str)
 
         print("Likes: " + str(len(url_favorites)))
         return url_favorites
@@ -197,12 +204,15 @@ def extract_likes(user_to_scrape):
         print("Error details: " + error)
 
 
-def save_to_csv(user_to_scrape, tweets, retweets, images, videos, hashtags, likes, pinned_tweet):
+def save_to_csv(
+    user_to_scrape, tweets, retweets, images, videos, hashtags, likes, pinned_tweet
+):
     """
     Function to save result from CSV
     """
     try:
-        full_list = [tweets, retweets, images, videos, hashtags, likes, pinned_tweet]
+        full_list = [tweets, retweets, images,
+                     videos, hashtags, likes, pinned_tweet]
         file_name = user_to_scrape + ".csv"
 
         with open(file_name, "w", newline="") as file:
@@ -236,7 +246,8 @@ def main():
         user_to_scrape = input("User to scrape: ")
 
         # Extract Tweets, Retweets and Media
-        tweets, retweets, images, videos, hashtags = extract_tweets(user_to_scrape)
+        tweets, retweets, images, videos, hashtags = extract_tweets(
+            user_to_scrape)
 
         # Extract Likes
         likes = extract_likes(user_to_scrape)
@@ -288,4 +299,5 @@ def main():
         print("Error details: " + error)
 
 
-main()
+if __name__ == "__main__":
+    main()
