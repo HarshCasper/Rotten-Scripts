@@ -295,3 +295,6 @@ $RECYCLE.BIN/
 
 # Chrome driver
 chromedriver.exe
+
+# for node_modules
+node_modules
