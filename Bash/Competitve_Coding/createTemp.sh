@@ -7,7 +7,6 @@ touch code.cpp input.txt output.txt
 
 cat ~/template.cpp >> code.cpp
 
-
 #Choose your editor of choice
 
 #vim .
