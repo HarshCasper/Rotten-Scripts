@@ -481,7 +481,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/47056243?v=4",
       "profile": "https://vispprofile.netlify.app/",
       "contributions": [
-        "code"
+        "code",
+        "doc"
       ]
     }
   ],
