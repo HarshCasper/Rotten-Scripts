@@ -4,10 +4,10 @@
 
 ## Description
 
-- This scrip helps you too download images from a particular subreddit in local system.
-- You have choice:
-  - To select your favoroit Subreddit
-  - Select number of images you want to download (go for more than 4)
+- This script helps you to download images from a particular subreddit in the local system.
+- You have a choice:
+  - To select your favorite Subreddit
+  - Select the number of images you want to download (go for more than 4)
   - Sort method you want. (New, Hot, Top)
 
 ## Setup instructions
