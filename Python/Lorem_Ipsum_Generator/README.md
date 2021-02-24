@@ -8,4 +8,4 @@ This script is used to generate the given number of paragraphs of Lorem Ipsum te
 
 pip install lorem_text
 
-![image](lorem_ipsum_generator.png)
+![image](https://i.imgur.com/7pSKZtI.png)

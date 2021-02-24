@@ -19,7 +19,7 @@ Let's get started!
 
 ## Understanding the Code
 
-![image](upload_file_as_github_gist.png)
+![image](https://snipboard.io/J9HBt5.jpg)
 
 ```
 GITHUB_API="https://api.github.com"
@@ -76,4 +76,4 @@ Finally, we've uploaded the contents of `payload` to our gist. Congratulations!!
 
 ## Final result
 
-![image](GistDemoDone.png)
+![image](https://snipboard.io/5TD0vw.jpg)

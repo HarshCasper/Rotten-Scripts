@@ -13,7 +13,7 @@ But what if we automate this with Python, and with just one command we can downl
 
 ## Understanding the Code - subtitle_downloader.py
 
-![image](subtitle_downloader.png)
+![image](https://snipboard.io/L3afcO.jpg)
 
 This is the whole code, so now let's understand it line by line.
 

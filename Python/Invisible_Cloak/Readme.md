@@ -2,4 +2,4 @@
 
 A Python Script to implement invisible cloak.
 
-![image](invisible_cloak.png)
+![image](https://i.imgur.com/JpmDCUK.png)

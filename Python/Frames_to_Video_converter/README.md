@@ -24,8 +24,8 @@ The script will ask you for the needed 'fps' and a video name.
 
 The images in the folder should be numbered in the order in which they appear in the video.
 
-![Pendulum frames images](frames.JPG)
+![Pendulum frames images](https://i.imgur.com/MArsSBS.jpg)
 
 After running the script, the video will be created in the directory where the script is running.
 
-![frames_video](video.gif)
+![frames_video](https://i.imgur.com/nk1aAw5.gif)

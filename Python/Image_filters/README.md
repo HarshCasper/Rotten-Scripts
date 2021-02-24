@@ -17,6 +17,10 @@ I have used tensorflow, numpy and the image processing library.
 
 The images attached show an image before and after blurring.
 
+### Before:
+<img src="https://i.imgur.com/ecUGgwT.png" style="padding:10px;"/>
+
+### After:
+<img src="https://i.imgur.com/YitUbFQ.png" style="padding:10px;"/>
+
 The following is a link to my blog on medium regarding the same : https://medium.com/@namyalg/3-dimensional-convolution-7041ca7f3e81
-
-

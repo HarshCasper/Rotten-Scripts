@@ -10,7 +10,7 @@ def google_search(query):    # function to google querys
     search_urls = []
     for i in search(query, tld='com',num= 1, start= 1, stop= 1):
         search_urls.append(i)
-    
+
     return search_urls
 
 def scrape(url):            # function to web scrape
@@ -39,13 +39,13 @@ print('\nDo you want to proceed with this text?(y\\n) \n')
 
 if(input()=='y' or 'Y'):
     sentences = tokenized_text.split('\n \n')
-    questions = []  
+    questions = []
     # for loop to seperate questions
-    for i in range(len(sentences)):    
+    for i in range(len(sentences)):
         if(sentences[i].endswith('?') or  sentences[i].startswith("What") or sentences[i].startswith("When") or sentences[i].startswith("How") or sentences[i].startswith("Why") or sentences[i].startswith("Describe") or sentences[i].startswith("Explain")):
             questions.append(sentences[i])
             print(sentences[i])
-        
+
     print('\nDo you want to proceed with these recognized questions?(y\\n) \n')
     if(input()=='y' or 'Y'):
         print('\nPlease wait while your questions are being searched! \n')
@@ -55,7 +55,7 @@ if(input()=='y' or 'Y'):
             query = questions[i]
             output = google_search(query)
             search_querys.append(output)
-            
+
         solutions = {}
         # for loop to scrape answers from URLs
         for i in range(len(search_querys)):
@@ -66,7 +66,7 @@ if(input()=='y' or 'Y'):
                 values = e
             values = answers
             solutions[keys] = values
-        
+
         # for loopp to display
         for x,y in solutions.items():
             print('\n******************\n')
@@ -74,7 +74,7 @@ if(input()=='y' or 'Y'):
             print('\n answer = \n')
             print(y)
             print('\n******************\n')
-        
+
         print('\nAll questions have been answered! \n')
 
         print('\nDo you want the URLs of the answers?(y\\n)\n')
@@ -82,15 +82,11 @@ if(input()=='y' or 'Y'):
             # for loop to display URLs
             for i in range(len(search_querys)):
                 print(search_querys[i][0])
-                
+
             print('Thank You!')
         else:
             print('Thank You!')
     else:
-        print('Thank You!')        
+        print('Thank You!')
 else:
     print('Thank You!')
-        
-    
-
-   

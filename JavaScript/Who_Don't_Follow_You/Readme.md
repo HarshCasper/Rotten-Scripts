@@ -2,4 +2,4 @@
 
 A Javascript Code which allows you to check who is not following you back on Instagram.
 
-![image](whoDontFollowYou.png)
+<img src="https://i.ibb.co/WBJtFVq/who-Dont-Follow-You.png">

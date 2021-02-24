@@ -2,4 +2,4 @@
 
 A simple Python Scrips to scrap upcoming Codechef Contests.
 
-![image](codechef_contests.png)
+![image](https://i.imgur.com/eOjuPfp.png)

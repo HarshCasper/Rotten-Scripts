@@ -10,7 +10,7 @@ Just type:
 
 video_location: location of the video
 
-watermark_location: 
+watermark_location:
 - RT (Right Top)
 - RB (Right Bottom)
 - LB (Left Bottom)
@@ -29,6 +29,6 @@ Before running the script, just run the command
 
 and all dependencies will be installed
 
-# Sample 
+# Sample
 
-![](preview.PNG)
+![](https://i.imgur.com/kaZHXXT.png)

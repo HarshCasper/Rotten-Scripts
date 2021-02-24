@@ -5,19 +5,18 @@
 
 ## Working ##
 
-![Image](login.png)
+![Image](https://snipboard.io/95yGgq.jpg)
 
 - The user is prompted to login and verify the phone number
 
 - The user will receive a code which has to be entered
 
-![Image](code.png)
+![Image](https://snipboard.io/rUqBVs.jpg)
 
 - After the verification process, the user can send messages to the contacts
 
-![Image](send.png)
+![Image](https://snipboard.io/geGMHY.jpg)
 
 - The user can send multiple messages to the same user
 
 - The user can also send messages to multiple users
-

@@ -19,4 +19,3 @@ for num in range(0, pages):
     text = page.extractText()
     engine.say(text)
     engine.runAndWait()
-    

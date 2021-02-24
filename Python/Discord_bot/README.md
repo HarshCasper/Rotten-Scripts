@@ -6,7 +6,7 @@ If you use discord then you must have though of making a discord bot yourself, s
 
 
 # Example
-![image](https://user-images.githubusercontent.com/65610641/98159747-215c6b80-1f03-11eb-95d0-9e64aadce070.jpg)
+![image](https://i.imgur.com/v9OZpj4.jpg)
 
 
 # Features
@@ -22,7 +22,7 @@ If you use discord then you must have though of making a discord bot yourself, s
 $ pip3 install discord.py
 ````
 ````json
-# open package.json file and paste your token and prefix 
+# open package.json file and paste your token and prefix
 {
 	"prefix": "Token HERE",
 	"token" : "PREFIX HERE"
@@ -30,6 +30,5 @@ $ pip3 install discord.py
 ````
 ````python
 #run main file
-$ python3 main.py 
+$ python3 main.py
 ````
-

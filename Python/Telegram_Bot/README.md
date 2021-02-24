@@ -1,6 +1,6 @@
 # Python-Telegram Bot #
 
-![Image](Lol.PNG)
+![Image](https://snipboard.io/z8bDAu.jpg)
 
 This is what your bot will look like!!
 
@@ -11,35 +11,35 @@ This is what your bot will look like!!
 
 The bot built here has many functionalities.
 
-![Image](bot_can_do.PNG)
+![Image](https://snipboard.io/GaQShw.jpg)
 
 **/joke**
 
-![Image](joke.PNG)
+![Image](https://snipboard.io/30QzjX.jpg)
 
 **/riddle**
 
-![Image](riddle.PNG)
+![Image](https://snipboard.io/dTwZjU.jpg)
 
 **/insult**
 
-![Image](insult.PNG)
+![Image](https://snipboard.io/yOWwd7.jpg)
 
 **/proghumor**
 
-![Image](proghumor.PNG)
+![Image](https://snipboard.io/4pkmRP.jpg)
 
 **/meme**
 
-![Image](meme.PNG)
+![Image](https://snipboard.io/neLGMU.jpg)
 
 **/template**
 
-![Image](template.PNG)
+![Image](https://snipboard.io/oIq4aH.jpg)
 
 **/markov**
 
-![Image](markov.PNG)
+![Image](https://snipboard.io/OjX7Un.jpg)
 
 The script bot.py is the most important script in this repository.
 
@@ -72,13 +72,12 @@ In order to host it on heroku, one can follow these simple steps:
 
 9.git add . , to add all the contents
 
-10.git commit 
+10.git commit
 
 12.heroku git:remote -a name of the application generated
 
 11.git push heroku master, to push all the contents
 
-![Image](commit.PNG)
+![Image](https://snipboard.io/WN2vAj.jpg)
 
 If the creation fails, the logs can be viewed using heroku logs --tail
-

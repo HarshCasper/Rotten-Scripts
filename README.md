@@ -2,11 +2,11 @@
 
 <!-- Banner -->
 <div class="container-fluid">
-  <img class="mx-auto" src="assets/banner.png">
+  <img class="mx-auto" src="https://i.imgur.com/7TSaSl8.png">
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-47-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-48-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -128,6 +128,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/twozero88"><img src="https://avatars.githubusercontent.com/u/44749717?v=4?s=100" width="100px;" alt=""/><br /><sub><b>twozero88</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=twozero88" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=twozero88" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/GoswamiTushar"><img src="https://avatars.githubusercontent.com/u/59055924?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tushar Goswami</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=GoswamiTushar" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=GoswamiTushar" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/oshi36"><img src="https://avatars.githubusercontent.com/u/47573417?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Oshi Gupta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=oshi36" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=oshi36" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://vispprofile.netlify.app/"><img src="https://avatars.githubusercontent.com/u/47056243?v=4?s=100" width="100px;" alt=""/><br /><sub><b>vismitap</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=vismitap" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=vismitap" title="Documentation">📖</a></td>
   </tr>
 </table>
 
@@ -142,7 +143,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 |                                     <a href="https://github.com/harshcasper"><img src="https://avatars1.githubusercontent.com/u/47351025?s=460&u=e6985588320978737a51ac23c8a624005fce5e18&v=4" width=150px height=150px /></a>                                      |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                      **[Harsh Bardhan Mishra](https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173//)**                                                                                       |
+|                                                                                      **[Harsh Bardhan Mishra](https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/)**                                                                                       |
 | <a href="https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
 
 > **_Need help? Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**

@@ -15,6 +15,6 @@ b) The pdf file which contains the watermark
 ## A sample pdf watermarked using this script
 
 <p align="center">
-  
-    <img src="sample.PNG" alt="sample">
+
+    <img src="https://snipboard.io/6W1BQz.jpg" alt="sample">
 </p>

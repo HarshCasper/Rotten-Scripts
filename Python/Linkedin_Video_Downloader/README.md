@@ -14,4 +14,4 @@ This script uses Python requests library to grab the url of the linkedin post pr
 
 # Working Demo
 
-![](preview.gif)
+![](https://i.imgur.com/g9cf7CM.gif)

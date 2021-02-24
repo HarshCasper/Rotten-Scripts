@@ -10,7 +10,7 @@ This script is written in python and can be used to track user time used on Desk
 ```bash
 $ sudo apt-get install xdotool
 $ pip install -r requirements.txt
-``` 
+```
 
 ### Usage
 Run
@@ -19,6 +19,4 @@ python time_tracker.py
 ```
 The outpus should be in script directory:
 
-![pie_chart_example](time_tracking_pie_chart.png)
-
-
+![pie_chart_example](https://i.imgur.com/Tq4biNR.png)

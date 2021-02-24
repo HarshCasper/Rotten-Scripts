@@ -1,6 +1,6 @@
 # Project Euler #
 
-![Image](euler_home.PNG)
+![Image](https://snipboard.io/kbRPtS.jpg)
 
 Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve
 
@@ -16,14 +16,12 @@ Using **inspect element**, the contents of the page can be understood
 
 The structure of each page is as shown
 
-![Image](euler_questions.PNG)
+![Image](https://snipboard.io/4uG2eD.jpg)
 
 The <tr> element consists of the description of the question
 
 Each question has the following components
 
-![Image](question1.PNG)
+![Image](https://snipboard.io/Fmf6p5.jpg)
 
 The contents are parsed and stored using Beautiful Soup, a library built for web scraping
-
-

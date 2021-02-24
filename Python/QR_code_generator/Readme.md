@@ -23,4 +23,4 @@ python qrcode_generator.py --f input.csv
 
 ## Snap of sample input
 
-![alt](Capture.PNG)
+![alt](https://snipboard.io/RXJQvO.jpg)

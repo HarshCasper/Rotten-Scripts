@@ -17,5 +17,5 @@ This script scrapes the latest articles from the hackernews website and prints t
 ## Sample use of the script:
 
 <p align = "center">
-	<img src = "sample.PNG" alt="sample-use">
+	<img src = "https://snipboard.io/rjU641.jpg" alt="sample-use">
 </p>
