@@ -10,19 +10,22 @@ from itertools import zip_longest
 
 import tweepy
 from bs4 import BeautifulSoup
+from decouple import config
 from selenium import webdriver
 
 # Authenticate to Twitter
-CONSUMER_KEY = "<your-consumer-or-API-key-goes-here>"
-CONSUMER_SECRET = "<your-consumer-or-API-secret-goes-here>"
-ACCESS_KEY = "<your-access-key-goes-here>"
-ACESS_SECRET = "<your-access-secret-goes-here>"
+CONSUMER_KEY = config("CONSUMER_KEY")
+CONSUMER_SECRET = config("CONSUMER_SECRET")
+ACCESS_KEY = config("ACCESS_KEY")
+ACESS_SECRET = config("ACESS_SECRET")
+
+# Authenticate to Twitter
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACESS_SECRET)
 api = tweepy.API(auth)
 
 URL = "https://twitter.com"
-PATH_CHROME_DRIVER = "<===============ENTER YOUR CHROME DRIVER PATH===========>"
+PATH_CHROME_DRIVER = config("PATH_CHROME_DRIVER")
 random_time_2_to_5 = random.randint(2, 5)
 random_time_5_to_10 = random.randint(5, 10)
 
@@ -99,11 +102,18 @@ def extract_tweets(user_to_scrape):
     try:
         print("Extracting Tweets, Retweets, Media and Hashtags, please wait...!")
 
-        tweets = api.user_timeline(
-            screen_name=user_to_scrape,
-            # 200 is the maximum allowed count
-            count=200,
-        )
+        tweets = None
+
+        try:
+            tweets = api.user_timeline(
+                screen_name=user_to_scrape,
+                # 200 is the maximum allowed count
+                count=200,
+            )
+        except tweepy.TweepError as error:
+            print(error.args[0][0]["message"])
+            time.sleep(2)
+            main()
 
         all_tweets = []
         url_tweets = []
