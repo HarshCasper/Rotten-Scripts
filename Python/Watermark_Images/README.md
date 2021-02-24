@@ -11,7 +11,6 @@ Simple python scripts that can be used to add watermark to an image using either
 
 ## Examples:
 
-![image](https://github.com/madhurima99/Rotten-Scripts/blob/WatermarkImages/Python/Watermark_Images/Outputs/Food_cover.png)
+![image](https://i.ibb.co/DRXgKT2/Foodcover.png)
 
-![img](https://github.com/madhurima99/Rotten-Scripts/blob/WatermarkImages/Python/Watermark_Images/Outputs/Sky_Cover.png)
-
+![img](https://i.ibb.co/YyHyhDR/SkyCover.png)
