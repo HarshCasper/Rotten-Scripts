@@ -22,7 +22,17 @@ python script.py
 
 ## Output
 
-Display images/gifs/videos of output/result of your script so that users can visualize it
+#### Code Input
+
+![code](https://media.discordapp.net/attachments/692277853777035314/814152229988466759/unknown.png?width=1439&height=391)
+
+#### Downloaded meme 1
+
+![image1](https://cdn.discordapp.com/attachments/692277853777035314/814152598092906496/unknown.png)
+
+#### Downloaded meme 2
+
+![image2](https://cdn.discordapp.com/attachments/692277853777035314/814152889164628009/unknown.png)
 
 ## Author(s)
 
