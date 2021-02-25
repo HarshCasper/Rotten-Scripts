@@ -15,7 +15,7 @@ This script fetches top 10 post from corresponding subreddit and then randomly s
 # Working Demo:
 
 For this configuration:
-![](facts_deskop_notifier.PNG)
+![](https://snipboard.io/ayi2mn.jpg)
 
 This would be output (GIF):
 ![](facts_deskop_notifier.gif)

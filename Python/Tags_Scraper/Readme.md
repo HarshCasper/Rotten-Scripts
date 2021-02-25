@@ -1,6 +1,6 @@
 # Introduction
 
-Tags Scraper is working set of Python scripts which crawls over the URLs of Google Searches and gives out the result of most frequently used words by webpages of the search result. Having idea regarding the most used keywords can help in optimising 
+Tags Scraper is working set of Python scripts which crawls over the URLs of Google Searches and gives out the result of most frequently used words by webpages of the search result. Having idea regarding the most used keywords can help in optimising
 
 # Description
 
@@ -14,17 +14,17 @@ This project is modularized in 4 Modules
 
 - **Main** : Main module is what we need to interact with. It combines the functionality of other three modules into 1 whole. The data generated is Stored in Keywords Data.txt file.
 
-# Working 
+# Working
 
 - After installing all the required libraries, run the main.py script. `main.py` is
 the driver module. Run in in the CLI or in IDE.
 
-- When you'll run the main module, it will ask for `Enter Search Query`, and you need to enter the query for which you want top keywords just like you search in google search bar , it will start fetching results . 
+- When you'll run the main module, it will ask for `Enter Search Query`, and you need to enter the query for which you want top keywords just like you search in google search bar , it will start fetching results .
 
 - It will try to fetch 100 results but can be less due to inaccessible pages and broken links
 
-![searching](https://github.com/GoswamiTushar/Rotten-Scripts/blob/master/Python/Tags_Scraper/images/query.png)
+![searching](https://i.imgur.com/9eo90n4.png)
 
-![results](https://github.com/GoswamiTushar/Rotten-Scripts/blob/master/Python/Tags_Scraper/images/result.png)
+![results](https://i.imgur.com/JoePBu8.png)
 
 - This will create a `keywordsData.txt` where you can find the top keywords used in different tags.

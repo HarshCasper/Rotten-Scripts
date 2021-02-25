@@ -19,7 +19,7 @@ Firstly, you have to use a Linux system for this program, because the `vnstat` i
 
 2. Now, let's understand the code.
 
-![image](track_data_usage.png)
+<img src="https://i.imgur.com/9tej6lq.png"/>
 
 ```
 #!/usr/bin/python3

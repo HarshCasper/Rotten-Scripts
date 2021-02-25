@@ -12,4 +12,4 @@ and then follow the on screen instructions
 Note: Download the latest chrome driver and place it in the same directory where the script resides.
 
 # Working Demo
-![](preview.gif)
+![gif](https://i.imgur.com/oxJJXUk.gif)

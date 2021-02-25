@@ -3,7 +3,7 @@
 This small script, can be used to find all the social media links on a webpage.
 The setup is a bit difficult and complex to achieve for new comers though.
 
-It can be used to - 
+It can be used to -
 
 - Check all the social media links linked to a webpage.
 
@@ -18,9 +18,8 @@ After this just grab the url of webpage which yo want to find links of.
 ## Output
 This Snapshot clearly shows the links of all the social media on the landing page of this repo.
 
-![](img/snap.PNG)
+![](https://snipboard.io/Xkx7iz.jpg)
 
 ## Author(s)  
-  
-Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/).
 
+Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/).

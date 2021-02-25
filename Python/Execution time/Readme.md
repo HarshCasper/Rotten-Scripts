@@ -2,16 +2,16 @@
  Python Script to check how long task is running.
 
 ## How to use
-stopwatch.py contains  Stopwatch stimulator having different functions like start ,stop ,reset and lap. It will generate summary. 
+stopwatch.py contains  Stopwatch stimulator having different functions like start ,stop ,reset and lap. It will generate summary.
 
 ## Modules used
-# time 
+# time
 time function of time module is used
 Python time method `time()` returns the time as a floating point number expressed in seconds since the epoch.
 
-# datetime 
+# datetime
 timedelta function is used
-Python `timedelta()` function is present under datetime library which is generally used for calculating differences in dates and also can be used for date manipulations in Python. 
+Python `timedelta()` function is present under datetime library which is generally used for calculating differences in dates and also can be used for date manipulations in Python.
 
 ## Sample code to execute stopwatch.py
 ```
@@ -28,4 +28,4 @@ print (myStopwatch.summary)
 ```
 
 # screenshot of output of above code
- ![screenshot](image.png)
+ ![screenshot](https://i.imgur.com/Wufnk4w.png)

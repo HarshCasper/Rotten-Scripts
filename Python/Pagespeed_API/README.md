@@ -1,7 +1,7 @@
 # Pagespeed_API
 
 This self explanatory script, uses [Pagespeed_API](https://developers.google.com/speed/docs/insights/v5/get-started).
-It can be used to - 
+It can be used to -
 
 - Measure the performance of a web page. (Achieved in this Script)
 - Improve accessibility, and SEO. (Out of Scope)
@@ -20,10 +20,10 @@ The script has proper comments which should be followed. The script is easy to u
 ## Output
 This Snapshot clearly shows the Interactive time of 2 webpages.
 
-![](img/snap.PNG)
+![](https://snipboard.io/SxgRTA.jpg)
 
 ## Author(s)  
-  
+
 Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/).
 
 ## Disclaimers, if any

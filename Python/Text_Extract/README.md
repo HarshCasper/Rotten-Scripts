@@ -4,7 +4,7 @@
 
 Text extraction form Images, OCR, Tesseract, Basic Image manipulation are all important yet very basic scripts.
 
-This script uses ```pytesseract``` for text extraction from images, considering it only recognizes text and can 
+This script uses ```pytesseract``` for text extraction from images, considering it only recognizes text and can
 only print it, this script additionally adds a functionality to write the text in a `txt` and/or `csv` file.
 
 ## Setup instructions
@@ -17,12 +17,12 @@ only print it, this script additionally adds a functionality to write the text i
 
 ## Further Readings
 
-Some newcomers for the first time struggle with Tesseract, this is a direct link to the 
+Some newcomers for the first time struggle with Tesseract, this is a direct link to the
 [installer](https://github.com/UB-Mannheim/tesseract/wiki)
 
 Setting up OCR can be found [here](http://bit.ly/2MClAwD)
 
-__PATH__ env variable can help in optimizing the code. 
+__PATH__ env variable can help in optimizing the code.
 [This](http://bit.ly/35d3c3Q) and [this](http://bit.ly/3ba0zmZ) link will help you in order to achieve that.
 
 ## Usage
@@ -30,7 +30,7 @@ __PATH__ env variable can help in optimizing the code.
 Just make sure that Tesseract is in proper directory, run the code according the comments and guidelines.
 
 ```
-Smaple - 
+Smaple -
 Enter the Folder name containing Images: <Name of Folder>
 Enter your desired output location: <Name of Folder>
 ```
@@ -39,18 +39,17 @@ Enter your desired output location: <Name of Folder>
 
 Output
 
-![Output](img/Output.PNG)
+![Output](https://snipboard.io/MBROFh.jpg)
 
 Image containing Text
 
-![Before Compression](img/Sample.PNG)
+![Before Compression](https://snipboard.io/6PqfiZ.jpg)
 
 After Extraction
 
-![After Backup](img/TextFile.PNG)
+![After Backup](https://snipboard.io/sMAQnK.jpg)
 
 
 ## Author(s)
 
 Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/)
-

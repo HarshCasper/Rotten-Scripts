@@ -11,4 +11,4 @@ Before running the script, make sure you have the required dependencies. Not sur
 `pip install -r reqirements.txt`
 
 # Working Demo
-![image](preview.png)
+![image](https://snipboard.io/BTIw4O.jpg)

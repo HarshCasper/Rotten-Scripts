@@ -14,4 +14,4 @@ Go
  $ go run main.go
 ```
 
-![image](Terminal.png)
+![image](https://i.imgur.com/FPRdFE2.png)

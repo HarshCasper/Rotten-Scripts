@@ -7,7 +7,7 @@ This code is the simplest one to automate the task.
 
 ## Understanding the code
 
-![image](automate_commiting_using_git.png)
+![image](https://snipboard.io/iqvAFy.jpg)
 
 ```
 import subprocess
