@@ -1,6 +1,6 @@
 ## What is Python?
 
-Python is a high-level general purpose programming language created by Guido van Rossum. It is an easy to use interpreted language which can be used for a wide varity of tasks including and not limited to automation, data science, machine learning, image processing and web development.
+Python is a high-level general purpose programming language created by Guido van Rossum. It is an easy to use interpreted language which can be used for a wide variety of tasks including and not limited to automation, data science, machine learning, image processing and web development.
 
 The main reason behind its success is the presence of vast variety of libraries and  its super helpful developer community.
 
@@ -14,19 +14,19 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 4 | Audio Backup | [Click Here](/Python/Auto_Backup) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | gzip, argparse
 5 | Audio Converter | [Click Here](/Python/Audio_Converter) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | moviepy
 6 | Audio Format Converter | [Click Here](/Python/Audio_Format_Converter) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | pudub, mutagen
-7 | Automate Committing Using Git | [Click Here](/Python/Automate_Commiting_Using_Git) | [Seema Saharan](https://github.com/seema1711) | subprocess
-8 | Automate LinkedIN | [Click Here](/Python/Automate-LinkedIN) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | Selenium
-9 | Automate Telegram | [Click Here](/Python/Automate-Telegram) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | Selenium
+7 | Automate Committing Using Git | [Click Here](/Python/Automate_Commiting_using_Git) | [Seema Saharan](https://github.com/seema1711) | subprocess
+8 | Automate LinkedIN | [Click Here](/Python/Automate_LinkedIN) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | Selenium
+9 | Automate Telegram | [Click Here](/Python/Automate_Telegram) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | Selenium
 10 | AWS Scripts | [Click Here](/Python/AWS_Scripts) | [Sameer Srivastava](https://github.com/sameersrivastava13) | boto3
 11 | Base64 Encoder Decoder | [Click Here](/Python/Base64_Encoder_Decoder) | [Lakshmi Narayan Dwivedi](https://github.com/narayan2111) | base64, argparse
-12 | Battery Full Charged Notifier | [Click Here](/Python/Battery_Full_Charged_Notifier) | [MOHIT BHAT](https://github.com/mbcse) | psutil, time, win10toast 
+12 | Battery Full Charged Notifier | [Click Here](/Python/Battery_Full_Charged_Notifier) | [Mohit_Bhat](https://github.com/mbcse) | psutil, time, win10toast 
 13 | Book Downloader | [Click Here](/Python/Book_Downloader) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | requests, os
 14 | Bulk Certificate Generator | [Click Here](/Python/Bulk_Certificate_Generator) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | panads, random
 15 | Caesar Cipher | [Click Here](/Python/Caesar_Cipher) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | -
 16 | Cartoonified_Image | [Click Here](/Python/Cartoonified_Image) | [Sharvari Raut](https://github.com/sharur7) | skimage, numpy, cv2
 17 | Codechef Contests | [Click Here](/Python/Codechef_Contests) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | prettytable, bs4, requests
 18 | Codechef Problem Scrapper | [Click Here](/Python/Codechef_Problem_Scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | selenium, bs4, time
-19 | Countdown Clock and Timer | [Click Here](/Python/Countdown_clock_and_Timer) | [Anushka-S10](https://github.com/Anushka-S10) | os, time
+19 | Countdown Clock and Timer | [Click Here](/Python/Countdown_Clock_and_Timer) | [Anushka-S10](https://github.com/Anushka-S10) | os, time
 20 | Counting Days | [Click Here](/Python/Counting_Days) | [Dylan Corriveau](https://github.com/dcorriveau) | os, datetime
 21 | Create Word Cloud | [Click Here](/Python/Create_Word_Cloud) | [Prahitha](https://github.com/Prahitha) | argparse, wordcloud, numpy
 22 | Cricbuzz scrapper | [Click Here](/Python/CRICBUZZ%20scraper) | [Rutuja Dhanawade](https://github.com/rutujadhanawade) | bs4, urllib.request
