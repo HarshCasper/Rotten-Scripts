@@ -24,15 +24,15 @@ python script.py
 
 #### Code Input
 
-![code](https://media.discordapp.net/attachments/692277853777035314/814152229988466759/unknown.png?width=1439&height=391)
+![](https://imgur.com/a/4HYjlV1)
 
 #### Downloaded meme 1
 
-![image1](https://cdn.discordapp.com/attachments/692277853777035314/814152598092906496/unknown.png)
+![](https://imgur.com/SZc0a19)
 
 #### Downloaded meme 2
 
-![image2](https://cdn.discordapp.com/attachments/692277853777035314/814152889164628009/unknown.png)
+![](https://imgur.com/4S5NfRH)
 
 ## Author(s)
 
