@@ -33,9 +33,6 @@ def main():
     url = f'https://www.reddit.com/r/{subreddit}.json'
     request_sub = requests.get(url, params=payload, headers=headers)
 
-    print(request_sub.url)
-    print(request_sub.status_code)
-    print(request_sub.headers['content-type'])
     data1 = request_sub.json()
     i = 0
     limit = int(data1["data"]["dist"])-2
