@@ -491,7 +491,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/21015263?v=4",
       "profile": "http://www.pythondiario.com",
       "contributions": [
-        "code"
+        "code",
+        "doc"
       ]
     }
   ],
