@@ -173,3 +173,4 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 163 | YouTube Video-Audio Download | [Click Here](/Python/YouTube_Video-Audio_Download) | [Naman Shah](https://github.com/namanshah01) | os, sys, pafy, requests
 164 | Zipper | [Click Here](/Python/Zipper) | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh) | os, zipfile, datetime
 165 | Zoom Automation | [Click Here](/Python/Zoom_Automation) | [Rutuja Dhanawade](https://github.com/rutujadhanawade) | pyautogui, time
+166 | Inshorts News | [Click Here](/Python/Inshorts_News) | [Viraj Mane](https://github.com/virajmane) | requests, bs4, lxml
