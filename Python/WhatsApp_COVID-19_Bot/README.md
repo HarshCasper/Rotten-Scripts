@@ -74,5 +74,5 @@ Made by [Vybhav Chaturvedi](https://www.linkedin.com/in/vybhav-chaturvedi-0ba826
 
 Kindly follow all the guidelines of Twilio and respect the request rate.
 
-Despite the recent downfall in cases, COVID-19 is still a major threat for all of us, I strongly request you to follow
-all the necessary guidelines.
+Despite the recent downfall in cases, COVID-19 is still a major threat for all of us, we at **Rotten-Scripts** strongly
+request you to follow all the necessary guidelines.
