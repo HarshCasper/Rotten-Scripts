@@ -30,11 +30,11 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 20 | Counting Days | [Click Here](/Python/Counting_Days) | [Dylan Corriveau](https://github.com/dcorriveau) | os, datetime
 21 | Create Word Cloud | [Click Here](/Python/Create_Word_Cloud) | [Prahitha](https://github.com/Prahitha) | argparse, wordcloud, numpy
 22 | Cricbuzz scrapper | [Click Here](/Python/CRICBUZZ%20scraper) | [Rutuja Dhanawade](https://github.com/rutujadhanawade) | bs4, urllib.request
-23 | Crypto Currency Converter | [Click Here](/Python/cryptocurrency_converter) | [Mohta Rahul Suresh](https://github.com/Rahul555-droid) | requests
+23 | Crypto Currency Converter | [Click Here](/Python/Cryptocurrency_Converter) | [Mohta Rahul Suresh](https://github.com/Rahul555-droid) | requests
 24 | CSV Splitter | [Click Here](/Python/CSV_Splitter) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | os, csv
 25 | Currency Converter | [Click Here](/Python/Currency_Converter) | [Prahitha](https://github.com/Prahitha) | requests, argparse
 26 | Customized Blog Headers | [Click Here](/Python/Customized_blog_headers) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | cv2, PIL, sys, os
-27 | Chrome Dinosaur Game  |   [Click Here](/Python/chromedino_script) | [Oshi Gupta](https://github.com/oshi36) | pyautogui , PIL , time
+27 | Chrome Dinosaur Game  |   [Click Here](/Python/Chrome_Dino_Script) | [Oshi Gupta](https://github.com/oshi36) | pyautogui , PIL , time
 28 | Desktop Notifier | [Click Here](/Python/Desktop_notifier) | [Anushka-S10](https://github.com/Anushka-S10) | feedparser, notify2, pygame
 29 | Desktop Time Tracker | [Click Here](/Python/Desktop_Time_Tracker) | [Abdallah Ahmed](https://github.com/abdallah1097) | os, subprocess, argparse
 30 | Discord Bot | [Click Here](/Python/Discord_bot) | [KILR](https://github.com/KILR007) | discord, json, datetime 

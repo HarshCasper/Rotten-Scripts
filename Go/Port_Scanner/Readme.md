@@ -10,7 +10,7 @@ Go-lang script for scanning specific or all open ports of the device.
 # How to run
 Navigate to the project directory.
 ```bash
-cd Rotten-Scripts/Go/port-scanner-go
+cd Rotten-Scripts/Go/Port_Scanner
 ```
 ```bash
 go run port_scanner.go 

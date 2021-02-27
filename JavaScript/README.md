@@ -16,7 +16,7 @@ It enables interactive web pages and thus is an essential part of web applicatio
 | 3 | Base64 Encoder Decoder | [Click Here](Base64_Encoder_Decoder) | [Piyush Gupta](https://github.com/gupta-piyush19) |  
 | 4 | Blog Image Finder | [Click Here](Blog_Image_Finder) | [Piyush Gupta](https://github.com/gupta-piyush19) |  
 | 5 | Brute Force Admin | [Click Here](Brute_Force_Admin) | [Mohit Bhat](https://github.com/mbcse) |  
-| 6 | Bulk LinkedIn Requests | [Click Here](Bulk_LinkedIn_requests) | [SANKET MHATRE](https://github.com/SANKET7738) |  
+| 6 | Bulk LinkedIn Requests | [Click Here](Bulk_LinkedIn_Requests) | [SANKET MHATRE](https://github.com/SANKET7738) |  
 | 7 | Citation_Text_Converter | [Click Here](Citation_Text_Converter) | [Soham Shah](https://github.com/sohamsshah) |  
 | 8 | Cryptoprice | [Click Here](Cryptoprice) | [Mohit Bhat](https://github.com/mbcse) |  
 | 9 | Download_All_Repos | [Click Here](Download_All_Repos) | [Mohit Bhat](https://github.com/mbcse) | 
@@ -26,7 +26,7 @@ It enables interactive web pages and thus is an essential part of web applicatio
 | 13 | Github Graph Populator | [Click Here](GitHub_Graph_Populator) | [Hitesh Kumar](https://github.com/HeroicHitesh) |  
 | 14 | Html to markdown | [Click Here](Html_to_Markdown) | [Kaustubh Gupta](https://github.com/kaustubhgupta) |  
 | 15 | Instagram Like | [Click Here](Instagram_Like) | [Harsh Barshan Mishra](https://github.com/HarshCasper) |  
-| 16 | ROT13 | [Click Here](ROT13) | [tej5169](https://github.com/tej5169) |  
+| 16 | ROT13 | [Click Here](ROT13_Decryption) | [tej5169](https://github.com/tej5169) |  
 | 17 | RSA Key Pair Generator | [Click Here](RSA_Key_Pair_Generator) | [Mohit Bhat](https://github.com/mbcse) | 
 | 18 | Send emails | [Click Here](Send_Emails) | [Namya LG](https://github.com/Namyalg) | 
 | 19 | Who don't follow you | [Click Here](Who_Don't_Follow_You) | [Harsh Barshan Mishra](https://github.com/HarshCasper) |
