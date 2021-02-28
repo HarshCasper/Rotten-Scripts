@@ -14,6 +14,7 @@ STL are mainly used to create 3D maps of environments like cityscapes and height
 STL is a file format that was introduced with CAD or AutoCAD and has become extremely popular when it comes to the transport and scale representation of 3D renders between softwares. STL allows 1:1 scale representation between different 3D render solutions and used extensively is CGI and Animation. 
 
 STL is the earliest representation of Vector based Mesh designs that revolutionized how 3D space and objects interacted with each other. To read and understand more about STL you can go [here](https://en.wikipedia.org/wiki/STL_(file_format))
+This [Link](https://www.youtube.com/watch?v=ji8-3rr10lM) also might be handy if you want to understand the purpose of STL.
 
 ## Running and Understanding how the script works
 
