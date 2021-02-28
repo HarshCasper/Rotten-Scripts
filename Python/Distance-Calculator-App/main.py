@@ -1,14 +1,16 @@
 from geopy.geocoders import Nominatim
 from geopy import distance
+import argparse
 
 geolocator = Nominatim(user_agent="geoapiExercises")
-         
-place1 = geolocator.geocode(input("1st Location: "))
-place2 = geolocator.geocode(input("2nd Location: "))
- 
- 
-Loc1_lat,Loc1_lon = (place1.latitude),(place1.longitude)
-Loc2_lat,Loc2_lon = (place2.latitude),(place2.longitude)
+parser = argparse.ArgumentParser()
+parser.add_argument('--firstlocation', type=str, required=True)
+parser.add_argument('--secondlocation', type=str, required=True)
+args = parser.parse_args()
+x = geolocator.geocode(args.firstlocation)
+y = geolocator.geocode(args.secondlocation)
+Loc1_lat,Loc1_lon = (x.latitude),(x.longitude)
+Loc2_lat,Loc2_lon = (y.latitude),(y.longitude)
  
 location1=(Loc1_lat,Loc1_lon)
 location2=(Loc2_lat,Loc2_lon)
