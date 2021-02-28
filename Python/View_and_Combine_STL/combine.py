@@ -22,7 +22,7 @@ def combine_stl():
 	files = glob.glob(stl_dir)
 
 	for fl in files:
-  		stl_fl = mesh.Mesh.from_file(fl)
+		stl_fl = mesh.Mesh.from_file(fl)
   		combine = mesh.Mesh(numpy.concatenate([stl_fl.data, combine.data]))
 
 	combine.save('combine.stl', mode=stl.Mode.ASCII)
