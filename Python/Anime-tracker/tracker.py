@@ -12,17 +12,13 @@ def details(soup):
     # now extracting the text for p tag of the div 
     print("\nAbout the Anime : \n", "\t\t", info.find('p').getText(), "\n")                              
     total_episodes = soup.find('div', {'class': 'pure-1 md-1-5'})
-    print("\nTotal number of episodes :\t",
-           # using regex for only selecting numbers
-          re.sub("[^0-9]", "", total_episodes.find('span').getText()))     
-
+     # using regex for only selecting numbers
+    print("\nTotal number of episodes :\t",re.sub("[^0-9]", "", total_episodes.find('span').getText()))     
     Active_years = soup.find('span', {'class': 'iconYear'})
     print("\n Years Active (From-To)\t:\t",
           Active_years.getText(), "-\n")
-
     rating = soup.find('div', {'class': 'avgRating'})
     print("Rating : ", rating.find('span').getText())
-
     tags = soup.find('div', {'class': 'tags'})
     list = []
     for _ in range(4):
