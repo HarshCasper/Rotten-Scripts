@@ -1,0 +1,17 @@
+h5py==2.10.0
+jupyter==1.0.0
+Keras==2.4.3
+Keras-Preprocessing==1.1.2
+matplotlib==3.3.3
+numba==0.52.0
+numpy==1.19.5
+pandas==1.2.0
+Pillow==8.0.1
+pydot==1.4.1
+PyQt5==5.15.2
+scipy==1.6.0
+tensorboard==2.4.1
+tensorboard-plugin-wit==1.7.0
+tensorflow==2.4.1
+tensorflow-estimator==2.4.0
+tqdm==4.56.0
