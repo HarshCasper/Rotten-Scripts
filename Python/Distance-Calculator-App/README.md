@@ -5,21 +5,23 @@ Calculating distance between two locations is a basic requirement if you are wor
   
 - Change Directory
 
-      `cd .\Rotten-Scripts\`
-      `cd Python`
-      `cd .\Distance-Calculator-App\`
+`cd .\Rotten-Scripts\`
+
+`cd Python`
+
+`cd .\Distance-Calculator-App\`
       
 - Install requirememnts
 
-      `pip install requirements.txt`
+`pip install requirements.txt`
       
 - Run python file
 
-      `python main.py --firstlocation <enter first location here> --secondlocation <enter second location here>`
+`python main.py --firstlocation <enter first location here> --secondlocation <enter second location here>`
       
 # Screenshot
 
-![alt text](https://imgur.com/a/fz13QZU)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/fz13QZU" data-context="false" ><a href="//imgur.com/a/fz13QZU">Screenshot</a></blockquote>
 
 # Author
 [Aayush Garg](https://github.com/Aayush-hub)
