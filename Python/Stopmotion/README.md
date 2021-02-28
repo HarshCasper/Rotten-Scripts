@@ -8,6 +8,8 @@ Just type in:
 
 This will convert the video file into images at mentioned framerate and create an additional directory which will be deleted once the script is complete and the resulting video file will be available.
 
+**Note: The above arguments are general and will depend on your use case.**
+
 You can always type in:
 
 `python main.py -h` or `python main.py -h` for any help with arguments.
