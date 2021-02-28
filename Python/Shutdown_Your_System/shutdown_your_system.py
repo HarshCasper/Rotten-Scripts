@@ -1,5 +1,6 @@
 import os
 
+
 def main():
     x = input('1. Shutdown\n2. Cancel\n3. Close\n')
     if x == '1':
@@ -11,8 +12,10 @@ def main():
     else:
         print('Invalid!')
 
+
 def cancel():
     comando('shutdown -a')
+
 
 def shutdown():
     t = int(input('how long to shut down the computer:\n'))
@@ -20,8 +23,10 @@ def shutdown():
     cmd = 'shutdown -s -f -t ' + (t)
     comando(cmd)
 
+
 def command(cmd):
     os.system(cmd)
+
 
 if __name__ == '__main__':
     main()

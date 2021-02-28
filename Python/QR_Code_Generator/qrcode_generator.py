@@ -18,7 +18,8 @@ def generate_qr_code(input_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--f", type=str, required=True, help="specify file with data to be encoded.")
+    parser.add_argument("--f", type=str, required=True,
+                        help="specify file with data to be encoded.")
     args = parser.parse_args()
     input_filename = args.f
     generate_qr_code(input_filename)

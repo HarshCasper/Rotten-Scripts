@@ -1,5 +1,5 @@
 from Crypto.PublicKey import RSA
-key = RSA.generate(2048) 
+key = RSA.generate(2048)
 f = open("private_key.pem", "wb")
 f.write(key.exportKey('PEM'))
 f.close()

@@ -14,8 +14,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 api_Key = os.getenv("API_Key")
-#Fetching API key from .env file.
+# Fetching API key from .env file.
 main_news_url = f"http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey={api_Key}"
+
 
 def func(url):
 
@@ -24,7 +25,7 @@ def func(url):
     print(json_news_content)
     lists = json_news_content['articles']
 
-    #function for converting text into voice
+    # function for converting text into voice
     def speaker(str):
         speak = Dispatch("SAPI.SpVoice")
         speak.speak(str)
@@ -46,9 +47,9 @@ def func(url):
                     time.sleep(1)
                     speaker(description)
 
+
 if __name__ == "__main__":
 
     func(main_news_url)
 
-#End_of_program
-
+# End_of_program

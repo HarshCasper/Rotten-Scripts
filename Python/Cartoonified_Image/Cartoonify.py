@@ -3,13 +3,16 @@ import numpy as np
 from skimage import io
 
 # Class Defination
+
+
 class Cartoon:
     def __init__(self):
         img = io.imread("original_image.jpg")
         # 1) Edges
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         gray = cv2.medianBlur(gray, 5)
-        edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 9, 7)
+        edges = cv2.adaptiveThreshold(
+            gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 9, 7)
 
         # 2) Color
         color = cv2.bilateralFilter(img, 10, 300, 300)
@@ -27,6 +30,7 @@ class Cartoon:
         self.resize1 = resize1
         self.resize2 = resize2
         self.resize3 = resize3
+
 
 # Displaying
 c1 = Cartoon()

@@ -119,7 +119,8 @@ def main():
             if os.path.exists(args.custom_corpus):
                 corpus = args.custom_corpus
 
-        text = generate_text(corpus=corpus, use_model=not args.no_model, size=10)
+        text = generate_text(
+            corpus=corpus, use_model=not args.no_model, size=10)
         meme = MemeImage(image=args.custom_image, corpus=corpus)
 
         # Add text generated, will go to top and bottom

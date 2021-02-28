@@ -3,14 +3,16 @@ import os
 import hashlib
 import sys
 
+
 def get_hash(name):
     readsize = 64*1024
-    with open(name,'rb') as f:
+    with open(name, 'rb') as f:
         size = os.path.getsize(name)
         data = f.read(readsize)
         f.seek(-readsize, os.SEEK_END)
         data += f.read(readsize)
     return hashlib.md5(data).hexdigest()
+
 
 def main():
     userAgent = 'SubDB1.0 (seema1711/0.1; https://github.com/seema1711/subtitle-downloader)'
@@ -22,7 +24,7 @@ def main():
     hashed = get_hash(movieName)
 
     content = {
-        'action': action, 
+        'action': action,
         'hash': hashed,
         'language': language,
     }
@@ -35,7 +37,6 @@ def main():
 
     index = movieName.rfind('.')
     fileName = movieName[0:index] + '.srt'
-    with open(fileName,'w') as f:
+    with open(fileName, 'w') as f:
         f.write(subtitles)
     print("Subtitle Downloaded!!")
-

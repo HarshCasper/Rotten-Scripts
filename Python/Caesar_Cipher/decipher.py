@@ -22,10 +22,12 @@ def decipher(encrypt_string, shift_key):
             decrypted_string += text
         elif text.isupper():
             # For Upper Case
-            decrypted_string = decrypted_string + chr((ord(text) - shift_key - 65) % 26 + 65)
+            decrypted_string = decrypted_string + \
+                chr((ord(text) - shift_key - 65) % 26 + 65)
         else:
             # For Lower Case
-            decrypted_string = decrypted_string + chr((ord(text) - shift_key - 97) % 26 + 97)
+            decrypted_string = decrypted_string + \
+                chr((ord(text) - shift_key - 97) % 26 + 97)
     return decrypted_string
 
 

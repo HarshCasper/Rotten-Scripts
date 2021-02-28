@@ -1,12 +1,12 @@
-#Simple Python Script To arrange your files in one click
+# Simple Python Script To arrange your files in one click
 
 import os
 import glob
-#glob function of glob module to detect all files inside current directory
+# glob function of glob module to detect all files inside current directory
 files_list = glob.glob("*")
-#Creating a set of extension types inside the folder to avoid duplicate entries
+# Creating a set of extension types inside the folder to avoid duplicate entries
 extension_set = set()
-#adding each type of extension to the set
+# adding each type of extension to the set
 for file in files_list:
     extension = file.split(sep=".")
     try:
@@ -14,9 +14,11 @@ for file in files_list:
     except IndexError:
         continue
 
-#print(extension_set)
+# print(extension_set)
 
-#Function to create directory for each type of extension
+# Function to create directory for each type of extension
+
+
 def createDirs():
     for dir in extension_set:
         try:
@@ -24,7 +26,9 @@ def createDirs():
         except FileExistsError:
             continue
 
-#Function to move files to respective folders
+# Function to move files to respective folders
+
+
 def arrange():
     for file in files_list:
         fextension = file.split(sep=".")
@@ -33,6 +37,7 @@ def arrange():
         except (OSError, IndexError):
             continue
 
-#Calling the functions in order
+
+# Calling the functions in order
 createDirs()
 arrange()

@@ -17,7 +17,7 @@ extension = file_name.split('.')[-1]
 if not extension in ('json'):
     print("The extension of json_file is incorrect")
     sys.exit(1)
-    
+
 file = open(file_name)
 text_json = file.read()
 
@@ -26,7 +26,7 @@ try:
 except:
     print("The content of json_file is incorrect")
     sys.exit(1)
-    
+
 workbook = xlwt.Workbook()
 worksheet = workbook.add_sheet('json exported')
 
@@ -44,7 +44,7 @@ for row in json_imported:
         worksheet.write(j, i, row[column])
         i += 1
     j += 1
-    
+
 try:
     workbook.save(file_name.split('.')[0] + '.xls')
     sys.exit(0)

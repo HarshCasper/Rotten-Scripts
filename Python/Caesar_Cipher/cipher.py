@@ -30,10 +30,12 @@ def cipher(imput_string, shift_key):
             encrypted_string += text
         elif text.isupper():
             # For Upper Case
-            encrypted_string = encrypted_string + chr((ord(text) + shift_key - 65) % 26 + 65)
+            encrypted_string = encrypted_string + \
+                chr((ord(text) + shift_key - 65) % 26 + 65)
         else:
             # For Lower Case
-            encrypted_string = encrypted_string + chr((ord(text) + shift_key - 97) % 26 + 97)
+            encrypted_string = encrypted_string + \
+                chr((ord(text) + shift_key - 97) % 26 + 97)
     return encrypted_string
 
 

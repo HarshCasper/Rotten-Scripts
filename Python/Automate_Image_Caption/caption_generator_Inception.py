@@ -249,7 +249,8 @@ def load_clean_descriptions(filename, dataset):
     return descriptions
 
 
-train_descriptions = load_clean_descriptions('Model/Inception/descriptions.txt', train)
+train_descriptions = load_clean_descriptions(
+    'Model/Inception/descriptions.txt', train)
 
 
 def preprocess(image_path):
@@ -279,10 +280,10 @@ model = InceptionV3(weights='imagenet')
 
 # Configure GPU
 with tf.device('/gpu:0'):
-    config = tf.compat.v1.ConfigProto(gpu_options=
-                                      tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=1)
-                                      # device_count = {'GPU': 1}
-                                      )
+    config = tf.compat.v1.ConfigProto(gpu_options=tf.compat.v1.GPUOptions(
+        per_process_gpu_memory_fraction=1)
+        # device_count = {'GPU': 1}
+    )
     config.gpu_options.allow_growth = True
     session = tf.compat.v1.Session(config=config)
     tf.compat.v1.keras.backend.set_session(session)
@@ -301,7 +302,8 @@ def encode(image):
     """
     image = preprocess(image)  # preprocess the image
     fea_vec = model_new.predict(image)  # Get the encoding vector for the image
-    fea_vec = np.reshape(fea_vec, fea_vec.shape[1])  # reshape from (1, 2048) to (2048, )
+    # reshape from (1, 2048) to (2048, )
+    fea_vec = np.reshape(fea_vec, fea_vec.shape[1])
     return fea_vec
 
 
@@ -420,7 +422,8 @@ def data_generator(descriptions, photos, wordtoix, max_length, num_photos_per_ba
             n += 1
             for desc in desc_list:
                 # encode the sequence
-                seq = [wordtoix[word] for word in desc.split(' ') if word in wordtoix]
+                seq = [wordtoix[word]
+                       for word in desc.split(' ') if word in wordtoix]
                 # split one sequence into multiple X, y pairs
                 for i in range(1, len(seq)):
                     # split into input and output pair
@@ -428,13 +431,14 @@ def data_generator(descriptions, photos, wordtoix, max_length, num_photos_per_ba
                     # pad input sequence
                     in_seq = pad_sequences([in_seq], maxlen=max_length)[0]
                     # encode output sequence
-                    out_seq = to_categorical([out_seq], num_classes=vocab_size)[0]
+                    out_seq = to_categorical(
+                        [out_seq], num_classes=vocab_size)[0]
                     # store
                     X1.append(photo)
                     X2.append(in_seq)
                     y.append(out_seq)
             # yield the batch data
-            if n==num_photos_per_batch:
+            if n == num_photos_per_batch:
                 yield [array(X1), array(X2)], array(y)
                 X1, X2, y = list(), list(), list()
                 n = 0
@@ -496,8 +500,10 @@ steps = len(train_descriptions) // number_pics_per_bath
 # Saving the models after every Epoch
 for i in range(epochs):
     with tf.device('/gpu:0'):
-        generator = data_generator(train_descriptions, train_features, wordtoix, max_length, number_pics_per_bath)
-        model.fit_generator(generator, epochs=1, steps_per_epoch=steps, verbose=1)
+        generator = data_generator(
+            train_descriptions, train_features, wordtoix, max_length, number_pics_per_bath)
+        model.fit_generator(generator, epochs=1,
+                            steps_per_epoch=steps, verbose=1)
         model.save('model_' + str(i) + '.h5')
 
 model.optimizer.lr = 0.0001
@@ -529,7 +535,7 @@ def greedySearch(photo):
         yhat = np.argmax(yhat)
         word = ixtoword[yhat]
         in_text += ' ' + word
-        if word=='endseq':
+        if word == 'endseq':
             break
     final = in_text.split()
     final = final[1:-1]

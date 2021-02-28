@@ -20,10 +20,10 @@ from tqdm.notebook import tqdm
 import tensorflow as tf
 
 with tf.device('/gpu:0'):
-    config = tf.compat.v1.ConfigProto(gpu_options=
-                                      tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=1)
-                                      # device_count = {'GPU': 1}
-                                      )
+    config = tf.compat.v1.ConfigProto(gpu_options=tf.compat.v1.GPUOptions(
+        per_process_gpu_memory_fraction=1)
+        # device_count = {'GPU': 1}
+    )
     config.gpu_options.allow_growth = True
     session = tf.compat.v1.Session(config=config)
     tf.compat.v1.keras.backend.set_session(session)
@@ -36,7 +36,6 @@ with tf.device('/gpu:0'):
     print('Found GPU at: {}'.format(device_name))
     """
 
-
     def load_doc(filename):
         """
         Function for loading various files
@@ -46,7 +45,6 @@ with tf.device('/gpu:0'):
         with open(filename) as file:
             text = file.read()
         return text
-
 
     def all_img_captions(filename):
         """
@@ -64,7 +62,6 @@ with tf.device('/gpu:0'):
             else:
                 descriptions[img[:-2]].append(caption)
         return descriptions
-
 
     def cleaning_text(captions):
         """
@@ -92,7 +89,6 @@ with tf.device('/gpu:0'):
                 captions[img][i] = img_caption
         return captions
 
-
     def text_vocabulary(descriptions):
         """
         Generate all the unique words from captions
@@ -104,7 +100,6 @@ with tf.device('/gpu:0'):
         for key, value in descriptions.keys():
             [vocab.update(d.split()) for d in descriptions[key]]
         return vocab
-
 
     def save_descriptions(descriptions, filename):
         """
@@ -119,7 +114,6 @@ with tf.device('/gpu:0'):
         data = "\n".join(lines)
         with open(filename) as file:
             file.write(data)
-
 
     # Set these path according to project folder in you system
     dataset_text = "Flickr8k_text"
@@ -173,7 +167,6 @@ with tf.device('/gpu:0'):
 
     features = load(open("features_Xception.p", "rb"))
 
-
     def load_photos(filename):
         """
         Load Photos from directories
@@ -183,7 +176,6 @@ with tf.device('/gpu:0'):
         file = load_doc(filename)
         photos = file.split("\n")[:-1]
         return photos
-
 
     def load_clean_descriptions(filename, photos):
         """
@@ -209,7 +201,6 @@ with tf.device('/gpu:0'):
 
         return descriptions
 
-
     def load_features(photos):
         """
         Load features for selected photos
@@ -217,17 +208,16 @@ with tf.device('/gpu:0'):
         :return: features
         """
         all_features = load(open("features_Xception.p", "rb"))
-        features = {k:all_features[k] for k in photos}
+        features = {k: all_features[k] for k in photos}
         return features
-
 
     filename = dataset_text + "/" + "Flickr_8k.trainImages.txt"
 
     # train = loading_data(filename)
     train_imgs = load_photos(filename)
-    train_descriptions = load_clean_descriptions("Model/Xception/descriptions.txt", train_imgs)
+    train_descriptions = load_clean_descriptions(
+        "Model/Xception/descriptions.txt", train_imgs)
     train_features = load_features(train_imgs)
-
 
     def dict_to_list(descriptions):
         """
@@ -240,13 +230,11 @@ with tf.device('/gpu:0'):
             [all_desc.append(d) for d in descriptions[key]]
         return all_desc
 
-
     # creating tokenizer class
     # this will provide a vectorised text corpus
     # each integer will represent token in dictionary
 
     from keras.preprocessing.text import Tokenizer
-
 
     def create_tokenizer(descriptions):
         """
@@ -259,12 +247,10 @@ with tf.device('/gpu:0'):
         tokenizer.fit_on_texts(desc_list)
         return tokenizer
 
-
     # give each word an index, and store that into tokenizer.p pickle file
     tokenizer = create_tokenizer(train_descriptions)
     dump(tokenizer, open('Model/Xception/tokenizer.p', 'wb'))
     vocab_size = len(tokenizer.word_index) + 1
-
 
     def max_length(descriptions):
         """
@@ -275,9 +261,7 @@ with tf.device('/gpu:0'):
         desc_list = dict_to_list(descriptions)
         return max(len(d.split()) for d in desc_list)
 
-
     max_length = max_length(descriptions)
-
 
     def data_generator(descriptions, features, tokenizer, max_length):
         """
@@ -296,7 +280,6 @@ with tf.device('/gpu:0'):
                 input_image, input_sequence, output_word = create_sequences(tokenizer, max_length, description_list,
                                                                             feature)
                 yield [input_image, input_sequence], output_word
-
 
     def create_sequences(tokenizer, max_length, desc_list, feature):
         """
@@ -326,9 +309,9 @@ with tf.device('/gpu:0'):
                 y.append(out_seq)
         return np.array(X1), np.array(X2), np.array(y)
 
-
     # You can check the shape of the input and output for your model
-    [a, b], c = next(data_generator(train_descriptions, features, tokenizer, max_length))
+    [a, b], c = next(data_generator(train_descriptions,
+                                    features, tokenizer, max_length))
     a.shape, b.shape, c.shape
 
     from keras.utils import plot_model
@@ -364,10 +347,10 @@ with tf.device('/gpu:0'):
 
             # summarize model
             print(model.summary())
-            plot_model(model, to_file='Model/Xception/model.png', show_shapes=True)
+            plot_model(model, to_file='Model/Xception/model.png',
+                       show_shapes=True)
 
             return model
-
 
     print("Dataset: ", len(train_imgs))
     print('Descriptions: train=', len(train_descriptions))
@@ -380,10 +363,10 @@ with tf.device('/gpu:0'):
     steps = len(train_descriptions)
     os.mkdir("models_Xception")
     for i in range(epochs):
-        generator = data_generator(train_descriptions, train_features, tokenizer, max_length)
+        generator = data_generator(
+            train_descriptions, train_features, tokenizer, max_length)
         model.fit(generator, epochs=1, steps_per_epoch=steps, verbose=1)
         model.save("models6/model_" + str(i) + ".h5")
-
 
     ##################################################################
     ##################### CLASSIFICATION #############################
@@ -394,7 +377,6 @@ with tf.device('/gpu:0'):
     tokenizer = load(open("Model/Xception/tokenizer.p", "rb"))
     model = load_model('models_Xception/model_9.h5')
     xception_model = Xception(include_top=False, pooling="avg")
-
 
     def extract_feature(filename, model):
         """
@@ -407,11 +389,12 @@ with tf.device('/gpu:0'):
             image = Image.open(filename)
 
         except:
-            print("ERROR: Couldn't open image! Make sure the image path and extension is correct")
+            print(
+                "ERROR: Couldn't open image! Make sure the image path and extension is correct")
         image = image.resize((299, 299))
         image = np.array(image)
         # for images that has 4 channels, we convert them into 3 channels
-        if image.shape[2]==4:
+        if image.shape[2] == 4:
             image = image[..., :3]
         image = np.expand_dims(image, axis=0)
         image = image / 127.5
@@ -419,16 +402,14 @@ with tf.device('/gpu:0'):
         feature = model.predict(image)
         return feature
 
-
     def word_for_id(integer, tokenizer):
         """
         Tokenizing words
         """
         for word, index in tokenizer.word_index.items():
-            if index==integer:
+            if index == integer:
                 return word
         return None
-
 
     def generate_desc(model, tokenizer, photo, max_length):
         """
@@ -449,10 +430,9 @@ with tf.device('/gpu:0'):
             if word is None:
                 break
             in_text += ' ' + word
-            if word=='end':
+            if word == 'end':
                 break
         return in_text
-
 
     # path = 'Flicker8k_Dataset/111537222_07e56d5a30.jpg'
     photo = extract_feature(img_path, xception_model)

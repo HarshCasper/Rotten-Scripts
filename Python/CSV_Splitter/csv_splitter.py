@@ -43,7 +43,8 @@ def split_rows(filename, delimiter=',', row_limit=1000, output_path='.'):
                 output_path,
                 output_name_template % current_row
             )
-            writer = csv.writer(open(current_out_path, 'w'), delimiter=delimiter)
+            writer = csv.writer(open(current_out_path, 'w'),
+                                delimiter=delimiter)
             if keep_headers:
                 writer.writerow(headers)
         writer.writerow(row)
@@ -55,7 +56,8 @@ def main():
     num_of_rows = input("Number of Rows: ")
     destination = input("Destination Path: ")
     try:
-        split_rows(str(file_name), row_limit=int(num_of_rows), output_path=str(destination))
+        split_rows(str(file_name), row_limit=int(
+            num_of_rows), output_path=str(destination))
         print("Done comeback soon!!!")
 
     except Exception as e:

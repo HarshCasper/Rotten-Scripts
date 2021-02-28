@@ -3,6 +3,7 @@
 import sys
 import tabula
 
+
 def extract_tables(path, number_pages):
     tables = tabula.read_pdf(path, multiple_tables=True, pages=number_pages)
     num = 1

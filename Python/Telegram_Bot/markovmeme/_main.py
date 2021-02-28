@@ -62,7 +62,8 @@ class MemeImage:
         # Otherwise, filter to subset in corpus
         options = [x for x in list_images() if corpus in x]
         if not options:
-            sys.exit("No images exist for corpus %s. Please specify --image." % corpus)
+            sys.exit(
+                "No images exist for corpus %s. Please specify --image." % corpus)
 
         choice = random.choice(options)
         return os.path.join(here, "data", "images", "%s.png" % choice)
@@ -117,10 +118,14 @@ class MemeImage:
                 ycoord = i * h
 
                 # Black outline
-                self.draw.text((xcoord - 2, ycoord - 2), lines[i], (0, 0, 0), font=font)
-                self.draw.text((xcoord + 2, ycoord - 2), lines[i], (0, 0, 0), font=font)
-                self.draw.text((xcoord + 2, ycoord + 2), lines[i], (0, 0, 0), font=font)
-                self.draw.text((xcoord - 2, ycoord + 2), lines[i], (0, 0, 0), font=font)
+                self.draw.text((xcoord - 2, ycoord - 2),
+                               lines[i], (0, 0, 0), font=font)
+                self.draw.text((xcoord + 2, ycoord - 2),
+                               lines[i], (0, 0, 0), font=font)
+                self.draw.text((xcoord + 2, ycoord + 2),
+                               lines[i], (0, 0, 0), font=font)
+                self.draw.text((xcoord - 2, ycoord + 2),
+                               lines[i], (0, 0, 0), font=font)
 
                 # Main text
                 self.draw.text((xcoord, ycoord), lines[i], font=font, fill=rgb)
@@ -222,7 +227,8 @@ class MemeImage:
                 )
 
                 # Main text
-                self.draw.text((xstart, total_height), line, font=font, fill=rgb)
+                self.draw.text((xstart, total_height),
+                               line, font=font, fill=rgb)
                 total_height += h
 
     def save_image(self, outfile=None):

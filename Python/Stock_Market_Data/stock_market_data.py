@@ -1,18 +1,22 @@
-#Imports
+# Imports
 import yfinance as yf
 from datetime import date
 import sys
 
-#Get Stock Market Data Function
+# Get Stock Market Data Function
+
+
 def get_stock_data(freq, start, end, stock_name):
     tickerSymbol = stock_name
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period=freq, start=start, end=end)
     return tickerDf
 
-if __name__ == "__main__": 
+
+if __name__ == "__main__":
     while True:
-        freq = input("Please frequency at which to gather the data; common options would include ‘1d’ (daily), ‘1mo’ (monthly), ‘1y’ (yearly): ")
+        freq = input(
+            "Please frequency at which to gather the data; common options would include ‘1d’ (daily), ‘1mo’ (monthly), ‘1y’ (yearly): ")
         if freq not in ["1d", "1mo", "1y"]:
             print("Please enter the correct frequency")
             userkey = input("press 1 to try again or 0 to exit:")
@@ -21,7 +25,8 @@ if __name__ == "__main__":
         else:
             break
     while True:
-        start = input("Please enter the start date in the following format Year-Month-Date: ")
+        start = input(
+            "Please enter the start date in the following format Year-Month-Date: ")
         try:
             start = date(*map(int, start.split('-')))
             if (not start.isoformat()):
@@ -33,9 +38,10 @@ if __name__ == "__main__":
                 break
         except:
             print("Error: must be format yyyy-mm-dd ")
-            
+
     while True:
-        end = input("Please enter the end date in the following format Year-Month-Date: ")
+        end = input(
+            "Please enter the end date in the following format Year-Month-Date: ")
         try:
             end = date(*map(int, end.split('-')))
             if (not end.isoformat()):

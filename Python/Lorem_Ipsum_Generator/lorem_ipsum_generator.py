@@ -1,5 +1,5 @@
 # import the lorem module from lorem_text
-from lorem_text import lorem             
+from lorem_text import lorem
 
 # Provide the number of paragrpahs you want
 paragraph_length = int(input("Enter the length of paragraph you want: "))
