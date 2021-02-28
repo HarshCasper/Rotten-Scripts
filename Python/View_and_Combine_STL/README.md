@@ -7,8 +7,8 @@ STL are mainly used to create 3D maps of environments like cityscapes and height
 ## Running the Script
 * Initialize and start a Virtual Environment
 * Install the Packages by running the command: pip install -r requirements.txt
-* Running Combine.py will combine all the STL files present in the drectory referred to.
-* Running View.py will let you view the any STL file in a 3D PyPlot Space.
+* Running `Combine.py` will combine all the STL files present in the drectory referred to.
+* Running `View.py` will let you view the any STL file in a 3D PyPlot Space.
 
 ## Exploring STL and 3D renders
 STL is a file format that was introduced with CAD or AutoCAD and has become extremely popular when it comes to the transport and scale representation of 3D renders between softwares. STL allows 1:1 scale representation between different 3D render solutions and used extensively is CGI and Animation. 
