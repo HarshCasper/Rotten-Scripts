@@ -4,7 +4,7 @@ Welcome Contributors!!!
 
 This guide is all about Python, how to code clean, quick and most importantly smart.
 
-There is a lot o Python scripts in this repository, and we are constantly trying to update the code quality and guess
+There is a lot of Python scripts in this repository, and we are constantly trying to update the code quality and guess
 what!!! You can help us!!!.
 
 __How?__ Just follow the below mentioned steps and you are good to go!
@@ -33,7 +33,7 @@ for detailed naming convention check our styling guide.
 
 We recommend that screenshots and images be added as test cases for better understanding of code. But as the size of
 repository is getting out of hand, we suggest that these images be first hosted on a cloud hosting service like Imgur,
-ImageShack etc. FOr more information read our styling guide.
+ImageShack etc. For more information read our styling guide.
 
 #### Security Vulnerabilities
 
@@ -82,8 +82,7 @@ file but the API secret is replaced by `x` or anything.
   
 #### Auto Styling
 
-Any script without the proper styling technique is anything byr problem for us, we again request you to kindly check out
-Style Guide. It will take only a few minutes.
+Any script without the proper styling technique is a problem for us, we again request you to kindly check out Style Guide. It will take only a few minutes.
 
 After ensuring that your script follow all the rules, you can also cross check and rectify any remaining issue (extra
 whitespaces, missing or extra blank lines etc) using a few tools.
@@ -121,7 +120,7 @@ In order to determine whether your code is up to the mark or not, we suggest usi
 - Install `PyLint` using
 
 ```bash
-pip3 insatll pylint
+pip3 install pylint
 ```
 
 - Run on CLI
