@@ -6,7 +6,7 @@ STL are mainly used to create 3D maps of environments like cityscapes and height
 
 ## Running the Script
 * Initialize and start a Virtual Environment
-* Install the Packages by running the command: pip install -r requirements.txt
+* Install the Packages by running the command: `pip install -r requirements.txt`
 * Running `Combine.py` will combine all the STL files present in the drectory referred to.
 * Running `View.py` will let you view the any STL file in a 3D PyPlot Space.
 
