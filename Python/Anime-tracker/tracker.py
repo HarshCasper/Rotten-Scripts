@@ -5,9 +5,12 @@ try:
     import re
 except ImportError:
     print('Some modules are not installed! ')
-# BS4 Library is being used to extract HTML from the Webpages
+    
 def details(soup):
-    # selecting div with class pure
+    """
+     BS4 Library is being used to extract HTML from the Webpages
+      In this  function we will basically select some HTML elements using parsed HTML (soup).
+    """
     info = soup.find('div', {'class': 'pure-1 md-3-5'})  
     # now extracting the text for p tag of the div 
     print("\nAbout the Anime : \n", "\t\t", info.find('p').getText(), "\n")                              
@@ -26,6 +29,10 @@ def details(soup):
     print("\nTags : \n")
     print((list[0].replace("\n", "  ")))   
 def entry():
+    """
+    In this function we will take input .
+    And parse HTML using Beautifulsoup
+    """
     print("\nType complete name>>\n")
     anime_name = input("[+] Enter the name of the Anime : ").strip().title().replace(" ", "-")
     print("\n")
