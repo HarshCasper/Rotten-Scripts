@@ -31,13 +31,14 @@ print(y)
 
 # Model Preprocessing
 scaler = StandardScaler()
-X = scaler.fit_transform(np.array(data.iloc[:, :-1], dtype = float))
+X = scaler.fit_transform(np.array(data.iloc[:, :-1], dtype=float))
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # Loading a Sequential Model using Keras
 model = models.Sequential()
-model.add(layers.Dense(256, activation='relu', input_shape=(X_train.shape[1],)))
+model.add(layers.Dense(256, activation='relu',
+                       input_shape=(X_train.shape[1],)))
 model.add(layers.Dense(128, activation='relu'))
 model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(10, activation='softmax'))

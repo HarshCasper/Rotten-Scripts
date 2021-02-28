@@ -5,9 +5,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 import time
 import users
 
+
 def checkStatus():
     try:
-        browser.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/header/div[2]/div[2]/span') 
+        browser.find_element_by_xpath(
+            '/html/body/div[1]/div/div/div[4]/div/header/div[2]/div[2]/span')
     except NoSuchElementException:
         return False
     return True
@@ -18,7 +20,8 @@ SEARCH = '/html/body/div[1]/div/div/div[2]/div[1]/span/div/span/div/div[1]/div/l
 USER = '/html/body/div[1]/div/div/div[2]/div[1]/span/div/span/div/div[2]/div[1]/div/div/div[2]/div/div'
 ONLINE = '/html/body/div[1]/div/div/div[4]/div/header/div[2]/div[2]/span'
 
-browser = webdriver.Chrome(executable_path=r"/Users/sanketwable/downloads/chromedriver")
+browser = webdriver.Chrome(
+    executable_path=r"/Users/sanketwable/downloads/chromedriver")
 browser.get('https://web.whatsapp.com/')
 
 print("Loading..\n")
@@ -34,9 +37,9 @@ for user_name in users.USERS:
     search.send_keys(user_name)
     time.sleep(2)
 
-    user = browser.find_element_by_xpath('//span[@title="{}"]'.format(user_name))
+    user = browser.find_element_by_xpath(
+        '//span[@title="{}"]'.format(user_name))
     user.click()
-
 
     time.sleep(2)
 

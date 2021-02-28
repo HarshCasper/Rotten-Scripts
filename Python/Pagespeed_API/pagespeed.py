@@ -48,7 +48,8 @@ with open('pagespeed.txt') as pagespeedurls:
             file.write(row)
         except NameError:
             print(f'NameError in {line}.')
-            file.write(f'Failing because of inconsistent key in {line}.' + '\n')
+            file.write(
+                f'Failing because of inconsistent key in {line}.' + '\n')
 
         try:
             print(ID)

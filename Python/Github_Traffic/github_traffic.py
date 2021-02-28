@@ -37,7 +37,8 @@ def collect(user, repo, org):
     found_new_data = False
     for view_per_day in views_data["views"]:
         timestamp = view_per_day["timestamp"]
-        data = {"uniques": view_per_day["uniques"], "count": view_per_day["count"]}
+        data = {"uniques": view_per_day["uniques"],
+                "count": view_per_day["count"]}
         if db.get(timestamp) is None or db.get(timestamp) is False:
             db.set(timestamp, json.dumps(data))
             print(timestamp, data)
@@ -92,7 +93,8 @@ def main():
     parser.add_argument("-u", "--github_user", action="store")
     parser.add_argument("-o", "--github_org", action="store")
     parser.add_argument("-r", "--github_repo", action="store")
-    parser.add_argument("-v", "--view", help="view DB content", action="store_true")
+    parser.add_argument(
+        "-v", "--view", help="view DB content", action="store_true")
 
     args = parser.parse_args()
 
@@ -110,7 +112,8 @@ def main():
                 "  GitHub user/org:      -u|--github_user AND/OR -o|--github_org\n"
                 "  GitHub repo:          -r|--github_repo\n"
             )
-        collect(user=args.github_user, repo=args.github_repo, org=args.github_org)
+        collect(user=args.github_user,
+                repo=args.github_repo, org=args.github_org)
 
 
 if __name__ == "__main__":

@@ -1,18 +1,21 @@
 import re
 import argparse
 
-parser = argparse.ArgumentParser(description='Find mobile or phone numbers from input text file.')
+parser = argparse.ArgumentParser(
+    description='Find mobile or phone numbers from input text file.')
 
 # list of cli arguments/flags
 parser.add_argument('--mobile', '-m', help='Extract mobile numbers only.')
 parser.add_argument('--phone', '-p', help='Extract Phone Numbers only.')
-parser.add_argument('--all', '-a', help='Extract both Mobile Numbers and Phone Numbers.')
+parser.add_argument(
+    '--all', '-a', help='Extract both Mobile Numbers and Phone Numbers.')
 parser.add_argument('--output', '-o', help='Name of output file.')
 
 args = parser.parse_args()
 
 mobile_num = re.compile(r'\b\d{5}-\d{5}\b')     # REGEX for mobile numbers
 phone_num = re.compile(r'\b\d{3}-\d{7}\b')      # REGEX for phone numbers
+
 
 def find_valid_mobile_number():
     input_file = open(args.mobile, 'r')             # Open input file
@@ -31,6 +34,7 @@ def find_valid_mobile_number():
     input_file.close()
     output_file.close()
 
+
 def find_valid_phone_number():
     input_file = open(args.phone, 'r')             # Open input file
     # Open output file
@@ -47,6 +51,7 @@ def find_valid_phone_number():
     # Close files
     input_file.close()
     output_file.close()
+
 
 def find_all_valid_number():
     input_file = open(args.all, 'r')             # Open input file
@@ -72,6 +77,7 @@ def find_all_valid_number():
     input_file.close()
     output_file.close()
 
+
 def main():
     if args.mobile is not None:
         find_valid_mobile_number()
@@ -81,6 +87,7 @@ def main():
         find_all_valid_number()
     else:
         print('Oh well ; you forgot to enter arguments.')
+
 
 if __name__ == '__main__':
     main()

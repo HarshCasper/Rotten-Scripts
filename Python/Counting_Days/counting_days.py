@@ -42,5 +42,3 @@ if today > futureday:
 # calculate and show date
 delta = futureday - today
 print("\nThere are", delta.days, "days between", today, "and", futureday, "!")
-
-

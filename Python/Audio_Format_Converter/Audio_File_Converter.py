@@ -28,7 +28,8 @@ def conversion(song):
         # Change the extension to the desired format
         sound.export(mp3_song, format="wav")
         # If you want to keep the old format, Press anything other than [y]
-        print("Converted", os.path.basename(mp3_song), "Do you want to delete the original files? Press [y] for Yes.\n")
+        print("Converted", os.path.basename(mp3_song),
+              "Do you want to delete the original files? Press [y] for Yes.\n")
         while True:
             if keyboard.read_key() == "y":
                 print("Deleting Duplicate File\n")

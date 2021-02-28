@@ -1,6 +1,7 @@
-import pyautogui, sys
+import pyautogui
+import sys
 
-# To know the location of X and Y coordinates. 
+# To know the location of X and Y coordinates.
 print('Press Ctrl-C to quit.')
 try:
     while True:

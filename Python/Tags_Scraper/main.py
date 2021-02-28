@@ -2,6 +2,7 @@ import os
 import SearchResults
 from Fetch_Tags import FetchTags
 
+
 def run():
     """run() method is the driver function for this script"""
     current_directory = os.getcwd()
@@ -30,6 +31,6 @@ def run():
 
     print("Fetched KeywordsData successfully")
 
+
 if __name__ == '__main__':
     run()
-    

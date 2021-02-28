@@ -8,13 +8,14 @@ try:
 except FileExistsError:
     pass
 
+
 def generate_image(img_no, author_name, blog_title):
     author = f'''By {author_name}'''
     margin = 10
     image = Image.open(f'raw_img/img{img_no}.jpg')
     width, height = image.size
     size = (width, height)
-    draw = ImageDraw.Draw(image)  
+    draw = ImageDraw.Draw(image)
     font_title = ImageFont.truetype('arial.ttf', 280)
     textwidth_title, textheight_title = draw.textsize(blog_title, font_title)
     x_title = (width - textwidth_title)/2
@@ -29,5 +30,7 @@ def generate_image(img_no, author_name, blog_title):
 
     image.save(f'outputs/output{img_no}.jpg')
 
+
 if __name__ == "__main__":
-    generate_image(sys.argv[1], ' '.join(sys.argv[2:4]), ' '.join(sys.argv[4:]).replace('/n', '\n'))
+    generate_image(sys.argv[1], ' '.join(sys.argv[2:4]),
+                   ' '.join(sys.argv[4:]).replace('/n', '\n'))

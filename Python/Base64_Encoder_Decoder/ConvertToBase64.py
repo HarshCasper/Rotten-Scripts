@@ -29,5 +29,6 @@ def ConvertToBase64(string):
     else:
         print("String Encoded")
 
+
 if __name__ == '__main__':
     ConvertToBase64(args.string)
