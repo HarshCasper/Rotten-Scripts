@@ -7,6 +7,8 @@ This python script explains how classical computations can be done using Quantum
 
 - Additionally, I have included a section in comments for you to save your account. I recommend to setup a virtual environment for it, so you can easily uninstall packages if you do not want to use them further.
 
+![Qiskit API](https://i.imgur.com/xJ3RVX5.png)
+
 ### Just type in:
 
 `python Quant_random.py`
