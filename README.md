@@ -58,7 +58,8 @@ You can refer to the following articles on the basics of Git and Github and also
 - [Python](https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python)
 - [JavaScript](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript)
 - [GoLang](https://github.com/HarshCasper/Rotten-Scripts/tree/master/Go)
-
+- [Bash](https://github.com/HarshCasper/Rotten-Scripts/tree/master/Bash)
+- [PowerShell](https://github.com/HarshCasper/Rotten-Scripts/tree/master/PowerShell)
 
 ## Contributors ✨
 
