@@ -25,7 +25,8 @@ def update_pie_chart(labels, sizes, log_dir):
     """
     # Plotting pie chart
     fig = plt.figure()
-    plt.pie(sizes, labels=labels, autopct="%1.1f%%", shadow=True, startangle=140)
+    plt.pie(sizes, labels=labels, autopct="%1.1f%%",
+            shadow=True, startangle=140)
     plt.axis("equal")
     plt.savefig(logdir + "/time_tracking_pie_chart.png")
     plt.close(fig)
@@ -63,7 +64,8 @@ if __name__ == "__main__":
         time.sleep(update_frequency)
 
         # Get the current opened window process id
-        frpid = execute_terminal_command(["xdotool", "getactivewindow", "getwindowpid"])
+        frpid = execute_terminal_command(
+            ["xdotool", "getactivewindow", "getwindowpid"])
 
         # Get the current opened window name
         frname = execute_terminal_command(

@@ -14,6 +14,7 @@ def zipdir(path, zip):
         for file in files:
             zip.write(os.path.join(root, file))
 
+
 if __name__ == '__main__':
     zipfile = ZipFile(file_name, 'w')
     zipdir(dir_name, zipfile)

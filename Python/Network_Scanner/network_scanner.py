@@ -2,7 +2,7 @@ import scapy.all as scapy
 import optparse
 
 
-def get_arguments():      
+def get_arguments():
     """
     # function to pass input in console
     """
@@ -17,9 +17,9 @@ def scan(ip):
     """
     function to scan ip adsress
     """
-    
-     #destinationn ip
-    arp_request = scapy.ARP(pdst=ip)  
+
+    # destinationn ip
+    arp_request = scapy.ARP(pdst=ip)
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
     arp_request_broadcast = broadcast/arp_request
     # print(arp_request_broadcast.summary())

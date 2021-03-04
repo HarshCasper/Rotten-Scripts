@@ -32,7 +32,8 @@ def get_lyrics(arr, max_song):
     # A counter
     for name in arr:
         try:
-            songs = (genius.search_artist(name, max_songs=max_song, sort='popularity')).songs
+            songs = (genius.search_artist(
+                name, max_songs=max_song, sort='popularity')).songs
             s = [song.lyrics for song in songs]
             # A custom delimiter
             file.write("\n \n   <|endoftext|>   \n \n".join(s))

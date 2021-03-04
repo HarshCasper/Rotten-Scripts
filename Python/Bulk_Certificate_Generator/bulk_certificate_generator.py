@@ -34,7 +34,7 @@ try:
         draw.text((x_coordinate, y_coordinate), name, (238, 33, 33), font=font)
         id_font = ImageFont.truetype("Fonts/lesser_concern.ttf", 90)
         draw.text((190, 2250), "ID: ", (0, 0, 0), font=id_font)
-        
+
         # Writing the Certificate Id
         draw.text((290, 2250), certificateId, (0, 0, 0), font=id_font)
 

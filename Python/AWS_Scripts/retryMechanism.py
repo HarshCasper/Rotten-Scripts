@@ -4,7 +4,7 @@ Replace USERNAME with the PostgreSQL database username, PASSWORD with the databa
 and DBNAME with the database name.
 """
 
-import pg #pg module is used to connect to PostgreSQL.
+import pg  # pg module is used to connect to PostgreSQL.
 
 
 class Database:
@@ -39,6 +39,7 @@ class Database:
             self.conn.close()
         else:
             print("Connection with the database was Unsucessful!")
+
 
 """
 This example creates a Connection object that opens the PostgreSQL database using the specified parameters. 

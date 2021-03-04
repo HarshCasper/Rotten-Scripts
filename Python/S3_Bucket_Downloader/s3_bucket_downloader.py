@@ -1,4 +1,6 @@
-import os, sys, time
+import os
+import sys
+import time
 
 # Installation of AWS CLI
 install_aws_cli = 'pip install awscli'
@@ -32,7 +34,8 @@ download_location = input('''Enter location to store downloaded files using
 </local/path>
 format. Example - ~/Pictures/work/python\n''')
 
-download_bucket = 'aws s3 sync '.join(bucket_location).join(' ').join(download_location)
+download_bucket = 'aws s3 sync '.join(
+    bucket_location).join(' ').join(download_location)
 status = os.system(download_bucket)
 
 if(status):

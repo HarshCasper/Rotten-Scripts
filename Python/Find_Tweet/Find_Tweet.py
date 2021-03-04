@@ -10,7 +10,8 @@ def search_tweet(s_user, s_tweet):
         for tweet in tweets:
             if tweet.text.lower() == s_tweet.lower():
                 link = "https://twitter.com/{}/status/{}"
-                print('Found! Link', link.format(tweet.user.screen_name, tweet.id))
+                print('Found! Link', link.format(
+                    tweet.user.screen_name, tweet.id))
                 print(' by: ', following.screen_name, 'id: ', tweet.id)
                 return
     print('Tweet not found!')

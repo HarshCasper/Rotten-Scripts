@@ -7,6 +7,7 @@ from google.auth.transport.requests import Request
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://mail.google.com/']
 
+
 def main():
     """Authorize the user by OAth 2.0
     """
@@ -29,6 +30,6 @@ def main():
         with open('token.pickle', 'wb') as token:
             pickle.dump(creds, token)
 
+
 if __name__ == '__main__':
     main()
-    

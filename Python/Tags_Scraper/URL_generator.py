@@ -4,6 +4,7 @@ class GURL:
     but has got 4 other parameters as well, Generate: which generates
     URL and get_url : which returns the string of generated url
     """
+
     def __init__(self, query, limit=100, filetype='html', timeperiod='w', safemode='active'):
         """
         This is the constructor which takes the query string and converts it into a parameterised
@@ -20,7 +21,8 @@ class GURL:
     def generate(self):
         """ This method 
         """
-        self.url = self.base_url + "/search?q={0}&num={1}&as_filetype='{2}'&as_qdr={3}&safe={4}".format(self.query, self.limit, self.filetype, self.timeperiod, self.safemode)
+        self.url = self.base_url + "/search?q={0}&num={1}&as_filetype='{2}'&as_qdr={3}&safe={4}".format(
+            self.query, self.limit, self.filetype, self.timeperiod, self.safemode)
         print("GENERATED URL : '{}'".format(self.url))
 
     def get_url(self):

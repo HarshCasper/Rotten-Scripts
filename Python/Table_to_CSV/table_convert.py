@@ -19,7 +19,8 @@ img = cv2.imread(file, 0)
 img.shape
 
 # Adaptive thresholding for the image to a binary image
-img_bin = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+img_bin = cv2.adaptiveThreshold(
+    img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
 # inverting the image
 img_bin = 255 - img_bin
 cv2.imwrite(file+'cv_inverted.png', img_bin)
@@ -52,14 +53,16 @@ cv2.imwrite(file+"horizontal.jpg", horizontal_lines)
 img_vh = cv2.addWeighted(vertical_lines, 0.5, horizontal_lines, 0.5, 0.0)
 # Eroding and thresholding the image
 img_vh = cv2.erode(~img_vh, kernel, iterations=2)
-thresh, img_vh = cv2.threshold(img_vh, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+thresh, img_vh = cv2.threshold(
+    img_vh, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 cv2.imwrite(file+"img_vh.jpg", img_vh)
 bitxor = cv2.bitwise_xor(img, img_vh)
 bitnot = cv2.bitwise_not(bitxor)
 
 
 # Detect contours
-contours, hierarchy = cv2.findContours(img_vh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+contours, hierarchy = cv2.findContours(
+    img_vh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
 
 # Cell Detection
@@ -136,7 +139,8 @@ for i in range(len(row)):
         countcol = countcol
 
 # Retrieving the center of each column
-center = [int(row[i][j][0] + row[i][j][2] / 2) for j in range(len(row[i])) if row[0]]
+center = [int(row[i][j][0] + row[i][j][2] / 2)
+          for j in range(len(row[i])) if row[0]]
 
 center = np.array(center)
 center.sort()
@@ -165,17 +169,20 @@ for i in range(len(finalboxes)):
         else:
             for k in range(len(finalboxes[i][j])):
                 y, x, w, h = finalboxes[i][j][k][0], finalboxes[i][j][k][1], finalboxes[i][j][k][2], \
-                             finalboxes[i][j][k][3]
+                    finalboxes[i][j][k][3]
                 finalimg = bitnot[x:x + h, y:y + w]
                 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 1))
-                border = cv2.copyMakeBorder(finalimg, 2, 2, 2, 2, cv2.BORDER_CONSTANT, value=[255, 255])
-                resizing = cv2.resize(border, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+                border = cv2.copyMakeBorder(
+                    finalimg, 2, 2, 2, 2, cv2.BORDER_CONSTANT, value=[255, 255])
+                resizing = cv2.resize(border, None, fx=2,
+                                      fy=2, interpolation=cv2.INTER_CUBIC)
                 dilation = cv2.dilate(resizing, kernel, iterations=1)
                 erosion = cv2.erode(dilation, kernel, iterations=2)
 
                 out = pytesseract.image_to_string(erosion)
                 if len(out) == 0:
-                    out = pytesseract.image_to_string(erosion, config='--psm 3')
+                    out = pytesseract.image_to_string(
+                        erosion, config='--psm 3')
                 inner = inner + " " + out
             outer.append(inner)
 
@@ -192,8 +199,10 @@ while True:
         data = dataframe.replace(r'\n', '', regex=True)
         data = data.style.set_properties(align="left")
         # Converting it in a excel-file
-        ILLEGAL_CHARACTERS_RE = re.compile(r'[\000-\010]|[\013-\014]|[\016-\037]')
-        data = data.applymap(lambda x: ILLEGAL_CHARACTERS_RE.sub(r'', x) if isinstance(x, str) else x)
+        ILLEGAL_CHARACTERS_RE = re.compile(
+            r'[\000-\010]|[\013-\014]|[\016-\037]')
+        data = data.applymap(lambda x: ILLEGAL_CHARACTERS_RE.sub(
+            r'', x) if isinstance(x, str) else x)
         # Converting it in a excel-file
         print(data)
         # Change the Path to the destination
@@ -208,8 +217,10 @@ while True:
     elif keyboard.read_key() == "c":
         data = dataframe.replace(r'\n', '', regex=True)
         # Converting it in a excel-file
-        ILLEGAL_CHARACTERS_RE = re.compile(r'[\000-\010]|[\013-\014]|[\016-\037]')
-        data = data.applymap(lambda x: ILLEGAL_CHARACTERS_RE.sub(r'', x) if isinstance(x, str) else x)
+        ILLEGAL_CHARACTERS_RE = re.compile(
+            r'[\000-\010]|[\013-\014]|[\016-\037]')
+        data = data.applymap(lambda x: ILLEGAL_CHARACTERS_RE.sub(
+            r'', x) if isinstance(x, str) else x)
         # Converting it in a excel-file
         print(data)
         # Change the Path to the destination
@@ -219,4 +230,3 @@ while True:
     else:
         print("Nothing!!!\n")
         break
-

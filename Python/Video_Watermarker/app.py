@@ -6,16 +6,16 @@ import sys
 import os
 
 
-def capture(path, choice, margin, text):  
+def capture(path, choice, margin, text):
     video = cv2.VideoCapture(path)  # video object
     countFrame = 0
     img_array = []  # store all the watermaked frames
-    progress_bar = tqdm(unit=' Frames Processed', unit_scale=True)  
+    progress_bar = tqdm(unit=' Frames Processed', unit_scale=True)
     while(video.isOpened()):
         sucess, frame = video.read()
         if sucess == False:
             break
-        cv2.imwrite('frame'+str(countFrame)+'.jpg',frame)
+        cv2.imwrite('frame'+str(countFrame)+'.jpg', frame)
         image = Image.open('frame'+str(countFrame)+'.jpg')
         width, height = image.size
         size = (width, height)
@@ -51,7 +51,8 @@ def capture(path, choice, margin, text):
         countFrame += 1
 
     video.release()
-    video_write = cv2.VideoWriter('output.avi',cv2.VideoWriter_fourcc(*'DIVX'), 30, size)
+    video_write = cv2.VideoWriter(
+        'output.avi', cv2.VideoWriter_fourcc(*'DIVX'), 30, size)
     for i in range(len(img_array)):
         video_write.write(img_array[i])
     video_write.release()
@@ -63,5 +64,6 @@ def capture(path, choice, margin, text):
 
     os.remove('output.avi')
 
+
 if __name__ == "__main__":
-    capture(sys.argv[1], sys.argv[2], int(sys.argv[3]), " ".join(sys.argv[4:]))    
+    capture(sys.argv[1], sys.argv[2], int(sys.argv[3]), " ".join(sys.argv[4:]))

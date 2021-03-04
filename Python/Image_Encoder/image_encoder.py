@@ -6,6 +6,7 @@ import base64
 import json
 import time
 
+
 def b64_encode(source_filepath):
     with open(source_filepath, 'rb') as f:
         data = f.read()
@@ -20,6 +21,7 @@ def b64_encode(source_filepath):
     json.dump(flag, dest)
     return key
 
+
 def b64_decode(key, dest_path):
     source = open('ImageData/encodeData.json', 'r')
     flag = json.loads(source.read())
@@ -29,11 +31,15 @@ def b64_decode(key, dest_path):
     dest.close()
     return dest_path+name
 
+
 parser = argparse.ArgumentParser()
 
-parser.add_argument("-ie", "--ImageEncode", required=False, help="Image File for Encoding Purpose.")
-parser.add_argument('-id', "--ImageDecode", required=False, help="Image File Decoding")
-parser.add_argument('-k', "--Key", required=False, help="Key for Decoding the Image")
+parser.add_argument("-ie", "--ImageEncode", required=False,
+                    help="Image File for Encoding Purpose.")
+parser.add_argument('-id', "--ImageDecode", required=False,
+                    help="Image File Decoding")
+parser.add_argument('-k', "--Key", required=False,
+                    help="Key for Decoding the Image")
 
 args = vars(parser.parse_args())
 

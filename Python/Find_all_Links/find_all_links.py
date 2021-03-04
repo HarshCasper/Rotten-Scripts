@@ -4,30 +4,34 @@ import requests
 
 from bs4 import BeautifulSoup
 
+
 def help():
-  print("Usage: python find_all_links.py <url>")
+    print("Usage: python find_all_links.py <url>")
+
 
 def parseURL(url):
-  return url.replace("&amp;", "&")
+    return url.replace("&amp;", "&")
+
 
 def extractLinks(url):
-  # Extracts links from the given webpage
+    # Extracts links from the given webpage
 
-  r = requests.get(url)
-  soup = BeautifulSoup(r.content, 'html.parser')
+    r = requests.get(url)
+    soup = BeautifulSoup(r.content, 'html.parser')
 
-  links = re.findall("http.?://[^\s\"\']+", str(soup))
+    links = re.findall("http.?://[^\s\"\']+", str(soup))
 
-  if len(links) == 0:
-    print("No links on {}".format(url))
+    if len(links) == 0:
+        print("No links on {}".format(url))
 
-  for link in links:
-    print(parseURL(link))
+    for link in links:
+        print(parseURL(link))
+
 
 if __name__ == "__main__":
-  if len(sys.argv) < 2:
-    help()
-    exit(0)
+    if len(sys.argv) < 2:
+        help()
+        exit(0)
 
-  url = sys.argv[1]
-  extractLinks(url)
+    url = sys.argv[1]
+    extractLinks(url)

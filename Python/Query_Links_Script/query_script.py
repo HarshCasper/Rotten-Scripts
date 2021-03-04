@@ -1,6 +1,7 @@
 """A Python script that produces Google rankwise links related to a particular query"""
 from googlesearch import search
 
+
 def google_search_results(keyword, domain='com'):
     """
         :param keyword: Provided with string type data for which links are produced
@@ -8,6 +9,7 @@ def google_search_results(keyword, domain='com'):
     """
     for links in search(keyword, tld=domain, pause=2):
         yield links
+
 
 def main():
     query = input("Enter your search keyword: ")
@@ -20,6 +22,7 @@ def main():
 
         print(count, link, "\n")
         count += 1
+
 
 if __name__ == "__main__":
     main()

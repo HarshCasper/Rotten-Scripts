@@ -29,10 +29,9 @@ def main(args):
         if len(string) <= 0:
             exit_with_error()
         print(rot_13(string))
-    except (IndexError,ValueError):
+    except (IndexError, ValueError):
         exit_with_error()
 
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-

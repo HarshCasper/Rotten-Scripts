@@ -23,8 +23,8 @@ def check(mac):
         mac_address = mac_address.replace(' ', '')
 
         if mac_address.lower() == mac.lower():
-            print ('-', mac_address, ',', Fore.GREEN + device_name
-                   + Fore.RESET)
+            print('-', mac_address, ',', Fore.GREEN + device_name
+                  + Fore.RESET)
             return True
 
 
@@ -41,7 +41,7 @@ def main():
 
         for address in user_input.strip().replace(' ', '').split(','):
             if not check(address):
-                print ('-', Fore.RED + address + Fore.RESET)
+                print('-', Fore.RED + address + Fore.RESET)
 
 
 def clipboard():
@@ -56,7 +56,7 @@ def clipboard():
                 continue
 
             if not check(i):
-                print ('-', Fore.RED + i + Fore.RESET)
+                print('-', Fore.RED + i + Fore.RESET)
 
 
 try:
@@ -68,5 +68,5 @@ try:
     main()
 except KeyboardInterrupt:
 
-    print ()
+    print()
     exit()

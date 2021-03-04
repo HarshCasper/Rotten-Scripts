@@ -2,13 +2,14 @@
 
 # Importing required libraries and modules.
 import re                               # For regular expression operations
-import requests                         # For sending HTTP request to server 
+import requests                         # For sending HTTP request to server
 from urllib.parse import urlsplit       # For Splitting the URL
 from collections import deque           # A list-like container
-from bs4 import BeautifulSoup           # A Python package for parsing HTML and XML documents 
+# A Python package for parsing HTML and XML documents
+from bs4 import BeautifulSoup
 import requests.exceptions              # For handling exceptions
 
-# Enter here the webpage to scrape in the original_url. 
+# Enter here the webpage to scrape in the original_url.
 original_url = input("Enter the webpage url: ")
 
 # a queue of URLs to be scraped
@@ -41,7 +42,8 @@ except (requests.exceptions.MissingSchema, requests.exceptions.ConnectionError):
     pass
 
 # extracting all email addresses and add them into the resulting set
-new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
+new_emails = set(re.findall(
+    r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
 emails.update(new_emails)
 print(emails)
 

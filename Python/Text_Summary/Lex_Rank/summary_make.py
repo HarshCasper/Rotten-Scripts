@@ -18,7 +18,8 @@ def summarize_sentences(sentences: str, language="english") -> list:
     # Preparation sentences
     corpus_maker = EnglishCorpus()
     preprocessed_sentences = corpus_maker.preprocessing(sentences)
-    preprocessed_sentence_list = corpus_maker.make_sentence_list(preprocessed_sentences)
+    preprocessed_sentence_list = corpus_maker.make_sentence_list(
+        preprocessed_sentences)
     corpus = corpus_maker.make_corpus()
     parser = PlaintextParser.from_string(" ".join(corpus), Tokenizer(language))
 
@@ -29,6 +30,7 @@ def summarize_sentences(sentences: str, language="english") -> list:
     summarizer.stop_words = get_stop_words(language)
 
     # Limiting the summary to one-fifth of the article (See README)
-    summary = summarizer(document=parser.document, sentences_count=len(corpus) * 2 // 10)
+    summary = summarizer(document=parser.document,
+                         sentences_count=len(corpus) * 2 // 10)
 
     return summary

@@ -18,7 +18,7 @@ import sys
 here = os.path.dirname(os.path.abspath(__file__))
 
 
-## Generation Functions
+# Generation Functions
 
 
 def generate_text(corpus, use_model=True, size=10):
@@ -114,7 +114,7 @@ def generate_words_markov(corpus, size=10):
     return result
 
 
-## Corpus Functions
+# Corpus Functions
 
 
 def get_corpus(prefix):
