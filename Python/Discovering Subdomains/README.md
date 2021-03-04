@@ -29,5 +29,4 @@ I will build a subdomain scanner in Python using requests library.
 
     Sit back and Relax. Let the Script do the Job. ☕
     
-### Screenshots of Output
 
