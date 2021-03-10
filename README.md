@@ -154,7 +154,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 | <a href="https://www.linkedin.com/in/soham-shah-a97b5917b/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
 
 |                                     <a href="https://github.com/seema1711"><img src="https://avatars.githubusercontent.com/u/48756444?s=400&u=eb84811c137fad97d5d02c2cb99c77bc39676a26&v=4" width=150px height=150px /></a>                                      |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :----------------------------------------------------------------------------------------------------: |
 |                                                                                      **[Seema Sharan](https://www.linkedin.com/in/seemasaharan/)**                                                                                       |
 | <a href="https://www.linkedin.com/in/seemasaharan/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
 
