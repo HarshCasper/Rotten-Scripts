@@ -1,4 +1,4 @@
-## Backgraound Remover ##
+# Backgraound Remover #
 
 - This is simple background remover script that intends to remove background from a still frame.
 - This uses python with various libraries like openCV and numpy.
