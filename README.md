@@ -142,7 +142,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ## ❤️ Project Maintainers
-
+<table>
+<tr>
 |                                     <a href="https://github.com/harshcasper"><img src="https://avatars1.githubusercontent.com/u/47351025?s=460&u=e6985588320978737a51ac23c8a624005fce5e18&v=4" width=150px height=150px /></a>                                      |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                      **[Harsh Bardhan Mishra](https://www.linkedin.com/in/harsh-bardhan-mishra-b19990173/)**                                                                                       |
@@ -152,7 +153,8 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                      **[Soham Shah](https://www.linkedin.com/in/soham-shah-a97b5917b/)**                                                                                       |
 | <a href="https://www.linkedin.com/in/soham-shah-a97b5917b/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
-
+</tr>
+</table>
 
 > **_Need help? Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**
 
