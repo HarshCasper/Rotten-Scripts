@@ -29,7 +29,10 @@
 ## What you might see ##
 
 - Output and Input Image. 
-![Image]('https://imgur.com/gallery/IDRm79h')
+
+    ![Image]('https://imgur.com/a/9qkXbG0')
+    ![Image]('https://imgur.com/a/9tjiog5')
+    
 
 ## Author ##
 - [piSquared]('https://github.com/pi-squared-4')  

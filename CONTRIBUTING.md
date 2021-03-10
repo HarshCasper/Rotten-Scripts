@@ -95,6 +95,17 @@ Then add a title and description to your pull request that explains your contrib
 <img width="882" alt="pullr" src="https://user-images.githubusercontent.com/44089458/86092345-fed8c280-baca-11ea-9a04-95991d9c60d2.PNG">  
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
+### Note : Do not add images, rather 👇
+- Recently, we have removed all the images from our repository and have linked those images in the markdown files.
+
+-    ## How you can do that?
+-    Upload your images and screenshots on an image hosting platform like [imgur](https://imgur.com/).
+-    Link your images in your readme files. An instance  👇
+![Example](https://media.giphy.com/media/mGZEguRF26hZltRbqZ/giphy.gif)
+
+######(This will help us save extra valuable space) #### 
+    
+
 ### Need more help?🤔
 
 You can refer to the following articles on basics of Git and Github and also contact the Project Mentors,
