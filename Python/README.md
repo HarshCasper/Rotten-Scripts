@@ -98,7 +98,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 88 | Mass Email Sender | [Click Here](/Python/Mass_Email_Sender) | [Deepraj](https://github.com/deepraj1729) | argparse, time, MassEmailSender.utils
 89 | Medium Article Downloader | [Click Here](/Python/Medium_article_downloader) | [Namya LG](https://github.com/Namyalg) | requests, BeautifulSoup
 90 | Meet Strangers | [Click Here](/Python/Meet_Strangers) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | os, re, subprocess, colorama 
-91 | Merge Two PDF Files | [Click Here](/Python/mergetwopdf) | [Tejas1510](https://github.com/Tejas1510) | PyPDF2, sys
+91 | Merge Two PDF Files | [Click Here](/Python/Merge_2_PDFs) | [Tejas1510](https://github.com/Tejas1510) | PyPDF2, sys
 92 | Music Genre Classification | [Click Here](/Python/Music_Genre_Classification) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | Keras, TensorFlow, pandas, scikit, scipy
 93 | Net Connection | [Click Here](/Python/Net_Connection) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | socket, time, subprocess
 94 | OCR To Google Question Papers | [Click Here](/Python/OCR_To_Google_Question_Papers) | [Sanket Mhatre](https://github.com/SANKET7738)| pytesseract, nltk.data, re, newspaper, googlesearch 
