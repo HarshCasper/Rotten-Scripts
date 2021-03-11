@@ -99,7 +99,7 @@ Then add a title and description to your pull request that explains your contrib
 
 - We recently have removed all the images and screenshots from our repository and linked them to markdown files.
     
-    #### How to do that? ####
+    #### How to do that? 
 
     - You can do that by hosting all you images and screenshots to any images hosting site such as [imgur](www.imgur.com), [imgbb]('https://imgbb.com/'), [postimages](https://postimages.org/).
     - Then link your uploaded images to README files. An instance 👇
