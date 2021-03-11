@@ -101,7 +101,7 @@ Then add a title and description to your pull request that explains your contrib
     
     #### How to do that? 
 
-    - You can do that by hosting all you images and screenshots to any images hosting site such as [imgur](www.imgur.com), [imgbb]('https://imgbb.com/'), [postimages](https://postimages.org/).
+    - You can do that by hosting all you images and screenshots to any images hosting site such as [imgur]('https://imgur.com/'), [imgbb]('https://imgbb.com/'), [postimages]('https://postimages.org/').
     - Then link your uploaded images to README files. An instance 👇
     
     ![update_readme](https://media.giphy.com/media/45Bc4gO8j4D0oCLg0g/giphy.gif)
