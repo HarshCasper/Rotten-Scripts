@@ -95,7 +95,7 @@ Then add a title and description to your pull request that explains your contrib
 <img width="882" alt="pullr" src="https://user-images.githubusercontent.com/44089458/86092345-fed8c280-baca-11ea-9a04-95991d9c60d2.PNG">  
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
-### Note : Do not add images, rather 👇 ###
+### Note : Do not add images, rather 👇 
 
 - We recently have removed all the images and screenshots from our repository and linked them to markdown files.
     
