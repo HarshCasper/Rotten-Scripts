@@ -1,110 +1,95 @@
 """we will be using coinbase API as it is public
-More info below
 https://developers.coinbase.com/api/v2?python#get-exchange-rates"""
 
 import requests
+import sys
 
 
-def exchange_rates(cryptocurrency):
-    """
-    This function gets exhange rates.
-    The coinbase API returns the JSON for an input cryptocurrency with
-    data or exhangerate of one coin to all known "normal" fiat currencies
-    like BTC(input) to INR,USD,etc.
-    """
+def exchange_rates(typee):
+    """This function gets exhange rates. The coinbase API returns the JSON for an input cryptocurrency with data or exhangerate of one coin to all known "normal" fiat currencies like BTC(input) to INR,USD,etc."""
+    typee = typee.upper()
+    response_obj = requests.get('https://api.coinbase.com/v2/exchange-rates?currency='+typee)
 
-    # capitalising the cryptocurrency values as the API accepts and returns
-    cryptocurrency = cryptocurrency.upper()
-
-    # These are the cryptocurrency available currently by the API.
-    # "BTC" is for Bitcoin,"ETH" is for Ethereum and so on
-    available_cryptocurrencies = [
-        'BTC', 'ETH', 'ETC', 'BCH', 'LTC', 'ZEC', 'ZRX']
-
-    if cryptocurrency not in available_cryptocurrencies:
-        return None
-
-    # sending a request to the api and storing the response object in r variable
-    response_obj = requests.get(
-        'https://api.coinbase.com/v2/exchange-rates?currency='+cryptocurrency)
-
-    try:
-        exchange_dict = response_obj.json()["data"]["rates"]
-    except KeyError:
-        return None
+    try: exchange_dict = response_obj.json()["data"]["rates"]
+    except: return None
     return exchange_dict
 
-# This function converts currency amount to cryptocurrency amount
-
-
-def convert_currency_to_crypto(amount, currency, cryptocurrency):
-    """This function converts currency amount to cryptocurrency amount"""
-
-    # checking that the input is correct
-    try:
-        amount = float(amount)
-    except ValueError:
-        return "wrong input!"
-
+def convert_fiat_to_crypto(fvalue, ftype, ctype):
+    """This function converts fiat money to cryptocurrency amount."""
+    available_cryptocurrencies = ['BTC', 'ETH', 'ETC', 'BCH', 'LTC', 'ZEC', 'ZRX']
+    if ctype not in available_cryptocurrencies:
+        print(f"\n{ctype} is not a Cryptocurrency. Try again!")
+        sys.exit(0)
     # get current_price for cryptocurrency using exhange_rates function
-    current_price = exchange_rates(cryptocurrency)[currency]
-
+    try: current_price = exchange_rates(ftype)[ctype]
+    except:
+        print("nNo Information Available. We're Sorry!")
+        sys.exit(0)
     if current_price is None:
-        return "No info available"
+        print("\nNo Information Available. We're Sorry!")
+        sys.exit(0)
 
-    return amount/float(current_price)
+    return float(current_price)*fvalue
 
 
-def convert_crypto_to_currency(amount, cryptocurrency, currency):
-    """This function converts currency amount to cryptocurrency amount"""
-
-    # Just checking the input
-    try:
-        amount = float(amount)
-    except ValueError:
-        return "wrong input!"
-
+def convert_crypto_to_fiat(cvalue, ctype, ftype):
+    """This function converts cryptocurrency amount to fiat money."""
+    available_cryptocurrencies = ['BTC', 'ETH', 'ETC', 'BCH', 'LTC', 'ZEC', 'ZRX']
+    if ftype in available_cryptocurrencies:
+        print(f"\n{ftype} is not a Fiat Money. Try Again!")
+        sys.exit(0)
     # get current_price for cryptocurrency using exhange_rates function
-    current_price = exchange_rates(cryptocurrency)[currency]
-
+    try: current_price = exchange_rates(ctype)[ftype]
+    except:
+        print("\nNo Information Available. We're Sorry!")
+        sys.exit(0)
     if current_price is None:
-        return "No info available"
+        print("\nNo Information Available. We're Sorry!")
+        sys.exit(0)
 
-    return float(current_price)*amount
+    return float(current_price)*cvalue
 
 
 if __name__ == "__main__":
-    STRING = """
-    ################################################################
-
-    examples of fiat currencies :INR,USD,etc.
-    examples of Cryptocurrencies :BTC,ETH,etc.
-    
-    ################################################################
-
-    Choose one of the below options:
-
-    Convert Cryptocurrency to fiat currency (Enter 1)  
-    Convert fiat currency to Cryptocurrency (Enter 2) 
-    Quit (Enter Q)
+    info_msg = """
+We convert currency -> Cryptocurrency to Fiat Money and vice-versa.
+\nPress (1)  :  To convert Cryptocurrency to Fiat Money.
+Press (2)  :  To convert Fiat Money to Cryptocurrency.
+Press (Q/q)  :  If you're wanting to Quit.
     """
+    print(info_msg)
 
     while True:
-        print(STRING)
-        user_inp = input()
-        currency = input("Enter fiat currency type:").upper()
-        cryptocurrency = input("Enter Cryptocurrency type:").upper()
-        amount = int(input("Enter Cryptocurrency amount:"))
-        print("\n")
+        user_inp = input("\nEnter Your Choice Here : ")
         if user_inp == "1":
-            result = convert_crypto_to_currency(
-                amount, cryptocurrency, currency)
-            print(f"{amount} {cryptocurrency} in {currency} is {result}")
+            crypto_type = input("\nEnter the Cryptocurrency Type  :  ")
+            fiat_type = input("Enter the Fiat Money Type  :  ")
+            try: crypto_value = float(input("\nEnter the Cryptocurrency Value  :  "))
+            except:
+                print("Bad Input!\nPlease Enter \"y\" if you wish to continue, else \"n\".")
+                choice = input()
+                if choice == "y": continue
+                elif choice == "n": sys.exit(0)
+                else:
+                    print("Bad Input Again!")
+                    sys.exit(0)
+            result = convert_crypto_to_fiat(crypto_value, crypto_type.upper(), fiat_type.upper())
+            print(f"{crypto_value} {crypto_type.upper()} in {fiat_type.upper()} is  -->  {result}")
         elif user_inp == "2":
-            result = convert_crypto_to_currency(
-                amount, cryptocurrency, currency)
-            print(f"{amount} {currency} in {cryptocurrency} is {result}")
-        elif user_inp == "Q":
-            break
+            fiat_type = input("\nEnter the Fiat Money Type  :  ")
+            crypto_type = input("Enter the Cryptocurrency Type  :  ")
+            try: fiat_value = float(input("\nEnter the Fiat Money Value  :  "))
+            except:
+                print("You did not enter a number!\nPlease Enter \"y\" if you wish to continue, else \"n\".")
+                choice = input()
+                if choice == "y": continue
+                elif choice == "n": sys.exit(0)
+                else:
+                    print("Bad Input Again!")
+                    sys.exit(0)
+            result = convert_fiat_to_crypto(fiat_value, fiat_type.upper(), crypto_type.upper())
+            print(f"{fiat_value} {fiat_type.upper()} in {crypto_type.upper()} is  -->  {result}")
+        elif user_inp == "Q" or user_inp == "q": sys.exit(0)
         else:
-            print("Wrong Input! try again")
+            print("Your Input was NOT in the choices.")
+            sys.exit(0)
