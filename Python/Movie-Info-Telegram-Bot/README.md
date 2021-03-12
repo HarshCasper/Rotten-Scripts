@@ -6,39 +6,38 @@ A telegram Bot made using python which scrapes IMDb website and has the followin
 2. Replies to a genre with a list of top movies and tv shows belonging to that genre
 
 ## Setup Instructions
-1. Create a bot in telegram:
+
+1. Install required packages:
+
+       pip install -r requirements.txt
+
+2. Create a bot in telegram:
 
        1. Go to @BotFather and click /start and type /newbot and give it a name. 
        2. Choose a username and get the token 
-       3. Place the token in "YOUR-TOKEN" place in the code
+3. Paste the token in a .env file (Take [.env.example](.env.example) as an example) 
 
-2. Install required packages:
+4. Run the python script to start the bot
 
-       pip install requests
-       pip install python-telegram-bot
-3. Run the python code to start the bot
+5. Type /start command to start conversation with the chatbot.
 
-4. Type /start command to start conversation with the chatbot.
-
-5. Type /name <movie_name> to get the genre and Rating of the movie. The bot replies with atmost three results.
-6. Type /genre \<genre> to get a list of movies and TV shows belonging to that genres
+6. Type /name <movie_name> to get the genre and Rating of the movie. The bot replies with atmost three results.
+7. Type /genre \<genre> to get a list of movies and TV shows belonging to that genres
 
 ## Output
 
 ### /start command
 
-![alt text](start.png)  
-
+<img src="https://i.ibb.co/jwpJHKX/start.png">
 
 ### /name command
 
-![alt text](movie.png)
+<img src="https://i.ibb.co/FzrGjSQ/movie.png">
 
 ### /genre command
 
-![alt text](genre.png)
+<img src="https://i.ibb.co/VJQy108/genre.png">
 
 ## Author
-
-Aishwarya  
-[@aish2002](https://github.com/aish2002)
+ 
+[Aishwarya A J](https://github.com/aish2002)
