@@ -75,5 +75,3 @@ JavaScript was created in 10 days only and when released, it used to cover a ver
 20.  [Github_Unfollowers](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Github_Unfollowers)
 
      Author: [Vismita Prabhu](https://github.com/vismitap)
-
-
