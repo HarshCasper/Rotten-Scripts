@@ -94,30 +94,27 @@ def get_info(movie):
             new_url='https://www.imdb.com'+str(link.group(0))
             if new_url!=pre_url:
                 html=requests.get(new_url)
-                soup2=BeautifulSoup(html.text,"html.parser")
-                movietitle=soup2.find('title').string.replace('- IMDb',' ')
-                a=soup2('a')
-                span=soup2('director')
-                for item in span:
-                    print(item)
-                genrestring="Genre : "
-                for j in a:
-                    genre=re.search('<a href=\"/search/title\?genres=.*> (.*?)</a>',str(j))
+                soup_each_title=BeautifulSoup(html.text,"html.parser")
+                movie_title=soup_each_title.find('title').string.replace('- IMDb',' ')
+                anchor=soup_each_title('a')
+                genre_string="Genre : "
+                for each in anchor:
+                    genre=re.search('<a href=\"/search/title\?genres=.*> (.*?)</a>',str(each))
                     try:
-                       genrestring+=genre.group(1)+' '
+                       genre_string+=genre.group(1)+' '
                     except:
                         pass
-                atag=soup2('strong')
-                for i in atag:
+                strong_tag=soup_each_title('strong')
+                for i in strong_tag:
                     rating=re.search('<strong title=\"(.*?) based',str(i))
                     try:
-                        rstring="IMDb Rating : "+rating.group(1)
+                        rating_string="IMDb Rating : "+rating.group(1)
                     except:
                         pass
                 details="For more details : "+new_url
-                lis.append(movietitle)
-                lis.append(genrestring)
-                lis.append(rstring)
+                lis.append(movie_title)
+                lis.append(genre_string)
+                lis.append(rating_string)
                 lis.append(details)
                 pre_url=new_url
                 count+=1
