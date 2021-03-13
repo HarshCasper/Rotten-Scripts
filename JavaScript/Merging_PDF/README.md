@@ -1,3 +1,6 @@
 # Merging PDF
 
-A Javascript Code that merge two pdf into single pdf with the help of pdf-lib library. First, this code will load pdf from the directory and then it creates new documents to add these loaded pdf into it.
+This is the javascript code to merge two pdf from local repository, 
+this code just uses pdflib package to load a file and make a change like given below
+
+![image](output.png)
