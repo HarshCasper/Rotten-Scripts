@@ -14,7 +14,7 @@
     `python RSA.py`
 
     The script runs until you enter valid commands- 
-    1) generate_keys <folder path to store keys>
+    1) generate_keys \<folder path to store keys\>
     eg - `generate_keys ./keys`
     2) encrypt <path to public key file> <file to encrypt> <encrypted file name>
     eg - `encrypt ./keys/public_key.pem nature.jpeg enc_script` 
