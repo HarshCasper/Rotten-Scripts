@@ -114,7 +114,7 @@ if __name__ == '__main__':
 
 		# if the user demands to decrypt some encrypted file
 		elif command[0] == 'decrypt':
-			# try:
+			try:
 				# extract the path of the private key file
 				filePath_of_PrivateKey= command[1]
 				# extract the path of the file to be decrypted
