@@ -57,7 +57,6 @@ if __name__ == "__main__":
         description='A command line tool for understanding the PR workflow')
     parser.add_argument('-u', '--reponame', action='store', dest='reponame', default=None,
                         help='<Required> repository name [username/reponame]', required=True)
-
     parser.add_argument('-v', '--verbose', action='store_true',
                         help='Shows data in verbose mode.')
     parser.add_argument('-pr', '--pulls', action='store_true',
