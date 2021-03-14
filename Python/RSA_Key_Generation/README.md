@@ -15,12 +15,16 @@
 
     The script runs until you enter valid commands- 
     1) generate_keys \<folder path to store keys\>
+
     eg - `generate_keys ./keys`
-    2) encrypt <path to public key file> <file to encrypt> <encrypted file name>
+    2) encrypt \<path to public key file\> \<file to encrypt\> \<encrypted file name\>
+
     eg - `encrypt ./keys/public_key.pem nature.jpeg enc_script` 
-    3) decrypt <path to private key file> <file to decrypt> <decrypted file name>
+    3) decrypt \<path to private key file\> \<file to decrypt\> \<decrypted file name\>
+
     eg - `decrypt ./keys/private_key.pem enc_script NATURE.jpeg` 
     4) exit- to exit from the program
+    
     ef - `exit`
     
 In case, if you want to know more, Read complete documentation [here](https://pycryptodome.readthedocs.io/en/latest/src/public_key/rsa.html)
