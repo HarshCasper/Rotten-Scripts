@@ -6,170 +6,183 @@ The main reason behind its success is the presence of vast variety of libraries 
 
 ## Python scripts associated with this project:
 
-S. No | Name of Script | Directory Link |  Author | Tools Used |
---- | --- | --- | --- | --- 
-1 | All Github Repos | [Click Here](/Python/All_GitHub_Repos) | [Namya LG](https://github.com/Namyalg) | Requests, PyGithub
-2 | Amazon Product Price Tracker | [Click Here](/Python/Amazon_Product_Price_Tracker) | [Namya LG](https://github.com/Namyalg) | BeautifulSoup
-3 | ASCIIfy Image | [Click Here](/Python/ASCIIfy_Image) | [Akhil Manoj](https://github.com/AkM-2018) | sys, PIL
-4 | Audio Backup | [Click Here](/Python/Auto_Backup) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | gzip, argparse
-5 | Audio Converter | [Click Here](/Python/Audio_Converter) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | moviepy
-6 | Audio Format Converter | [Click Here](/Python/Audio_Format_Converter) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | pudub, mutagen
-7 | Automate Committing Using Git | [Click Here](/Python/Automate_Commiting_using_Git) | [Seema Saharan](https://github.com/seema1711) | subprocess
-8 | Automate LinkedIN | [Click Here](/Python/Automate_LinkedIN) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | Selenium
-9 | Automate Telegram | [Click Here](/Python/Automate_Telegram) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | Selenium
-10 | AWS Scripts | [Click Here](/Python/AWS_Scripts) | [Sameer Srivastava](https://github.com/sameersrivastava13) | boto3
-11 | Base64 Encoder Decoder | [Click Here](/Python/Base64_Encoder_Decoder) | [Lakshmi Narayan Dwivedi](https://github.com/narayan2111) | base64, argparse
-12 | Battery Full Charged Notifier | [Click Here](/Python/Battery_Full_Charged_Notifier) | [Mohit_Bhat](https://github.com/mbcse) | psutil, time, win10toast 
-13 | Book Downloader | [Click Here](/Python/Book_Downloader) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | requests, os
-14 | Bulk Certificate Generator | [Click Here](/Python/Bulk_Certificate_Generator) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | panads, random
-15 | Caesar Cipher | [Click Here](/Python/Caesar_Cipher) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | -
-16 | Cartoonified_Image | [Click Here](/Python/Cartoonified_Image) | [Sharvari Raut](https://github.com/sharur7) | skimage, numpy, cv2
-17 | Codechef Contests | [Click Here](/Python/Codechef_Contests) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | prettytable, bs4, requests
-18 | Codechef Problem Scrapper | [Click Here](/Python/Codechef_Problem_Scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | selenium, bs4, time
-19 | Countdown Clock and Timer | [Click Here](/Python/Countdown_Clock_and_Timer) | [Anushka-S10](https://github.com/Anushka-S10) | os, time
-20 | Counting Days | [Click Here](/Python/Counting_Days) | [Dylan Corriveau](https://github.com/dcorriveau) | os, datetime
-21 | Create Word Cloud | [Click Here](/Python/Create_Word_Cloud) | [Prahitha](https://github.com/Prahitha) | argparse, wordcloud, numpy
-22 | Cricbuzz scrapper | [Click Here](/Python/CRICBUZZ%20scraper) | [Rutuja Dhanawade](https://github.com/rutujadhanawade) | bs4, urllib.request
-23 | Crypto Currency Converter | [Click Here](/Python/Cryptocurrency_Converter) | [Mohta Rahul Suresh](https://github.com/Rahul555-droid) | requests
-24 | CSV Splitter | [Click Here](/Python/CSV_Splitter) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | os, csv
-25 | Currency Converter | [Click Here](/Python/Currency_Converter) | [Prahitha](https://github.com/Prahitha) | requests, argparse
-26 | Customized Blog Headers | [Click Here](/Python/Customized_blog_headers) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | cv2, PIL, sys, os
-27 | Chrome Dinosaur Game  |   [Click Here](/Python/Chrome_Dino_Script) | [Oshi Gupta](https://github.com/oshi36) | pyautogui , PIL , time
-28 | Desktop Notifier | [Click Here](/Python/Desktop_notifier) | [Anushka-S10](https://github.com/Anushka-S10) | feedparser, notify2, pygame
-29 | Desktop Time Tracker | [Click Here](/Python/Desktop_Time_Tracker) | [Abdallah Ahmed](https://github.com/abdallah1097) | os, subprocess, argparse
-30 | Discord Bot | [Click Here](/Python/Discord_bot) | [KILR](https://github.com/KILR007) | discord, json, datetime 
-31 | Download Instagram Posts | [Click Here](/Python/Download_Instagram_Posts) | [Sanket Chaudhari](https://github.com/sanket143) | re, time, wget, errno
-32 | Download Instagram Videos | [Click Here](/Python/Download_Instagram_Videos) | [Prahitha](https://github.com/Prahitha) | urllib.request, requests, json, re, sys
-33 | Download Mangas | [Click Here](/Python/Download_Mangas) | [Prahitha](https://github.com/Prahitha) | webdriver-manager, selenium, bs4
-34 | DSC Event Scrapper | [Click Here](/Python/DSC_Event_Scrapper) | [Dev Choganwala](https://github.com/DevChoganwala) | os, sys, requests
-35 | Duplicate Images | [Click Here](/Python/Duplicate_Image) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | hashlib, keyboard, sys, os
-36 | Email Scrape From Webpage | [Click Here](/Python/Email_Scrape_From_Webpage) | [Amandeep](https://github.com/amandp13) | collections, requests, re, bs4
-37 | Encrypt Text | [Click Here](/Python/Encrypt_Text) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | hashlib, argparse
-38 | Execution Time | [Click Here](/Python/Execution%20time) | [Shrishti Goyal](https://github.com/eternal-dreamer) | time, datetime
-39 | Extract Image Metadata | [Click Here](/Python/Extract_Image_Metadata) | [Amandeep](https://github.com/amandp13) | os, PIL
-40 | Facebook Auto Post | [Click Here](/Python/Facebook_Auto_Post) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | selenium
-41 | Facts Deskop Notifier | [Click Here](/Python/Facts_Deskop_Notifier) | [Kaustubh](https://github.com/kaustubhgupta) | pyler, praw
-42 | File Organiser | [Click Here](/Python/File_Organiser) | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh) | glob Module
-43 | Find All Links | [Click Here](/Python/Find_All_Links) | [Sanket Chaudhari](https://github.com/sanket143) | BeautifulSoup
-44 | Find Tweets | [Click Here](/Python/Find_Tweet) | [Muskan Khajuria](https://github.com/basketcase03) | Tweepy 
-45 | Flask Directory Initiater | [Click Here](/Python/Flask_Directory_Initiator) | [Dev Choganwala](https://github.com/DevChoganwala) | firelock, distlib
-46 | Frames to Video converter | [Click Here](https://github.com/HarshCasper/Rotten-Scripts/tree/master/Python/Frames_to_Video_converter) | [Akhil Manoj](https://github.com/AkM-2018) | OpenCV
-47 | GeeksForGeeks Article Downloader | [Click Here](/Python/GeeksForGeeks_Article_Downloader) | [Akhil Manoj](https://github.com/AkM-2018) | pillow, fpdf, selenium
-48 | Generate Fake Data | [Click Here](/Python/Generate_Fake_Data) | [Mohit Gupta](https://github.com/mohitacecode) | Faker, numpy
-49 | Get BBC News | [Click Here](/Python/Get_BBC_News) | [Khushal Shah](https://github.com/KhushalPShah) | requests, python-dotenv
-50 | Get Current Weather | [Click Here](/Python/Get_Current_Weather) | [Prahitha](https://github.com/Prahitha) | sys, requests, json, datetime
-51 | Get Lyrics | [Click Here](/Python/Get_Lyrics) | [Prahitha](https://github.com/Prahitha) | argparse, BeautifulSoup
-52 | Github Bomb Issues | [Click Here](/Python/Github_Bomb_Issues) | [Rohan Kumawat](https://github.com/rohankumawat) | PyGithub, getpass
-53 | Git Repo Size Contributers | [Click Here](/Python/Git_Repo_Size_Contributors) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | requests, pandas, tqdm
-54 | Github Traffic | [Click Here](/Python/Github_Traffic) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | githubpy, PickleDB, python-decouple
-55 | Google News Scrapper | [Click Here](/Python/Google-News-Scrapper) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | openpyx, pandas, requests
-56 | Gradient Mapping | [Click Here](/Python/Gradient_Mapping) | [Ankita Priya](https://github.com/AnkitaBIT) | openCV, matplotlib, numpy
-57 | Hacker News Scrapper | [Click Here](/Python/HackerNews_scrapper) | [Aditya Jetely](https://github.com/AdityaJ7)| beautifulsoup4, certifi, soupsieve, urllib3
-58 | Hash The File | [Click Here](/Python/Hash_The_File) | [Sanket Chaudhari](https://github.com/sanket143) | hashlib
-59 | Heat Your System | [Click Here](/Python/Heat_Your_System) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | multiprocessing, argv 
-60 | HTML To Markdown | [Click Here](/Python/HTML_to_Markdown/) | [Tejan Singh](https://github.com/tejan-singh) | html2markdown, sys 
-61 | Human Detector | [Click Here](/Python/Human_Detector) | [Vybhav Chaturvedi](https://github.com/vybhav72954) |OpenCV, Numpy, Imutils
-62 | Image Encoder | [Click Here](/Python/Image_Encoder) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | argparse, base64, json, time
-63 | Image Filters | [Click Here](/Python/Image_filters) | [Namya LG](https://github.com/Namyalg) | numpy, cv2
-64 | Image Flip Meme Templates | [Click Here](/Python/Image_flip_meme_templates) | [Namya LG](https://github.com/Namyalg) | urllib, requests
-65 | IMDb_Recommendation | [Click Here](/Python/IMDb_Recommendation) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | beautifulsoup, lxml
-66 | IMDB Scrapper | [Click Here](/Python/IMDB_scrapper) | [Aditya Jetely](https://github.com/AdityaJ7) | requests, BeautifulSoup, argparse
-67 | Image Sketch | [Click Here](/Python/Image_Sketch) | [Sharvari Raut](https://github.com/sharur7) | cv2, numpy, skimage
-68 | Image Steganography | [Click Here](/Python/Image_Steganography) | [Akhil Manoj](https://github.com/AkM-2018)|sys, os, Image 
-69 | IMBD Top Movies | [Click Here](/Python/IMDB%20TOP%20MOVIES) | [Rutuja Dhanawade](https://github.com/rutujadhanawade)| pandas, BeautifulSoup 
-70 | Image To Sepia | [Click Here](/Python/Image_to_Sepia) | [Shravari Raut](https://github.com/sharur7)| cv2, numpy
-71 | Initialize HTTP Server | [Click Here](/Python/Initialize_HTTP_Server) | [Seema Saharan](https://github.com/seema1711) | http.server, socketserver
-72 | Instagram Followers Following Scraper | [Click Here](/Python/Instagram_Followers_Following_Scraper) | [Aastha](https://github.com/aastha985) | selenium, BeautifulSoup
-73 | Instagram Profile Pic Downloader | [Click Here](/Python/Instagram_Profile_Pic_Downloader) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | selenium
-74 | Internshala Scrapper | [Click Here](/Python/Internshala_Scrapper/) | [twozero88](https://github.com/twozero88)| beautifulsoup4, csv
-75 | Invisible Cloak | [Click Here](/Python/Invisible_Cloak) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | cv2, time, numpy
-76 | JSON To Excel | [Click Here](/Python/JSON_to_Excel) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | json, xlwt, sys
-77 | JSON To Yaml | [Click Here](/Python/JSON_to_YAML) | [Aditya Jetely](https://github.com/AdityaJ7) | json, yaml, argparse
-78 | Keylogger | [Click Here](/Python/Keylogger) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | keyboard, pypiwin32
-79 | Labelling Binarizer Instance | [Click Here](/Python/Labelling_Binarizer_Instance) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | sklearn.preprocessing, numpy,  pickle
-80 | Large File Identifier | [Click Here](/Python/Large_File_Identifier) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | os
-81 | Launch Computer Programs Using Python | [Click Here](/Python/launching_programs_from_python) | [sameer srivastava](https://github.com/sameersrivastava13) | subprocess
-82 | LinkedIN Post Emails Scrapper | [Click Here](/Python/Linkedin_post_emails_scrapper) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | selenium, pandas
-83 | LinkedIN Video Downloader | [Click Here](/Python/Linkedin_Video_Downloader) | [Kaustubh Gupta](https://github.com/kaustubhgupta) |tqdm, requests, html
-84 | Lorem Ipsum Generator | [Click Here](/Python/Lorem_Ipsum_Generator) | [Seema Saharan](https://github.com/seema1711) | lorem_text
-85 | Lyrics Downloader | [Click Here](/Python/Lyrics_Download) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | lyricsgenius 
-86 | Magic Pen | [Click Here](/Python/Magic_Pen) | [Prathyusha Guduru](https://github.com/Prathyusha-Guduru)| cv2, numpy 
-87 | Markovmemes | [Click Here](/Python/markovmemes) | [Hitesh Kumar](https://github.com/HeroicHitesh) | markovmeme
-88 | Mass Email Sender | [Click Here](/Python/Mass_Email_Sender) | [Deepraj](https://github.com/deepraj1729) | argparse, time, MassEmailSender.utils
-89 | Medium Article Downloader | [Click Here](/Python/Medium_article_downloader) | [Namya LG](https://github.com/Namyalg) | requests, BeautifulSoup
-90 | Meet Strangers | [Click Here](/Python/Meet_Strangers) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | os, re, subprocess, colorama 
-91 | Merge Two PDF Files | [Click Here](/Python/Merge_2_PDFs) | [Tejas1510](https://github.com/Tejas1510) | PyPDF2, sys
-92 | Music Genre Classification | [Click Here](/Python/Music_Genre_Classification) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | Keras, TensorFlow, pandas, scikit, scipy
-93 | Net Connection | [Click Here](/Python/Net_Connection) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | socket, time, subprocess
-94 | OCR To Google Question Papers | [Click Here](/Python/OCR_To_Google_Question_Papers) | [Sanket Mhatre](https://github.com/SANKET7738)| pytesseract, nltk.data, re, newspaper, googlesearch 
-95 | Pagespeed API | [Click Here](/Python/Pagespeed_API) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | requests
-96 | PDF Generator | [Click Here](/Python/PDF_Generator) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | os, pdf2image, img2pdf
-97 | PDF Tables Extractor | [Click Here](/Python/PDF_Tables_Extractor) | [Rutuja Dhanawade](https://github.com/rutujadhanawade) | sys, tabula
-98 | Port Scanner | [Click Here](/Python/Port_Scanner) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | socket, Threading, time, queue
-99 | Ports Scan | [Click Here](/Python/Ports_Scan) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | socket, subprocess, datetime
-100 | Python Library Downloader | [Click Here](/Python/Python_Library_Downloader) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | os, platform 
-101 | Python News Reader | [Click Here](/Python/Python_news_reader) | [Anish Kumar](https://github.com/KmrAnish04) | os, time, dotenv
-102 | QR Code Generator | [Click Here](/Python/QR_code_generator) | madirarama | pyqrcode, argparse, csv
-103 | Query Links Script | [Click Here](/Python/Query_Links_Script) | [Shivesh Choudhary](https://github.com/shiveshchoudhary) | googlesearch
-104 | Questions from Project Euler | [Click Here](/Python/Questions_from_Project_Euler) | [Namya LG](https://github.com/Namyalg) | requests, BeautifulSoup, re
-105 | Quora Bookmark Topics Downloader | [Click Here](/Python/Quora_Bookmark_Topics_Downloader) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | selenium, time
-106 | Random Password Generator | [Click Here](/Python/Random_Password_Generator) | [Guilherme Vasconcelos](https://github.com/Guilherme-Vasconcelos) | secrets, string, sys
-107 | Reddit Wallpaper | [Click Here](/Python/Reddit_Wallpaper) | [Prahitha](https://github.com/Prahitha) | urllib.request, json, sys, ctypes, time
-108 | ROT13 | [Click Here](/Python/ROT13) | [tej5169](https://github.com/tej5169) | string, sys
-109 | RSA Key Generation | [Click Here](/Python/RSA_Key_Generation/) | [Tejan Singh](https://github.com/tejan-singh) | Crypto.PublicKey import RSA
-110 | S3 Bucket Creator | [Click Here](/Python/S3_Bucket_Creator) | [sameer srivastava](https://github.com/sameersrivastava13) | boto3, datetime, os 
-111 | S3 Bucket Downloader | [Click Here](/Python/S3_Bucket_Downloader) | [Hitesh Kumar](https://github.com/HeroicHitesh) | os, sys, time
-112 | Scrape Twitter | [Click Here](/Python/Scrape_Twitter) | [Muskan Khajuria](https://github.com/basketcase03) | tweepy, pymongo
-113 | Screen Grabber | [Click Here](/Python/Screen_Grabber) | [Ankita Priya](https://github.com/AnkitaBIT) | pyautogui, time
-114 | Search File | [Click Here](/Python/Search_File) | [Mohit Gupta](https://github.com/mohitacecode) | os
-115 | Send Emails | [Click Here](/Python/Send_Emails) | [Namya LG](https://github.com/Namyalg) | smtplib
-116 | Send Email Using Gmail API | [Click Here](/Python/Send_Email_Using_Gmail_Api) | [Sumit-Sahu](https://github.com/Sumit-Sahu) | pickle, base64, argparse, __future__
-117 | Send SMS using Twilio | [Click Here](/Python/Send_SMS_Using_Twilio_In_Python) | [Sanket Mhatre](https://github.com/SANKET7738) | twilio.rest
-118 | Shutdown Your System | [Click Here](/Python/Shutdown_Your_System) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | os
-119 | Slideshare slides downloader | [Click Here](/Python/Slideshare_slides_downloader) | [Akhil Manoj](https://github.com/AkM-2018) | urllib.request, shutil, selenium, fpdf      
-120 | Social Media Links | [Click Here](/Python/Social_Media_Links) | [Vybhav Chaturvedi](https://github.com/vybhav72954) |requests, html_to_etree, extract_social_media 
-121 | Song Popularity | [Click Here](/Python/Song_Popularity) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | lyricsgenius
-122 | Speech To Text | [Click Here](/Python/Speech_to_Text) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | pyttsx, SpeechRecognition
-123 | Sports Score Updates | [Click Here](/Python/Sports_Score_Updates) | [Prahitha](https://github.com/Prahitha) | sports
-124 | Stock Market Data | [Click Here](/Python/Stock_Market_Data) | [Mohit Gupta](https://github.com/mohitacecode) | yfinance, datetime
-125 | Strong Password Detection | [Click Here](/Python/Strong_Password_Detection) | [Aditya Ashvin](https://github.com/AdityaAshvin) | -
-126 | Story Reader | [Click Here](/Python/Story_Reader) | [Simarpreet Singh](https://github.com/simarpreetsingh-019) | pyttsx3, PyPDF2
-127 | Substitution Cypher | [Click Here](/Python/Substitution_Cypher) | [Mohit Gupta](https://github.com/mohitacecode) | string, sys
-128 | Subtitle Downloader | [Click Here](/Python/Subtitle_Downloader) | [Seema Saharan](https://github.com/seema1711) | urllib,  hashlib, sys
-129 | Tables To CSV | [Click Here](/Python/Table_To_CSV) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | Pandas, numpy, re, cv2
-130 | Tags Scrapper | [Click Here](/Python/Tags_Scraper) | [Tushar Goswami](https://github.com/GoswamiTushar) | BeautifulSoup, requests, os
-131 | Telegram Bot | [Click Here](/Python/Telegram_Bot) | [Namya LG](https://github.com/Namyalg) | bs4, decorator, Flask, notify2, parso, opencv, Pillow
-132 | Test Typing Speed | [Click Here](/Python/Test_Typing_Speed) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | time
-133 | Text Extract | [Click Here](/Python/Text_Extract) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | pytesseract, pathlib
-134 | Text Summarizer | [Click Here](/Python/Text_Summary) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | sumy, spaCy, nltk, neologdn
-135 | Text To Speech | [Click Here](/Python/Text_To_Speech) | [Namya LG](https://github.com/Namyalg) | gtts, os
-136 | Time Conversion | [Click Here](/Python/Time_Conversion) | [Prahitha](https://github.com/Prahitha) | pytz, datetime, argparse
-137 | Times Of India | [Click Here](/Python/Times_Of_India) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | urllib, BeautifulSoup, datetime
-138 | Toonify Image | [Click Here](/Python/ToonifyImage) | [Tejas Sudhir Tapas](https://github.com/Tejas1510) | requests, shutil, decouple
-139 | Torrent To GoogleDrive | [Click Here](/Python/Torrent_To_GoogleDrive) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | time, libtorrent, datetime
-140 | Track Data Usage | [Click Here](/Python/Track_Data_Usage) | [Seema Saharan](https://github.com/seema1711) | threading, time, subprocess
-141 | TSV To CSV | [Click Here](/Python/TSV_to_CSV) | [Siddhant Khare](https://github.com/Siddhant-K-code) | -
-142 | Twitter Bot | [Click Here](/Python/Twitter_Bot) | [Seema Saharan](https://github.com/seema1711) | tweepy, time
-143 | Upload File As Github Gist | [Click Here](/Python/Upload_File_As_Github_Gist) | [Seema Saharan](https://github.com/seema1711) | requests, urllib.parse
-144 | URL Shortner | [Click Here](/Python/URL_Shortner) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | requests, json
-145 | Valid Phone Number Extractor | [Click Here](/Python/Valid_Phone_Number_Extractor) | [Hitesh Kumar](https://github.com/HeroicHitesh) | re, argparse
-146 | Video Steganography | [Click Here](/Python/Video_Steganography) | [Vedansh Vijaywargiya](https://github.com/vvHacker007) | numpy, cv2, math, subprocess
-147 | Video To Frames | [Click Here](/Python/Video_To_Frames) | [Kaustubh](https://github.com/kaustubhgupta) | cv2, sys
-148 | Video to Images(req. FPS/Frate) | [Click Here](/Python/vid_2_img_fps) | [Rutvik J](https://github.com/RutvikJ77) | cv2, sys, args
-149 | Video Watermarker | [Click Here](/Python/Video_Watermarker) | [Kaustubh Gupta](https://github.com/kaustubhgupta) | cv2, tqdm, moviepy.ediotr
-150 | Vigenere Cipher | [Click Here](/Python/Vigenere_Cipher) | [Mohit Gupta](https://github.com/mohitacecode) | -
-151 | Watermark It | [Click Here](/Python/Watermark_it) | [Aditya Jetely](https://github.com/AdityaJ7) | pdfrw, sys, os
-152 | Website Blocker | [Click Here](/Python/Website_Blocker) | [Ankita Priya](https://github.com/AnkitaBIT) | datetime
-153 | Website Cloner | [Click Here](/Python/Website_Cloner) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | logging, cssutils, BeautifulSoup
-154 | Weather Using Open Weather Map | [Click Here](/Python/Weather_using_OpenWeatherMap) | [Namya LG](https://github.com/Namyalg) | requests, json, sys
-155 | WhatsApp Message Automation | [Click Here](/Python/WhatsApp_Message_Automation) | [Namya LG](https://github.com/Namyalg) | selenium, time
-156 | WhatsApp SMS Bomber | [Click Here](/Python/Whatsapp_Sms_Bomber) | [ANSHUMALI SHAW](https://github.com/bagofcodes) | selenium, tkinter, xpath
-157 | Who is Online On WhatsApp | [Click Here](/Python/Who_Is_Online_On_WhatsApp) | [Wable Sanket](https://github.com/Sanketwable) | selenium, time, users
-158 | Word Meaning | [Click Here](/Python/Word_Meaning) | [Mohit Gupta](https://github.com/mohitacecode) | PyDictionary
-159 | Wifi Spped Tester | [Click Here](/Python/Wifi%20Speed%20Tester) | [Vedansh Vijaywargiya](https://github.com/vvHacker007) | win10toast, speedtest
-160 | XML To CSV | [Click Here](/Python/XML_To_CSV) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | glob, pandas
-161 | Youtube Bot | [Click Here](/Python/Youtube_Bot) | [Sri Manikanta Palakollu](https://github.com/srimani-programmer) | time, argparse, selenium
-162 | Youtube Video Download | [Click Here](/Python/Youtube_Video_Download) | [Anushka-S10](https://github.com/Anushka-S10) | pytube
-163 | YouTube Video-Audio Download | [Click Here](/Python/YouTube_Video-Audio_Download) | [Naman Shah](https://github.com/namanshah01) | os, sys, pafy, requests
-164 | Zipper | [Click Here](/Python/Zipper) | [Puneet Pal Singh](https://github.com/Puneet-Pal-Singh) | os, zipfile, datetime
-165 | Zoom Automation | [Click Here](/Python/Zoom_Automation) | [Rutuja Dhanawade](https://github.com/rutujadhanawade) | pyautogui, time
+- [ASCIIfy_Image](/ASCIIfy_Image)
+- [AWS_Scripts](/AWS_Scripts)
+- [All_GitHub_Repos](/All_GitHub_Repos)
+- [Amazon_Product_Price_Tracker](/Amazon_Product_Price_Tracker)
+- [Audio_Converter](/Audio_Converter)
+- [Audio_Format_Converter](/Audio_Format_Converter)
+- [Auto_Backup](/Auto_Backup)
+- [Automate_Commiting_using_Git](/Automate_Commiting_using_Git)
+- [Automate_Image_Caption](/Automate_Image_Caption)
+- [Automate_LinkedIN](/Automate_LinkedIN)
+- [Automate_Telegram](/Automate_Telegram)
+- [Base64_Encoder_Decoder](/Base64_Encoder_Decoder)
+- [Battery_Full_Charged_Notifier](/Battery_Full_Charged_Notifier)
+- [Book_Downloader](/Book_Downloader)
+- [Bulk_Certificate_Generator](/Bulk_Certificate_Generator)
+- [CSV_Splitter](/CSV_Splitter)
+- [Caesar_Cipher](/Caesar_Cipher)
+- [Cartoonified_Image](/Cartoonified_Image)
+- [Chrome_Dino_Script](/Chrome_Dino_Script)
+- [Codechef_Contests](/Codechef_Contests)
+- [Codechef_Problem_Scrapper](/Codechef_Problem_Scrapper)
+- [Countdown_Clock_and_Timer](/Countdown_Clock_and_Timer)
+- [Counting_Days](/Counting_Days)
+- [Create_Word_Cloud](/Create_Word_Cloud)
+- [Cricbuzz_Scraper](/Cricbuzz_Scraper)
+- [Cryptocurrency_Converter](/Cryptocurrency_Converter)
+- [Currency_Converter](/Currency_Converter)
+- [Customized_Blog_Headers](/Customized_Blog_Headers)
+- [DSC_Event_Scrapper](/DSC_Event_Scrapper)
+- [Desktop_Notifier](/Desktop_Notifier)
+- [Desktop_Time_Tracker](/Desktop_Time_Tracker)
+- [Discord_Bot](/Discord_Bot)
+- [Download_Instagram_Posts](/Download_Instagram_Posts)
+- [Download_Instagram_Videos](/Download_Instagram_Videos)
+- [Download_Mangas](/Download_Mangas)
+- [Duplicate_Image](/Duplicate_Image)
+- [Email_Scrape_From_Webpage](/Email_Scrape_From_Webpage)
+- [Encrypt_Text](/Encrypt_Text)
+- [Execution_Time](/Execution_Time)
+- [Extract_Image_Metadata](/Extract_Image_Metadata)
+- [Facebook_Auto_Post](//Facebook_Auto_Post)
+- [Facts_Deskop_Notifier](/Facts_Deskop_Notifier)
+- [File_Organiser](/File_Organiser)
+- [Find_Tweet](/Find_Tweet)
+- [Find_all_Links](/Find_all_Links)
+- [Flask_Directory_Initiator](/Flask_Directory_Initiator)
+- [Frames_to_Video_converter](/Frames_to_Video_converter)
+- [GeeksForGeeks_Article_Downloader](/GeeksForGeeks_Article_Downloader)
+- [Generate_Fake_Data](/Generate_Fake_Data)
+- [Get_BBC_News](/Get_BBC_News)
+- [Get_Current_Weather](/Get_Current_Weather)
+- [Get_Lyrics](/Get_Lyrics)
+- [Git_Repo_Size_Contributors](/Git_Repo_Size_Contributors)
+- [Github_Bomb_Issues](/Github_Bomb_Issues)
+- [Github_Traffic](/Github_Traffic)
+- [Google-News-Scrapper](/Google-News-Scrapper)
+- [Gradient_Mapping](/Gradient_Mapping)
+- [HTML_to_Markdown](/HTML_to_Markdown)
+- [HackerNews_scrapper](/HackerNews_scrapper)
+- [Hash_The_File](/Hash_The_File)
+- [Heat_Your_System](/Heat_Your_System)
+- [Human_Detector](/Human_Detector)
+- [IMDB_Scrapper](/IMDB_Scrapper)
+- [IMDb_Recommendation](/IMDb_Recommendation)
+- [IMDb_Top_Movies](/IMDb_Top_Movies)
+- [Image_Encoder](/Image_Encoder)
+- [Image_Flip_Meme_Templates](/Image_Flip_Meme_Templates)
+- [Image_Sketch](/Image_Sketch)
+- [Image_Steganography](/Image_Steganography)
+- [Image_filters](/Image_filters)
+- [Image_to_Sepia](/Image_to_Sepia)
+- [Initialize_HTTP_Server](/Initialize_HTTP_Server)
+- [Instagram_Followers_Following_Scraper](/Instagram_Followers_Following_Scraper)
+- [Instagram_Profile_Pic_Downloader](/Instagram_Profile_Pic_Downloader)
+- [Internshala_Scrapper](/Internshala_Scrapper)
+- [Invisible_Cloak](/Invisible_Cloak)
+- [JSON_to_Excel](/JSON_to_Excel)
+- [JSON_to_YAML](/JSON_to_YAML)
+- [Keylogger](/Keylogger)
+- [Labelling_Binarizer_Instance](/Labelling_Binarizer_Instance)
+- [Large_File_Identifier](/Large_File_Identifier)
+- [Launching_Programs_from_Python](/Launching_Programs_from_Python)
+- [Linkedin_Post_Emails_Scrapper](/Linkedin_Post_Emails_Scrapper)
+- [Linkedin_Video_Downloader](/Linkedin_Video_Downloader)
+- [Lorem_Ipsum_Generator](/Lorem_Ipsum_Generator)
+- [Lyrics_Download](/Lyrics_Download)
+- [Magic_Pen](/Magic_Pen)
+- [Markov_Memes](/Markov_Memes)
+- [Mass_Email_Sender](/Mass_Email_Sender)
+- [Medium_article_downloader](/Medium_article_downloader)
+- [Meet_Strangers](/Meet_Strangers)
+- [Merge_2_PDFs](/Merge_2_PDFs)
+- [Music_Genre_Classification](/Music_Genre_Classification)
+- [Net_Connection](/Net_Connection)
+- [Network_Scanner](/Network_Scanner)
+- [OCR_to_Google_Question_Papers](/OCR_to_Google_Question_Papers)
+- [PDF_Generator](/Python/PDF_Generator)
+- [PDF_Tables_Extractor](/PDF_Tables_Extractor)
+- [Pagespeed_API](/Pagespeed_API)
+- [Port_Scanner](/Python/Port_Scanner)
+- [Ports_Scan](/Ports_Scan)
+- [Python_Library_Downloader](/Python_Library_Downloader)
+- [Python_NEWS_Reader](/Python_NEWS_Reader)
+- [QR_Code_Generator](/QR_Code_Generator)
+- [Quantum_random](/Quantum_random)
+- [Query_Links_Script](/Query_Links_Script)
+- [Questions_from_Project_Euler](/Questions_from_Project_Euler)
+- [Quora_Bookmark_Topics_Downloader](/Quora_Bookmark_Topics_Downloader)
+- [ROT13_Decryption](/ROT13_Decryption)
+- [RSA_Key_Generation](/RSA_Key_Generation)
+- [Random_Password_Generator](/Random_Password_Generator)
+- [Reddit_Wallpaper](/Reddit_Wallpaper)
+- [S3_Bucket_Creator](/S3_Bucket_Creator)
+- [S3_Bucket_Downloader](/S3_Bucket_Downloader)
+- [Scrap_Restaurants_using_ZomatoAPI](/Scrap_Restaurants_using_ZomatoAPI)
+- [Scrape_Twitter](/Scrape_Twitter)
+- [Screen_Grabber](/Screen_Grabber)
+- [Search_File](/Search_File)
+- [Send_Email_Using_Gmail_Api](/Send_Email_Using_Gmail_Api)
+- [Send_Emails](/Send_Emails)
+- [Send_SMS_Using_Twilio_In_Python](/Send_SMS_Using_Twilio_In_Python)
+- [Shutdown_Your_System](/Shutdown_Your_System)
+- [Slideshare_Slides_Downloader](/Slideshare_Slides_Downloader)
+- [Social_Media_Links](/Social_Media_Links)
+- [Song_Popularity](/Song_Popularity)
+- [Speech_to_Text](/Speech_to_Text)
+- [Sports_Score_Updates](/Sports_Score_Updates)
+- [Stock_Market_Data](/Stock_Market_Data)
+- [Stopmotion](/Stopmotion)
+- [Story_Reader](/Story_Reader)
+- [Strong_Password_Detection](/Strong_Password_Detection)
+- [Subreddit_Image_Scrapper](/Subreddit_Image_Scrapper)
+- [Substitution_Cypher](/Substitution_Cypher)
+- [Subtitle_Downloader](/Subtitle_Downloader)
+- [TSV_to_CSV](/TSV_to_CSV)
+- [Table_to_CSV](/Table_to_CSV)
+- [Tags_Scraper](/Tags_Scraper)
+- [Telegram_Bot](/Telegram_Bot)
+- [Test_Typing_Speed](/Test_Typing_Speed)
+- [Text_Extract](/Text_Extract)
+- [Text_Summary](/Text_Summary)
+- [Text_to_Speech](/Text_to_Speech)
+- [Time_Conversion](/Time_Conversion)
+- [Times_Of_India](/Times_Of_India)
+- [Toonify_Image](/Toonify_Image)
+- [Torrent_to_GoogleDrive](/Torrent_to_GoogleDrive)
+- [Track_Data_Usage](/Track_Data_Usage)
+- [Twitter_Bot](/Twitter_Bot)
+- [Twitter_Scrapper](/Twitter_Scrapper)
+- [URL_Shortner](/URL_Shortner)
+- [Upload_Files_as_Github_Gist](/Upload_Files_as_Github_Gist)
+- [Valid_Phone_Number_Extractor](/Valid_Phone_Number_Extractor)
+- [Video_Steganography](/Video_Steganography)
+- [Video_Watermarker](/Video_Watermarker)
+- [Video_to_Frames](/Video_to_Frames)
+- [Video_to_Image(FPS)](/Video_to_Image(FPS))
+- [Vigenere_Cipher](/Vigenere_Cipher)
+- [Watermark_It](/Watermark_It)
+- [Weather_using_OpenWeatherMap](/Weather_using_OpenWeatherMap)
+- [Website_Blocker](/Website_Blocker)
+- [Website_Cloner](/Website_Cloner)
+- [WhatsApp_COVID-19_Bot](/WhatsApp_COVID-19_Bot)
+- [WhatsApp_Message_Automation](/WhatsApp_Message_Automation)
+- [Whatsapp_SMS_Bomber](/Whatsapp_SMS_Bomber)
+- [Who's_Online_WhatsApp](/Who's_Online_WhatsApp)
+- [Wifi_Speed_Tester](/Wifi_Speed_Tester)
+- [Word_Meaning](/Word_Meaning)
+- [XML_To_CSV](/XML_To_CSV)
+- [YouTube_Video-Audio_Download](/YouTube_Video-Audio_Download)
+- [Youtube_Bot](/Youtube_Bot)
+- [Youtube_Video_Download](/Youtube_Video_Download)
+- [Zipper](/Zipper)
+- [Zoom_Automation](/Zipper)
+
+
+
+
+
+
+
