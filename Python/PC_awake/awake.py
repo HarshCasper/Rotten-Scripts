@@ -14,11 +14,11 @@ else:
 
 # Loop to keep pc awake 
 while(True):
-    x=0
+    count=0
     # Check for number of minutes to move after
-    while(x<numMin):
+    while(count<numMin):
         time.sleep(60)
-        x+=1
+        count+=1
     # Move Mouse
     for i in range(0,200):
         pyautogui.moveTo(0,i*4)
