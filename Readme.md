@@ -18,6 +18,7 @@ JavaScript was created in 10 days only and when released, it used to cover a ver
 1. [Amazon_Review_Scrapper](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Amazon_Review_Scrapper)
      
       Author: [Saket Mhatre](https://github.com/SANKET7738)
+      
 2. [Automate_Tinder](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Automate_Tinder)
     
      Author: [Harsh Barshan Mishra](https://github.com/HarshCasper)  
