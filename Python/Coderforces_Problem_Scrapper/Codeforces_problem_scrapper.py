@@ -11,6 +11,7 @@ stored inside this div tag and saving it in a image.png file.
 Then saving the image.png as pdf file by using fdf library.
 """
 
+
 def getproblem():
     Pblm_id = input("Enter the Problem ID: ")
     difficulty = input("Enter the difficulty level: ")
@@ -23,7 +24,8 @@ def getproblem():
     options.headless = True
     driver = webdriver.Chrome(r"chromedriver_win32\chromedriver.exe", options=options)
     driver.get(url)
-    required_height = driver.execute_script('return document.body.parentNode.scrollHeight')
+    required_height = driver.execute_script(
+                        'return document.body.parentNode.scrollHeight')
     driver.set_window_size(1366, required_height)
 
     driver.find_element_by_class_name('ttypography').screenshot(path)
