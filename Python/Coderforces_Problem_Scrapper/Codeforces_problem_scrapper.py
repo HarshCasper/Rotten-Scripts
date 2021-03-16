@@ -3,6 +3,13 @@ from selenium import webdriver  # Automated webdriver
 from PIL import Image
 from fpdf import FPDF  # For converting images to pdf
 
+"""
+getproblem() : It takes input from the user of codeforces problemID and difficulty
+level and then by using selenium and chrome webdriver, capturing screenshot of the
+Codeforces problem using ttypography tag because all the problems of codeforces are
+stored inside this div tag and saving it in a image.png file.
+Then saving the image.png as pdf file by using fdf library.
+"""
 
 def getproblem():
     Pblm_id = input("Enter the Problem ID: ")
@@ -14,7 +21,7 @@ def getproblem():
     options = webdriver.ChromeOptions()
 
     options.headless = True
-    driver = webdriver.Chrome("F:/chromedriver.exe", options=options)
+    driver = webdriver.Chrome(r"chromedriver_win32\chromedriver.exe", options=options)
     driver.get(url)
     required_height = driver.execute_script('return document.body.parentNode.scrollHeight')
     driver.set_window_size(1366, required_height)
@@ -31,5 +38,6 @@ def getproblem():
     print(f'\nGreat Success!!! Check your directory for {filename} file!')
 
 
-getproblem()
-os.remove('image.png')
+if __name__ == "__main__":
+    getproblem()
+    os.remove('image.png')

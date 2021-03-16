@@ -15,12 +15,12 @@ This python script will let you download Problem Statements from Codeforces and 
 ## Running the script:
 
 ```sh
-  $ python Codeforces_problem_scrapper.py
+  $ python Codeforces_problem_downloader.py
 ```
 
 ## Terminal Screenshot:
 
-![Imgur](https://i.imgur.com/Qr0AwMG.png)
+![Image](https://i.imgur.com/Qr0AwMG.png)
 
 The program will ask you to enter:
 1.  Valid Problem ID.
@@ -28,9 +28,8 @@ The program will ask you to enter:
 3. filename(without '.pdf'). The pdf will be created in the same folder.
 
 ## PDF Output:
-![Imgur](https://i.imgur.com/GpSxCRZ.png)
-![Imgur](https://i.imgur.com/c5mCNWM.png)
+![Image](https://i.imgur.com/GpSxCRZ.png)
+![Image](https://i.imgur.com/c5mCNWM.png)
 
 ## Author
 [Akhil Bhalerao](https://github.com/iamakkkhil)
-
