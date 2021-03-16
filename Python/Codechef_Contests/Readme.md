@@ -1,9 +1,9 @@
-# Codechef Contests
+# Code chef Contests
 
-A simple Python Scrips to scrap upcoming **Codechef** **Contests**.
+A simple Python Scrips to scrap upcoming **Code chef** **Contests**.
 
 
 
-![Codechef sample image](https://i.imgur.com/eOjuPfp.png)
+![Code chef sample image](https://i.imgur.com/eOjuPfp.png)
 
-**Codechef contests** [URL](https://www.codechef.com/contests)
+**Code chef contests** [URL](https://www.codechef.com/contests)
