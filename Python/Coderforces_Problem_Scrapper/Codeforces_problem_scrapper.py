@@ -3,16 +3,15 @@ from selenium import webdriver  # Automated webdriver
 from PIL import Image
 from fpdf import FPDF  # For converting images to pdf
 
-"""
-getproblem() : It takes input from the user of codeforces problemID and difficulty
-level and then by using selenium and chrome webdriver, capturing screenshot of the
-Codeforces problem using ttypography tag because all the problems of codeforces are
-stored inside this div tag and saving it in a image.png file.
-Then saving the image.png as pdf file by using fdf library.
-"""
-
 
 def getproblem():
+    """
+    getproblem() : It takes input from the user of codeforces problemID and difficulty
+    level and then by using selenium and chrome webdriver, capturing screenshot of the
+    Codeforces problem using ttypography tag because all the problems of codeforces are
+    stored inside this div tag and saving it in a image.png file.
+    Then saving the image.png as pdf file by using fdf library.
+    """
     Pblm_id = input("Enter the Problem ID: ")
     difficulty = input("Enter the difficulty level: ")
     filename = input('Enter the file name to store Question: ') + '.pdf'
@@ -25,7 +24,7 @@ def getproblem():
     driver = webdriver.Chrome(r"chromedriver_win32\chromedriver.exe", options=options)
     driver.get(url)
     required_height = driver.execute_script(
-                        'return document.body.parentNode.scrollHeight')
+        'return document.body.parentNode.scrollHeight')
     driver.set_window_size(1366, required_height)
 
     driver.find_element_by_class_name('ttypography').screenshot(path)
