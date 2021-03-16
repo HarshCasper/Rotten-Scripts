@@ -10,10 +10,10 @@
 
 ### Requirements
 
-1. snscript library: (Supported for Python 3.8 and above only) It's development version is installed as
+1. snscrape library:
 
 ```
-pip install git+https://github.com/JustAnotherArchivist/snscrape.git
+pip install snscrape
 ```
 
 2. csv module:
@@ -23,15 +23,12 @@ It comes built in with python
 
 The inputs user has to give: 
 
-![Imgur](https://i.imgur.com/9aK1bhi.png)
+![image](https://i.imgur.com/9aK1bhi.png)
 
-.csv file generated accordingly:
+```.csv``` file generated accordingly:
 
-![Imgur](https://i.imgur.com/YdGt9z4.png)
+![image](https://i.imgur.com/Oxh5xmi.png)
 
 ## Author
 
-[Rohini Rao!](https://github.com/RohiniRG)
-
-
-
+[Rohini Rao](https://github.com/RohiniRG)
