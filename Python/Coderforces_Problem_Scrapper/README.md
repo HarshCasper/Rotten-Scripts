@@ -15,7 +15,7 @@ This python script will let you download Problem Statements from Codeforces and 
 ## Running the script:
 
 ```sh
-  $ python Codeforces_problem_downloader.py
+  $ python Codeforces_problem_scrapper.py
 ```
 
 ## Terminal Screenshot:
