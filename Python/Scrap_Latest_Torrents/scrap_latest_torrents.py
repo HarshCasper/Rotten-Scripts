@@ -8,6 +8,7 @@ import os
 import sys
 import rarbgapi
 
+
 def main():
     """
     Principal function
@@ -50,6 +51,7 @@ def main():
 
     print("Exit")
 
+
 def open_file(filename):
     """
     Function that opens the torrent file according to the operating system
@@ -59,6 +61,7 @@ def open_file(filename):
     else:
         opener = "open" if sys.platform == "darwin" else "xdg-open"
         subprocess.call([opener, filename])
+
 
 if __name__ == "__main__":
     main()

@@ -18,3 +18,7 @@ This script downloads the torrents in our Torrent client from the website https:
 3.  The number of Torrents found will be displayed, you must confirm the download
 
 ![How to use the script](https://i.ibb.co/PD3sPLf/Scrap-Latest-Torrents.png)
+
+## Author(s)
+
+**_ Made By [Diego Caraballo](https://github.com/DiegoCaraballo) _**
