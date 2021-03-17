@@ -12,8 +12,8 @@
 
 1. snscrape library:
 
-```
-pip install snscrape
+```console
+computer@computer:~$ pip install snscrape
 ```
 
 2. csv module:
