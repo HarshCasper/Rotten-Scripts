@@ -37,7 +37,7 @@ Face-Recognition is a technology which detects the face of a person and predicts
 
 Now you can see the faces with name on the screen.
 
-![Face-Recognition](https://drive.google.com/file/d/1ZN9YKSWQHtww3yx-q2koWiYQqFQvACWa/view?usp=sharing)
+![Face-Recognition](https://drive.google.com/file/d/1e_0tPrmniqQUfDWbqvBf03HyBFO_y3Ux/view?usp=sharing)
 
 ## Author
 
