@@ -22,4 +22,4 @@ python script.py
 ```
 ## Author
  
-[Adithya Kurien Peter]("https://github.com/aaadddiii")
+[Adithya Kurien Peter](https://github.com/aaadddiii)
