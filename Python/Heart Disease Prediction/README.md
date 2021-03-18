@@ -20,6 +20,4 @@ pip install -r requirements.txt
 ```bash
 python script.py
 ```
-## Author
- 
-[Daniel Bourke](https://github.com/mrdbourke)
+Source repo of the model(https://github.com/mrdbourke/zero-to-mastery-ml/blob/master/section-3-structured-data-projects/end-to-end-heart-disease-classification.ipynb)
