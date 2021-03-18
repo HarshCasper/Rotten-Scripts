@@ -18,11 +18,8 @@ def main():
     # Label to search
     label = input("Enter a label: ")
 
-    print("Searching torrents... please wait")
-
-    # API RARGB
-    client = rarbgapi.RarbgAPI()
-    torrents = client.search(search_string=label, limit=100)
+    # Search Torrents
+    torrents = search_torrents(label)
 
     # If no torrents were found
     if len(torrents) == 0:
@@ -61,6 +58,19 @@ def open_file(filename):
     else:
         opener = "open" if sys.platform == "darwin" else "xdg-open"
         subprocess.call([opener, filename])
+
+
+def search_torrents(label):
+    """
+    Function that searches for torrents from the RARBG API
+    """
+
+    print("Searching torrents... please wait")
+
+    client = rarbgapi.RarbgAPI()
+    torrents = client.search(search_string=label, limit=100)
+
+    return torrents
 
 
 if __name__ == "__main__":
