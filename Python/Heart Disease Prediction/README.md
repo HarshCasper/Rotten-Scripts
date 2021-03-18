@@ -2,7 +2,7 @@
 This python script uses a machine learning model to predict whether a person has heart disease or not.The Model is trained with [ucl heart disease dataset](https://archive.ics.uci.edu/ml/datasets/heart+disease)
 
 # How to run program
-**1.**  Fork [this](https://github.com/HarshCasper/Rotten-Scriptss) repository.
+**1.**  Fork [this](https://github.com/HarshCasper/Rotten-Scripts) repository.
 
 **2.**  Clone your forked copy of the project.
 ```
