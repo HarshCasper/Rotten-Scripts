@@ -17,7 +17,7 @@ Calculating distance between two locations is a basic requirement if you are wor
       
 ## Screenshot
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/fz13QZU" data-context="false" ><a href="//imgur.com/a/fz13QZU">Screenshot</a></blockquote>
+![Screenshot](https://i.imgur.com/r7ImdqE.jpg)
 
 ## Author
 [Aayush Garg](https://github.com/Aayush-hub)
