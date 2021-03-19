@@ -1,11 +1,11 @@
 
-What Is Bitcoin Mining?
+# What Is Bitcoin Mining?
 Bitcoin mining is performed by high-powered computers that solve complex computational math problems; these problems are so complex that they cannot be solved by hand and are complicated enough to tax even incredibly powerful computers.
 
 
 
 
-Terminology :
+# Terminology :
 
 1. Transaction : An transaction is a transfer of Bitcoin value and are collected in Blocks 
 
@@ -20,7 +20,7 @@ Terminology :
 
 
 
-Theory :
+# Theory :
 
 Btc will be rewarded if Nonce gives us string with prefix of Zeroes the difficult number of times. sounds confusing?
 
@@ -35,8 +35,15 @@ So, Let's take example :
 
 
 
-Draw Backs:
+# Draw Backs:
 The script has no drawbacks but due to increase in miners , the difficultl level increases and hence we'd require best hardware as fastest wins. 
+
+# Refrences 
+https://www.investopedia.com/terms/b/bitcoin.asp
+
+https://www.youtube.com/watch?v=wTC31ZI6QM4
+
+https://www.youtube.com/watch?v=ZhnJ1bkIWWk&t=143s
 
  
 
