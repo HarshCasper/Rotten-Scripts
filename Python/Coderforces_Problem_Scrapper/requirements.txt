@@ -1,0 +1,9 @@
+beautifulsoup4==4.9.3
+certifi==2020.12.5
+chardet==4.0.0
+fpdf==1.7.2
+idna==2.10
+Pillow==8.1.2
+requests==2.25.1
+selenium==3.141.0
+urllib3==1.26.3
