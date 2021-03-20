@@ -3,10 +3,12 @@ import requests
 
 
 def get_player_name():
-    """ Takes Football player's name input from the user and
-    returns a string suitable to concatenate in the wikipedia URL. """
+    """
+    Takes Football player's name input from the user and
+    returns a string suitable to concatenate in the wikipedia URL.
+    """
 
-    player = input('Enter the name of the Football player: ').split(' ')
+    player = input('\nEnter the name of the Football player: ').split(' ')
     player_name = ''
     for i in player:
         name = i.capitalize()
@@ -17,8 +19,10 @@ def get_player_name():
 
 
 def get_club_info(headers):
-    """ Stores only the information regarding the club career of
-    a player among all the titles in the contents box. """
+    """
+    Stores only the information regarding the club career of
+    a player among all the titles in the contents box.
+    """
 
     # For storing the club data
     club_data = []
@@ -44,22 +48,26 @@ def get_club_info(headers):
 
 
 def display_info(club_data):
-    """ To display the club career information of player collected. """
+    """
+    To display the club career information of player collected.
+    """
 
     for item in club_data:
-        if item[:4].isdigit():
+        if ':' in item:
             print(f'    {item}')
         else:
-            print()
-            print(f'CLUB NAME: {item}')
+            print(f'\nCLUB NAME: {item}')
 
 
 def main():
-    print()
-    print('WELCOME!!!HERE YOU CAN GET THE CLUB CAREER INFORMATION'
+    """
+    Starts the execution of the script and with Requests module, establishes
+    connection through the Wikipedia URL, to scrape information.
+    """
+
+    print('\nWELCOME!!!HERE YOU CAN GET THE CLUB CAREER INFORMATION'
           ' REGARDING YOUR FAVOURITE FOOTBALL PLAYER FROM WIKIPEDIA!')
     while True:
-        print()
         name = get_player_name()
 
         # Concatenating the Football players name to the wikipedia URL
@@ -81,16 +89,16 @@ def main():
                 # For presenting the collected information
                 display_info(club_info)
 
-            print()
-            key = input('Press "y" to continue or any other key to quit: ').lower()
+            key = input('\nPress "y" to continue or any other key to quit: ')\
+                .lower()
             if key != 'y':
                 break
 
         else:
             print('URL NOT FOUND!!')
 
-            print()
-            key = input('Press "y" to continue or any other key to quit: ').lower()
+            key = input('\nPress "y" to continue or any other key to quit: ')\
+                .lower()
             if key != 'y':
                 break
 

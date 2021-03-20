@@ -1,6 +1,6 @@
 # Wikipedia scraper to get a Football player's club career information  
 
-- Using BeautifulSoup, a python library useful for web scraping, this script helps to scrape Wikipedia to obtain a Football player's club career data
+- Using BeautifulSoup, a python library useful for web scraping, this script helps to scrape Wikipedia to obtain a Football player's club career data.
 
 - In this script, we take the input of the name of any popular Football player from the user and generate the club career details associated with them.
 
@@ -8,15 +8,10 @@
 
 ### Requirements
 
-1. BeautifulSoup library:
+The requirements of the script can be installed by running the following command which will install dependencies including BeautifulSoup and Requests, essential for the code. 
 
 ```console
-computer@computer:~$ pip install bs4
-```
-
-2. requests module:
-```console
-computer@computer:~$ pip install requests
+computer@computer:~$ pip3 install -r requirements.txt
 ```
 
 ## Working
