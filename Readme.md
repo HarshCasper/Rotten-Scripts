@@ -15,7 +15,7 @@ JavaScript was created in 10 days only and when released, it used to cover a ver
 
 # 📌 List of Javascript Scripts: 
 
-1. [Amazon_Review_Scrapper](https://github.com/HarshCasper/Rotten-Scripts/tree/master/JavaScript/Amazon_Review_Scrapper)
+1. [Amazon_Review_Scrapper](Rotten-Scripts/JavaScript/Amazon_Review_Scrapper)
      
       Author: [Saket Mhatre](https://github.com/SANKET7738)
       
