@@ -9,6 +9,8 @@ The user can select an entry from that menu to download the corresponding video 
 
 ## Setup and Usage Instructions
 
+- Make sure you have got curl, perl, perl-HTML-parser, youtube-dl and coreutils (includes grep and sed) installed on your machine.
+
 - For running the script as a local user, just navigate to the directory where khanacademy-dl.sh resides, and execute the following command:
 
   > bash khanacademy-dl.sh
