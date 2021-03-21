@@ -17,7 +17,7 @@ It scraps the following data on All Connections
 - Chrome
 - Install Selenium
 - Install bs4 (```pip3 install bs4```)
-- Edit Replace usernmae and password in credentials.json with your gmail and password
+- Replace usernmae and password in credentials.json with your gmail and password
 
 ## How to Run
 
