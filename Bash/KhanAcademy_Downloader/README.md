@@ -10,6 +10,18 @@ The user can select an entry from that menu to download the corresponding video 
 ## Setup and Usage Instructions
 
 - Make sure you have got curl, perl, perl-HTML-parser, youtube-dl and coreutils (includes grep and sed) installed on your machine.
+  - For Debian/Ubuntu:
+    > sudo apt install perl-HTML-parser youtube-dl coreutils
+  
+  - For RHEL/Fedora:
+    > sudo dnf install perl coreutils
+    > pip3 install youtube-dl
+    > wget http://rpmfind.net/linux/RPM/mageia/cauldron/aarch64/media/core/release/perl-HTML-Parser-3.760.0-1.mga9.aarch64.html
+    > sudo dnf install http://rpmfind.net/linux/mageia/distrib/cauldron/aarch64/media/core/release/perl-HTML-Parser-3.760.0-1.mga9.aarch64.rpm
+    > sudo dnf install perl-HTML-Parser
+    
+  - For Arch Linux:
+    > sudo pacman -S perl-HTML-parser youtube-dl coreutils
 
 - For running the script as a local user, just navigate to the directory where khanacademy-dl.sh resides, and execute the following command:
 
