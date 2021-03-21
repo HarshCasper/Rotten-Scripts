@@ -1,4 +1,4 @@
-from helper import DeleteMinRetweet
+from helper import DeleteRetweet, DeleteFavorite
 import argparse
 import sys
 
@@ -12,13 +12,15 @@ def create_parser():
     parser.add_argument("--path",
                         metavar="P",
                         type=str,
+                        required=True,
                         help="Path to the 'credentials.json' file")
     
     ## Add arguments for minimum and maximum threshold values
     parser.add_argument("--min",
                         metavar="N",
                         type=int,
-                        default=-1,
+                        default=0,
+                        required=False,
                         help="Minimum threshold of the parameter, to be followed while deleting the tweets (default 100)"
                         ) 
 
@@ -26,13 +28,22 @@ def create_parser():
                         metavar="N",
                         type=int,
                         default=sys.maxsize,
+                        required=False,
                         help="Maximum threshold of the parameter, to be followed while deleting the tweets (default 150)"
+                        )
+    
+    parser.add_argument('--param',
+                        metavar="M",
+                        type=str,
+                        required=True,
+                        help="Parameter to be used for filtering the tweets (retweet, likes)."
                         )
 
     return parser
 
 
 def main():
+    """Driver method to instantiate the classes and call the relevant methods"""
     parser = create_parser()
 
     args = parser.parse_args()
@@ -41,11 +52,20 @@ def main():
     path = args.path
 
     # Retrieve the minimum and maximum threshold values
-
     min_threshold = args.min
     max_threshold = args.max
 
-    ob = DeleteMinRetweet(path, min_threshold, max_threshold)
+    # Retrieve the parameter to be used
+    param = args.param
+
+
+    # Instantiate relevant classes
+    ob = None
+    if param == 'retweet':    
+        ob = DeleteRetweet(path, min_threshold, max_threshold)
+    elif param == 'likes':
+        ob = DeleteFavorite(path, min_threshold, max_threshold)
+
     tweets = ob.filter()
     ob.delete_all(tweets=tweets)
 

@@ -106,7 +106,7 @@ class DeleteBot:
             print("Status: No tweets to delete!!")
             sys.exit(0)
         
-        confirmation = input("\n{} tweets will be deleted. Press (y/n) to confirm: ").lower()
+        confirmation = input("\n{} tweets will be deleted. Press (y/n) to confirm: ".format(count)).lower()
         if confirmation == 'n':
             sys.exit(0)
         elif confirmation == 'y':
@@ -116,10 +116,13 @@ class DeleteBot:
 
         print("Status: {} tweets deleted successfully!".format(count))
 
-class DeleteMinRetweet(DeleteBot):
+class DeleteRetweet(DeleteBot):
+    """
+        Sub-Class of DeleteBot class, uses the no of Retweets as a threshold to filter tweets
+    """
 
 
-    def __init__(self, filename=None, min_retweet=-1, max_retweet=sys.maxsize):
+    def __init__(self, filename=None, min_retweet=0, max_retweet=sys.maxsize):
         """
             Class to delete the tweets based on the minimum and maximum number of retweets\n
             Keyword Arguments: \n
@@ -182,10 +185,12 @@ class DeleteMinRetweet(DeleteBot):
             sys.exit(0)
 
 
-class DeleteMinFavorite(DeleteBot):
+class DeleteFavorite(DeleteBot):
+    """
+        Sub-Class of DeleteBot class, uses the no of likes as a threshold to filter tweets
+    """
 
-
-    def __init__(self, filename=None, min_favorite=-1, max_favorite=sys.maxsize):
+    def __init__(self, filename=None, min_favorite=0, max_favorite=sys.maxsize):
         """
             Class to delete the tweets based on the minimum and maximum number of likes\n
             Keyword Arguments: \n
