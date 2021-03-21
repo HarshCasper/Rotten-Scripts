@@ -1,9 +1,13 @@
 from os.path import isfile
 from json import load
 import tweepy
-from sys import maxsize
+import sys
 
 class DeleteBot:
+    """
+        Base class which contains methods common to all sub-classes such as connecting to the
+        twitter api, fetching tweets and deleting tweets.
+    """
     def __init__(self, filename=None):
         """
             Initialize a new DeleteBot Object\n
@@ -25,8 +29,7 @@ class DeleteBot:
 
         except Exception as e:
             print(str(e))
-            exit(0)
-
+            sys.exit(0)
 
     def connect(self):
         """
@@ -37,8 +40,6 @@ class DeleteBot:
             ## access_token
             ## access_token_secret
         """
-
-
         credentials = None
         try:
             # Read the credentials.json file into a python dictionary
@@ -51,7 +52,7 @@ class DeleteBot:
             
         except Exception as e:
             print(str(e))
-            exit(0)
+            sys.exit(0)
         
         print("Status: Connection Established Successfully!")
 
@@ -73,12 +74,12 @@ class DeleteBot:
             # Return all the tweets of the user
             if user_id is None:
                 return self.api.user_timeline(count=count)
-            else:
-                return self.api.user_timeline(id=user_id, count=count)
+
+            return self.api.user_timeline(id=user_id, count=count)
         
         except Exception as e:
             print(str(e))
-            exit(0)
+            sys.exit(0)
 
     def delete_tweet(self, id=None):
         """
@@ -92,29 +93,33 @@ class DeleteBot:
 
         except Exception as e:
             print(str(e))
-            exit(0)
+            sys.exit(0)
     
-    def delete_all(self, tweets={}):
+    def delete_all(self, tweets=None):
         """
             Deletes all the tweets passed in the argument 'tweets'
         """
+        if tweets is None:
+            raise Exception("Error: Invalid 'tweets' object passed")
         count = len(tweets)
         if count == 0:
             print("Status: No tweets to delete!!")
-            exit(0)
+            sys.exit(0)
         
         confirmation = input("\n{} tweets will be deleted. Press (y/n) to confirm: ").lower()
         if confirmation == 'n':
-            exit(0)
+            sys.exit(0)
         elif confirmation == 'y':
             for id in tweets.keys():
                 self.delete_tweet(id)
                 print("Status: Tweet with ID: {} deleted!".format(id))
 
-        print("Status: {} tweets deleted successfully!".format(id))
+        print("Status: {} tweets deleted successfully!".format(count))
 
 class DeleteMinRetweet(DeleteBot):
-    def __init__(self, filename=None, min_retweet=-1, max_retweet=maxsize):
+
+
+    def __init__(self, filename=None, min_retweet=-1, max_retweet=sys.maxsize):
         """
             Class to delete the tweets based on the minimum and maximum number of retweets\n
             Keyword Arguments: \n
@@ -136,13 +141,13 @@ class DeleteMinRetweet(DeleteBot):
                 raise Exception("Error: Value of 'max_retweet' argument must be greater than 0")
         except Exception as e:
             print(str(e))
-            exit(0)
+            sys.exit(0)
 
         self.min_retweet = min_retweet
         self.max_retweet = max_retweet
         print("Status: Parameters set successfully")
         print("Min Retweet Count: {}".format(min_retweet if min_retweet > 0 else "-"))
-        print("Max Retweet Count: {}".format(max_retweet if max_retweet < maxsize else "-"))
+        print("Max Retweet Count: {}".format(max_retweet if max_retweet < sys.maxsize else "-"))
 
     def filter(self, user_id=None, count=20, tweet_timeline=None):
         """
@@ -174,11 +179,13 @@ class DeleteMinRetweet(DeleteBot):
 
         except Exception as e:
             print(str(e))
-            exit(0)
+            sys.exit(0)
 
 
 class DeleteMinFavorite(DeleteBot):
-    def __init__(self, filename=None, min_favorite=-1, max_favorite=maxsize):
+
+
+    def __init__(self, filename=None, min_favorite=-1, max_favorite=sys.maxsize):
         """
             Class to delete the tweets based on the minimum and maximum number of likes\n
             Keyword Arguments: \n
@@ -200,13 +207,13 @@ class DeleteMinFavorite(DeleteBot):
                 raise Exception("Error: Value of 'max_favorite' argument must be greater than 0")
         except Exception as e:
             print(str(e))
-            exit(0)
+            sys.exit(0)
 
         self.min_favorite = min_favorite
         self.max_favorite = max_favorite
         print("Status: Parameters set successfully")
         print("Min Likes Count: {}".format(min_favorite if min_favorite >= 0 else "-"))
-        print("Max Likes Count: {}".format(max_favorite if max_favorite < maxsize else "-"))
+        print("Max Likes Count: {}".format(max_favorite if max_favorite < sys.maxsize else "-"))
 
     def filter(self, user_id=None, count=20, tweet_timeline=None):
         """
@@ -230,7 +237,9 @@ class DeleteMinFavorite(DeleteBot):
             for tweets in timeline:
                 tweet = tweets._json
 
-                if tweet["favorite_count"] > self.min_favorite and tweet["favorite_count"] < self.max_favorite:
+                if tweet["favorite_count"] > self.min_favorite and \
+                    tweet["favorite_count"] < self.max_favorite:
+                    
                     temp_tweet = {"text": tweet["text"], "favorite_count": tweet["favorite_count"]}
                     filtered_tweets[tweet["id"]] = temp_tweet
 
@@ -239,4 +248,4 @@ class DeleteMinFavorite(DeleteBot):
 
         except Exception as e:
             print(str(e))
-            exit(0)
+            sys.exit(0)

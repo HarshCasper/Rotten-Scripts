@@ -1,4 +1,4 @@
-from helper import DeleteMinRetweet, DeleteMinFavorite
+from helper import DeleteMinRetweet
 
 
 def main():
