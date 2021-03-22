@@ -13,84 +13,44 @@
 
 JavaScript was created in 10 days only and when released, it used to cover a very small portion of a proper programming language.
 
-# 📌 List of Javascript Scripts: 
+# 📌 Javascript scripts associated with the project: 
 
-1. [Amazon_Review_Scrapper](Amazon_Review_Scrapper)
-     
-      Author: [Saket Mhatre](https://github.com/SANKET7738)
-      
-2. [Automate_Tinder](Automate_Tinder)
+- [Amazon_Review_Scrapper](Amazon_Review_Scrapper)
     
-     Author: [Harsh Barshan Mishra](https://github.com/HarshCasper) 
-     
-3. [Base64_Encoder_Decoder](Base64_Encoder_Decoder)
+- [Automate_Tinder](Automate_Tinder)
+    
+- [Base64_Encoder_Decoder](Base64_Encoder_Decoder)
+  
+- [Blog Image Finder](Blog_Image_Finder)
 
-     Author: [Piyush Gupta](https://github.com/gupta-piyush19)
+- [Brute Force Admin](Brute_Force_Admin)
      
-4. [Blog Image Finder](Blog_Image_Finder)
+- [Bulk LinkedIn Requests](Bulk_LinkedIn_Requests)
 
-     Author: [Piyush Gupta](https://github.com/gupta-piyush19)
+- [Citation_Text_Converter](Citation_Text_Converter)
+
+- [Cryptoprice](Cryptoprice)
+     
+- [Download_All_Repos](Download_All_Repos)
+
+- [Edit_Webpage](Edit_Webpage)
+
+- [Extract_Comments](Extract_Comments)
+
+- [Follow Instagram](Follow_Instagram)
+
+- [Github Graph Populator](GitHub_Graph_Populator)
+
+- [Html to markdown](Html_to_Markdown)
+
+- [Instagram Like](Instagram_Like)
       
-5. [Brute Force Admin](Brute_Force_Admin)
-
-     Author: [Mohit Bhat](https://github.com/mbcse)
-     
-6. [Bulk LinkedIn Requests](Bulk_LinkedIn_Requests)
-
-     Author: [Saket Mhatre](https://github.com/SANKET7738)
-     
-7. [Citation_Text_Converter](Citation_Text_Converter)
-
-      Author: [Soham Shah](https://github.com/sohamsshah)
-     
-8. [Cryptoprice](Cryptoprice)
-
-      Author: [Mohit Bhat](https://github.com/mbcse)
-     
-9. [Download_All_Repos](Download_All_Repos)
-
-      Author: [Mohit Bhat](https://github.com/mbcse)
-     
-10. [Edit_Webpage](Edit_Webpage)
-
-      Author: [Harsh Barshan Mishra](https://github.com/HarshCasper) 
-     
-11. [Extract_Comments](Extract_Comments)
-
-      Author: [Mohit Bhat](https://github.com/mbcse)
+- [ROT13](ROT13_Decryption)
       
-12. [Follow Instagram](Follow_Instagram)
-
-      Author: [Harsh Barshan Mishra](https://github.com/HarshCasper) 
+- [RSA Key Pair Generator](RSA_Key_Pair_Generator)
+    
+- [Send emails](Send_Emails)     
       
-13. [Github Graph Populator](GitHub_Graph_Populator)
-
-      Author: [Hitesh Kumar](https://github.com/HeroicHitesh)
-      
-14. [Html to markdown](Html_to_Markdown)
-
-      Author: [Kaustubh Gupta](https://github.com/kaustubhgupta)
+- [Who don't follow you](Who_Don't_Follow_You)
      
-15. [Instagram Like](Instagram_Like)
-
-      Author: [Harsh Barshan Mishra](https://github.com/HarshCasper)
-      
-16. [ROT13](ROT13_Decryption)
-
-      Author: [tej5169](https://github.com/tej5169)
-      
-17. [RSA Key Pair Generator](RSA_Key_Pair_Generator)
-
-      Author: [Mohit Bhat](https://github.com/mbcse)
-     
-18. [Send emails](Send_Emails)
-
-      Author: [Namya LG](https://github.com/Namyalg)
-      
-19. [Who don't follow you](Who_Don't_Follow_You)
-
-      Author: [Harsh Barshan Mishra](https://github.com/HarshCasper)
-      
-20. [Github_Unfollowers](Github_Unfollowers)
-
-      Author: [Vismita Prabhu](https://github.com/vismitap)
+- [Github_Unfollowers](Github_Unfollowers)
