@@ -9,16 +9,20 @@ pip install -r requirements.txt
 
 After satisfying all the requirements for the project, Open the terminal in the project folder and run
 ```
-python awake.py
+python awake.py <Number of seconds (Optional)>
+Example - python awake.py 2
 ```
 or
 ```
-python3 awake.py
+python3 awake.py <Number of seconds (Optional)>
+Example - python3 awake.py 2
 ```
 depending upon the python version. Make sure that you are running the command from the same virtual environment in which the required modules are installed.
 
 ## Output
-The PC will stay awake 
+[![screenrecording.gif](https://s4.gifyu.com/images/screenrecording.gif)](https://gifyu.com/image/figm)
+
+The mouse pointer automatically movies in the left side of the screen and keeps the screen awake
 
 ## Author
 [Ayush Jain](https://github.com/Ayushjain2205)
