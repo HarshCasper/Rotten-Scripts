@@ -190,8 +190,7 @@ def finalconnectiondata(connectiondata):
         
         time.sleep(2)
 
-        linken_connection=
-        {"Name": connection["name"], "Linkedin_URL": connection["profileurl"], "Latest_JOB_Position": l_jobtitile, "Skills": skill_set}
+        linken_connection={"Name": connection["name"], "Linkedin_URL": connection["profileurl"], "Latest_JOB_Position": l_jobtitile, "Skills": skill_set}
         final_connectiondata.append(linken_connection)
 
     return final_connectiondata    
