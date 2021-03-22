@@ -3,11 +3,11 @@
 Script scraps the data of Linkedin Connections(first) of a User on Linkedin
 
 It scraps the following data on All Connections
+
 - Name
 - Linkedin_URL
 - Latest_JOB_Position
 - Skills
-
 
 ## Requirements
 
@@ -21,8 +21,7 @@ It scraps the following data on All Connections
 
 ## How to Run
 
-``` python3 main.py```
-
+```python3 main.py```
 
 ## Author
 Sukriti Sood
