@@ -8,7 +8,7 @@ numMin = None
 
 # Check if command line argument given, if not then use default 
 if ((len(sys.argv)<2) or sys.argv[1].isalpha() or int(sys.argv[1])<1):
-    numMin = 3
+    numMin = 1
 else:
     numMin = int(sys.argv[1])
 
@@ -27,3 +27,4 @@ while(True):
     for i in range(0,3):
         pyautogui.press("shift")
     print("Movement made at {}".format(datetime.now().time()))
+    
