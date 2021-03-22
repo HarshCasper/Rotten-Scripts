@@ -24,5 +24,5 @@ It scraps the following data on All Connections
 ```python3 main.py```
 
 ## Author
-Sukriti Sood
 
+Sukriti Sood
