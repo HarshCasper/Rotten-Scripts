@@ -15,7 +15,8 @@ paginationurl="https://www.linkedin.com/search/results/people/?network=%5B%22F%2
 
 # Function to read username and password from file
 def read_creds(filename):
-   """This function reads username and password from creddentials.json
+    
+    """This function reads username and password from creddentials.json
 
     Arguments:
     filename: name of the file which stores the credentials
@@ -189,7 +190,8 @@ def finalconnectiondata(connectiondata):
         
         time.sleep(2)
 
-        linken_connection={"Name":connection["name"],"Linkedin_URL":connection["profileurl"],"Latest_JOB_Position":l_jobtitile,"Skills":skill_set}
+        linken_connection=
+        {"Name": connection["name"], "Linkedin_URL": connection["profileurl"], "Latest_JOB_Position": l_jobtitile, "Skills": skill_set}
         final_connectiondata.append(linken_connection)
 
     return final_connectiondata    
