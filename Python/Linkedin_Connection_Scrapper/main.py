@@ -15,7 +15,7 @@ paginationurl="https://www.linkedin.com/search/results/people/?network=%5B%22F%2
 
 # Function to read username and password from file
 def read_creds(filename):
-    
+
     """This function reads username and password from creddentials.json
 
     Arguments:
@@ -31,7 +31,7 @@ def read_creds(filename):
 
 # function to find skills
 def find_skills(url):
-   """This function find the skills from the linkedin profile of the connection
+    """This function find the skills from the linkedin profile of the connection
 
     Arguments:
     url: url of the profile
@@ -77,7 +77,7 @@ def find_skills(url):
 
 # Function to login
 def login_and_npage():
-   """This function login to the linkedin page return the number of pages of connection
+    """This function login to the linkedin page return the number of pages of connection
 
 
     :return: number of pages
@@ -129,7 +129,7 @@ def login_and_npage():
 
 # function to find connection data containing name and profileurl only
 def connectiondatahelper(numberofpages):
-   """This function returns the data of connections containg name and profile url
+    """This function returns the data of connections containg name and profile url
 
     Arguments:
     numberofpages:number of pages of connections
@@ -160,7 +160,7 @@ def connectiondatahelper(numberofpages):
 
 # '''function for finding required data of connection'''
 def finalconnectiondata(connectiondata):
-   """This function returns the  list containing the data of all connections
+    """This function returns the  list containing the data of all connections
 
     Arguments:
     connectiondata: list containing the name and profileurl of the connections
@@ -198,7 +198,7 @@ def finalconnectiondata(connectiondata):
 
 
 def main():
-   """function of execution"""    
+    """function of execution"""    
     browser.maximize_window()
     numberofpages=login_and_npage()
     smalldata_of_connections=connectiondatahelper(numberofpages)
