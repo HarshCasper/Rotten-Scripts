@@ -1,0 +1,17 @@
+{
+  "name": "crickfy",
+  "version": "1.0.0",
+  "description": "desktop notifications for live cricket scores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "node-notifier": "^9.0.1",
+    "path": "^0.12.7"
+  }
+}
