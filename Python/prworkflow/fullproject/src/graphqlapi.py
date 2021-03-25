@@ -7,7 +7,6 @@ class Queries:
         self.tag = tag
         self.state = state
         self.countr = countr
-        print(type(self.countr))
     def pulls(self):
       if self.tag != None :
         query = """
