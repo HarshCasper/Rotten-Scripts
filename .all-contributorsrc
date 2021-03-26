@@ -494,6 +494,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "rahulraikwar00",
+      "name": "Rahul raikwar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54519734?v=4",
+      "profile": "http://rahulraikwar.me",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
