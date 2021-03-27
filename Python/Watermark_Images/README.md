@@ -5,9 +5,9 @@ Simple python scripts that can be used to add watermark to an image using either
 
 ## Requirements to run the notebook:
 
->1. OpenCV
->2. Numpy
->3. Python Imaging Library(PIL)
+* OpenCV
+* Numpy
+* Python Imaging Library(PIL)
 
 ## Examples:
 
