@@ -27,3 +27,4 @@ draw.text((x, y), text,font=font, fill ="white")
 img.save('watermark.png')
 print("\nWatermark image saved.\n")
 
+
