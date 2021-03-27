@@ -2,14 +2,14 @@ import cv2
 import numpy as np
 
 #importing the main image
-pImg = '/content/food.png' #path to main image
+pImg = input("Enter image path: ")
 image = cv2.imread(pImg)
 oH,oW = image.shape[:2]
 image = np.dstack([image, np.ones((oH,oW), dtype="uint8") * 255])
 
 
 #importing the logo image
-pLogo = '/content/tastelogo.png' #path to logo
+pLogo = input("Enter logo image path: ")
 lgo_img = cv2.imread(pLogo, cv2.IMREAD_UNCHANGED)
 
 
@@ -35,5 +35,6 @@ final = image.copy()
 final = cv2.addWeighted(ovr,1,final,1,0)
 
 
-# ShoWing the result
+# Save the result
 cv2.imwrite('watermark.png', final)
+print("\nWatermark image saved.\n")
