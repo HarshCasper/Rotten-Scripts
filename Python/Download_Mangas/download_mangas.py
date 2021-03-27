@@ -7,10 +7,14 @@ from selenium.webdriver.support.ui import Select
 from webdriver_manager.chrome import ChromeDriverManager
 
 my_parser = argparse.ArgumentParser()
-my_parser.add_argument('--name', action='store', type=str, required=True, help="Enter the name of the manga")
-my_parser.add_argument('--start', action='store', type=int, required=False, help="Enter the starting chapter for your download")
-my_parser.add_argument('--end', action='store', type=int, required=False, help="Enter the ending chapter for your download")
-my_parser.add_argument('--chapter', action='store', type=int, required=False, help="Enter a specific chapter number to download")
+my_parser.add_argument('--name', action='store', type=str,
+                       required=True, help="Enter the name of the manga")
+my_parser.add_argument('--start', action='store', type=int, required=False,
+                       help="Enter the starting chapter for your download")
+my_parser.add_argument('--end', action='store', type=int, required=False,
+                       help="Enter the ending chapter for your download")
+my_parser.add_argument('--chapter', action='store', type=int,
+                       required=False, help="Enter a specific chapter number to download")
 
 args = my_parser.parse_args()
 name = args.name
@@ -19,6 +23,8 @@ ending_chapter = args.end
 one_chapter = args.chapter
 
 # main function to download each chapter
+
+
 def chapterDownload(one_chapter, name):
     name = name.lower()
     name = name.replace(' ', '-')
@@ -27,7 +33,7 @@ def chapterDownload(one_chapter, name):
     driver = webdriver.Chrome(ChromeDriverManager().install())
     URL = "http://www.mangareader.net/" + name + "/" + str(one_chapter)
     driver.get(URL)
-    
+
     # the element pageMenu is a drop-down which has options for each page
     page = driver.find_element_by_name("pageMenu")
     number_of_pages = [x for x in page.find_elements_by_tag_name("option")]
@@ -39,7 +45,8 @@ def chapterDownload(one_chapter, name):
     images = []
     for i in range(first_page, last_page+1):
         # since we now have the number of pages, we can use beautiful soup to get the images
-        url = "http://www.mangareader.net/" + name + "/" + str(one_chapter) + "/" + str(i)
+        url = "http://www.mangareader.net/" + name + \
+            "/" + str(one_chapter) + "/" + str(i)
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
         image = soup.find('img')
@@ -52,10 +59,11 @@ def chapterDownload(one_chapter, name):
     for i in range(1, len(images)):
         img = Image.open(images[i]).convert('RGB')
         image_list.append(img)
-    
+
     # conversion of a list of images to pdf
-    filename = name + "-chapter-" +str(one_chapter) + '.pdf'
+    filename = name + "-chapter-" + str(one_chapter) + '.pdf'
     main_image.save(filename, save_all=True, append_images=image_list)
+
 
 # to download a single chapter
 if(one_chapter is not None):

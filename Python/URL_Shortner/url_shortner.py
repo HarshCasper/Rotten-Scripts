@@ -5,14 +5,18 @@ import requests
 from urllib.parse import urlencode
 import sys
 
+
 def make_tiny(url):
-    request_url = ('http://tinyurl.com/api-create.php?' + urlencode({'url': url}))
+    request_url = ('http://tinyurl.com/api-create.php?' +
+                   urlencode({'url': url}))
     result = requests.get(request_url)
     return result.text
+
 
 def main():
     for tinyurl in map(make_tiny, sys.argv[1:]):
         print(tinyurl)
+
 
 if __name__ == '__main__':
     main()

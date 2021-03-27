@@ -3,6 +3,7 @@ import boto3
 import sys
 from botocore.exceptions import ClientError
 
+
 class secretManagerClass:
     def __init__(self, secretName: str, regionName: str) -> None:
         self.secretName = secretName
@@ -14,7 +15,8 @@ class secretManagerClass:
             service_name="secretsmanager", region_name=self.regionName
         )
         try:
-            getSecretValueResponse = client.get_secret_value(SecretId=self.secretName)
+            getSecretValueResponse = client.get_secret_value(
+                SecretId=self.secretName)
 
         except ClientError as err:
             if err.response["Error"]["Code"] == "ResourceNotFoundException":
@@ -31,5 +33,3 @@ class secretManagerClass:
                 return json.loads(getSecretValueResponse["SecretString"])
             else:
                 raise ValueError("SecretString not found in reponse")
-
-

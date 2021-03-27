@@ -7,6 +7,7 @@ from email.mime.text import MIMEText
 from googleapiclient.discovery import build
 from googleapiclient import errors
 
+
 def create_message(sender, to, subject, message_text):
     """Create a message for an email.
 
@@ -46,6 +47,7 @@ def send_message(service, user_id, message):
     except errors.HttpError as error:
         print('An error occurred: %s' % error)
 
+
 def main():
     """Shows basic usage of the Gmail API.
     """
@@ -54,10 +56,9 @@ def main():
     parser.add_argument('subject', help='The subject of the email message.')
     parser.add_argument('message_text', help='The text of the email message')
     args = parser.parse_args()
-    reciver=args.to
-    email_subject=args.subject
-    email_content=args.message_text
-
+    reciver = args.to
+    email_subject = args.subject
+    email_content = args.message_text
 
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
@@ -71,7 +72,6 @@ def main():
     if not creds or not creds.valid:
         print("Please run auth.py first to authorizer")
         exit(1)
-
 
     service = build('gmail', 'v1', credentials=creds)
 

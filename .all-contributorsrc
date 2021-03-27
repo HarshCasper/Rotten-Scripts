@@ -484,6 +484,25 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "DiegoCaraballo",
+      "name": "Diego Caraballo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21015263?v=4",
+      "profile": "http://www.pythondiario.com",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "iamakkkhil",
+      "name": "Akhil Bhalerao",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55273506?v=4",
+      "profile": "https://www.linkedin.com/in/akhil-bhalerao-63b47a193/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,

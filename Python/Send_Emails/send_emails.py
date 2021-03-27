@@ -2,10 +2,10 @@
 
 import smtplib
 
-#The smtp module (Simple Mail Transfer Protocol) enables sending emails in python
-#The sender's email must be configured to less secure apps.
-#This configuration can be made on visiting account information.
-#Under the category security, less secure apps must turned on
+# The smtp module (Simple Mail Transfer Protocol) enables sending emails in python
+# The sender's email must be configured to less secure apps.
+# This configuration can be made on visiting account information.
+# Under the category security, less secure apps must turned on
 
 #"Sender's Email-ID"
 sender_email = input("Enter the sender's Email-ID : ")
@@ -24,12 +24,12 @@ body_of_the_email = input("Enter the content of the email : ")
 
 content = "Subject: {}\n\n{}".format(subject, body_of_the_email)
 
-#Specifications of the Email
+# Specifications of the Email
 
-server = smtplib.SMTP("smtp.gmail.com" , 587)
+server = smtplib.SMTP("smtp.gmail.com", 587)
 
-#Here the Gmail service is used, a different Email service can also be used
-#The port 587, across which the email is sent
+# Here the Gmail service is used, a different Email service can also be used
+# The port 587, across which the email is sent
 
 server.starttls()
 server.login(sender_email, password)
@@ -41,4 +41,4 @@ print("Login success")
 server.sendmail(sender_email, receiver, content)
 print("Email sent to the receiver")
 
-#Email is sent, prints success on sending the email
+# Email is sent, prints success on sending the email

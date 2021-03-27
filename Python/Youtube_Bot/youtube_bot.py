@@ -11,15 +11,17 @@ browser = webdriver.Chrome("PATH_OF_YOUR_CHROME_DRIVER")
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("-l", "--videoLink", required=True, help="Youtube Video link")
-parser.add_argument('-vc', "--viewsCount", required=True, help="number of views want to increase")
+parser.add_argument("-l", "--videoLink", required=True,
+                    help="Youtube Video link")
+parser.add_argument('-vc', "--viewsCount", required=True,
+                    help="number of views want to increase")
 args = vars(parser.parse_args())
 
 viewsCount = int(args['viewsCount'])
 
 while viewsCount != 0:
-     browser.get(args['videoLink'])
-     time.sleep(refresh_time)
-     count -= 1
-      
+    browser.get(args['videoLink'])
+    time.sleep(refresh_time)
+    count -= 1
+
 browser.close()
