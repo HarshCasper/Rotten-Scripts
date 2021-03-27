@@ -1,42 +1,50 @@
 """ TEMPERATURE CONVERSION """
 
-'''to convert from one scale to another'''
 def convert(f_scale, temp, to_scale):
+    """
+    to convert from one scale to another
+    Arguments:
+    :f_scale: scale from which the temperature is to be comverted
+    :temp : temperature to be converted
+    :to_scale: scale to which the temperature is to be converted
+
+    :return : string of converted temperature with scale 
+    """
     converted = temp
     degree = ""
 
-    # from celsius 
+    # from celsius
     if(f_scale == 1):
         degree = "°C"
-        #to Fahrenheit
+        # to Fahrenheit
         if(to_scale == 2):
             converted = 9.0/5.0 * temp + 32
             degree = "°F"
-        #to Kelvin
+        # to Kelvin
         if(to_scale == 3):
             converted += 273.15
             degree = "K"
 
-    #from Fahrenheit
+    # from Fahrenheit
     elif f_scale == 2:
         degree = "°F"
         if(to_scale != 2):
-            #to celsius
+            # to celsius
             converted = (temp-32)*5.0/9.0
             degree = "°C"
-            #to kelvin
+            # to kelvin
             if(to_scale == 3):
                 converted += 273.15
                 degree = "K"
 
-    #from Kelvin
+    # from Kelvin
     else:
         degree = "K"
         if(to_scale != 3):
-            #to Celsius
+            # to Celsius
             converted -= 273.15
             degree = "°C"
-            #to Fahrenheit
+            # to Fahrenheit
             if(to_scale == 2):
                 converted = 9.0/5.0 * converted + 32
                 degree = "°F"
@@ -51,8 +59,9 @@ def main():
     print("Convert to:")
     print("Choose a scale:\n1.Celsius\n2.Fahrenheit\n3.Kelvin")
     to_scale = int(input())
-    res=convert(from_scale, temperature, to_scale)
+    res = convert(from_scale, temperature, to_scale)
     print(res)
+
 
 if __name__ == '__main__':
     main()
