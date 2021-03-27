@@ -50,8 +50,15 @@ def convert(f_scale, temp, to_scale):
                 degree = "°F"
     return str(converted)+degree
 
-'''driver code'''
 def main():
+    """
+    driver code
+    to accept user inputs:
+    : Scales of conversion
+    : temperature to be converted
+
+    Output: Prints the converted temperature
+    """
     print("Convert from:")
     print("Choose a scale:\n1.Celsius\n2.Fahrenheit\n3.Kelvin")
     from_scale = int(input())
@@ -61,7 +68,6 @@ def main():
     to_scale = int(input())
     res = convert(from_scale, temperature, to_scale)
     print(res)
-
 
 if __name__ == '__main__':
     main()

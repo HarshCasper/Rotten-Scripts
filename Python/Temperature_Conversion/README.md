@@ -6,10 +6,7 @@ A python script to convert temperature from and to Celsius, Kelvin or Fahrenheit
 ## Setup Instructions
 
 1. Run the python script 
-
 2. Enter the choices and temperature to be converted
-
-
 
 ## Output
 
