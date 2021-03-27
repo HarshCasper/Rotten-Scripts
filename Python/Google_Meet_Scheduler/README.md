@@ -55,6 +55,7 @@ The script [here](script.py) allows you to schedule a [google meeting](https://m
 <p align="center"><img src="images/1.PNG"></p>
 
 - The script also sets the event in your google calender.
+
 | <img src="images/11.jpg"> | <img src="images/12.jpg"> |
 |--|--|
 
