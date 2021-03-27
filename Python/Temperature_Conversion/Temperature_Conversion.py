@@ -1,6 +1,6 @@
 """ TEMPERATURE CONVERSION """
 
-#to convert from one scale to another
+'''to convert from one scale to another'''
 def convert(f_scale, temp, to_scale):
     converted = temp
     degree = ""
@@ -42,7 +42,7 @@ def convert(f_scale, temp, to_scale):
                 degree = "°F"
     return str(converted)+degree
 
-#driver code
+'''driver code'''
 def main():
     print("Convert from:")
     print("Choose a scale:\n1.Celsius\n2.Fahrenheit\n3.Kelvin")
