@@ -38,3 +38,5 @@ final = cv2.addWeighted(ovr,1,final,1,0)
 # Save the result
 cv2.imwrite('watermark.png', final)
 print("\nWatermark image saved.\n")
+
+
