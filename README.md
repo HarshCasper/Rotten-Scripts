@@ -6,7 +6,7 @@
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-49-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-50-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -131,6 +131,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/oshi36"><img src="https://avatars.githubusercontent.com/u/47573417?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Oshi Gupta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=oshi36" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=oshi36" title="Documentation">📖</a></td>
     <td align="center"><a href="https://vispprofile.netlify.app/"><img src="https://avatars.githubusercontent.com/u/47056243?v=4?s=100" width="100px;" alt=""/><br /><sub><b>vismitap</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=vismitap" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=vismitap" title="Documentation">📖</a></td>
     <td align="center"><a href="http://www.pythondiario.com"><img src="https://avatars.githubusercontent.com/u/21015263?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Diego Caraballo</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=DiegoCaraballo" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=DiegoCaraballo" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/akhil-bhalerao-63b47a193/"><img src="https://avatars.githubusercontent.com/u/55273506?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Akhil Bhalerao</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=iamakkkhil" title="Documentation">📖</a></td>
   </tr>
 </table>
 
