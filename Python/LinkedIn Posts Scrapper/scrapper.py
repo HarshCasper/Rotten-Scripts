@@ -52,6 +52,7 @@ def login(email, password):
 
 
 def get_to_endpoint(driver):
+    """Loads /detail/recent-activity/shares/ endpoint"""
     time.sleep(5) # wait for the whole page to load
     profile_link = driver.find_elements_by_tag_name('a')  # Scrap endpoint link
     for i in profile_link:
