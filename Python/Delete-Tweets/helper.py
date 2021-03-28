@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta
 from os.path import isfile
 from json import load
 import tweepy
@@ -184,7 +185,6 @@ class DeleteRetweet(DeleteBot):
             print(str(e))
             sys.exit(0)
 
-
 class DeleteFavorite(DeleteBot):
     """
         Sub-Class of DeleteBot class, uses the no of likes as a threshold to filter tweets
@@ -247,6 +247,98 @@ class DeleteFavorite(DeleteBot):
                     
                     temp_tweet = {"text": tweet["text"], "favorite_count": tweet["favorite_count"]}
                     filtered_tweets[tweet["id"]] = temp_tweet
+
+            print("Status: Filtered {} tweets with the given criteria".format(len(filtered_tweets)))
+            return filtered_tweets
+
+        except Exception as e:
+            print(str(e))
+            sys.exit(0)
+
+class DeleteOld(DeleteBot):
+    """
+        Sub-Class of DeleteBot class, uses the no of days or hours as a threshold to filter tweets
+    """
+
+    def __init__(self, filename=None, days=1, hours=1):
+        """
+            Class to delete the tweets based on the time of tweet relative to current time\n
+            Keyword Arguments: \n
+            days: No of days to consider while filtering tweets (Default 1)
+            hours: No of hours to consider while filtering tweets (Default 1)
+        """
+        super().__init__(filename=filename)
+        try:
+            if not isinstance(days, int):
+                raise Exception("Error: Invalid value passed to argument 'days'")
+            
+            if days < 0:
+                raise Exception("Error: Value of 'days' argument must be >= 0")
+
+            if not isinstance(hours, int):
+                raise Exception("Error: Invalid value passed to argument 'hours'")
+            
+            if hours < 0:
+                raise Exception("Error: Value of 'hours' argument must be >= 0")
+        except Exception as e:
+            print(str(e))
+            sys.exit(0)
+
+        self.days = days
+        self.hours = hours
+        print("Status: Parameters set successfully")
+        print("Days: {}".format(days))
+        print("Hours: {}".format(hours))
+
+    def within_time(self, time1):
+        """Checks whether the 'time1' argument falls within 'hours' hours and 'days' days from the current time in the past"""
+                
+        ## Time format in twitter api
+        time_of_tweet = datetime.strptime(time1, "%a %b %d %H:%M:%S %z %Y")
+        tz_info = time_of_tweet.tzinfo
+        
+        current_time = datetime.now(tz_info)
+
+        # Create an object which represents the difference of time in terms of days and hours
+        time_diff = timedelta(hours=self.hours, days=self.days)
+
+        #Subtract the timedelta object from the current time
+        required_time = current_time - time_diff
+
+        return time_of_tweet >= required_time
+
+    def filter_old_tweets(self, timeline):
+        """Returns a filtered_tweets object which satisfy the time limit as set in the object"""
+        
+        filtered_tweets = {}
+        for tweets in timeline:
+            tweet = tweets._json
+            created_at = tweet["created_at"]
+            if self.within_time(created_at):
+                temp_tweet = {"text": tweet["text"], "created_at": tweet["created_at"]}
+                filtered_tweets[tweet["id"]] = temp_tweet
+
+        return filtered_tweets 
+
+    def filter(self, user_id=None, count=20, tweet_timeline=None):
+        """
+            Filters the tweets based on minimum and maximum no of likes.\n
+            Keyword arguments:\n
+            user id -- User for which the tweets are to be filtered\n
+            count -- Specifies the number of tweets to be considered. 20 by default.
+            tweet_timeline -- If not provided, the super() class method to fetch tweets will be called.
+        """
+        try:
+            timeline = None
+            if tweet_timeline is not None:
+                timeline = tweet_timeline
+            else:
+                timeline = self.get_tweets(user_id=user_id, count=count)
+
+            if timeline is None:
+                raise Exception("Error: Could not fetch the tweets")
+
+            filtered_tweets = self.filter_old_tweets(timeline)
 
             print("Status: Filtered {} tweets with the given criteria".format(len(filtered_tweets)))
             return filtered_tweets
