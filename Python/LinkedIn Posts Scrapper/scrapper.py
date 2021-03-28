@@ -95,7 +95,7 @@ def post_scrap(driver, count):
         while len(reaction) != 2:
             reactions[num].append("None")
 
-    return driver, headings, reactions
+    return driver, headings[:count], reactions[:count]
 
 
 def to_csv(headings, reactions):
