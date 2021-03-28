@@ -3,7 +3,7 @@ import pandas as pd
 import argparse
 
 
-
+# This function is for the arguement
 def get_argument():
     ap = argparse.ArgumentParser()
     ap.add_argument(
@@ -14,14 +14,14 @@ def get_argument():
     args = vars(ap.parse_args())
     return args
 
-
+# this function takes the image path provided in arguement and return the image
 def get_img():
     args=get_argument()
     img_path=args['image']
     img=cv2.imread(img_path)
     return img
 
-
+# the following code returns csv file where we can compare the the color and get the color at specific point.
 def read_color():
     index = ["color", "color_name", "hex", "R", "G", "B"]
     csv = pd.read_csv(
@@ -58,7 +58,7 @@ def click_event(event, x,y,flags,param):
         green = int(img[y,x,1])
         red = int(img[y,x,2])
         
-
+# These is the main function where the final color is given as output
 def main():
     global clicked
     img=get_img()
