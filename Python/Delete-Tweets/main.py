@@ -101,7 +101,6 @@ def main():
 
     # Retrieve the verbose argument
     verbose = args.verbose
-    print(verbose)
 
     # Instantiate relevant classes
     ob = None
@@ -116,9 +115,6 @@ def main():
 
     tweets = ob.filter(count=count)
     
-    # print(tweet)
-        
-    return
     ob.delete_all(tweets=tweets, verbose=verbose)
 
 
