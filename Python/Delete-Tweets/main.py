@@ -66,6 +66,12 @@ def create_parser():
                         help="Maximum threshold of the parameter, to be followed while deleting the tweets (default 0)"
                         )
 
+    parser.add_argument("--verbose",
+                        action="store_true",
+                        required=False,
+                        help="Verbose, prints the tweets before deleting them"
+                        )
+
 
     return parser
 
@@ -82,6 +88,9 @@ def main():
     # Retrieve the 'count' argument
     count = args.count
 
+    # Retrieve the method of filtering to be used
+    param = args.param
+
     # Retrieve the minimum and maximum threshold values
     min_threshold = args.min
     max_threshold = args.max
@@ -90,9 +99,9 @@ def main():
     days = args.days
     hours = args.hours
 
-    # Retrieve the parameter to be used
-    param = args.param
-
+    # Retrieve the verbose argument
+    verbose = args.verbose
+    print(verbose)
 
     # Instantiate relevant classes
     ob = None
@@ -107,10 +116,10 @@ def main():
 
     tweets = ob.filter(count=count)
     
-    print(tweets)
+    # print(tweet)
         
     return
-    ob.delete_all(tweets=tweets)
+    ob.delete_all(tweets=tweets, verbose=verbose)
 
 
 if __name__ == '__main__':

@@ -96,9 +96,10 @@ class DeleteBot:
             print(str(e))
             sys.exit(0)
     
-    def delete_all(self, tweets=None):
+    def delete_all(self, tweets=None, verbose=verbose):
         """
-            Deletes all the tweets passed in the argument 'tweets'
+            Deletes all the tweets passed in the argument 'tweets'.
+            If 'verbose' is set to true, it will print the tweets
         """
         if tweets is None:
             raise Exception("Error: Invalid 'tweets' object passed")
