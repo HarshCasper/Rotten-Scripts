@@ -5,13 +5,13 @@ Before running the script make sure you have OpenCV installed in system.
 
 To run the script :
 Write "python Color_pick.py -i imgpath" on the comand line.
- https://drive.google.com/drive/u/1/folders/1sG3ZkZt5ys_TSYDW-VIN1OH_1WxA4Li4
+ https://imgur.com/W1dhN0x
 
 image will be shown as soon as you run these command
 
-https://drive.google.com/drive/u/1/folders/1sG3ZkZt5ys_TSYDW-VIN1OH_1WxA4Li4
+https://imgur.com/orZ4YZf
 
 Output on clicking a point on image :
-https://drive.google.com/drive/u/1/folders/1sG3ZkZt5ys_TSYDW-VIN1OH_1WxA4Li4
+https://imgur.com/VA4Y83O
 
 To exit we need to click q
