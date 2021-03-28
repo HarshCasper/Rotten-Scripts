@@ -28,11 +28,10 @@ def get_club_info(headers):
     club_data = []
 
     try:
-        start = None
-        for i in range(len(headers)):
-            each = headers[i].getText()
+        for start, info in enumerate(headers):
+            each = info.getText()
             if each == "Club career":
-                start = i + 1
+                start += 1
                 break
 
         while headers[start].getText() != 'International career':
@@ -105,4 +104,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+    
+    
