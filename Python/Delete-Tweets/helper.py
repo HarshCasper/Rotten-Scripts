@@ -5,16 +5,18 @@ from json import load
 import tweepy
 
 class DeleteBot:
+
     """
-        Base class which contains methods common to all sub-classes such as connecting to the
-        twitter api, fetching tweets and deleting tweets.
+        Base class which contains methods common to all sub-classes such as connecting
+        to the twitter api, fetching tweets and deleting tweets.
     """
 
     def __init__(self, filename=None):
         """
             Initialize a new DeleteBot Object\n
             KEYWORD ARGUMENTS:\n
-            filename -- Name of the file which has stored the credentials in the json format
+            filename -- Name of the file which has stored the credentials
+            in the json format
         """
         try:
             # Validation
@@ -36,12 +38,13 @@ class DeleteBot:
 
     def connect(self):
         """
-        Function to connect to the Twitter API using OAuth based on the credentials given in the 'credentials.json' file.
+        Function to connect to the Twitter API using OAuth based on the credentials
+        given in the 'credentials.json' file.
             # Credentials.json should contain the following keys:
-            ## consumer_key
-            ## consumer_key_secret
-            ## access_token
-            ## access_token_secret
+            # -consumer_key
+            # -consumer_key_secret
+            # -access_token
+            # -access_token_secret
         """
         credentials = None
         try:
@@ -65,9 +68,10 @@ class DeleteBot:
         """
             Returns the tweets of a specific user authenticated in the 'api' object
             \n Keyword Arguments:\n
-            user id -- Defines the user id for which the tweets are to be fetched. 
-                       None by default, which will result in the tweets of the account which is authorized\n
-            count -- Defines the count of the tweets to be fetched. Default value is 20. 
+            user id -- Defines the user id for which the tweets are to be fetched.
+                       None by default, which will result in the tweets of the account
+                       which is authorized\n
+            count -- Defines the count of the tweets to be fetched. Default value is 20
         """
         try:
             if not isinstance(count, int):
@@ -121,7 +125,8 @@ class DeleteBot:
                 for keys, values in tweet.items():
                     print("{} : {}".format(keys, values))
 
-        confirmation = input("\n{} tweets will be deleted. Press (y/n) to confirm: ".format(count)).lower()
+        confirmation = input("\n{} tweets will be deleted. Press (y/n) to confirm: ".
+                        format(count)).lower()
         if confirmation == 'n':
             sys.exit(0)
         elif confirmation == 'y':
@@ -134,15 +139,19 @@ class DeleteBot:
 
 class DeleteRetweet(DeleteBot):
     """
-        Sub-Class of DeleteBot class, uses the no of Retweets as a threshold to filter tweets
+        Sub-Class of DeleteBot class, uses the no of Retweets as a
+        threshold to filter tweets
     """
 
     def __init__(self, filename=None, min_retweet=0, max_retweet=sys.maxsize):
         """
-            Class to delete the tweets based on the minimum and maximum number of retweets\n
+            Class to delete the tweets based on the minimum and maximum number 
+            of retweets\n
             Keyword Arguments: \n
-            min_retweet: Minimum threshold for retweets, below which the tweets will be deleted
-            max_retweet: Maximum threshold for retweets, above which the tweets will be deleted
+            min_retweet: Minimum threshold for retweets, below which the tweets 
+                        will be deleted
+            max_retweet: Maximum threshold for retweets, above which the tweets
+                        will be deleted
         """
         super().__init__(filename=filename)
         try:
@@ -179,7 +188,8 @@ class DeleteRetweet(DeleteBot):
             Keyword arguments:\n
             user id -- User for which the tweets are to be filtered\n
             count -- Specifies the number of tweets to be considered. 20 by default.
-            tweet_timeline -- If not provided, the super() class method to fetch tweets will be called.
+            tweet_timeline -- If not provided, the super() class method to fetch tweets
+            will be called.
         """
         try:
             timeline = None
@@ -217,8 +227,10 @@ class DeleteFavorite(DeleteBot):
         """
             Class to delete the tweets based on the minimum and maximum number of likes\n
             Keyword Arguments: \n
-            min_favorite: Minimum threshold for likes, above which the tweets will be deleted
-            max_favorite: Maximum threshold for likes, below which the tweets will be deleted
+            min_favorite: Minimum threshold for likes, above which the tweets
+                            will be deleted
+            max_favorite: Maximum threshold for likes, below which the tweets
+                            will be deleted
         """
         super().__init__(filename=filename)
         try:
@@ -255,7 +267,8 @@ class DeleteFavorite(DeleteBot):
             Keyword arguments:\n
             user id -- User for which the tweets are to be filtered\n
             count -- Specifies the number of tweets to be considered. 20 by default.
-            tweet_timeline -- If not provided, the super() class method to fetch tweets will be called.
+            tweet_timeline -- If not provided, the super() class method to fetch
+            tweets will be called.
         """
         try:
             timeline = None
@@ -289,12 +302,14 @@ class DeleteFavorite(DeleteBot):
 
 class DeleteOld(DeleteBot):
     """
-        Sub-Class of DeleteBot class, uses the no of days or hours as a threshold to filter tweets
+        Sub-Class of DeleteBot class, uses the no of days or hours as a
+        threshold to filter tweets
     """
 
     def __init__(self, filename=None, days=1, hours=1):
         """
-            Class to delete the tweets based on the time of tweet relative to current time\n
+            Class to delete the tweets based on the time of tweet relative
+            to current time\n
             Keyword Arguments: \n
             days: No of days to consider while filtering tweets (Default 1)
             hours: No of hours to consider while filtering tweets (Default 1)
@@ -326,8 +341,10 @@ class DeleteOld(DeleteBot):
         print("Hours: {}".format(hours))
 
     def within_time(self, time1):
-        """Checks whether the 'time1' argument falls within 'hours' hours and 'days' days from the current time in the past"""
-
+        """
+        Checks whether the 'time1' argument falls within 'hours' hours and
+        'days' days from the current time in the past
+        """
         # Time format in twitter api
         time_of_tweet = datetime.strptime(time1, "%a %b %d %H:%M:%S %z %Y")
         tz_info = time_of_tweet.tzinfo
@@ -343,8 +360,10 @@ class DeleteOld(DeleteBot):
         return time_of_tweet >= required_time
 
     def filter_old_tweets(self, timeline):
-        """Returns a filtered_tweets object which satisfy the time limit as set in the object"""
-
+        """
+        Returns a filtered_tweets object which satisfy the time limit
+        as set in the object
+        """
         filtered_tweets = {}
         for tweets in timeline:
             tweet = tweets._json
@@ -362,7 +381,8 @@ class DeleteOld(DeleteBot):
             Keyword arguments:\n
             user id -- User for which the tweets are to be filtered\n
             count -- Specifies the number of tweets to be considered. 20 by default.
-            tweet_timeline -- If not provided, the super() class method to fetch tweets will be called.
+            tweet_timeline -- If not provided, the super() class method to fetch 
+                tweets will be called.
         """
         try:
             timeline = None
