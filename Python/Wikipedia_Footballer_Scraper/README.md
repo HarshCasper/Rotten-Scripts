@@ -10,8 +10,8 @@
 
 The requirements of the script can be installed by running the following command which will install dependencies including BeautifulSoup and Requests, essential for the code. 
 
-```console
-computer@computer:~$ pip3 install -r requirements.txt
+```sh
+$ pip3 install -r requirements.txt
 ```
 
 ## Working
