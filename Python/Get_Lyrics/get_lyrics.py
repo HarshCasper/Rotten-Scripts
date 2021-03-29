@@ -15,6 +15,8 @@ song = args.song
 
 
 def get_lyrics(artist, song):
+    artist="".join(artist.lower().split())
+    song="".join(song.lower().split())
     base_url = 'http://www.azlyrics.com/'
     song_url = 'http://www.azlyrics.com/lyrics/' + artist + '/' + song + '.html'
 
