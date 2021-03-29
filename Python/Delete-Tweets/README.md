@@ -19,6 +19,12 @@ This is a utility to delete your tweets using python program
 
 ### Usage
 
+After cloning the project in your local directory, download the required packages using the command:
+
+    pip3 install -r requirements.txt
+
+After all the required packages are installed, run the program using the following command.
+
     python3 main.py --path P --param M [--count C] [--min N] [--max N] [--hours H] [--days D] [--verbose]
 
 #### Arguments
@@ -38,4 +44,7 @@ This is a utility to delete your tweets using python program
 - --days D : No of days to go back from current time for filtering tweets. Set to 0 by default.
 
 - --verbose : Prints the tweets before deleting them.
-  
+
+You can also run the following command for any help about any argument.
+
+    python3 main.py -h
