@@ -15,3 +15,4 @@ Output on clicking a point on image :
 https://imgur.com/VA4Y83O
 
 To exit we need to click q
+ 

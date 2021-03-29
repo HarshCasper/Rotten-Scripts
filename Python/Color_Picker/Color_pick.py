@@ -82,7 +82,7 @@ def main():
             break
 
     cv2.destroyAllWindows()
-
+ 
 
 cv2.namedWindow('image')
 cv2.setMouseCallback('image',click_event)
