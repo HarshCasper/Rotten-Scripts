@@ -7,8 +7,35 @@ This is a utility to delete your tweets using python program
 
 **credentials.json**: This file contains the credentials for accessing the twitter API. Generate the same from your twitter developer account and paste in this file
 
+***Format of 'credentials.json' file***
+
+    {
+        "consumer_key": "",
+        "consumer_key_secret": "",
+        "bearer_token": "",
+        "access_token": "",
+        "access_token_secret": ""
+    }
+
 ### Usage
 
-For the time being, open the main.py python file and set the minimum and maximum  threshold values for Retweets/Likes and run the **main.py** file.
+    python3 main.py --path P --param M [--count C] [--min N] [--max N] [--hours H] [--days D] [--verbose]
 
-Further functionalities will be added soon, and the program is intended to have a Command Line Interface soon.
+#### Arguments
+
+- --path P : Path to the 'credentials.json' file on your local system. It is a mandatory argument.
+
+- --param M : Method of filtering the tweets. Pass one of the following: ['retweet', 'likes', 'time']. It is also a mandatory argument.
+
+- --count C : Number of tweets to be considered while filtering. It is set to 20 by default.
+
+- --min N : Minimum threshold of the parameter (retweet/likes). Set to 0 by default.
+
+- --max N : Maximum threshold of the parameter (retweet/likes). Set to the maximum value of INT by default.
+
+- --hours H : No of hours to go back from the current time for filtering tweets. Set to 0 by default.
+
+- --days D : No of days to go back from current time for filtering tweets. Set to 0 by default.
+
+- --verbose : Prints the tweets before deleting them.
+  

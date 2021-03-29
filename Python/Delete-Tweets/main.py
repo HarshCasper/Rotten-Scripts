@@ -38,7 +38,7 @@ def create_parser():
                         type=int,
                         default=0,
                         required=False,
-                        help="Minimum threshold of the parameter, to be followed while deleting the tweets (default 100)"
+                        help="Minimum threshold of the parameter, to be followed while deleting the tweets (default 0)"
                         ) 
 
     parser.add_argument("--max",
@@ -46,7 +46,7 @@ def create_parser():
                         type=int,
                         default=sys.maxsize,
                         required=False,
-                        help="Maximum threshold of the parameter, to be followed while deleting the tweets (default 150)"
+                        help="Maximum threshold of the parameter, to be followed while deleting the tweets (default MAXINT)"
                         )
 
     ## Add arguments for hours and days for time based filtering
@@ -63,13 +63,13 @@ def create_parser():
                         type=int,
                         default=0,
                         required=False,
-                        help="Maximum threshold of the parameter, to be followed while deleting the tweets (default 0)"
+                        help="No of days to go back from current time for filtering tweets (default 0)"
                         )
 
     parser.add_argument("--verbose",
                         action="store_true",
                         required=False,
-                        help="Verbose, prints the tweets before deleting them"
+                        help="When passed, the tweets are displayed before getting deleted"
                         )
 
 
