@@ -20,6 +20,10 @@ def main():
 @click.option('-p', '--pages', type=int, default=1, help="Show result up to pages")
 @click.argument('repos', type=str, required=True)
 def repo(repos, state, pages, tag=None, verbose=False, ):
+    """This function checks the valid configuration 
+    and calls the API on the given repository with arguments and options
+    and also prints the output
+    """
     if pages > 3:
         click.secho("You can not see more than 3 pages.!", fg='red', bold=True)
         return
@@ -28,6 +32,7 @@ def repo(repos, state, pages, tag=None, verbose=False, ):
     flag = True
     stcolor = {"OPEN": "green", "CLOSED": "red", "MERGED": "yellow"}
     try:
+        #read configuration from config.ini file
         with open('config.ini', 'r') as cf:
             token = cf.read()
             if len(token) != 40:
@@ -77,6 +82,10 @@ def auth(token):
 
 
 def start():
+    """
+    prw <command> <argument> [options] [flags]
+    """
+
     main(obj={})
 
 

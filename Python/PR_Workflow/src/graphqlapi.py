@@ -1,7 +1,11 @@
 
 class Queries:
+      """The Queries class defines an object that represents a pull request query
+      """
 
     def __init__(self, owner, name, state, tag=None, countr=30):
+      """ initialize query object with state, name, owner, tag and counter.
+      """
         self.name = name
         self.owner = owner
         self.tag = tag
