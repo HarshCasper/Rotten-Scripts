@@ -8,13 +8,8 @@ def get_player_name():
     returns a string suitable to concatenate in the wikipedia URL.
     """
 
-    player = input('\nEnter the name of the Football player: ').split(' ')
-    player_name = ''
-    for i in player:
-        name = i.capitalize()
-        player_name += name
-        player_name += ' '
-
+    player = list(input('\nEnter the name of the Football player: ').split(' '))
+    player_name = ' '.join([i.capitalize() for i in player])
     return player_name
 
 
@@ -41,7 +36,7 @@ def get_club_info(headers):
         return club_data
 
     # In case the name given is not a Football player
-    except TypeError:
+    except (TypeError, IndexError):
         print('INVALID PLAYER NAME!!')
         return 0
 
@@ -89,7 +84,7 @@ def main():
                 display_info(club_info)
 
             key = input('\nPress "y" to continue or any other key to quit: ')\
-                .lower()
+                .strip().lower()
             if key != 'y':
                 break
 
@@ -97,7 +92,7 @@ def main():
             print('URL NOT FOUND!!')
 
             key = input('\nPress "y" to continue or any other key to quit: ')\
-                .lower()
+                .strip().lower()
             if key != 'y':
                 break
 
