@@ -1,6 +1,6 @@
 ### Create a Word Cloud
 
-Takes a text file, preprocesses the content by removing stopwords, creates a wordcloud out of them and saves this wordcloud as a PNG.
+Takes any file as input, preprocesses the content by removing stopwords, creates a wordcloud out of them and saves this wordcloud as a PNG.
 
 ##### Steps
 
