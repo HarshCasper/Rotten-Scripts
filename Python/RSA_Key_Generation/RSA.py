@@ -145,4 +145,3 @@ if __name__ == '__main__':
 
         else:
             print ("Invalid Command, please verify from the manual.")
-    
