@@ -28,4 +28,4 @@ Navigate to the folder containing the scripts and use the following commands:
 ![img](https://i.ibb.co/YyHyhDR/SkyCover.png)
 
 ## Author:
-Madhurima Maji
+[Madhurima Maji](https://github.com/madhurima99)
