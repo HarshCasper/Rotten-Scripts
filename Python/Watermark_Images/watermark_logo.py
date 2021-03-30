@@ -40,5 +40,3 @@ if __name__ == "__main__":
     pImg = input("Enter image path: ")
     pLogo = input("Enter logo image path: ")
     watermarkLogo(pImg, pLogo)
-
-    
