@@ -30,3 +30,5 @@ if __name__ == "__main__":
     path = input("Enter image path: ")
     text = input("Enter text: ")
     watermarkText(path, text)
+
+    
