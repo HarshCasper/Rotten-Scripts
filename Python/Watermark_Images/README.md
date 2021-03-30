@@ -26,3 +26,6 @@ Navigate to the folder containing the scripts and use the following commands:
 ![image](https://i.ibb.co/DRXgKT2/Foodcover.png)
 
 ![img](https://i.ibb.co/YyHyhDR/SkyCover.png)
+
+## Author:
+Madhurima Maji
