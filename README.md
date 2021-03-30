@@ -134,6 +134,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://rahulraikwar.me"><img src="https://avatars.githubusercontent.com/u/54519734?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul raikwar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=rahulraikwar00" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=rahulraikwar00" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/akhil-bhalerao-63b47a193/"><img src="https://avatars.githubusercontent.com/u/55273506?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Akhil Bhalerao</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=iamakkkhil" title="Documentation">📖</a></td>
   </tr>
 </table>
 
