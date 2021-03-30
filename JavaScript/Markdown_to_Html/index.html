@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <title>Markdown to HTML Converter</title>
+    <style>
+      textarea {
+        margin-bottom: 5px;
+        width: 100%;
+        height: 70vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div style="background-color: rgb(8, 241, 241); text-align: center">
+        <h2 style="font-weight: bold">Markdown to HTML Converter</h2>
+        <div style="columns: 100px 3">
+          <h4>Enter Markdown Text</h4>
+          <h4>HTML Code</h4>
+          <h4>Markdown Preview</h4>
+        </div>
+      </div>
+      <br />
+      <div style="columns: 100px 3">
+        <textarea id="inputTextarea">### Heading 1</textarea>
+        <button id="buttonPreview" class="button-primary">Preview</button>
+        <button id="buttonClear">Clear</button>
+        <button id="buttonCopyMarkdown">Copy Markdown Text</button>
+        <textarea id="outputTextarea"></textarea>
+        <button id="buttonCopyHTML">Copy HTML Code</button>
+        <div id="preview"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
