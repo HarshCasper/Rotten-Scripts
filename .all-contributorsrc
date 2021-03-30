@@ -496,11 +496,22 @@
       ]
     },
     {
+      "login": "rahulraikwar00",
+      "name": "Rahul raikwar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54519734?v=4",
+      "profile": "http://rahulraikwar.me",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
       "login": "iamakkkhil",
       "name": "Akhil Bhalerao",
       "avatar_url": "https://avatars.githubusercontent.com/u/55273506?v=4",
       "profile": "https://www.linkedin.com/in/akhil-bhalerao-63b47a193/",
       "contributions": [
+        "code",
         "doc"
       ]
     }
