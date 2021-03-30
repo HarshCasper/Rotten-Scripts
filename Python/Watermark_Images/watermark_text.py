@@ -1,30 +1,32 @@
-#Import required Image library
 from PIL import Image, ImageDraw, ImageFont
 
-#Create an Image Object from an Image
-path = input("Enter image path: ")
-img = Image.open(path)
-width, height = img.size
 
-draw = ImageDraw.Draw(img)
-text = input("Enter text: ")
+def watermarkText(path, text):
+    # Create an Image Object from an Image
+    img = Image.open(path)
+    width, height = img.size
 
-#font needs to be downloaded 
-font = ImageFont.truetype("JMH Typewriter-Thin.ttf", 50)
+    draw = ImageDraw.Draw(img)
 
-textwidth, textheight = draw.textsize(text,font=font)
+    # font needs to be downloaded and use the dir of it as argument
+    font = ImageFont.truetype("JMH Typewriter-Thin.ttf", 50)
 
-# calculate the x,y coordinates of the text
-margin = 5
-x = width - textwidth - margin
-y = height - textheight - margin
+    textwidth, textheight = draw.textsize(text, font=font)
 
-# draw watermark in the bottom right corner
-draw.text((x, y), text,font=font, fill ="white")
-#img.show()
+    # calculate the x,y coordinates of the text
+    margin = 5
+    x = width - textwidth - margin
+    y = height - textheight - margin
 
-#Save watermarked image
-img.save('watermark.png')
-print("\nWatermark image saved.\n")
+    # draw watermark in the bottom right corner
+    draw.text((x, y), text, font=font, fill="white")
+
+    # Save watermarked image
+    img.save('watermark.png')
+    print("\nWatermark image saved.\n")
 
 
+if __name__ == "__main__":
+    path = input("Enter image path: ")
+    text = input("Enter text: ")
+    watermarkText(path, text)
