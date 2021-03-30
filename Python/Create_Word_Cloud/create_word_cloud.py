@@ -2,11 +2,12 @@ import argparse
 import numpy as np
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 from PIL import Image
+import pandas as pd
 import matplotlib.pyplot as plt
 
 my_parser = argparse.ArgumentParser()
 my_parser.add_argument('--text', action='store', type=str,
-                       required=True, help="Enter the path to the text file")
+                       required=True, help="Enter the path to the any file")
 my_parser.add_argument('--background', action='store', type=str,
                        required=False, help="Enter a background color of your choice")
 my_parser.add_argument('--mask', action='store', type=str,
@@ -22,7 +23,19 @@ my_parser.add_argument('--color_func', action='store', type=bool,
 def createWordCloud(text, background_color, mask, contour_width, contour_color, color_func):
     print(text, background_color, mask, contour_color, color_func)
     name = text.split('.')[0]
-    text = open(text).read()
+    ext=text.split('.')[1]
+    if(ext=='txt' or ext=='doc' or ext=='pdf'):
+        text = open(text).read()
+    elif(ext=='csv'):
+        df=pd.read_csv(text,encoding="latin-1")
+        text=''
+        stopwords=set(STOPWORDS)
+        for val in df.CONTENT:
+            val=str(val)
+            tokens=val.split()
+            for tok in range(len(tokens)):
+                tokens[i]=tokens[i].lower()
+            text=' '.join(tokens)+' '
     mask = np.array(Image.open(mask))
     if (color_func is not None):
         mask_colors = ImageColorGenerator(mask)
