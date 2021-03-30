@@ -31,4 +31,3 @@ if __name__ == "__main__":
     text = input("Enter text: ")
     watermarkText(path, text)
 
-    
