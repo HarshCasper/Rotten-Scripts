@@ -166,19 +166,12 @@
 - [WhatsApp_COVID-19_Bot](/Python/WhatsApp_COVID-19_Bot)
 - [WhatsApp_Message_Automation](/Python/WhatsApp_Message_Automation)
 - [Whatsapp_SMS_Bomber](/Python/Whatsapp_SMS_Bomber)
-- [Who's_Online_WhatsApp](/Python/Who's_Online_WhatsApp)
-- [Wifi_Speed_Tester](/Python/Wifi_Speed_Tester)
-- [Word_Meaning](/Python/Word_Meaning)
-- [XML_To_CSV](/Python/XML_To_CSV)
-- [YouTube_Video-Audio_Download](/Python/YouTube_Video-Audio_Download)
-- [Youtube_Bot](/Python/Youtube_Bot)
-- [Youtube_Video_Download](/Python/Youtube_Video_Download)
+- [Who's Online on WhatsApp](/Python/Who's_Online_WhatsApp)
+- [Wifi Speed Tester](/Python/Wifi_Speed_Tester)
+- [Word Meaning](/Python/Word_Meaning)
+- [XML to CSV](/Python/XML_To_CSV)
+- [YouTube Video/Audio Download](/Python/YouTube_Video-Audio_Download)
+- [Youtube Bot](/Python/Youtube_Bot)
+- [Youtube Video Download](/Python/Youtube_Video_Download)
 - [Zipper](/Python/Zipper)
-- [Zoom_Automation](/Python/Zipper)
-
-
-
-
-
-
-
+- [Zoom Automation](/Python/Zipper)
