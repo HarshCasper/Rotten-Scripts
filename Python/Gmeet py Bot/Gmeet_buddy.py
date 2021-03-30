@@ -95,9 +95,11 @@ def join_classes():
 
 join_classes()
 
-# schedule according to your time table and quit the browser according to the time of completion of your class
-# schedule.every().day.at("09:00").do(join_classes)
+'''
+schedule according to your time table and quit the browser according to the time of completion of your class
+schedule.every().day.at("09:00").do(join_classes)
 
-# while True:
-# schedule.run_pending()
-# time.sleep(1)
+while True:
+schedule.run_pending()
+time.sleep(1)
+'''
