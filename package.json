@@ -1,0 +1,19 @@
+{
+  "name": "rotten-scripts",
+  "version": "1.0.0",
+  "description": "<!-- Banner -->\r <div class=\"container-fluid\">\r   <img class=\"mx-auto\" src=\"https://i.imgur.com/7TSaSl8.png\">\r </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haarsh01/Rotten-Scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haarsh01/Rotten-Scripts/issues"
+  },
+  "homepage": "https://github.com/haarsh01/Rotten-Scripts#readme"
+}
