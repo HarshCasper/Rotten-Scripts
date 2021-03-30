@@ -14,10 +14,8 @@ Please include a summary of the issue. <!-- Delete this line afterwards -->
 
 ## Language
 
-- [ ] Bash
 - [ ] Go
 - [ ] Javascript
-- [ ] Powershell
 - [ ] Python
 - [ ] Other (Please specify)
 
@@ -35,7 +33,7 @@ ________________________________________________________________________________
 <!-- 
 _________________________________________________THESE ARE COMMENTS____________________________________________________
 
-This is the most important part of the issue, kindly read the description, we know you underatnd all this really well, but
+This is the most important part of the issue, kindly read the description, we know you understand all this really well, but
 please go through the guidelines once :)
 
 -->
@@ -68,24 +66,8 @@ ________________________________________________________________________________
 
 | name            | about                                                  | labels  | assignees                                                      |
 | --------------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------- |
-| Name of Script | Details of the script | feature | self-assign if you want to work on this issue else leave blank |
+| Name of Script | Details of the script | feature (You can add acronyms of open source events as well) | self-assign if you want to work on this issue else leave blank |
 
-<!--
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-********************************************* A DEMO *********************************************
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-This is what it should look like----
-
-| name            | about                                                  | labels  | assignees                                                      |
-| --------------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------- |
-| Self Assign Action | A Github Action that can auto-assign issues | feature | @vybhav72954  |
-
-
-______________________________________________________________________________________________________________________
--->
 
 **Is your feature request related to a problem? Please describe.**: 
 
