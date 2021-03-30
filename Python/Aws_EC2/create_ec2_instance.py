@@ -1,5 +1,5 @@
 import boto3
-
+from decouple import config
 
 class EC2Instance:
     """This class will create ec2 instance."""
@@ -40,7 +40,7 @@ class EC2Instance:
 
 
 if __name__ == "__main__":
-    ec2Instance = 'ami-0c7945b4c95c0481c'
+    ec2Instance = config("AMI_ID")
     ob = EC2Instance(ec2Instance)
     ob.key_pair()
     ob.create_ec2()
