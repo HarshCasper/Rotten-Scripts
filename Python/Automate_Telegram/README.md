@@ -15,7 +15,7 @@
 
 - After the verification process, the user can send messages to the contacts
 
-![Image](https://snipboard.io/geGMHY.jpg)
+![Image](https://snipboard.io/XMAPUi.jpg)
 
 - The user can send multiple messages to the same user
 
