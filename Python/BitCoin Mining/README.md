@@ -38,8 +38,8 @@ OUTPUT : Successfully mined bitcoins with nonce value:336 end mining. Mining too
 The script has no drawbacks, but due to the increase in miners, the difficulty level increases, and hence we'd require the best hardware as the fastest wins. 
 
 # Refrences 
-[Here](https://www.investopedia.com/terms/b/bitcoin.asp)
+[Investopedia](https://www.investopedia.com/terms/b/bitcoin.asp)
 
-[Video](https://www.youtube.com/watch?v=wTC31ZI6QM4)
+[Computerphile Video](https://www.youtube.com/watch?v=wTC31ZI6QM4)
 
-[Video2](https://www.youtube.com/watch?v=ZhnJ1bkIWWk&t=143s)
+[Codebasics Video](https://www.youtube.com/watch?v=ZhnJ1bkIWWk&t=143s)
