@@ -133,7 +133,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://www.pythondiario.com"><img src="https://avatars.githubusercontent.com/u/21015263?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Diego Caraballo</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=DiegoCaraballo" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=DiegoCaraballo" title="Documentation">📖</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="http://rahulraikwar.me"><img src="https://avatars.githubusercontent.com/u/54519734?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul raikwar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=rahulraikwar00" title="Code">💻</a></td>
+    <td align="center"><a href="http://rahulraikwar.me"><img src="https://avatars.githubusercontent.com/u/54519734?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul raikwar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=rahulraikwar00" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=rahulraikwar00" title="Documentation">📖</a></td>
   </tr>
 </table>
 
