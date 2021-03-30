@@ -1,6 +1,7 @@
 import boto3
 from decouple import config
 
+
 class EC2Instance:
     """This class will create ec2 instance."""
 
