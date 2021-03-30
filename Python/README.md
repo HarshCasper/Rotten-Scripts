@@ -126,7 +126,7 @@ S. No | Name of Script | Directory Link |  Author | Tools Used |
 116 | Send Email Using Gmail API | [Click Here](/Python/Send_Email_Using_Gmail_Api) | [Sumit-Sahu](https://github.com/Sumit-Sahu) | pickle, base64, argparse, __future__
 117 | Send SMS using Twilio | [Click Here](/Python/Send_SMS_Using_Twilio_In_Python) | [Sanket Mhatre](https://github.com/SANKET7738) | twilio.rest
 118 | Shutdown Your System | [Click Here](/Python/Shutdown_Your_System) | [Harsh Bardhan Mishra](https://github.com/HarshCasper) | os
-119 | Slideshare slides downloader | [Click Here](/Python/Slideshare_slides_downloader) | [Akhil Manoj](https://github.com/AkM-2018) | urllib.request, shutil, selenium, fpdf      
+119 | Slideshare slides downloader | [Click Here](/Python/Slideshare_slides_downloader) | [Akhil Manoj](https://github.com/AkM-2018) | urllib.request, shutil, selenium, fpdf     
 120 | Social Media Links | [Click Here](/Python/Social_Media_Links) | [Vybhav Chaturvedi](https://github.com/vybhav72954) |requests, html_to_etree, extract_social_media 
 121 | Song Popularity | [Click Here](/Python/Song_Popularity) | [Vybhav Chaturvedi](https://github.com/vybhav72954) | lyricsgenius
 122 | Speech To Text | [Click Here](/Python/Speech_to_Text) | [Avinash Kr. Ranjan](https://github.com/avinashkranjan) | pyttsx, SpeechRecognition
