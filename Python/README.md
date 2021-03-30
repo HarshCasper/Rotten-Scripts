@@ -1,8 +1,4 @@
-## What is Python?
-
-Python is a high-level general purpose programming language created by Guido van Rossum. It is an easy to use interpreted language which can be used for a wide variety of tasks including and not limited to automation, data science, machine learning, image processing and web development.
-
-The main reason behind its success is the presence of vast variety of libraries and  its super helpful developer community.
+<div align="center"><img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png" alt="Python_Logo"  /></div>
 
 ## Python scripts associated with this project:
 
