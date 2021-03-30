@@ -14,6 +14,8 @@ Please include a summary of the issue. <!-- Delete this line afterwards -->
 
 ## Language
 
+<!-- PLEASE DELETE THE UNCHECKED BOXES -->
+
 - [ ] Go
 - [ ] Javascript
 - [ ] Python
