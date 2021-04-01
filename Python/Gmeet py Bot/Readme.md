@@ -16,3 +16,5 @@ Download the chrome driver from the above link.
 <p>& you are all set to go :)</p>
 
 The Fuctionality of the script can be viewed [here](https://youtu.be/auJaJZ_h0gE)
+
+> Made with ❤ , [Yuvraj kadale](https://github.com/Yuvraj-kadale) #Gssoc 2021

@@ -1,6 +1,3 @@
-# Autour : Yuvraj Kadale
-# Gssoc 21
-
 # Importing Required modules and Libraries
 
 from selenium import webdriver
@@ -37,8 +34,9 @@ browser = webdriver.Chrome(chrome_options=opt, executable_path=Driver_path)
 browser.maximize_window()
 action = ActionChains(browser)
 
-# Function for entering into meeting as per the google meet interface
-
+''' 
+Function for entering into meeting as per the google meet interface
+'''
 
 def get_into():
     # This function will be used to enter in google meeting
@@ -56,10 +54,10 @@ def get_into():
     keyboard.press_and_release('Enter')
 
 
-# Finding the scheduled meeting on the google calender.
 def join_classes():
-    # This function will be used to join the google meet
-
+    '''
+    This function will be used to join the google meet
+    '''
     browser.get("https://calendar.google.com/")
     browser.find_element_by_name("identifier").send_keys(username)
     browser.find_element_by_class_name("VfPpkd-RLmnJb").click()
