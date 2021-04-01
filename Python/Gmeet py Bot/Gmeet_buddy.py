@@ -1,11 +1,11 @@
 # Importing Required modules and Libraries
 
 from selenium import webdriver
-#import schedule,time
+import schedule,time
 import keyboard
 #from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.action_chains import ActionChains, Options
+
 
 # joining Credentials
 
@@ -34,12 +34,11 @@ browser = webdriver.Chrome(chrome_options=opt, executable_path=Driver_path)
 browser.maximize_window()
 action = ActionChains(browser)
 
-''' 
-Function for entering into meeting as per the google meet interface
-'''
 
 def get_into():
-    # This function will be used to enter in google meeting
+    ''' 
+    Function for entering into meeting as per the google meet interface
+    '''
 
     keyboard.press_and_release('Tab')
     time.sleep(1)
