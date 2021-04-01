@@ -23,19 +23,26 @@
       <div style="background-color: rgb(8, 241, 241); text-align: center">
         <h2 style="font-weight: bold">Markdown to HTML Converter</h2>
         <div style="columns: 100px 3">
-          <h4>Enter Markdown Text</h4>
+          <h4>Markdown Text</h4>
           <h4>HTML Code</h4>
           <h4>Markdown Preview</h4>
         </div>
       </div>
       <br />
       <div style="columns: 100px 3">
+        <!-- Text area to input markdown text-->
         <textarea id="inputTextarea">### Heading 1</textarea>
+        <!-- button to preview markdown text-->
         <button id="buttonPreview" class="button-primary">Preview</button>
+        <!-- button to clear markdown text-->
         <button id="buttonClear">Clear</button>
+        <!-- button to copy markdown text-->
         <button id="buttonCopyMarkdown">Copy Markdown Text</button>
+        <!-- Text area where HTML code will be displayed-->
         <textarea id="outputTextarea"></textarea>
+        <!-- button to clear HTML code-->
         <button id="buttonCopyHTML">Copy HTML Code</button>
+        <!-- Area where markdown text will be previewed-->
         <div id="preview"></div>
       </div>
     </div>

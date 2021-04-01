@@ -1,38 +1,38 @@
-var output = '';
-inputTextarea = document.querySelector('#inputTextarea');
-outputTextarea = document.querySelector('#outputTextarea');
-buttonClear = document.querySelector('#buttonClear');
-buttonCopyHTML = document.querySelector('#buttonCopyHTML');
-buttonCopyMarkdown = document.querySelector('#buttonCopyMarkdown');
-buttonPreview = document.querySelector('#buttonPreview');
+let output = '';
 
-buttonPreview.addEventListener('click', function () {
-  const converter = new showdown.Converter(),
-    preview = document.getElementById('preview');
+document.getElementById('buttonPreview').addEventListener('click', function () {
+  const converter = new showdown.Converter();
 
   showdown.setFlavor('github');
 
-  if (preview && inputTextarea.value) {
-    output = converter.makeHtml(inputTextarea.value);
-    outputTextarea.value = output;
-    preview.innerHTML = output;
+  if (
+    document.getElementById('preview') &&
+    document.getElementById('inputTextarea').value
+  ) {
+    output = converter.makeHtml(document.getElementById('inputTextarea').value);
+    document.getElementById('outputTextarea').value = output;
+    document.getElementById('preview').innerHTML = output;
   } else {
-    preview.innerHTML = 'Markdown Text is Empty!';
+    document.getElementById('preview').innerHTML = 'Markdown Text is Empty!';
   }
 });
-buttonClear.addEventListener('click', function () {
-  inputTextarea.value = '';
-  inputTextarea.select();
-  outputTextarea.value = '';
-  preview.innerHTML = 'Markdown Text is Empty!';
+document.getElementById('buttonClear').addEventListener('click', function () {
+  document.getElementById('inputTextarea').value = '';
+  document.getElementById('inputTextarea').select();
+  document.getElementById('outputTextarea').value = '';
+  document.getElementById('preview').innerHTML = 'Markdown Text is Empty!';
 });
 
-buttonCopyHTML.addEventListener('click', function () {
-  outputTextarea.select();
-  document.execCommand('Copy');
-});
-buttonCopyMarkdown.addEventListener('click', function () {
-  inputTextarea.select();
-  document.execCommand('Copy');
-});
-buttonPreview.click();
+document
+  .getElementById('buttonCopyHTML')
+  .addEventListener('click', function () {
+    document.getElementById('outputTextarea').select();
+    document.execCommand('Copy');
+  });
+document
+  .getElementById('buttonCopyMarkdown')
+  .addEventListener('click', function () {
+    document.getElementById('inputTextarea').select();
+    document.execCommand('Copy');
+  });
+document.getElementById('buttonPreview').click();
