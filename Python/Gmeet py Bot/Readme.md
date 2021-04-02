@@ -4,17 +4,17 @@ This buddy will help you to attain any online meetings scheduled on google meet 
 
 ## Required Setup
 Inorder to automate the meeting process you are required to install the following drivers
+
 ## Quick links to the driver:
-<ul>Chrome Driver:<a href="https://chromedriver.chromium.org/downloads" target="_blank" >Download</a></ul>
-<ul>Firefox Driver:<a href="https://github.com/mozilla/geckodriver/releases" target="_blank">Download</a></ul>
+
+* [Chrome Driver](https://chromedriver.chromium.org/downloads)
+* [Firefox Driver](https://github.com/mozilla/geckodriver/releases)
 
 ## How to wake my buddy?
 
-Download the chrome driver from the above link.
-<p>Enter the chrome driver path in the code</p>
-<p>Enter your mail id and password </p>
-<p>& you are all set to go :)</p>
+* Download the chrome driver from the above link.
+* Enter the chrome driver path when asked.
+* Enter your mail id and password 
+* & you are all set to go :)
 
-The Fuctionality of the script can be viewed [here](https://youtu.be/auJaJZ_h0gE)
-
-> Made with ❤ , [Yuvraj kadale](https://github.com/Yuvraj-kadale) #Gssoc 2021
+> Made with ❤ , [Yuvraj kadale](https://github.com/Yuvraj-kadale) 
