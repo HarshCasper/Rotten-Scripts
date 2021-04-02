@@ -6,7 +6,7 @@ const fetchPrice = async(url, targetPrice) =>{
     const response = await axios.get(url);
     const html = response.data;
     const $ = cheerio.load(html);
-    const priceRext = $('#priceblock_ourprice').text();
+    const priceText = $('#priceblock_ourprice').text();
     const price = parseFloat(priceText.replace('$',''));
     if(targetPrice >= price){
         sendEmail(url,price);
