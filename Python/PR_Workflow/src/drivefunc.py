@@ -1,6 +1,6 @@
 import datetime
-import click
 import math
+import click
 from rich import print as rprint
 from src.extracktor import json_extract
 
@@ -15,17 +15,18 @@ def truncate(string, width):
 
 def prdate(crdate, enddate):
     """
-    this function returns pull request duration 
+    this function returns pull request duration
     """
     if not enddate[0]:
-        d1 = datetime.datetime.now().replace(microsecond=0)
+        end_dates = datetime.datetime.now().replace(microsecond=0)
     else:
-        d1 = datetime.datetime.strptime(enddate[0], "%Y-%m-%dT%H:%M:%SZ")
-    d2 = datetime.datetime.strptime(crdate[0], "%Y-%m-%dT%H:%M:%SZ")
-    return str(d1-d2)
+        end_dates = datetime.datetime.strptime(
+            enddate[0], "%Y-%m-%dT%H:%M:%SZ")
+    create_dates = datetime.datetime.strptime(crdate[0], "%Y-%m-%dT%H:%M:%SZ")
+    return str(end_dates-create_dates)
 
 
-def printOutput(result, verbose, state, col):
+def print_output(result, verbose, state, col):
     """
     this function use to formate the output according to terminal size
     col - > column
@@ -39,7 +40,7 @@ def printOutput(result, verbose, state, col):
             number = json_extract(i, 'number')
             title = truncate(json_extract(i, 'title')
                              [0], math.ceil(col/5))
-            totalCount = json_extract(i, 'totalCount')
+            # totalCount = json_extract(i, 'totalCount')
             create_date = json_extract(i, 'createdAt')
             closed_date = json_extract(i, 'closedAt')
             dates = prdate(create_date, closed_date)
@@ -51,8 +52,9 @@ def printOutput(result, verbose, state, col):
         click.secho(state, fg=state_color[state], bold=True)
         print("\n")
         for i in result['data']['repository']['pullRequests']['nodes']:
-            number = json_extract(i, 'number'),
+            number = json_extract(i, 'number')
             title = truncate(json_extract(i, 'title')
                              [0], math.ceil(col/3))
             rprint(
-                f"[bold {state_color[state]}]#{number[0]}[/bold {state_color[state]}]", title.ljust(math.ceil(col/4)))
+                f"[bold {state_color[state]}]#{number[0]}[/bold {state_color[state]}]",
+                title.ljust(math.ceil(col/4)))
