@@ -1,6 +1,9 @@
 import click
+import math
+import os
 import requests
 from src.extracktor import json_extract
+from src.drivefunc import printOutput
 from src.graphqlapi import Queries
 from src.prapi import run_query
 
@@ -30,9 +33,9 @@ def repo(repos, state, pages, tag=None, verbose=False, ):
     pages = pages*30
     state = state.upper()
     flag = True
-    stcolor = {"OPEN": "green", "CLOSED": "red", "MERGED": "yellow"}
+    state_color = {"OPEN": "green", "CLOSED": "red", "MERGED": "yellow"}
     try:
-        #read configuration from config.ini file
+        # read configuration from config.ini file
         with open('config.ini', 'r') as cf:
             token = cf.read()
             if len(token) != 40:
@@ -49,22 +52,10 @@ def repo(repos, state, pages, tag=None, verbose=False, ):
                        click.echo('invalid syntax for repo : username/repo_name'))
             return
         else:
+            col = int(list(os.get_terminal_size())[0])
             result = run_query(
                 Queries(f"{r[0]}", f"{r[1]}", state, tag, pages).pulls(), token)
-            if verbose:
-                print("This feature has not been added yet..comming soon")
-            else:
-
-                click.secho(state, fg=stcolor[state], bold=True)
-                for i in result['data']['repository']['pullRequests']['nodes']:
-                    number = json_extract(i, 'number')
-                    title = json_extract(i, 'title')
-                    totalCount = json_extract(i, 'totalCount')
-                    lname = json_extract(i, 'name')
-                    click.secho(
-                        f"#{number[0]}  ", fg=stcolor[state], bold=True, nl=False)
-                    print(
-                        f"Title :{title[0]} ----------> Comments :{totalCount[0]} ---------> labels{lname}")
+            printOutput(result, verbose, state, col)
 
 
 @main.command()
