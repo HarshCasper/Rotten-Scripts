@@ -3,17 +3,18 @@
 from selenium import webdriver
 import schedule,time
 import keyboard
+import os
 #from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains, Options
 
 
 # joining Credentials
 
-username = str(input('Your Username:'))   # asking for mail id
-password = str(input('Your Password:'))  # asking for password
+username = os.environ.get('Username')       # Fetching mail id from .env
+password = os.environ.get('Your_password')  # Fetching psd from .env
+
 # Saving the path of chrome driver
-Driver_path = str(
-    input('Enter your path where the chrome drive is installed:'))
+Driver_path = str(input('Enter your path where the chrome drive is installed:'))
 
 # Providing camera and microphone access to the meeting
 
@@ -100,3 +101,4 @@ while True:
 schedule.run_pending()
 time.sleep(1)
 '''
+print("Ready to join the meeting...")

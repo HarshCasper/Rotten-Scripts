@@ -13,6 +13,7 @@ Inorder to automate the meeting process you are required to install the followin
 ## How to wake my buddy?
 
 * Download the chrome driver from the above link.
+* Create `.env` file containg "Username" and "Your_password"
 * Enter the chrome driver path when asked.
 * Enter your mail id and password 
 * & you are all set to go :)
