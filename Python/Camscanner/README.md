@@ -13,4 +13,3 @@
 2. Run the script.
 
     `python camscanner.py \<filename\>`
-    \(eg - `python camscanner.py bill.png`\)
