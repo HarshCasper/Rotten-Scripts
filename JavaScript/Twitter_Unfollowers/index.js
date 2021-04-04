@@ -18,26 +18,53 @@ const getUserData = async (username) => {
 
 const displayUser = (user) => {
     console.log("\nUser Info :");
-    console.log(`Name : ${user.name} ID : ${user.id}`);
+    console.log(`Name : ${user.name} \nID : ${user.id}`);
     // console.log(user);
 }
 
 const getUnfollowers = (current, fromDB) => {
-    current = current.map((user) => {
+    // separate usernames from the json array using map
+    tempCurrent = current.map((user) => {
         return user.name;
     })
-    fromDB = fromDB.map((user) => {
+    tempFromDB = fromDB.map((user) => {
         return user.name;
     })
     // console.log(current);
     // console.log(fromDB);
+
+    // new list to store users that have unfollowed the user
     let unfollows = [];
-    fromDB.forEach(user => {
-        if (current.indexOf(user) == -1) {
+    tempFromDB.forEach(user => {
+        if (tempCurrent.indexOf(user) == -1) {
             unfollows.push(user);
         }
     });
+
     return unfollows;
+}
+
+const getDate = () => {
+    let d = new Date();
+    return `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`
+}
+
+const updateDB = (dbData, currentData, unfollows) => {
+
+    // assign current new user followers changes to db
+    dbData[currentData.name]["followers"] = currentData["followers"];
+    if (unfollows > 0) {
+        let d = getDate();
+        let newCheck = {
+            "On-Date": d,
+            "People-unfollowed": unfollows
+        }
+        // make history of checking
+        dbData[currentData.name]["history"].push(newCheck);
+    }
+    // write the data into the db
+    db.write(dbFileLoc, dbData);
+    return dbData;
 }
 const init = async () => {
 
@@ -48,17 +75,39 @@ const init = async () => {
     dbData = JSON.parse(dbData);
 
     if (dbData.hasOwnProperty(user.name)) {
+        // display basic info
         displayUser(user);
-        let people = getUnfollowers(user.followers, dbData[user.name]["followers"]);
-        console.log(people);
-        console.log(`${people.length} people unfollowed you since ${dbData[user.name]["time"]}`);
-    } else {
-        dbData[user.name] = user;
 
-        let d = new Date();
-        dbData[user.name].time = `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`;
+        // get list of people that have unfollowed you
+        let people = getUnfollowers(user.followers, dbData[user.name]["followers"]);
+
+        // displaying their number
+        console.log(`\nNOTE : ${people.length} people unfollowed you since ${dbData[user.name]["time"]}`);
+
+        // display their names
+        if (people.length > 1) {
+            console.log(`\nThose are : \n ${people} \n`);
+        }
+
+        // to update the db with new data
+        dbData = updateDB(dbData, user, people.length);
+
+        console.log(`\nHistory is as follows :`);
+        console.table(dbData[user.name]["history"]);
+
+    } else {
+
+        // assign current new user to db
+        dbData[user.name] = user;
+        // add date of addition
+        dbData[user.name].time = getDate();
+        // make history of checking
+        dbData[user.name].history = [];
+        // write the data into the db
         db.write(dbFileLoc, dbData);
-        console.log("User didn't exist! Now it has been added to DB.\nCheck after some time!!!");
+
+        // inform us about the user not being in the db
+        console.log("\nNOTE : User didn't exist! Now it has been added to DB.\nCheck after some time!!!");
     }
 }
 
