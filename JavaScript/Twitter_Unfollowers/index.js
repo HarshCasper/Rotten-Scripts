@@ -2,6 +2,7 @@ const prompt = require("prompt-sync")();
 const db = require("./dbFunc")
 const api = require("./apiTokens")
 const twt = require("./twitterFunc")
+const dbFileLoc = "db.json";
 
 // api data
 const bearerToken = api.data.bearer;
@@ -42,7 +43,7 @@ const init = async () => {
 
     let username = prompt("Enter Twitter Username : "); //this info will be taken through input
     let user = await getUserData(username)
-    let dbData = JSON.parse(db.read("db.json"))
+    let dbData = JSON.parse(db.read(dbFileLoc))
 
     if (dbData.hasOwnProperty(user.name)) {
         displayUser(user);
@@ -54,7 +55,7 @@ const init = async () => {
 
         let d = new Date();
         dbData[user.name].time = `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`;
-        db.write("db.json", dbData);
+        db.write(dbFileLoc, dbData);
         console.log("User didn't exist! Now it has been added to DB.\nCheck after some time!!!");
     }
 }
