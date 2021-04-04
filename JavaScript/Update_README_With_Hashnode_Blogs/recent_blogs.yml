@@ -1,0 +1,26 @@
+name: README Update By Latest Blogs
+
+on:
+  schedule:
+    #scheduled for every 5 hour
+    - cron: "* */5 * * *"
+
+jobs:
+  perform:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+      - run: npm install node-fetch
+      - name: Run script
+        run: node update_readme.js
+      - name: Commit and push if changed
+        run: |
+          git add README.md
+          git diff
+          git config --global user.email "hashnode-bot@example.com"
+          git config --global user.name "Hashnode Bot"
+          git commit -m "Update README with latest blog" -a || echo "No changes to commit"
+          git push
