@@ -2,7 +2,7 @@
   "name": "twitter_unfollowers",
   "version": "1.0.0",
   "description": "Script to find people that recently unfollowed you on twitter",
-  "main": "index.js",
+  "main": "Twitter_Unfollowers.js",
   "scripts": {
     "Twitter-run": "node Twitter_Unfollowers.js"
   },

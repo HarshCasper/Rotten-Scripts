@@ -84,18 +84,19 @@ const init = async () => {
         let people = getUnfollowers(user.followers, dbData[user.name]["followers"]);
 
         // displaying their number
-        console.log(`\nNOTE : ${people.length} people unfollowed you(him/her) since ${dbData[user.name].time}`);
+        console.log(`\nNOTE : ${people.length} people unfollowed you(him/her) After ${dbData[user.name].time}`);
 
         // display their names
         if (people.length > 0) {
-            console.log(`\nThose are(is) : \n ${people}`);
+            console.log(`\nThose are(is) : `);
+            console.table(people);
         }
 
         // to update the db with new data
         dbData = updateDB(dbData, user, people.length);
 
         if (dbData[user.name]["history"].length > 0) {
-            console.log(`\nSearch history is as follows :`);
+            console.log(`\Query history is as follows :`);
             console.table(dbData[user.name]["history"]);
         }
     } else {

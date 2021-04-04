@@ -12,18 +12,12 @@
 - Run `npm install` to install all necessary dependencies
 - Run `node Twitter_Unfollowers.js` and Voila! you are ready to go 😉
 
-## Detailed explanation of script, if needed
-
-If code is not explainable using comments, use this sections to explain your script
-
 ## Output
-
-Display images/gifs/videos of output/result of your script so that users can visualize it
+![Output Pic](https://i.imgur.com/HQ68vDj.png)
 
 ## Author(s)
+Hi I'm [Madhav Jha](https://jhamadhav.com) author of the above script.
+Check my [Github](https://github.jhamadhav.com) for more such projects and connect with me on [LinkedIn](https://linkedin.jhamadhav.com)
 
-Name(s) of author(s)
-
-## Disclaimers, if any
-
-Use this section to mention if any particular disclaimer is required
+## Disclaimer
+**DO NOT forget to get your bearer key from your [Twitter developer account](https://developer.twitter.com/en) and ALWAYS keep it a SECRET!!!**
