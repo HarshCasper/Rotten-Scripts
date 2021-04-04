@@ -18,7 +18,7 @@ const getUserData = async (username) => {
 
 const displayUser = (user) => {
     console.log("\nUser Info :");
-    console.log(`Name : ${user.name} \nID : ${user.id}`);
+    console.log(`Username : ${user.name} \nuserID : ${user.id}`);
     // console.log(user);
 }
 
@@ -59,6 +59,8 @@ const updateDB = (dbData, currentData, unfollows) => {
             "On-Date": d,
             "People-unfollowed": unfollows
         }
+        // update time
+        dbData[currentData.name].time = d;
         // make history of checking
         dbData[currentData.name]["history"].push(newCheck);
     }
@@ -82,19 +84,20 @@ const init = async () => {
         let people = getUnfollowers(user.followers, dbData[user.name]["followers"]);
 
         // displaying their number
-        console.log(`\nNOTE : ${people.length} people unfollowed you since ${dbData[user.name]["time"]}`);
+        console.log(`\nNOTE : ${people.length} people unfollowed you(him/her) since ${dbData[user.name].time}`);
 
         // display their names
-        if (people.length > 1) {
-            console.log(`\nThose are : \n ${people} \n`);
+        if (people.length > 0) {
+            console.log(`\nThose are(is) : \n ${people}`);
         }
 
         // to update the db with new data
         dbData = updateDB(dbData, user, people.length);
 
-        console.log(`\nHistory is as follows :`);
-        console.table(dbData[user.name]["history"]);
-
+        if (dbData[user.name]["history"].length > 0) {
+            console.log(`\nSearch history is as follows :`);
+            console.table(dbData[user.name]["history"]);
+        }
     } else {
 
         // assign current new user to db
