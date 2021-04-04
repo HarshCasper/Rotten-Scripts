@@ -1,13 +1,16 @@
-# Package/Script Name
-
-Short description of package/script
-
-- If package, list of functionalities/scripts it can perform
-- If standalone script, short description of script explaining what it achieves
-
+# Twitter_Unfollowers
+**Twitter_Unfollowers** is a script to track the recent people who unfollowed you on Twitter using the Twitter developers API.
+- It uses Twitter API to fetch followers of any user *(provided as input)*.
+- Then stores it into a json file. 
+- When compared again it gives name and number of people that unfollowed you.
+- *(Additionally) :* After multiple queries it provides search/query history in tabular form.
 ## Setup instructions
-
-Explain how to setup and run your package/script in user's system
+- Get your [Twitter developer account](https://developer.twitter.com/en) and follow the steps there to generate your **bearer key**
+- create file name `apiTokens.js` and enter the following : ![File content](https://i.imgur.com/4UlveGE.png)
+- Open terminal and do the following : 
+- cd to `Rotten-Scripts\JavaScript\Twitter_unfollowers`
+- Run `npm install` to install all necessary dependencies
+- Run `node Twitter_Unfollowers.js` and Voila! you are ready to go 😉
 
 ## Detailed explanation of script, if needed
 

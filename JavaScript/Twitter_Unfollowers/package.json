@@ -4,7 +4,7 @@
   "description": "Script to find people that recently unfollowed you on twitter",
   "main": "index.js",
   "scripts": {
-    "Twitter-run": "node index.js"
+    "Twitter-run": "node Twitter_Unfollowers.js"
   },
   "keywords": [
     "twitter-unfollowers"
