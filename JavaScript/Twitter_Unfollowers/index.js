@@ -17,8 +17,8 @@ const getUserData = async (username) => {
 }
 
 const displayUser = (user) => {
-    console.log("User Info :\n");
-    console.log(`Name : ${user.name} ID : ${user.id}\n`);
+    console.log("\nUser Info :");
+    console.log(`Name : ${user.name} ID : ${user.id}`);
     // console.log(user);
 }
 
@@ -43,7 +43,9 @@ const init = async () => {
 
     let username = prompt("Enter Twitter Username : "); //this info will be taken through input
     let user = await getUserData(username)
-    let dbData = JSON.parse(db.read(dbFileLoc))
+    let dbData = db.read(dbFileLoc);
+    dbData = (dbData === "" || dbData.length == 0) ? "{}" : dbData;
+    dbData = JSON.parse(dbData);
 
     if (dbData.hasOwnProperty(user.name)) {
         displayUser(user);
