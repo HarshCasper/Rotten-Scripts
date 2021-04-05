@@ -115,3 +115,5 @@ if __name__ == '__main__':
     loc = input('Enter image path: ')
     img = open_image(loc)
     background_sub(img)
+    
+    
