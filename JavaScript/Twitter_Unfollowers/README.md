@@ -20,4 +20,5 @@ Hi I'm [Madhav Jha](https://jhamadhav.com), I'm the author of this script. <br>
 Check my [Github](https://github.jhamadhav.com) for more such projects and to connect with me check my [LinkedIn](https://linkedin.jhamadhav.com) profile.
 
 ## Disclaimer
-**DO NOT forget to get your bearer key from your [Twitter developer account](https://developer.twitter.com/en) and ALWAYS keep it a SECRET!!!**
+- **DO NOT forget to get your bearer key from your [Twitter developer account](https://developer.twitter.com/en) and ALWAYS keep it a SECRET!!!**
+- **Do not try for accounts with followers count more than few thousands, even though the script works you will exhaust your twitter API limit before the process ends.**
