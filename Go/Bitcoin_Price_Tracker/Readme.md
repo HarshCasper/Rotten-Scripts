@@ -2,11 +2,10 @@
 
 A script used to fetch the live price of 1 BTC in INR, written in GOlang. [Colly package](https://github.com/gocolly/colly) is used as a base for the web scraping and tag search.
 
-- Fetches the live price of 1 Bitcoin.
 
 ## Setup instructions
 
-After forking the repository and cloning on user system ,follow these commands on git bash/bash:
+After forking the repository on your local machine, follow these commands on your terminal:
 ```
 cd Rotten-Scripts/Go/Bitcoin_Price_Tracker
 go build main.go
@@ -21,4 +20,4 @@ search.
 
 ## Output
 
-![](output.gif)
+![output](https://i.imgur.com/EBJDky5.gif)
