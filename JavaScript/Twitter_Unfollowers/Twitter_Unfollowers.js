@@ -30,8 +30,6 @@ const getUnfollowers = (current, fromDB) => {
     tempFromDB = fromDB.map((user) => {
         return user.name;
     })
-    // console.log(current);
-    // console.log(fromDB);
 
     // new list to store users that have unfollowed the user
     let unfollows = [];
@@ -114,6 +112,4 @@ const init = async () => {
         console.log("\nNOTE : User didn't exist! Now it has been added to DB.\nCheck after some time!!!");
     }
 }
-
 init();
-

@@ -13,7 +13,7 @@ const getUserId = async (username, bearerToken) => {
             "authorization": `Bearer ${bearerToken}`
         }
     })
-    // console.log(res.body);
+
     if (res.body) {
         return res.body;
     } else {
@@ -36,7 +36,7 @@ const getFollowers = async (userId, bearerToken) => {
 
     let hasNextPage = true;
     let nextToken = null;
-    //console.log("Retrieving followers...");
+
     while (hasNextPage) {
         let resp = await getPage(params, options, nextToken, url);
         if (resp && resp.meta && resp.meta.result_count && resp.meta.result_count > 0) {
@@ -54,9 +54,6 @@ const getFollowers = async (userId, bearerToken) => {
     }
 
     return users
-    // console.log(users);
-    // console.log(`Got ${users.length} users.`);
-
 }
 
 const getPage = async (params, options, nextToken, url) => {
