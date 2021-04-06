@@ -14,13 +14,14 @@ func give_current_price_of_bitcoin() {
 	c := colly.NewCollector(
 		colly.AllowedDomains("google.com", "www.google.com"),
 	)
-
-	found := false //bool variable to close the search after target tag is found
+	
+	//bool variable to close the search after target tag is found
+	found := false
 
 	c.OnHTML("div", func(e *colly.HTMLElement) {
 
 		if found {
-			return //return nothing when target tag is matched
+			return
 		}
 
 		if e.Attr("class") == "BNeawe iBp4i AP7Wnd" {
@@ -28,5 +29,7 @@ func give_current_price_of_bitcoin() {
 			found = true
 		}
 	})
-	c.Visit("https://www.google.com/search?q=bitcoin+price") //webpage url to be visited
+	
+	//webpage url to be visited
+	c.Visit("https://www.google.com/search?q=bitcoin+price")
 }
