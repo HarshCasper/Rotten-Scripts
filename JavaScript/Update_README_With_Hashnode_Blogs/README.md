@@ -1,3 +1,9 @@
+# About
+
+This script helps to show recent blogs published by anyone in **Hashnode** on [GitHub Profile README.md](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme). The main benefit of using the script is the whole README.md won't be updated. It will update only what you select to update. So, you can use it to update any place of your README.md by blogs. The script won't update the README.md unnecessarily when it will be scheduled to run. If any differences are found from the current version of README.md only then it will update that differenced portions only.
+
+This script is not limited to use in `GitHub Profile README.md` only, it can be customized and in use other places too.
+
 # Initial Setup
 
 - Create a folder name `.github`
@@ -22,28 +28,29 @@ But modifying **cron** schedule is little bit tricky for beginners. Go to [cront
 🔥🔥
 
 ```js
-//in update_readme.jsline 34
+//in update_readme.jsline 58
 /(?<=Latest Blogs\n)[\s\S]*(?=\#\#\ This Point Won't Be Edited)/gim,
 ```
 
 This is very important thing. Used regular expression so that script modify only the necessary part not the whole `README.md`. If you want to write other things instead of **Latest Blogs** (EX: My Blogs) you have to modify regular expressions like `/(?<=My Blogs\n)[\s\S]*(?=\#\#\ This Point Won't Be Edited)/gim,`
-Next most important thing is upto which point will be replaced. Suppose you have a Section My Blogs & # Skills, you want to replace texts between them then you have to modify like this `/(?<=My Blogs\n)[\s\S]*(?=\#\ Skills)/gim,` .
+Next most important thing is upto which point will be updated. Suppose you have a Section My Blogs & # Skills, you want to update texts between them then you have to modify like this `/(?<=My Blogs\n)[\s\S]*(?=\#\ Skills)/gim,` .
+
 ⚡️ For the starting point (here `My Blogs`) doesn't need to consider what is before it like ##My Blogs or ##### MY Blogs etc.
 If you are beginner in regular expression [RegExr](https://regexr.com/) will help you.
 
 - Go to [RegExr](https://regexr.com/)
 - Paste your `README.md` text below text section
 - Paste the `/(?<=Latest Blogs\n)[\s\S]*(?=\#\#\ This Point Won't Be Edited)/gim` under expression
-- Change those mentioned changes and see which texts are selcted those texts will be replaced.
+- Change those mentioned changes and see which portions are selcted those portions will be updated if found any changes.
 
 🔥🔥🔥
-Current script set to show 3 latest posts if you want to set more than three then change these lines
+Current script set to show 3 latest posts if you want to set more than three then change these lines.
 
 ```js
 //If you want to set 5 posts
-const posts = response.data.user.publication.posts.slice(0, 5); //in update_readme.js, line 25
-//in update_readme.js, line 26
-const postsToShow = `\n - [${posts[0].title}](<you hashnode blog URL>/${posts[0].slug})\n - [${posts[1].title}](<you hashnode blog URL>/${posts[1].slug})\n - [${posts[2].title}](<you hashnode blog URL>/${posts[2].slug})\n - [${posts[3].title}](<you hashnode blog URL>/${posts[3].slug})\n - [${posts[4].title}](<you hashnode blog URL>/${posts[4].slug})\n\n`;
+const numberOfPosts = 5; //in update_readme.js <- line 3
 ```
 
-🌟️ Check demo [update_readme.js](https://paste.ubuntu.com/p/rXN9DwcBPR/)
+⚠️ At the time of writing this, **Hashnode API** gives max latest 6 blogs properties as a response.
+
+🌟️ Check demo [update_readme.js](https://pastebin.ubuntu.com/p/96kCqgmPK6/)
