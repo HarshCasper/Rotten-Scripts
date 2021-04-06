@@ -44,5 +44,4 @@ This Script:
 ## Author
 [🛡 Akhil Bhalerao 🛡 ](https://github.com/iamakkkhil)
 
-## Credits
-https://www.geeksforgeeks.org/python-foreground-extraction-in-an-image-using-grabcut-algorithm/
+[Credits](https://www.geeksforgeeks.org/python-foreground-extraction-in-an-image-using-grabcut-algorithm/)
