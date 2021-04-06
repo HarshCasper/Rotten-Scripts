@@ -19,7 +19,6 @@ const getUserData = async (username) => {
 const displayUser = (user) => {
     console.log("\nUser Info :");
     console.log(`Username : ${user.name} \nuserID : ${user.id}`);
-    // console.log(user);
 }
 
 const getUnfollowers = (current, fromDB) => {
