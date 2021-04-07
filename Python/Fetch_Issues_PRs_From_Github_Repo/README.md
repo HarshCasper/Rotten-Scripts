@@ -30,7 +30,7 @@
 - Once you run the script, it may take some time to fetch the required data and save it as a .json file.
 
 ## Output
-- Terminal
+- Terminal<br>
 ![alt text](https://github.com/Jaideep07/Rotten-Scripts/blob/master/Python/Fetch_Issues_PRs_From_Github_Repo/terminalOUT.png?raw=true)
 - AllIssuesInfo.json
 ![alt text](https://github.com/Jaideep07/Rotten-Scripts/blob/master/Python/Fetch_Issues_PRs_From_Github_Repo/issuesSS.png?raw=true)
