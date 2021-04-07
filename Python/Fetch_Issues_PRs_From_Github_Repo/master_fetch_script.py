@@ -1,11 +1,10 @@
 from github import Github
 import json
-import datetime
 import sys
 
 
 def RetriveIssueData(storeHere, repoName):
-
+    ''' The funtion retrives the data of issues and returns an array '''
     issues = repoName.get_issues(state='all')
 
     for i in issues:
@@ -30,8 +29,8 @@ def RetriveIssueData(storeHere, repoName):
 
 
 def RetrivePullRequestData(storeHere, repoName):
-
-    PRs = repo.get_pulls(state='all')
+    ''' The funtion retrives the data of PRs and returns an array '''
+    PRs = repoName.get_pulls(state='all')
 
     for i in PRs:
         pr = {}
@@ -64,6 +63,7 @@ def RetrivePullRequestData(storeHere, repoName):
 
 
 def WriteToJSON(data, fileName):
+    ''' This function converts the array of dicts to json and stores it to .json file '''
     with open(str(fileName) + ".json", "w") as file:
         json.dump(data, file, indent=6)
         file.close()
