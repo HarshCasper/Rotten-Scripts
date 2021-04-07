@@ -20,8 +20,7 @@
  1. python3
  2. PyGithub
  3. json
- 4. datetime
- 5. sys
+ 4. sys
  
  ## Setup instructions
 
