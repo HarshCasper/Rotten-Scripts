@@ -18,10 +18,13 @@
 - Files changed 
 ## Dependencies
  1. python3
- 2. github
+ 2. PyGithub
  3. json
  4. datetime
  5. sys
+ <br>
+- Note: You need to generate a githubAPI token and insert(checkout the comments in script) it in the script, To generate the token check this [tutorial](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+ 
  ## Setup instructions
 
 - Install the dependencies using ```pip3 install -r requiremnts.txt```
