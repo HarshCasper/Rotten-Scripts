@@ -73,7 +73,7 @@ def WriteToJSON(data, fileName):
 if __name__ == "__main__":
 
     # Setup your github token before running the script
-    g = Github("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")
+    g = Github("***********IGHRh*****************hQ")
 
     # Final info is stored in the following datastructures
     IssuesInfo = []
