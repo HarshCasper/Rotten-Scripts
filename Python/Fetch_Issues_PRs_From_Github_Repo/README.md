@@ -39,4 +39,4 @@
 ![alt text](https://github.com/Jaideep07/Rotten-Scripts/blob/master/Python/Fetch_Issues_PRs_From_Github_Repo/prSS.png?raw=true)
 ## Author(s)
 
-Made by [Jaideep Reddy Kotla](https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/)
+Made by [Jaideep Reddy Kotla](https://www.linkedin.com/in/jaideep0707)
