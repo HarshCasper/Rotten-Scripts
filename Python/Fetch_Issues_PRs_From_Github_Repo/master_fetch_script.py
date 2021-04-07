@@ -6,7 +6,7 @@ import sys
 
 def RetriveIssueData(storeHere, repoName):
 
-    issues = repoName.get_issues(state='open')
+    issues = repoName.get_issues(state='all')
 
     for i in issues:
         issue = {}
@@ -31,7 +31,7 @@ def RetriveIssueData(storeHere, repoName):
 
 def RetrivePullRequestData(storeHere, repoName):
 
-    PRs = repo.get_pulls(state='open')
+    PRs = repo.get_pulls(state='all')
 
     for i in PRs:
         pr = {}
@@ -67,7 +67,7 @@ def WriteToJSON(data, fileName):
     with open(str(fileName) + ".json", "w") as file:
         json.dump(data, file, indent=6)
         file.close()
-    print("Successfully created ", fileName, ".json")
+    print("Successfully created " + str(fileName) + ".json")
 
 
 if __name__ == "__main__":
