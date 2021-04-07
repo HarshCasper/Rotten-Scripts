@@ -5,7 +5,7 @@ let OWNER = `HarshCasper`; // replace with repository's owner username
 let REPO_NAME = `Rotten-Scripts`; // replace with repositort's name
 let NO_OF_REQUEST = 10; // replace with no. of latest Active pull request data you want to access
 let obj;
-const accessToken = "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"; // replace with your own github access token
+const accessToken = ""; // replace with your own github access token
 const query = `query {
     repository(owner: "${OWNER}", name: "${REPO_NAME}") {
       url
