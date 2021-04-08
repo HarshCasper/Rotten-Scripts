@@ -20,7 +20,6 @@ def open_image(path):
     return resized_image
 
 
-# mouse callback function
 def draw_rectangle(event, x, y, flags, params):
     """
     Its a mouse callback function called automatically whenever
@@ -74,6 +73,7 @@ def background_sub(image):
     background = np.zeros((1, 65), np.float64)
     foreground = np.zeros((1, 65), np.float64)
 
+    
     while True:  # Runs forever until we break with Esc key on keyboard
 
         # If ROI is selected
@@ -115,4 +115,3 @@ if __name__ == '__main__':
     loc = input('Enter image path: ')
     img = open_image(loc)
     background_sub(img)
-    
