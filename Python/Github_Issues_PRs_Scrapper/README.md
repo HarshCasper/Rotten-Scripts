@@ -49,5 +49,5 @@
 
 ## Author(s)
 
-Made by [Jaideep Reddy Kotla](https://www.linkedin.com/in/jaideep0707)
+Made by Jaideep Reddy Kotla
 
