@@ -1,3 +1,4 @@
+import os
 import csv
 import click
 import requests
@@ -8,7 +9,7 @@ def run_query(token, repo):
     repo = repo.split("/")
     name = repo[1]
     owner = repo[0]
-    query = Query(name, owner)
+    query = query_string(name, owner)
     headers = {"Authorization": f"token {token}"}
     res = requests.post('https://api.github.com/graphql',
                         json={'query': query}, headers=headers)
@@ -19,7 +20,7 @@ def run_query(token, repo):
             res.status_code))
 
 
-def Query(name, owner):
+def query_string(name, owner):
     """ it built query string on given name of repo and owner of repo"""
     query = """
     {
@@ -58,8 +59,8 @@ def Query(name, owner):
 @click.argument('repo', required=True, type=str)
 def main(token, repo):
     """
-    this function take toke and repo as input and fetch email,
-    name and username and store them in csv file
+    This function takes token and repository name as input and fetch email,
+    name and username and store them in csv file \n
     usage:
     python email_scrap.py <token> <repo_name>
     """
@@ -79,6 +80,8 @@ def main(token, repo):
                 csv_writer.writerow(
                     {'Name': f"{name}", 'Username': f"{user_name}", 'Email': f"{email}"})
                 unique_user_name.add(user_name)
+    click.secho('\n-> 👍 Successfully Saved at ' + f'{os.path.abspath(os.getcwd())}',
+                fg='green', bold=True)
 
 
 if __name__ == '__main__':
