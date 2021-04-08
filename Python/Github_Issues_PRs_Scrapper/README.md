@@ -41,11 +41,11 @@
 ## Output
 
 - Terminal
-![alt text](https://ibb.co/VC2h0F9)
+[![terminal-OUT.png](https://i.postimg.cc/5NLFRZHb/terminal-OUT.png)](https://postimg.cc/jLq5W3QF)
 - AllIssuesInfo.json
-![alt text](https://ibb.co/H7zqyh1)
+[![issuesSS.png](https://i.postimg.cc/7PX3VvTc/issuesSS.png)](https://postimg.cc/JtDHr2xc)
 - AllPullRequestsInfo.json
-![alt text](https://ibb.co/7tGTvD4)
+[![prSS.png](https://i.postimg.cc/Qx9FWvgc/prSS.png)](https://postimg.cc/svzjk6N2)
 
 ## Author(s)
 
