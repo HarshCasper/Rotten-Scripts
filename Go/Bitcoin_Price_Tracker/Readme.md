@@ -6,7 +6,7 @@ A script used to fetch the live price of 1 BTC in INR, written in GOlang. [Colly
 ## Setup instructions
 
 After forking the repository on your local machine, follow these commands on your terminal:
-```
+```shell
 cd Rotten-Scripts/Go/Bitcoin_Price_Tracker
 go build main.go
 go run main.go
