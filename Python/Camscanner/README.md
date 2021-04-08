@@ -3,9 +3,9 @@
 
 + On running this script, a scanned file of the orignal image is generated after applying Adaptive Thresholding. 
 
-It is effective when an image has different lighting conditions in different areas. Here, the algorithm determines the threshold for a pixel based on a small region around it. So we get different thresholds for different regions of the same image which gives better results for images with varying illumination. 
++ It is effective when an image has different lighting conditions in different areas. Here, the algorithm determines the threshold for a pixel based on a small region around it. So we get different thresholds for different regions of the same image which gives better results for images with varying illumination. 
 
-And this is what done in the script, multiple threshold values are set up in order to give image a scanned and enhanced look.
++ And this is what done in the script, multiple threshold values are set up in order to give image a scanned and enhanced look.
 
 
 ## To run the script:
@@ -21,6 +21,6 @@ And this is what done in the script, multiple threshold values are set up in ord
     
     
 ## References:
-1. ![alt text](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html)
+1. https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html
 
-2. ![alt text](https://medium.com/@anupriyam/basic-image-thresholding-in-opencv-5af9020f2472)
+2. https://medium.com/@anupriyam/basic-image-thresholding-in-opencv-5af9020f2472
