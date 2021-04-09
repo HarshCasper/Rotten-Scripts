@@ -6,7 +6,7 @@
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-52-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-53-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -136,6 +136,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://rahulraikwar.me"><img src="https://avatars.githubusercontent.com/u/54519734?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul raikwar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=rahulraikwar00" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=rahulraikwar00" title="Documentation">📖</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/akhil-bhalerao-63b47a193/"><img src="https://avatars.githubusercontent.com/u/55273506?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Akhil Bhalerao</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=iamakkkhil" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=iamakkkhil" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/devRawnie"><img src="https://avatars.githubusercontent.com/u/43227329?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ROHIT SHARMA</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=devRawnie" title="Documentation">📖</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=devRawnie" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rupa-421"><img src="https://avatars.githubusercontent.com/u/64897164?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rupa-421</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Rupa-421" title="Documentation">📖</a></td>
   </tr>
 </table>
 
