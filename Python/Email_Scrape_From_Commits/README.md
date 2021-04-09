@@ -4,9 +4,9 @@ A simple python script to crawl all email address, name and username from a spec
 
 ## Setup instructions
 
-| Install:          |
-| ----------------- |
-| `bash install.sh` |
+| Install:                           |
+| ---------------------------------- |
+| `pip install -r requirements.txt ` |
 
 ## Run instructions
 
@@ -17,9 +17,9 @@ A simple python script to crawl all email address, name and username from a spec
 
 ## Author
 
-<b>[Rahul Raikwar](https://github.com/rahulraikwar00)</i>
+**[Rahul Raikwar](https://github.com/rahulraikwar00)**
 
 ## Disclaimers, if any
 
-- <i>This script requires a Github Personal Access Token (PAT) to verify the user</i>
-- <i>It does not store your Github Personal Access Token (PAT)</i>
+**This script requires a Github Personal Access Token (PAT) to verify the user**
+**It does not store your Github Personal Access Token (PAT)**
