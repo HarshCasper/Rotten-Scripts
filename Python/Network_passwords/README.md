@@ -1,6 +1,6 @@
 # Get Stored passwords in target system
 This python script once executed on a windows target system will send the stored network passwords via given mail.
-## packages used 
+## Packages used 
 - [subprocess](https://docs.python.org/3/library/subprocess.html)
 - [smtp](https://docs.python.org/3/library/smtplib.html)
 - [re](https://docs.python.org/3/library/re.html)
@@ -23,6 +23,9 @@ python script.py
 ```
 
 # Output
-open inbox of your given mail to see the output
+Open inbox of your given mail to see the output
 
 ![](https://i.postimg.cc/HnJhW7FJ/pic.png)
+
+## Author
+[Adithya Kurien Peter](https://github.com/aaadddiii)
