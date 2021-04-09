@@ -1,6 +1,6 @@
 # GitHub CLI
 
-`pwr` is Pull Requests Workflow on the command line. It brings OPEN, CLOSED,MERGED and other PR concepts to the terminal next to where you are already working with `git` and your code.
+`prw` is Pull Requests Workflow on the command line. It brings OPEN, CLOSED,MERGED and other PR concepts to the terminal next to where you are already working with `git` and your code.
 `prw` is available for repositories hosted on GitHub.com.
 
 ## Setup instructions
