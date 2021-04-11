@@ -21,7 +21,7 @@ image will be shown as soon as you run these command
 Output on clicking a point on image :
 <a href="https://imgur.com/VA4Y83O"><img src="https://i.imgur.com/VA4Y83O.png" title="source: imgur.com" /></a>
 
-To exit we need to click '''q'''
+```To exit we need to click "q"```
 
 # Author
 <a href="https://www.linkedin.com/in/tithi-patel-a97728199">TITHI PATEL</a>
