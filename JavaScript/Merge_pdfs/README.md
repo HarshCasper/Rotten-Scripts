@@ -20,10 +20,12 @@ Here's the ouput:
 
 ## Pdf1
 
-
+![hello](https://user-images.githubusercontent.com/60272753/114340622-a06e6380-9b75-11eb-80f9-7c03b1277c4b.PNG)
 
 ## Pdf2
 
-
+![world](https://user-images.githubusercontent.com/60272753/114340631-a401ea80-9b75-11eb-889d-b88fffeeee09.PNG)
 
 ## Merged Pdf
+
+![github-mergedpdf](https://user-images.githubusercontent.com/60272753/114340646-ab28f880-9b75-11eb-8a87-af9e460655aa.gif)
