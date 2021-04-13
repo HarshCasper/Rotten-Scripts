@@ -35,19 +35,20 @@ func main() {
 // function for scanning all Ports
 func scanAllPorts(ip string, typeOfPort string) {
 	wg.Add(65535)
-	for port := 1; port < 65535; port++ {
-		hostIp := fmt.Sprintf("%s:%d", ip, port)
-		// fmt.Println(hostIp)
+	for port := 1; port <= 65535; port++ {
+		go func(port int) {
+			defer wg.Done()
+			hostIp := fmt.Sprintf("%s:%d", ip, port)
+			// fmt.Println(hostIp)
 
-		_, err := net.DialTimeout(typeOfPort, hostIp, 10*time.Millisecond)
+			_, err := net.DialTimeout(typeOfPort, hostIp, 10*time.Millisecond)
 
-		if err == nil {
-			fmt.Printf("Port %d is open \n", port)
-		}
+			if err == nil {
+				fmt.Printf("Port %d is open \n", port)
+			}
+		}(port)
 	}
 	wg.Wait()
-
-	wg.Done()
 }
 
 // function for scanning specific Ports
