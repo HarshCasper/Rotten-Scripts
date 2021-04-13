@@ -6,7 +6,7 @@
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-56-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-57-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -140,6 +140,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/mdPial"><img src="https://avatars.githubusercontent.com/u/43095489?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Md. Pial Ahamed</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=mdPial" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=mdPial" title="Documentation">📖</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/siddhantkhare24/"><img src="https://avatars.githubusercontent.com/u/55068936?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Siddhant Khare</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Siddhant-K-code" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Siddhant-K-code" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/NovusEdge"><img src="https://avatars.githubusercontent.com/u/68768969?v=4?s=100" width="100px;" alt=""/><br /><sub><b>NovusEdge</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=NovusEdge" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/VanTekken"><img src="https://avatars.githubusercontent.com/u/20387444?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Haz</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=VanTekken" title="Code">💻</a></td>
   </tr>
 </table>
 
