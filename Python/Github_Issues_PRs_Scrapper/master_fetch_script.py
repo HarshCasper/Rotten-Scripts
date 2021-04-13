@@ -1,6 +1,7 @@
 from github import Github
 import json
 import sys
+from decouple import config
 
 
 def RetriveIssueData(storeHere, repoName):
@@ -73,7 +74,10 @@ def WriteToJSON(data, fileName):
 if __name__ == "__main__":
 
     # Setup your github token before running the script
-    g = Github("***********IGHRh*****************hQ")
+    # and set the variable in .env file
+    
+    token = config('GITHUBTOKEN')
+    g = Github(token)
 
     # Final info is stored in the following datastructures
     IssuesInfo = []
