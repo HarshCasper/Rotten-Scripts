@@ -12,5 +12,7 @@
     "csv-writer": "^1.6.0",
     "node-fetch": "^2.6.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
 }

@@ -24,9 +24,9 @@ This script written in JavaScript extracts the data like repository's link , pul
 
 ---
 
-- Replace the OWNER string with username of owner of repo you want to access the data
-- Replace the REPO_NAME with the repository's name you want to access the data
-- NO_OF_REQUEST specifies no. of PRs you want the data for.
+- navigate to the folder where script.s file is.
+- in terminal or command prompt type - node script.js OWNER_NAME REPO_NAME NO_OF_REQUEST
+- the order of variables should be same as above
 
 ## Sample Output
 

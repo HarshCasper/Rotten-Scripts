@@ -1,11 +1,12 @@
 const fetch = require("node-fetch");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
+require('dotenv').config();
 
-let OWNER = `HarshCasper`; // replace with repository's owner username
-let REPO_NAME = `Rotten-Scripts`; // replace with repositort's name
-let NO_OF_REQUEST = 10; // replace with no. of latest Active pull request data you want to access
+let input = process.argv.slice(2);
+let OWNER = input[0]; 
+let REPO_NAME = input[1]; 
+let NO_OF_REQUEST = input[2]; 
 let obj;
-const accessToken = "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"; // replace with your own github access token
 const query = `query {
     repository(owner: "${OWNER}", name: "${REPO_NAME}") {
       url
@@ -37,7 +38,7 @@ fetch("https://api.github.com/graphql", {
   body: JSON.stringify({ query }),
   headers: {
     "Content-Type": "application/json",
-    Authorization: `Bearer ${accessToken}`,
+    Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
   },
 })
   .then((res) => res.text())
