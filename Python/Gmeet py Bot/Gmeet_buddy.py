@@ -3,15 +3,15 @@
 from selenium import webdriver
 import schedule,time
 import keyboard
-import os
+from decouple import config
 #from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains, Options
 
 
 # joining Credentials
 
-username = os.environ.get('Username')       # Fetching mail id from .env
-password = os.environ.get('Your_password')  # Fetching psd from .env
+username = config('Username')       # Fetching mail id from .env
+password = config('Your_password')  # Fetching psd from .env
 
 # Saving the path of chrome driver
 Driver_path = str(input('Enter your path where the chrome drive is installed:'))
