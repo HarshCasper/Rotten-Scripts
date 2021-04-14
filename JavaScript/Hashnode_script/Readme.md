@@ -1,6 +1,6 @@
 # Hashnode Best Posts Script
 
-A Script to scrape reviews from Amazon.
+Script to store Best Posts required from Hashnode. 
 
 ## Setup
 - Clone the folder.  
