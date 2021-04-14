@@ -10,6 +10,6 @@ A Script to scrape reviews from Amazon.
 
 
 ## Output
-![output-img](https://imgur.com/p4Nf1Oi)
+![output-img](https://i.imgur.com/p4Nf1Oi.png)
 
 #### Author:- Sukriti Sood
