@@ -1,4 +1,4 @@
-# Hashnode Best Post Script
+# Hashnode Best Posts Script
 
 A Script to scrape reviews from Amazon.
 
