@@ -2,7 +2,6 @@
 ---
 
 ## About
----
 This script written in JavaScript extracts the data like repository's link, pull request Number, link to the pull request, comments on the pull request, and username of the corresponding commentors. This script extracts data for open PRs only and no. of PR to extract data is handled by the user which is 10 by default.
 
 ## Explanation of code
