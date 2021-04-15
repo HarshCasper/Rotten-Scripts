@@ -4,11 +4,14 @@
   "description": "Get list of people that have starred a repo and those who have recently unstarred",
   "main": "Stargazers.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "Stargazers_run": "node Stargazers.js"
   },
   "keywords": [
     "Stargazers"
   ],
   "author": "Madhav Jha",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }
