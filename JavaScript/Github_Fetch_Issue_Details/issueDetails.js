@@ -1,12 +1,21 @@
 const express = require("express");
 const axios = require("axios");
 const fs = require("fs");
+require("dotenv").config();
+
+let config = {
+  headers: {
+    Authorization: process.env.Authorization,
+  },
+};
+var obj = {
+  table: [],
+};
 const getDetails = async (username, repoName) => {
   const url = `https://api.github.com/repos/${username}/${repoName}/issues`;
   await axios
-    .get(url)
+    .get(url, config)
     .then(async (result) => {
-      console.log(result);
       result.data.map(async (issue) => {
         const issueCreator = issue.user.login;
         const issueAssignees = issue.assignees.map((assignee) => assignee);
@@ -19,10 +28,10 @@ const getDetails = async (username, repoName) => {
         const issueContent = issue.body;
         let issueCommentorDetails;
         // debugger
-        const commentsUrl = url + "/" + issue.number + "/comments";
+        const commentsUrl = `${url}/${issue.number}/comments`;
         await axios
-          .get(commentsUrl)
-          .then((commentData) => {
+          .get(commentsUrl, config)
+          .then(async (commentData) => {
             issueCommentorDetails = commentData.data.map((comment, index) => {
               return {
                 number: index,
@@ -34,34 +43,27 @@ const getDetails = async (username, repoName) => {
           .catch((err) => {
             throw err;
           });
-        const issueDetailsjson = {
+        let issueDetailsjson = {
           issueCreator: issueCreator,
           issueOpenDate: issueOpenDate,
           issueClosedDate: issueClosedDate,
           issueState: issueState,
           issueAssignees: issueAssignees,
           issueContent: issueContent,
+          issueCommentorDetails: issueCommentorDetails,
         };
-
-        //This is being added so to avoid all the content being placed on a single line and shouls come on
-        //Separate limes
-        const JSON_DATA = JSON.stringify(issueDetailsjson, null, 2);
-        if (fs.existsSync("issueDetails.json")) {
-          const stringifiedJson =
-            "," + JSON_DATA;
-          fs.appendFileSync("issueDetails.json", stringifiedJson);
-        } else {
-          const stringifiedJson =
-            "[" + JSON_DATA+ "]";
-          fs.writeFileSync("issueDetails.json");
-        }
+        obj.table.push(issueDetailsjson);
+        let json = JSON.stringify(obj, null, 4);
+        fs.writeFileSync("issueDetails.json", json, (err) => {
+          if (err) throw err;
+        });
       });
     })
     .catch((err) => {
-      console.log(err);
+      throw err;
     });
 };
 //Put your Username and RepoName you wanna test here
-const user = "";
-const repoName = "";
+const user = "Naman-1234";
+const repoName = "eclec";
 getDetails(user, repoName);
