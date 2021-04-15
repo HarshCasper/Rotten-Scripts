@@ -1,4 +1,4 @@
-# Script to scrape all the issues and pull requests of GitHub repo
+# GitHub-Repo Issues and PRs Scrapper
 
 The script retrieves all the vital info of issues and PRs of a given GitHub repo and stores them in a JSON file. The script captures the following data points
 
