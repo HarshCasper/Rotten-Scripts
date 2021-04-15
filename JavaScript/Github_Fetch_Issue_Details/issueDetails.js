@@ -64,6 +64,6 @@ const getDetails = async (username, repoName) => {
     });
 };
 //Put your Username and RepoName you wanna test here
-const user = "Naman-1234";
-const repoName = "eclec";
+const user = "";
+const repoName = "";
 getDetails(user, repoName);
