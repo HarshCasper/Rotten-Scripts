@@ -17,6 +17,10 @@ const getUsers = async (user, repo) => {
     while ((list.length > 0 || pageNO == 1) && pageNO < 10) {
         list = await makeRequest(`https://api.github.com/repos/${user}/${repo}/stargazers?per_page=100&page=${pageNO}`)
 
+        // if an array is not returned
+        if (list.message) {
+            return list
+        }
         users = [...users, ...list];
         pageNO++;
     }

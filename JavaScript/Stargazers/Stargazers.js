@@ -40,6 +40,10 @@ const init = async () => {
     let repoName = prompt("Enter Repo name : ");
 
     let stargazers = await github.getUsers(username, repoName);
+    if (stargazers.message) {
+        console.log("\nERROR : Either the User or the repo doesn't exist!!!");
+        return 0;
+    }
     stargazers = stargazers.map(user => user.login)
 
     let dbData = db.read(dbFileLoc);
