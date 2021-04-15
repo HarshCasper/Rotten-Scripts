@@ -15,6 +15,7 @@ const getUserInfo = async (arr) => {
             "location": userData.location
         }
         res[i] = obj;
+        console.log(`${i + 1} user added`);
     }
     return res;
 }
