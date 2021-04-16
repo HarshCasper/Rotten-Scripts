@@ -1,11 +1,11 @@
 const fetch = require("node-fetch");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
-require('dotenv').config();
+require("dotenv").config();
 
 let input = process.argv.slice(2);
-let OWNER = input[0]; 
-let REPO_NAME = input[1]; 
-let NO_OF_REQUEST = input[2]; 
+let OWNER = input[0];
+let REPO_NAME = input[1];
+let NO_OF_REQUEST = input[2];
 let obj;
 const query = `query {
     repository(owner: "${OWNER}", name: "${REPO_NAME}") {
@@ -33,16 +33,18 @@ const query = `query {
   }
   `;
 
-fetch("https://api.github.com/graphql", {
-  method: "POST",
-  body: JSON.stringify({ query }),
-  headers: {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
-  },
-})
-  .then((res) => res.text())
-  .then((body) => {
+(async function () {
+  let res;
+  try {
+    res = await fetch("https://api.github.com/graphql", {
+      method: "POST",
+      body: JSON.stringify({ query }),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+      },
+    });
+    let body = await res.text();
     obj = JSON.parse(body);
     const csvWriter = createCsvWriter({
       path: "output.csv",
@@ -54,7 +56,6 @@ fetch("https://api.github.com/graphql", {
         { id: "author", title: "username of commentor" },
       ],
     });
-
     let data = [];
     let repo = obj.data.repository.url;
     let node = obj.data.repository.pullRequests.nodes;
@@ -75,5 +76,7 @@ fetch("https://api.github.com/graphql", {
     csvWriter
       .writeRecords(data)
       .then(() => console.log("The CSV file was written successfully"));
-  })
-  .catch((error) => console.error(error));
+  } catch (err) {
+    console.log(err);
+  }
+})();
