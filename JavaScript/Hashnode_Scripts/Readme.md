@@ -10,7 +10,7 @@
 ## Setup instructions
 
 - Clone the Folder `git clone https://github.com/HarshCasper/Rotten-Scripts`
-- Change directory ```cd RottenScripts/JavaScript/Hashnode_Scripts
+- Change directory ```cd RottenScripts/JavaScript/Hashnode_Scripts```.
 - Run cmmand `npm install`.
 - Then run script using command `node script.js required_no_of_posts`.
 - `required_no_of_posts` defines the number of Posts needed.
