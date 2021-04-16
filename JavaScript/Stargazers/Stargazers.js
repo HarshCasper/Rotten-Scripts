@@ -60,6 +60,13 @@ const getNewStargazers = async (prev, stargazers) => {
     newStargazers = await getUserInfo(newStargazers)
     return newStargazers;
 }
+const addNewStargazers = (username, repoName, dbData, newStargazers) => {
+    let arr = dbData[username][repoName]["stargazers"]
+    arr = [...arr, ...newStargazers]
+
+    dbData[username][repoName]["stargazers"] = arr;
+    db.write(dbFileLoc, dbData)
+}
 
 const printLongArray = (arr, step = 100) => {
     let start = 0, end = 0;
@@ -134,7 +141,7 @@ const init = async () => {
         }
 
         // new people that have starred
-
+        addNewStargazers(username, repoName, dbData, newStargazers)
 
     } else {
         // if user's repo exists
