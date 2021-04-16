@@ -34,8 +34,17 @@ const addNewData = async (dbData, username, repoName, stargazers) => {
     dbData[username][repoName] = data;
     db.write(dbFileLoc, dbData);
 }
-const getUnstargazers = (dbData, stargazers) => {
+const getUnstargazers = (prev, stargazers) => {
+    let unstargazers = []
+    let prevName = prev.map(user => user.id);
 
+    for (let i = 0; i < prevName.length; i++) {
+        if (stargazers.indexOf(prevName[i]) == -1) {
+            unstargazers.push(prev[i])
+        }
+    }
+
+    return unstargazers;
 }
 
 const printLongArray = (arr, step = 100) => {
@@ -43,11 +52,14 @@ const printLongArray = (arr, step = 100) => {
     end = Math.min(step, arr.length);
 
     let userInp = prompt(`Do you want to see list from ${start} to ${end} (y/n): `) || "n"
-    while (userInp == "y" && end <= arr.length && start < end) {
+    while (userInp == "y" && end <= arr.length && start != end) {
         subArr = arr.slice(start, end)
         console.table(subArr, ["name", "email", "location"])
         start = end;
         end = Math.min(end + step, arr.length)
+        if (start == end) {
+            break;
+        }
         userInp = prompt(`Do you want to see list from ${start} to ${end} (y/n): `) || "n"
     }
 }
@@ -70,14 +82,13 @@ const init = async () => {
     // if user exits
     if (dbData.hasOwnProperty(username) && dbData[username].hasOwnProperty(repoName)) {
         console.log("INFO : \n");
-        // current info
-        // console.log(`${stargazers.length} people have starred this repo!`);
 
-        // // people that unstared
-        // let unstargazers = getUnstargazers(dbData, stargazers);
-        // console.log(`${unstargazers} people have unstarred this repo since ${dbData[username][repoName]["time"]}`);
+        // people that unstared
+        let unstargazers = getUnstargazers(dbData[username][repoName]["stargazers"], stargazers);
+        console.log(`${unstargazers.length} people have unstarred this repo since ${dbData[username][repoName]["time"]}`);
 
-        printLongArray(dbData[username][repoName]["stargazers"], 100);
+        // ask to print unstargazers
+        printLongArray(unstargazers, 100);
 
         // new people that have starred
 
@@ -85,7 +96,7 @@ const init = async () => {
     } else {
         // if user's repo exists
         console.log("user doesn't exist");
-        // addNewData(dbData, username, repoName, stargazers)
+        addNewData(dbData, username, repoName, stargazers)
         console.log("New data added!!");
     }
 }
