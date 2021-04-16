@@ -15,7 +15,7 @@ const getUserInfo = async (arr) => {
             "location": userData.location
         }
         res[i] = obj;
-        console.log(`${i + 1} user added`);
+        // console.log(`${i + 1} user added`);
     }
     return res;
 }
@@ -82,7 +82,7 @@ const delUnStargazers = (username, repoName, dbData, unstargazers) => {
     let arr = dbData[username][repoName]["stargazers"]
     idArr = arr.map(user => user.id)
     unstargazers = unstargazers.map(user => user.id)
-    console.log(unstargazers);
+
     for (let i = 0; i < unstargazers.length; i++) {
         let index = idArr.indexOf(unstargazers[i])
         arr.splice(index, 1);
@@ -118,16 +118,20 @@ const init = async () => {
         console.log(`${unstargazers.length} people have unstarred this repo since ${dbData[username][repoName]["time"]}`);
 
         // ask to print unstargazers
-        printLongArray(unstargazers, 100);
+        if (unstargazers.length != 0) {
+            printLongArray(unstargazers, 100);
+        }
 
         // delete people that have unStarred
         delUnStargazers(username, repoName, dbData, unstargazers)
 
-        // // new people that have starred
-        // let newStargazers = await getNewStargazers(dbData[username][repoName]["stargazers"], stargazers);
+        // new people that have starred
+        let newStargazers = await getNewStargazers(dbData[username][repoName]["stargazers"], stargazers);
 
-        // // ask to print newStargazers
-        // printLongArray(newStargazers, 100);
+        // ask to print newStargazers
+        if (newStargazers.length != 0) {
+            printLongArray(newStargazers, 100);
+        }
 
         // new people that have starred
 
@@ -135,6 +139,7 @@ const init = async () => {
     } else {
         // if user's repo exists
         console.log("user doesn't exist");
+        console.log(`Fetching ${stargazers.length} user data.... please wait ....`);
         addNewData(dbData, username, repoName, stargazers)
         console.log("New data added!!");
     }
