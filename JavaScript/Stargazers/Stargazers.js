@@ -121,9 +121,18 @@ const init = async () => {
     if (dbData.hasOwnProperty(username) && dbData[username].hasOwnProperty(repoName)) {
         console.log("\nINFO : \n");
 
+        let currentStargazers = dbData[username][repoName]["stargazers"];
+        // current DB
+        console.log(`There are ${currentStargazers.length} that have currently starred this repo.`);
+
+        // ask to print stargazers
+        if (currentStargazers.length != 0) {
+            printLongArray(currentStargazers, 100);
+        }
+
         // people that unstarred
         let unstargazers = getUnstargazers(dbData[username][repoName]["stargazers"], stargazers);
-        console.log(`${unstargazers.length} people have unstarred this repo since ${dbData[username][repoName]["time"]}`);
+        console.log(`\n${unstargazers.length} people have unstarred this repo since ${dbData[username][repoName]["time"]}`);
 
         // ask to print unstargazers
         if (unstargazers.length != 0) {
