@@ -4,13 +4,15 @@ It solves the issue #982 .
 Detects the object using python.
 
 
-
 ## Technology Stack Used
 
 
-![Python](https://img.shields.io/badge/backend-Python-yellow.svg?logo=PHP&style=flat-square)
+![Python](https://img.shields.io/badge/Python-yellow.svg?logo=PHP&style=flat-square)
 
  **PYTHON**
+ 
+## Feel free to raise any doubts regarding the solution.
+
 ### Still need help?
 
 ```
