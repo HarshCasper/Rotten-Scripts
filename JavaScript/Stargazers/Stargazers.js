@@ -15,7 +15,7 @@ const getUserInfo = async (arr) => {
             "location": userData.location
         }
         res[i] = obj;
-        // console.log(`${i + 1} user added`);
+        console.log(`${i} user added`);
     }
     return res;
 }
@@ -25,7 +25,6 @@ const addNewData = async (dbData, username, repoName, stargazers) => {
 
     let data = {
         "stargazers": stargazers,
-        "unstargazers": [],
         "time": getDate()
     }
     if (!dbData.hasOwnProperty(username)) {
@@ -55,8 +54,10 @@ const getNewStargazers = async (prev, stargazers) => {
             newStargazers.push(stargazers[i])
         }
     }
-    console.log(`${newStargazers.length} people have recently starred this repo.`);
-    console.log("Adding then to the DB.....please wait....");
+    console.log(`\n${newStargazers.length} people have recently starred this repo.`);
+    if (newStargazers.length > 0) {
+        console.log("Adding them to the DB.....please wait....");
+    }
     newStargazers = await getUserInfo(newStargazers)
     return newStargazers;
 }
@@ -102,8 +103,8 @@ const delUnStargazers = (username, repoName, dbData, unstargazers) => {
 
 const init = async () => {
     //these info will be taken through input
-    let username = "HarshCasper"//prompt("Enter Github Username: ");
-    let repoName = "Rotten-Scripts"//prompt("Enter Repo name : ");
+    let username = prompt("Enter Github Username: ");
+    let repoName = prompt("Enter Repo name : ");
 
     let stargazers = await github.getUsers(username, repoName);
     if (stargazers.message) {
@@ -118,7 +119,7 @@ const init = async () => {
 
     // if user exits
     if (dbData.hasOwnProperty(username) && dbData[username].hasOwnProperty(repoName)) {
-        console.log("INFO : \n");
+        console.log("\nINFO : \n");
 
         // people that unstarred
         let unstargazers = getUnstargazers(dbData[username][repoName]["stargazers"], stargazers);
@@ -141,15 +142,23 @@ const init = async () => {
         }
 
         // new people that have starred
-        addNewStargazers(username, repoName, dbData, newStargazers)
+        if (newStargazers.length != 0) {
+            addNewStargazers(username, repoName, dbData, newStargazers)
+        }
+
+        // update time
+        dbData[username][repoName]["time"] = getDate()
+        db.write(dbFileLoc, dbData)
 
     } else {
         // if user's repo exists
-        console.log("user doesn't exist");
+        console.log("\nuser doesn't exist");
         console.log(`Fetching ${stargazers.length} user data.... please wait ....`);
         addNewData(dbData, username, repoName, stargazers)
         console.log("New data added!!");
     }
+
+    console.log("\n---End---\n");
 }
 
 const getDate = () => {

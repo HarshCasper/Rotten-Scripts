@@ -300,7 +300,7 @@ chromedriver.exe
 node_modules
 
 #Twitter_Unfollowers
-db.json
+Twitter_Unfollowers/db.json
 
 #Stargazers
 token.js
