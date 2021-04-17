@@ -1,9 +1,8 @@
-const express = require("express");
 const axios = require("axios");
 const fs = require("fs");
 require("dotenv").config();
 
-let config = {
+const config = {
   headers: {
     Authorization: process.env.Authorization,
   },
@@ -43,7 +42,7 @@ const getDetails = async (username, repoName) => {
           .catch((err) => {
             throw err;
           });
-        let issueDetailsjson = {
+        const issueDetailsjson = {
           issueCreator: issueCreator,
           issueOpenDate: issueOpenDate,
           issueClosedDate: issueClosedDate,
@@ -53,7 +52,7 @@ const getDetails = async (username, repoName) => {
           issueCommentorDetails: issueCommentorDetails,
         };
         obj.table.push(issueDetailsjson);
-        let json = JSON.stringify(obj, null, 4);
+        const json = JSON.stringify(obj, null, 4);
         fs.writeFileSync("issueDetails.json", json, (err) => {
           if (err) throw err;
         });
