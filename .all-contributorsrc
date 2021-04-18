@@ -284,7 +284,8 @@
       "profile": "https://github.com/sohamsshah",
       "contributions": [
         "code",
-        "doc"
+        "doc",
+        "maintenance"
       ]
     },
     {
@@ -522,6 +523,53 @@
       "profile": "https://github.com/devRawnie",
       "contributions": [
         "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "Rupa-421",
+      "name": "Rupa-421",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64897164?v=4",
+      "profile": "https://github.com/Rupa-421",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "mdPial",
+      "name": "Md. Pial Ahamed",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43095489?v=4",
+      "profile": "https://github.com/mdPial",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "Siddhant-K-code",
+      "name": "Siddhant Khare",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55068936?v=4",
+      "profile": "https://www.linkedin.com/in/siddhantkhare24/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "NovusEdge",
+      "name": "NovusEdge",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68768969?v=4",
+      "profile": "https://github.com/NovusEdge",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "VanTekken",
+      "name": "Haz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20387444?v=4",
+      "profile": "https://github.com/VanTekken",
+      "contributions": [
         "code"
       ]
     }

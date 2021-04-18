@@ -1,0 +1,18 @@
+{
+  "name": "twitter_unfollowers",
+  "version": "1.0.0",
+  "description": "Twitter_Unfollowers is a script to track people that recently unfollowed you on Twitter.",
+  "main": "Twitter_Unfollowers.js",
+  "scripts": {
+    "Twitter-run": "node Twitter_Unfollowers.js"
+  },
+  "keywords": [
+    "twitter-unfollowers"
+  ],
+  "author": "madhav jha",
+  "license": "ISC",
+  "dependencies": {
+    "needle": "^2.6.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
