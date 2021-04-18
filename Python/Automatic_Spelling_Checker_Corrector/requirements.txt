@@ -1,0 +1,2 @@
+nltk==3.5
+spellchecker==0.4
