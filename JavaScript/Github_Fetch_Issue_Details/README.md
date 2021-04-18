@@ -1,3 +1,4 @@
+
 # Issue Fetch Script
 
 #### Its a script to capture the following points:
@@ -8,8 +9,21 @@
 - Issue Content
 
 
-## To use this script, Perform the following Steps:
+## Setup instructions
 - Create a .env file and put the Authorization variable as:
   - `Authorization = <Your Github Personal Token>`
 
 - Now put your username and the repository you wanna test on lines 67 and 68 in issueDetails.js.Now, you are good to go and use the following script.
+
+## Detailed explanation of script, if needed
+Script could be understood in a following manner:
+- Primarily there is a function `getDetails` in which username and repoName is passed.
+- First all the issues is obtained from that repository.
+- After that that array of issues is mapped to get all the details.
+
+## Output
+
+
+## Author
+Naman
+
