@@ -3,9 +3,10 @@
   
 ## Dependency
 
-[X] OpenCV
-[X] Numpy
-[X] Jupyter and associated packages. 
+* OpenCV
+* Numpy
+* Jupyter and associated packages.
+* Download the COCO dataset. 
 
 ## Setup instructions
 
