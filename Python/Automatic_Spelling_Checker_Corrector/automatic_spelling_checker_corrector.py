@@ -9,8 +9,8 @@ spell = SpellChecker()
 # tokens --> stores the tokenized words
 tokens = []
 
-# function to read the input file
 def readTextFile(textFilename):
+    """This function is used to read the input file"""
     global tokens
     words = []
     inputFile = open(textFilename, "r")
@@ -24,8 +24,8 @@ def readTextFile(textFilename):
     inputFile.close()
     return words
 
-# function to detect errors in the file if any
 def findErrors(textWords):
+    """This function is used to detect the errors in file if any"""
     misspelledWords = []
     for word in textWords:
         # correction() --> method of spellchecker module to correct the word
@@ -34,29 +34,32 @@ def findErrors(textWords):
 
     return misspelledWords
 
-# function to print errors
 def printErrors(errorList):
+    """This function is used to print the errors"""
+    print("---------------------")
     print("Misspelled words are:")
+    print("---------------------")
     for word in errorList:
         # candidates() --> method of spellchecker module to find suitable corrections of the word
         print(f'{word} : {spell.candidates(word)}')
 
-# function to correct errors
 def correctErrors(errorList):
+    """This function is used to correct the errors and 
+        write the corrected text in output.txt file"""
     # open a new file to write the corrected text
-    outputFile = open("output.txt","w+")
+    outputFile = open("output.txt","w")
     for word in tokens:
         if word in errorList:
             # if word is incorrect we replace it with the corrected word
             word = spell.correction(word)
         
-        # this writes text to the new output.txt file
-        outputFile.write(" ".join(tokens))
+    # this writes text to the new output.txt file
+    outputFile.write(" ".join(tokens))
 
     outputFile.close()
 
-# main function
 def main():
+    """This is the main function"""
     textFile = input("Enter text file: ")
 
     textList = readTextFile(textFile)
@@ -71,15 +74,19 @@ def main():
     printErrors(errorList)
 
     # ask if user needs to correct the text 
-    user_answer  = input("Do you want to auto correct the errors, Y/N ? ")
+    user_answer = input("Do you want to auto correct the errors, Y/N ? ")
 
     if user_answer.lower()=='y' or user_answer.lower()=='yes':
         # call to correctErrors function
         correctErrors(errorList)
+        print("-------------------------------------------------")
         print("Check the output.txt file for the corrected text.")
+        print("-------------------------------------------------")
         print("Thankyou for using spelling checker program.")
     else:
+        print("--------------------------------------------")
         print("Thankyou for using spelling checker program.")
+        print("--------------------------------------------")
  
 # call to the main function
 main()
