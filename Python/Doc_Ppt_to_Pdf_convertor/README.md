@@ -22,5 +22,5 @@ $ python ppttopdf.py "file1.pptx" "file2.pdf" # 'file1.pptx' is the PPT file you
 ...
 ```
 
-It will create a new file with target name so no need to copy your source file
-
+- It will create a new file with target name so no need to copy your source file
+- you may also require to have installed Powerpoint and/or Word applications on your machine
