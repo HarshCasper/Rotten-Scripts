@@ -1,31 +1,27 @@
-# Object_Detection
+# Object Detection
+  A really basic code for Object Detection using OpenCV. 
+  
+## Dependency
 
-It solves the issue #982 .
-Detects the object using python.
+[x] OpenCV
+[x] Numpy
+[x] Jupyter and associated packages. 
+
+## Setup instructions
+
+1. A virtual environment (recommended)
+2. pip install OpenCV and Numpy
+3. Open the Jupyter Notebook.
+4. The Steps, details and guidelines can be found in comments.
 
 
-## Technology Stack Used
+## Output
 
+![image](https://user-images.githubusercontent.com/47255445/115255677-22e5bd00-a14c-11eb-99f5-07d7f8566c1e.png)
 
-![Python](https://img.shields.io/badge/Python-yellow.svg?logo=PHP&style=flat-square)
-
- **PYTHON**
  
-## Feel free to raise any doubts regarding the solution.
 
-### Still need help?
+## Author(s)
 
-```
+Made By (https://www.linkedin.com/in/neha-kumari-09415a16b/)
 
-  if (needHelp === true) {
-     var emailId = "2911nehakumari@gmail.com";
-     // email is the best way to reach out to me.
-     sendEmail(emailId);
-  }
-
-```
-
-  [![Instagram](https://img.shields.io/static/v1.svg?label=follow&message=@neha7_kashyap&color=grey&logo=instagram&style=flat&logoColor=white&colorA=critical)](https://www.instagram.com/neha7_kashyap/) [![LinkedIn](https://img.shields.io/static/v1.svg?label=connect&message=@neha-kumari-09415a16b/&color=9cf&logo=linkedin&style=flat&logoColor=white&colorA=blue)](https://www.linkedin.com/in/neha-kumari-09415a16b/) [![Twitter](https://img.shields.io/static/v1.svg?label=connect&message=@Neha_kumari_7&color=grey&logo=twitter&style=flat&logoColor=white&colorA=critical)](https://twitter.com/Neha_kumari_7)
-
-
-******
