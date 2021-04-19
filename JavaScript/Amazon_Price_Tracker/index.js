@@ -41,8 +41,4 @@ const watchPrice = (priceTaget, url, schedule = '*/5 * * * * *') => {
 };
 
 
-watchPrice( 53.99,
-    'https://www.amazon.com/Toshiba-HDTB420XK3AA-Canvio-Portable-External/dp/B079D3D8NR/ref=sr_1_6?dchild=1&keywords=hardisk&qid=1617019368&sr=8-6',
 
-
-);

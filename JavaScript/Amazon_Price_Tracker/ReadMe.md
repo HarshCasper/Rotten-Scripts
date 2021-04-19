@@ -1,9 +1,13 @@
+# Amazon Price Tracker
 
-## Amazon-Price-Tracker
-# Description
-An script used for tracking price of products on amazon.
-# Setup 
-In this Nodemailer Module is used. It is a module for Node.js applications to allow easy as cake email sending.
+A Script to track prices of products from Amazon.
+
+## Setup
+1. Clone the folder.  
+2. Open command line and change the directory to your folder by using ```cd foldername```.
+3. Run the command ```npm install```.
+4. Then run the script using command ```node index.js```.
+
 # Output
 ![output-video] https://urlzs.com/9WgxH
 ![img] https://urlzs.com/gqyCG
