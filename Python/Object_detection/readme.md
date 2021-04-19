@@ -3,9 +3,9 @@
   
 ## Dependency
 
-[x] OpenCV
-[x] Numpy
-[x] Jupyter and associated packages. 
+[X] OpenCV
+[X] Numpy
+[X] Jupyter and associated packages. 
 
 ## Setup instructions
 
