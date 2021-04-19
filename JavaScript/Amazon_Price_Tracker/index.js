@@ -39,6 +39,3 @@ console.log(nodemailer.getTestMessageUrl(info));
 const watchPrice = (priceTaget, url, schedule = '*/5 * * * * *') => {
     cron.schedule(schedule, () => fetchPrice(url, priceTaget));
 };
-
-
-
