@@ -63,7 +63,7 @@ const init = async () => {
 
     let overlapFollowers = getOverlappingFollowers(user1Followers, user2Followers);
 
-    console.log(`\n\nThere are ${overlapFollowers.length} Overlapping followers!!! \n`);
+    console.log(`There are ${overlapFollowers.length} Overlapping followers!!! \n`);
     printLongArray(overlapFollowers);
     console.log("\n---END---\n");
 
