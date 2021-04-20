@@ -1,5 +1,9 @@
 const needle = require('needle');
-const getUserId = async (username, bearerToken) => {
+const api = require("./apiTokens")
+
+const bearerToken = api.data.bearer;
+
+const getUserId = async (username) => {
     let endpointURL = "https://api.twitter.com/2/users/by?usernames="
     const params = {
         usernames: `${username}`,
@@ -20,7 +24,7 @@ const getUserId = async (username, bearerToken) => {
         throw new Error('Unsuccessful request')
     }
 }
-const getFollowers = async (userId, bearerToken) => {
+const getFollowers = async (userId) => {
     let url = `https://api.twitter.com/2/users/${userId}/followers`;
     let users = [];
     let params = {
