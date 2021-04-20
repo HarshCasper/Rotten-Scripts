@@ -1,7 +1,7 @@
 {
   "name": "github_good_first_issues",
   "version": "1.0.0",
-  "description": "",
+  "description": "github_good_first_issues is a Script to scrap Good First Issues from GitHub Repositories",
   "main": "Github_Good_First_Issues.js",
   "scripts": {
     "Github_Good_First_Issues_run": "node Github_Good_First_Issues.js"
@@ -10,5 +10,9 @@
     "Github_Good_First_Issues"
   ],
   "author": "Madhav Jha",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "2.6.1",
+    "prompt-sync": "4.2.0"
+  }
 }
