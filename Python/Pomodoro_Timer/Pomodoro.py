@@ -4,13 +4,8 @@ import time
 host_path = r"C:\Windows\System32\drivers\etc\hosts"
 
 # URL of websites to block
-block_list = [
-    'www.facebook.com', 'facebook.com',
-    'www.youtube.com', 'youtube.com',
-    'www.gmail.com', 'gmail.com',
-    'www.instagram.com', 'instagram.com',
-    'www.twitter.com', 'twitter.com'
-]
+with open('block_urls.txt', 'r') as url_file:
+    block_list = [url.strip() for url in url_file]
 
 # redirecting above URLs to this localhost to ensure blocking
 redirect = "127.0.0.1"
@@ -22,7 +17,6 @@ def block_websites():
     the file if it is not already present and redirect it to the localhost
     for blocking
     """
-
     try:
         # Opening the host file in reading and writing mode
         with open(host_path, 'r+') as h_file:
@@ -56,13 +50,21 @@ def remove_websites():
     and removing the changes we made before
     """
     try:
+        # Opening the host file in reading and writing mode
         with open(host_path, "r+") as file:
+            # making each line of file into a list
             content = file.readlines()
+
+            # sets the file pointer at the beginning of the file
             file.seek(0)
+
+            # Traversing through each line of the host file and
+            # checking for the websites to be blocked
             for lines in content:
                 if not any(website in lines for website in block_list):
                     file.write(lines)
-                    # print('written')
+
+            # Truncating the file to its original size
             file.truncate()
 
     finally:
@@ -74,7 +76,6 @@ def pomodoro():
     This function has the implementation of the user-friendly Pomodoro timer
     along with the website blocking functionality.
     """
-
     print('\n------------------ POMODORO TIMER ------------------\n')
     print('\nPomodoro timer helps to break down your work into 25 minutes of '
           'high focus intervals separated by short breaks of 5 minutes.')
@@ -93,7 +94,7 @@ def pomodoro():
             else:
                 enable = ''
 
-        _ = input('\nPress any key to start the timer: ')
+        input('\nPress any key to start the timer: ')
         cycle += 1
 
         # Setting a 25 minute timer
