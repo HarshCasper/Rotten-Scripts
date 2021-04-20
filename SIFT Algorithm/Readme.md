@@ -13,7 +13,7 @@
 
 ## Output
 
-<img src="https://i.ibb.co/SJ1rfC3/Input-Image.png" width=450/> <img src="https://i.ibb.co/VHgMqWN/Output-image.png" width=450/>
+![](https://i.ibb.co/5XQT3Qb/Input-Image.png) ![](https://i.ibb.co/6g3cWkk/Output-image.png)
 ![](https://i.ibb.co/kMFG4gX/Output-SIFT.png)
 ## Author
 
