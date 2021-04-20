@@ -9,8 +9,10 @@
 
 ## Running the script:
 
+- You can add/remove website URLs from ```block_urls.txt```  according to your own choice.
+
 ```sh
-$ python pomodoro_timer.py
+$ python Pomodoro.py
 ```
 
 ## Working screenshots:
@@ -19,8 +21,7 @@ $ python pomodoro_timer.py
 
 ![Image](https://i.imgur.com/YWycEPW.png)
 
-
 ## Author:
-[Rohini Rao](https://github.com/RohiniRG)
 
+[Rohini Rao](https://github.com/RohiniRG)
 
