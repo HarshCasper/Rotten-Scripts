@@ -1,8 +1,21 @@
 const prompt = require("prompt-sync")();
 const twt = require("./twitterFunc")
 
-const printLongArray = (arr) => {
+const printLongArray = (arr, step = 100) => {
+    let start = 0, end = 0;
+    end = Math.min(step, arr.length);
 
+    let userInp = prompt(`Do you want to see list from ${start} to ${end} (y/n): `) || "n"
+    while (userInp == "y" && end <= arr.length && start != end) {
+        subArr = arr.slice(start, end)
+        console.table(subArr)
+        start = end;
+        end = Math.min(end + step, arr.length)
+        if (start == end) {
+            break;
+        }
+        userInp = prompt(`Do you want to see list from ${start} to ${end} (y/n): `) || "n"
+    }
 }
 
 const getOverlappingFollowers = (arr1, arr2) => {
