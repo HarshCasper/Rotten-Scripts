@@ -2,12 +2,12 @@
 
 **Twitter_Followers_Overlap** a script to list the followers that are common between two twitter users.
 - It uses Twitter API to fetch followers of any user *(provided as input)*.
-- Then compares them to gives names of people that are common between both the users.
+- Then compares them to give names of people that are common between both the users.
 
 ## Setup instructions
 
 - Get your [Twitter developer account](https://developer.twitter.com/en) and follow the steps there to generate your **bearer key**
-- In a file named `apiTokens.js` in the Twitter_Followers_Overlap folder, enter your bearer key : ![File content]()
+- In a file named `apiTokens.js` in the Twitter_Followers_Overlap folder, enter your bearer key : ![File content](https://i.imgur.com/qGWVd7h.png)
 - Open terminal and do the following : 
 - `cd Rotten-Scripts\JavaScript\Twitter_Followers_Overlap`
 - Run `npm install` to install all necessary dependencies
@@ -15,7 +15,7 @@
 
 ## Output
 
-![Output Pic]()
+![Output Pic](https://i.imgur.com/9klb2d9.png)
 
 ## Author(s)
 
