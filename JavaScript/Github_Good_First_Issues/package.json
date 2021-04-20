@@ -1,0 +1,14 @@
+{
+  "name": "github_good_first_issues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Github_Good_First_Issues.js",
+  "scripts": {
+    "Github_Good_First_Issues_run": "node Github_Good_First_Issues.js"
+  },
+  "keywords": [
+    "Github_Good_First_Issues"
+  ],
+  "author": "Madhav Jha",
+  "license": "ISC"
+}
