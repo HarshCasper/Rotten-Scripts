@@ -44,4 +44,28 @@ const getRepoViaMethod = async (method, username) => {
     return []
 }
 
-module.exports = { getRepoViaMethod }
+const getIssues = async (arr) => {
+    let list = []
+    for (let i = 0; i < arr.length; i++) {
+
+        let url = `https://api.github.com/repos/${arr[i]["owner"]}/${arr[i]["name"]}/issues?labels=good first issue`
+
+        let issues = await makeRequest(url)
+        issues = issues.map(issue => {
+            return {
+                "title": issue["title"],
+                "url": issue["html_url"]
+            }
+        })
+
+        let data = {
+            "repoOwner": arr[i]["owner"],
+            "repoName": arr[i]["name"],
+            "issues": issues
+        }
+        list.push(data)
+    }
+    return list
+}
+
+module.exports = { getRepoViaMethod, getIssues }

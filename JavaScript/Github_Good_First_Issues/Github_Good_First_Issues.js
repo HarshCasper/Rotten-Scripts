@@ -12,9 +12,9 @@ const init = async () => {
      * 3. fetch issues with "Good first issues" label
      * 4. display them
     */
-    console.log("\n================================");
-    console.log("----Github Good First Issues----");
-    console.log("================================\n");
+    console.log("\n================================")
+    console.log("----Github Good First Issues----")
+    console.log("================================\n")
 
 
     console.log("1. From the JSON file in the folder")
@@ -29,9 +29,9 @@ const init = async () => {
     }
 
     let repo = await git.getRepoViaMethod(method, username)
-    console.table(repo);
-    // let issues = getIssues(repo)
-
+    console.table(repo)
+    let issues = await git.getIssues(repo)
+    // console.table(issues)
     // printIssues(issues);
 }
 
