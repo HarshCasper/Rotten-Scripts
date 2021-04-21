@@ -1,17 +1,21 @@
 import requests
+import decouple
 
 req_headers = {}
 
 
 def godaddy_credentials():
     """
-    Enter you godaddy API credentials inorder to use the URL
+    This functions reads your credentials from .env file
     """
     global req_headers
 
-    print("\n\t::: Godaddy Credentials :::")
-    api_key = input("\nEnter your API Key: ")
-    api_secret = input("Enter your SECRET Key: ")
+    print("\n\t::: Reading Godaddy Credentials :::")
+
+    api_key = decouple.config("API_KEY")
+    api_secret = decouple.config("API_SECRET")
+    # api_key = input("\nEnter your API Key: ")
+    # api_secret = input("Enter your SECRET Key: ")
 
     req_headers = {
         "Authorization": f"sso-key {api_key}:{api_secret}",
