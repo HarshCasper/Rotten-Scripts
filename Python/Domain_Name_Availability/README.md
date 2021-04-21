@@ -3,15 +3,13 @@
 - The python script uses GoDaddy's API to get all the domain names which are available according to the keyword given by user.
 - All the results are stored in a ```.txt``` file, named after the keyword.
 
-## Requirements:
 
-- Inorder to fetch data, user has to put in their API key and secret key, when prompted.
+## Setup
 
-- The packages required for running this script can be installed by running the following file
-
-```sh
-    $ pip install -r requirements.txt
-```
+- A virtual environment.
+- `pip install -r requirements.txt`
+- Generate your GoDaddy API KEY and Secret KEY from [here](https://developer.godaddy.com/keys)
+- Paste the token in a `.env` file (Take [`.env.example`](.env.example) as an example)
 
 ## Running the script:
 
@@ -22,9 +20,9 @@
 
 ## Working screenshots:
 
-![Image](https://i.imgur.com/6AOon4M.jpg)
+![Image](https://i.imgur.com/mZcXwJZ.png)
 
-![Image](https://i.imgur.com/ZEm6YDo.png)
+![Image](https://i.imgur.com/BUzocy9.png)
 
 ## Author:
 
