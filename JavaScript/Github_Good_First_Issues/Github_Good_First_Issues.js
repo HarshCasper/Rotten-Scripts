@@ -1,6 +1,7 @@
 const prompt = require("prompt-sync")()
+const git = require("./githubFunc")
 
-const init = () => {
+const init = async () => {
     /**
      * 1. ask user from three options
      * a. Having a JSON File where all the repositories are stored.
@@ -16,20 +17,22 @@ const init = () => {
     console.log("================================\n");
 
 
-    console.log("1. From the JSON file in the folder (enter 1)")
-    console.log("2. From the trending page of Github (enter 2)")
-    console.log("3. From the starred repo of an user (enter 3)")
+    console.log("1. From the JSON file in the folder")
+    console.log("2. From the trending page of Github")
+    console.log("3. From the starred repo of an user")
     let method = prompt("Choose method to fetch repo : ")
 
     let username = null;
     if (Number(method) == 3) {
-        username = prompt("\nEnter github username : ")
+        console.log("\n")
+        username = prompt("Enter github username : ")
     }
 
-    let repo = getRepoViaMethod(method, username)
-    let issues = getIssues(repo)
+    let repo = await git.getRepoViaMethod(method, username)
+    console.table(repo);
+    // let issues = getIssues(repo)
 
-    printIssues(issues);
+    // printIssues(issues);
 }
 
 // entry function
