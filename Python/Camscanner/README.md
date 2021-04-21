@@ -1,4 +1,5 @@
 # Generate Scanned Image
+
 ## This script is used to generate a scanned copy of the image provided.
 
 + On running this script, a scanned file of the orignal image is generated after applying Adaptive Thresholding. 
@@ -9,18 +10,15 @@
 
 
 ## To run the script:
-1. Install the dependencies by running following command in terminal.
 
-   `pip install opencv-python`
-   `pip install numpy`
-   `pip install matplotlib`
-   
-2. Run the script.
+1. Setup a virtual environment.
+2. Install the dependencies by running ```pip3 install -r requirements.txt```
+3. Run the script.
 
-    `python camscanner.py \<filename\>`
-    
-    
+```sh
+python camscanner.py \<filename\>
+```
+       
 ## References:
-1. https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html
 
-2. https://medium.com/@anupriyam/basic-image-thresholding-in-opencv-5af9020f2472
+For Thresholding, consider going through [OpenCV Doecumantation](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html) and this [Article](https://medium.com/@anupriyam/basic-image-thresholding-in-opencv-5af9020f2472).
