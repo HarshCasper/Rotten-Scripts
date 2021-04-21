@@ -1,4 +1,4 @@
-from os.path import abspath, isdir, isfile, getsize
+from os.path import abspath, isdir, isfile, getsize, splitext
 from os import listdir
 
 class SelectFiles:
@@ -76,6 +76,19 @@ class SelectFiles:
             for key in files.copy():
                 if getsize(files[key]["path"]) > size:
                     files.pop(key)
+        
+        elif filter_argument == "filename":
+
+            for key in files.copy():
+                if filter_value not in files[key]["name"]:
+                    files.pop(key)
+        
+        elif filter_argument == "extension":
+            
+            for key in files.copy():
+                ext = splitext(files[key]["name"])[1]
+                if ext not in filter_value:
+                    files.pop(key)
             
         return files
 
@@ -97,7 +110,7 @@ class SelectFiles:
             if self.FILTERS[key]["apply"]:
                 files = SelectFiles.apply_filter(files, key, self.FILTERS[key]["value"])
         
-        print(f"Filtered files: {len(files)}")
+        print(f"\nFiltered files: {len(files)}\n")
         
         count = 1
         for key in files:
@@ -116,7 +129,14 @@ class SelectFiles:
 
         elif key == "extension":
             if value != "":
-                return value.split(" ")
+                extensions = []
+                for ext in value.split():
+                    if ext[0] != ".":
+                        extensions.append("." + ext)
+                    else:
+                        extensions.append(ext)
+
+                return extensions
 
         elif key == "time_of_modification":
             if value != "" and value:
