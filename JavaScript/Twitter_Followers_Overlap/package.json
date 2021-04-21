@@ -1,0 +1,15 @@
+{
+  "name": "twitter_followers_overlap",
+  "version": "1.0.0",
+  "description": "A script to list the followers that are common between two twitter users.",
+  "main": "twitter_followers_overlap.js",
+  "scripts": {
+    "twitter_followers_overlap_run": "node twitter_followers_overlap.js"
+  },
+  "author": "Madhav Jha",
+  "license": "ISC",
+  "dependencies": {
+    "needle": "^2.6.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
