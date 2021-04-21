@@ -4,7 +4,7 @@ const chalk = require("chalk")
 
 const printIssues = (arr) => {
     for (let i = 0; i < arr.length; i++) {
-        console.log(chalk.yellow(`\n\n${i + 1}. ${arr[i]["repoOwner"]}/${arr[i]["repoName"]} : `))
+        console.log(chalk.yellow(`\n\n${i + 1}. ${arr[i]["repoOwner"]}/${arr[i]["repoName"]} (${chalk.white(arr[i]["issues"].length)}) : `))
 
         let issues = arr[i]["issues"]
         if (issues.length == 0) {
@@ -48,7 +48,7 @@ const init = async () => {
     let repo = await git.getRepoViaMethod(method, username)
     let issues = await git.getIssues(repo)
 
-    console.log("\nINFO : ");
+    console.log(`\nINFO : ${chalk.yellow(repo.length)} repository(s) found!`);
     printIssues(issues);
 
     console.log("\n---END---\n");
