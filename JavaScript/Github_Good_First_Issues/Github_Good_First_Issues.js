@@ -1,5 +1,22 @@
 const prompt = require("prompt-sync")()
 const git = require("./githubFunc")
+const chalk = require("chalk")
+
+const printIssues = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(chalk.yellow(`\n\n${i + 1}. ${arr[i]["repoOwner"]}/${arr[i]["repoName"]} : `))
+
+        let issues = arr[i]["issues"]
+        if (issues.length == 0) {
+            console.log(chalk.red("  None found!!"))
+            continue
+        }
+        for (let j = 0; j < issues.length; j++) {
+            console.log(chalk.blue(`\n  ${j + 1}. ${issues[j]["title"]} `))
+            console.log(`  URL: ${chalk.green(issues[j]["url"])} `)
+        }
+    }
+}
 
 const init = async () => {
     /**
@@ -24,15 +41,17 @@ const init = async () => {
 
     let username = null;
     if (Number(method) == 3) {
-        console.log("\n")
         username = prompt("Enter github username : ")
     }
 
+    console.log("\n...Fetching Data....Please wait...\n");
     let repo = await git.getRepoViaMethod(method, username)
-    console.table(repo)
     let issues = await git.getIssues(repo)
-    // console.table(issues)
-    // printIssues(issues);
+
+    console.log("\nINFO : ");
+    printIssues(issues);
+
+    console.log("\n---END---\n");
 }
 
 // entry function

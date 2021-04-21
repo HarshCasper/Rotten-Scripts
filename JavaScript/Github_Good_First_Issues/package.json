@@ -12,6 +12,7 @@
   "author": "Madhav Jha",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.1",
     "node-fetch": "2.6.1",
     "prompt-sync": "4.2.0"
   }
