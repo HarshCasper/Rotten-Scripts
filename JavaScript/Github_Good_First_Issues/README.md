@@ -22,7 +22,18 @@ There are 3 ways to fetch repositories
 
 ## Output
 
-![Output Pic](https://i.imgur.com/Bcfvpu4.png)
+### Method 1: via DB
+
+![ Method 1](https://i.imgur.com/eeAq9FN.png)
+
+### Method 2: Github Trending
+
+![ Method 2.1](https://i.imgur.com/HFlGh6j.png)
+![ Method 2.2](https://i.imgur.com/3u8hXnv.png)
+
+### Method 3: Starred repo(s) from user
+
+![ Method 3](https://i.imgur.com/WJaCm5F.png)
 
 ## Author(s)
 
