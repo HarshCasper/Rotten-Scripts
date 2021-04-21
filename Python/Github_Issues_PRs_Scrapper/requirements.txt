@@ -1,0 +1,4 @@
+PyGithub==1.54.1
+python-decouple==3.4
+json
+sys
