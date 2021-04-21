@@ -33,11 +33,10 @@ const init = async () => {
     console.log("----Github Good First Issues----")
     console.log("================================\n")
 
-
-    console.log("1. From the JSON file in the folder")
-    console.log("2. From the trending page of Github")
-    console.log("3. From the starred repo of an user")
-    let method = prompt("Choose method to fetch repo : ")
+    console.log("1. DB file in the folder")
+    console.log("2. Trending page of Github")
+    console.log("3. Starred repo of an user")
+    let method = prompt("Choose method to fetch repo from: ")
 
     let username = null;
     if (Number(method) == 3) {

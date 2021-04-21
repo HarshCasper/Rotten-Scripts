@@ -1,6 +1,7 @@
 const fetch = require("node-fetch")
 const githubToken = require("./token.js")
 const parser = require("node-html-parser")
+const db = require("./DB")
 
 const makeRequest = async (url) => {
     let res = await fetch(url,
@@ -11,10 +12,6 @@ const makeRequest = async (url) => {
         }
     )
     return res.json()
-}
-
-const getRepoViaJson = () => {
-
 }
 
 const fetchHtml = async () => {
@@ -66,7 +63,7 @@ const getRepoFromStarred = async (username) => {
 const getRepoViaMethod = async (method, username) => {
     method = Number(method)
     if (method == 1) {
-        return getRepoViaJson()
+        return db
     } else if (method == 2) {
         return getRepoFromTrending()
     } else if (method == 3) {
