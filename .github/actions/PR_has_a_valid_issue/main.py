@@ -1,25 +1,36 @@
 import os, re, requests
 
-pattern = "#\d+"  # Used pattern to search for Issues.
+# Used pattern to search for Issues.
+pattern = "#\d+"
 
-body = os.getenv("INPUT_PRBODY")  # PR body
-url  = os.getenv("INPUT_PRURL")   # PR URL
+# PR body
+body = os.getenv("INPUT_PRBODY")
+# PR URL
+url  = os.getenv("INPUT_PRURL")
 
 issue_num = re.search(pattern, body)[0].replace("#", "")
 
 # url list will be something like this
 # ['https:', '', 'api.github.com', 'repos', 'owner', 'repo-name']
-url = url.split("/")[:-2]               # Split URL using slashes
-url[2] = url[2].replace("api.", "")     # Replace API URL with HTML URL
-url.pop(3)                              # Get rid of "repos" record
-url = "/".join(url)                     # Reattach URL pieces
-url += "/issues/{}".format(issue_num)   # Add issue number
+# Split URL using slashes
+url = url.split("/")[:-2]
+# Replace API URL with HTML URL
+url[2] = url[2].replace("api.", "")
+# Get rid of "repos" record
+url.pop(3)
+# Reattach URL pieces
+url = "/".join(url)
+# Add issue number
+url += "/issues/{}".format(issue_num)
 
-valid_code = 0                          # Is valid code
+# Is valid code
+valid_code = 0
 response = requests.get(url)
-if response.status_code == 200:         # Check if not a 404 page
+# Check if not a 404 page
+if response.status_code == 200:
     print("status code is 200")
-    if response.url == url:             # Check if not redirected to a pull request page
+    # Check if not redirected to a pull request page
+    if response.url == url:
         print("URLS are matched")
         # Check if Issue is Open not Closed
         text = response.text
@@ -34,5 +45,3 @@ else:
 print("Valid flag is:", valid_code)
 
 print(f"::set-output name=valid::{valid_code}")
-        
-        

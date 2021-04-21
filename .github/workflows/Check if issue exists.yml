@@ -22,7 +22,7 @@ jobs:
         run: |
           echo $Github_Token > mytoken.txt
           gh auth login --with-token < mytoken.txt
-          gh pr edit $PRNUM --add-label "PR:Ready-to-Merge"
+          gh pr edit $PRNUM --add-label "PR:Ready-to-Review"
           gh pr edit $PRNUM --remove-label "PR:No-Issue"
           rm mytoken.txt
         env:
