@@ -43,15 +43,25 @@ class SelectFiles:
             
     @staticmethod
     def list_all_files(path):
-        """Returns a List object of all the files present at the path argument"""
+        """Returns a Dict object of all the files present at the path argument"""
+        
+        path = abspath(path)
 
         if not isdir(path):
             raise NotADirectoryError("Invalid value passed to path argument")
         
-        path = abspath(path)
+        files = {}
+        count = 1
+        for file in listdir(path):
+            abs_path = "{}/{}".format(path, file)
+            if isfile(abs_path):
+                files[count] = {
+                    "name": file,
+                    "path": abs_path, 
+                }
+            count += 1
 
-        return ["{}/{}".format(path, file) for file in listdir(path) if isfile(f"{path}/{file}")]
-
+        return files
 
     @staticmethod
     def apply_filter(files, filter_argument, filter_value):
@@ -61,8 +71,13 @@ class SelectFiles:
         if filter_argument == "filesize":
             # Convert filesize from Kb to Bytes
             size = filter_value*1024
+
+            # Removes the instances of files which does not match the criteria
+            for key in files.copy():
+                if getsize(files[key]["path"]) > size:
+                    files.pop(key)
             
-            return [file for file in files if getsize(file) <= size]
+        return files
 
 
     def filter(self, path=None):
@@ -77,14 +92,18 @@ class SelectFiles:
         if len(files) == 0:
             return []
         
+        # Apply all filters
         for key in self.FILTERS:
             if self.FILTERS[key]["apply"]:
                 files = SelectFiles.apply_filter(files, key, self.FILTERS[key]["value"])
         
-        print("Filtered files: ")
-        print(*files, sep="\n")
+        print(f"Filtered files: {len(files)}")
+        
+        count = 1
+        for key in files:
+            print(f"{count}. {files[key]['name']}")
+            count += 1
 
-    
     def validate(self, value, key):
         """Returns the value as it is, if it is valid or raises a ValueError"""
 
@@ -105,7 +124,3 @@ class SelectFiles:
             # TODO
 
         return value
-
-def select_files(files):
-    """Selects files from the passed object based on different criterion"""
-    pass
