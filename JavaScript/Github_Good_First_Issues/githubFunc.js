@@ -1,5 +1,6 @@
 const fetch = require("node-fetch")
 const githubToken = require("./token.js")
+const parser = require("node-html-parser")
 
 const makeRequest = async (url) => {
     let res = await fetch(url,
@@ -16,8 +17,38 @@ const getRepoViaJson = () => {
 
 }
 
-const getRepoFromTrending = () => {
+const fetchHtml = async () => {
+    let res = await fetch("https://github.com/trending")
+    let body = await res.text()
+    return body
+}
 
+const getRepoFromTrending = async () => {
+    let htmlData = await fetchHtml()
+    htmlData = parser.parse(htmlData);
+
+    let repoList = []
+    let articles = htmlData.querySelectorAll("article")
+    articles.forEach(element => {
+
+        let h1 = element.querySelectorAll("h1")[0]
+        let a = h1.querySelectorAll("a")[0]
+
+        let repoStr = a.innerText.trim();
+        repoStr = repoStr.split("/")
+
+        let owner = repoStr[0].trim()
+        let name = repoStr[1].replace("\n", "").trim()
+        let data = {
+            "owner": owner,
+            "name": name,
+            "url": `https://github.com/${owner}/${name}`
+        }
+        repoList.push(data)
+
+    });
+
+    return repoList
 }
 
 const getRepoFromStarred = async (username) => {
