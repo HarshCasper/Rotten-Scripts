@@ -2,6 +2,7 @@
 
 # 📌 Javascript scripts associated with the project: 
 
+- [Active Pull Request Commentors](Active_pull_request_commentors)
 - [Amazon Review Scrapper](Amazon_Review_Scrapper)
 - [Automate Tinder](Automate_Tinder)
 - [Base64 Encoder Decoder](Base64_Encoder_Decoder)
@@ -14,11 +15,17 @@
 - [Edit a Webpage](Edit_Webpage)
 - [Extract Code Comments](Extract_Comments)
 - [Follow automatically on Instagram](Follow_Instagram)
+- [Github Good First Issues extractor](Github_Good_First_Issues)
 - [Github Graph Populator](GitHub_Graph_Populator)
+- [Who unfollowed you on Github](Github_Unfollowers)
 - [HTML to Markdown](Html_to_Markdown)
 - [Like Posts automatically on Instagram](Instagram_Like)
 - [ROT13 Decryption](ROT13_Decryption)
 - [RSA Key Pair Generator](RSA_Key_Pair_Generator)
-- [Send Emails](Send_Emails)     
+- [Send Emails](Send_Emails)    
+- [List of those who starred and un-starred a repo](Stargazers) 
+- [Twitter Common Followers for two users](Twitter_Followers_Overlap)
+- [Who unfollowed you on Twitter](Twitter_Unfollowers)
+- [Update README With Hashnode Blogs](Update_README_With_Hashnode_Blogs)
 - [Who don't follow you on Instagram](Who_Don't_Follow_You)
-- [Who unfollowed you on Github](Github_Unfollowers)
+
