@@ -1,6 +1,15 @@
 const prompt = require("prompt-sync")()
 const scrapper = require("./scrapper")
-const init = () => {
+
+const displayHackathonsInfo = () => {
+
+}
+
+const displayProjectInfo = () => {
+
+}
+
+const init = async () => {
     /*
      * 1.get hackathons link as input
      * 2.get hackathons html page data
@@ -9,14 +18,14 @@ const init = () => {
      * 5.display project data 
      */
     let hackathonsLink = prompt("Enter DevPost link : ")
-    let hackathonsData = scrapper.getHackathonsData(hackathonsLink)
+    let hackathonsData = await scrapper.getHackathonsData(hackathonsLink)
+    displayHackathonsInfo(hackathonsData)
 
     let hackathonsProjectsURL = `${hackathonsLink} + /project-gallery`
-    let projectLinks = scrapper.getProjects(hackathonsProjectsURL)
-    let projectData = scrapper.getProjectsData(hackathonsProjectsURL)
+    let projectLinks = await scrapper.getProjects(hackathonsProjectsURL)
+    let projectData = await scrapper.getProjectsData(projectLinks)
 
     displayProjectInfo(projectData)
-
 }
 
 // entry function
