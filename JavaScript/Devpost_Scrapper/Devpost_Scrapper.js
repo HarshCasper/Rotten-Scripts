@@ -1,6 +1,7 @@
 const prompt = require("prompt-sync")()
 const scrapper = require("./scrapper")
 const chalk = require("chalk")
+const urlParser = require("url-parse")
 
 const displayHackathonsInfo = (obj) => {
     console.log(`\nHACKATHON : ${chalk.yellow(obj.title)}`);
@@ -23,8 +24,13 @@ const init = async () => {
     console.log("---DevPost Hackathons Scrapper---");
     console.log("=================================\n");
 
-    let hackathonsLink = "https://hack-js.devpost.com"//prompt("Enter DevPost link : ")
+    let hackathonsLink = "https://hack-js.devpost.com/?ref_feature=challenge&ref_medium=discover"//prompt("Enter DevPost link : ")
+
+    let parsedUrl = urlParser(hackathonsLink)
+    hackathonsLink = "https://" + parsedUrl.hostname
+
     console.log("\nFetching..Data....Please..Wait...!\n");
+
     let hackathonsData = await scrapper.getHackathonsData(hackathonsLink)
     displayHackathonsInfo(hackathonsData)
 
