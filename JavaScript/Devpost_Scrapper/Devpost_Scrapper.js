@@ -1,8 +1,10 @@
 const prompt = require("prompt-sync")()
 const scrapper = require("./scrapper")
+const chalk = require("chalk")
 
-const displayHackathonsInfo = () => {
-
+const displayHackathonsInfo = (obj) => {
+    console.log(`\nHACKATHON : ${chalk.yellow(obj.title)}`);
+    console.log(`DESCRIPTION : ${chalk.green(obj.description)}\n`);
 }
 
 const displayProjectInfo = () => {
@@ -17,7 +19,12 @@ const init = async () => {
      * 4.get project info
      * 5.display project data 
      */
-    let hackathonsLink = prompt("Enter DevPost link : ")
+    console.log("\n=================================");
+    console.log("---DevPost Hackathons Scrapper---");
+    console.log("=================================\n");
+
+    let hackathonsLink = "https://hack-js.devpost.com"//prompt("Enter DevPost link : ")
+    console.log("\nFetching..Data....Please..Wait...!\n");
     let hackathonsData = await scrapper.getHackathonsData(hackathonsLink)
     displayHackathonsInfo(hackathonsData)
 
