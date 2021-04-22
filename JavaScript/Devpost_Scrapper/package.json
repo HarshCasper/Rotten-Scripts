@@ -10,5 +10,9 @@
     "Devpost_Scrapper"
   ],
   "author": "Madhav Jha",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "prompt-sync": "^4.2.0"
+  }
 }
