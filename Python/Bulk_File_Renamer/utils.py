@@ -1,7 +1,11 @@
 from os.path import abspath, isdir, isfile, getsize, splitext, split, join
-from os import listdir, rename
+from os import listdir, rename, mkdir, remove
+from shutil import copy2
+
 
 class SelectFiles:
+    """Class containing method to select and filter files at a path.\
+        It contains different filters based on which, the files can be filtered"""
 
     FILTERS = {
         "filesize": 
@@ -137,6 +141,7 @@ class SelectFiles:
         return value
 
 class OrganizeFiles:
+    """Class which contains methods to rename/relocate or delete files"""
 
     def __init__(self, files):
         """Organizes files object in a particular order"""
@@ -151,6 +156,7 @@ class OrganizeFiles:
     def set_arguments(*names):
         """Takes input from the user for all arguments in "names"\
              and returns it in a dictionary"""
+
         args = {}
         for name in names:
             value = ""
@@ -164,6 +170,9 @@ class OrganizeFiles:
 
     @staticmethod
     def organize_files(files, arguments):
+        """Organizes files based on the arguments passed. Different values of arguments\
+            can be: rename, rename and copy to new folder, delete files"""
+
         if arguments["method"] == "rename":
             count = 1
             new_name = arguments["value"]["filename"]
@@ -177,8 +186,43 @@ class OrganizeFiles:
             
             print(f"Renamed {len(files)} files successfully!!")
 
+        elif arguments["method"] == "rename-copy":
+            count = 1
+            new_name = arguments["value"]["filename"]
+            
+            # Create directory
+            folder_name = arguments["value"]["folder-name"]
+            if not isdir(folder_name):
+                mkdir(folder_name)
+
+            for file in files.keys():
+                extension = splitext(files[file]["name"])[1]
+                name = f"{count}_{new_name}{extension}"
+                prefix_file = split(files[file]["path"])[0]
+                prefix_folder = split(prefix_file)[0]
+                count += 1
+
+                copy2(files[file]["path"], join(folder_name, name))
+            
+            print(f"Copied {len(files)} files successfully!!")
+
+        elif arguments["method"] == "delete":
+            confirm = "n"
+            confirm = input(f"Deleting {len(files)}, press Y to confirm: ")
+            if confirm.lower() != "y":
+                print("Exiting")
+                exit(0)
+            else:
+                for file in files:
+                    remove(files[file]["path"])
+                
+                print(f"Deleted {len(files)} files successfully!")
+                 
+
 
     def organize(self):
+        """Driver function to call organize_files method and set relevant arguments"""
+
         print(f"\nFiles available to organize: {len(self.files)}")
         arguments = {}
         choice = input("Choose the method to re-organize:\n1. Rename in-place\n2. Rename and move to new folder\n3. Delete Files\n: ")
