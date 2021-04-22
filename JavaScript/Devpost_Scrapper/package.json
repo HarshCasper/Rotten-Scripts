@@ -1,0 +1,14 @@
+{
+  "name": "devpost_scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Devpost_Scrapper.js",
+  "scripts": {
+    "Devpost_Scrapper_run": "node Devpost_Scrapper.js"
+  },
+  "keywords": [
+    "Devpost_Scrapper"
+  ],
+  "author": "Madhav Jha",
+  "license": "ISC"
+}
