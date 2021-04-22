@@ -1,5 +1,5 @@
-from os.path import abspath, isdir, isfile, getsize, splitext
-from os import listdir
+from os.path import abspath, isdir, isfile, getsize, splitext, split, join
+from os import listdir, rename
 
 class SelectFiles:
 
@@ -18,12 +18,7 @@ class SelectFiles:
             {
                 "apply" : False,
                 "description": "Extension(s) of the files to be considered (Space separated)[pdf png]: "
-            },
-        "time_of_modification": 
-            {
-                "apply" : False,
-                "description": "Upper limit on modification time of file [DD:MM:YYYY HH:MM:SS]: "
-            },                                    
+            }                        
         }
 
     def __init__(self):
@@ -93,10 +88,12 @@ class SelectFiles:
         return files
 
 
-    def filter(self, path=None):
+    def filter(self):
         """Looks for all the files located at 'path' argument, and applies the filters to them"""
-        if path is None:
-            raise ValueError("Invalid value passed to path argument")
+
+        path = input("Enter the path (Press enter to select current path): ")
+        if path == "":
+            path = "./"
         
         files = SelectFiles.list_all_files(path)
 
@@ -109,23 +106,21 @@ class SelectFiles:
         for key in self.FILTERS:
             if self.FILTERS[key]["apply"]:
                 files = SelectFiles.apply_filter(files, key, self.FILTERS[key]["value"])
-        
-        print(f"\nFiltered files: {len(files)}\n")
-        
-        count = 1
-        for key in files:
-            print(f"{count}. {files[key]['name']}")
-            count += 1
+
+        print(f"No. of files filtered: {len(files)}")
+
+        return files
 
     def validate(self, value, key):
         """Returns the value as it is, if it is valid or raises a ValueError"""
 
         if key == "filesize":
-            if value != "" and int(value) <= 0:
-                print("Error: Filesize must be greater than or equal to 0")
-                return False
-            else:
-                return int(value)
+            if value != "":
+                if int(value) <= 0:
+                    print("Error: Filesize must be greater than or equal to 0")
+                    return False
+                else:
+                    return int(value)
 
         elif key == "extension":
             if value != "":
@@ -138,9 +133,64 @@ class SelectFiles:
 
                 return extensions
 
-        elif key == "time_of_modification":
-            if value != "" and value:
-                return False
-            # TODO
-
+        # For cases when user enters nothing
         return value
+
+class OrganizeFiles:
+
+    def __init__(self, files):
+        """Organizes files object in a particular order"""
+
+        if files is None or len(files) == 0:
+            print("0 files to organize. Exiting")
+            exit(0)
+        self.files = files
+    
+    
+    @staticmethod
+    def set_arguments(*names):
+        """Takes input from the user for all arguments in "names"\
+             and returns it in a dictionary"""
+        args = {}
+        for name in names:
+            value = ""
+            while value == "":
+                value = input(f"Enter the value for '{name}' argument: ")
+                if value == "":
+                    print("Error: No value received")
+            args[name] = value
+
+        return args
+
+    @staticmethod
+    def organize_files(files, arguments):
+        if arguments["method"] == "rename":
+            count = 1
+            new_name = arguments["value"]["filename"]
+            for file in files.keys():
+                extension = splitext(files[file]["name"])[1]
+                name = f"{new_name}_{count}{extension}"
+                prefix = split(files[file]["path"])[0]
+                count += 1
+
+                rename(files[file]["path"], join(prefix, name))
+            
+            print(f"Renamed {len(files)} files successfully!!")
+
+
+    def organize(self):
+        print(f"\nFiles available to organize: {len(self.files)}")
+        arguments = {}
+        choice = input("Choose the method to re-organize:\n1. Rename in-place\n2. Rename and move to new folder\n3. Delete Files\n: ")
+        if choice == "1":
+            arguments["method"] = "rename"
+            arguments["value"] = OrganizeFiles.set_arguments("filename")
+
+        elif choice == "2":
+            arguments["method"] = "rename-copy"
+            arguments["value"] = OrganizeFiles.set_arguments("filename", "folder-name")
+        
+        else:
+            arguments["method"] = "delete"
+        
+        OrganizeFiles.organize_files(self.files, arguments)
