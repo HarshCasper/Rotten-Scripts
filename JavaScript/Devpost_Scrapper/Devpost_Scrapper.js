@@ -34,11 +34,20 @@ const init = async () => {
     let hackathonsData = await scrapper.getHackathonsData(hackathonsLink)
     displayHackathonsInfo(hackathonsData)
 
-    let hackathonsProjectsURL = `${hackathonsLink} + /project-gallery`
+    let hackathonsProjectsURL = hackathonsLink + "/project-gallery"
     let projectLinks = await scrapper.getProjects(hackathonsProjectsURL)
-    let projectData = await scrapper.getProjectsData(projectLinks)
 
+    if (projectLinks.length == 0) {
+        console.log(chalk.red("\nNOTE : No projects found, Please wait till the hackathon ends and try again!!!\n"))
+        console.log("\n---END---\n")
+        return 0
+    }
+    console.log(`${chalk.yellow(projectLinks.length)} projects found !\n`);
+
+    let projectData = await scrapper.getProjectsData(projectLinks)
     displayProjectInfo(projectData)
+
+    console.log("\n---END---\n")
 }
 
 // entry function

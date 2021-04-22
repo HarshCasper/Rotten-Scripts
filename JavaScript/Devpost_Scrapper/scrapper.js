@@ -24,10 +24,26 @@ const getHackathonsData = async (url) => {
     return data
 }
 const getProjects = async (url) => {
-    let data = {}
+    let data = []
+    let htmlData = await makeRequest(url)
+    htmlData = parser.parse(htmlData)
+
+    let projectGallery = htmlData.querySelector("#submission-gallery")
+    if (!projectGallery) {
+        return []
+    }
+
+    let links = projectGallery.querySelectorAll("a")
+    if (!links) {
+        return []
+    }
+    data = links.map(link => link.getAttribute("href"))
+
+
     return data
 }
-const getProjectsData = (arr) => {
+
+const getProjectsData = async (arr) => {
     let data = {}
     return data
 }
