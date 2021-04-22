@@ -7,11 +7,12 @@
 * Numpy
 * Jupyter and associated packages.
 * Download the COCO dataset. 
+    1.Download it using https://cocodataset.org/
 
 ## Setup instructions
 
 1. A virtual environment (recommended)
-2. pip install OpenCV and Numpy
+2. pip install OpenCV and Numpy refer requirements.txt
 3. Open the Jupyter Notebook.
 4. The Steps, details and guidelines can be found in comments.
 
