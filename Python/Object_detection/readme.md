@@ -1,5 +1,6 @@
 # Object Detection
-  A really basic code for Object Detection using OpenCV. 
+ In this project I have used Python , OpenCV and Numpy to detect objects in images as well as in videos. To get an idea of it, download the  files and follow the setup instructions .
+ The output consists of colored lines drawn around objects present in the image(as is attached below).
   
 ## Dependency
 
