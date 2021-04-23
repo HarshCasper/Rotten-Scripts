@@ -47,4 +47,4 @@ for i in result:
 
 email = decouple.config("EMAIL")
 password = decouple.config("PASSWORD")
-send_mail("<Enter your gmail>", "<Enter your gmail password>", content)
+send_mail(email, password, content)
