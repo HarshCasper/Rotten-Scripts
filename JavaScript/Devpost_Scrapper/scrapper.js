@@ -44,7 +44,46 @@ const getProjects = async (url) => {
 }
 
 const getProjectsData = async (arr) => {
-    let data = {}
-    return data
+    let res = []
+    for (let i = 0; i < arr.length; i++) {
+        let link = arr[i]
+        let htmlData = await makeRequest(link)
+        htmlData = parser.parse(htmlData)
+
+        let title = htmlData.querySelector("#app-title")
+        title = (title) ? title.innerText : "Not Found"
+
+        let desc = htmlData.querySelectorAll(".large")[1]
+        desc = (desc) ? desc.innerText.replace("\n", "").trim() : "Not Found"
+
+        let appDetail = htmlData.querySelector("#app-details-left")
+        let subtitle, techUsed;
+        if (appDetail) {
+            subtitle = appDetail.querySelectorAll("p")[0]
+            subtitle = (subtitle) ? subtitle.innerText.replace("\n", "").trim() : "Not Found"
+            if (subtitle.length == 0) {
+                subtitle = appDetail.querySelectorAll("p")[1]
+                subtitle = (subtitle) ? subtitle.innerText.replace("\n", "").trim() : "Not Found"
+            }
+
+            let builtWith = appDetail.querySelector("#built-with")
+            if (builtWith) {
+                techUsed = builtWith.querySelectorAll("a")
+                techUsed = (techUsed) ? techUsed.map(a => a.innerText) : "Not Found"
+            }
+
+        }
+
+
+        data = {
+            "title": title,
+            "description": desc,
+            "subtitle": subtitle,
+            "techUsed": techUsed
+        }
+        res.push(data)
+
+    }
+    return res
 }
 module.exports = { getHackathonsData, getProjects, getProjectsData }

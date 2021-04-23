@@ -8,8 +8,11 @@ const displayHackathonsInfo = (obj) => {
     console.log(`DESCRIPTION : ${chalk.green(obj.description)}\n`);
 }
 
-const displayProjectInfo = () => {
-
+const displayProjectInfo = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        let project = arr[i]
+        console.log(project);
+    }
 }
 
 const init = async () => {
@@ -24,7 +27,7 @@ const init = async () => {
     console.log("---DevPost Hackathons Scrapper---");
     console.log("=================================\n");
 
-    let hackathonsLink = "https://hack-js.devpost.com/?ref_feature=challenge&ref_medium=discover"//prompt("Enter DevPost link : ")
+    let hackathonsLink = "https://hack-js.devpost.com/"//prompt("Enter DevPost link : ")
 
     let parsedUrl = urlParser(hackathonsLink)
     hackathonsLink = "https://" + parsedUrl.hostname
