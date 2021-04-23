@@ -9,7 +9,7 @@
 ```shell
 $ pip install -r requirements.txt
 ```
-- Paste the token (password) in a .env file (Take the .env.example as an example)
+- Paste the token (password) in a ```.env``` file (Take the ```.env.example``` as an example)
 
 ## Running the script:
 ```shell
