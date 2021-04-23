@@ -28,12 +28,33 @@ const displayProjectInfo = (arr) => {
     }
 }
 
+const ran = (min = 0, max = 1) => {
+    return Math.floor(Math.random() * (max - min) + min)
+}
+
+const displaySheets = (partition, data) => {
+    let projectData = data
+    let n = Math.ceil(projectData.length / partition)
+    for (let i = 0; i < partition; i++) {
+        console.log(chalk.yellow(`\nSheet ${i + 1} : `));
+        for (let j = 0; j < n; j++) {
+            if (projectData.length == 0) {
+                break;
+            }
+            let index = ran(0, projectData.length)
+            console.log(`${j + 1} : ${chalk.green(projectData[index].title)}`);
+            console.log(`Link : ${chalk.blue(projectData[index].link)}`);
+            projectData.splice(index, 1)
+        }
+    }
+}
+
 const init = async () => {
     console.log("\n=================================");
     console.log("---DevPost Hackathons Scrapper---");
     console.log("=================================\n");
 
-    let hackathonsLink = "https://gol-sn2.devpost.com/"//prompt("Enter DevPost link : ")
+    let hackathonsLink = prompt("Enter DevPost link : ")
 
     let parsedUrl = urlParser(hackathonsLink)
     hackathonsLink = "https://" + parsedUrl.hostname
@@ -55,6 +76,10 @@ const init = async () => {
 
     let projectData = await scrapper.getProjectsData(projectLinks)
     displayProjectInfo(projectData)
+
+    console.log("\n---Project Sheets---\n")
+    let partition = prompt("No. of sheets : ")
+    displaySheets(partition, projectData)
 
     console.log("\n---END---\n")
 }
