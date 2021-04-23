@@ -1,7 +1,7 @@
 {
   "name": "devpost_scrapper",
   "version": "1.0.0",
-  "description": "",
+  "description": "The script gets a Hackathon Page as a dynamic argument and it extracts info form it",
   "main": "Devpost_Scrapper.js",
   "scripts": {
     "Devpost_Scrapper_run": "node Devpost_Scrapper.js"
