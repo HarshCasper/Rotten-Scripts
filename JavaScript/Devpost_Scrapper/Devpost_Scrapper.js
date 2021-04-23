@@ -11,7 +11,15 @@ const displayHackathonsInfo = (obj) => {
 const displayProjectInfo = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         let project = arr[i]
-        console.log(project);
+        console.log(`\n${i + 1}. ${chalk.yellow(project.title)}`)
+        console.log(`Description : ${chalk.green(project.description)}`)
+        console.log(`Subtitle : ${chalk.green(project.subtitle)}`)
+        if (project.techUsed.length == 0) {
+            console.log("Tech-Used : " + chalk.red("None"));
+        } else {
+            console.log(`Tech-Used : ${chalk.green(project.techUsed)}`)
+        }
+        console.log(`Link : ${chalk.blue(project.link)}`)
     }
 }
 
@@ -45,7 +53,7 @@ const init = async () => {
         console.log("\n---END---\n")
         return 0
     }
-    console.log(`${chalk.yellow(projectLinks.length)} projects found !\n`);
+    console.log(`${chalk.yellow(projectLinks.length)} projects found !`);
 
     let projectData = await scrapper.getProjectsData(projectLinks)
     displayProjectInfo(projectData)
