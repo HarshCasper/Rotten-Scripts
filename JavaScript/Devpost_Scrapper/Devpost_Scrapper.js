@@ -19,23 +19,21 @@ const displayProjectInfo = (arr) => {
         } else {
             console.log(`Tech-Used : ${chalk.green(project.techUsed)}`)
         }
+        if (project.images.length == 0) {
+            console.log("Images : " + chalk.red("None"));
+        } else {
+            console.log(`Images : ${chalk.green(project.images.join("\n"))}`)
+        }
         console.log(`Link : ${chalk.blue(project.link)}`)
     }
 }
 
 const init = async () => {
-    /*
-     * 1.get hackathons link as input
-     * 2.get hackathons html page data
-     * 3.extract project links from page
-     * 4.get project info
-     * 5.display project data 
-     */
     console.log("\n=================================");
     console.log("---DevPost Hackathons Scrapper---");
     console.log("=================================\n");
 
-    let hackathonsLink = "https://clever-factory.devpost.com/"//prompt("Enter DevPost link : ")
+    let hackathonsLink = "https://gol-sn2.devpost.com/"//prompt("Enter DevPost link : ")
 
     let parsedUrl = urlParser(hackathonsLink)
     hackathonsLink = "https://" + parsedUrl.hostname

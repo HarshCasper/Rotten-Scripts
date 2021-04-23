@@ -57,7 +57,7 @@ const getProjectsData = async (arr) => {
         desc = (desc) ? desc.innerText.replace("\n", "").trim() : "Not Found"
 
         let appDetail = htmlData.querySelector("#app-details-left")
-        let subtitle = "Not Found", techUsed = [];
+        let subtitle = "Not Found", techUsed = [], images = [];
         if (appDetail) {
             subtitle = appDetail.querySelectorAll("p")[0]
             subtitle = (subtitle) ? subtitle.innerText.replace("\n", "").trim() : "Not Found"
@@ -74,13 +74,19 @@ const getProjectsData = async (arr) => {
                 techUsed = []
             }
 
+            images = appDetail.querySelectorAll("img")
+            if (images) {
+                images = images.map(img => "https:" + img.getAttribute("src"))
+            } else {
+                images = []
+            }
         }
-
 
         data = {
             "title": title,
             "description": desc,
             "subtitle": subtitle,
+            "images": images,
             "techUsed": techUsed,
             "link": link
         }
