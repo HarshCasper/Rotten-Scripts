@@ -27,7 +27,7 @@ const init = async () => {
     console.log("---DevPost Hackathons Scrapper---");
     console.log("=================================\n");
 
-    let hackathonsLink = "https://hack-js.devpost.com/"//prompt("Enter DevPost link : ")
+    let hackathonsLink = "https://clever-factory.devpost.com/"//prompt("Enter DevPost link : ")
 
     let parsedUrl = urlParser(hackathonsLink)
     hackathonsLink = "https://" + parsedUrl.hostname

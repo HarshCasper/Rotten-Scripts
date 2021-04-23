@@ -57,7 +57,7 @@ const getProjectsData = async (arr) => {
         desc = (desc) ? desc.innerText.replace("\n", "").trim() : "Not Found"
 
         let appDetail = htmlData.querySelector("#app-details-left")
-        let subtitle, techUsed;
+        let subtitle = "Not Found", techUsed = [];
         if (appDetail) {
             subtitle = appDetail.querySelectorAll("p")[0]
             subtitle = (subtitle) ? subtitle.innerText.replace("\n", "").trim() : "Not Found"
@@ -70,6 +70,8 @@ const getProjectsData = async (arr) => {
             if (builtWith) {
                 techUsed = builtWith.querySelectorAll("a")
                 techUsed = (techUsed) ? techUsed.map(a => a.innerText) : "Not Found"
+            } else {
+                techUsed = []
             }
 
         }
@@ -79,7 +81,8 @@ const getProjectsData = async (arr) => {
             "title": title,
             "description": desc,
             "subtitle": subtitle,
-            "techUsed": techUsed
+            "techUsed": techUsed,
+            "link": link
         }
         res.push(data)
 
