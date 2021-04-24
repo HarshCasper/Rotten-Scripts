@@ -3,7 +3,7 @@ const scrapper = require("./scrapper")
 const chalk = require("chalk")
 
 const displayEndorsements = (data) => {
-
+    console.log("hi");
 }
 
 const init = async () => {
@@ -19,7 +19,7 @@ const init = async () => {
     let profileLink = prompt("Enter LinkedIn profile link : ")
 
     let endorsements = await scrapper.getEndorsements(profileLink)
-    displayEndorsements()
+    displayEndorsements(endorsements)
 
     console.log("\n---END---\n")
 }

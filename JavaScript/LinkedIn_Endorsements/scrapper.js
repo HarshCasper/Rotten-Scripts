@@ -6,4 +6,14 @@ const makeRequest = async (url) => {
     return res.text()
 }
 
-module.exports = { getHackathonsData, getProjects, getProjectsData }
+const getEndorsements = async (link) => {
+    let endorsements = []
+
+    let htmlData = await makeRequest(link)
+    htmlData = parser.parse(htmlData)
+
+
+    return endorsements
+}
+
+module.exports = { getEndorsements }
