@@ -1,0 +1,14 @@
+{
+  "name": "linkedin_endorsements",
+  "version": "1.0.0",
+  "description": "A Script to scrap LinkedIn Endorsements and see who has endorsed you in what technologies.",
+  "main": "LinkedIn_Endorsements.js",
+  "scripts": {
+    "LinkedIn_Endorsements_run": "LinkedIn_Endorsements.js"
+  },
+  "keywords": [
+    "LinkedIn_Endorsements"
+  ],
+  "author": "Madhav Jha",
+  "license": "ISC"
+}
