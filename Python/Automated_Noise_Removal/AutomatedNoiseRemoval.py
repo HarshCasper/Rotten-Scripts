@@ -1,26 +1,11 @@
-"""
-
-OPEN-SOURCE SCRIPT FOR AUTOMATED NOISE REMOVAL USING PYTHON.
-
-SOFTWARE/LIBRARY REQUIRED TO RUN THIS SCRIPT:
-	1. SoX - ( http://sox.sourceforge.net/ )
-	2. pydub - ( https://pypi.org/project/pydub/ )
-
-CREATED AND SUBMITTED BY RAHUL RANA @owlrana during GSSoC'21 PERIOD for https://github.com/HarshCasper/Rotten-Scripts
-
-If you have any questions/queries related to this script you can contact me at: me.rahulrana@outlook.com
-
-"""
-
-
 import sys
 import os
 import glob
 import subprocess
 from pydub import AudioSegment
 
-
-MYSOX_PATH = '"C:\\Users\\Rahul Rana\\OneDrive - Microsoft Student Ambassadors\\Azure Applications\\sox\\sox.exe"' # IS DIFFERENT FOR EACH SYSTEM!! NEED TO INSTALL SOX FIRST!!
+# Sox path is DIFFERENT FOR EACH SYSTEM!! (install sox if you haven't using link in README.md)
+MYSOX_PATH = '"C:\\Users\\Rahul Rana\\OneDrive - Microsoft Student Ambassadors\\Azure Applications\\sox\\sox.exe"' 
 
 MYTESTING_FILE = "test.wav"
 MYSILENCING_FILE = "silence.wav"
@@ -28,7 +13,6 @@ MYSILENCING_PROFILE = "silence.prof"
 
 
 def performOperations(operations, parameters):
-	
 	"""
 	Operating on given inputs and tracking them in a list
 	"""
@@ -52,7 +36,6 @@ def performOperations(operations, parameters):
 
 
 def denoiseCall(fileInput):	
-	
 	""" 
 	takes file as input then generates a profile based on the input file
 	takes file and profile as input and gives the output file with 0.3 profile set 
@@ -79,7 +62,6 @@ def denoiseCall(fileInput):
 
 
 def noiseProfile(fileInput):
-	
 	"""
 	To find part where there is silence that can be later used for profiling
 	"""
@@ -106,7 +88,6 @@ def noiseProfile(fileInput):
 
 
 def cleanDir():
-	
 	"""
 	To remove files that are no longer needed once the script has done work
 	"""
@@ -117,7 +98,6 @@ def cleanDir():
 
 PRINT_LEVEL=2 # for organising output
 def myprint(str, level=0):
-
 	"""
 	To organise output prints
 	"""
