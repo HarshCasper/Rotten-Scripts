@@ -9,6 +9,12 @@
   "keywords": [
     "LinkedIn_Endorsements"
   ],
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "node-fetch": "^2.6.1",
+    "node-html-parser": "^3.1.6",
+    "prompt-sync": "^4.2.0"
+  },
   "author": "Madhav Jha",
   "license": "ISC"
 }
