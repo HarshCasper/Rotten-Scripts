@@ -16,7 +16,7 @@ const init = async () => {
     console.log("---LinkedIn Endorsement scrapper---");
     console.log("===================================\n");
 
-    let profileLink = prompt("Enter LinkedIn profile link : ")
+    let profileLink = "https://www.linkedin.com/in/kunal-kushwaha/"//prompt("Enter LinkedIn profile link : ")
 
     let endorsements = await scrapper.getEndorsements(profileLink)
     displayEndorsements(endorsements)
