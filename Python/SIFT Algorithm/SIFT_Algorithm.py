@@ -8,6 +8,12 @@ import cv2
 import numpy as np
 
 def siftAlgorithm():
+    '''
+        Take input of image and create a test image from it
+        Implement SIFT Algorithm for feature extraction from image and after that
+        Implement Brute Force Matcher Algorithm for matching the features of input and test image.
+        Diplay the matching result and feature extraction image.
+    '''
     # Load the image
     path=input("Enter the path of the image: ")
     image = cv2.imread(path)
@@ -69,6 +75,7 @@ def siftAlgorithm():
     print("\nNumber of Matching Keypoints Between The Training and Query Images: ", len(matches))
 
 #Driver Code
-siftAlgorithm()
-cv.waitKey(0)
-cv.destroyAllWindows()
+if __name__=='__main__':
+    siftAlgorithm()
+    cv.waitKey(0)
+    cv.destroyAllWindows()
