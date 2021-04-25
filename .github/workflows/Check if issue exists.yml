@@ -34,7 +34,7 @@ jobs:
         run: |
           echo $Github_Token > mytoken.txt
           gh auth login --with-token < mytoken.txt
-          gh pr comment $PRNUM --body "PR is not linked to any issue, please make the corresponding changes in the body, for help follow this [link](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CONTRIBUTING.md)"
+          gh pr comment $PRNUM --body "PR is not linked to any issue, please make the corresponding changes in the body. The issue should look like [this](https://ibb.co/Bg9x53w). For help follow this [link](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CONTRIBUTING.md)"
           gh pr edit $PRNUM --add-label "PR:No-Issue"
           rm mytoken.txt
         env:
