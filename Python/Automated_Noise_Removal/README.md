@@ -1,5 +1,3 @@
-IGNORE THIS CHECK VERSION
-
 # Automated Noise Removal
 
 The fundamental aim of this script is to automate the process of Audio Extraction, Profiling and Cleaning before the Mixing Stage for Voice-Overs or Audio Recordings in videos that is adjustable according to the user using Python. This is achieved with the help of the following open-sourced software:
