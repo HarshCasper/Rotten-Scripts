@@ -9,7 +9,6 @@ Before running script make sure your system has Open Cv and pandas.
 
 If not then do download it using```"pip install opencv-python"``` and ```"pip install pandas"```
 
-
 ## To run the script and its Output :
 
 Write ```"python color_picker.py -i imgpath"``` on the comand line.
