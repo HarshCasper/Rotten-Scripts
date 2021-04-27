@@ -3,6 +3,13 @@
 Picking color from image is used in the computer Vision application.Here is the python script which gives the name of the color and it's RGB value when clicked on the image. These scripts uses ```OpenCV```,``` pandas``` and ```argpass```.
 Before running the script make sure you have OpenCV installed in system.
 
+## Set Up
+
+Before running script make sure your system has Open Cv and pandas.
+
+If not then do download it using```"pip install opencv-python"``` and ```"pip install pandas"```
+
+
 ## To run the script and its Output :
 
 Write ```"python color_picker.py -i imgpath"``` on the comand line.
