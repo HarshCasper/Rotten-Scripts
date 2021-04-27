@@ -7,43 +7,17 @@ assignees: ''
 
 ---
 
-**This template is strictly for requesting New Scripts, if you want a new feature (automating this Repo,**
-**a change in structure) in the Repo,** 
-**or you want to report a Bug. There are other templates which you should follow**
-
-<!--
-_________________________________________________THESE ARE COMMENTS____________________________________________________
-
-Kindly Provide a detailed description of the script you want. 
-Please understand that a simple line like---- 
-"A script to add this functionality."
-might not be really helpful, neither for us  nor for you.
-
-Kindly try to explain the details and the small tit-bits of the script, this way
-the maintainers knows what to expect form the corresponding PR, and the contributor
-to whom the issue is assigned has a goof knowledge of how to continue.
-______________________________________________________________________________________________________________________
--->
-
 # Description
 
 Please include a summary of the issue. <!-- Delete this line afterwards -->
 
-<!--
-_________________________________________________THESE ARE COMMENTS____________________________________________________
-
-This Repository has scripts in multiple languages.
-If you believe that a similar script is possible in other language as well, mention it here.
-If not you someone else can take that language.
-______________________________________________________________________________________________________________________
--->
 
 ## Language
 
-- [ ] Bash
+<!-- PLEASE DELETE THE UNCHECKED BOXES -->
+
 - [ ] Go
 - [ ] Javascript
-- [ ] Powershell
 - [ ] Python
 - [ ] Other (Please specify)
 
@@ -61,7 +35,7 @@ ________________________________________________________________________________
 <!-- 
 _________________________________________________THESE ARE COMMENTS____________________________________________________
 
-This is the most important part of the issue, kindly read the description, we know you underatnd all this really well, but
+This is the most important part of the issue, kindly read the description, we know you understand all this really well, but
 please go through the guidelines once :)
 
 -->
@@ -94,55 +68,26 @@ ________________________________________________________________________________
 
 | name            | about                                                  | labels  | assignees                                                      |
 | --------------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------- |
-| Name of Script | Details of the script | feature | self-assign if you want to work on this issue else leave blank |
-
-<!--
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-********************************************* A DEMO *********************************************
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-This is what it should look like----
-
-| name            | about                                                  | labels  | assignees                                                      |
-| --------------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------- |
-| Self Assign Action | A Github Action that can auto-assign issues | feature | @vybhav72954  |
+| Name of Script | Details of the script | feature (You can add acronyms of open source events as well) | self-assign if you want to work on this issue else leave blank |
 
 
-______________________________________________________________________________________________________________________
--->
+**Is your feature request related to a problem? Please describe.**: 
 
-<!--
-_________________________________________________THESE ARE COMMENTS____________________________________________________
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-The lack of automation in GitHub README.md always triggers me, so is your problem similar? Tell us about it.
-______________________________________________________________________________________________________________________
--->
-**Is your feature request related to a problem? Please describe.**: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Describe the solution you'd like**: 
 
-<!--
-_________________________________________________THESE ARE COMMENTS____________________________________________________
+A clear and concise description of what you want to happen.
 
-Just give us an Idea, What should we expect? maybe tell us about the modules you will use.
-Or the tech stack, anything works.
-______________________________________________________________________________________________________________________
--->
-**Describe the solution you'd like**: A clear and concise description of what you want to happen.
+**Additional context**: 
 
-<!--
-_________________________________________________THESE ARE COMMENTS____________________________________________________
-
-Anything else that we should know?
-______________________________________________________________________________________________________________________
--->
-**Additional context**: Add any other context or screenshots about the feature request here.
+Add any other context or screenshots about the feature request here.
 
 <!--
 _________________________________________________THESE ARE COMMENTS____________________________________________________
 
 Did you typed your name in assignees column.
 Try commenting </assign> (Without the angular brackets) after all the checks have completed.
-Remember YOU NEED TO ADD YOUR github handle in THE ASSIGNEE COLUMN
+Remember YOU NEED TO ADD YOUR github handle in THE ASSIGNEE  for this to work
 ______________________________________________________________________________________________________________________
 -->
