@@ -1,7 +1,5 @@
 # Hashnode Script
 
-## Short description of script
-
 - This Scripts Collect The desired number of Best Posts from Hashnode.
 - Each Post will include Title , Brief Summary About Post and Author of Post.
 - All Data will be Stored in output.csv.
@@ -10,9 +8,9 @@
 ## Setup instructions
 
 - Clone the Folder `git clone https://github.com/HarshCasper/Rotten-Scripts`
-- Change directory ```cd Rotten-Scripts/JavaScript/Hashnode_Scripts```.
-- Run cmmand `npm install`.
-- Then run script using command `node script.js required_no_of_posts`.
+- Change the directory ```cd Rotten-Scripts/JavaScript/Hashnode_Scripts```.
+- Run command `npm install`.
+- Run the script using the command `node script.js required_no_of_posts`.
 - `required_no_of_posts` defines the number of Posts needed.
 - So run script as `node script.js 14`.
 
@@ -20,4 +18,6 @@
 
 ![output-img](https://i.imgur.com/p4Nf1Oi.png)
 
-#### Author:- Sukriti Sood
+## Author
+
+[Sukriti Sood](https://github.com/Sukriti-sood)
