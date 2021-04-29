@@ -627,6 +627,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "ShubhamGupta577",
+      "name": "Shubham Gupta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57499043?v=4",
+      "profile": "https://www.linkedin.com/in/shubham-gupta-958814190/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
