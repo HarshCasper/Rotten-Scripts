@@ -6,7 +6,7 @@
 - [AWS_Scripts](/Python/AWS_Scripts)
 - [All_GitHub_Repos](/Python/All_GitHub_Repos)
 - [Amazon_Product_Price_Tracker](/Python/Amazon_Product_Price_Tracker)
-- [Anime-tracker](/Python/Anime-tracker)
+- [Anime_Tracker](/Python/Anime_Tracker)
 - [Audio_Converter](/Python/Audio_Converter)
 - [Audio_Format_Converter](/Python/Audio_Format_Converter)
 - [Auto_Backup](/Python/Auto_Backup)
