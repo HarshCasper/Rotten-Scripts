@@ -24,3 +24,10 @@ jobs:
         issue-number: ${{tojson(github.event.number)}}
         body: |
             @${{ github.actor }} Thank you for Opening  pull request. We will soon be getting back to you. Your patience will be greatly appreciated!Thanks! 🥳.
+    - name: Create comment for Merging PR
+      if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
+      uses: peter-evans/create-or-update-comment@v1
+      with:
+        issue-number: ${{tojson(github.event.number)}}
+        body: |
+            @${{ github.event.pull_request.user.login }} Hurray , your PR got merged 🥳.            
