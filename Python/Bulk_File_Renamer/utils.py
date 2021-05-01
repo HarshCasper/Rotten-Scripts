@@ -21,8 +21,8 @@ class SelectFiles:
         "extension":
             {
                 "apply" : False,
-                "description": "Extension(s) of the files to be considered \
-                    (Space separated)[pdf png]: "
+                "description": "Extension(s) of the files to be considered"
+                               " (Space separated)[pdf png]: "
             }
         }
 
@@ -35,7 +35,7 @@ class SelectFiles:
                 value = SelectFiles.validate(input(self.FILTERS[key]['description']), key)
                 if value == "":
                     break
-                elif not value:
+                elif not isinstance(value, bool):
                     self.FILTERS[key]['apply'] = True
                     self.FILTERS[key]['value'] = value
                     break
@@ -113,7 +113,7 @@ class SelectFiles:
         return files
 
     @staticmethod
-    def validate(self, value, key):
+    def validate(value, key):
         """Returns the value as it is, if it is valid or raises a ValueError."""
         if key == "filesize":
             if value != "":
@@ -185,19 +185,23 @@ class OrganizeFiles:
             new_name = arguments["value"]["filename"]
 
             # Create directory
-            folder_name = arguments["value"]["folder-name"]
+            for file in files.keys():
+                folder_name = join(split(files[file]["path"])[0],\
+                                arguments["value"]["folder-name"])
+                break
             if not isdir(folder_name):
                 mkdir(folder_name)
+                print(f"Created folder '{folder_name}' successfully!!")
 
             for file in files.keys():
-                extension = splitext(files[file]["name"])[1]
-                name = f"{count}_{new_name}{extension}"
+                split_name = splitext(files[file]["name"]) 
+                name = f"{split_name[0]}_{new_name}{split_name[1]}"
                 prefix_file = split(files[file]["path"])[0]
                 count += 1
 
                 copy2(files[file]["path"], join(folder_name, name))
 
-            print(f"Copied {len(files)} files successfully!!")
+            print(f"\nCopied {len(files)} files successfully!!")
 
         elif arguments["method"] == "delete":
             confirm = "n"
@@ -213,11 +217,11 @@ class OrganizeFiles:
 
     def organize(self):
         """Driver function to call organize_files method and set relevant arguments."""
-        print(f"\nFiles available to organize: {len(self.files)}")
+        print(f"\n\nFiles available to organize: {len(self.files)}")
 
         arguments = {}
-        choice = input("Choose the method to re-organize:\n1. Rename in-place\n\
-            2. Rename and move to new folder\n3. Delete Files\n: ")
+        choice = input("Choose the method to re-organize:\n1. Rename in-place"
+                        "\n2. Rename and move to new folder\n3. Delete Files\n: ")
         if choice == "1":
             arguments["method"] = "rename"
             arguments["value"] = OrganizeFiles.set_arguments("filename")
