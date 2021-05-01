@@ -298,3 +298,6 @@ chromedriver.exe
 
 # for node_modules
 node_modules
+
+#Twitter_Unfollowers
+db.json
