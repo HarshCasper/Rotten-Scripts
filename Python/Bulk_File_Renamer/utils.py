@@ -195,7 +195,7 @@ class OrganizeFiles:
 
             for file in files.keys():
                 split_name = splitext(files[file]["name"]) 
-                name = f"{split_name[0]}_{new_name}{split_name[1]}"
+                name = f"{new_name}_{count}{split_name[1]}"
                 prefix_file = split(files[file]["path"])[0]
                 count += 1
 
