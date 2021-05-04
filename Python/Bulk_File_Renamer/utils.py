@@ -221,7 +221,7 @@ class OrganizeFiles:
 
         arguments = {}
         choice = input("Choose the method to re-organize:\n1. Rename in-place"
-                        "\n2. Rename and move to new folder\n3. Delete Files\n: ")
+                        "\n2. Rename and copy to new folder\n3. Delete Files\n: ")
         if choice == "1":
             arguments["method"] = "rename"
             arguments["value"] = OrganizeFiles.set_arguments("filename")
