@@ -1,0 +1,21 @@
+{
+  "name": "devpost_scrapper",
+  "version": "1.0.0",
+  "description": "The script gets a Hackathon Page as a dynamic argument and it extracts info form it",
+  "main": "Devpost_Scrapper.js",
+  "scripts": {
+    "Devpost_Scrapper_run": "node Devpost_Scrapper.js"
+  },
+  "keywords": [
+    "Devpost_Scrapper"
+  ],
+  "author": "Madhav Jha",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "node-fetch": "^2.6.1",
+    "node-html-parser": "^3.1.6",
+    "prompt-sync": "^4.2.0",
+    "url-parse": "^1.5.1"
+  }
+}
