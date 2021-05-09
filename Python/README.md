@@ -85,6 +85,7 @@
 - [Image_Sketch](/Python/Image_Sketch)
 - [Image_Steganography](/Python/Image_Steganography)
 - [Image_filters](/Python/Image_filters)
+- [Image_to_Pencil_Sketch)(/Python/Image_to_Pencil_Sketch)
 - [Image_to_Sepia](/Python/Image_to_Sepia)
 - [Initialize_HTTP_Server](/Python/Initialize_HTTP_Server)
 - [Instagram_Followers_Following_Scraper](/Python/Instagram_Followers_Following_Scraper)
