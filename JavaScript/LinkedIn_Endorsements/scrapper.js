@@ -13,6 +13,7 @@ const autoScroll = async (page) => {
         await new Promise((resolve, reject) => {
             let scroll = 0
             let distance = 100
+            let timeDelay = 400
 
             let timer = setInterval(() => {
                 let totalHeight = document.body.scrollHeight
@@ -23,7 +24,7 @@ const autoScroll = async (page) => {
                     clearInterval(timer);
                     resolve()
                 }
-            }, 400)
+            }, timeDelay)
         });
     });
 }
@@ -56,10 +57,16 @@ const getEndorsements = async (url) => {
     let page = await browser.newPage()
     await page.goto(`${url}`)
 
+    // scrolling and loading
     console.log("waiting for scroll\n")
     await delay(6000)
     await autoScroll(page)
+    console.log("Loading completed");
     // await browser.close();
+
+    let showSkillBtn = await page.evaluate(() => {
+        document.querySelectorAll("button.pv-profile-section__card-action-bar")
+    })
 
     return endorsements
 }
