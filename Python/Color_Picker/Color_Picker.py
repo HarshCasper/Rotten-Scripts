@@ -111,4 +111,3 @@ cv2.setMouseCallback('image',click_event)
 
 if __name__ == '__main__':
     main()
-    
