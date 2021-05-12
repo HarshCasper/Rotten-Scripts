@@ -71,11 +71,26 @@ const getEndorsements = async (url) => {
     let endorsements = []
     let page = await getProfilePage(url)
 
-    let moreSkillBtn = await page.evaluate(() => {
+    // click more skill button
+    await page.evaluate(() => {
         let btn = document.querySelectorAll("button.pv-profile-section__card-action-bar")[0]
-        return btn.innerText
+        btn.click()
+    })
+
+    let allSkills = await page.evaluate(() => {
+        let skills = document.querySelectorAll("span.pv-skill-category-entity__name-text")
+        if (!skills) {
+            return []
+        }
+
+        let skillArr = []
+        for (let i = 0; i < skills.length; i++) {
+            skillArr.push(skills[i].innerText)
+        }
+
+        return skillArr
     });
-    console.log(moreSkillBtn);
+    console.log(allSkills);
     // await browser.close();
 
     return endorsements
