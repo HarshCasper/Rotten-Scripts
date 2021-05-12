@@ -145,7 +145,7 @@ const getEndorsements = async (url) => {
         }
         return skillArr
     });
-    // console.log(allSkills);
+
     await browser.close()
     endorsements = allSkills
     return endorsements
