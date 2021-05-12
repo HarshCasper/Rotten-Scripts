@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer')
 const cred = require("./cred")
-const parser = require("node-html-parser")
+
 
 const delay = (time) => {
     return new Promise(function (resolve) {
@@ -29,8 +29,7 @@ const autoScroll = async (page) => {
     });
 }
 
-const getEndorsements = async (url) => {
-    let endorsements = []
+const getProfilePage = async (url) => {
 
     let browser = await puppeteer.launch({
         headless: false, args: ['--window-size=1920,1080'],
@@ -62,11 +61,22 @@ const getEndorsements = async (url) => {
     await delay(6000)
     await autoScroll(page)
     console.log("Loading completed");
-    // await browser.close();
 
-    let showSkillBtn = await page.evaluate(() => {
-        document.querySelectorAll("button.pv-profile-section__card-action-bar")
-    })
+    await delay(2000)
+
+    return page
+}
+
+const getEndorsements = async (url) => {
+    let endorsements = []
+    let page = await getProfilePage(url)
+
+    let moreSkillBtn = await page.evaluate(() => {
+        let btn = document.querySelectorAll("button.pv-profile-section__card-action-bar")[0]
+        return btn.innerText
+    });
+    console.log(moreSkillBtn);
+    // await browser.close();
 
     return endorsements
 }
