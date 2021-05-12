@@ -11,15 +11,16 @@ const delay = (time) => {
 const autoScroll = async (page) => {
     await page.evaluate(async () => {
         await new Promise((resolve, reject) => {
-            var totalHeight = 0
-            var distance = 100
-            var timer = setInterval(() => {
-                var scrollHeight = document.body.scrollHeight;
-                page.scrollBy(0, distance)
-                totalHeight += distance
+            let scroll = 0
+            let distance = 100
 
-                if (totalHeight >= scrollHeight) {
-                    clearInterval(timer)
+            let timer = setInterval(() => {
+                let totalHeight = document.body.scrollHeight
+                window.scrollBy(0, distance);
+                scroll += distance;
+
+                if (totalHeight <= scroll) {
+                    clearInterval(timer);
                     resolve()
                 }
             }, 400)
@@ -41,18 +42,23 @@ const getEndorsements = async (url) => {
     await loginPage.goto(`${loginURL}`, { waitUntil: 'networkidle0', timeout: 0 })
 
     // login via credentials
+    console.log("Logging in...\n");
     await delay(2000)
     await loginPage.type('#username', cred.email)
     await loginPage.type('#password', cred.password)
     await delay(2000)
     await loginPage.click('.btn__primary--large')
+    console.log("Logged in..and..\nMoving to profile\n");
 
     // navigate to the profile
     await delay(6000)
+    console.log("profile is loading");
     let page = await browser.newPage()
-    await page.goto(`${url}`, { waitUntil: 'networkidle0', timeout: 0 })
-    await page.hover("#ember480");
+    await page.goto(`${url}`)
 
+    console.log("waiting for scroll\n")
+    await delay(6000)
+    await autoScroll(page)
     // await browser.close();
 
     return endorsements
