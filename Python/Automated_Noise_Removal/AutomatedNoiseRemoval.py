@@ -5,7 +5,10 @@ import subprocess
 from pydub import AudioSegment
 
 # Sox path is DIFFERENT FOR EACH SYSTEM!! (install sox if you haven't using link in README.md)
-MYSOX_PATH = '"C:\\Users\\Rahul Rana\\OneDrive - Microsoft Student Ambassadors\\Azure Applications\\sox\\sox.exe"' 
+MYSOX_PATH = '"Path to SOX"'
+
+# Example:
+# MYSOX_PATH = '"Users\\OneDrive - Microsoft Student Ambassadors\\Azure Applications\\sox\\sox.exe"' 
 
 MYTESTING_FILE = "test.wav"
 MYSILENCING_FILE = "silence.wav"
@@ -14,7 +17,7 @@ MYSILENCING_PROFILE = "silence.prof"
 
 def performOperations(operations, parameters):
     """
-    Operating on given inputs and tracking them in a list
+    Perfrom Operations on given inputs and tracks them in a list
     """
     
     trackedInputs = glob.glob(os.path.join(parameters["root"],"*.wav"))
@@ -37,9 +40,15 @@ def performOperations(operations, parameters):
 
 def denoiseCall(fileInput):	
     """ 
-    takes file as input then generates a profile based on the input file
-    takes file and profile as input and gives the output file with 0.3 profile set 
-    0.3 setting is what I liked the most. User can play around with this value and can increase decrease it according to taste
+    Generate a proile based on Input file.
+    arguments:
+    fileInput: Input file Path
+    
+    returns:
+    Ooutput file with 0.3 profile set.
+    
+    Note:
+    User can play around with 0.3 profile setting value and can increase or decrease it.
     """
     
     mySoundOne = AudioSegment.from_file(MYSILENCING_FILE, format="wav")
