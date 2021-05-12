@@ -8,9 +8,16 @@ const displayEndorsements = (data) => {
         console.log(`${i + 1}. ${chalk.yellow(data[i]["skill"])}`);
         console.log(`Endorsements: ${chalk.yellow(data[i]["number"])}`);
         console.log(`People:`);
-        for (let j = 0; j < data[i]["people"].length; j++) {
-            console.log(`\t${chalk.green(data[i]["people"][j])}`);
+
+        let col = 3
+        for (let j = 0; j < data[i]["people"].length; j += col) {
+            let str = ``
+            for (let k = 0; k < col && j + k < data[i]["people"].length; k++) {
+                str += `${chalk.green(data[i]["people"][j + k])}, `
+            }
+            console.log(`  ${chalk.green(str)}`);
         }
+
         console.log("\n");
 
     }
