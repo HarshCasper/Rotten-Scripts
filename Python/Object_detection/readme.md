@@ -1,28 +1,26 @@
 # Object Detection
- In this project I have used Python , OpenCV and Numpy to detect objects in images as well as in videos. To get an idea of it, download the  files and follow the setup instructions .
- The output consists of colored lines drawn around objects present in the image(as is attached below).
+
+Using Python, OpenCV and Numpy this script can be used to detect objects in images as well as in videos.In order to use it, follow the setup instructions .
+
+The output consists of colored lines drawn around objects present in the image(see images below).
   
 ## Dependency
 
 * OpenCV
 * Numpy
 * Jupyter and associated packages.
-* Download the COCO dataset. 
-    1.Download it using https://cocodataset.org/
+* Download the `COCO` dataset. 
+    1. Download [Link](https://cocodataset.org/).
 
 ## Setup instructions
 
 1. A virtual environment (recommended)
-2. pip install OpenCV and Numpy refer `requirements.txt`
-3. Open the Jupyter Notebook.
-4. The Steps, details and guidelines can be found in comments.
-
+2. Intall dependecies using `pip install -r requirements.txt`.
+4. The Steps, details and guidelines can be found in the Notebook.
 
 ## Output
 
 ![image](https://user-images.githubusercontent.com/47255445/115255677-22e5bd00-a14c-11eb-99f5-07d7f8566c1e.png)
-
- 
 
 ## Author(s)
 
