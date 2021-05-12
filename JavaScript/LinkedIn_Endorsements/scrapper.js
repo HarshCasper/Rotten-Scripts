@@ -32,7 +32,7 @@ const autoScroll = async (page) => {
 const getProfilePage = async (url) => {
 
     let browser = await puppeteer.launch({
-        headless: false, args: ['--window-size=1920,1080'],
+        headless: true, args: ['--window-size=1920,1080'],
         defaultViewport: null
     });
 
