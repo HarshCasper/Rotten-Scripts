@@ -4,26 +4,28 @@ on:
   issues:
     types: [opened]
   pull_request_target:
-    types: [opened]
+    types: [opened,closed]
 
 jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
     - name: Create comment for issue
-      if: github.event_name =='issues' 
+      if: github.event_name =='issues'
       uses: peter-evans/create-or-update-comment@v1
       with:
         issue-number: ${{tojson(github.event.issue.number)}}
         body: |
             @${{ github.actor }} Thanks for opening the New Issue, This Will definitely Imporove our Project and **Use `/assign` to self assign this issue**.
+
+
     - name: Create comment for PR
-      if: github.event_name == 'pull_request_target'
+      if: github.event_name == 'pull_request_target' && github.event.action == 'opened'
       uses: peter-evans/create-or-update-comment@v1
       with:
         issue-number: ${{tojson(github.event.number)}}
         body: |
-            @${{ github.actor }} Thank you for Opening  pull request. We will soon be getting back to you. Your patience will be greatly appreciated!Thanks! 🥳.
+            @${{ github.actor }} Thank you for Opening  pull request. We will soon get back to you. Your patience will be greatly appreciated!Thanks! 🥳.
     - name: Create comment for Merging PR
       if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
       uses: peter-evans/create-or-update-comment@v1
