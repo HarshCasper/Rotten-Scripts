@@ -90,6 +90,28 @@ const getEndorsements = async (url) => {
             });
         }
 
+
+        let autoScrollWindow = async () => {
+            await new Promise((resolve, reject) => {
+                let scroll = 0
+                let distance = 100
+                let timeDelay = 800
+
+                let timer = setInterval(() => {
+                    let elem = document.querySelectorAll(".artdeco-modal__content")[0]
+                    let totalHeight = elem.scrollHeight
+                    elem.scrollBy(0, distance);
+                    scroll += distance;
+
+                    if (totalHeight <= scroll) {
+                        clearInterval(timer);
+                        resolve()
+                    }
+                }, timeDelay)
+            });
+        }
+
+
         let skills = document.querySelectorAll("span.pv-skill-category-entity__name-text")
         if (!skills) {
             return []
@@ -101,12 +123,16 @@ const getEndorsements = async (url) => {
 
             skills[i].click()
             await timeDelay(3000)
+            await autoScrollWindow()
 
             let people = document.querySelectorAll("span.pv-endorsement-entity__name--has-hover")
 
             for (let i = 0; i < people.length; i++) {
                 peopleNames.push(people[i].innerText)
             }
+            let closeBtn = document.querySelectorAll(".artdeco-modal__dismiss.artdeco-button")[0]
+
+            closeBtn.click()
 
             let obj = {
                 "skill": skills[i].innerText,
@@ -117,7 +143,7 @@ const getEndorsements = async (url) => {
         }
         return skillArr
     });
-    console.log(allSkills);
+    // console.log(allSkills);
     await browser.close()
     endorsements = allSkills
     return endorsements
