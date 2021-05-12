@@ -64,12 +64,17 @@ const getProfilePage = async (url) => {
 
     await delay(2000)
 
-    return page
+    return {
+        "page": page,
+        "browser": browser
+    }
 }
 
 const getEndorsements = async (url) => {
     let endorsements = []
-    let page = await getProfilePage(url)
+    let data = await getProfilePage(url)
+    let page = data.page
+    let browser = data.browser
 
     // click more skill button
     await page.evaluate(() => {
@@ -77,7 +82,14 @@ const getEndorsements = async (url) => {
         btn.click()
     })
 
-    let allSkills = await page.evaluate(() => {
+    let allSkills = await page.evaluate(async () => {
+
+        let timeDelay = (time) => {
+            return new Promise(function (resolve) {
+                setTimeout(resolve, time)
+            });
+        }
+
         let skills = document.querySelectorAll("span.pv-skill-category-entity__name-text")
         if (!skills) {
             return []
@@ -85,14 +97,29 @@ const getEndorsements = async (url) => {
 
         let skillArr = []
         for (let i = 0; i < skills.length; i++) {
-            skillArr.push(skills[i].innerText)
-        }
+            let peopleNames = []
 
+            skills[i].click()
+            await timeDelay(3000)
+
+            let people = document.querySelectorAll("span.pv-endorsement-entity__name--has-hover")
+
+            for (let i = 0; i < people.length; i++) {
+                peopleNames.push(people[i].innerText)
+            }
+
+            let obj = {
+                "skill": skills[i].innerText,
+                "people": peopleNames,
+                "number": peopleNames.length
+            }
+            skillArr.push(obj)
+        }
         return skillArr
     });
     console.log(allSkills);
-    // await browser.close();
-
+    await browser.close()
+    endorsements = allSkills
     return endorsements
 }
 
