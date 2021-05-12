@@ -1,6 +1,5 @@
 # QR-code-based-Excel-Attendace
 
-
 ## How to generate QR code?
 
 - In the `QR Codes` folder
@@ -20,7 +19,7 @@ To Take attendace run the `QR_Attendance.py` file by double clicking on it.
 
 ![take attendance](./Reference/take_attendance.jpg)  
 
-A GUI will pop up. Fill in the details to set the Attandace sytem for your class.  
+A terminal will pop up. Fill in the details to set the Attandace sytem for your class.  
 
 ![GUI](./Reference/GUI.jpg)
 

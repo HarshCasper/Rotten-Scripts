@@ -12,59 +12,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
-from tkinter import *
-from tkinter import messagebox
 from decouple import config
-
-
-def termsCheck():
-    if cb.get() == 1:
-        submit_btn['state'] = NORMAL
-    else:
-        submit_btn['state'] = DISABLED
-        messagebox.showerror('Attendance System',
-                             'Please check the information you have Entered')
-
-
-ws = Tk()
-ws.title('Attendance System')
-ws.geometry('300x300')
-ws.configure(bg='#dddddd')
-
-Class_name = StringVar()
-Teacher = StringVar()
-Class_start = StringVar()
-Class_end = StringVar()
-receiver_address = StringVar()
-
-frame1 = Label(ws)
-frame1.pack()
-
-cb = IntVar()
-
-Label(frame1, text='Course Name      :').grid(row=1, column=0, padx=5, pady=5)
-Label(frame1, text="Teacher's Name  :").grid(row=2, column=0, padx=5, pady=5)
-Label(frame1, text='Class Start at       :').grid(
-    row=3, column=0, padx=5, pady=5)
-Label(frame1, text='Class Ends at        : ').grid(
-    row=4, column=0, padx=5, pady=5)
-Label(frame1, text='Email                   :').grid(
-    row=5, column=0, padx=5, pady=5)
-
-
-Entry(frame1, textvariable=Class_name).grid(row=1, column=2)
-Entry(frame1, textvariable=Teacher).grid(row=2, column=2)
-Entry(frame1, textvariable=Class_start).grid(row=3, column=2)
-Entry(frame1, textvariable=Class_end).grid(row=4, column=2)
-Entry(frame1, textvariable=receiver_address).grid(row=5, column=2)
-
-Checkbutton(frame1, text='The above information mentioned is correct', variable=cb,
-            onvalue=1, offvalue=0, command=termsCheck).grid(row=150, columnspan=4, pady=5)
-submit_btn = Button(frame1, text="Ready to Scan QR", bg='light green',
-                    command=ws.destroy, padx=50, pady=5, state=DISABLED)
-submit_btn.grid(row=250, columnspan=4, pady=2)
-
-ws.mainloop()
 
 
 capture_qr = cv2.VideoCapture(0)  # Opening camera
@@ -75,21 +23,21 @@ attendace_file = open('attendence_log.txt', 'w+')
 names = []
 scan_time = []
 
-#Class_name= str(input("Which class is this? : "))
-#Teacher = str(input("Please enter Teacher's name : "))
-#Class_start = str(input("Thanks! {0}, At what time would you like to begin your class? : ".format(Teacher)))
-#Class_end = str(input("Noted!! At what time would you like to conclude your class? : "))
-Class_time = Class_start.get()+' - '+Class_end.get()
-#receiver_address=str(input("We would like to mail you the attendace sheet. \n please Enter you email address : "))
+Class_name= str(input("Which class is this? : "))
+Teacher = str(input("Please enter Teacher's name : "))
+Class_start = str(input("Thanks! {0}, At what time would you like to begin your class? : ".format(Teacher)))
+Class_end = str(input("Noted!! At what time would you like to conclude your class? : "))
+Class_time = Class_start +' - '+Class_end
+receiver_address=str(input("We would like to mail you the attendace sheet. \n please Enter you email address : "))
 print("Thanks! This attendance system is set for {0} class for {1} and attendance sheet will be mailed at {2}".format(
-    Class_name.get(), Class_time, receiver_address.get()))
+    Class_name, Class_time, receiver_address))
 
 
 log_date = datetime.datetime.now()
 date_format = log_date.strftime("%d-%m-%Y")
 #Current_time = log_date.strftime("%I:%M:%S %p")
 #date_format=date_format.replace(':',' ')
-file_name = Class_name.get()+' '+date_format+'.xls'
+file_name = Class_name+' '+date_format+'.xls'
 
 def Data_entry(student, log_date):
     if student in names:
@@ -123,7 +71,7 @@ def writeExcel(names, date_format, Class_name, scan_time, Class_time, file_name)
     wb = Workbook()
 
     sheet1 = wb.add_sheet('Sheet 1')
-    sheet1.write(0, 0, Class_name+' class '+' by '+Teacher.get())
+    sheet1.write(0, 0, Class_name+' class '+' by '+Teacher)
     sheet1.write(2, 0, 'Date:'+date_format)
     sheet1.write(2, 2, 'Class Time:'+Class_time)
     sheet1.write(4, 0, 'Sr.No')
@@ -141,10 +89,10 @@ def writeExcel(names, date_format, Class_name, scan_time, Class_time, file_name)
 
 
 def send_mail(receiver_address, file_name):
-    mail_content = '''Hello {0},
+    mail_content = '''Hello {0},E
     This is an auto-generated email.
     Attendance sheet is attached in this mail.
-    Thank You'''.format(Teacher.get())
+    Thank You'''.format(Teacher)
     # The mail addresses and password
     sender_address = config('Email')
     sender_pass = config('password')
@@ -196,9 +144,9 @@ while True:
 
 attendace_file.close()
 
-writeExcel(names, date_format, Class_name.get(),
+writeExcel(names, date_format, Class_name,
            scan_time, Class_time, file_name)
 
 time.sleep(3)
 
-send_mail(receiver_address.get(), file_name)
+send_mail(receiver_address, file_name)
