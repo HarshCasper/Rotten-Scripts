@@ -5,16 +5,12 @@ Before running the script make sure you have OpenCV installed in system.
 
 ## Set Up
 
-Before running script make sure your system has Open Cv and pandas.
-
-If not then do download it using```"pip install opencv-python"``` and ```"pip install pandas"```
+Download dependencies using ``` pip install -r requirements.txt```
 
 ## To run the script and its Output :
 
-Write ```"python color_picker.py -i imgpath"``` on the comand line.
- <a href="https://imgur.com/W1dhN0x"><img src="https://i.imgur.com/W1dhN0x.png" title="source: imgur.com" /></a>
-
-image will be shown as soon as you run these command
+To ru the script: In CLI enter ```"python color_picker.py -i imgpath"```.
+<a href="https://imgur.com/W1dhN0x"><img src="https://i.imgur.com/W1dhN0x.png" title="source: imgur.com" /></a>
 
 <a href="https://imgur.com/orZ4YZf"><img src="https://i.imgur.com/orZ4YZf.png" title="source: imgur.com" /></a>
 
@@ -24,4 +20,5 @@ Output on clicking a point on image :
 ```To exit we need to click "q"```
 
 ## Author
+
 <a href="https://www.linkedin.com/in/tithi-patel-a97728199">TITHI PATEL</a>
