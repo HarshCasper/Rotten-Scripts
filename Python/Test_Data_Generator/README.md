@@ -11,7 +11,7 @@ Syntax
 faker.Faker()
 ```
 Creates and initializes a faker generator, which can generate data by accessing properties named after the type of data we want.
-Each call to method fake.name() yields a different (random) result. This is because faker forwards faker.Generator.method_name() calls to faker.Generator.format(method_name).
+Each call to method `fake.name()` yields a different `(random)` result. This is because faker forwards `faker.Generator.method_name()` calls to `faker.Generator.format(method_name)`.
 
 ## Working of Code
 
