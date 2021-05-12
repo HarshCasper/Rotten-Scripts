@@ -10,11 +10,15 @@ Download dependencies using ``` pip install -r requirements.txt```
 ## To run the script and its Output :
 
 To ru the script: In CLI enter ```"python color_picker.py -i imgpath"```.
+
 <a href="https://imgur.com/W1dhN0x"><img src="https://i.imgur.com/W1dhN0x.png" title="source: imgur.com" /></a>
+
+Click any point to find out the RGB values:
 
 <a href="https://imgur.com/orZ4YZf"><img src="https://i.imgur.com/orZ4YZf.png" title="source: imgur.com" /></a>
 
-Output on clicking a point on image :
+Output:
+
 <a href="https://imgur.com/VA4Y83O"><img src="https://i.imgur.com/VA4Y83O.png" title="source: imgur.com" /></a>
 
 ```To exit we need to click "q"```
