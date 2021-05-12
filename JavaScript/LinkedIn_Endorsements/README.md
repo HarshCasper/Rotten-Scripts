@@ -1,13 +1,13 @@
 # linkedin_endorsements
 
-**linkedin_endorsements** a script to scrap LinkedIn Endorsements and see who has endorsed someone in what technologies.
-- It uses your userID and password to login and scrape the data from the website.
+**linkedin_endorsements** is a script that scrapes LinkedIn Endorsements and see who has endorsed someone in what technologies.
+- It uses your emailID and password to login and scrape the data from the website.
 - Then prints names of people.
 
 ## Setup instructions
 
-- Add to credentials (*i.e your userID and Password*) in the file named `cred.js` : 
-![File content](https://i.imgur.com/qGWVd7h.png)
+- Add your credentials (*i.e your emailID and Password*) in the file named `cred.js` : 
+![File content](https://i.imgur.com/kOSMwdj.png)
 - Open terminal and do the following : 
 - `cd Rotten-Scripts\JavaScript\linkedin_endorsements`
 - Run `npm install` to install all necessary dependencies
