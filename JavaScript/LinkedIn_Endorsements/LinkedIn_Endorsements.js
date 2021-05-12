@@ -7,7 +7,9 @@ const displayEndorsements = (data) => {
 
         console.log(`${i + 1}. ${chalk.yellow(data[i]["skill"])}`);
         console.log(`Endorsements: ${chalk.yellow(data[i]["number"])}`);
-        console.log(`People:`);
+        if (data[i]["number"] != 0) {
+            console.log(`People:`);
+        }
 
         let col = 3
         for (let j = 0; j < data[i]["people"].length; j += col) {
@@ -33,11 +35,11 @@ const init = async () => {
     console.log("---LinkedIn Endorsement scrapper---");
     console.log("===================================\n");
 
-    let profileLink = "https://www.linkedin.com/in/kunal-kushwaha/"//prompt("Enter LinkedIn profile link : ")
+    let profileLink = prompt("Enter LinkedIn profile link : ")
 
     let endorsements = await scrapper.getEndorsements(profileLink)
 
-    console.log("The Endorsement data is as follows:\n");
+    console.log("\nThe Endorsement data is as follows:\n");
     displayEndorsements(endorsements)
 
     console.log("\n---END---\n")
