@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer')
 const cred = require("./cred")
 
-
 const delay = (time) => {
     return new Promise(function (resolve) {
         setTimeout(resolve, time)
@@ -92,7 +91,6 @@ const getEndorsements = async (url) => {
             });
         }
 
-
         let autoScrollWindow = async () => {
             await new Promise((resolve, reject) => {
                 let scroll = 0
@@ -112,7 +110,6 @@ const getEndorsements = async (url) => {
                 }, timeDelay)
             });
         }
-
 
         let skills = document.querySelectorAll("span.pv-skill-category-entity__name-text")
         if (skills.length == 0) {

@@ -23,4 +23,4 @@ Hi I'm [Madhav Jha](https://github.jhamadhav.com) author of this script.
 
 ## Disclaimer
 
-- **DO NOT use the script to often (*i.e. without long intervals between searches*) as LinkedIn may block your account due to suspicious behavior**
+- **DO NOT use the script too often (*i.e. without long intervals between searches*) as LinkedIn may block your account due to suspicious behavior**

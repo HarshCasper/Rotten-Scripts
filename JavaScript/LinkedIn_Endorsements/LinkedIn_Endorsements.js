@@ -21,7 +21,6 @@ const displayEndorsements = (data) => {
         }
 
         console.log("\n");
-
     }
 }
 
