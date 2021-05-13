@@ -1,8 +1,3 @@
-'''
-Given path to codebase directory, the script reads all pythin files to know the environment variables used
-and write them to a final output file.
-'''
-
 import re, os, glob, sys
 
 # the directory path of codebase
