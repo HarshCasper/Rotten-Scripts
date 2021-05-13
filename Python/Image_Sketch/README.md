@@ -1,10 +1,20 @@
-# Image to Sketch
-The original image is converted into black and white sketched image.
+# CONVERTING IMAGE TO PENCIL SKETCH
 
-### Results:
+### A RGB image can be converted into a pencil sketch using 4 easy steps!
 
-#### Original Image
-<img src ="https://github.com/sharur7/Rotten-Scripts/blob/sharur7/Python/Image_Sketch/obama.jpg?raw=true" alt="Original_image" width="280" height="300">
+![img.jpg](img.jpg)
 
-#### Sketched Image
-<img src ="https://github.com/sharur7/Rotten-Scripts/blob/sharur7/Python/Image_Sketch/sketch.jpg?raw=true" alt="Original_image" width="280" height="300">
+### Step 1: Get the image and convert it into grayscale by using COLOR_BGR2GRAY from cv2.
+![img1.jpg](img1.jpg)
+
+### Step 2: Invert the image i.e, obtain the negative of the grayscale image using bitwise_not from cv2.
+![img2.jpg](img2.jpg)
+
+### Step 3: Blur the image by applying Gaussian filter to the inverted image.
+![img3.jpg](img3.jpg)
+
+### Step 4: Merge the gray scale image and the Gaussian filter applied image.
+![img4.jpg](img4.jpg)
+
+### The sketch is ready!
+
