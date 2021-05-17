@@ -14,12 +14,15 @@ def generate_qr(lines):
         version, level, qr_name = myqr.run(str(name), version=1, level='H', picture='QR_bg.jpg', colorized=True,
                                            contrast=1.0, brightness=1.0, save_name=str(lines[i]+'.bmp'), save_dir=os.getcwd())
 
+                                           
+# locating the data file
+data_file = open("Data_base.txt", "r")
 
-#file_path = str(input("Enter the path where data base is located:"))
-#print("Thankyou Your path as been located\n")
-#bg_path = str(input("Enter the path where your background file is located.(.jpg , .png are recommended)"))
+# reading each line of data file  
+lines = data_file.read().split("\n")
 
-data_file = open("Data_base.txt", "r")  # locating the data file
-lines = data_file.read().split("\n")  # reading each line of data file
-print(lines)  # printing lines present in the data file
-generate_qr(lines)  # Generating QR code for each line
+# printing lines present in the data file 
+print(lines) 
+
+# Generating QR code for each line
+generate_qr(lines)  

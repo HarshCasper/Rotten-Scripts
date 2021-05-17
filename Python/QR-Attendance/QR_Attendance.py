@@ -28,7 +28,7 @@ Teacher = str(input("Please enter Teacher's name : "))
 Class_start = str(input("Thanks! {0}, At what time would you like to begin your class? : ".format(Teacher)))
 Class_end = str(input("Noted!! At what time would you like to conclude your class? : "))
 Class_time = Class_start +' - '+Class_end
-receiver_address=str(input("We would like to mail you the attendace sheet. \n please Enter you email address : "))
+receiver_address=str(input("We would like to mail you the attendance sheet. \n please Enter you email address : "))
 print("Thanks! This attendance system is set for {0} class for {1} and attendance sheet will be mailed at {2}".format(
     Class_name, Class_time, receiver_address))
 

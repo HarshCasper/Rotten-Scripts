@@ -4,11 +4,11 @@
 
 - In the `QR Codes` folder
 
-1. Update the data base in file `Data_base.txt`. Make sure each students name resides in a new line without any space.  
+1. Update the data base in file [Data_base.txt](./Data_base.txt). Make sure each students name resides in a new line without any space.  
 ![data_base](https://user-images.githubusercontent.com/43489758/118450130-7f1f0b00-b711-11eb-96f6-6d967f9cdc74.jpg)
  
 
-2. Run the `Generate_QR.py` file by double clicking on it.  
+2. Run the [Generate_QR.py](./Generate_QR.py) file by double clicking on it.  
 ![Generate_QR](https://user-images.githubusercontent.com/43489758/118450199-8f36ea80-b711-11eb-8c32-32aada7b1cfa.jpg)
 
 
@@ -18,7 +18,7 @@
 
 ## How to take Attendace?
 
-To Take attendace run the `QR_Attendance.py` file by double clicking on it.  
+To Take attendace run the [QR_Attendance.py](./QR_Attendance.py) file by double clicking on it.  
 
 ![take_attendance](https://user-images.githubusercontent.com/43489758/118450258-a07ff700-b711-11eb-827e-35f509e6b3fe.jpg)
  
@@ -56,4 +56,5 @@ That's it you got your required file.
 ![decoded](https://user-images.githubusercontent.com/43489758/118450531-ec32a080-b711-11eb-9639-6afb236a9e84.jpg)
 
 
->> Hope you like it :)
+
+>By : Yuvraj Kadale with ❤
