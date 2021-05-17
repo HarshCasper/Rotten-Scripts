@@ -16,7 +16,8 @@ jobs:
       with:
         issue-number: ${{tojson(github.event.issue.number)}}
         body: |
-            @${{ github.actor }} Thanks for opening the New Issue, This Will definitely Imporove our Project and **Use `/assign` to self assign this issue**.
+            @${{ github.actor }} Thanks for opening the New Issue, This Will definitely Imporove our Project.
+            **Use `/assign` to self assign this issue**.
 
 
     - name: Create comment for PR
