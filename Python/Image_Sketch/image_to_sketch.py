@@ -1,5 +1,3 @@
-# Converting Image to Pencil Sketch
-
 from google.colab.patches import cv2_imshow
 import cv2
 import numpy as np
@@ -25,5 +23,3 @@ def dodgeV2(x, y):                                  # dodging and merging
 # getting our sketch
 final_img = dodgeV2(img_gray, img_smoothing)
 cv2_imshow(final_img)
-
-# Our pencil sketch is ready!!
