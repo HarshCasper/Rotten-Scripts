@@ -125,6 +125,7 @@
 - [Python_Library_Downloader](/Python/Python_Library_Downloader)
 - [Python_NEWS_Reader](/Python/Python_NEWS_Reader)
 - [QR_Code_Generator](/Python/QR_Code_Generator)
+- [QR-Attendance](/Python/QR-Attendance)
 - [Quantum_random](/Python/Quantum_random)
 - [Query_Links_Script](/Python/Query_Links_Script)
 - [Questions_from_Project_Euler](/Python/Questions_from_Project_Euler)
