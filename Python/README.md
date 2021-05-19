@@ -78,6 +78,7 @@
 - [Instagram_Profile_Pic_Downloader](/Python/Instagram_Profile_Pic_Downloader)
 - [Internshala_Scrapper](/Python/Internshala_Scrapper)
 - [Invisible_Cloak](/Python/Invisible_Cloak)
+- [Job Scraper](/Python/Job_Scraper)
 - [JSON_to_Excel](/Python/JSON_to_Excel)
 - [JSON_to_YAML](/Python/JSON_to_YAML)
 - [Keylogger](/Python/Keylogger)
