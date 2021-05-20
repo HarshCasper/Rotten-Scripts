@@ -49,7 +49,7 @@ print(emails)
 
 # Finding all linked URLs in the website.
 # Creating a Beautiful Soup to parse the HTML document.
-soup = BeautifulSoup(response.text, 'lxml')
+soup = BeautifulSoup(response.text, 'html.parser')
 
 # Once this document is parsed and processed,
 # now find and process all the anchors as it may contains emails i.e. linked urls in this document.

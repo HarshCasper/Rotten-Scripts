@@ -6,7 +6,7 @@
 </div>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-58-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-65-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/HarshCasper/Rotten-Scripts.svg?style=social&label=Fork&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/network/)
 [![GitHub stars](https://img.shields.io/github/stars/HarshCasper/Rotten-Scripts.svg?style=social&label=Star&maxAge=43200)](https://gitHub.com/HarshCasper/Rotten-Scripts/stargazers/)
@@ -144,6 +144,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/VanTekken"><img src="https://avatars.githubusercontent.com/u/20387444?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Haz</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=VanTekken" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/sourabhkumar45"><img src="https://avatars.githubusercontent.com/u/55038876?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sourabh Kumar</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sourabhkumar45" title="Code">💻</a></td>
+    <td align="center"><a href="http://jhamadhav.com"><img src="https://avatars.githubusercontent.com/u/37475140?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Madhav Jha</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=jhamadhav" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ireneelizabethsabu"><img src="https://avatars.githubusercontent.com/u/56963461?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Irene Elizabeth Sabu</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=ireneelizabethsabu" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/tanishq-arya"><img src="https://avatars.githubusercontent.com/u/77333275?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tanishq Arya</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=tanishq-arya" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/RohiniRG"><img src="https://avatars.githubusercontent.com/u/64858610?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rohini Rao</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=RohiniRG" title="Code">💻</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=RohiniRG" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Sukriti-sood"><img src="https://avatars.githubusercontent.com/u/55010599?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sukriti Sood</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Sukriti-sood" title="Documentation">📖</a> <a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=Sukriti-sood" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/shubham-gupta-958814190/"><img src="https://avatars.githubusercontent.com/u/57499043?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shubham Gupta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=ShubhamGupta577" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/nimit2801"><img src="https://avatars.githubusercontent.com/u/53462249?v=4?s=100" width="100px;" alt=""/><br /><sub><b>looping</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=nimit2801" title="Code">💻</a></td>
   </tr>
 </table>
 
