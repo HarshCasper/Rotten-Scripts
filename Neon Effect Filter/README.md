@@ -17,8 +17,8 @@ Converting an image into an neon effect filtered image using OpenCv, Os, Matplot
 
 
 ## Original Image
-<img src="Images/image_.jpg" height="300px">
+<img src="Images/image_.jpg" height="500px">
 
 ## Neon Effect Filtered Image
-<img src="Images/(Neon Effect Filter)image_.jpg" height="300px">
+<img src="Images/(Neon Effect Filter)image_.jpg" height="500px">
 
