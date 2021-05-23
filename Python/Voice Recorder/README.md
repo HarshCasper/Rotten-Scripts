@@ -21,11 +21,15 @@ Install the above modules using<!-- Italics-->*pip install sounddevice scipy* co
 ## Output
 The recorded audio <!-- Italics-->*recorded_audio.wav* will be saved to the same folder as the program.
 
-Here's the recored audio (ouput):
+Here's the output:
+
+![recoutput](https://user-images.githubusercontent.com/60272753/119265994-988af000-bc06-11eb-8a8f-7d9c73e7d006.PNG)
+
+![voiceoutput](https://user-images.githubusercontent.com/60272753/119265992-96c12c80-bc06-11eb-935b-438d6ce73bf5.PNG)
 
 
+## Recorded Audio
 
-## Audio
-
+https://user-images.githubusercontent.com/60272753/119265996-99bc1d00-bc06-11eb-91de-10cb174c9015.mp4
 
 
