@@ -25,9 +25,13 @@ The recorded audio <!-- Italics-->*recorded_audio.wav* will be saved to the loca
 
 Here's the ouput:
 
+![recoutput](https://user-images.githubusercontent.com/60272753/119265994-988af000-bc06-11eb-8a8f-7d9c73e7d006.PNG)
+
+![voiceoutput](https://user-images.githubusercontent.com/60272753/119265992-96c12c80-bc06-11eb-935b-438d6ce73bf5.PNG)
 
 
 ## Audio
 
 
+https://user-images.githubusercontent.com/60272753/119339369-b1e77700-bcae-11eb-8c52-ea1c30429ce2.mp4
 
