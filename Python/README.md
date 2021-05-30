@@ -143,6 +143,7 @@
 - [Search_File](/Python/Search_File)
 - [Send_Email_Using_Gmail_Api](/Python/Send_Email_Using_Gmail_Api)
 - [Send_Emails](/Python/Send_Emails)
+- [Send_SMS_Using_FAST2SMS_In_Python](/Python/Send_SMS_Using_FAST2SMS_In_Python)
 - [Send_SMS_Using_Twilio_In_Python](/Python/Send_SMS_Using_Twilio_In_Python)
 - [Shutdown_Your_System](/Python/Shutdown_Your_System)
 - [Slideshare_Slides_Downloader](/Python/Slideshare_Slides_Downloader)
