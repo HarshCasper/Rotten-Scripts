@@ -1,6 +1,5 @@
 import time
 from selenium import webdriver
-import sqlite3
 import csv
 
 
@@ -28,7 +27,6 @@ def scraper():
     The function makes use of Selenium to scrape the required information
     which is later stored in a .csv file
     """
-    total = 10
     driver = webdriver.Chrome()
     while 1:
         # Takes user input for query
@@ -117,8 +115,7 @@ def scraper():
                                 break
                 
                 all_info.append(each_info)
-                if len(all_info) == 5:
-                    break
+
             except Exception as e:
                 continue
         
