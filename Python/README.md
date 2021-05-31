@@ -133,6 +133,7 @@
 - [ROT13_Decryption](/Python/ROT13_Decryption)
 - [RSA_Key_Generation](/Python/RSA_Key_Generation)
 - [Random_Password_Generator](/Python/Random_Password_Generator)
+- [Reddit Scraper](/Python/Reddit_Scraper)
 - [Reddit_Wallpaper](/Python/Reddit_Wallpaper)
 - [S3_Bucket_Creator](/Python/S3_Bucket_Creator)
 - [S3_Bucket_Downloader](/Python/S3_Bucket_Downloader)
@@ -201,3 +202,4 @@
 - [Youtube_Video_Download](/Python/Youtube_Video_Download)
 - [Zipper](/Python/Zipper)
 - [Zoom Automation](/Python/Zipper)
+
