@@ -7,6 +7,6 @@ prawcore==1.5.0
 requests==2.24.0
 six==1.15.0
 update-checker==0.18.0
-urllib3==1.25.10
+urllib3==1.26.5
 websocket-client==0.57.0
 wincertstore==0.2
