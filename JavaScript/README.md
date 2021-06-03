@@ -20,6 +20,7 @@
 - [HTML to Markdown](Html_to_Markdown)
 - [Instagram Follow Bot](Follow_Instagram)
 - [Instagram Like Bot](Instagram_Like)
+- [Markdown to HTML](Markdown_To_HTML)
 - [ROT13 Decryption](ROT13_Decryption)
 - [RSA Key Pair Generator](RSA_Key_Pair_Generator)
 - [Send Emails](Send_Emails)     
