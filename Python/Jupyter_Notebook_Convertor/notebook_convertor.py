@@ -1,8 +1,7 @@
-"""
-This Program helps user to convert jupyter notebook to HTML,MarkDown,PDF,python file
-"""
+"""This Program helps user to convert jupyter notebook to HTML,MarkDown,PDF,python file"""
 
-import os
+import shlex
+import subprocess
 import pyfiglet
 
 print(pyfiglet.figlet_format("Jupyter NoteBook Converter"))
@@ -16,26 +15,23 @@ while True:
             3. Convert To python script
             4. Convert To HTML
             5. Exit \n
-            """
+                  """
     )
+    print("Enter Your Notebook Name (with .ipynb)")
+    file = shlex.quote(input())
     print("Enter Your Choice")
     opt = input()
     if opt == "1":
-        print("Enter Your Notebook Name (with .ipynb)")
-        file = input()
-        os.system("jupyter nbconvert {} --to pdfviahtml".format(file))
+        subprocess.getoutput(
+            "jupyter nbconvert {} --to pdfviahtml".format(file))
     elif opt == "2":
-        print("Enter Your Notebook Name (with .ipynb)")
-        file = input()
-        os.system("jupyter nbconvert {} --to markdown".format(file))
+        k = subprocess.getoutput(
+            "jupyter nbconvert {} --to markdown".format(file))
+        print(subprocess.getstatusoutput(k))
     elif opt == "3":
-        print("Enter Your Notebook Name (with .ipynb)")
-        file = input()
-        os.system("jupyter nbconvert {} --to python".format(file))
+        subprocess.getoutput("jupyter nbconvert {} --to python".format(file))
     elif opt == "4":
-        print("Enter Your Notebook Name (with .ipynb)")
-        file = input()
-        os.system("jupyter nbconvert {} --to html".format(file))
+        subprocess.getoutput("jupyter nbconvert {} --to html".format(file))
     elif opt == "5":
         break
     else:

@@ -23,4 +23,3 @@ pip install notebook-as-pdf
 4. Enter NoteBook name with extension (.ipynb)
    ![](https://imgur.com/ER2MgZ3.png)
 
-### Note: you can pass file with path it will convert the file and save at that location only.
