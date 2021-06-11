@@ -1,0 +1,16 @@
+{
+  "name": "linkedin_learning_downloader",
+  "version": "1.0.0",
+  "description": "Downloads videos from Linkedin Learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ggrangia",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "path": "^0.12.7",
+    "puppeteer": "^1.5.0"
+  }
+}
