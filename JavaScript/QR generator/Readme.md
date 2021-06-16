@@ -5,3 +5,6 @@ This application will allow the user to type in the data required and save it a 
 
 ## The API endpoint that would be used is given below
 ``https://chart.googleapis.com/chart?chs=150×150&cht=qr&chl=Hello%20world``
+
+## Screen Shot of the output
+![screenshot](https://github.com/Pradhuman-singh5/Rotten-Scripts/blob/b360b3270b0fb6edc2600dd531ff1c6b0e9ba00d/JavaScript/QR%20generator/Screenshot%202021-06-16%20124942.jpg)
