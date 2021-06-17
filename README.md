@@ -52,7 +52,7 @@ You can refer to the following articles on the basics of Git and Github and also
 
 - [Python](Python)
 - [JavaScript](JavaScript)
-- [GoLang](Go)
+- [GoLang](Golang)
 - [BASH](BASH)
 - [PowerShell](PowerShell)
 - [Rust](Rust)
