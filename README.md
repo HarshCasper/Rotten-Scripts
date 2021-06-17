@@ -19,13 +19,6 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/HarshCasper/Rotten-Scripts.svg)](https://github.com/HarshCasper/Rotten-Scripts/pulls?q=is%3Apr+is%3Aclosed)
 ![GitHub repo size](https://img.shields.io/github/repo-size/HarshCasper/Rotten-Scripts?color=yellow)
 
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-go.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
 </div>
 
 ## 📌 Introduction
@@ -182,9 +175,3 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 </tr>
 </table>
-
-> **_Need help? Feel free to contact me @ [erbeusgriffincasper@gmail.com](mailto:erbeusgriffincasper@gmail.com?Subject=RottenScripts)_**
-
-## Stargazers over time 🤗
-
-[![Stargazers over time](https://starchart.cc/HarshCasper/Rotten-Scripts.svg)](https://starchart.cc/HarshCasper/Rotten-Scripts)
