@@ -90,6 +90,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/shubham-gupta-958814190/"><img src="https://avatars.githubusercontent.com/u/57499043?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shubham Gupta</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=ShubhamGupta577" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/nimit2801"><img src="https://avatars.githubusercontent.com/u/53462249?v=4?s=100" width="100px;" alt=""/><br /><sub><b>looping</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=nimit2801" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sudormrfbin"><img src="https://avatars.githubusercontent.com/u/23398472?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gokul Soumya</b></sub></a><br /><a href="https://github.com/HarshCasper/Rotten-Scripts/commits?author=sudormrfbin" title="Code">💻</a></td>
   </tr>
 </table>
 
