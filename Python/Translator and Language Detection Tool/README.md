@@ -1,8 +1,8 @@
-## Translator and Language Detector Tool using Python 3
+# Translator and Language Detector Tool using Python 3
 This is a python script which will detect the language of the input texts and also it can also translate the input text into the desired language which is provided by the users. It supports 107 languages.
 It's like building your own version of google translate or you can call it as **Google Translate 2.0**
 
-### Methods to run the code :
+## Setup Instructions :
 - Clone the repository or, you can download the codebase as a zip file.
 - If you have downloaded the zip file of the codebase then unzip the folder in your computer/laptop.
 - You must have installed Python IDEs or, you can use the Anaconda Navigator.
@@ -15,7 +15,7 @@ pip install pprint
 ```
 - After installing the libraries, run the ipynb file or, py file to deploy the project.
 
-### Explanation of the code :
+## Detailed Explanation of the code :
 - Using this library we can translate from any language to another language.
 - Also this library will predict the language of the input text.
 - To detect the language of the input text and also the output text the system will generate a particular code for every language.
@@ -131,12 +131,13 @@ pip install pprint
  ```
 - In a single word, It will work as Language Detector and as well as a Translator.
 
+## Output : 
 ### Language Detection Tool :
 <img src = "https://i.imgur.com/6jvs9rb.png">
 
 ### Translator Tool :
 <img src = "https://i.imgur.com/Q5a6coh.png">
 
-***********************************************************************
 
-### Code Contributed by, Abhishek Sharma, 2021, @abhisheks008, #LGMSOC 2021
+## Author :
+Code Contributed by, Abhishek Sharma, 2021, @abhisheks008, #LGMSOC 2021
