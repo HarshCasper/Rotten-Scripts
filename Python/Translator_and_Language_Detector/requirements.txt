@@ -1,0 +1,2 @@
+pip install googletrans
+pip install pprint
