@@ -14,6 +14,9 @@
 <td align="center"><a href="https://github.com/vybhav72954"><img src="https://avatars.githubusercontent.com/u/49750343?s=400&u=191d8b88762720b0d229531fb1118e9715f0489b&v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Vybhav Chaturvedi</h4>   
 <a href="https://www.linkedin.com/in/vybhav-chaturvedi-0ba82614a/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
 
+<td align="center"><a href="https://github.com/RohiniRG"><img src="https://avatars.githubusercontent.com/u/64858610?s=400&u=b9bba0b2b4609a5a282ba658592205838cf51c86&v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Rohini Rao</h4>   
+<a href="https://www.linkedin.com/in/rohini-rg/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
+
 </tr>
 </table>
 
