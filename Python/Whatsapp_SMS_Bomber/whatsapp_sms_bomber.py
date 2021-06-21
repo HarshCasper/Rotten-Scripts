@@ -20,18 +20,24 @@ def checkuser(str):
 
 # Taking all the Credentials from the user
 contact_name = []
-print("\n\nEnter the name of the contact you want to send message to (Type 'ALL' if you want to send message to all your contacts: )")
-print(R"For multiple contacts use newline and type 'stop' at the end to stop adding contacts: ")
-while(1):
+print(
+    "\n\nEnter the name of the contact you want to send message to (Type 'ALL' if you want to send message to all your contacts: )"
+)
+print(
+    R"For multiple contacts use newline and type 'stop' at the end to stop adding contacts: "
+)
+while 1:
     a = input()
-    if(a == "stop"):
+    if a == "stop":
         break
     contact_name.append(a)
 
 print("Enter the message you want to send:- ", end=" ")
 message = input()
 
-print("Enter the number of times you want to bomb the message to your contact: ", end=" ")
+print(
+    "Enter the number of times you want to bomb the message to your contact: ", end=" "
+)
 count_message = int(input())
 
 
@@ -42,7 +48,7 @@ driver.maximize_window()
 time.sleep(10)
 
 # If the user chooses ALL then the message will be sent to all the contacts added in mycontacts.py
-if("ALL" in contact_name):
+if "ALL" in contact_name:
     for contact in mycontacts.my_contacts:
 
         # locating the chat icon using xpath
@@ -55,12 +61,11 @@ if("ALL" in contact_name):
         time.sleep(1)
 
         # Checking whether the contact exist or not
-        if(checkuser("//span[@title='{}']".format(contact)) == False):
+        if checkuser("//span[@title='{}']".format(contact)) == False:
             continue
 
         # Searching the contact and clicking on it
-        find_user = driver.find_element_by_xpath(
-            "//span[@title='{}']".format(contact))
+        find_user = driver.find_element_by_xpath("//span[@title='{}']".format(contact))
         find_user.click()
         time.sleep(1)
 
@@ -85,11 +90,10 @@ else:
         search.send_keys(contact)
         time.sleep(1)
 
-        if(checkuser("//span[@title='{}']".format(contact)) == False):
+        if checkuser("//span[@title='{}']".format(contact)) == False:
             continue
 
-        find_user = driver.find_element_by_xpath(
-            "//span[@title='{}']".format(contact))
+        find_user = driver.find_element_by_xpath("//span[@title='{}']".format(contact))
         find_user.click()
         time.sleep(1)
 

@@ -35,7 +35,9 @@ def reodering(path):
     n = int(input("Enter the Total Number of pages which you want to reorder:"))
 
     # Taking user INPUT of page no and location you want to move that page
-    print("\nNow enter the Page no which you want to reorder with the expected location")
+    print(
+        "\nNow enter the Page no which you want to reorder with the expected location"
+    )
 
     # Running a loop to take input
     for i in range(n):
@@ -71,14 +73,16 @@ def reodering(path):
         pdf_writer.addPage(pdf_reader.getPage(page - 1))
 
     # Saving the PDF with the specified name
-    output_file = input("Enter the filename in which you want to save (without .pdf extension): ") + '.pdf'
-    with open(output_file, 'wb') as fh:
+    output_file = (
+        input("Enter the filename in which you want to save (without .pdf extension): ")
+        + ".pdf"
+    )
+    with open(output_file, "wb") as fh:
         pdf_writer.write(fh)
 
     print(f"Great Success!!! Check your directory for {output_file} file!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     path = input("Enter File name: ")
     reodering(path)
-

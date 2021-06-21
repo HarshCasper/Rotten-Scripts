@@ -10,13 +10,13 @@ class EC2Instance:
 
     def key_pair(self):
         """This Function definition will create a keypair for ec2."""
-        ec2 = boto3.resource('ec2')
+        ec2 = boto3.resource("ec2")
         print(self.ec2Instance)
         # create a file to store the key locally
-        outfile = open('ec42-keypair.pem', 'w')
+        outfile = open("ec42-keypair.pem", "w")
 
         # call the boto ec2 function to create a key pair
-        key_pair = ec2.create_key_pair(KeyName='ec42-keypair')
+        key_pair = ec2.create_key_pair(KeyName="ec42-keypair")
 
         # capture the key and store it in a file
         key_pair_out = str(key_pair.key_material)
@@ -26,13 +26,13 @@ class EC2Instance:
         """This will create an ec2 instance."""
         try:
             # create a new EC2 instance
-            ec2 = boto3.resource('ec2')
+            ec2 = boto3.resource("ec2")
             instances = ec2.create_instances(
                 ImageId=self.ec2Instance,
                 MinCount=1,
                 MaxCount=1,
-                InstanceType='t1.micro',
-                KeyName='ec42-keypair'
+                InstanceType="t1.micro",
+                KeyName="ec42-keypair",
             )
         except Exception as err:
             print("Error {0}".format(err))

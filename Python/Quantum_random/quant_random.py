@@ -25,7 +25,7 @@ circ.measure(q, c)
 print(circ)
 
 # Setting up a quantum simulator
-backend = qk.BasicAer.get_backend('qasm_simulator')
+backend = qk.BasicAer.get_backend("qasm_simulator")
 
 
 def rand_int():

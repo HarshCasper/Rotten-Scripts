@@ -40,7 +40,7 @@ def createAccountDirectory(query):
 def downloadImages(page_source, query):
     dest = createAccountDirectory(query)
 
-    soup = BeautifulSoup(page_source, 'html.parser')
+    soup = BeautifulSoup(page_source, "html.parser")
     images = soup.findAll("img", {"class": ["FFVAD"]})
 
     print("Got {} Images".format(len(images)))
@@ -50,8 +50,8 @@ def downloadImages(page_source, query):
         img_src = re.search(r'src="(.*?)"', str(image)).group(1)
         img_src = parseURL(img_src)
 
-        if re.match(r'http.*?', img_src):
-            img_count_str = f'{image_count:03}'
+        if re.match(r"http.*?", img_src):
+            img_count_str = f"{image_count:03}"
             image_count += 1
 
             filename = img_count_str + ".jpg"
@@ -65,8 +65,7 @@ def fetchImageSources(query):
     last_height = driver.execute_script("return document.body.scrollHeight")
 
     while True:
-        driver.execute_script(
-            "window.scrollTo(0, document.body.scrollHeight);")
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(3)
 
         new_height = driver.execute_script("return document.body.scrollHeight")

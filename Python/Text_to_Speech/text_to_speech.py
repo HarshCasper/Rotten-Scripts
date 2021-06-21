@@ -1,5 +1,4 @@
-
-#Imports and dependencies
+# Imports and dependencies
 # gtts, stands for the Google-Text-To-Speech module that is used to convert text to speech
 from gtts import gTTS
 import os
@@ -32,19 +31,19 @@ def convert_text_to_speech(option):
 
     elif option == 2:
         file_name = input(
-            "Enter the name of the text file, that has to be converted to speech ")
+            "Enter the name of the text file, that has to be converted to speech "
+        )
         with open(file_name, "r") as handle:
             text = handle.read().replace("\n", "")
 
     elif option == 3:
         image_path = input(
-            "Enter the path of the image that has to be read and converted to speech ")
-        text = pytesseract.image_to_string(
-            Image.open(image_path).replace("\n", ""))
+            "Enter the path of the image that has to be read and converted to speech "
+        )
+        text = pytesseract.image_to_string(Image.open(image_path).replace("\n", ""))
 
     elif option == 4:
-        wikipedia = input(
-            "Enter the topic about which information is to be obtained ")
+        wikipedia = input("Enter the topic about which information is to be obtained ")
         text = wikipedia.summary(wikipedia)
 
     speech = gTTS(text=text, lang=language, slow=True)

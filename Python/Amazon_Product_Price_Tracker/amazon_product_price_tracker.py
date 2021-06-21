@@ -1,4 +1,4 @@
-#Imports and dependencies
+# Imports and dependencies
 
 import requests
 import time
@@ -16,14 +16,21 @@ def currency_used(URL):
 
     # These headers are user specific, look for "my user agent" in the google search bar and replace your user agent here"
     headers = {
-        "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0'}
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0"
+    }
 
     # Response got from the request sent to the desired product URL
     response = requests.get(URL, headers=headers)
     soup = BeautifulSoup(response.content, "html.parser")
 
-    currency_symbols = {'€': "Euro", '£': "Pound", '$': "Dollars",
-                        "¥": "Renminbi", "HK$": "Hong Kong Dollars", "₹": "Rupeees"}
+    currency_symbols = {
+        "€": "Euro",
+        "£": "Pound",
+        "$": "Dollars",
+        "¥": "Renminbi",
+        "HK$": "Hong Kong Dollars",
+        "₹": "Rupeees",
+    }
 
     # Using web-scraping the price of the product is found
     price = soup.find(id="priceblock_ourprice").get_text()
@@ -35,18 +42,25 @@ def currency_used(URL):
             price = price.replace(symbol, "")
 
     # The currency of the product is stored here"
-    return(currency)
+    return currency
 
 
 def price_check(URL, budget):
 
     headers = {
-        "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0'}
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0"
+    }
     feasible = False
     response = requests.get(URL, headers=headers)
     soup = BeautifulSoup(response.content, "html.parser")
-    currency_symbols = {'€': "Euro", '£': "Pound", '$': "Dollars",
-                        "¥": "Renminbi", "HK$": "Hong Kong Dollars", "₹": "Rupeees"}
+    currency_symbols = {
+        "€": "Euro",
+        "£": "Pound",
+        "$": "Dollars",
+        "¥": "Renminbi",
+        "HK$": "Hong Kong Dollars",
+        "₹": "Rupeees",
+    }
     price = soup.find(id="priceblock_ourprice").get_text()
     currency = ""
 
@@ -64,11 +78,10 @@ def price_check(URL, budget):
     price = price = price.split("-")
     price_now = []
     if len(price) == 2:
-        lower, upper = float(price[0].strip('\xa0')), float(
-            price[1].strip('\xa0'))
+        lower, upper = float(price[0].strip("\xa0")), float(price[1].strip("\xa0"))
         price_now.append(lower)
         price_now.append(upper)
-        price_range = [*(range(int(lower), int(upper+1)))]
+        price_range = [*(range(int(lower), int(upper + 1)))]
         if budget in price_range:
             feasible = True
     else:
@@ -76,7 +89,7 @@ def price_check(URL, budget):
         if budget >= int(price):
             feasible = True
         price_now.append(price)
-    return(feasible, price_now)
+    return (feasible, price_now)
 
 
 # Enter the URL of the amazon product
@@ -85,10 +98,15 @@ URL = input("Enter the URL of the Amazon product : ")
 print("The price of the product is expressed in " + (currency_used(URL)))
 
 # Enter your budget in the same currency as mentioned above
-budget = int(input(
-    "Enter your budget for the product in same unit of currency as mentioned above: "))
+budget = int(
+    input(
+        "Enter your budget for the product in same unit of currency as mentioned above: "
+    )
+)
 
-print("Please enter your email details as asked, when the price of the product is below or equal to your budget, you will receive an email conformation")
+print(
+    "Please enter your email details as asked, when the price of the product is below or equal to your budget, you will receive an email conformation"
+)
 
 # Since a mail is sent from this script, security mode has to be disabled
 print("Also ensure that security mode is switched off in your email settings")
@@ -106,8 +124,12 @@ while not feasible:
     if len(price_range) == 1:
         cost = "The cost of the product is  " + str(price_range[0])
     else:
-        cost = "The cost of the product is within the range " + \
-            str(price_range[0]) + " and " + str(price_range[1])
+        cost = (
+            "The cost of the product is within the range "
+            + str(price_range[0])
+            + " and "
+            + str(price_range[1])
+        )
 
     current_time = datetime.datetime.now()
 

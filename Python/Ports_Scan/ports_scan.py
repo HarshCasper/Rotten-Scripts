@@ -4,7 +4,7 @@ import sys
 from datetime import datetime
 
 # Clear the screen
-subprocess.call('clear', shell=True)
+subprocess.call("clear", shell=True)
 
 # Ask for input
 remoteServer = input("Enter a remote host to scan: ")
@@ -35,7 +35,7 @@ except KeyboardInterrupt:
     sys.exit()
 
 except socket.gaierror:
-    print('Hostname could not be resolved. Exiting')
+    print("Hostname could not be resolved. Exiting")
     sys.exit()
 
 except socket.error:
@@ -49,4 +49,4 @@ t2 = datetime.now()
 total = t2 - t1
 
 # Printing the information to screen
-print('Scanning Completed in: ', total)
+print("Scanning Completed in: ", total)

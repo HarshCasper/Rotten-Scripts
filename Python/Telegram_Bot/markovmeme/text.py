@@ -23,14 +23,14 @@ here = os.path.dirname(os.path.abspath(__file__))
 
 def generate_text(corpus, use_model=True, size=10):
     """Based on a corpus file prefix in "corpus" generate either word-based
-       ngram (wordgram) model, or just randomly select a sentence from
-       the corpus.
+    ngram (wordgram) model, or just randomly select a sentence from
+    the corpus.
 
-       Parameters
-       ==========
-       corpus: the prefix of the corpus file, is checked to exist
-       use_model: boolean. Choose an actual sentence or generate one.
-       size: The number of words to generate (only for a model).
+    Parameters
+    ==========
+    corpus: the prefix of the corpus file, is checked to exist
+    use_model: boolean. Choose an actual sentence or generate one.
+    size: The number of words to generate (only for a model).
     """
     # Get the corpus file, if not provided a full path
     if not os.path.exists(corpus):
@@ -47,7 +47,7 @@ def generate_text(corpus, use_model=True, size=10):
 
 def generate_word_grams(text):
     """Generate a lookup of words mapped to the next occurring word, and
-       we can use this to generate new text based on occurrence.
+    we can use this to generate new text based on occurrence.
     """
     words = text.split()
     wordgrams = {}
@@ -73,7 +73,7 @@ def generate_word_grams(text):
 
 def select_sentence(corpus):
     """Given a corpus file, split based on sentences and randomly select
-       a sentence.
+    a sentence.
     """
     text = load_corpus(corpus)
     return "%s." % random.choice(text.split(".")).strip()
@@ -81,10 +81,10 @@ def select_sentence(corpus):
 
 def generate_words_markov(corpus, size=10):
     """Generate a word lookup based on unique words, and for each
-       have the values be the list of following words to choose from.
-       Randomly select a next word in this fashion. We don't
-       take punctuation into account, but we do capitalize the
-       first letter and end the entire thing with a period.
+    have the values be the list of following words to choose from.
+    Randomly select a next word in this fashion. We don't
+    take punctuation into account, but we do capitalize the
+    first letter and end the entire thing with a period.
     """
     # Load filename into list of words
     text = load_corpus(corpus)
@@ -119,7 +119,7 @@ def generate_words_markov(corpus, size=10):
 
 def get_corpus(prefix):
     """load a corpus file from "corpus" in the same directory as this script.
-       we assume a .txt extension, and return the full path to the file.
+    we assume a .txt extension, and return the full path to the file.
     """
     selection = list_corpus(remove_ext=False)
     selected = "%s.txt" % (prefix)
@@ -136,7 +136,7 @@ def get_corpus(prefix):
 
 def load_corpus(filename):
     """Given a filename, load the corpus to build the model. This is called by
-       both generation functions.
+    both generation functions.
     """
     if not os.path.exists(filename):
         sys.exit("Cannot find %s" % filename)

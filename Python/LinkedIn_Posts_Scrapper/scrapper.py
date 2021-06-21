@@ -53,8 +53,8 @@ def login(email, password):
 
 def get_to_endpoint(driver):
     """Loads /detail/recent-activity/shares/ endpoint"""
-    time.sleep(5) # wait for the whole page to load
-    profile_link = driver.find_elements_by_tag_name('a')  # Scrap endpoint link
+    time.sleep(5)  # wait for the whole page to load
+    profile_link = driver.find_elements_by_tag_name("a")  # Scrap endpoint link
     for i in profile_link:
         link = i.get_attribute("href")
         if "/detail/recent-activity/shares/" in link:
@@ -82,7 +82,7 @@ def post_scrap(driver, count):
     headings = []
     reactions = []
     for card in cards:
-        card = card.get_attribute("innerHTML")   
+        card = card.get_attribute("innerHTML")
         try:  # Append headings
             headings.append(re.search(pattern_head, card)[1])
         except:
@@ -104,7 +104,14 @@ def to_csv(headings, reactions):
     # Make a dataframe and append data to it
     df = pd.DataFrame()
     for i in range(len(headings)):
-        df = df.append({"Heading": headings[i], "Reactions": reactions[i][0], "Comments": reactions[i][1]}, ignore_index=True)
+        df = df.append(
+            {
+                "Heading": headings[i],
+                "Reactions": reactions[i][0],
+                "Comments": reactions[i][1],
+            },
+            ignore_index=True,
+        )
     # Save to CSV
     df.to_csv("Scrap.csv", index=False, columns=["Heading", "Reactions", "Comments"])
 

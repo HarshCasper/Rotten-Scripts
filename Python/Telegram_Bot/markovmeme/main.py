@@ -23,10 +23,10 @@ here = os.path.dirname(os.path.abspath(__file__))
 
 class MemeImage:
     """A Meme Image includes markov (or randomly selected) text from a corpus, and
-       a matching image. The image and corpus can be customized, otherwise
-       the image is matched to the text. If the user selects a custom corpus,
-       a custom image must also be provided. If an image doesn't exist for a 
-       given corpus, the user is required to specify it.
+    a matching image. The image and corpus can be customized, otherwise
+    the image is matched to the text. If the user selects a custom corpus,
+    a custom image must also be provided. If an image doesn't exist for a
+    given corpus, the user is required to specify it.
     """
 
     def __init__(self, image=None, corpus=None, quiet=False):
@@ -39,7 +39,7 @@ class MemeImage:
 
     def get_corpus(self, corpus):
         """Given an input corpus, validate that it's available. If it's not
-           a full path to a file, or if it doesn't exist, select one at random.
+        a full path to a file, or if it doesn't exist, select one at random.
         """
         if os.path.exists(corpus):
             return corpus
@@ -51,8 +51,8 @@ class MemeImage:
 
     def get_image(self, image, corpus):
         """If the image is provided, the full path must exist. Otherwise,
-           we list images that come with the modula and randomly select one
-           that matches the corpus.
+        we list images that come with the modula and randomly select one
+        that matches the corpus.
         """
         # If a full path to an image is provided that exists, we're good
         if image is not None:
@@ -62,8 +62,7 @@ class MemeImage:
         # Otherwise, filter to subset in corpus
         options = [x for x in list_images() if corpus in x]
         if not options:
-            sys.exit(
-                "No images exist for corpus %s. Please specify --image." % corpus)
+            sys.exit("No images exist for corpus %s. Please specify --image." % corpus)
 
         choice = random.choice(options)
         return os.path.join(here, "data", "images", "%s.png" % choice)
@@ -75,8 +74,7 @@ class MemeImage:
         return self.__str__()
 
     def print(self, message):
-        """A wrapper to print to check if quiet is True, and skip if so.
-        """
+        """A wrapper to print to check if quiet is True, and skip if so."""
         if not self.quiet:
             print(message)
 
@@ -90,7 +88,7 @@ class MemeImage:
         font="Anton-Regular.ttf",
     ):
         """Given a text string, font size, and output coordinates, write text
-           onto the image. The default font provided with the package 
+        onto the image. The default font provided with the package
         """
         if text not in [None, ""]:
 
@@ -114,14 +112,10 @@ class MemeImage:
                 ycoord = i * h
 
                 # Black outline
-                self.draw.text((xcoord - 2, ycoord - 2),
-                               lines[i], (0, 0, 0), font=font)
-                self.draw.text((xcoord + 2, ycoord - 2),
-                               lines[i], (0, 0, 0), font=font)
-                self.draw.text((xcoord + 2, ycoord + 2),
-                               lines[i], (0, 0, 0), font=font)
-                self.draw.text((xcoord - 2, ycoord + 2),
-                               lines[i], (0, 0, 0), font=font)
+                self.draw.text((xcoord - 2, ycoord - 2), lines[i], (0, 0, 0), font=font)
+                self.draw.text((xcoord + 2, ycoord - 2), lines[i], (0, 0, 0), font=font)
+                self.draw.text((xcoord + 2, ycoord + 2), lines[i], (0, 0, 0), font=font)
+                self.draw.text((xcoord - 2, ycoord + 2), lines[i], (0, 0, 0), font=font)
 
                 # Main text
                 self.draw.text((xcoord, ycoord), line, font=font, fill=rgb)
@@ -168,7 +162,7 @@ class MemeImage:
 
     def save_image(self, outfile=None):
         """Save the image to an output file, if provided. Optionally add some
-           text to it.
+        text to it.
         """
         if not outfile:
             outfile = "%s.png" % self.generate_name()
@@ -176,6 +170,5 @@ class MemeImage:
         self.image.save(outfile, "PNG")
 
     def generate_name(self):
-        """Generate a random filename from the Robot Namer
-        """
+        """Generate a random filename from the Robot Namer"""
         return RobotNamer().generate()

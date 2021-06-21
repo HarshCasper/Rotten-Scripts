@@ -8,13 +8,13 @@ if sys.argv[1] == "help":
     sys.exit(1)
 
 if not os.path.exists(sys.argv[1]):
-    print("Cannot open "+sys.argv[1])
+    print("Cannot open " + sys.argv[1])
     sys.exit(1)
 
 file_name = sys.argv[1]
-extension = file_name.split('.')[-1]
+extension = file_name.split(".")[-1]
 
-if not extension in ('json'):
+if not extension in ("json"):
     print("The extension of json_file is incorrect")
     sys.exit(1)
 
@@ -28,7 +28,7 @@ except:
     sys.exit(1)
 
 workbook = xlwt.Workbook()
-worksheet = workbook.add_sheet('json exported')
+worksheet = workbook.add_sheet("json exported")
 
 columns = list(json_imported[0].keys())
 
@@ -46,7 +46,7 @@ for row in json_imported:
     j += 1
 
 try:
-    workbook.save(file_name.split('.')[0] + '.xls')
+    workbook.save(file_name.split(".")[0] + ".xls")
     sys.exit(0)
 except:
     print("Can't write the xls file")

@@ -6,7 +6,7 @@ import threading
 import subprocess as sp
 
 
-class network():
+class network:
     def monitor(self, limit, unit):
         check = "vnstat"
         proc = sp.Popen(check, shell=True, stdout=sp.PIPE)
@@ -38,5 +38,5 @@ class network():
             unit = str(sys.argv[2])
             monitor(limit, unit)
 
-    if __name__ == '__main__':
+    if __name__ == "__main__":
         main()

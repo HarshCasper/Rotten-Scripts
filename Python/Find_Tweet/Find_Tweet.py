@@ -5,16 +5,15 @@ import tweepy
 def search_tweet(s_user, s_tweet):
     # Enter the tweet you want to search for here
     for following in api.friends(id=s_user.screen_name):
-        print('Searching ', following.screen_name)
+        print("Searching ", following.screen_name)
         tweets = api.user_timeline(screen_name=following.screen_name)
         for tweet in tweets:
             if tweet.text.lower() == s_tweet.lower():
                 link = "https://twitter.com/{}/status/{}"
-                print('Found! Link', link.format(
-                    tweet.user.screen_name, tweet.id))
-                print(' by: ', following.screen_name, 'id: ', tweet.id)
+                print("Found! Link", link.format(tweet.user.screen_name, tweet.id))
+                print(" by: ", following.screen_name, "id: ", tweet.id)
                 return
-    print('Tweet not found!')
+    print("Tweet not found!")
 
 
 # Enter your keys here

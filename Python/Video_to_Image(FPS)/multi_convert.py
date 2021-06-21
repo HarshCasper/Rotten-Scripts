@@ -4,20 +4,35 @@ import cv2
 
 # Necessary Arguments
 ap = argparse.ArgumentParser()
-ap.add_argument('-i', "--input", required=True, type=str,
-                help="Input for the video files",)
-ap.add_argument('-o', "--output", type=str,
-                help="Output directory for the images extracted")
-ap.add_argument('-fps', "--framesps", default=int(cv2.CAP_PROP_FPS),
-                help="Extract at the desired Frame rate")
-ap.add_argument('-frate', "--frate", default=0.1, type=float,
-                help="To determine the amount of frames to be extracted per second")
+ap.add_argument(
+    "-i",
+    "--input",
+    required=True,
+    type=str,
+    help="Input for the video files",
+)
+ap.add_argument(
+    "-o", "--output", type=str, help="Output directory for the images extracted"
+)
+ap.add_argument(
+    "-fps",
+    "--framesps",
+    default=int(cv2.CAP_PROP_FPS),
+    help="Extract at the desired Frame rate",
+)
+ap.add_argument(
+    "-frate",
+    "--frate",
+    default=0.1,
+    type=float,
+    help="To determine the amount of frames to be extracted per second",
+)
 args = vars(ap.parse_args())
 
-video_path = args['input']
-save_path = args['output']
-skip_frames = args['framesps']
-frameRate = args['frate']
+video_path = args["input"]
+save_path = args["output"]
+skip_frames = args["framesps"]
+frameRate = args["frate"]
 
 
 def length_of_video(video_p):
@@ -44,10 +59,11 @@ def extracting_frames(video_pa, op_path, skip_frame, filen):
         count = 1
         while ret:
             ret, frame = cap.read()
-            if ret and count % int(skip_frame/(frameRate)) == 0:
+            if ret and count % int(skip_frame / (frameRate)) == 0:
                 # Naming
-                name = op_path + \
-                    filen.split('.')[0] + '-' + "frame" + str(count) + ".png"
+                name = (
+                    op_path + filen.split(".")[0] + "-" + "frame" + str(count) + ".png"
+                )
                 cv2.imwrite(name, frame)
                 count += 1
             else:
@@ -55,7 +71,7 @@ def extracting_frames(video_pa, op_path, skip_frame, filen):
     else:
         print("Problem saving the Test Frame.")
         return 0
-    print(filen + ' completed')
+    print(filen + " completed")
     cap.release()
 
 

@@ -7,8 +7,7 @@ import sys
 
 
 def make_tiny(url):
-    request_url = ('http://tinyurl.com/api-create.php?' +
-                   urlencode({'url': url}))
+    request_url = "http://tinyurl.com/api-create.php?" + urlencode({"url": url})
     result = requests.get(request_url)
     return result.text
 
@@ -18,5 +17,5 @@ def main():
         print(tinyurl)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

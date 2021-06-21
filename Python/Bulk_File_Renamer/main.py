@@ -11,5 +11,5 @@ def main():
     organize.organize()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

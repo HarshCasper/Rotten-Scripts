@@ -5,6 +5,7 @@
 import requests
 import sys
 from github import Github
+
 # imports
 # pip3/pip install PyGithub is installed to work with the contents of the Github repositories
 
@@ -21,7 +22,9 @@ def repository_names(user):
     repo_names = []
     for repo in user.get_repos():
         repo_names.append(repo)
-    return(repo_names)
+    return repo_names
+
+
 # fetching the names of all the repositories
 
 
@@ -30,13 +33,15 @@ def repository_details(user):
     repo_names = repository_names(user)
     for repo in repo_names:
         repo_details = {}
-        repo_details['Name'] = repo.full_name.split('/')[1]
-        repo_details['Description'] = repo.description
-        repo_details['Created on'] = repo.created_at
-        repo_details['Programming language'] = repo.language
-        repo_details['Forked'] = str(repo.forks) + " time(s)"
+        repo_details["Name"] = repo.full_name.split("/")[1]
+        repo_details["Description"] = repo.description
+        repo_details["Created on"] = repo.created_at
+        repo_details["Programming language"] = repo.language
+        repo_details["Forked"] = str(repo.forks) + " time(s)"
         all_repo_details.append(repo_details)
-    return(all_repo_details)
+    return all_repo_details
+
+
 # fetching the details of all the repositories
 
 
@@ -51,4 +56,6 @@ if __name__ == "__main__":
         # pprint.pprint(content)
         for title, description in content.items():
             print(title, ":", description)
-        print('\n-------------------------------------------------------------------------------------------------------------------\n')
+        print(
+            "\n-------------------------------------------------------------------------------------------------------------------\n"
+        )

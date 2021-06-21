@@ -14,7 +14,7 @@ def image_finder(parent_folder):
     duplicate_img = {}
     for dirName, subdirs, fileList in os.walk(parent_folder):
         # Iterating over various Sub-Folders
-        print('Scanning %s...' % dirName)
+        print("Scanning %s..." % dirName)
         for filename in fileList:
             # Get the path to the file
             path = os.path.join(dirName, filename)
@@ -49,7 +49,7 @@ def join_dicts(dict1, dict2):
 # For finding Hash of various Files
 # If 2 files have the same md5checksum,they most likely have the same content
 def hash_file(path, blocksize=65536):
-    img_file = open(path, 'rb')
+    img_file = open(path, "rb")
     hasher = hashlib.md5()
     buf = img_file.read(blocksize)
     while len(buf) > 0:
@@ -63,20 +63,20 @@ def hash_file(path, blocksize=65536):
 def print_results(dict1):
     results = list(filter(lambda x: len(x) > 1, dict1.values()))
     if len(results) > 0:
-        print('Found Duplicated Images - ')
-        print('Details -')
-        print('<--------------------->')
+        print("Found Duplicated Images - ")
+        print("Details -")
+        print("<--------------------->")
         for result in results:
             # Print Path of Files
             for subresult in result:
-                print('\t%s' % subresult)
-            print('<--------------------->')
+                print("\t%s" % subresult)
+            print("<--------------------->")
 
     else:
-        print('Unable to identify Similar Images')
+        print("Unable to identify Similar Images")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     if len(sys.argv) > 1:
         duplicate = {}
         folders = sys.argv[1:]
@@ -86,13 +86,12 @@ if __name__ == '__main__':
                 # Find the duplicated files and append them to the dictionary
                 join_dicts(duplicate, image_finder(i))
             else:
-                print('%s is not a valid path, please verify' % i)
+                print("%s is not a valid path, please verify" % i)
                 sys.exit()
         print_results(duplicate)
         # Delete Duplicate Images
         # Comment if not required
-        print(
-            "Do you want to delete the Duplicate Images (If Any)? Press [y] for Yes.")
+        print("Do you want to delete the Duplicate Images (If Any)? Press [y] for Yes.")
         while True:
             if keyboard.read_key() == "y":
                 print("Deleting Duplicate Files\n")
@@ -106,7 +105,7 @@ if __name__ == '__main__':
         print("Use Command Line Interface")
         print("Hint: python image_finder.py <path of folders>")
         print("Please Read comments for greater detailing")
-        '''
+        """
         Suggestions :------ 
         Usage - python image_finder.py <path of folder1, path  of folder2, .....>
         folder1 - Parent Folder
@@ -117,4 +116,4 @@ if __name__ == '__main__':
         deleted. Make sure that the paths are correct 
         
         Be careful during Keyboard Input.
-        '''
+        """

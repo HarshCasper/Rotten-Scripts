@@ -2,6 +2,7 @@
 
 import os
 import glob
+
 # glob function of glob module to detect all files inside current directory
 files_list = glob.glob("*")
 # Creating a set of extension types inside the folder to avoid duplicate entries
@@ -22,9 +23,10 @@ for file in files_list:
 def createDirs():
     for dir in extension_set:
         try:
-            os.makedirs(dir+"_files")
+            os.makedirs(dir + "_files")
         except FileExistsError:
             continue
+
 
 # Function to move files to respective folders
 
@@ -33,7 +35,7 @@ def arrange():
     for file in files_list:
         fextension = file.split(sep=".")
         try:
-            os.rename(file, fextension[1]+"_files/"+file)
+            os.rename(file, fextension[1] + "_files/" + file)
         except (OSError, IndexError):
             continue
 

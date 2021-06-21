@@ -3,7 +3,7 @@ from string import ascii_uppercase, ascii_lowercase
 
 
 def rot_13(string):
-    return ''.join([encrypt_char(c) for c in string])
+    return "".join([encrypt_char(c) for c in string])
 
 
 def encrypt_char(c):
@@ -19,7 +19,7 @@ def encrypt_char(c):
 
 
 def exit_with_error():
-    print('Usage: please provide a string to encrypt')
+    print("Usage: please provide a string to encrypt")
     sys.exit(1)
 
 

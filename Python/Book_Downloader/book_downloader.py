@@ -4,7 +4,7 @@ import os
 # Variables
 directory_name = "MSFT Books"
 # URL that contains url of all the books
-links_list_url = 'http://ligman.me/2sZVmcG'
+links_list_url = "http://ligman.me/2sZVmcG"
 print_status = True  # Print the current status of the script
 
 # Create a directory
@@ -23,7 +23,7 @@ for url in loop[1:]:
     book_name = response.url.split("/")[-1]
 
     # Writing the file using open function
-    with open('{}/{}'.format(directory_name, book_name), 'wb') as bin_file:
+    with open("{}/{}".format(directory_name, book_name), "wb") as bin_file:
         bin_file.write(response.content)
 
     if print_status:

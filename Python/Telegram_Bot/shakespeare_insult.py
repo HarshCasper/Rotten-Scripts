@@ -10,13 +10,20 @@ def insult():
     subject = []
     predicate = []
     verb = []
-    with open('insults_content.txt', 'r') as file:
+    with open("insults_content.txt", "r") as file:
         for line in file:
             split_line = line.split()
             subject.append(split_line[0])
             predicate.append(split_line[1])
             verb.append(split_line[2])
-    return("Thou art a " + random.choice(subject) + " " + random.choice(predicate) + " " + random.choice(predicate))
+    return (
+        "Thou art a "
+        + random.choice(subject)
+        + " "
+        + random.choice(predicate)
+        + " "
+        + random.choice(predicate)
+    )
 
 
 if __name__ == "__main__":

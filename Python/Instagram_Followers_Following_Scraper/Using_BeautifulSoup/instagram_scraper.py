@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#Imports and dependencies
+# Imports and dependencies
 from bs4 import BeautifulSoup
 import requests
 
@@ -14,10 +14,11 @@ def parse_data(meta_content):
     # The content received needs to parsed through
     meta_content = meta_content.split("-")[0]
     meta_content = meta_content.split(" ")
-    data['Followers'] = meta_content[0]
-    data['Following'] = meta_content[2]
-    data['Posts'] = meta_content[4]
+    data["Followers"] = meta_content[0]
+    data["Following"] = meta_content[2]
+    data["Posts"] = meta_content[4]
     return data
+
 
 # Using BeautifulSoup, web-scarping is performed
 
@@ -32,7 +33,7 @@ def scrape_data(username):
     # The contents of the meta tag with the property og:description are accessed here
     meta_content = soup.find("meta", property="og:description")
 
-    return parse_data(meta_content.attrs['content'])
+    return parse_data(meta_content.attrs["content"])
 
 
 if __name__ == "__main__":
