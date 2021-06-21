@@ -44,7 +44,7 @@ pub fn parse_args() -> Result<AppArgs, Box<dyn std::error::Error>> {
     // extraneous additional argumetns
     let remaining = cmdargs.finish();
     if !remaining.is_empty() {
-        return Err("Additional arguments specifed".into())
+        return Err("Additional arguments specifed".into());
     }
 
     Ok(args)
