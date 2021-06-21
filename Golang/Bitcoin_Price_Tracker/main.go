@@ -14,7 +14,7 @@ func give_current_price_of_bitcoin() {
 	c := colly.NewCollector(
 		colly.AllowedDomains("google.com", "www.google.com"),
 	)
-	
+
 	//bool variable to close the search after target tag is found
 	found := false
 
@@ -29,7 +29,7 @@ func give_current_price_of_bitcoin() {
 			found = true
 		}
 	})
-	
+
 	//webpage url to be visited
 	c.Visit("https://www.google.com/search?q=bitcoin+price")
 }

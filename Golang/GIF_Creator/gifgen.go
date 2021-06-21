@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"gif/convert"
 	"image"
 	"image/color/palette"
 	"image/draw"
@@ -10,7 +11,6 @@ import (
 	_ "image/jpeg"
 	"io/ioutil"
 	"os"
-	"gif/convert"
 )
 
 var option, output, input string
