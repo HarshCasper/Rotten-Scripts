@@ -4,9 +4,9 @@ from datetime import date
 
 # clear the console
 if os.name == "nt":
-    os.system('cls')
+    os.system("cls")
 else:
-    os.system('clear')
+    os.system("clear")
 
 print("\nWelcome to Counting Days!\n")
 

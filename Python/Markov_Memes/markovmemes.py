@@ -13,10 +13,10 @@ import random
 
 handle = []
 
-with open('themes.txt', 'r') as file:
+with open("themes.txt", "r") as file:
     handle = file.readlines()
     for i, j in enumerate(handle):
-        handle[i] = handle[i].replace(" ", '').strip('\n')
+        handle[i] = handle[i].replace(" ", "").strip("\n")
 
 # A random theme is chosen, from themes.txt
 corpus = handle[random.randint(0, 29)]
@@ -27,7 +27,7 @@ text = generate_text(corpus=corpus, use_model=True, size=10)
 meme = MemeImage(image=None, corpus=corpus)
 
 # Add text generated, centered on top
-meme.write_text(text, fontsize=20, font='Anton-Regular.ttf')
+meme.write_text(text, fontsize=20, font="Anton-Regular.ttf")
 
 # The meme is saved as markovmeme.png in the current diectory
-meme.save_image('markovmeme.png')
+meme.save_image("markovmeme.png")

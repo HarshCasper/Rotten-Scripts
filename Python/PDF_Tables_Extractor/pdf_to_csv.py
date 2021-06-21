@@ -1,5 +1,5 @@
-''' python code to convert pdf to csv
-'''
+""" python code to convert pdf to csv
+"""
 import sys
 import tabula
 
@@ -10,7 +10,7 @@ def extract_tables(path, number_pages):
     if tables:
         for table in tables:
             print("Saving file ...")
-            table.to_csv(f'Table-{num}.csv')
+            table.to_csv(f"Table-{num}.csv")
             num += 1
         print(f"created a csv file!'Table-{num}.csv'")
     else:

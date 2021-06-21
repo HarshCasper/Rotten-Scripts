@@ -4,11 +4,13 @@ from requests import get, HTTPError, ConnectionError
 from re import findall
 from urllib.parse import unquote
 
+
 def Invalid_Url():
     print("Invalid URL , Please Enter Correct URL")
 
+
 def get_video_downloadlink(url):
-    
+
     url = url.replace("www", "mbasic")
     try:
         r = get(url, timeout=5, allow_redirects=True)
@@ -24,13 +26,14 @@ def get_video_downloadlink(url):
         print("[x] Invalid URL")
         exit(1)
 
+
 def download_video(url):
 
     block_size = 1024  # 1kB
     r = get(url, stream=True)
     total_size = int(r.headers.get("content-length"))
-    progress_bar = tqdm(total=total_size, unit='iB', unit_scale=True)
-    with open('video.mp4', 'wb') as file:
+    progress_bar = tqdm(total=total_size, unit="iB", unit_scale=True)
+    with open("video.mp4", "wb") as file:
         for data in r.iter_content(block_size):
             progress_bar.update(len(data))
             file.write(data)
@@ -41,15 +44,14 @@ def download_video(url):
 
 
 def main():
-    url=input("Enter the URL of Facebook Video you want to download:- ")
+    url = input("Enter the URL of Facebook Video you want to download:- ")
     if not "www.facebook.com" in url:
         Invalid_Url()
         return
 
-    link=get_video_downloadlink(url)
+    link = get_video_downloadlink(url)
     download_video(link)
 
 
-
 if __name__ == "__main__":
-    main() 
+    main()

@@ -1,7 +1,7 @@
 import os
 import platform
 
-if(platform.system()[1].lower() == 'windows'):
+if platform.system()[1].lower() == "windows":
     # For Windows Operating System.
     try:
         os.system("pip install -r Windows/requirements.txt")

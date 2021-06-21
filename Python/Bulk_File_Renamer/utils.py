@@ -3,28 +3,26 @@ from os import listdir, rename, mkdir, remove
 from shutil import copy2
 from sys import exit
 
+
 class SelectFiles:
     """Class containing method to select and filter files at a path.\
         It contains different filters based on which, the files can be filtered"""
 
     FILTERS = {
-        "filesize":
-            {
-                "apply" : False,
-                "description": "Upper limit of the filesize (Kb): "
-            },
-        "filename": 
-            {
-                "apply" : False,
-                "description": "Name/Part of Name to match with filename: "
-            },
-        "extension":
-            {
-                "apply" : False,
-                "description": "Extension(s) of the files to be considered"
-                               " (Space separated)[pdf png]: "
-            }
-        }
+        "filesize": {
+            "apply": False,
+            "description": "Upper limit of the filesize (Kb): ",
+        },
+        "filename": {
+            "apply": False,
+            "description": "Name/Part of Name to match with filename: ",
+        },
+        "extension": {
+            "apply": False,
+            "description": "Extension(s) of the files to be considered"
+            " (Space separated)[pdf png]: ",
+        },
+    }
 
     def __init__(self):
         """Takes in arguments from the user for filtering files"""
@@ -32,12 +30,14 @@ class SelectFiles:
 
         for key in self.FILTERS:
             while True:
-                value = SelectFiles.validate(input(self.FILTERS[key]['description']), key)
+                value = SelectFiles.validate(
+                    input(self.FILTERS[key]["description"]), key
+                )
                 if value == "":
                     break
                 elif not isinstance(value, bool):
-                    self.FILTERS[key]['apply'] = True
-                    self.FILTERS[key]['value'] = value
+                    self.FILTERS[key]["apply"] = True
+                    self.FILTERS[key]["value"] = value
                     break
 
     @staticmethod
@@ -67,7 +67,7 @@ class SelectFiles:
             out the list of files"""
         if filter_argument == "filesize":
             # Convert filesize from Kb to Bytes
-            size = filter_value*1024
+            size = filter_value * 1024
 
             # Removes the instances of files which does not match the criteria
             for key in files.copy():
@@ -140,7 +140,6 @@ class SelectFiles:
 class OrganizeFiles:
     """Class which contains methods to rename/relocate or delete files."""
 
-
     def __init__(self, files):
         """Organizes files object in a particular order."""
         if files is None or len(files) == 0:
@@ -186,15 +185,16 @@ class OrganizeFiles:
 
             # Create directory
             for file in files.keys():
-                folder_name = join(split(files[file]["path"])[0],\
-                                arguments["value"]["folder-name"])
+                folder_name = join(
+                    split(files[file]["path"])[0], arguments["value"]["folder-name"]
+                )
                 break
             if not isdir(folder_name):
                 mkdir(folder_name)
                 print(f"Created folder '{folder_name}' successfully!!")
 
             for file in files.keys():
-                split_name = splitext(files[file]["name"]) 
+                split_name = splitext(files[file]["name"])
                 name = f"{new_name}_{count}{split_name[1]}"
                 prefix_file = split(files[file]["path"])[0]
                 count += 1
@@ -220,8 +220,10 @@ class OrganizeFiles:
         print(f"\n\nFiles available to organize: {len(self.files)}")
 
         arguments = {}
-        choice = input("Choose the method to re-organize:\n1. Rename in-place"
-                        "\n2. Rename and copy to new folder\n3. Delete Files\n: ")
+        choice = input(
+            "Choose the method to re-organize:\n1. Rename in-place"
+            "\n2. Rename and copy to new folder\n3. Delete Files\n: "
+        )
         if choice == "1":
             arguments["method"] = "rename"
             arguments["value"] = OrganizeFiles.set_arguments("filename")

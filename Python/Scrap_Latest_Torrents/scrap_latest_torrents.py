@@ -75,4 +75,3 @@ def search_torrents(label):
 
 if __name__ == "__main__":
     main()
-

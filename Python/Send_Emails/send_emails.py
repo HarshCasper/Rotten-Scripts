@@ -7,19 +7,19 @@ import smtplib
 # This configuration can be made on visiting account information.
 # Under the category security, less secure apps must turned on
 
-#"Sender's Email-ID"
+# "Sender's Email-ID"
 sender_email = input("Enter the sender's Email-ID : ")
 
-#"Receiver's Email-ID"
+# "Receiver's Email-ID"
 receiver = input("Enter the receiver's Email-ID : ")
 
-#"Sender's password"
+# "Sender's password"
 password = input("Enter the sender's password : ")
 
-#"Subject of the Email"
+# "Subject of the Email"
 subject = input("Enter the subject of the email : ")
 
-#"Content of the email"
+# "Content of the email"
 body_of_the_email = input("Enter the content of the email : ")
 
 content = "Subject: {}\n\n{}".format(subject, body_of_the_email)
@@ -34,7 +34,7 @@ server = smtplib.SMTP("smtp.gmail.com", 587)
 server.starttls()
 server.login(sender_email, password)
 
-#Login is authorised
+# Login is authorised
 
 print("Login success")
 

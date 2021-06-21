@@ -1,13 +1,14 @@
 # Script to scrap all the E-Mails in a Webpage.
 
 # Importing required libraries and modules.
-import re                               # For regular expression operations
-import requests                         # For sending HTTP request to server
-from urllib.parse import urlsplit       # For Splitting the URL
-from collections import deque           # A list-like container
+import re  # For regular expression operations
+import requests  # For sending HTTP request to server
+from urllib.parse import urlsplit  # For Splitting the URL
+from collections import deque  # A list-like container
+
 # A Python package for parsing HTML and XML documents
 from bs4 import BeautifulSoup
-import requests.exceptions              # For handling exceptions
+import requests.exceptions  # For handling exceptions
 
 # Enter here the webpage to scrape in the original_url.
 original_url = input("Enter the webpage url: ")
@@ -32,7 +33,7 @@ parts = urlsplit(url)
 # As urlsplit() returns a 5-tuple which are (addressing scheme, network location, path, query, fragment identifier).
 # So we will get the base and path part for the website URL.
 base_url = "{0.scheme}://{0.netloc}".format(parts)
-path = url[:url.rfind('/')+1] if '/' in parts.path else url
+path = url[: url.rfind("/") + 1] if "/" in parts.path else url
 
 # Sending an HTTP GET request to the website.
 try:
@@ -42,24 +43,25 @@ except (requests.exceptions.MissingSchema, requests.exceptions.ConnectionError):
     pass
 
 # extracting all email addresses and add them into the resulting set
-new_emails = set(re.findall(
-    r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
+new_emails = set(
+    re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I)
+)
 emails.update(new_emails)
 print(emails)
 
 # Finding all linked URLs in the website.
 # Creating a Beautiful Soup to parse the HTML document.
-soup = BeautifulSoup(response.text, 'html.parser')
+soup = BeautifulSoup(response.text, "html.parser")
 
 # Once this document is parsed and processed,
 # now find and process all the anchors as it may contains emails i.e. linked urls in this document.
 for anchor in soup.find_all("a"):
     # extracting link url from the anchor tag
-    link = anchor.attrs["href"] if "href" in anchor.attrs else ''
+    link = anchor.attrs["href"] if "href" in anchor.attrs else ""
     # resolve relative links (starting with /)
-    if link.startswith('/'):
+    if link.startswith("/"):
         link = base_url + link
-    elif not link.startswith('http'):
+    elif not link.startswith("http"):
         link = path + link
 
     # add the new url to the queue if it was not in unprocessed list nor in processed list yet

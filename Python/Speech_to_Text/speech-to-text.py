@@ -5,9 +5,9 @@ import speech_recognition as sr
 def get():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print('Say Something...!')
+        print("Say Something...!")
         audio = r.listen(source)
-        print('done!')
+        print("done!")
 
     try:
         text = r.recognize_google(audio)

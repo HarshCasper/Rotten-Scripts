@@ -19,7 +19,7 @@ def godaddy_credentials():
 
     req_headers = {
         "Authorization": f"sso-key {api_key}:{api_secret}",
-        "accept": "application/json"
+        "accept": "application/json",
     }
 
 
@@ -52,7 +52,7 @@ def available_domain_names():
         print(f"\nSaving all the available domain names in {domain_name}.txt file")
         f = open(f"{domain_name}.txt", "a")
         for i in response:
-            f.writelines(i['domain'] + '\n')
+            f.writelines(i["domain"] + "\n")
         f.close()
         print(f"\nFile {domain_name}.txt saved successfully in your current directory")
 

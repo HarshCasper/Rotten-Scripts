@@ -6,7 +6,7 @@ import requests
 import json
 from sys import argv
 
-#imports and dependencies
+# imports and dependencies
 
 api_key = "26efcdb88222e7exxxxxx2051b4e49d0"
 
@@ -38,12 +38,14 @@ if weather_data["cod"] != "404":
     details = weather_data["weather"]
     weather_description = details[0]["description"]
     print("The weather in " + argv[1] + " is :")
-    print(" Temperature (in degrees celsius) : " +
-          str(int(current_temperature-273)) +
-          "\n Humidity : (in percentage) = " +
-          str(current_humidity) + "%"
-          "\n Description : " +
-          str(weather_description))
+    print(
+        " Temperature (in degrees celsius) : "
+        + str(int(current_temperature - 273))
+        + "\n Humidity : (in percentage) = "
+        + str(current_humidity)
+        + "%"
+        "\n Description : " + str(weather_description)
+    )
 
 else:
     print("City Not Found")

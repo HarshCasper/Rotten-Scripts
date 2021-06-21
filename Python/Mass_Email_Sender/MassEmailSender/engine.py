@@ -6,9 +6,9 @@ import mimetypes
 class MailEngine:
     def __init__(self, host, port):
         """Initialize:
-            Initializes Mass Mail Engine with given 2 arguments:
-                1. HOST
-                2. PORT
+        Initializes Mass Mail Engine with given 2 arguments:
+            1. HOST
+            2. PORT
         """
         self.mail = SMTP(host=host, port=port)
         self.senderMail = ""
@@ -19,14 +19,16 @@ class MailEngine:
         self.mailPlainText = ""
         self.mailHTMLText = ""
         print(
-            "\n-----+------+------+------+------+------+------+------+------+------+------")
+            "\n-----+------+------+------+------+------+------+------+------+------+------"
+        )
         print("                    MassMail Engine initialized")
         print(
-            "-----+------+------+------+------+------+------+------+------+------+------\n")
+            "-----+------+------+------+------+------+------+------+------+------+------\n"
+        )
 
     def login(self, sender_mail, sender_password):
         """Login:
-            Logs in into sender's mail account if given valid credentials
+        Logs in into sender's mail account if given valid credentials
         """
         self.senderMail = sender_mail
         print("Logging in with registered email: {}".format(sender_mail))
@@ -40,44 +42,47 @@ class MailEngine:
 
     def addMessage(self, Text, MIMEType):
         """Add Message:
-            Saves the MIMEType of the rendered template data as per the type of MIME:
-                1. html
-                2. plain
+        Saves the MIMEType of the rendered template data as per the type of MIME:
+            1. html
+            2. plain
         """
-        if(MIMEType.lower() == 'plain'):
+        if MIMEType.lower() == "plain":
             self.mailPlainText = Text
-        elif(MIMEType.lower() == 'html'):
+        elif MIMEType.lower() == "html":
             self.mailHTMLText = Text
         else:
             print(
-                "\n-----+------+------+------+------+------+------+------+------+------+------")
+                "\n-----+------+------+------+------+------+------+------+------+------+------"
+            )
             print("                         Error")
             print(
-                "-----+------+------+------+------+------+------+------+------+------+------")
+                "-----+------+------+------+------+------+------+------+------+------+------"
+            )
             print("Error in MIME Type argument")
             print("Exiting program...")
             print(
-                "-----+------+------+------+------+------+------+------+------+------+------\n")
+                "-----+------+------+------+------+------+------+------+------+------+------\n"
+            )
             exit()
 
     def attachFile(self):
         """Attach file:
-            Attaches additional files inside the MIMEMultipart script
+        Attaches additional files inside the MIMEMultipart script
         """
         pass
 
     def send(self, Subject, Sender, Reciever):
         """Send:
-            Sends Email finally when templates are all passed and saved correctly to the corresponding variables
+        Sends Email finally when templates are all passed and saved correctly to the corresponding variables
         """
-        self.MIMEMultipartText = MIMEMultipart('alternative')
-        self.MIMEMultipartText['Subject'] = Subject
-        self.MIMEMultipartText['From'] = Sender
-        self.MIMEMultipartText['To'] = Reciever
+        self.MIMEMultipartText = MIMEMultipart("alternative")
+        self.MIMEMultipartText["Subject"] = Subject
+        self.MIMEMultipartText["From"] = Sender
+        self.MIMEMultipartText["To"] = Reciever
 
-        if(self.mailPlainText != ""):
+        if self.mailPlainText != "":
             self.MIMEMultipartText.attach(self.mailPlainText)
-        elif(self.mailHTMLText != ""):
+        elif self.mailHTMLText != "":
             self.MIMEMultipartText.attach(self.mailHTMLText)
 
         Message = self.MIMEMultipartText.as_string()
@@ -85,6 +90,6 @@ class MailEngine:
 
     def quitEngine(self):
         """Quit Engine:
-            Clears memory of the instance of the class once all operations are complete
+        Clears memory of the instance of the class once all operations are complete
         """
         self.mail.quit()

@@ -1,6 +1,7 @@
 # Importing Necessary projects
 import cv2
 import numpy as np
+
 # Creating the video capture object
 cap = cv2.VideoCapture(0)
 
@@ -18,7 +19,7 @@ x0, y0 = -1, -1
 
 # Creating an empty image / white background with the same frame size
 temp = np.ones((480, 640, 3), dtype=np.uint8)
-temp = temp*255
+temp = temp * 255
 
 while True:
     ret, frame = cap.read()
@@ -34,28 +35,29 @@ while True:
     final = cv2.dilate(mask, kernel, iterations=1)
 
     # Finding contours in the mask
-    contours, _ = cv2.findContours(
-        final, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    contours, _ = cv2.findContours(final, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
     # Getting the largest contours assuming it would be the object of interest
     if contours:
         cnt = max(contours, key=cv2.contourArea)
         x, y, width, height = cv2.boundingRect(cnt)
 
         if x0 == -1:
-            x0, y0 = x+width//2, y+height//2
+            x0, y0 = x + width // 2, y + height // 2
         else:
             # Drawing on the temporary masked image
-            temp = cv2.line(temp, (x0, y0), (x+width//2,
-                                             y+height//2), (0, 0, 255), 5)
+            temp = cv2.line(
+                temp, (x0, y0), (x + width // 2, y + height // 2), (0, 0, 255), 5
+            )
             # To track can be removed if necessary
-            frame = cv2.line(frame, (x0, y0), (x+width//2,
-                                               y+height//2), (255, 255, 255), 5)
-            x0, y0 = x+width//2, y+height//2
+            frame = cv2.line(
+                frame, (x0, y0), (x + width // 2, y + height // 2), (255, 255, 255), 5
+            )
+            x0, y0 = x + width // 2, y + height // 2
     else:
         x0, y0 = -1, -1
 
     # Operations using bitwise functions for the written stuff on the Result image
-     # BLACK FOREGROUND AND WHITE BACKGROUND
+    # BLACK FOREGROUND AND WHITE BACKGROUND
     temp_gray = cv2.cvtColor(temp, cv2.COLOR_BGR2GRAY)
     # WHITE FOREGROUND AND BLACK BACKGROUND
     temp_gray_inv = cv2.bitwise_not(temp_gray)
@@ -67,7 +69,7 @@ while True:
     # Red foreground and black background
     Result = cv2.bitwise_or(frame, fg)
 
-    cv2.imshow('Result', Result)
+    cv2.imshow("Result", Result)
     # To end the program
     key = cv2.waitKey(1) & 0xFF
     if key == 27:

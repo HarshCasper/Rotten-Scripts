@@ -5,18 +5,19 @@ from bs4 import BeautifulSoup as bs
 HACKERNEWS_URL = "https://news.ycombinator.com/newest"
 
 # Number of articles requested by the user
-number_of_articles = int(input(
-    "Enter the number of articles you want from the hackernews website(1-30): "))
+number_of_articles = int(
+    input("Enter the number of articles you want from the hackernews website(1-30): ")
+)
 print()
 
 # Response obect to fetch the hackernews url
 response = requests.get(HACKERNEWS_URL)
 
 # soup object for easy scrapping
-soup = bs(response.content, 'html.parser')
+soup = bs(response.content, "html.parser")
 
 # Finding all the a tags with the class storylink
-latest_thirty = soup.find_all('a', attrs={'class': 'storylink'})
+latest_thirty = soup.find_all("a", attrs={"class": "storylink"})
 
 # list to track the links of the articles
 links = []
@@ -26,7 +27,7 @@ names = []
 
 # Fetching the links and names from the soup object and storing them in respective lists
 for article in latest_thirty:
-    links.append(article['href'])
+    links.append(article["href"])
     names.append(article.text)
 
 # Modyfing the links and names as per the user request

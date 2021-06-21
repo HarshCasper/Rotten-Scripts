@@ -27,12 +27,12 @@ def watermarkLogo(pImg, pLogo):
 
     # Blending
     ovr = np.zeros((oH, oW, 4), dtype="uint8")
-    ovr[oH - lH - 0:oH - 0, oW - lW - 0:oW - 0] = lgo
+    ovr[oH - lH - 0 : oH - 0, oW - lW - 0 : oW - 0] = lgo
     final = image.copy()
     final = cv2.addWeighted(ovr, 1, final, 1, 0)
 
     # Save the result
-    cv2.imwrite('watermark.png', final)
+    cv2.imwrite("watermark.png", final)
     print("\nWatermark image saved.\n")
 
 
@@ -40,4 +40,3 @@ if __name__ == "__main__":
     pImg = input("Enter image path: ")
     pLogo = input("Enter logo image path: ")
     watermarkLogo(pImg, pLogo)
-    

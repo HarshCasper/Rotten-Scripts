@@ -8,18 +8,26 @@ def write_to_csv(row_array):
     The function stores the scraped info in a .csv file
     """
     # Headings for the first row of the file
-    header_list = ['URL', 'NAME', 'RATING', 'REVIEW', 'INSTALLS', 'CURRENT VERSION',
-                   'LAST UPDATED', 'COMPANY', 'CONTACT']
-    file_name = input('\nEnter the name of file to store the info: ')
+    header_list = [
+        "URL",
+        "NAME",
+        "RATING",
+        "REVIEW",
+        "INSTALLS",
+        "CURRENT VERSION",
+        "LAST UPDATED",
+        "COMPANY",
+        "CONTACT",
+    ]
+    file_name = input("\nEnter the name of file to store the info: ")
 
     # Adding info into the rows of the file
-    with open(file_name + '.csv', 'a', encoding='utf-8') as csv_f:
-        csv_pointer = csv.writer(csv_f, delimiter=',')
+    with open(file_name + ".csv", "a", encoding="utf-8") as csv_f:
+        csv_pointer = csv.writer(csv_f, delimiter=",")
         csv_pointer.writerow(header_list)
         csv_pointer.writerows(row_array)
 
-    print(f'Done! Check your directory for {file_name}.csv file!')
-
+    print(f"Done! Check your directory for {file_name}.csv file!")
 
 
 def scraper():
@@ -33,23 +41,23 @@ def scraper():
         query = input("\nEnter search query: ")
 
         # Getting the URL for the search
-        driver.get(f'https://play.google.com/store/search?q={query}&c=apps')
+        driver.get(f"https://play.google.com/store/search?q={query}&c=apps")
 
-        print(f'\nCollecting information for {query}...\n')
+        print(f"\nCollecting information for {query}...\n")
 
         # Time for the page to load
         time.sleep(5)
-        
+
         # Inorder to enable scrolling to collect all the necessary information
         last_height = driver.execute_script("return document.body.scrollHeight")
         time.sleep(5)
-        
+
         # Scrolling till the end of the page
         while True:
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        
+
             time.sleep(5)
-        
+
             new_height = driver.execute_script("return document.body.scrollHeight")
             if new_height == last_height:
                 break
@@ -74,7 +82,7 @@ def scraper():
                 driver.get(every)
                 each_info.append(every)
                 time.sleep(3)
-                
+
                 # get app name
                 header1 = driver.find_element_by_tag_name("h1")
                 each_info.append(header1.text)
@@ -90,12 +98,12 @@ def scraper():
                 # get the footer information like installs, version, email, etc.
                 stat_info_table = driver.find_elements_by_class_name("htlgb")
                 stats = []
-                for x in range (len(stat_info_table)):
+                for x in range(len(stat_info_table)):
                     if x % 2 == 0:
                         stats.append(stat_info_table[x].text)
 
                 stat_header = driver.find_elements_by_class_name("BgcNfc")
-                for x in range (len(stat_header)):
+                for x in range(len(stat_header)):
                     if stat_header[x].text == "Installs":
                         each_info.append(stats[x])
 
@@ -113,26 +121,25 @@ def scraper():
                             if "@" in y:
                                 each_info.append(y)
                                 break
-                
+
                 all_info.append(each_info)
 
             except Exception as e:
                 continue
-        
-        print('\nAll info collected successfully!!\n')
-        print('\nDONE!\n')
+
+        print("\nAll info collected successfully!!\n")
+        print("\nDONE!\n")
 
         # Writing the collected info in a csv file
         write_to_csv(all_info)
 
-        ans = input('Press (y) to continue or any other key to exit: ').lower()
-        if ans == 'y':
+        ans = input("Press (y) to continue or any other key to exit: ").lower()
+        if ans == "y":
             continue
         else:
-            print('Exiting..')
+            print("Exiting..")
             break
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     scraper()
-

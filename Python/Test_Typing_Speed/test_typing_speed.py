@@ -4,12 +4,14 @@ from time import time
 
 print()
 print("NO NEW LINE IS THERE, WRITE CONTINUOUSLY(just SPACES)")
-s = "this is a simple paragraph that is meant to be nice and" \
-    " easy to type which is why there will be no commas no periods " \
-    "or any capital letters so i guess this means that it cannot really " \
+s = (
+    "this is a simple paragraph that is meant to be nice and"
+    " easy to type which is why there will be no commas no periods "
+    "or any capital letters so i guess this means that it cannot really "
     "be considered a paragraph but just a series of sentences"
+)
 
-words = (len(s.split()))
+words = len(s.split())
 
 print()
 print(s)

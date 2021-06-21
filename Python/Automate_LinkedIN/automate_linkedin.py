@@ -1,7 +1,8 @@
-#Import and dependencies
+# Import and dependencies
 from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
+
 time_wait_ten = 10
 time_wait_five = 5
 time_wait_two = 2
@@ -23,21 +24,26 @@ def automate_linkedin():
     time.sleep(time_wait_five)
     # This process is used to implement the login details
     driver.find_element_by_xpath(
-        "/html/body/main/section[1]/div[2]/form/div[2]/div[1]/input").click()
+        "/html/body/main/section[1]/div[2]/form/div[2]/div[1]/input"
+    ).click()
     name = input("Enter your username ")
     time.sleep(time_wait_two)
     driver.find_element_by_xpath(
-        "/html/body/main/section[1]/div[2]/form/div[2]/div[1]/input").send_keys(name)
+        "/html/body/main/section[1]/div[2]/form/div[2]/div[1]/input"
+    ).send_keys(name)
     time.sleep(time_wait_two)
     driver.find_element_by_xpath(
-        "/html/body/main/section[1]/div[2]/form/div[2]/div[2]/input").click()
+        "/html/body/main/section[1]/div[2]/form/div[2]/div[2]/input"
+    ).click()
     time.sleep(time_wait_two)
     passwd = input("Enter your password ")
     driver.find_element_by_xpath(
-        "/html/body/main/section[1]/div[2]/form/div[2]/div[2]/input").send_keys(passwd)
+        "/html/body/main/section[1]/div[2]/form/div[2]/div[2]/input"
+    ).send_keys(passwd)
     time.sleep(time_wait_two)
     driver.find_element_by_xpath(
-        "/html/body/main/section[1]/div[2]/form/button").click()
+        "/html/body/main/section[1]/div[2]/form/button"
+    ).click()
     time.sleep(time_wait_two)
     send_request = 1
     # The user can send out multiple connection requests from the endpoint https://www.linkedin.com/mynetwork/ with a customized message
@@ -45,36 +51,46 @@ def automate_linkedin():
         driver.get(endpoint)
         time.sleep(time_wait_ten)
         driver.find_element_by_xpath(
-            "/html/body/div[8]/div[3]/div/div/div/div/div/div/ul/li[1]/ul/li[1]/div/section/div[1]/a").click()
+            "/html/body/div[8]/div[3]/div/div/div/div/div/div/ul/li[1]/ul/li[1]/div/section/div[1]/a"
+        ).click()
         time.sleep(time_wait_two)
         try:
             try:
                 driver.find_element_by_xpath(
-                    "/html/body/div[8]/div[3]/div/div/div/div/div[2]/main/div[1]/section/div[2]/div[1]/div[2]/div/div/span[1]/div/button").click()
+                    "/html/body/div[8]/div[3]/div/div/div/div/div[2]/main/div[1]/section/div[2]/div[1]/div[2]/div/div/span[1]/div/button"
+                ).click()
                 driver.find_element_by_xpath(
-                    "/html/body/div[4]/div/div/div[3]/button[1]").click()
+                    "/html/body/div[4]/div/div/div[3]/button[1]"
+                ).click()
                 message = input("Enter the message you want to send ")
                 driver.find_element_by_xpath(
-                    "/html/body/div[4]/div/div/div[2]/div[1]/textarea").send_keys(message)
+                    "/html/body/div[4]/div/div/div[2]/div[1]/textarea"
+                ).send_keys(message)
                 time.sleep(time_wait_two)
                 driver.find_element_by_xpath(
-                    "/html/body/div[4]/div/div/div[3]/button[2]").click()
+                    "/html/body/div[4]/div/div/div[3]/button[2]"
+                ).click()
                 time.sleep(time_wait_two)
             except:
                 try:
                     driver.find_element_by_xpath(
-                        "/html/body/div[8]/div[3]/div/div/div/div/div[2]/main/div[1]/section/div[2]/div[1]/div[2]/div/div/div/div/button").click()
+                        "/html/body/div[8]/div[3]/div/div/div/div/div[2]/main/div[1]/section/div[2]/div[1]/div[2]/div/div/div/div/button"
+                    ).click()
                     time.sleep(time_wait_two)
                     driver.find_element_by_xpath(
-                        "/html/body/div[8]/div[3]/div/div/div/div/div[2]/main/div[1]/section/div[2]/div[1]/div[2]/div/div/div/div/div/div/ul/li[4]/div/div/span[1]").click()
+                        "/html/body/div[8]/div[3]/div/div/div/div/div[2]/main/div[1]/section/div[2]/div[1]/div[2]/div/div/div/div/div/div/ul/li[4]/div/div/span[1]"
+                    ).click()
                     driver.find_element_by_xpath(
-                        "/html/body/div[4]/div/div/div[3]/button[1]").click()
+                        "/html/body/div[4]/div/div/div[3]/button[1]"
+                    ).click()
                     message = input("Enter the message you want to send ")
                     driver.find_element_by_xpath(
-                        "/html/body/div[4]/div/div/div[2]/div[1]/textarea").send_keys(message)
+                        "/html/body/div[4]/div/div/div[2]/div[1]/textarea"
+                    ).send_keys(message)
                     time.sleep(time_wait_two)
                     driver.find_element_by_xpath(
-                        "/html/body/div[4]/div/div/div[3]/button[2]").click()
+                        "/html/body/div[4]/div/div/div[3]/button[2]"
+                    ).click()
                     time.sleep(time_wait_two)
                 except:
                     print("Cannot connect")
@@ -85,7 +101,7 @@ def automate_linkedin():
         if send_request == 1:
             continue
         else:
-            return("Sent all requests")
+            return "Sent all requests"
 
 
 if __name__ == "__main__":

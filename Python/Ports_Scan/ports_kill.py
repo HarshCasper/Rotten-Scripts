@@ -18,7 +18,7 @@ def get_pid():
 
 
 # CLI Input
-if __name__ == '__main__':
+if __name__ == "__main__":
     if len(sys.argv) > 1:
         pid = get_pid()
         if pid == -1:
@@ -29,7 +29,7 @@ if __name__ == '__main__':
             print(f"[+] Status: {pid[1]}")
             ch = input("Close the Port?: (y/n) ")
             # Takes Keyboard Input
-            if ch.lower() == 'y':
+            if ch.lower() == "y":
                 p = psutil.Process(pid[0])
                 p.terminate()
 """

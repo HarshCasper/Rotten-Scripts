@@ -1,4 +1,4 @@
-#import pytube
+# import pytube
 from pytube import YouTube
 
 # Asking for all the video links
@@ -14,7 +14,7 @@ for i in range(0, n):
 for i in range(0, n):
     link = links[i]
     yt = YouTube(link)
-    print("\nDetails for Video", i+1, "\n")
+    print("\nDetails for Video", i + 1, "\n")
     print("Title of video:   ", yt.title)
     print("Number of views:  ", yt.views)
     print("Length of video:  ", yt.length, "seconds")
@@ -25,7 +25,7 @@ for i in range(0, n):
     print("\nAll available options for downloads:\n")
     for i in range(0, len(streamlist)):
         st = streamlist[i].split(" ")
-        print(i+1, ") ", st[1], " and ", st[3], sep='')
+        print(i + 1, ") ", st[1], " and ", st[3], sep="")
     tag = int(input("\nEnter the itag of your preferred stream to download:   "))
     ys = yt.streams.get_by_itag(tag)
     print("\nDownloading...")

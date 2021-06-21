@@ -14,8 +14,19 @@ from pickle import dump, load
 from time import time
 from keras.preprocessing import sequence
 from keras.models import Sequential
-from keras.layers import LSTM, Embedding, TimeDistributed, Dense, RepeatVector, Activation, \
-    Flatten, Reshape, concatenate, Dropout, BatchNormalization
+from keras.layers import (
+    LSTM,
+    Embedding,
+    TimeDistributed,
+    Dense,
+    RepeatVector,
+    Activation,
+    Flatten,
+    Reshape,
+    concatenate,
+    Dropout,
+    BatchNormalization,
+)
 from keras.optimizers import Adam, RMSprop
 from keras.layers.wrappers import Bidirectional
 from keras.layers.merge import add
@@ -33,7 +44,7 @@ from keras.utils import to_categorical
 import tensorflow as tf
 from tqdm.notebook import tqdm
 
-physical_devices = tf.config.list_physical_devices('GPU')
+physical_devices = tf.config.list_physical_devices("GPU")
 tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 
@@ -64,7 +75,7 @@ def load_descriptions(doc):
     """
     mapping = dict()
     # process lines
-    for line in doc.split('\n'):
+    for line in doc.split("\n"):
 
         # split line by white space
         tokens = line.split()
@@ -75,10 +86,10 @@ def load_descriptions(doc):
         image_id, image_desc = tokens[0], tokens[1:]
 
         # extract filename from image id
-        image_id = image_id.split('.')[0]
+        image_id = image_id.split(".")[0]
 
         # convert description tokens back to string
-        image_desc = ' '.join(image_desc)
+        image_desc = " ".join(image_desc)
 
         # create the list if needed
         if image_id not in mapping:
@@ -91,7 +102,7 @@ def load_descriptions(doc):
 
 # parse descriptions
 descriptions = load_descriptions(doc)
-print('Loaded: %d ' % len(descriptions))
+print("Loaded: %d " % len(descriptions))
 
 
 def clean_descriptions(descriptions):
@@ -101,7 +112,7 @@ def clean_descriptions(descriptions):
     """
 
     # prepare translation table for removing punctuation
-    table = str.maketrans('', '', string.punctuation)
+    table = str.maketrans("", "", string.punctuation)
     for key, desc_list in descriptions.items():
         for i in range(len(desc_list)):
             desc = desc_list[i]
@@ -122,7 +133,7 @@ def clean_descriptions(descriptions):
             desc = [word for word in desc if word.isalpha()]
 
             # store as string
-            desc_list[i] = ' '.join(desc)
+            desc_list[i] = " ".join(desc)
 
 
 # Call clean Description
@@ -144,7 +155,7 @@ def to_vocabulary(descriptions):
 
 
 vocabulary = to_vocabulary(descriptions)
-print('Original Vocabulary Size: %d' % len(vocabulary))
+print("Original Vocabulary Size: %d" % len(vocabulary))
 
 
 def save_descriptions(descriptions, filename):
@@ -156,13 +167,13 @@ def save_descriptions(descriptions, filename):
     lines = list()
     for key, desc_list in descriptions.items():
         for desc in desc_list:
-            lines.append(key + ' ' + desc)
-    data = '\n'.join(lines)
+            lines.append(key + " " + desc)
+    data = "\n".join(lines)
     with open(filename) as file:
         file.write(data)
 
 
-save_descriptions(descriptions, 'Model/Inception/descriptions.txt')
+save_descriptions(descriptions, "Model/Inception/descriptions.txt")
 
 
 def load_set(filename):
@@ -173,52 +184,52 @@ def load_set(filename):
     doc = load_doc(filename)
     dataset = list()
     # process line by line
-    for line in doc.split('\n'):
+    for line in doc.split("\n"):
         # skip empty lines
         if len(line) < 1:
             continue
         # get the image identifier
-        identifier = line.split('.')[0]
+        identifier = line.split(".")[0]
         dataset.append(identifier)
     return set(dataset)
 
 
 # Load text file containing the list of images in training dataset
 # We would be loading 6k files here
-filename = 'Flickr8k_text/Flickr_8k.trainImages.txt'
+filename = "Flickr8k_text/Flickr_8k.trainImages.txt"
 train = load_set(filename)
 
 # NUmber of files
-print('Dataset: %d' % len(train))
+print("Dataset: %d" % len(train))
 
 # Load images
-images = 'Flickr8k_Dataset/img/'
-img = glob.glob(images + '*.jpg')
+images = "Flickr8k_Dataset/img/"
+img = glob.glob(images + "*.jpg")
 
 # Load the names of images to be used in train data
-train_images_file = 'Flickr8k_text/Flickr_8k.trainImages.txt'
+train_images_file = "Flickr8k_text/Flickr_8k.trainImages.txt"
 # Read the train image names in a set
-train_images = set(open(train_images_file, 'r').read().strip().split('\n'))
+train_images = set(open(train_images_file, "r").read().strip().split("\n"))
 
 # Create a list of all the training images with their full path names
 train_img = []
 
 # Appending the names of images in the file to be trained
 for i in img:
-    if i[len(images):] in train_images:
+    if i[len(images) :] in train_images:
         train_img.append(i)
 
 # Load the names of images to be used in test data
-test_images_file = 'Flickr8k_text/Flickr_8k.testImages.txt'
+test_images_file = "Flickr8k_text/Flickr_8k.testImages.txt"
 # Read the test image names in a set
-test_images = set(open(test_images_file, 'r').read().strip().split('\n'))
+test_images = set(open(test_images_file, "r").read().strip().split("\n"))
 
 # Create a list of all the test images with their full path names
 test_img = []
 
 # Appending the names of images in the file to be trained
 for i in img:
-    if i[len(images):] in test_images:
+    if i[len(images) :] in test_images:
         test_img.append(i)
 
 
@@ -232,7 +243,7 @@ def load_clean_descriptions(filename, dataset):
     # load document
     doc = load_doc(filename)
     descriptions = dict()
-    for line in doc.split('\n'):
+    for line in doc.split("\n"):
         # split line by white space
         tokens = line.split()
         # split id from description
@@ -243,14 +254,13 @@ def load_clean_descriptions(filename, dataset):
             if image_id not in descriptions:
                 descriptions[image_id] = list()
             # wrap description in tokens
-            desc = 'startseq ' + ' '.join(image_desc) + ' endseq'
+            desc = "startseq " + " ".join(image_desc) + " endseq"
             # store
             descriptions[image_id].append(desc)
     return descriptions
 
 
-train_descriptions = load_clean_descriptions(
-    'Model/Inception/descriptions.txt', train)
+train_descriptions = load_clean_descriptions("Model/Inception/descriptions.txt", train)
 
 
 def preprocess(image_path):
@@ -276,12 +286,12 @@ def preprocess(image_path):
 
 
 # Load the inception v3 model
-model = InceptionV3(weights='imagenet')
+model = InceptionV3(weights="imagenet")
 
 # Configure GPU
-with tf.device('/gpu:0'):
-    config = tf.compat.v1.ConfigProto(gpu_options=tf.compat.v1.GPUOptions(
-        per_process_gpu_memory_fraction=1)
+with tf.device("/gpu:0"):
+    config = tf.compat.v1.ConfigProto(
+        gpu_options=tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=1)
         # device_count = {'GPU': 1}
     )
     config.gpu_options.allow_growth = True
@@ -309,7 +319,7 @@ def encode(image):
 
 # Below are the Feature Extraction functions, it is recommended to use the Features already extracted
 # and provided to you, SEE README
-'''
+"""
 # Training Features
 start = time()
 encoding_train = {}
@@ -335,11 +345,11 @@ print("Time taken in seconds =", time()-start)
 # Testing Features in a File
 with open("featuresTest_Inception.p", "wb") as encoded_pickle:
     pickle.dump(encoding_test, encoded_pickle)
-'''
+"""
 
 # Load the Training Features
 train_features = load(open("featuresTrain_Inception.p", "rb"))
-print('Photos: train=%d' % len(train_features))
+print("Photos: train=%d" % len(train_features))
 
 # Create a list of all the training captions
 all_train_captions = []
@@ -354,11 +364,11 @@ word_counts = {}
 nsents = 0
 for sent in all_train_captions:
     nsents += 1
-    for w in sent.split(' '):
+    for w in sent.split(" "):
         word_counts[w] = word_counts.get(w, 0) + 1
 
 vocab = [w for w in word_counts if word_counts[w] >= word_count_threshold]
-print('preprocessed words %d -> %d' % (len(word_counts), len(vocab)))
+print("preprocessed words %d -> %d" % (len(word_counts), len(vocab)))
 
 ixtoword = {}
 wordtoix = {}
@@ -396,7 +406,7 @@ def max_length(descriptions):
 
 # determine the maximum sequence length
 max_length = max_length(train_descriptions)
-print('Description Length: %d' % max_length)
+print("Description Length: %d" % max_length)
 
 
 def data_generator(descriptions, photos, wordtoix, max_length, num_photos_per_batch):
@@ -416,14 +426,13 @@ def data_generator(descriptions, photos, wordtoix, max_length, num_photos_per_ba
         for key, desc_list in descriptions.items():
             # retrieve the photo feature
             try:
-                photo = train_features[key + '.jpg']
+                photo = train_features[key + ".jpg"]
             except Exception as e:
                 continue
             n += 1
             for desc in desc_list:
                 # encode the sequence
-                seq = [wordtoix[word]
-                       for word in desc.split(' ') if word in wordtoix]
+                seq = [wordtoix[word] for word in desc.split(" ") if word in wordtoix]
                 # split one sequence into multiple X, y pairs
                 for i in range(1, len(seq)):
                     # split into input and output pair
@@ -431,8 +440,7 @@ def data_generator(descriptions, photos, wordtoix, max_length, num_photos_per_ba
                     # pad input sequence
                     in_seq = pad_sequences([in_seq], maxlen=max_length)[0]
                     # encode output sequence
-                    out_seq = to_categorical(
-                        [out_seq], num_classes=vocab_size)[0]
+                    out_seq = to_categorical([out_seq], num_classes=vocab_size)[0]
                     # store
                     X1.append(photo)
                     X2.append(in_seq)
@@ -446,18 +454,18 @@ def data_generator(descriptions, photos, wordtoix, max_length, num_photos_per_ba
 
 # Glove Vectors for further preprocessing
 # using word vectors
-glove_dir = ''
+glove_dir = ""
 # An empty dictionary
 embeddings_index = {}
-f = open(os.path.join(glove_dir, 'glove.6B.200d.txt'), encoding="utf-8")
+f = open(os.path.join(glove_dir, "glove.6B.200d.txt"), encoding="utf-8")
 
 for line in f:
     values = line.split()
     word = values[0]
-    coefs = np.asarray(values[1:], dtype='float32')
+    coefs = np.asarray(values[1:], dtype="float32")
     embeddings_index[word] = coefs
 f.close()
-print('Found %s word vectors.' % len(embeddings_index))
+print("Found %s word vectors." % len(embeddings_index))
 
 embedding_dim = 200
 
@@ -474,14 +482,14 @@ for word, i in wordtoix.items():
 # Model Building
 inputs1 = Input(shape=(2048,))
 fe1 = Dropout(0.5)(inputs1)
-fe2 = Dense(256, activation='relu')(fe1)
+fe2 = Dense(256, activation="relu")(fe1)
 inputs2 = Input(shape=(max_length,))
 se1 = Embedding(vocab_size, embedding_dim, mask_zero=True)(inputs2)
 se2 = Dropout(0.5)(se1)
 se3 = LSTM(256)(se2)
 decoder1 = add([fe2, se3])
-decoder2 = Dense(256, activation='relu')(decoder1)
-outputs = Dense(vocab_size, activation='softmax')(decoder2)
+decoder2 = Dense(256, activation="relu")(decoder1)
+outputs = Dense(vocab_size, activation="softmax")(decoder2)
 model = Model(inputs=[inputs1, inputs2], outputs=outputs)
 
 # Model Summary
@@ -491,7 +499,7 @@ model.layers[2].set_weights([embedding_matrix])
 model.layers[2].trainable = False
 
 # Setting up Model, epochs, batch size
-model.compile(loss='categorical_cross-entropy', optimizer='adam')
+model.compile(loss="categorical_cross-entropy", optimizer="adam")
 
 epochs = 10
 number_pics_per_bath = 3
@@ -499,12 +507,16 @@ steps = len(train_descriptions) // number_pics_per_bath
 
 # Saving the models after every Epoch
 for i in range(epochs):
-    with tf.device('/gpu:0'):
+    with tf.device("/gpu:0"):
         generator = data_generator(
-            train_descriptions, train_features, wordtoix, max_length, number_pics_per_bath)
-        model.fit_generator(generator, epochs=1,
-                            steps_per_epoch=steps, verbose=1)
-        model.save('model_' + str(i) + '.h5')
+            train_descriptions,
+            train_features,
+            wordtoix,
+            max_length,
+            number_pics_per_bath,
+        )
+        model.fit_generator(generator, epochs=1, steps_per_epoch=steps, verbose=1)
+        model.save("model_" + str(i) + ".h5")
 
 model.optimizer.lr = 0.0001
 epochs = 10
@@ -512,45 +524,45 @@ number_pics_per_bath = 6
 steps = len(train_descriptions) // number_pics_per_bath
 
 # Final Weight of Model
-model.save_weights('models_Inception/model_30.h5')
+model.save_weights("models_Inception/model_30.h5")
 
 ##################################################################
 ##################### CLASSIFICATION #############################
 ##################################################################
 
-model.load_weights('models_Inception/model_30.h5')
+model.load_weights("models_Inception/model_30.h5")
 
-images = ''
+images = ""
 
 with open("encoded_test_images.pkl", "rb") as encoded_pickle:
     encoding_test = load(encoded_pickle)
 
 
 def greedySearch(photo):
-    in_text = 'startseq'
+    in_text = "startseq"
     for i in range(max_length):
         sequence = [wordtoix[w] for w in in_text.split() if w in wordtoix]
         sequence = pad_sequences([sequence], maxlen=max_length)
         yhat = model.predict([photo, sequence], verbose=0)
         yhat = np.argmax(yhat)
         word = ixtoword[yhat]
-        in_text += ' ' + word
-        if word == 'endseq':
+        in_text += " " + word
+        if word == "endseq":
             break
     final = in_text.split()
     final = final[1:-1]
-    final = ' '.join(final)
+    final = " ".join(final)
     return final
 
 
-for i in os.listdir('Flickr8k_Dataset/img'):
+for i in os.listdir("Flickr8k_Dataset/img"):
     if i in encoding_test.keys():
         print(i)
         break
 
-pic = '1523984678_edd68464da.jpg'
+pic = "1523984678_edd68464da.jpg"
 image = encoding_test[pic].reshape((1, 2048))
-x = plt.imread('Flickr8k_Dataset/img' + pic)
+x = plt.imread("Flickr8k_Dataset/img" + pic)
 plt.imshow(x)
 plt.show()
 print("Caption:", greedySearch(image))

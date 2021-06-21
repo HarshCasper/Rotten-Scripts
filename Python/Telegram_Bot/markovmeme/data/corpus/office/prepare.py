@@ -17,10 +17,8 @@ for row in content:
             if char not in lines:
                 lines[char] = []
             # Clean up the line
-            line = line.replace("'", "").replace(
-                '"', "").replace("\n", "").strip()
-            line = re.sub("\[.*?\]", " ",
-                          line).replace("[", " ").replace("]", "")
+            line = line.replace("'", "").replace('"', "").replace("\n", "").strip()
+            line = re.sub("\[.*?\]", " ", line).replace("[", " ").replace("]", "")
             lines[char].append(line.strip())
 
 # Keep an organized json for later...

@@ -5,9 +5,7 @@ awsSecretAccessKey = ""
 bucketName = ""
 directoryName = ""
 s3 = boto3.resource(
-    's3',
-    aws_access_key_id=awsAccessKeyId,
-    aws_secret_access_key=awsSecretAccessKey
+    "s3", aws_access_key_id=awsAccessKeyId, aws_secret_access_key=awsSecretAccessKey
 )
 myBucket = s3.Bucket(bucketName)
 
@@ -25,5 +23,5 @@ def moveFile():
         print(err)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     moveFile()

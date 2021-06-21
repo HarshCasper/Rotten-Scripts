@@ -1,4 +1,4 @@
-#Imports and dependencies
+# Imports and dependencies
 # An explanation to each is given in the modules
 from telegram.ext import Updater, InlineQueryHandler, CommandHandler, MessageHandler
 import re
@@ -18,13 +18,14 @@ from memetemplates import template
 from imageflipmemes import memes
 
 # get access to a server
-PORT = int(os.environ.get('PORT', 5000))
+PORT = int(os.environ.get("PORT", 5000))
 
 logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+)
 logger = logging.getLogger(__name__)
 
-TOKEN = 'Your bot\'s token key'
+TOKEN = "Your bot's token key"
 
 # A detailed explanation of the function riddles:
 # The function takes the parameters bot, update
@@ -85,10 +86,10 @@ def markov(bot, update):
     # A theme can be chosen from the markov_themes.txt file
     # Here I am generating a random theme
 
-    with open('markov_themes.txt', 'r') as file:
+    with open("markov_themes.txt", "r") as file:
         themes = file.readlines()
         for i in range(len(s)):
-            themes[i] = themes[i].replace(" ", '').strip('\n')
+            themes[i] = themes[i].replace(" ", "").strip("\n")
 
     corpus = random.choice(themes)
     text = generate_text(corpus=corpus, use_model=True, size=14)
@@ -97,12 +98,12 @@ def markov(bot, update):
     meme = MemeImage(image=None, corpus=corpus)
 
     # Add text generated, centered on top
-    meme.write_text(text, fontsize=18, font='Anton-Regular.ttf')
+    meme.write_text(text, fontsize=18, font="Anton-Regular.ttf")
 
     # Leave outfile as None to generate random name
-    meme.save_image('image.png')
+    meme.save_image("image.png")
     chat_id = update.effective_chat.id
-    bot.send_photo(chat_id=chat_id, photo=open('./image.png', 'rb'))
+    bot.send_photo(chat_id=chat_id, photo=open("./image.png", "rb"))
 
 
 def main():
@@ -112,20 +113,20 @@ def main():
     dp = updater.dispatcher
 
     # On the execution of the commands, the respective functions will be invoked
-    dp.add_handler(CommandHandler('joke', jokes))
-    dp.add_handler(CommandHandler('riddle', riddles))
-    dp.add_handler(CommandHandler('insult', insults))
-    dp.add_handler(CommandHandler('meme', imageflip))
-    dp.add_handler(CommandHandler('proghumor', proghumor))
-    dp.add_handler(CommandHandler('template', template))
-    dp.add_handler(CommandHandler('markov', markov))
+    dp.add_handler(CommandHandler("joke", jokes))
+    dp.add_handler(CommandHandler("riddle", riddles))
+    dp.add_handler(CommandHandler("insult", insults))
+    dp.add_handler(CommandHandler("meme", imageflip))
+    dp.add_handler(CommandHandler("proghumor", proghumor))
+    dp.add_handler(CommandHandler("template", template))
+    dp.add_handler(CommandHandler("markov", markov))
 
     # setting up connection to the server on Heroku
     updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
-    updater.bot.setWebhook('Your heroku URL' + TOKEN)
+    updater.bot.setWebhook("Your heroku URL" + TOKEN)
     updater.idle()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Invoking the main function
     main()

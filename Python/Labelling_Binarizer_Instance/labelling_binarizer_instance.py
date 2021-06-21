@@ -5,7 +5,7 @@ import pickle
 
 def null_values(data):
     data = data.isna().sum()
-    return data[list(map(lambda x:x[1] != 0, data.iteritems()))]
+    return data[list(map(lambda x: x[1] != 0, data.iteritems()))]
 
 
 class SingletonLabelBinarizer:
@@ -22,7 +22,7 @@ class SingletonLabelBinarizer:
         return self.label_binarizer.fit_transform(x)
 
     def __new__(cls):
-        if not hasattr(cls, 'instance'):
+        if not hasattr(cls, "instance"):
             cls.instance = super(SingletonLabelBinarizer, cls).__new__(cls)
         return cls.instance
 
