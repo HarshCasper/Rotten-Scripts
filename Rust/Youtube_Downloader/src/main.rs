@@ -26,7 +26,8 @@ fn run(args: cli::AppArgs) -> Result<(), Box<dyn Error>> {
         video.best_video()
     } else {
         video.best_quality()
-    }.unwrap();
+    }
+    .unwrap();
 
     let path = block!(to_download.download())?;
     println!("Downloaded to {}", path.to_str().unwrap_or_default());
