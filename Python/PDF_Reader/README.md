@@ -14,7 +14,7 @@ The script has proper comments which should be followed. The script is easy to u
 
 ## Output
 
-![Output Video](output_video_pdfreader.mp4)
+![Output Video](https://github.com/chandu6111/images/blob/main/output_video_pdfreader.mp4)
 
 ## Author(s)
 
