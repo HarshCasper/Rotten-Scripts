@@ -26,10 +26,9 @@ dict = {
     "Content Writing Internship": "https://internshala.com/internships/content%20writing-internship",
     "Civil Internship": "https://internshala.com/internships/civil-internship",
 }
-x = 1
-for item in dict.keys():
-    print(x, item)
-    x += 1
+for index,item in enumerate(dict):
+    print(index+1, item)
+
 ch = int(input("Enter the categroy. eg 1 for Computer Science : "))
 url = dict[dict0[ch]]
 print("--------URL : " + url)
@@ -56,7 +55,7 @@ with open("internshala.csv", mode="a") as f:
         locations = data.findAll("div", {"id": "location_names"})
         details = data.findAll("div", {"class": "internship_other_details_container"})
         links = data.findAll("a", {"class": "view_detail_button"})
-        for x in range(0, len(companies)):
+        for x in range(len(companies)):
             company = companies[x].text.strip()
             profile = profiles[x].text.strip()
             location = locations[x].text.strip()
@@ -75,4 +74,4 @@ with open("internshala.csv", mode="a") as f:
             info.append(extracted[5])
             info.append(link)
             writer.writerow(info)
-input("Done!\nAll the best ;-)")
+print("Done!\nAll the best ;-)")
