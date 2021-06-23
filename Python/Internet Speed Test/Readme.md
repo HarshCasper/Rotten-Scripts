@@ -13,7 +13,7 @@ Used to find the internet speed test of the local computer currently connected t
 
 ## Dependencies
  1. python3
- 2. keyboard
+ 2. speedtest-cli
 
 ## Output
 
