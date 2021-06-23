@@ -18,7 +18,7 @@ The script has proper comments which should be followed. The script is easy to u
 
 ## Output
 
-![Output Video](https://vimeo.com/566609366)
+[Output Video](https://vimeo.com/566609366)
 
 ## Author(s)
 
