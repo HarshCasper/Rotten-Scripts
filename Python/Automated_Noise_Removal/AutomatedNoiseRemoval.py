@@ -8,7 +8,7 @@ from pydub import AudioSegment
 MYSOX_PATH = '"Path to SOX"'
 
 # Example:
-# MYSOX_PATH = '"Users\\OneDrive - Microsoft Student Ambassadors\\Azure Applications\\sox\\sox.exe"' 
+# MYSOX_PATH = '"Users\\OneDrive - Microsoft Student Ambassadors\\Azure Applications\\sox\\sox.exe"'
 
 MYTESTING_FILE = "test.wav"
 MYSILENCING_FILE = "silence.wav"
@@ -19,53 +19,62 @@ def performOperations(operations, parameters):
     """
     Perfrom Operations on given inputs and tracks them in a list
     """
-    
-    trackedInputs = glob.glob(os.path.join(parameters["root"],"*.wav"))
+
+    trackedInputs = glob.glob(os.path.join(parameters["root"], "*.wav"))
     frequency = 1
-    
+
     for f in trackedInputs:
-        
+
         myprint("[{}/{}] Going on : {}".format(frequency, len(trackedInputs), f), 4)
         frequency += 1
-        
+
         if "noiseProfile" in operations:
             noiseProfile(f)
-        
+
         if "denoiseCall" in operations:
             denoiseCall(f)
-    
+
     if "cleanDir" in operations:
         cleanDir()
 
 
-def denoiseCall(fileInput):	
-    """ 
+def denoiseCall(fileInput):
+    """
     Generate a proile based on Input file.
     arguments:
     fileInput: Input file Path
-    
+
     returns:
     Ooutput file with 0.3 profile set.
-    
+
     Note:
     User can play around with 0.3 profile setting value and can increase or decrease it.
     """
-    
+
     mySoundOne = AudioSegment.from_file(MYSILENCING_FILE, format="wav")
     partLen = len(mySoundOne) / 1000.0
-    
-    instruction = '{sox} "{wav_in}" -n Trimming 0 {silence_len} --Noise Profile-- {prof_out}'.format(sox=MYSOX_PATH, wav_in=MYSILENCING_FILE, silence_len=partLen, prof_out=MYSILENCING_PROFILE)
-    
+
+    instruction = '{sox} "{wav_in}" -n Trimming 0 {silence_len} --Noise Profile-- {prof_out}'.format(
+        sox=MYSOX_PATH,
+        wav_in=MYSILENCING_FILE,
+        silence_len=partLen,
+        prof_out=MYSILENCING_PROFILE,
+    )
+
     myprint(instruction, 0)
     myprint(subprocess.call(instruction), 1)
-    
-    out_file = os.path.join(os.path.dirname(fileInput), " --Now Cleaned-- ", os.path.basename(fileInput))
-    
+
+    out_file = os.path.join(
+        os.path.dirname(fileInput), " --Now Cleaned-- ", os.path.basename(fileInput)
+    )
+
     if not os.path.exists(os.path.dirname(out_file)):
         os.makedirs(os.path.dirname(out_file))
-    
-    instruction = '{sox} "{wav_in}" "{wav_out}" --Reduce Noise-- {prof_in} 0.3'.format(sox=MYSOX_PATH, wav_in=fileInput, wav_out=out_file, prof_in=MYSILENCING_PROFILE)
-    
+
+    instruction = '{sox} "{wav_in}" "{wav_out}" --Reduce Noise-- {prof_in} 0.3'.format(
+        sox=MYSOX_PATH, wav_in=fileInput, wav_out=out_file, prof_in=MYSILENCING_PROFILE
+    )
+
     myprint(instruction, 0)
     myprint(subprocess.call(instruction), 1)
 
@@ -76,23 +85,23 @@ def noiseProfile(fileInput):
     """
 
     mySoundOne = AudioSegment.from_file(fileInput, format="wav")
-    
+
     milliSec = 0
     silenceFound = 0
     maxTimeFound = 500
     maxValue = None
-    
+
     for var in mySoundOne:
         if var.dBFS > -38.0:
             length = milliSec - silenceFound
             if length > maxTimeFound:
-                maxValue = mySoundOne[silenceFound : milliSec]
+                maxValue = mySoundOne[silenceFound:milliSec]
                 maxTimeFound = length
             silenceFound = milliSec + 1
         milliSec += 1
-    
+
     myprint(" --Longest Segment-- " + str(maxTimeFound / 1000.0) + " Seconds ", 2)
-    
+
     maxValue[200:-200].export(MYSILENCING_FILE, format="wav")
 
 
@@ -102,43 +111,39 @@ def cleanDir():
     """
 
     os.remove(MYSILENCING_FILE)
-    os.remove(MYSILENCING_PROFILE)	
-                
+    os.remove(MYSILENCING_PROFILE)
 
-PRINT_LEVEL=2 # for organising output
+
+PRINT_LEVEL = 2  # for organising output
+
+
 def myprint(str, level=0):
     """
     To organise output prints
     """
 
-    if (level >= PRINT_LEVEL):
+    if level >= PRINT_LEVEL:
         print(str)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     # write this code in your main in case you are importing this file
-    
+
     operations = [
-    
         "noiseProfile",
         "denoiseCall",
         "cleanDir",
-        "blankCall" 
-    
+        "blankCall"
         # Last file does not have to do with anything!
-    
     ]
-    
-    
+
     parameters = {
-    
-        "root" : sys.argv[1],
-        "blankCall" : None 
+        "root": sys.argv[1],
+        "blankCall": None
         # [SAME] Last file does not have to do with anything!
-    
     }
 
     performOperations(operations, parameters)
-    
+
     sys.exit(0)

@@ -18,7 +18,7 @@ y_search_bird = 275  # for the birds
 time.sleep(4)
 while True:
     t1 = time.time()
-    if keyboard.is_pressed('q'):  # Emergency Button
+    if keyboard.is_pressed("q"):  # Emergency Button
         break
 
     # increase the search width every second to simulate the dino acceleration
@@ -35,10 +35,12 @@ while True:
     background_color = pixels[440, 30]
 
     for i in reversed(range(x_start, x_end)):
-        if pixels[i, y_search_cactus] != background_color\
-                or pixels[i, y_search_bird] != background_color:
-            keyboard.press(' ')  # jump
+        if (
+            pixels[i, y_search_cactus] != background_color
+            or pixels[i, y_search_bird] != background_color
+        ):
+            keyboard.press(" ")  # jump
             break
 
-    t2 = time.time()-t1
+    t2 = time.time() - t1
     total_time += t2

@@ -17,9 +17,9 @@ def extractLinks(url):
     # Extracts links from the given webpage
 
     r = requests.get(url)
-    soup = BeautifulSoup(r.content, 'html.parser')
+    soup = BeautifulSoup(r.content, "html.parser")
 
-    links = re.findall("http.?://[^\s\"\']+", str(soup))
+    links = re.findall("http.?://[^\s\"']+", str(soup))
 
     if len(links) == 0:
         print("No links on {}".format(url))

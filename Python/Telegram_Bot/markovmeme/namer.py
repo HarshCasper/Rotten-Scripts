@@ -204,11 +204,11 @@ class RobotNamer:
         return delim.join([descriptor, noun, numbers])
 
     def _select(self, select_from):
-        """ select an element from a list using random.choice
+        """select an element from a list using random.choice
 
-            Parameters
-            ==========
-            should be a list of things to select from
+        Parameters
+        ==========
+        should be a list of things to select from
         """
         if len(select_from) <= 0:
             return ""

@@ -3,12 +3,13 @@ import datetime
 
 
 class Stopwatch:
-    '''A stopwatch simulator with functions start, stop, lap, and reset.'''
+    """A stopwatch simulator with functions start, stop, lap, and reset."""
+
     __startTime__ = None
     __currentLap__ = 0
     laps = []
     summary = None
-    state = 'Stopped'
+    state = "Stopped"
 
     def __init__(self, precision=None):
         if precision:
@@ -20,12 +21,12 @@ class Stopwatch:
 
     def start(self):
         # Start the stopwatch.
-        if not self.state == 'Stopped':
-            print('Stopwatch is already running.')
+        if not self.state == "Stopped":
+            print("Stopwatch is already running.")
             return
         else:
             self.__startTime__ = time.time()
-            self.state = 'Started'
+            self.state = "Started"
         return
 
     def lap(self):
@@ -39,11 +40,11 @@ class Stopwatch:
 
     def stop(self):
         # Stop/Pause the stopwatch without clearing it.
-        if self.state == 'Stopped':
-            print('Stopwatch isn\'t running.')
+        if self.state == "Stopped":
+            print("Stopwatch isn't running.")
         else:
             self.__update__()
-            self.state = 'Stopped'
+            self.state = "Stopped"
         return
 
     def reset(self):
@@ -52,7 +53,7 @@ class Stopwatch:
         self.__currentLap__ = 0
         self.laps = []
         self.summary = None
-        self.state = 'Stopped'
+        self.state = "Stopped"
         return
 
     def __update__(self):
@@ -61,22 +62,36 @@ class Stopwatch:
 
         lapCounter = 1
         lapTime = 0
-        lapSummary = ''
+        lapSummary = ""
         for lap in self.laps:
             # Tally the laps into the total laptime.
             lapTime = round(lapTime + lap, self.__precision__)
             # Generate a pretty summary.
-            lapSummary += '\nLap ' + str(lapCounter) + ': ' + \
-                str(datetime.timedelta(seconds=round(lap, self.__precision__))).rjust(
-                    14 - len(str(lapCounter)))
+            lapSummary += (
+                "\nLap "
+                + str(lapCounter)
+                + ": "
+                + str(datetime.timedelta(seconds=round(lap, self.__precision__))).rjust(
+                    14 - len(str(lapCounter))
+                )
+            )
             lapCounter += 1
 
-        if not self.state == 'Stopped':
-            self.__currentLap__ += (now - self.__startTime__)
+        if not self.state == "Stopped":
+            self.__currentLap__ += now - self.__startTime__
 
         totalTime = lapTime + self.__currentLap__
-        self.summary = 'Total time: ' + str(datetime.timedelta(seconds=round(totalTime, self.__precision__))).rjust(8) + lapSummary \
-            + '\nCurrent Lap: ' + \
-            str(datetime.timedelta(seconds=round(
-                self.__currentLap__, self.__precision__))).rjust(7)
+        self.summary = (
+            "Total time: "
+            + str(
+                datetime.timedelta(seconds=round(totalTime, self.__precision__))
+            ).rjust(8)
+            + lapSummary
+            + "\nCurrent Lap: "
+            + str(
+                datetime.timedelta(
+                    seconds=round(self.__currentLap__, self.__precision__)
+                )
+            ).rjust(7)
+        )
         return

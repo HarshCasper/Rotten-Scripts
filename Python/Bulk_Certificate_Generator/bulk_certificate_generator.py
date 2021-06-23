@@ -1,18 +1,18 @@
-__author__ = 'Sri Manikanta Palakollu'
-__date__ = '27-07-2020'
+__author__ = "Sri Manikanta Palakollu"
+__date__ = "27-07-2020"
 
 from PIL import Image, ImageDraw, ImageFont
 import pandas as pd
 import random
 
 # y_coordinate = 1020
-y_coordinate = int(input('Enter the Y-cordinate value to write the name: '))
+y_coordinate = int(input("Enter the Y-cordinate value to write the name: "))
 template_name = input("Enter your custom template name: ")
-data_file = input('Enter your names file name: ')
+data_file = input("Enter your names file name: ")
 
 try:
-    df = pd.read_excel('data/{}'.format(data_file))
-    names = list(df['Name'].values)
+    df = pd.read_excel("data/{}".format(data_file))
+    names = list(df["Name"].values)
 except ValueError:
     print("There is a value error in the Dataframe please check the value")
 
@@ -43,4 +43,4 @@ try:
         img.save("Certificates/" + str(name.replace(" ", "_")) + ".jpg")
         print("Certificate Created for {}".format(name))
 except Exception:
-    print('Something went wrong.!')
+    print("Something went wrong.!")

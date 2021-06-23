@@ -14,3 +14,4 @@
 |Cross Winter of Code           |February 13 - March 28 (2021)        |https://crosswoc.ieeedtu.in/        |
 |DSC IIIT Kalyani Winter of Code|January 18 - March 11 (2021)         |https://woc-dsciiitkalyani.tech/    |
 |GirlScript Summer of Code      |March 8 - May 31 (2021)              |https://gssoc.girlscript.tech/      |
+|LetsGrowMore Summer of code    |June 10 - July 10 (2021)             |https://letsgrowmore.in/soc/        |

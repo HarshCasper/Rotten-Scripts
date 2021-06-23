@@ -36,8 +36,7 @@ def login(driver, username, password):
     """
     try:
         # Phone, email or user
-        driver.find_element_by_name(
-            "session[username_or_email]").send_keys(username)
+        driver.find_element_by_name("session[username_or_email]").send_keys(username)
         # Password
         driver.find_element_by_name("session[password]").send_keys(password)
         # Login Button
@@ -66,8 +65,7 @@ def extract_pinned_tweet(driver, user_to_scrape):
         time.sleep(random_time_5_to_10)
 
         # Select the user's first Tweet
-        driver.find_elements_by_css_selector(
-            '[data-testid="tweet"]')[0].click()
+        driver.find_elements_by_css_selector('[data-testid="tweet"]')[0].click()
         time.sleep(random_time_5_to_10)
 
         soup = BeautifulSoup(driver.page_source, "lxml")
@@ -199,12 +197,10 @@ def extract_likes(user_to_scrape):
 
         print("Extracting Likes, please wait...!")
 
-        favorites = tweepy.Cursor(
-            api.favorites, user_to_scrape, count=200).items()
+        favorites = tweepy.Cursor(api.favorites, user_to_scrape, count=200).items()
 
         for tweet in favorites:
-            url_favorites.append(
-                "https://twitter.com/i/web/status/" + tweet.id_str)
+            url_favorites.append("https://twitter.com/i/web/status/" + tweet.id_str)
 
         print("Likes: " + str(len(url_favorites)))
         return url_favorites
@@ -221,8 +217,7 @@ def save_to_csv(
     Function to save result from CSV
     """
     try:
-        full_list = [tweets, retweets, images,
-                     videos, hashtags, likes, pinned_tweet]
+        full_list = [tweets, retweets, images, videos, hashtags, likes, pinned_tweet]
         file_name = user_to_scrape + ".csv"
 
         with open(file_name, "w", newline="") as file:
@@ -256,8 +251,7 @@ def main():
         user_to_scrape = input("User to scrape: ")
 
         # Extract Tweets, Retweets and Media
-        tweets, retweets, images, videos, hashtags = extract_tweets(
-            user_to_scrape)
+        tweets, retweets, images, videos, hashtags = extract_tweets(user_to_scrape)
 
         # Extract Likes
         likes = extract_likes(user_to_scrape)

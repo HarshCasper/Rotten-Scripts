@@ -9,6 +9,7 @@ spell = SpellChecker()
 # tokens --> stores the tokenized words
 tokens = []
 
+
 def readTextFile(textFilename):
     """This function is used to read the input file"""
     global tokens
@@ -16,13 +17,11 @@ def readTextFile(textFilename):
     inputFile = open(textFilename, "r")
     tokens = word_tokenize(inputFile.read())
 
-    # Create a list of words from these tokens checking if the word is alphanumeric 
-    words = [
-        word 
-        for word in tokens if word.isalpha()
-    ]
+    # Create a list of words from these tokens checking if the word is alphanumeric
+    words = [word for word in tokens if word.isalpha()]
     inputFile.close()
     return words
+
 
 def findErrors(textWords):
     """This function is used to detect the errors in file if any"""
@@ -34,6 +33,7 @@ def findErrors(textWords):
 
     return misspelledWords
 
+
 def printErrors(errorList):
     """This function is used to print the errors"""
     print("---------------------")
@@ -41,22 +41,24 @@ def printErrors(errorList):
     print("---------------------")
     for word in errorList:
         # candidates() --> method of spellchecker module to find suitable corrections of the word
-        print(f'{word} : {spell.candidates(word)}')
+        print(f"{word} : {spell.candidates(word)}")
+
 
 def correctErrors(errorList):
-    """This function is used to correct the errors and 
-        write the corrected text in output.txt file"""
+    """This function is used to correct the errors and
+    write the corrected text in output.txt file"""
     # open a new file to write the corrected text
-    outputFile = open("output.txt","w")
+    outputFile = open("output.txt", "w")
     for word in tokens:
         if word in errorList:
             # if word is incorrect we replace it with the corrected word
             word = spell.correction(word)
-        
+
     # this writes text to the new output.txt file
     outputFile.write(" ".join(tokens))
 
     outputFile.close()
+
 
 def main():
     """This is the main function"""
@@ -73,10 +75,10 @@ def main():
     # call to printErrors function
     printErrors(errorList)
 
-    # ask if user needs to correct the text 
+    # ask if user needs to correct the text
     user_answer = input("Do you want to auto correct the errors, Y/N ? ")
 
-    if user_answer.lower()=='y' or user_answer.lower()=='yes':
+    if user_answer.lower() == "y" or user_answer.lower() == "yes":
         # call to correctErrors function
         correctErrors(errorList)
         print("-------------------------------------------------")
@@ -87,6 +89,7 @@ def main():
         print("--------------------------------------------")
         print("Thankyou for using spelling checker program.")
         print("--------------------------------------------")
- 
+
+
 # call to the main function
 main()

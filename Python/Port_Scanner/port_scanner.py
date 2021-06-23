@@ -1,5 +1,5 @@
 __author__ = "Sri Manikanta Palakollu."
-__date__ = '22-07-2020'
+__date__ = "22-07-2020"
 
 import socket
 import sys
@@ -10,12 +10,12 @@ from datetime import datetime
 
 # The below commented lines is required when the system has a mutiple python versions Python v2.x and v3.x
 
-'''
+"""
 try:
     import queue
 except:
     import Queue as queue
-'''
+"""
 
 
 # Defining Dictionary of common available ports
@@ -42,21 +42,22 @@ available_ports = {
     "994": "IRCS",
     "995": "POP3S",
     "3306": "MySQL",
-    "25565": "Minecraft"
+    "25565": "Minecraft",
 }
 
 # Handling the url's properly
-if 'HTTP' in sys.argv[1].upper():
-    if 'HTTPS' in sys.argv[1].upper():
-        print('Please enter a url without https')
+if "HTTP" in sys.argv[1].upper():
+    if "HTTPS" in sys.argv[1].upper():
+        print("Please enter a url without https")
         sys.exit(0)
     else:
-        print('Please enter a url without http')
+        print("Please enter a url without http")
         sys.exit(0)
 
 # printing basic info about the scans
-print("\nHost: {}       IP: {}  ".format(
-    sys.argv[1], socket.gethostbyname(sys.argv[1])))
+print(
+    "\nHost: {}       IP: {}  ".format(sys.argv[1], socket.gethostbyname(sys.argv[1]))
+)
 
 # gethostbyname() will give the IPAddress of URL. or it simply performs the DNS Operation.
 
@@ -68,12 +69,12 @@ def get_scan_args():
         print("\nStarting Port: {}       Ending Port: {}".format(0, 1024))
         return (sys.argv[1], 0, 1024)
     elif len(sys.argv) == 3:
-        print("\nStarting Port: {}       Ending Port: {}".format(
-            1, sys.argv[2]))
-        return (sys.argv[1], 0,  int(sys.argv[2]))
+        print("\nStarting Port: {}       Ending Port: {}".format(1, sys.argv[2]))
+        return (sys.argv[1], 0, int(sys.argv[2]))
     elif len(sys.argv) == 4:
-        print("\nStarting Port: {}       Ending Port: {}".format(
-            sys.argv[2], sys.argv[3]))
+        print(
+            "\nStarting Port: {}       Ending Port: {}".format(sys.argv[2], sys.argv[3])
+        )
         return (sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
 
 
@@ -85,7 +86,7 @@ def is_port_open(host, port):  # Return boolean
         sock.settimeout(0.5)
         sock.connect((host, port))
     except socket.error:
-        #print("Couldn't connect to server.")
+        # print("Couldn't connect to server.")
         return False
     return True
 
@@ -95,8 +96,11 @@ def scanner_worker_thread(host):
         port = port_queue.get()
         if is_port_open(host, port):
             if str(port) in available_ports:
-                print("Port Number: {}({}) is OPEN!".format(
-                    str(port), available_ports[str(port)]))
+                print(
+                    "Port Number: {}({}) is OPEN!".format(
+                        str(port), available_ports[str(port)]
+                    )
+                )
             else:
                 print("Port Number: {} is OPEN!".format(port))
         port_queue.task_done()
@@ -105,8 +109,7 @@ def scanner_worker_thread(host):
 scan_args = get_scan_args()
 port_queue = queue.Queue()
 for i in range(30):
-    t = threading.Thread(target=scanner_worker_thread,
-                         kwargs={"host": scan_args[0]})
+    t = threading.Thread(target=scanner_worker_thread, kwargs={"host": scan_args[0]})
     t.daemon = True
     t.start()
 

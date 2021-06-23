@@ -1,6 +1,7 @@
 import tweepy
 import pymongo
 from pymongo import MongoClient
+
 client = MongoClient()
 
 
@@ -16,8 +17,8 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 
 
 # Edit according to needs, here is localhost
-client = MongoClient('localhost', 27017)
-db = client['scrapped_tweets']
+client = MongoClient("localhost", 27017)
+db = client["scrapped_tweets"]
 tweets = db.tweets
 
 
@@ -25,7 +26,9 @@ tweets = db.tweets
 MAX_TWEETS = 5000
 
 # Change q to get relevant tag
-for tweet in tweepy.Cursor(api.search, q='#blacklivesmatter', rpp=100).items(MAX_TWEETS):
+for tweet in tweepy.Cursor(api.search, q="#blacklivesmatter", rpp=100).items(
+    MAX_TWEETS
+):
     print(tweet)
     result = tweets.insert_one(tweet._json)
 print("Scrapped!")

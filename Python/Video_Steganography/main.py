@@ -12,9 +12,9 @@ from subprocess import call, STDOUT
 
 # Function to split the message.
 def split_string(split_str, count=10):
-    per_c = math.ceil(len(split_str)/count)
+    per_c = math.ceil(len(split_str) / count)
     c_cout = 0
-    out_str = ''
+    out_str = ""
     split_list = []
     for s in split_str:
         out_str += s
@@ -22,7 +22,7 @@ def split_string(split_str, count=10):
         if c_cout == per_c:
             # The message is divided into substrings
             split_list.append(out_str)
-            out_str = ''
+            out_str = ""
             c_cout = 0
     if c_cout != 0:
         split_list.append(out_str)
@@ -63,7 +63,7 @@ def encode_string(input_string, root="./temp/"):
 
 # This function would decode the hidden message by extracting frames from the video
 def decode_string(video):
-    frame_extraction(video)        # Extracting each frame from the video
+    frame_extraction(video)  # Extracting each frame from the video
     secret = []
     root = "./temp/"
     for i in range(len(os.listdir(root))):
@@ -73,8 +73,9 @@ def decode_string(video):
         if secret_dec == None:
             break
         secret.append(secret_dec)
-    print(''.join([i for i in secret]))
+    print("".join([i for i in secret]))
     clean_temp()
+
 
 # This function would delete the temp directory
 
@@ -87,16 +88,43 @@ def clean_temp(path="./temp"):
 
 # This function would extraxt audio from the video so as to stitch them back later.
 def input_main(f_name):
-    input_string = input("Enter the message :")   # To collect the message
+    input_string = input("Enter the message :")  # To collect the message
     frame_extraction(f_name)
     # The call function would be used to extract the audio and then stitch it again properly with the frames extracted.
-    call(["ffmpeg", "-i", f_name, "-q:a", "0", "-map", "a",
-          "temp/audio.mp3", "-y"], stdout=open(os.devnull, "w"), stderr=STDOUT)
+    call(
+        ["ffmpeg", "-i", f_name, "-q:a", "0", "-map", "a", "temp/audio.mp3", "-y"],
+        stdout=open(os.devnull, "w"),
+        stderr=STDOUT,
+    )
     encode_string(input_string)
-    call(["ffmpeg", "-i", "temp/%d.png", "-vcodec", "png",
-          "temp/Embedded_Video.mp4", "-y"], stdout=open(os.devnull, "w"), stderr=STDOUT)
-    call(["ffmpeg", "-i", "temp/Embedded_Video.mp4", "-i", "temp/audio.mp3", "-codec",
-          "copy", "Embedded_Video.mp4", "-y"], stdout=open(os.devnull, "w"), stderr=STDOUT)
+    call(
+        [
+            "ffmpeg",
+            "-i",
+            "temp/%d.png",
+            "-vcodec",
+            "png",
+            "temp/Embedded_Video.mp4",
+            "-y",
+        ],
+        stdout=open(os.devnull, "w"),
+        stderr=STDOUT,
+    )
+    call(
+        [
+            "ffmpeg",
+            "-i",
+            "temp/Embedded_Video.mp4",
+            "-i",
+            "temp/audio.mp3",
+            "-codec",
+            "copy",
+            "Embedded_Video.mp4",
+            "-y",
+        ],
+        stdout=open(os.devnull, "w"),
+        stderr=STDOUT,
+    )
     clean_temp()
 
 
@@ -105,10 +133,10 @@ if __name__ == "__main__":
         print("1.Hide a message in video\n2.Reveal the secret from the video\n")
         print("Any other value to exit\n")
         choice = input("Enter your choice :")
-        if choice == '1':
+        if choice == "1":
             f_name = input("Enter the name of video file with extension:")
             input_main(f_name)
-        elif choice == '2':
+        elif choice == "2":
             decode_string(input("Enter the name of video with extension :"))
         else:
             break

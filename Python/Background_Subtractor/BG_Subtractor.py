@@ -62,9 +62,9 @@ def background_sub(image):
     global drawn
 
     # This names the window so we can reference it
-    cv2.namedWindow(winname='BG Subractor')
+    cv2.namedWindow(winname="BG Subractor")
     # Connects the mouse button to our callback function
-    cv2.setMouseCallback('BG Subractor', draw_rectangle)
+    cv2.setMouseCallback("BG Subractor", draw_rectangle)
 
     print("\nSelect ROI from mouse pointer.")
 
@@ -73,7 +73,6 @@ def background_sub(image):
     background = np.zeros((1, 65), np.float64)
     foreground = np.zeros((1, 65), np.float64)
 
-    
     while True:  # Runs forever until we break with Esc key on keyboard
 
         # If ROI is selected
@@ -81,27 +80,35 @@ def background_sub(image):
             print("\nPerforming Background Subtraction")
             # Using Grabcut Algorithm only when ROI is drawn and saved in
             # variable named rectangle
-            cv2.grabCut(image, black_mask, rectangle,
-                        background, foreground,
-                        5, cv2.GC_INIT_WITH_RECT)
+            cv2.grabCut(
+                image,
+                black_mask,
+                rectangle,
+                background,
+                foreground,
+                5,
+                cv2.GC_INIT_WITH_RECT,
+            )
 
             # mask with 1 and 4 denotes foreground
             # mask with 2 and 0 denotes background so converting the bg pixels into black
-            mask2 = np.where((black_mask == 2) | (black_mask == 0), 0, 1).astype('uint8')
+            mask2 = np.where((black_mask == 2) | (black_mask == 0), 0, 1).astype(
+                "uint8"
+            )
 
             # multiplying mask2 with original image so that we can get our resultant
             image = image * mask2[:, :, np.newaxis]
 
             # For saving the file
-            cv2.imwrite('Bg_removed.jpg', image)
-            print(f'\nBg_removed.jpg saved in your current directory!')
-            print('Great Success!!!')
+            cv2.imwrite("Bg_removed.jpg", image)
+            print(f"\nBg_removed.jpg saved in your current directory!")
+            print("Great Success!!!")
 
             # Once the processing has been done setting drawn to False
             drawn = False
 
         # Shows the resultant image in image window
-        cv2.imshow('BG Subractor', image)
+        cv2.imshow("BG Subractor", image)
 
         # Press ESC to exit
         if cv2.waitKey(1) & 0xFF == 27:
@@ -111,7 +118,7 @@ def background_sub(image):
     cv2.destroyAllWindows()
 
 
-if __name__ == '__main__':
-    loc = input('Enter image path: ')
+if __name__ == "__main__":
+    loc = input("Enter image path: ")
     img = open_image(loc)
     background_sub(img)

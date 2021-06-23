@@ -18,7 +18,7 @@ HASH_MAP = {
     "--sha3_384": hashlib.sha384,
     "--sha3_512": hashlib.sha512,
     "--shake_128": hashlib.shake_128,
-    "--shake_256": hashlib.shake_256
+    "--shake_256": hashlib.shake_256,
 }
 
 

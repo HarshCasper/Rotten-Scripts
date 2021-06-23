@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#Imports and dependencies
+# Imports and dependencies
 
 import requests
 from bs4 import BeautifulSoup
@@ -23,14 +23,14 @@ soup = BeautifulSoup(response.text, "html.parser")
 
 # The content of the article is stored in the <article> tag
 
-for line in soup.find('article').find('div'):
+for line in soup.find("article").find("div"):
 
     # All the content is essentially stored between <p> tags
 
-    for content in line.find_all('p'):
+    for content in line.find_all("p"):
 
         # contents are written into a file
 
-        file.write(content.text + '\n')
+        file.write(content.text + "\n")
 
 file.close()

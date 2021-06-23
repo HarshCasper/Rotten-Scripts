@@ -17,5 +17,5 @@ def bot_schedule():
 
 # The Job is scheduled for once a day.
 # The event is triggered at 5:30AM IST (Midnight UTC)
-scheduler.add_job(bot_schedule, 'cron', days='*/1')
+scheduler.add_job(bot_schedule, "cron", days="*/1")
 scheduler.start()

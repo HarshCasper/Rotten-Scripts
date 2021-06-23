@@ -5,13 +5,15 @@ class GURL:
     URL and get_url : which returns the string of generated url
     """
 
-    def __init__(self, query, limit=100, filetype='html', timeperiod='w', safemode='active'):
+    def __init__(
+        self, query, limit=100, filetype="html", timeperiod="w", safemode="active"
+    ):
         """
         This is the constructor which takes the query string and converts it into a parameterised
         google accepted URL.
         """
         self.base_url = "https://google.com"
-        self.query = query.replace(' ', '+')
+        self.query = query.replace(" ", "+")
         self.limit = limit
         self.filetype = filetype
         self.timeperiod = timeperiod
@@ -19,18 +21,21 @@ class GURL:
         self.url = None
 
     def generate(self):
-        """ This method 
-        """
-        self.url = self.base_url + "/search?q={0}&num={1}&as_filetype='{2}'&as_qdr={3}&safe={4}".format(
-            self.query, self.limit, self.filetype, self.timeperiod, self.safemode)
+        """This method"""
+        self.url = (
+            self.base_url
+            + "/search?q={0}&num={1}&as_filetype='{2}'&as_qdr={3}&safe={4}".format(
+                self.query, self.limit, self.filetype, self.timeperiod, self.safemode
+            )
+        )
         print("GENERATED URL : '{}'".format(self.url))
 
     def get_url(self):
-        """ This method returns the generated URL in a string format """
+        """This method returns the generated URL in a string format"""
         return self.url
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
-    OBJ = GURL('SLoP')
+    OBJ = GURL("SLoP")
     OBJ.generate()

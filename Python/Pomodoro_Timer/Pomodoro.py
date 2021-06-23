@@ -4,7 +4,7 @@ import time
 host_path = r"C:\Windows\System32\drivers\etc\hosts"
 
 # URL of websites to block
-with open('block_urls.txt', 'r') as url_file:
+with open("block_urls.txt", "r") as url_file:
     block_list = [url.strip() for url in url_file]
 
 # redirecting above URLs to this localhost to ensure blocking
@@ -19,7 +19,7 @@ def block_websites():
     """
     try:
         # Opening the host file in reading and writing mode
-        with open(host_path, 'r+') as h_file:
+        with open(host_path, "r+") as h_file:
             content = h_file.read()
 
             for website in block_list:
@@ -35,12 +35,14 @@ def block_websites():
         return 1
 
     except PermissionError:
-        print('\nTry running the cmd in admin mode and '
-              'then run this code to enable this functionality!')
+        print(
+            "\nTry running the cmd in admin mode and "
+            "then run this code to enable this functionality!"
+        )
         return 0
 
     except FileNotFoundError:
-        print('\nThis functionality is not supported for your OS!')
+        print("\nThis functionality is not supported for your OS!")
         return 0
 
 
@@ -76,25 +78,29 @@ def pomodoro():
     This function has the implementation of the user-friendly Pomodoro timer
     along with the website blocking functionality.
     """
-    print('\n------------------ POMODORO TIMER ------------------\n')
-    print('\nPomodoro timer helps to break down your work into 25 minutes of '
-          'high focus intervals separated by short breaks of 5 minutes.')
-    print('\nFor extra focus, would you like to enable website blocker? '
-          '\n**Selecting this option will block all of the popular '
-          'social media sites throughout the 25 min duration**')
-    enable = input('\nPress (y) to enable and any other key to skip: ')
+    print("\n------------------ POMODORO TIMER ------------------\n")
+    print(
+        "\nPomodoro timer helps to break down your work into 25 minutes of "
+        "high focus intervals separated by short breaks of 5 minutes."
+    )
+    print(
+        "\nFor extra focus, would you like to enable website blocker? "
+        "\n**Selecting this option will block all of the popular "
+        "social media sites throughout the 25 min duration**"
+    )
+    enable = input("\nPress (y) to enable and any other key to skip: ")
 
     cycle = 0
 
     while 1:
         # Feature to block social media websites
-        if enable == 'y':
+        if enable == "y":
             if block_websites():
                 pass
             else:
-                enable = ''
+                enable = ""
 
-        input('\nPress any key to start the timer: ')
+        input("\nPress any key to start the timer: ")
         cycle += 1
 
         # Setting a 25 minute timer
@@ -104,8 +110,8 @@ def pomodoro():
         while t:
             minute_count = t // 60
             second_count = t % 60
-            timer = '{:02d}:{:02d}'.format(minute_count, second_count)
-            print(f'Time left: {timer}', end="\r")
+            timer = "{:02d}:{:02d}".format(minute_count, second_count)
+            print(f"Time left: {timer}", end="\r")
             time.sleep(1)
             t -= 1
 
@@ -116,12 +122,12 @@ def pomodoro():
                 print("\a")
             time.sleep(3)
 
-        print('\nPOMODORO FINISHED!')
+        print("\nPOMODORO FINISHED!")
         print("Break Time!! Give yourself a 5 min break!")
-        input('\nPress any key to start the break timer: ')
+        input("\nPress any key to start the break timer: ")
 
         # Removing the blocked websites for the break
-        if enable == 'y':
+        if enable == "y":
             remove_websites()
 
         t = 1 * 60
@@ -129,8 +135,8 @@ def pomodoro():
         while t:
             minute_count = t // 60
             second_count = t % 60
-            timer = '{:02d}:{:02d}'.format(minute_count, second_count)
-            print(f'Time left: {timer}', end="\r")
+            timer = "{:02d}:{:02d}".format(minute_count, second_count)
+            print(f"Time left: {timer}", end="\r")
             time.sleep(1)
             t -= 1
 
@@ -141,13 +147,14 @@ def pomodoro():
                 print("\a")
             time.sleep(3)
 
-        ans = input('\nWould you like to start a new Pomodoro? \n'
-                    'Press (y) to continue or any other key to exit: ').lower()
+        ans = input(
+            "\nWould you like to start a new Pomodoro? \n"
+            "Press (y) to continue or any other key to exit: "
+        ).lower()
 
-        if ans != 'y':
+        if ans != "y":
             return cycle
 
 
 num = pomodoro()
-print(f'\nGreat work! You completed {num} Pomodoro cycles! \nGood going!\n')
-
+print(f"\nGreat work! You completed {num} Pomodoro cycles! \nGood going!\n")

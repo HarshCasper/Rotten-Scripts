@@ -14,9 +14,9 @@ def convert_frames_to_video(img_folder_path, fps):
     frame = cv2.imread(os.path.join(img_folder_path, images[0]))
     height, width, layers = frame.shape
 
-    video_name = input('Enter the video name(just the filename): ')
-    if not video_name.endswith('.avi'):
-        video_name = video_name + '.avi'
+    video_name = input("Enter the video name(just the filename): ")
+    if not video_name.endswith(".avi"):
+        video_name = video_name + ".avi"
     # fourcc code = 0 gives no warning with files other than .avi
     video = cv2.VideoWriter(video_name, 0, fps, (width, height))
 
@@ -30,5 +30,5 @@ def convert_frames_to_video(img_folder_path, fps):
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         img_folder_path = str(" ".join(sys.argv[1:]))
-    fps = int(input('Enter the fps needed: '))
+    fps = int(input("Enter the fps needed: "))
     convert_frames_to_video(img_folder_path, fps)

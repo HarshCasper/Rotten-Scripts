@@ -19,9 +19,9 @@ import matplotlib as plt
 from tqdm.notebook import tqdm
 import tensorflow as tf
 
-with tf.device('/gpu:0'):
-    config = tf.compat.v1.ConfigProto(gpu_options=tf.compat.v1.GPUOptions(
-        per_process_gpu_memory_fraction=1)
+with tf.device("/gpu:0"):
+    config = tf.compat.v1.ConfigProto(
+        gpu_options=tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=1)
         # device_count = {'GPU': 1}
     )
     config.gpu_options.allow_growth = True
@@ -53,10 +53,10 @@ with tf.device('/gpu:0'):
         :return: Captions
         """
         file = load_doc(filename)
-        captions = file.split('\n')
+        captions = file.split("\n")
         descriptions = {}
         for caption in captions[:-1]:
-            img, caption = caption.split('\t')
+            img, caption = caption.split("\t")
             if img[:-2] not in descriptions:
                 descriptions[img[:-2]] = [caption]
             else:
@@ -69,7 +69,7 @@ with tf.device('/gpu:0'):
         :param captions:
         :return: clean captions
         """
-        table = str.maketrans('', '', string.punctuation)
+        table = str.maketrans("", "", string.punctuation)
         for img, caps in captions.items():
             for i, img_caption in enumerate(caps):
                 img_caption.replace("-", " ")
@@ -85,7 +85,7 @@ with tf.device('/gpu:0'):
                 desc = [word for word in desc if (word.isalpha())]
                 # convert back to string
 
-                img_caption = ' '.join(desc)
+                img_caption = " ".join(desc)
                 captions[img][i] = img_caption
         return captions
 
@@ -110,7 +110,7 @@ with tf.device('/gpu:0'):
         lines = list()
         for key, desc_list in descriptions.items():
             for desc in desc_list:
-                lines.append(key + '\t' + desc)
+                lines.append(key + "\t" + desc)
         data = "\n".join(lines)
         with open(filename) as file:
             file.write(data)
@@ -196,7 +196,7 @@ with tf.device('/gpu:0'):
             if image in photos:
                 if image not in descriptions:
                     descriptions[image] = []
-                desc = '<start> ' + " ".join(image_caption) + ' <end>'
+                desc = "<start> " + " ".join(image_caption) + " <end>"
                 descriptions[image].append(desc)
 
         return descriptions
@@ -216,7 +216,8 @@ with tf.device('/gpu:0'):
     # train = loading_data(filename)
     train_imgs = load_photos(filename)
     train_descriptions = load_clean_descriptions(
-        "Model/Xception/descriptions.txt", train_imgs)
+        "Model/Xception/descriptions.txt", train_imgs
+    )
     train_features = load_features(train_imgs)
 
     def dict_to_list(descriptions):
@@ -249,7 +250,7 @@ with tf.device('/gpu:0'):
 
     # give each word an index, and store that into tokenizer.p pickle file
     tokenizer = create_tokenizer(train_descriptions)
-    dump(tokenizer, open('Model/Xception/tokenizer.p', 'wb'))
+    dump(tokenizer, open("Model/Xception/tokenizer.p", "wb"))
     vocab_size = len(tokenizer.word_index) + 1
 
     def max_length(descriptions):
@@ -277,8 +278,9 @@ with tf.device('/gpu:0'):
             for key, description_list in descriptions.items():
                 # retrieve photo features
                 feature = features[key][0]
-                input_image, input_sequence, output_word = create_sequences(tokenizer, max_length, description_list,
-                                                                            feature)
+                input_image, input_sequence, output_word = create_sequences(
+                    tokenizer, max_length, description_list, feature
+                )
                 yield [input_image, input_sequence], output_word
 
     def create_sequences(tokenizer, max_length, desc_list, feature):
@@ -310,13 +312,14 @@ with tf.device('/gpu:0'):
         return np.array(X1), np.array(X2), np.array(y)
 
     # You can check the shape of the input and output for your model
-    [a, b], c = next(data_generator(train_descriptions,
-                                    features, tokenizer, max_length))
+    [a, b], c = next(
+        data_generator(train_descriptions, features, tokenizer, max_length)
+    )
     a.shape, b.shape, c.shape
 
     from keras.utils import plot_model
 
-    with tf.device('/device:GPU:0'):
+    with tf.device("/device:GPU:0"):
         # define the captioning model
         def define_model(vocab_size, max_length):
             """
@@ -328,7 +331,7 @@ with tf.device('/gpu:0'):
             # features from the CNN model squeezed from 2048 to 256 nodes
             inputs1 = Input(shape=(2048,))
             fe1 = Dropout(0.5)(inputs1)
-            fe2 = Dense(256, activation='relu')(fe1)
+            fe2 = Dense(256, activation="relu")(fe1)
 
             # LSTM sequence model
             inputs2 = Input(shape=(max_length,))
@@ -338,25 +341,24 @@ with tf.device('/gpu:0'):
 
             # Merging both models
             decoder1 = add([fe2, se3])
-            decoder2 = Dense(256, activation='relu')(decoder1)
-            outputs = Dense(vocab_size, activation='softmax')(decoder2)
+            decoder2 = Dense(256, activation="relu")(decoder1)
+            outputs = Dense(vocab_size, activation="softmax")(decoder2)
 
             # tie it together [image, seq] [word]
             model = Model(inputs=[inputs1, inputs2], outputs=outputs)
-            model.compile(loss='categorical_cross-entropy', optimizer='adam')
+            model.compile(loss="categorical_cross-entropy", optimizer="adam")
 
             # summarize model
             print(model.summary())
-            plot_model(model, to_file='Model/Xception/model.png',
-                       show_shapes=True)
+            plot_model(model, to_file="Model/Xception/model.png", show_shapes=True)
 
             return model
 
     print("Dataset: ", len(train_imgs))
-    print('Descriptions: train=', len(train_descriptions))
-    print('Photos: train=', len(train_features))
-    print('Vocabulary Size:', vocab_size)
-    print('Description Length: ', max_length)
+    print("Descriptions: train=", len(train_descriptions))
+    print("Photos: train=", len(train_features))
+    print("Vocabulary Size:", vocab_size)
+    print("Description Length: ", max_length)
 
     model = define_model(vocab_size, max_length)
     epochs = 10
@@ -364,7 +366,8 @@ with tf.device('/gpu:0'):
     os.mkdir("models_Xception")
     for i in range(epochs):
         generator = data_generator(
-            train_descriptions, train_features, tokenizer, max_length)
+            train_descriptions, train_features, tokenizer, max_length
+        )
         model.fit(generator, epochs=1, steps_per_epoch=steps, verbose=1)
         model.save("models6/model_" + str(i) + ".h5")
 
@@ -375,7 +378,7 @@ with tf.device('/gpu:0'):
 
     max_length = 32
     tokenizer = load(open("Model/Xception/tokenizer.p", "rb"))
-    model = load_model('models_Xception/model_9.h5')
+    model = load_model("models_Xception/model_9.h5")
     xception_model = Xception(include_top=False, pooling="avg")
 
     def extract_feature(filename, model):
@@ -390,7 +393,8 @@ with tf.device('/gpu:0'):
 
         except:
             print(
-                "ERROR: Couldn't open image! Make sure the image path and extension is correct")
+                "ERROR: Couldn't open image! Make sure the image path and extension is correct"
+            )
         image = image.resize((299, 299))
         image = np.array(image)
         # for images that has 4 channels, we convert them into 3 channels
@@ -420,7 +424,7 @@ with tf.device('/gpu:0'):
         :param max_length:
         :return:
         """
-        in_text = 'start'
+        in_text = "start"
         for i in range(max_length):
             sequence = tokenizer.texts_to_sequences([in_text])[0]
             sequence = pad_sequences([sequence], maxlen=max_length)
@@ -429,8 +433,8 @@ with tf.device('/gpu:0'):
             word = word_for_id(pred, tokenizer)
             if word is None:
                 break
-            in_text += ' ' + word
-            if word == 'end':
+            in_text += " " + word
+            if word == "end":
                 break
         return in_text
 

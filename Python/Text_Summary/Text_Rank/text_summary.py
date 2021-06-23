@@ -9,8 +9,10 @@ import networkx as nx
 
 # Enter the File path
 file_name = input("Enter the Source File: ")
-print("This script requires 'stopwords' from NLTK, see README"
-      "Quick Download Command: ```python -m nltk.downloader stopwords```")
+print(
+    "This script requires 'stopwords' from NLTK, see README"
+    "Quick Download Command: ```python -m nltk.downloader stopwords```"
+)
 
 
 def read_article(file_name):
@@ -19,7 +21,7 @@ def read_article(file_name):
     :param file_name: Path of text file (line 12)
     :return: sentences
     """
-    file = open(file_name, 'r', encoding="utf-8")
+    file = open(file_name, "r", encoding="utf-8")
     filedata = file.readlines()
     article = filedata[0].split(". ")
     sentences = []
@@ -82,7 +84,8 @@ def build_similarity_matrix(sentences, stop_words):
             if idx1 == idx2:  # ignore if both are same sentences
                 continue
             similarity_matrix[idx1][idx2] = sentence_similarity(
-                sentences[idx1], sentences[idx2], stop_words)
+                sentences[idx1], sentences[idx2], stop_words
+            )
 
     return similarity_matrix
 
@@ -94,7 +97,7 @@ def generate_summary(file_name, top_n=5):
     :param top_n: Number of Sentence to be vectorized (tokenized)
     :return: Summary of text
     """
-    stop_words = stopwords.words('english')
+    stop_words = stopwords.words("english")
     summarize_text = []
 
     # Step 1 - Read text anc split it
@@ -109,7 +112,8 @@ def generate_summary(file_name, top_n=5):
 
     # Step 4 - Sort the rank and pick top sentences
     ranked_sentence = sorted(
-        ((scores[i], s) for i, s in enumerate(sentences)), reverse=True)
+        ((scores[i], s) for i, s in enumerate(sentences)), reverse=True
+    )
 
     # Print the index of the statements
     # print("Indexes of top ranked_sentence order are ", ranked_sentence)
@@ -118,12 +122,12 @@ def generate_summary(file_name, top_n=5):
         summarize_text.append(" ".join(ranked_sentence[i][1]))
 
     # Step 5 - Output of the text file
-    filepath_index = file_name.find('.txt')
-    outputpath = file_name[:filepath_index]+'_textRank.txt'
+    filepath_index = file_name.find(".txt")
+    outputpath = file_name[:filepath_index] + "_textRank.txt"
 
-    with open(outputpath, 'w') as w:
+    with open(outputpath, "w") as w:
         for sentence in summarize_text:
-            w.write(str(sentence)+'\n')
+            w.write(str(sentence) + "\n")
 
 
 generate_summary(file_name, 5)

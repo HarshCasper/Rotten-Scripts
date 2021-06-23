@@ -20,17 +20,21 @@ def run():
     sorted_h2 = sorted(h2_dict.items(), key=lambda x: x[1], reverse=True)
     sorted_h3 = sorted(h3_dict.items(), key=lambda x: x[1], reverse=True)
 
-    keywords_file = open(current_directory + '/KeywordsData.txt', 'w')
+    keywords_file = open(current_directory + "/KeywordsData.txt", "w")
 
-    keywords_file.write("""
+    keywords_file.write(
+        """
         TOP 20 Alternative Tag Data : {}\n\n
         TOP 20 Title Tag Data : {}\n\n
         TOP 20 H2 Tag Data : {}\n\n
-        TOP 20 H3 Tag Data : {}""".format(sorted_alt[:20], sorted_title[:20], sorted_h2[:20], sorted_h3[:20]))
+        TOP 20 H3 Tag Data : {}""".format(
+            sorted_alt[:20], sorted_title[:20], sorted_h2[:20], sorted_h3[:20]
+        )
+    )
     keywords_file.close()
 
     print("Fetched KeywordsData successfully")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()

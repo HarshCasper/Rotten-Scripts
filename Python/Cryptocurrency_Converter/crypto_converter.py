@@ -3,14 +3,19 @@ https://developers.coinbase.com/api/v2?python#get-exchange-rates"""
 
 import requests
 
+
 def exchange_rates(exchange_type):
-    """This function gets exhange rates. The coinbase API returns the JSON for an input cryptocurrency 
+    """This function gets exhange rates. The coinbase API returns the JSON for an input cryptocurrency
     with data or exhangerate of one coin to all known "normal" fiat currencies like BTC(input) to INR, USD etc."""
     exchange_type = exchange_type.upper()
-    response_obj = requests.get(f"https://api.coinbase.com/v2/exchange-rates?currency={exchange_type}")
+    response_obj = requests.get(
+        f"https://api.coinbase.com/v2/exchange-rates?currency={exchange_type}"
+    )
 
-    try: exchange_dict = response_obj.json()["data"]["rates"]
-    except: return None
+    try:
+        exchange_dict = response_obj.json()["data"]["rates"]
+    except:
+        return None
     return exchange_dict
 
 
@@ -24,14 +29,15 @@ def convert_fiat_to_crypto(fvalue, ftype, ctype):
         return 1
 
     # get current_price for cryptocurrency using exhange_rates function
-    try: current_price = exchange_rates(ftype)[ctype]
+    try:
+        current_price = exchange_rates(ftype)[ctype]
     except:
         print("nNo Information Available. We're Sorry!")
         return
     if current_price is None:
         print("\nNo Information Available. We're Sorry!")
         return
-    return float(current_price)*fvalue
+    return float(current_price) * fvalue
 
 
 def convert_crypto_to_fiat(cvalue, ctype, ftype):
@@ -44,20 +50,21 @@ def convert_crypto_to_fiat(cvalue, ctype, ftype):
         return 1
 
     # get current_price for cryptocurrency using exhange_rates function
-    try: current_price = exchange_rates(ctype)[ftype]
+    try:
+        current_price = exchange_rates(ctype)[ftype]
     except:
         print("\nNo Information Available. We're Sorry!")
         return
     if current_price is None:
         print("\nNo Information Available. We're Sorry!")
         return
-    return float(current_price)*cvalue
+    return float(current_price) * cvalue
 
 
 def validity_of_currencytype(ctype, ftype):
     """This function checks if the user input of Cryptocurrency type or Fiat Money type are truly the latter.
     Returns 1 if found an error in the input, else returns 0."""
-    available_cryptocurrencies = ['BTC', 'ETH', 'ETC', 'BCH', 'LTC', 'ZEC', 'ZRX']
+    available_cryptocurrencies = ["BTC", "ETH", "ETC", "BCH", "LTC", "ZEC", "ZRX"]
     if ctype not in available_cryptocurrencies:
         return 1, f"\n{ctype} is not a Cryptocurrency. Try Again!\n"
     elif ftype in available_cryptocurrencies:
@@ -67,45 +74,66 @@ def validity_of_currencytype(ctype, ftype):
 
 
 def main():
-    """This function loops through the input given by the user, until given a bad input or "Q/q". """
+    """This function loops through the input given by the user, until given a bad input or "Q/q"."""
     while True:
         user_inp = input("\n\tEnter Your Choice Here : ")
 
         if user_inp == "1":
             crypto_type = input("\nEnter the Cryptocurrency Type  :  ")
             fiat_type = input("Enter the Fiat Money Type  :  ")
-            try: crypto_value = float(input("\nEnter the Cryptocurrency Value  :  "))
+            try:
+                crypto_value = float(input("\nEnter the Cryptocurrency Value  :  "))
             except:
-                print("Bad Input!\nPlease Enter \"y\" if you wish to continue, else \"n\".")
+                print('Bad Input!\nPlease Enter "y" if you wish to continue, else "n".')
                 choice = input()
-                if choice == "y": continue
-                elif choice == "n": return
+                if choice == "y":
+                    continue
+                elif choice == "n":
+                    return
                 else:
                     print("Bad Input Again!")
                     return
-            result = convert_crypto_to_fiat(crypto_value, crypto_type.upper(), fiat_type.upper())
-            if result is None: return
-            elif result == 1: continue
-            print(f"{crypto_value} {crypto_type.upper()} in {fiat_type.upper()} is  -->  {result}")
+            result = convert_crypto_to_fiat(
+                crypto_value, crypto_type.upper(), fiat_type.upper()
+            )
+            if result is None:
+                return
+            elif result == 1:
+                continue
+            print(
+                f"{crypto_value} {crypto_type.upper()} in {fiat_type.upper()} is  -->  {result}"
+            )
 
         elif user_inp == "2":
             fiat_type = input("\nEnter the Fiat Money Type  :  ")
             crypto_type = input("Enter the Cryptocurrency Type  :  ")
-            try: fiat_value = float(input("\nEnter the Fiat Money Value  :  "))
+            try:
+                fiat_value = float(input("\nEnter the Fiat Money Value  :  "))
             except:
-                print("You did not enter a number!\nPlease Enter \"y\" if you wish to continue, else \"n\".")
+                print(
+                    'You did not enter a number!\nPlease Enter "y" if you wish to continue, else "n".'
+                )
                 choice = input()
-                if choice == "y": continue
-                elif choice == "n": return
+                if choice == "y":
+                    continue
+                elif choice == "n":
+                    return
                 else:
                     print("Bad Input Again!")
                     return
-            result = convert_fiat_to_crypto(fiat_value, fiat_type.upper(), crypto_type.upper())
-            if result is None: return
-            elif result == 1: continue
-            print(f"{fiat_value} {fiat_type.upper()} in {crypto_type.upper()} is  -->  {result}")
-        
-        elif user_inp == "Q" or user_inp == "q": return
+            result = convert_fiat_to_crypto(
+                fiat_value, fiat_type.upper(), crypto_type.upper()
+            )
+            if result is None:
+                return
+            elif result == 1:
+                continue
+            print(
+                f"{fiat_value} {fiat_type.upper()} in {crypto_type.upper()} is  -->  {result}"
+            )
+
+        elif user_inp == "Q" or user_inp == "q":
+            return
 
         else:
             print("\nYour Input was NOT in the choices. Try again later.\n")
@@ -132,4 +160,3 @@ Press (Q/q)  :  If you're wanting to Quit
     stat = main()
     if stat is not None:
         print(stat)
-        

@@ -2,10 +2,10 @@
 from googlesearch import search
 
 
-def google_search_results(keyword, domain='com'):
+def google_search_results(keyword, domain="com"):
     """
-        :param keyword: Provided with string type data for which links are produced
-        :param domain: Provided with string type data to which resultant links are associated
+    :param keyword: Provided with string type data for which links are produced
+    :param domain: Provided with string type data to which resultant links are associated
     """
     for links in search(keyword, tld=domain, pause=2):
         yield links

@@ -15,12 +15,20 @@ import threading
 
 def parse_input():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-t', '--target', nargs=1, required=True,
-                        help='Target Backup folder')
-    parser.add_argument('-s', '--source', nargs='+', required=True,
-                        help='Source Files to be added')
-    parser.add_argument('-c', '--compress', nargs=1, type=int,
-                        help='Gzip threshold in bytes, Deafault 1024KB', default=[1024000])
+    parser.add_argument(
+        "-t", "--target", nargs=1, required=True, help="Target Backup folder"
+    )
+    parser.add_argument(
+        "-s", "--source", nargs="+", required=True, help="Source Files to be added"
+    )
+    parser.add_argument(
+        "-c",
+        "--compress",
+        nargs=1,
+        type=int,
+        help="Gzip threshold in bytes, Deafault 1024KB",
+        default=[1024000],
+    )
     # Default Threshold is 1024KB
 
     # Help is triggered when there is no Input Provided
@@ -32,14 +40,14 @@ def parse_input():
 
 
 def size_if_newer(source, target):
-    """ If newer it returns size, otherwise it returns False """
+    """If newer it returns size, otherwise it returns False"""
 
     src_stat = os.stat(source)
     try:
         target_ts = os.stat(target).st_mtime
     except FileNotFoundError:
         try:
-            target_ts = os.stat(target + '.gz').st_mtime
+            target_ts = os.stat(target + ".gz").st_mtime
         except FileNotFoundError:
             target_ts = 0
 
@@ -49,12 +57,13 @@ def size_if_newer(source, target):
 
 
 def threaded_sync_file(source, target, compress):
-    """ Threading for Synchronized Files """
+    """Threading for Synchronized Files"""
     size = size_if_newer(source, target)
 
     if size:
-        thread = threading.Thread(target=transfer_file,
-                                  args=(source, target, size > compress))
+        thread = threading.Thread(
+            target=transfer_file, args=(source, target, size > compress)
+        )
         thread.start()
         return thread
 
@@ -67,17 +76,17 @@ def sync_file(source, target, compress):
 
 
 def transfer_file(source, target, compress):
-    """ Either copy or compress and copies the file """
+    """Either copy or compress and copies the file"""
 
     try:
         if compress:
-            with gzip.open(target + '.gz', 'wb') as target_fid:
-                with open(source, 'rb') as source_fid:
+            with gzip.open(target + ".gz", "wb") as target_fid:
+                with open(source, "rb") as source_fid:
                     target_fid.writelines(source_fid)
-            print('Compress {}'.format(source))
+            print("Compress {}".format(source))
         else:
             shutil.copy2(source, target)
-            print('Copy {}'.format(source))
+            print("Copy {}".format(source))
     except FileNotFoundError:
         os.makedirs(os.path.dirname(target))
         transfer_file(source, target, compress)
@@ -90,22 +99,21 @@ def sync_root(root, arg):
 
     for path, _, files in os.walk(root):
         for source in files:
-            source = path + '/' + source
-            threads.append(threaded_sync_file(source,
-                                              target + source, compress))
+            source = path + "/" + source
+            threads.append(threaded_sync_file(source, target + source, compress))
     #            sync_file(source, target + source, compress)
     for thread in threads:
         thread.join()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     arg = parse_input()
-    print('------------------------- Start copy -------------------------')
-    print('______________________________________________________________')
+    print("------------------------- Start copy -------------------------")
+    print("______________________________________________________________")
     for root in arg.source:
         sync_root(root, arg)
-    print('______________________________________________________________')
-    print('------------------------- Done Done! -------------------------')
+    print("______________________________________________________________")
+    print("------------------------- Done Done! -------------------------")
 
 """
 Example Usage-
