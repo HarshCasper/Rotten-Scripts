@@ -4,15 +4,14 @@ At times, we feel like having an assistant which could read our lengthy document
 
 ## Setup instructions and Guidelines
 
-1. Install Python 3.x (recommended) from <a href="https://www.python.org/downloads/">here</a>
-2. Download this repository as zip and extract.
-3. Install the dependencies required for this script from `requirements.txt` file.
+1. Download this repository as zip and extract.
+2. Install the dependencies required for this script from `requirements.txt` file.
    By executing the following code:
    ```
    pip install -r requirements.txt
    ```
-4. Execute the code in a python editor.
-5. Have fun!!
+3. Execute the code in a python editor.
+4. Have fun!!
 
 The script has proper comments which should be followed. The script is easy to use.
 
