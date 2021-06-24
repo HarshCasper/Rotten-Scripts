@@ -4,7 +4,7 @@ This bot will provide you the fun you need ,its filled with funny phrases with y
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-#Features
+# Features
 
 This is a discord bot that takes inputs from the user and gives you funny phrases which will make your day
 It has timeout,always-on features too
