@@ -10,8 +10,10 @@
 |NJack Winter of Code           |December 1, 2020 - January 6, 2021   |https://njackwinterofcode.github.io/|
 |DevScript Winter of Code       |December 25, 2020 - February 25, 2021|https://devscript.tech/woc/         |
 |Script Winter of Code          |December 25, 2020 - February 28, 2021|https://swoc.tech/                  |
+|DSC IIIT Kalyani Winter of Code|January 18 - March 11 (2021)         |https://woc-dsciiitkalyani.tech/    |
+|Google Summer of Code          |Janurary 30 - August 31 (2021)       |https://summerofcode.withgoogle.com/   |
+|Google Season of Docs          |February 9 - December 14 (2021)      |https://developers.google.com/season-of-docs   |
 |Mexili Winter of Code          |February 19 - March 29 (2021)        |https://mexili.org/winter_of_code/  |
 |Cross Winter of Code           |February 13 - March 28 (2021)        |https://crosswoc.ieeedtu.in/        |
-|DSC IIIT Kalyani Winter of Code|January 18 - March 11 (2021)         |https://woc-dsciiitkalyani.tech/    |
 |GirlScript Summer of Code      |March 8 - May 31 (2021)              |https://gssoc.girlscript.tech/      |
 |LetsGrowMore Summer of code    |June 10 - July 10 (2021)             |https://letsgrowmore.in/soc/        |
