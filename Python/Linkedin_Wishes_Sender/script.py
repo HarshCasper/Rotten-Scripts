@@ -67,7 +67,7 @@ def wish(browser):
     else:
         element =browser.find_element_by_css_selector('a[data-test-global-nav-link="notifications"]');
         element.click();
-        time.sleep(2);
+        time.sleep(5);
         # All notification cards
         elements=browser.find_elements_by_css_selector(".nt-card")
         count=0
@@ -80,11 +80,11 @@ def wish(browser):
             
             # Check for button that directs to message box
             if soup.select_one(".message-anywhere-button.artdeco-button.artdeco-button--secondary.artdeco-button--default")!=None:     
-                wish_btn=element.find_element_css_selector(".message-anywhere-button.artdeco-button.artdeco-button--secondary.artdeco-button--default")
+                wish_btn=element.find_elements_css_selector(".message-anywhere-button.artdeco-button.artdeco-button--secondary.artdeco-button--default")[0]
                 
                 # If message is regaring birthday
                 if "happy birthday" in element.text:
-                    wish_text=element.find_element_by_css_selector(".nt-card__text--3-line span.visually-hidden")
+                    wish_text=element.find_elements_by_css_selector(".nt-card__text--3-line span.visually-hidden")[0]
                     date_txt=wish_text.split("(")[1].split(")")[0];
                     current_date=datetime.datetime.now().strftime("%b %d").lstrip("0").replace(" 0", " ")
 
@@ -95,12 +95,15 @@ def wish(browser):
                 wish_btn.click()
                 time.sleep(2)
                 msg_box=browser.find_element_by_css_selector(".msg-overlay-conversation-bubble")
-                send_btn=msg_box.find_element_by_css_selector(".msg-form__send-button")
+                send_btn=msg_box.find_elements_by_css_selector(".msg-form__send-button")[0]
                 send_btn.click()
                 time.sleep(1)
-                clos_btn=msg_box.find_element_by_css_selector("button[data-control-name='overlay.close_conversation_window']")
+                clos_btn=msg_box.find_elements_by_css_selector("button[data-control-name='overlay.close_conversation_window']")[0]
                 clos_btn.click()
                 print("Send greetings")
+
+            
+
         browser.close()        
 
 
