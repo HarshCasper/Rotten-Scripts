@@ -2,7 +2,7 @@
 
 ## Python scripts associated with this project:
 
-- [ASCIIfy_Image](/Python/ASCIIfy_Image)
+- [ASCIIfy_Image](./ASCIIfy_Image)
 - [AWS_Scripts](/Python/AWS_Scripts)
 - [All_GitHub_Repos](/Python/All_GitHub_Repos)
 - [Amazon_Product_Price_Tracker](/Python/Amazon_Product_Price_Tracker)
