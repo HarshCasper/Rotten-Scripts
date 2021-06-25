@@ -1,13 +1,21 @@
+# pip install pyttsx3
 import pyttsx3      
+
+# pip install SpeechRecognition
 import speech_recognition as sr                     
+
+# pip install pywikihow
 from pywikihow import search_wikihow                
 
+# creating object
 engine = pyttsx3.init()
 
+# function for speaking up the results through speakers
 def fun_talk(audio):
     engine.say(audio)
     engine.runAndWait()
 
+# function for taking the voice commands and recognizing it
 def get_command():
 
     rec = sr.Recognizer()
@@ -35,8 +43,10 @@ if __name__ == '__main__':
     #while True:
     if 1:
 
+        # taking the voice command  from the user
         query = get_command().lower()
 
+        # checking if it contains the phrase 'how to'
         if 'how to' in query:
             try:
                 max_results = 1
