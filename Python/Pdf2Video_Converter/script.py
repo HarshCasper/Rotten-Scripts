@@ -2,7 +2,6 @@
 from PIL import Image
 import pytesseract
 from mutagen.mp3 import MP3
-import sys
 from moviepy.editor import VideoFileClip
 import moviepy.editor as mpe
 from gtts import gTTS
@@ -12,6 +11,10 @@ import os
 
 def pdf2text(PDF_file):
 
+    """This function help in extracting text from the pdf.
+    Arguments:
+    PDF_file: name of the required pdf file 
+    """ 
     # Getting all pages of Pdf
     pages = convert_from_path(PDF_file, 500)
 
@@ -50,6 +53,13 @@ def pdf2text(PDF_file):
 
 def text2video(mtext, video_file, Pdf_file_name):
 
+    """This function help in coverting text to video.
+    Arguments:
+    mtext: text which will be converted to audio file
+    vide_file: background video for audio
+    Pdf_file_name: name of the pdf file
+    """   
+
     language = 'en'
 
     # Converting text to audio
@@ -59,11 +69,8 @@ def text2video(mtext, video_file, Pdf_file_name):
 
     audio = MP3("output.mp3")
 
-
-
     # duration of audio file in seconds
     audio_length = int(audio.info.length)
-
 
     videoclip = VideoFileClip(video_file)
 
@@ -95,3 +102,4 @@ if __name__ == "__main__":
 
     # Converting text to video
     text2video(text, video_file, PDF_file)
+    
