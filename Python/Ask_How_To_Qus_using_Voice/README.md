@@ -48,3 +48,20 @@ import speech_recognition as sr
 
 from pywikihow import search_wikihow                
 ```
+
+## Screenshots
+
+#### In CLI
+
+<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/Images/howtoqus3.png">
+
+<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/Images/howtoqus4.png">
+
+#### In PyCharm
+
+<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/Images/howtoqus1.png">
+
+<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/Images/howtoqus2.png">
+
+## Contributor
+<a href="https://github.com/Umesh-01">Umesh Singh</a>
