@@ -9,12 +9,15 @@ import os
 video_clip = ''
 audio_clip = ''
 
-video_filepath = input('Enter video path : ')
-video_clip = VideoFileClip(str(video_filepath))
-
-
-#function to convert audio to pdf
 def audio_to_pdf():
+    '''
+    Function to convert audio to pdf:
+    Here, we first extract the audio from the selected video and store it into
+    'my_audio.wav'. Then, using the speech recognition module and Google speech API,
+    we convert this audio to text and write it into a file named 'my_text.txt'.
+    This text file is then passed to text_to_pdf function to convert it into a pdf and at
+    the end the audio and text files are removed using the OS module as we don't need them anymore.
+    '''
     global audio_clip
     try :
         #extract audio
@@ -41,8 +44,15 @@ def audio_to_pdf():
     os.remove("my_audio.wav")
 
 
-#function to convert text to pdf
 def text_to_pdf(file):
+    '''
+    Function to convert text to pdf:
+    In this function, we create a pdf using the FPDF module and add a page to it and set the font.
+    Effective page width is calculated so that
+    Then, we open the text file in read mode and using multi_cell(for wrapping the text into multiple lines),
+    insert the text from the text file into the pdf.
+    At last, we save it as 'my_pdf.pdf'.
+    '''
     pdf = FPDF(format='letter', unit='in')
     pdf.add_page()
     pdf.set_font("Arial", size = 12)
@@ -59,5 +69,10 @@ def text_to_pdf(file):
 
 
 if __name__ == '__main__':
-    print('Starting conversion....')
-    audio_to_pdf()
+    try:
+        video_filepath = input('Enter video path : ')
+        video_clip = VideoFileClip(str(video_filepath))
+        print('Starting conversion....')
+        audio_to_pdf()
+    except:
+        print('No video selected')
