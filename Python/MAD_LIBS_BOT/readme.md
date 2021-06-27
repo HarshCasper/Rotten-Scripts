@@ -35,4 +35,4 @@ $ python3 main.py
 
 # output
 
-<img src="output.png">
+![IMAGE](https://imgur.com/JTI7BSc.png)]
