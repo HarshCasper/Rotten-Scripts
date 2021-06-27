@@ -1,1 +1,4 @@
-
+SpeechRecognition==3.8.1
+pyttsx3==2.90
+PyAudio==0.2.11
+pip==21.1.2
