@@ -24,6 +24,7 @@ git clone clone_path
 # install python3 and python3-pip only if they are not installed
 
 # install the requirements
+$ pip install -r requirements.txt 
 $ pip3 install discord.py
 $ pip3 install flask
 ````
