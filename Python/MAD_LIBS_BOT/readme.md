@@ -22,7 +22,6 @@ git clone clone_path
 
 ````python
 # install python3 and python3-pip only if they are not installed
-# install the requirements
 $ pip freeze > requirements.txt
 $ pip install -r requirements.txt 
 $ pip3 install discord.py
