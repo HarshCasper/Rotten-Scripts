@@ -43,3 +43,12 @@ import speech_recognition as sr
 
 import pyttsx3                                                        
 ```
+
+## Screenshots
+
+<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-3/Python/Speech_Recognizer/Images/speech_recognition4.png">
+
+<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-3/Python/Speech_Recognizer/Images/speech_recognition2.png">
+
+## Contributor
+<a href="https://github.com/Umesh-01">Umesh Singh</a>
