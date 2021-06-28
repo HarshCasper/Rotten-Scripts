@@ -25,15 +25,15 @@ It is a library for performing speech recognition, with support for several engi
 
 ## Install
 
-Install all these libraries with `pip` command in any terminal
+Install all these libraries with `pip` command in any terminal by using the following command
 
 ```python
-pip install SpeechRecognition
-
-pip install pyttsx3
-
-pip install pywikihow
+pip install -r requirements.txt
 ```
+
+OR
+
+Go to the <a href="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/requirements.txt">`requirements.txt`</a> file to manually install the libraries one by one
 
 ## Working
 
@@ -53,15 +53,15 @@ from pywikihow import search_wikihow
 
 #### In CLI
 
-<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/Images/howtoqus3.png">
+<a href="https://imgur.com/8dEKklo">Screenshot 1</a>
 
-<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/Images/howtoqus4.png">
+<a href="https://imgur.com/clqOIaG">Screenshot 2</a>
 
 #### In PyCharm
 
-<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/Images/howtoqus1.png">
+<a href="https://imgur.com/EKBmZUP">Screenshot 1</a>
 
-<img src="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/Images/howtoqus2.png">
+<a href="https://imgur.com/DQVbQpO">Screenshot 2</a>
 
 ## Contributor
 <a href="https://github.com/Umesh-01">Umesh Singh</a>
