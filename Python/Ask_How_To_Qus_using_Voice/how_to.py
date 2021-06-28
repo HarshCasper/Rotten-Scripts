@@ -10,14 +10,16 @@ from pywikihow import search_wikihow
 # creating object
 engine = pyttsx3.init()
 
-# function for speaking up the results through speakers
+
 def fun_talk(audio):
+    """function for speaking up the results through speakers"""
+    
     engine.say(audio)
     engine.runAndWait()
 
-# function for taking the voice commands and recognizing it
 def get_command():
-
+    """function for taking the voice commands and recognizing it"""
+    
     rec = sr.Recognizer()
     with sr.Microphone() as source:
         print("Say something...")
@@ -31,7 +33,7 @@ def get_command():
             print(f"You said: {query}\n")
 
         except Exception as e:
-            # print(e)
+           
             print("Say that again please...")
             return "None"
 
@@ -39,9 +41,6 @@ def get_command():
 
 
 if __name__ == '__main__':
-
-    #while True:
-    if 1:
 
         # taking the voice command  from the user
         query = get_command().lower()
