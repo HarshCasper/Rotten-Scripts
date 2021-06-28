@@ -9,7 +9,7 @@ def main():
     # enter the file path with the pdf name
     path = input("Enter the file path of the pdf along with pdf name: ")
 
-    # opening the document in read mode. You can mention your document name here
+    # opening the document in read mode. You can mention your document name
     book = open(path, 'rb')
 
     # creating an object of PyPDF2 and calling the PdfFileReader method
@@ -51,4 +51,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+    
+    
+    
+    
