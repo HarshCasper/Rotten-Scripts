@@ -1,0 +1,86 @@
+
+body{
+    margin: 0;
+}
+
+.container-fluid{
+    height: 100vh;
+    /* background-color: red; */
+}
+
+/* Controls Section */
+#controls{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: auto;
+    background-color:#a8d0e6;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    
+}
+
+/* Grid Section */
+#grid-container{
+    height: 100vh;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+
+/* Grid */
+#grid{
+    margin: auto 0;
+    height: auto;
+    width: auto;
+    /* background-color: burlywood; */
+}
+.gridRow{
+    display: flex;
+}
+.box{
+    height: 1em;
+    width: 1em;
+    border: 1px solid black;
+    background-color: white;
+    opacity: 0.8;
+}
+
+
+/* SVG Box */
+#svgBox{
+    height: auto;
+    width: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Utilities */
+input,select{
+    border-radius: 2px;
+}
+
+/* Background Color */
+body{
+    background: linear-gradient(#22c1c3,#fdbb2d);
+}
+@media (max-width:770px){
+    body{
+        background: #ade5cb;
+        
+    }
+}
+
+/* Footer */
+footer{
+    margin: 2px auto;
+    padding: 0 4px;
+    background-color: cornsilk;
+    border-radius: 3px;
+    font-size: 80%;
+}
+

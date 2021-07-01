@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shortest Path Finding</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- Controls Section -->
+            <div class="col-md-3 col-12 p-0">
+                <div class="m-1 shadow" id="controls">
+
+                    <!-- Instructions -->
+                    <div style="text-align: center;">
+                        <button type="button" class="btn btn-light btn-sm py-0" id="instructions"
+                            onClick="showInstructions()" style="border: 1px solid black;">Instructions</button>
+                    </div>
+
+
+                    <!-- Change Grid Size -->
+                    <h5 class="ml-1 my-1">Grid Size:</h5>
+                    <div>
+                        <label class="ml-1" for="numberOfRows">Number of Rows:</label>
+                        <input type="number" id="numberOfRows" value="35" min="1" max="35" style="width: 15%;">
+                    </div>
+                    <div>
+                        <label class="ml-1" for="numberOfCols">Number of Columns:</label>
+                        <input type="number" id="numberOfCols" value="35" min="1" max="35" style="width: 15%;">
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="button" class="btn btn-secondary" id="resetGrid" onClick="changeGridSize()"
+                            style="border: 1px solid black;">Reset Grid</button>
+                    </div>
+
+
+                    <!-- Box Click -->
+                    <div class="mt-5">
+                        <label for="mouseTip">
+                            <h5 class="ml-1 mb-0">Box Click:</h5>
+                        </label>
+
+                        <select id="mouseTip" name="mouseTip">
+                            <option value="obstacle">Obstacle</option>
+                            <option value="source">Source</option>
+                            <option value="destination">Destination</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Choose Algorithm -->
+                    <div class="mt-5">
+                        <label for="algo">
+                            <h5 class="ml-1 mb-0">Algorithm:</h5>
+                        </label>
+                        <select name="algorithm" id="algo">
+                            <option value="bfs">Breadth First Search</option>
+                            <option value="dijkstra">Dijkstra</option>
+                            <option value="astar">A*</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Allow Diagonal Move  -->
+                    <div class="mt-2">
+                        <input class="mx-1" type="checkbox" name="diagonal" id="diagonal"><label for="diagonal">Allow Diagonal Moves</label>
+                    </div>
+
+
+                    <!-- Find the shortest path  -->
+                    <div class="mt-5 mb-1" style="text-align: center;">
+                        <button type="button" class="btn btn-secondary" id="solveBtn" onclick="findPath()"
+                            style="border: 1px solid black;">Find Path</button>
+                    </div>
+
+
+                    <!-- Github Code -->
+                    <footer>Check out the <a href="https://github.com/akshit2511/PathFinding" target="_blank">code</a> here.</footer>
+
+                </div>
+
+
+            </div>
+
+            <!-- Grid Section-->
+            <div class="col-md-9 col-12" id="grid-container">
+                <!-- Draw Grid -->
+                <div class="shadow-lg" id="grid">
+
+                </div>
+
+                <!-- Draw Path -->
+                <div id="svgBox">
+
+                    <!-- <svg id="svgPath">
+                            
+                        </svg> -->
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Bootstrap Script Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery Script File -->
+    <script src="jquery-3.6.0.js"></script>
+
+    <!-- Algorithms  -->
+    <script src="algorithms/bfs.js"></script>
+    <script src="algorithms/dijkstra.js"></script>
+    <script src="algorithms/astar.js"></script>
+    <!-- Project Script File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
