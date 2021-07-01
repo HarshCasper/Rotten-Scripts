@@ -31,4 +31,12 @@ for i in range(0, n):
     print("\nDownloading...")
     ys.download()
     print("\nDownload completed!!")
-    print()
+ 
+# Playing video when done if only 1 video.
+if n==1 :
+    os.startfile(yt.title+".mp4")
+
+
+    
+    
+    
