@@ -37,18 +37,37 @@ OR
 Go to the <a href="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/requirements.txt">`requirements.txt`</a> file to manually install the libraries one by one
 
 # Working
+To start using the project, follow the below guidelines: 
 
-Import the `SpeechRecognition` , `pyttsx3` and `pywikihow` libraries in the Python file that you are going to use to get the get the information/ answers for your how to type questions. The `pywikihow` library provide functions to easily get the information from WikiHow website to your console/application.
+**1.**  Fork this project/repository. 🍴
 
-For example-
+**2.**  Clone your forked copy of the project/repository.
 
-```python
-import pyttsx3                                      
-
-import speech_recognition as sr                     
-
-from pywikihow import search_wikihow                
 ```
+git clone https://github.com/<your-github-username>/Rotten-Scripts.git
+```
+
+**3.** Navigate to the project directory :file_folder: 
+
+```
+cd Rotten-Scripts/Python/Ask_How_To_Qus_using_Voice/
+```
+
+**4.** Install the `requirements.txt` using command 🔧
+
+```
+pip install -r requirements.txt
+```
+
+**5.** Run `how_to.py` file 💻
+
+```
+python how_to.py
+```
+
+**6.** Now, ask your **"how to"** type question using voice command 🗣️
+
+**7.** Finally, you will get the answer for your question 🔈  
 
 # Output
 
