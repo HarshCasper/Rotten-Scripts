@@ -24,6 +24,10 @@ Depending upon the python version. Make sure that you are running the command fr
 ## Output
 User is asked for a Pdf file and video(mp4) file and Output Video file is stored in the folder.
 ### Sample Output
-https://www.awesomescreenshot.com/video/4353419?key=08ded87efe81abec7ded5adb1c4b277f
+
+
+https://user-images.githubusercontent.com/55010599/124347215-0c0a1f00-dc01-11eb-9e19-7b36cf78557f.mp4
+
+
 ## Author(s)
 [Sukriti Sood](https://github.com/Sukriti-sood)
