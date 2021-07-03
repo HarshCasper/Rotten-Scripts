@@ -1,22 +1,22 @@
 # All Imports
 from selenium import webdriver
-import datetime
 from bs4 import BeautifulSoup
-import json
+from dotenv import load_dotenv
+from pathlib import Path
+import os
 import time
 
+env_path = Path('.', '.env')
+load_dotenv(dotenv_path=env_path)
 
+def read_creds():
 
-def read_creds(filename):
+    """This function reads the environmental variables."""    
 
-    """This function reads username and password from credentials.json
-    Arguments:
-    filename: name of the file which stores the credentials
-    :return: returns the credentials 
-    """
-    
-    with open(filename) as f:
-        credentials = json.load(f)
+    credentials={
+        'username':os.getenv("username"),
+        'password':os.getenv('password')
+    }
     return credentials
 
 
@@ -28,7 +28,7 @@ def login(browser):
     """     
 
     linkedin_url="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
-    creds=read_creds('credentials.json')
+    creds=read_creds()
     browser.get(linkedin_url)
     elementID=browser.find_element_by_id("username")
     elementID.send_keys(creds['username'])
@@ -69,7 +69,8 @@ def wish(browser):
         element.click();
         time.sleep(5);
         # All notification cards
-        elements=browser.find_elements_by_css_selector(".nt-card")
+        msg_sent=0
+        elements=browser.find_elements_by_css_selector(".nt-segment__occludable-area.ember-view")
         count=0
         for element in elements:
             if count>=notification_count:
@@ -80,28 +81,30 @@ def wish(browser):
             
             # Check for button that directs to message box
             if soup.select_one(".message-anywhere-button.artdeco-button.artdeco-button--secondary.artdeco-button--default")!=None:     
-                wish_btn=element.find_elements_css_selector(".message-anywhere-button.artdeco-button.artdeco-button--secondary.artdeco-button--default")[0]
+                wish_btn=element.find_element_by_css_selector(".message-anywhere-button.artdeco-button.artdeco-button--secondary.artdeco-button--default")
                 
                 # If message is regaring birthday
                 if "happy birthday" in element.text:
-                    wish_text=element.find_elements_by_css_selector(".nt-card__text--3-line span.visually-hidden")[0]
+                    wish_text=element.find_element_by_css_selector(".nt-card__text--3-line span.visually-hidden").text
                     date_txt=wish_text.split("(")[1].split(")")[0];
-                    current_date=datetime.datetime.now().strftime("%b %d").lstrip("0").replace(" 0", " ")
 
                     # If the day of birthday is not same as of reading notfication
-                    if date_txt!=current_date:
+                    if date_txt!="today":
                         # then script will not send message
                         continue
                 wish_btn.click()
                 time.sleep(2)
                 msg_box=browser.find_element_by_css_selector(".msg-overlay-conversation-bubble")
-                send_btn=msg_box.find_elements_by_css_selector(".msg-form__send-button")[0]
+                send_btn=msg_box.find_element_by_css_selector(".msg-form__send-button")
                 send_btn.click()
                 time.sleep(1)
-                clos_btn=msg_box.find_elements_by_css_selector("button[data-control-name='overlay.close_conversation_window']")[0]
+                clos_btn=msg_box.find_element_by_css_selector("button[data-control-name='overlay.close_conversation_window']")
                 clos_btn.click()
+                msg_sent+=1
                 print("Send greetings")
 
+        if msg_sent==0:
+            print("Currently No new Notification for any wish")
             
 
         browser.close()        
@@ -117,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
