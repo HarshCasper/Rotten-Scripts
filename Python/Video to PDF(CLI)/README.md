@@ -2,10 +2,11 @@
 <br/>
 The aim of this script is to convert a given video into a pdf.
 This script:
+
 1. Takes a video as input.
 2. Extracts audio from it.
 3. Converts the audio into text.
-4. Writes this text into a **PDF** and saves it.
+4. Writes this text into a <strong>PDF</strong> and saves it.
 
 ## Setup Instructions
 <br/>
