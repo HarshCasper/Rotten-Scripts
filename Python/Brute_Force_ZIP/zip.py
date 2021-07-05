@@ -1,8 +1,10 @@
 # By CYB3R G0D
-
+#
+#
 # pip3 install tqdm
 from tqdm import tqdm
 import zipfile
+import sys
 
 
 # the wordlist path (in current dir)
@@ -18,8 +20,7 @@ with open(wordlist, 'rb') as wordlist:
         try:
             file.extractall(pwd=word.strip())
         except:
-            continue
+            print('[*] Trying', word.decode().strip())
         else:
             print('[+] Password found:', word.decode().strip())
-            exit(0)
-print('[!] Password not found in', wordlist)
+            sys.exit(1)
