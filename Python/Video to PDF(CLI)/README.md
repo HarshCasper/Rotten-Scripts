@@ -9,6 +9,7 @@ This script:
 
 ## Setup Instructions
 <br/>
+
 You will need the following 3 modules to be installed:
 - Speech recognition
 - MoviePy
@@ -18,6 +19,7 @@ You will need the following 3 modules to be installed:
 
 ## Running the script
 <br/>
+
 1. Run the script using `python video_to_pdf.py`.
 2. Next, enter the file path of the video from your local machine.
 3. The script will convert it into a pdf and save it as `my_pdf.pdf` in the same location where the video was present.
