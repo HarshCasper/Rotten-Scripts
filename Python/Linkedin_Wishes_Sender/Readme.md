@@ -21,6 +21,9 @@ After satisfying all the requirements for the project:-
     ```
 Depending upon the python version. Make sure that you are running the command from the same virtual environment in which the required modules are installed.
 
+# Script in Action
+![Linkedn_Wish_Sender](https://user-images.githubusercontent.com/55010599/124411460-31666c80-dd6a-11eb-9182-106eb0f1e1fd.gif)
+
 ## Author
 
 Sukriti Sood
