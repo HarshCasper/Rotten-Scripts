@@ -42,13 +42,13 @@ def count_notification(browser):
     """
     pagesource = browser.page_source
     soup = BeautifulSoup(pagesource, "html.parser")
-    if soup.select_one("a[data-test-global-nav-link='notifications'] span.notification-badge__count") != None:
+    if soup.select_one("a[data-test-global-nav-link='notifications'] span.notification-badge__count") is not None:
         element = browser.find_element_by_css_selector(
             "a[data-test-global-nav-link='notifications'] span.notification-badge__count"
         )
         return int(element.text)
-    else:
-        return 0
+
+    return 0
 
 
 def wish(browser):
@@ -86,7 +86,7 @@ def wish(browser):
                 soup.select_one(
                     ".message-anywhere-button.artdeco-button.artdeco-button--secondary.artdeco-button--default"
                 )
-                != None
+                is not None
             ):
                 wish_btn = element.find_element_by_css_selector(
                     ".message-anywhere-button.artdeco-button.artdeco-button--secondary.artdeco-button--default"
@@ -121,6 +121,7 @@ def wish(browser):
 
 
 def main():
+    """Main function of execution"""
     browser = webdriver.Chrome()
     browser.maximize_window()
     wish(browser)
