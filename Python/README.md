@@ -194,7 +194,7 @@
 - [Whatsapp_SMS_Bomber](./Whatsapp_SMS_Bomber)
 - [Who's_Online_WhatsApp](./Who's_Online_WhatsApp)
 - [Wifi_Speed_Tester](./Wifi_Speed_Tester)
-- [Wikipedia_Footballer_Scrapper](./Wikipedia_Footballer_Scrapper)
+- [Wikipedia_Footballer_Scrapper](./Wikipedia_Footballer_Scraper)
 - [Word_Meaning](./Word_Meaning)
 - [XML_To_CSV](./XML_To_CSV)
 - [YouTube_Video-Audio_Download](./YouTube_Video-Audio_Download)
