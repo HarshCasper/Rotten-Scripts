@@ -19,7 +19,7 @@ with open(wordlist, 'rb') as wordlist:
     for word in tqdm(wordlist, total=n_words, unit='word'):
         try:
             file.extractall(pwd=word.strip())
-        except:
+        except RuntimeError:
             print('[*] Trying', word.decode().strip())
         else:
             print('[+] Password found:', word.decode().strip())
