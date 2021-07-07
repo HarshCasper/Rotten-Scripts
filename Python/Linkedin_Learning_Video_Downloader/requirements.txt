@@ -1,0 +1,6 @@
+beautifulsoup4==4.9.3
+bs4==0.0.1
+python-dotenv==0.18.0
+requests==2.25.1
+selenium==3.141.0
+tqdm==4.61.1
