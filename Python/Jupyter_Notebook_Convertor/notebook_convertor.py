@@ -1,4 +1,4 @@
-"""This Program helps user to convert jupyter notebook to HTML,MarkDown,PDF,python file"""
+
 
 import shlex
 import subprocess
