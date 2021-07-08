@@ -1,5 +1,6 @@
 # Merging two pdf files
-
+  This script can be used to merge any two pdf files into one using JavaScript. Run merge.js and upload the pdf files which are to be merged and     the ouput will be a single pdf file obtained by merging the uploaded pdfs.
+  
 ## Module Required
 * pdf-lib
 pdf-lib npm is a tool to modify exsisting pdfs using Node.js.
