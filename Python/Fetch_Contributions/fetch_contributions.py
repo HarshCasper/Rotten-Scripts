@@ -25,10 +25,6 @@ class Fetch_PullRequests:
         """
         Function lists the repositories of the organisation.
 
-        Parameters
-        ----------
-        None
-
         Returns
         -------
         list
@@ -46,6 +42,7 @@ class Fetch_PullRequests:
         else:
             for number in range(1, int(number_of_pages[0]) + 1):
                 page_ = requests.get(self.URL + f"?page={number}")
+                tree = html.fromstring(page_.content)
                 Repositories.extend(tree.xpath(
                     '//*[contains(concat( " ", @class, " " ), concat( " ", "wb-break-all", " " ))]//*[contains(concat( " ", @class, " " ), concat( " ", "d-inline-block", " " ))]/text()'))
 
@@ -70,7 +67,7 @@ class Fetch_PullRequests:
         Title = []
         Link = []
         Status = []
-        # pulls?q=+is%3Apr+author%3ASukriti-sood
+        
         URL = self.URL + f"/{repo}/pulls?q=is%3Apr+author%3A{self.username}"
         page = requests.get(URL)
         tree = html.fromstring(page.content)
@@ -129,10 +126,6 @@ class Fetch_PullRequests:
         """
         Function pass the repo parameter to the "_extract_pullrequests" to fetch the pull requests of the particular repo.
 
-        Parameters
-        ----------
-        None
-
         Returns
         -------
         str
@@ -148,7 +141,7 @@ class Fetch_PullRequests:
         if len(markdown) > 0:
             # creating a markdown file
             markdown_file = open(f"{self.filename}.md", "w")
-            n = markdown_file.write(markdown)
+            markdown_file.write(markdown)
             markdown_file.close()
 
             return "Markdown File is successfully stored"
