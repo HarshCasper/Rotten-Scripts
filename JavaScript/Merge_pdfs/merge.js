@@ -2,46 +2,46 @@
 need to be downloaded in json package before implementing the code*/
 
 const {PDFDocument} = require('pdf-lib');
-const file_sys = require('fs');
+const filesys = require('fs');
 
 
 // to catch and log errors
-main_fun().catch(errors => console.log(errors));
+mainfun().catch(errors => console.log(errors));
 
 
 //async main_fun is declared
-async function main_fun(){
+async function mainfun(){
 
     // an empty pdf is created using create() function of file systems
-    const empty_pdf = await PDFDocument.create();
+    const emptypdf = await PDFDocument.create();
 
 
     /*adding first pdf using readFileSync function of file systems
     await is used to make it wait while pdf1 is loading*/
 
-    const pdf1 = await PDFDocument.load(file_sys.readFileSync('./Hello.pdf'));
+    const pdf1 = await PDFDocument.load(filesys.readFileSync('./Hello.pdf'));
 
 
      /*adding second pdf
     await is used to make it wait while pdf2 is loading*/
     
-    const pdf2 = await PDFDocument.load(file_sys.readFileSync('./World.pdf'));
+    const pdf2 = await PDFDocument.load(filesys.readFileSync('./World.pdf'));
     
 
     /* pages of pdf1 are copied to empty pdf 
     
     getPagesIndices() function of file systems is used to get number of pages in pdf1   
     to use it as range in for loop while traversing*/
-    const page_pdf1 = await empty_pdf.copyPages(pdf1, pdf1.getPageIndices());
+    const pagepdf1 = await emptypdf.copyPages(pdf1, pdf1.getPageIndices());
 
 
 
-    //for loop is used to traverse pdf within its index to add pages to empty_pdf
-    for (const page of page_pdf1)
+    //for loop is used to traverse pdf within its index to add pages to emptypdf
+    for (const page of pagepdf1)
     {
 
         //pages added using addPge() fun of file systems
-        empty_pdf.addPage(page);
+        emptypdf.addPage(page);
     }
 
 
@@ -50,23 +50,23 @@ async function main_fun(){
     getPagesIndices() function of file systems is used to get number of pages in pdf2
     to use it as range in for loop while traversing*/
 
-    const page_pdf2 = await empty_pdf.copyPages(pdf2, pdf2.getPageIndices());
+    const pagepdf2 = await emptypdf.copyPages(pdf2, pdf2.getPageIndices());
 
     
-    //for loop is used to traverse pdf within its index to add pages to empty_pdf
-    for(const page of page_pdf2){
+    //for loop is used to traverse pdf within its index to add pages to emptypdf
+    for(const page of pagepdf2){
 
          //pages added using addPge() fun of file systems
-        empty_pdf.addPage(page);
+        emptypdf.addPage(page);
     }
 
     
     /*using writerFileSync(), function of file sys 
-    contents of empty_pdf are wtitten over final_merged_pdf
+    contents of emptypdf are wtitten over finalmergedpdf
 
     save(): to save the pdf, final pdf will appear but won't process otherwise*/
 
-    file_sys.writeFileSync('./final_merged_pdf.pdf', await empty_pdf.save());
+    filesys.writeFileSync('./finalmergedpdf.pdf', await emptypdf.save());
 
 }
 
