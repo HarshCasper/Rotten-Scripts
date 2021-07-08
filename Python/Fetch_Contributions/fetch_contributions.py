@@ -146,8 +146,7 @@ class Fetch_PullRequests:
 
             return "Markdown File is successfully stored"
 
-        else:
-            return "No pull requests found !!"
+        return "No pull requests found !!"
 
 
 if __name__ == "__main__":
