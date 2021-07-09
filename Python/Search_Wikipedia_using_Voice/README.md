@@ -58,6 +58,38 @@ import speech_recognition as sr
 import wikipedia                
 ```
 
+To start using this project, follow the below guidelines: 
+
+**1.**  Fork this project/repository. 🍴
+
+**2.**  Clone your forked copy of the project/repository.
+
+```
+git clone https://github.com/<your-github-username>/Rotten-Scripts.git
+```
+
+**3.** Navigate to the project directory :file_folder: 
+
+```
+cd Rotten-Scripts/Python/Search_Wikipedia_using_Voice/
+```
+
+**4.** Install the `requirements.txt` using command 🔧
+
+```
+pip install -r requirements.txt
+```
+
+**5.** Run `wikipedia.py` file 💻
+
+```
+python wikipedia.py
+```
+
+**6.** Now, ask your query using **"wikipedia"** word in your voice command 🗣️
+
+**7.** Finally, you will get the answer/information for your query 🔈 
+
 ## Output Screenshots
 
 [Image 1](https://i.imgur.com/FMeqUBA.png)
@@ -73,4 +105,5 @@ import wikipedia
 [Image 6](https://i.imgur.com/2w3yK1w.png)
 
 ## Contributor
+
 [Umesh Singh](https://github.com/Umesh-01)
