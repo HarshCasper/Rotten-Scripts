@@ -117,7 +117,8 @@ class Fetch_PullRequests:
         dataframe['Status(Merged/Closed/Open)'] = dataframe['Status(Merged/Closed/Open)'].astype(str).str.replace(
             " pull request",
             "", regex=False)
-        dataframe['Link of PR'] = dataframe['Link of PR'].astype(str)
+        if dataframe['Link of PR'].dtype!='O':
+            dataframe['Link of PR'] = dataframe['Link of PR'].astype(str)
         dataframe['Link of PR'] = 'https://github.com' + dataframe['Link of PR']
 
         return dataframe
@@ -140,9 +141,9 @@ class Fetch_PullRequests:
 
         if len(markdown) > 0:
             # creating a markdown file
-            markdown_file = open(f"{self.filename}.md", "w")
-            markdown_file.write(markdown)
-            markdown_file.close()
+            # markdown_file = open(f"{self.filename}.md", "w")
+            with open(f"{self.filename}.md", "w") as markdown_file:
+                markdown_file.write(markdown)
 
             return "Markdown File is successfully stored"
 
@@ -159,11 +160,11 @@ if __name__ == "__main__":
     parser.add_argument("filename", type=str, nargs="?", help="filename to store the markdown table")
     args = parser.parse_args()
     if args.filename:
-        filename = args.filename
+        file_name = args.filename
     else:
-        filename = "Markdown_file"
+        file_name = "Markdown_file"
     if args.username and args.organization:
-        response = Fetch_PullRequests(args.user, args.organization_name, filename)
+        response = Fetch_PullRequests(args.user, args.organization_name, file_name)
         print(response.get_pullrequests())
     else:
         print("Please pass atleast two arguments: '--username', '--organisation'")
