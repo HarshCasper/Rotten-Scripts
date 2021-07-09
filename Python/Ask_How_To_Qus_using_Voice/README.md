@@ -2,7 +2,7 @@
 
 For asking how to type questions firstly we are using the `SpeechRecognition` library so that our device can recognize our voice command to take input and then `pyttsx3` library for converting text to speech so that the device can speak up the results or output, and last important library is `pywikihow` to fetch the answers for how to type questions. 
 
-# Packages Used
+## Packages Used
 ### SpeechRecognition
 
 It is a library for performing speech recognition, with support for several engines and APIs, online and offline.
@@ -24,7 +24,7 @@ It is a library for performing speech recognition, with support for several engi
 
 `pywikihow` is an unofficial WikiHow python API. It uses BeautifulSoup to scrape WikiHow information and return the data that we want.
 
-# Installation
+## Installation
 
 Install all these libraries with `pip` command in any terminal by using the following command
 
@@ -34,9 +34,9 @@ pip install -r requirements.txt
 
 OR
 
-Go to the <a href="https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/requirements.txt">`requirements.txt`</a> file to manually install the libraries one by one
+Go to the [`requirements.txt`](https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/requirements.txt) file to manually install the libraries one by one
 
-# Working
+## Working
 To start using the project, follow the below guidelines: 
 
 **1.**  Fork this project/repository. 🍴
@@ -69,7 +69,7 @@ python how_to.py
 
 **7.** Finally, you will get the answer for your question 🔈  
 
-# Output
+## Output
 
 #### In CLI
 
@@ -83,5 +83,5 @@ python how_to.py
 
 [Image 2](https://imgur.com/DQVbQpO)
 
-# Contributor
-<a href="https://github.com/Umesh-01">Umesh Singh</a>
+## Contributor
+[Umesh Singh](https://github.com/Umesh-01)
