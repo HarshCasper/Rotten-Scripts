@@ -9,7 +9,7 @@ Install with `pip` command in any terminal
 pip install poetpy
 ```
 
-#### Working
+### Working
 
 Import the `poetpy` library in the Python file that you are going to get the poems and then use the `get_poetry()` function to easily get poems into your console/application.
 
@@ -24,8 +24,14 @@ print(poems)
 
 ```
 
-#### Screenshots
+### Screenshots
+[Image 1](https://imgur.com/xBJiZKK)
 
+[Image 2](https://imgur.com/GQuiYzZ)
+
+[Image 3](https://imgur.com/lntamwU)
+
+[Image 4](https://imgur.com/0zCzNQj)
 
 # Jokes Automation
 In this we are using pyjokes which is a python library used to get jokes for programmers. 
@@ -33,7 +39,7 @@ We can also call it as a fun python library that can be used simply with some li
 
 **Note:** It requires proper Internet connection for its working.
 
-#### Install
+### Installation
 
 Install with `pip` using any terminal
 
@@ -41,7 +47,7 @@ Install with `pip` using any terminal
 pip install pyjokes
 ```
 
-#### Working
+### Working
 
 Import the `pyjokes` module in the Python file that you are going to get the jokes and then use the `get_joke()` function to easily get a random joke into your console/application.
 
@@ -62,7 +68,7 @@ joke = get_joke(language="es",category="neutral")
 print(joke)
 ```
 
-##### Options available for Language
+#### Options available for Language
 
 |Value|Language Name|
 |---|---|
@@ -73,28 +79,35 @@ print(joke)
 |gl|Galician
 |eu|Basque|
     
-##### Options available for Category
+#### Options available for Category
+
 |Value|Category Detail|
 |---|---|
 |neutral|Neutral geeky jokes|
 |twister|Tongue-twister|
 |all|All types of joke|
 
-#### Screenshots
+### Screenshots
+[Image 1](https://imgur.com/X0em4os)
 
+[Image 2](https://imgur.com/EUWEePI)
+
+[Image 3](https://imgur.com/UFvJSf8)
+
+[Image 4](https://imgur.com/u5yRZwj)
 
 # Quotes Automation
 For this we are using `quote` library which is a python wrapper for the Goodreads Quote API. 
 To generate a random quote we will be using the quote function from the quote module.
 
-#### Install 
+### Installation
 
 Install with `pip` command in any terminal
 ```python
 pip install poetpy
 ```
 
-#### Working
+### Working
 
 It is simple to use and `quote` library can also be used from the command line tool.
 
@@ -108,9 +121,15 @@ result = quote(author, limit=2)
 print(result)
 ```
 
-#### Screenshots
+### Screenshots
+[Image 1](https://imgur.com/m1QwZ8X)
 
+[Image 2](https://imgur.com/RYB1YAy)
 
-#### Contributor
+[Image 3](https://imgur.com/zcbuGXv)
+
+[Image 4](https://imgur.com/BFb3z0A)
+
+## Contributor
 
 [Umesh Singh](https://github.com/Umesh-01)
