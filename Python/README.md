@@ -69,6 +69,7 @@
 - [Github_Bomb_Issues](/Python/Github_Bomb_Issues)
 - [Github_Issues_PRs_Scrapper](/Python/Github_Issues_PRs_Scrapper)
 - [Github_Traffic](/Python/Github_Traffic)
+- [Github_Spam_Invalid_PRs_Aggregator](/Python/Git_Repo_Spam_Aggregator)
 - [Gmeet_Bot](/Python/Gmeet_Bot)
 - [Google-News-Scrapper](/Python/Google-News-Scrapper)
 - [Gradient_Mapping](/Python/Gradient_Mapping)
