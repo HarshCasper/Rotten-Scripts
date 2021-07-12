@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 OR
 
-Go to the [`requirements.txt`](https://github.com/Umesh-01/Rotten-Scripts/blob/patch-2/Python/Ask_How_To_Qus_using_Voice/requirements.txt) file to manually install the libraries one by one
+Go to the [`requirements.txt`](../Ask_How_To_Qus_using_Voice/requirements.txt) file to manually install the libraries one by one
 
 ## Working
 To start using the project, follow the below guidelines: 
@@ -73,15 +73,10 @@ python how_to.py
 
 #### In CLI
 
-[Image 1](https://imgur.com/8dEKklo)
+![Image 1](https://i.imgur.com/8dEKklo.png)
 
-[Image 2](https://imgur.com/clqOIaG)
+![Image 2](https://i.imgur.com/clqOIaG.png)
 
-#### In PyCharm
-
-[Image 1](https://imgur.com/EKBmZUP)
-
-[Image 2](https://imgur.com/DQVbQpO)
-
+<br />
 ## Contributor
 [Umesh Singh](https://github.com/Umesh-01)
