@@ -3,26 +3,10 @@
 For asking how to type questions firstly we are using the `SpeechRecognition` library so that our device can recognize our voice command to take input and then `pyttsx3` library for converting text to speech so that the device can speak up the results or output, and last important library is `pywikihow` to fetch the answers for how to type questions. 
 
 ## Packages Used
-### SpeechRecognition
 
-It is a library for performing speech recognition, with support for several engines and APIs, online and offline.
-
-`SpeechRecognition` engine/API support:
-
-- CMU Sphinx (works offline)
-- Google Speech Recognition
-- Google Cloud Speech API
-- Microsoft Bing Voice Recognition
-- Houndify API
-- IBM Speech to Text
-
-### pyttsx3 
-
-`pyttsx3` is a text-to-speech conversion library in Python. Unlike alternative libraries, it works offline, and is compatible with both Python 2 and 3. Works without internet connection or delay. Supports multiple TTS engines, including Sapi5, nsss, and espeak.
-
-### pywikihow
-
-`pywikihow` is an unofficial WikiHow python API. It uses BeautifulSoup to scrape WikiHow information and return the data that we want.
+- SpeechRecognition
+- pyttsx3 
+- pywikihow
 
 ## Installation
 
@@ -35,7 +19,7 @@ pip install -r requirements.txt
 OR
 
 Go to the [`requirements.txt`](../Ask_How_To_Qus_using_Voice/requirements.txt) file to manually install the libraries one by one
-
+<br />
 ## Working
 To start using the project, follow the below guidelines: 
 
