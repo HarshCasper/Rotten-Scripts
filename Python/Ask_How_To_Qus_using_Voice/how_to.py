@@ -1,10 +1,5 @@
-# pip install pyttsx3
 import pyttsx3      
-
-# pip install SpeechRecognition
 import speech_recognition as sr                     
-
-# pip install pywikihow
 from pywikihow import search_wikihow                
 
 # creating object
