@@ -1,6 +1,6 @@
 # Video to PDF
 
-The aim of this script is to convert a given video into a pdf.
+The aim of this script is to convert a given video into a PDF.
 This script:
 
 1. Takes a video as input.
@@ -14,6 +14,8 @@ You will need the following 3 modules to be installed:
 - Speech recognition
 - MoviePy
 - FPDF
+
+To install all the above mentioned packages, use the command: `pip install -r requirements.txt`
 
 ![SS](https://imgur.com/2hkjIky.png)
 
