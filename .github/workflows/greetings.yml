@@ -17,7 +17,7 @@ jobs:
         if: github.event.action =='opened' && (github.event_name == 'pull_request' || github.event_name == 'issues')
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: "@${{ github.actor }} Welcome to Rotten-Scripts🥳 Thanks for opening this Issue 🙌, This Will definitely Improve our Project💖.While we are having a look at this. Feel free to self-assign and start working on it.📄  **Use `/assign` to self-assign this issue**."
+          issue-message: "@${{ github.actor }} Welcome to Rotten-Scripts🥳 Thanks for opening this Issue 🙌, This Will definitely Improve our Project💖.While we are having a look at this. If you want to work on this then,feel free to self-assign and start working on it.📄  **Use `/assign` to self-assign this issue**."
           pr-message: "@${{ github.actor }} Thank you for Opening  pull request🥳. We will get back to you as soon as possible. Your patience is greatly appreciated! Thanks! 🥳.  PS: Please double check that you linked the corresponding issue."
 
       - name: Congratulate on every PR merge
