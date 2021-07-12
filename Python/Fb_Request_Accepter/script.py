@@ -66,7 +66,6 @@ def accept_requests(browser):
         see_more_btn.click()
         time.sleep(12)
         accept_requests(browser)
-    return
 
 
 def main():
