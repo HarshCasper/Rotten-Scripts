@@ -1,6 +1,6 @@
 # Facebook Request Accepter
 
-Script will accepts all the request on Your FAcebook Account
+Script will accepts all the Friend requests on Your Facebook Account
 
 
 ## Setup instructions
