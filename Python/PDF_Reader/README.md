@@ -1,6 +1,6 @@
 # PDF_Reader
 
-At times, we feel like having an assistant which could read our lengthy documents for us and we could keep listening to it. This script is very useful in such cases. Whenever the user specifies the path to the file in their system, and execute this program, the pdf is read aloud.
+This Script allows us to specify the path to a PDF File and when given an input in form of the page number, reads it aloud for the user.
 
 ## Setup instructions and Guidelines
 
