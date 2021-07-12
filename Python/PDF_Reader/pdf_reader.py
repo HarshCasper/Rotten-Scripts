@@ -7,14 +7,14 @@ def main():
     speaker = pyttsx3.init()
 
     # enter the file path with the pdf name
-    path = input("Enter the file path of the pdf along with pdf name: ")
+    path = input("Enter the file path of the PDF along with PDF name: ")
 
     # opening the document in read mode. You can mention your document name
     book = open(path, 'rb')
 
     # creating an object of PyPDF2 and calling the PdfFileReader method
-    pdfReader = PyPDF2.PdfFileReader(book)
-    pages = pdfReader.numPages
+    PDFReader = PyPDF2.PdfFileReader(book)
+    pages = PDFReader.numPages
 
     # telling the number of pages in the document
     print("Number of pages in the document are: "+str(pages))
@@ -39,7 +39,7 @@ def main():
 
     for i in range(start_page_number-1, last_page_number):
         # get page number
-        page = pdfReader.getPage(i)
+        page = PDFReader.getPage(i)
         # extracting text from that page
         text = page.extractText()
         # speaker starts reading the text in pdf
