@@ -26,7 +26,7 @@ Depending upon the python version. Make sure that you are running the command fr
 
 # Sample Output
 
-![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/55010599/125415525-052e076e-e1b3-456d-bd5c-5f4fffbe41f6.gif)
+[![ezgif.com-gif-maker-590e09bbc0ad6ad7e.gif](https://s6.gifyu.com/images/ezgif.com-gif-maker-590e09bbc0ad6ad7e.gif)](https://gifyu.com/image/BgZZ)
 
 
 ## Author
