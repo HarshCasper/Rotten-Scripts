@@ -1,6 +1,5 @@
-![](https://github.com/kadatatlukishore/Rotten-Scripts/blob/fetch-pullrequests/Python/Fetch_Contributions/open-source-software.png)
-
 # Fetch contributions
+
 It's a Python script to fetch the pull requests made by a github user in an Organization. It helps organization members to keep record of a particular 
 github user requests and also helps the github user to record the pull requests made to the organization. 
 
@@ -16,6 +15,7 @@ github user requests and also helps the github user to record the pull requests 
 |  0 | Title of the pull request made by user   | Link to the Pull request                | Status of the pull request                       |
 ***
 ## Setup Instructions:
+
 ```bash
 git clone https://github.com/HarshCasper/Rotten-Scripts.git
 cd Python/Fetch_contributions/
