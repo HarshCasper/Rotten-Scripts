@@ -13,8 +13,16 @@ For the PRs
 ## Setup instructions
 
 - Install the required dependencies using `pip3 install -r requirements.txt`
-- Generate a `githubAPI` token and add the token to the `.env` file . To generate the token check this [tutorial](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
-- Add Owner and RepoName to the repositories.json file .
+- Generate a `githubAPI` token and add the token to the `.env` file. To generate the token check this [tutorial](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+- Add Owner and RepoName to the `repositories.json` file.
+
+```json
+Example-
+    {
+    "owner":"Your-Name",
+    "repoName":"Repo-name"
+    }
+```
 - You are all set and the script is Ready to run.
 - The script takes the username and repo name from the repositories.json files as provided
 - Once you run the script, it may take some time to fetch the required data and prints in command line.

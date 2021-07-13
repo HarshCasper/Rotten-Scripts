@@ -50,14 +50,18 @@ if __name__ == "__main__":
     # Get the owner i.e username and repository name from the repositories.json file
 
     with open("repositories.json") as file:
-        data = json.load(file)
+        try:
+            data = json.load(file)
 
-    # Getting the individual repositories details
+            # Getting the individual repositories details
+            for repo in data:
+                repoName = g.get_repo(repo['owner']+"/"+repo['repoName'])
+                invalidPRdata = GetPullData(PullRequestIDetails, repoName)
 
-    for repo in data:
-        repoName = g.get_repo(repo['owner']+"/"+repo['repoName'])
-        invalidPRdata = GetPullData(PullRequestIDetails, repoName)
+        except:
+            KeyError
+        print("The repositories.json file is empty")
 
-    # Print all the invalid PR data
+    
     print("All the invalid/spam Pr details: ")
     pprint(invalidPRdata)
