@@ -1,6 +1,6 @@
 # Facebook Request Accepter
 
-Script will accepts all the Friend requests on Your Facebook Account
+The Script will accept all your Friend Requests on your Facebook Account.
 
 
 ## Setup instructions
@@ -26,8 +26,9 @@ Depending upon the python version. Make sure that you are running the command fr
 
 # Sample Output
 
-https://imgur.com/a8HMZpq
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/55010599/125415525-052e076e-e1b3-456d-bd5c-5f4fffbe41f6.gif)
+
 
 ## Author
 
-Sukriti Sood
+[Sukriti Sood](https://github.com/Sukriti-sood)
