@@ -7,8 +7,10 @@ The script used to scrap all comments from Hackernews Thread.
 After forking the repository on your local machine, follow these commands on your terminal:
 
 - ```cd Rotten-Scripts/Golang/HackerNews_Comment_Scrapper```
-  
-- ```go build main.go```
+
+- ```go mod init HackerNews_Comment_Scrapper```
+
+- ```go get github.com/gocolly/colly```
   
 - ```go run main.go```
 
