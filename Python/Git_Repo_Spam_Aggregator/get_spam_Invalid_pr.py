@@ -3,10 +3,11 @@ from github import Github
 from pprint import pprint
 import json
 from decouple import config
+from github.GithubException import GithubException
 
 
 def GetPullData(bucket, repoName):
-    """The funtion retrives the Invalid/Spam PR across repositories and returns array"""
+    """The funtion retrives the Invalid/Spam Pull Request across repositories and returns array"""
 
     bucket = []
     pulls = repoName.get_pulls(state='closed')
@@ -20,7 +21,7 @@ def GetPullData(bucket, repoName):
                 pr['Author'] = i.user.login
                 pr['FilesChanged'] = i.changed_files
                 pr['Comments'] = i.comments
-                # review_requests = GetPrReviewers(pr,repo)
+
                 reviewers = []
                 for rvrs in i.get_review_requests():
                     for k in rvrs:
@@ -41,10 +42,13 @@ if __name__ == "__main__":
     token = config("GITHUB_TOKEN")
     g = Github(token)
 
-    # store Invalid PR content
+    # store Pull Request Details content
     PullRequestIDetails = []
 
-    # To store all the content of repositories
+    # store Invalid Pull Request(s) content
+    invalidPRdata = []
+
+    # store all the content of repositories
     data = []
 
     # Get the owner i.e username and repository name from the repositories.json file
@@ -53,15 +57,19 @@ if __name__ == "__main__":
         try:
             data = json.load(file)
 
-            # Getting the individual repositories details
-            for repo in data:
-                repoName = g.get_repo(repo['owner']+"/"+repo['repoName'])
-                invalidPRdata = GetPullData(PullRequestIDetails, repoName)
+            if(len(data)>0):
+                # Getting the individual repositories details
+                for repo in data:
+                    repoName = g.get_repo(repo['owner']+"/"+repo['repoName'])
+                    invalidPRdata = GetPullData(PullRequestIDetails, repoName)
+                    print(repoName)
+            else:
+                print("The repository.json file is Empty")
 
-        except:
-            KeyError
-        print("The repositories.json file is empty")
+        # when repository does not exist
+        except GithubException as e:
+            if (e.data['message']=='Not Found'):
+                print("The provided Repository does not exist") 
 
-    
-    print("All the invalid/spam Pr details: ")
+    print("All the invalid/spam Pull Request(s) details: ")
     pprint(invalidPRdata)
