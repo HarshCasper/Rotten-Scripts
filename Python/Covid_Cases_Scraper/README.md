@@ -47,6 +47,13 @@ print(data)
 
 ## Screenshots
 
+![Image 1](https://i.imgur.com/K0lHLiO.png)
+
+![Image 2](https://i.imgur.com/oXv2kO1.png)
+
+![Image 3](https://i.imgur.com/3g8DVHA.png)
+
+![Image 4](https://i.imgur.com/N88WdQP.png)
 
 ## Contributor
 <a href="https://github.com/Umesh-01">Umesh Singh</a>
