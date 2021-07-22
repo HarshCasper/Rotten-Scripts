@@ -48,7 +48,8 @@ def main():
             tweet_url = 'https://twitter.com/' + \
                 twitterHandle + '/status/' + tweet.id_str
             images = tweet.entities.get("media", [])
-            if len(images):
+            images_len = len(images)
+            if images_len > 0:
                 for image in images:
                     if image["type"] == "photo":
                         csvWriter.writerow(
@@ -68,7 +69,7 @@ def main():
         else:
             print("Error: ", e)
 
-    except Exception as e:
+    except IOError as e:
         print("Error: ", e)
 
     if downloaded == 0:
