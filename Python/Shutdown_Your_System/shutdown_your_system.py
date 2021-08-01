@@ -10,18 +10,18 @@ def main():
     elif x == "3":
         exit()
     else:
-        print("Invalid!")
+        print("Invalid! option")
 
 
 def cancel():
-    comando("shutdown -a")
+    command("shutdown -a")
 
 
 def shutdown():
     t = int(input("how long to shut down the computer:\n"))
     t = str(t * 60)
-    cmd = "shutdown -s -f -t " + (t)
-    comando(cmd)
+    cmd = "shutdown -s -f -t " + t
+    command(cmd)
 
 
 def command(cmd):
