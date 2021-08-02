@@ -2,7 +2,7 @@ name: 🚀  Feature request
 description: Suggest an idea for this project
 title: '[feature request]:'
 labels: '[feature]'
-assignees: 'self assign using `/assign` if you want to work on this issue.
+assignees: 'self assign using `/assign` if you want to work on this issue.'
 body:
   - type: markdown
     attributes:
