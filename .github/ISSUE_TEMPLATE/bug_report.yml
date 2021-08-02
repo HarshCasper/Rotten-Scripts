@@ -1,0 +1,47 @@
+name: 🐞 Bug Report
+description: File a bug report
+title: '[Bug]: '
+labels: '[bug, triage]'
+assignees: 'self assign by using `/assign` if you want to work on this issue else leave blank'
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this bug report!
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+       - label: I have searched the existing issues.
+         required: true
+  - type: textarea
+    attributes:
+      label: Current Behavior
+      description: A concise description of what you are experiencing.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A concise description of the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior, please provide a clear code snippets that always reproduces the issue or a GitHub repository. Screenshots can be provided in the issue body below.
+    validations:
+      required: true    
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: Anything other than the above mentioned to support your bug report.
+        Links? References? Screenshots? Anything that will give us more context about the issue you are encountering!
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
