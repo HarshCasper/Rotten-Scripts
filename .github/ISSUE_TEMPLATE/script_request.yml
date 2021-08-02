@@ -1,9 +1,8 @@
-
-name: Additional Scripts
-description: Suggest an additional script.
+name:  📖 additional script
+description: Suggest an idea additional script
 title: '[script request]:'
 labels: '[feature]'
-assignees: 'self assign using `/assign` if you want to work on this issue 
+assignees: 'self assign using `/assign` if you want to work on this issue.'
 body:
   - type: markdown
     attributes:
@@ -22,7 +21,7 @@ body:
       description: A clear and concise description of the additional script.
     validations:
       required: true
-   - type: dropdown
+  - type: dropdown
     attributes:
       label: Language
       description: Select the Script Language.
