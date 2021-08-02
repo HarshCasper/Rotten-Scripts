@@ -26,10 +26,10 @@ body:
       label: Language
       description: Select the Script Language.
       options:
-        -Go
-        -JavaScipt
-        -Python
-        -Other(Please Specify)
+        -'Go'
+        -'JavaScipt'
+        -'Python'
+        -'Other(Please Specify)'
     validations:
       required: true    
   - type: textarea
