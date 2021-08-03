@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Want to Discuss something?
+    url: https://github.com/HarshCasper/Rotten-Scripts/discussions/
+    about: For any Discussion, Query.
+  - name: Guidelines
+    url: https://github.com/HarshCasper/Rotten-Scripts/blob/master/CONTRIBUTING.md
+    about: Our contribution guidelines (Please go through them).
