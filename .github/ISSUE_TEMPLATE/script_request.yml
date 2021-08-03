@@ -6,11 +6,11 @@ assignees: 'self assign using `/assign` if you want to work on this issue.'
 body:
   - type: markdown
     attributes:
-      value: Thanks for taking the time to fill out this bug report!
+      value: Thanks for taking the time to fill out this script request report!
   - type: checkboxes
     attributes:
       label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      description: Please search to see if an issue already exists for the script you want to add.
       options:
        - label: I have searched the existing issues.
          required: true
