@@ -1,4 +1,4 @@
-# Stying Guidelines
+# Styling Guidelines
 
 These are the sets of rules that **must** be followed before making any contributions in _Rotten-Scripts_.
 
@@ -8,7 +8,7 @@ rules.
 The maintainers are here to help you at any point in time, In case you have doubts, questions, and/or suggestions,
 feel free to start a discussion [here](https://github.com/HarshCasper/Rotten-Scripts/discussions).
 
-Go though our [Code of conduct](CODE_OF_CONDUCT.md).
+Go through our [Code of conduct](CODE_OF_CONDUCT.md).
 
 We have tried our best to keep the guideline beginner-friendly and reasonable, but do note the fact that a minimal
 understanding of styling is a must if you want to contribute to bigger projects and organizations.
@@ -65,7 +65,7 @@ A list of Language-specific README can be found here:
 - Bash (TODO)
 - Powershell (TODO)
 
-Contributors are requested to ensure that they are updating these README files with proper format, to maintain the
+Contributors are requested to ensure that they are updating these README files with the proper format, to maintain the
 aesthetics of the Repository.
 
 #### Actions
@@ -81,9 +81,9 @@ This Repository is driven by multiple styles checking actions. The actions focus
 It is always recommended that you check the output of these Actions, and
 **positively get rid of all the possible errors**.
 
-The reviewer might reject your Pull-Request if you fail to check the output of Actions or the errors reported is not
+The reviewer might reject your Pull-Request if you fail to check the output of Actions or the errors reported are not
 nullified. By following the styling guide, you can reduce the number of errors substantially. A detailed overview of
-workaround over errors that pop-up in GitHub actions can be found [here](./.github/linters/Troubleshoot.md).
+workaround over errors that pop up in GitHub actions can be found [here](./.github/linters/Troubleshoot.md).
 
 ### Python
 
@@ -153,7 +153,7 @@ sum(positive1
 
 - **Naming Conventions** - At _Rotten-Scripts_ we follow this naming convention:
 
-  - _Class names_ :  `CamelCase`, and capitalize acronyms, for e.g. `ClassName` and `IEEEPaper` not ~~`IeeePaper`~~
+  - _Class names_ :  `CamelCase`, and capitalize acronyms, for e.g. `ClassName` and `IEEEPaper`, not ~~`IeeePaper`~~
   - _Variable names_ :  `lower_with_underscores`, for e.g. `postive_num`
   - _Method and function names_ :  `lower_with_underscores`, for e.g. `sum_of_first_five`
   - _Modules_ :  `lower_with_underscores.py`, although it is preferred not to use names that contain underscore in
@@ -173,8 +173,8 @@ sum(positive1
 Overriding these rules is not recommended unless it is done for a reason, in that case, a separate comment
 is a must to explain the name.
 
-- **Comments** - Writing comments should be a common habit for everyone, they are helpful for writer, viewer, reviewer,
-and user. But comments that contradict the code are worse than no comments. For Rotten-Scripts comments are really
+- **Comments** - Writing comments should be a common habit for everyone, they are helpful for writers, viewers, reviewers,
+and users. But comments that contradict the code are worse than no comments. For Rotten-Scripts comments are really
 important as the repository comprises scripts written by different people and used by many others. The styling of
 comments is of utmost importance.
 
@@ -206,7 +206,7 @@ x = x + 1
 ```
 
 - **DocStrings** - Docstrings are an important part of Python clean code. PEP-257 guidelines are followed for
-Docstrings. Although PEP-257 contain a long  list of rules, we generally stress these rules:
+Docstrings. Although PEP-257 contains a long  list of rules, we generally stress these rules:
 
   - Docstring, is a string literal, and it is used in the class, module, function, or method definition. and is
   denoted using a fence of three 'double quotes' like this, `"""docstring """`.
@@ -273,7 +273,7 @@ from my_module.utils.encoding import (
 )
 ```
 
-- **Parsing** - It is highly recommended that programmers should use the python method `input('Input something')` and
+- **Parsing** - It is highly recommended that programmers use the python method `input('Input something')` and
 [Argument Parser](https://docs.python.org/3/howto/argparse.html) module for making the code more interactive and
 flexible.
 - **Paths** - It is advised not to enter local paths at all in your code, this can lead to security vulnerabilities,
@@ -285,7 +285,7 @@ spacing between lines, and other minor formatting rules. Quick Link - [Click her
 
 `README.md` files are an important feature of this repository which makes it different from others. Programmers are
 encouraged to write a good  README file, failing to which the Pull Request will be **rejected**. Here is the
-[Template](TEMPLATE_README.md) which we usually follow for this project, feel free to make any edit,
+[Template](TEMPLATE_README.md) which we usually follow for this project, feel free to make any edits,
 but ensure that the backbone structure remains as it is.
 
 We have 3 GitHub Action which looks after the quality of all the `README` files. A list of possible errors can be
@@ -350,7 +350,7 @@ Some more text
 - There should be only 1 top-level heading and no heading should contain any trailing punctuation marks.
 - **Lists** - The list should have consistent uniform symbols and should be indented with 2 spaces
 (as 4 spaces are used for a code block).
-- List should be enclosed within black lines.
+- List should be enclosed within blank lines.
 
 ```text
 BAD:
