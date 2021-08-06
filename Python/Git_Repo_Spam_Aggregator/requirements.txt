@@ -1,0 +1,3 @@
+PyGithub==1.55
+json==2.0.9
+python-decouple==3.4
