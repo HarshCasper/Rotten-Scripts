@@ -1,0 +1,48 @@
+name: 🚀  Feature request
+description: Suggest an idea for this project
+title: '[feature request]:'
+labels: '[feature]'
+assignees: 'self assign using `/assign` if you want to work on this issue.'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request report!
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the feature you want to propose
+      options:
+       - label: I have searched the existing issues.
+         required: true
+  - type: textarea
+    attributes:
+      label: Describe the feature.
+      description: A clear and concise description of what the feature is.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Problem/Motivation.
+      description: Please provide an outline of the motivation for your suggested feature.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Possible Solution/Pitch.
+      description: Please provide a proposal to support why this feature is important and how is it useful?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: Anything other than the above mentioned to support your feature request report.
+        Links? References? Screenshots? Anything that will give us more context about the feature you want to propose!
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
