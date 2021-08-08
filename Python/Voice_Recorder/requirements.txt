@@ -1,1 +1,3 @@
-
+wavio==0.0.4
+sounddevice==0.4.1
+pip==21.1.2
