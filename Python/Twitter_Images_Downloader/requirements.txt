@@ -1,0 +1,3 @@
+tweepy==3.10.0
+decouple==0.0.7
+requests==2.25.1
