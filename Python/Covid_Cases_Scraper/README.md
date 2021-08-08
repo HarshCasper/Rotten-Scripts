@@ -14,18 +14,44 @@ Requests allows you to send HTTP/1.1 requests extremely easily. There’s no nee
 
 ## Installation
 
-Install with `pip` command in any terminal
+Install the following libraries using `pip` command in any terminal
 
 ```python
 pip install beautifulsoup4
 pip install requests
 ```
 
+OR
+
+Follow the steps given under `Working`
+
+And then import the `beautifulsoup4` and `requests` libraries in the Python file that you are going to use to get the Covid-19 cases information. These libraries provide functions to easily get the information from any web page to your console/application.
+
 ## Working
 
-Import the `beautifulsoup4` and `requests` libraries in the Python file that you are going to use to get the Covid-19 cases information. These libraries provide functions to easily get the information from any web page to your console/application.
+To start using this project, follow the below guidelines: 
 
+**1.**  Fork this project/repository.
 
+**2.**  Clone your forked copy of the project/repository.
+
+```
+git clone https://github.com/<your-github-username>/Rotten-Scripts.git
+```
+
+**3.** Navigate to the project directory.
+
+```
+cd Rotten-Scripts/Python/Covid_Cases_Scraper/
+```
+
+**4.** Install the `requirements.txt` using the given command.
+
+```
+pip install -r requirements.txt
+```
+
+**5.** Run `covid.py` file in PyCharm IDE or Jupyter Notebook or any other platform.
 
 ## Screenshots
 
