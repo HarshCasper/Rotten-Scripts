@@ -655,6 +655,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "YashKandalkar",
+      "name": "yash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35102959?v=4",
+      "profile": "http://yashkandalkar.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

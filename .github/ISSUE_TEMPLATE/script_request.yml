@@ -1,0 +1,54 @@
+name:  📖 additional script
+description: Suggest an additional script
+title: '[script request]:'
+labels: '[feature]'
+assignees: 'self assign using `/assign` if you want to work on this issue.'
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this script request report!
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the script you want to add.
+      options:
+       - label: I have searched the existing issues.
+         required: true
+  - type: textarea
+    attributes:
+      label: Describe the script
+      description: A clear and concise description of the additional script.
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Language
+      description: Select the Script Language.
+      options:
+        - Go
+        - JavaScript
+        - Python
+        - Other(Please Specify)
+    validations:
+      required: true    
+  - type: textarea
+    attributes:
+      label: Is the feature request related to a problem? Please Specify.
+      description: A clear and concise description of what the problem is.
+  - type: textarea
+    attributes:
+      label: Describe the solution you'd like.
+      description: A clear and concise description of the solution you have.
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: Anything other than the above mentioned to support your script request report.
+        Links? References? Screenshots? Anything that will give us more context about the script you want to propose!
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/HarshCasper/Rotten-Scripts/blob/master/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

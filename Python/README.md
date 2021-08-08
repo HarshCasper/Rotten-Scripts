@@ -68,6 +68,7 @@
 - [Git_Repo_Size_Contributors](./Git_Repo_Size_Contributors)
 - [Github_Bomb_Issues](./Github_Bomb_Issues)
 - [Github_Issues_PRs_Scrapper](./Github_Issues_PRs_Scrapper)
+- [Github_Spam_Invalid_PRs_Aggregator](/Python/Git_Repo_Spam_Aggregator)
 - [Github_Traffic](./Github_Traffic)
 - [Gmeet_Bot](./Gmeet_Bot)
 - [Google-News-Scrapper](./Google_News_Scrapper)
@@ -203,3 +204,4 @@
 - [Zipper](./Zipper)
 - [Zoom Automation](./Zipper)
 - [Linkedin Wish Sender](./Linkedin_Wishes_Sender)
+- [Facebook Friend Request Accepter](./Fb_Request_Accepter)
