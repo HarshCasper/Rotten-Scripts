@@ -25,25 +25,7 @@ pip install requests
 
 Import the `beautifulsoup4` and `requests` libraries in the Python file that you are going to use to get the Covid-19 cases information. These libraries provide functions to easily get the information from any web page to your console/application.
 
-For example-
 
-```python
-import bs4
-import requests
-url = "https://something.com/something"
-res = requests.get(url)
-data = bs4.BeautifulSoup(res.text, 'lxml')
-print(data)
-```
-OR
-```python
-from bs4 import BeautifulSoup
-import requests
-url = "https://something.com/something"
-res = requests.get(url)
-data = BeautifulSoup(res.text, 'lxml')
-print(data)
-```
 
 ## Screenshots
 
