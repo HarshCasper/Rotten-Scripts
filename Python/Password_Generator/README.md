@@ -36,7 +36,7 @@ git clone https://github.com/<your-github-username>/Rotten-Scripts.git
 **3.** Navigate to the project directory.
 
 ```
-cd Rotten-Scripts/Password_Generator/
+cd Rotten-Scripts/Python/Password_Generator/
 ```
 
 **4.** Install the `requirements.txt` using the given command.
