@@ -61,6 +61,29 @@ Finally, we have created a project for snapchat filters with the help of this pr
 
 **SCREENSHOTS:**
 
+**1. Sample image of Human**
+<div align="center">
+
+<img width="500" height="550" src="../Snapchat_Filters/Images/chris%20hems%20img.jpg">
+</div>
+
+**2. Sample image of Goggles**
+<div align="center">
+
+<img width="500" height="300" src="../Snapchat_Filters/Images/sunglasses.png">
+</div>
+
+**3. Output**
+<div align="center">
+
+<img width="500" height="550" src="../Snapchat_Filters/Images/ImageWithGoggles.png">
+</div>
+
+**4. Comparison**
+<div align="center">
+
+<img width="700" height="400" src="../Snapchat_Filters/Images/Snapchat_Filtered.png">
+</div>
 
 
 ### Contributor
