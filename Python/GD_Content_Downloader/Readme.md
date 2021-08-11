@@ -4,8 +4,8 @@ The Script download the Folder or file with the link(has view permission) from G
 
 ## Requirement
 
- You need A ```credentials.json``` file with access to the google drive API
- For the samee you can follow the Prerequiste secton of [this guide](https://developers.google.com/drive/api/v3/quickstart/python#prerequisites). 
+ You need a  ```credentials.json``` file with access to the google drive API
+and for the same you can follow the Prerequiste secton of [this guide](https://developers.google.com/drive/api/v3/quickstart/python#prerequisites). 
 
 ## Setup instructions
 
