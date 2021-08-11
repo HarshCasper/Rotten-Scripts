@@ -3,7 +3,8 @@
 The Script download the Folder or file with the link(has view permission) from GoogleDrive
 
 ## Requirement
- You need A credentials.json file with access to the google drive API
+
+ You need A ```credentials.json``` file with access to the google drive API
  For the samee you can follow the Prerequiste secton of [this guide](https://developers.google.com/drive/api/v3/quickstart/python#prerequisites). 
 
 ## Setup instructions
@@ -29,10 +30,7 @@ Depending upon the python version. Make sure that you are running the command fr
 
 # Sample Output
 
-
 ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/55010599/128722934-91bec7f0-e981-49b8-9dab-14c8c8428899.gif)
-
-
 
 ## Author
 
