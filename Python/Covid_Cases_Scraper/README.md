@@ -6,7 +6,7 @@ To do this we need two libraries `beautifulsoup4` and `requests`
 
 ## Installation
 
-Install the following libraries using `pip` command in any terminal
+Install the following libraries using `pip`:
 
 ```python
 pip install beautifulsoup4
@@ -15,45 +15,40 @@ pip install requests
 
 OR
 
-Follow the steps given under `Working`
+Import the `beautifulsoup4` and `requests` libraries in the Python file that you are going to use to get the Covid-19 cases information. These libraries provide functions to easily get the information from any web page to your console/application.
 
-And then import the `beautifulsoup4` and `requests` libraries in the Python file that you are going to use to get the Covid-19 cases information. These libraries provide functions to easily get the information from any web page to your console/application.
-
-## Working
+## Running
 
 To start using this project, follow the below guidelines: 
 
-**1.**  Fork this project/repository.
+1. Fork this project/repository.
 
-**2.**  Clone your forked copy of the project/repository.
+2.  Clone your forked copy of the project/repository.
 
-```
-git clone https://github.com/<your-github-username>/Rotten-Scripts.git
-```
+  ```
+    git clone https://github.com/<your-github-username>/Rotten-Scripts.git
+  ```
 
-**3.** Navigate to the project directory.
+3. Navigate to the project directory.
 
-```
-cd Rotten-Scripts/Python/Covid_Cases_Scraper/
-```
+  ```
+    cd Rotten-Scripts/Python/Covid_Cases_Scraper/
+  ```
 
-**4.** Install the `requirements.txt` using the given command.
+4. Install the `requirements.txt` using the given command.
 
-```
-pip install -r requirements.txt
-```
+  ```
+    pip install -r requirements.txt
+  ```
 
-**5.** Run `covid.py` file in PyCharm IDE or Jupyter Notebook or any other platform.
+5. Run `covid.py` file in PyCharm IDE or Jupyter Notebook or any other platform.
 
-## Screenshots
+## Output
 
 ![Image 1](https://i.imgur.com/K0lHLiO.png)
 
 ![Image 2](https://i.imgur.com/oXv2kO1.png)
 
-![Image 3](https://i.imgur.com/3g8DVHA.png)
+## Author
 
-![Image 4](https://i.imgur.com/N88WdQP.png)
-
-## Contributor
 <a href="https://github.com/Umesh-01">Umesh Singh</a>
