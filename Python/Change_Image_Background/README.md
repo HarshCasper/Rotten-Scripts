@@ -14,13 +14,12 @@ In this project we will be changing the background of image with the help of som
 - **Matplotlib:** 
 
 #### INSTALLATION:
-Install the following libraries using `pip` command in any terminal
+Install the all the required libraries using `pip` command in any terminal
 
 ```python
-pip install numpy
-pip install opencv-python
-pip install matplotlib
+pip install -r requirements.txt
 ```
+
 #### WORKFLOW:
 
 1. We are importing the required libraries 
