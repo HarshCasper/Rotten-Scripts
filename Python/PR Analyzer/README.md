@@ -1,4 +1,7 @@
 # Pull Request Analysis
+### This script involves Web Scraping and Data Visualization of various Pull Requests which have been committed to this repo along with Dataset Generation and Machine Learning to bring out insights from the data.
+
+
 
 ## Check out the code [[here](https://github.com/Aditya-Komaravolu/PR-Analyzer/blob/main/PRScrapper.ipynb)].
 
