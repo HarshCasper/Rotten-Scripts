@@ -63,19 +63,19 @@ We have created a project for changing the background of an image. And we have a
 **1. Sample image for any Object**
 <div align="center">
 
-<img width="700" height="450" src="../Change_Image_Background/Images/Asus%20rog%20logo.jpg">
+![Image 1](https://i.imgur.com/KAWirvN.jpg)
 </div>
 
 **2. Image for Background**
 <div align="center">
 
-<img width="700" height="450" src="../Change_Image_Background/Images/black wood Background.jpg">
+![Image 2](https://i.imgur.com/F57SmWO.jpg)
 </div>
 
 **3. Final Output**
 <div align="center">
 
-<img width="700" height="450" src="../Change_Image_Background/Images/Final_image.png">
+![Image 3](https://i.imgur.com/LQeoR9z.png)
 </div>
 
 
