@@ -74,35 +74,6 @@ The rules of styling and possible errors have been taken from this Repository on
 - **[MD047](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md047)** *single-trailing-newline* - Files should end with a single newline character
 - **[MD048](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md048)** *code-fence-style* - Code fence style
 
-## Check Spellings
-
-This action lists out all the possible spelling mistakes in your `README.md` file.
-It is strongly suggested that you spellcheck all your files before uploading anything to maintain the aesthetics
-of the Repo. If there are spelling mistakes in your file, the action will fail,
-you can check the incorrect spelling as well.
-
-It is strongly advised to correct those spellings or the PR might be outright rejected.
-For more help Read our [STYLING GUIDELINES](../../README.md).
-
-If you believe that some words are wrongly pointed out and/or you want your name to be ignored by the Action.
-
-It is recommended that you add the word to the [wordlist](.wordlist.txt).
-
-Kindly note that any wrong edit can cause breaking changes.
-
-Steps to Consider:
-
-- Use `git checkout` to navigate to the branch in your remote which was used to open the PR.
-- Add the required words in [wordlist](.wordlist.txt) **in your branch**.
-- Remember to add every word in a new line.
-- Run the following command
-
-```bash
-git add .
-git commit -m "Added Words in Wordlist"
-git push -u origin <branch>`
-```
-
 ## Check Markdown links
 
 This action checks for dead links/broken links.
