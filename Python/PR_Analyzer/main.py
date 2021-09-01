@@ -68,7 +68,6 @@ def pr_status(link):
         status (str): Status as a string dtype.
 
     """
-    contributors=[]
     status=[]
     r=requests.get(url=link)
     soup=BeautifulSoup(r.content,'html.parser')
@@ -156,7 +155,7 @@ The output is dumped into a JSON file to the current directory.
 """
 
 #This function gets all the names of the contributors by removing all the duplicate values
-def pr_contributors_list(list):
+def pr_contributors_list(lst):
     """
     Returns unique contributors list.
 
@@ -168,10 +167,9 @@ def pr_contributors_list(list):
 
     """
     pr_contributors_unique=[]
-    for x in list:
+    for x in lst:
         for y in x:
             if y not in pr_contributors_unique:
-                condition = y not in pr_contributors_unique
                 pr_contributors_unique.append(y)
     return pr_contributors_unique
             
@@ -194,11 +192,11 @@ def contributors_to_json(pr_contributors,pr_contributors_unique):
     """
     print("Creating JSON file...")
     pr_contributions={}
-    for j in range(len(pr_contributors_unique)):
-        sum=0
-        for i in range(len(pr_contributors)):
+    for j in enumerate(pr_contributors_unique):
+        SUM=0
+        for i in enumerate(pr_contributors):
             count=pr_contributors[i].count(pr_contributors_unique[j])
-            sum+=count
+            SUM+=count
         #print("{}: {}".format(pr_contributors_unique[j],sum))
         pr_contributions[pr_contributors_unique[j]]=sum
     
@@ -211,7 +209,6 @@ contributors_to_json(pr_contributors,pr_contributors_unique)
 
 #load data from json
 def total_contributions_count():
-    import json
     with open('Contributors data.json') as fp:
         info=json.load(fp)
     return info
@@ -299,7 +296,7 @@ def merged_pr_active_time(datetime_info):
         dates=re.sub("-","/",dates)
         dates=datetime.datetime.strptime(dates,'%Y/%m/%d %H:%M:%S')
         datetime_list.append(dates)
-    maximum=datetime_list[len(datetime_list)-1]
+    maximum=datetime_list[-1]
     minimum=datetime_list[0]
     timediff=maximum-minimum
     return timediff
@@ -352,7 +349,7 @@ model.fit(np.array(merged_df['Active time(in Seconds)']).reshape(-1,1))
 np.random.seed(43)
 
 #to get the centriods of the 3 clusters
-model.cluster_centers_
+print(model.cluster_centers_)
 
 #converting "seconds" to "date hour min sec" format
 result=[]
@@ -371,7 +368,7 @@ for i in model.cluster_centers_:
 #clustered active PR time 
 result.sort()
 result=pd.DataFrame(result,columns=["Average PR time"])
-result
+print(result)
 
 #save the centroids into a csv file
 result.to_csv('average_PR_time(results).csv')
