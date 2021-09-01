@@ -19,7 +19,7 @@
   
 ## Step 3: Creating a Pandas DataFrame 
   * Now that we have `PR Links` and `Status` ready, it is time to combine them and store them together as a DataFrame (in simple terms, a table).
-  ![image](https://user-images.githubusercontent.com/64011471/131401426-ee775ce1-3a4f-4473-b2bb-c0695cf2d318.png)
+   ![image](https://user-images.githubusercontent.com/64011471/131401426-ee775ce1-3a4f-4473-b2bb-c0695cf2d318.png)
   
 ## Step 4: Fetch all the Contributors for each PR
   * We need the names of the contributors to better understand the diversity of the repo.
@@ -27,7 +27,7 @@
   * Use `BeautifulSoup` to get the required tags containing the data of the contributors.
   * Later update the DataFrame by adding a new column to represent the Contributors.
   
-  ![image](https://user-images.githubusercontent.com/64011471/131402166-78c4e372-e4da-40e7-91ba-a8a89107156f.png)
+   ![image](https://user-images.githubusercontent.com/64011471/131402166-78c4e372-e4da-40e7-91ba-a8a89107156f.png)
 
   
  ## Step 5: Distinct Contributors along with Count
@@ -61,13 +61,13 @@
  
  * Once we get the tag associated with the datetime, we can reapeat step 2 to get complete dates along with timestamp from every PR.
  
- ![image](https://user-images.githubusercontent.com/64011471/131406692-f3e690cf-0e3b-4971-9d22-9b1947806081.png)
+   ![image](https://user-images.githubusercontent.com/64011471/131406692-f3e690cf-0e3b-4971-9d22-9b1947806081.png)
 
  * Take minimum and maximum values from all the timestamps from every PR and subtract them to get the time taken to merge a PR.
  * If you want, you can convert it into Days H:M:S format by using the datetime package to convert the string obejct to a datetime object.
  * Datetime objects can be converted into seconds format by using `total_seconds`.
  
- ![image](https://user-images.githubusercontent.com/64011471/131408733-dc0eec0b-6843-41e1-8b79-50a2e42a69c4.png)
+   ![image](https://user-images.githubusercontent.com/64011471/131408733-dc0eec0b-6843-41e1-8b79-50a2e42a69c4.png)
 
  
  ## Categorizing the Active PR time using KMeans Clustering
@@ -76,7 +76,7 @@
  * Pass the single-column 'Active PR Time(in Seconds)' to the model with `n_clusters=3`.
  * Later plot the centriods of those clusters and those values are itself the 'Average PR time' values.
  
- ![image](https://user-images.githubusercontent.com/64011471/131408811-0887cb50-5fcd-4b77-b853-2df2e85e66a0.png)
+   ![image](https://user-images.githubusercontent.com/64011471/131408811-0887cb50-5fcd-4b77-b853-2df2e85e66a0.png)
  
  * These three values describe the whole dataset where the average PR active period is: 
    * Either approx 3 days.
