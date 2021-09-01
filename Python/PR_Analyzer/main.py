@@ -1,10 +1,17 @@
 #Necessary Packages
+import datetime
+import json
+import re
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
-import re
-import matplotlib.pyplot as plt
 from jupyterthemes import jtplot
+from matplotlib import pyplot as plt
+from sklearn.cluster import KMeans
+
 jtplot.style('monokai','notebook',ticks=True)
 
 
@@ -121,7 +128,7 @@ df.to_csv('pr_info.csv')
 """
 Bar Plot to show the status count of all the PR's.
 """
-
+#code block to plot a bar graph
 colors=['green','red','purple']
 plt.figure(figsize=(6,7))
 plt.bar(
@@ -171,9 +178,7 @@ def pr_contributors_list(list):
 pr_contributors_unique=pr_contributors_list(pr_contributors)
 print(pr_contributors_unique)
 
-
-#total number of contributions by each contributor 
-import json
+#function to store contributors data into a json file.
 def contributors_to_json(pr_contributors,pr_contributors_unique):
     """
     Dumps unique contributors and their total number
@@ -276,9 +281,7 @@ def datetime_extractor(url):
                 datetime.append(rt['datetime'])
     return max(datetime),min(datetime)
 
-
 #function to calculate the time difference of starting and ending time of every merged PR
-import datetime
 def merged_pr_active_time(datetime_info):
     """
     Returns the duration of a Pull Request.
@@ -343,13 +346,7 @@ merged_df.to_csv('merged_PR_active_time.csv')
 This Section contains the code for finding out active time of Pull Requests using K-Means Clustering.
 The obtained result is pushed and saved into a csv file.
 """
-#libraries to import KMeans and pyplot
-from sklearn.cluster import KMeans
-from matplotlib import pyplot as plt
 
-
-#training the KMEans model with number of clusters to be formed as 3
-import numpy as np
 model=KMeans(n_clusters=3)
 model.fit(np.array(merged_df['Active time(in Seconds)']).reshape(-1,1))
 np.random.seed(43)
