@@ -66,7 +66,6 @@ data=list(zip(pr_number,pr_title,pr_links))
 df=pd.DataFrame(data,columns=["No","Info","PR Url"])
 for i in range(len(df)):
     df['No'][i]=i
-print(df)
 
 
 #---------------------------------------------------------------------------------------------------------#
@@ -107,7 +106,6 @@ for i in range(len(df)):
     status.append(pr_status(df['PR Url'][i]))
 
 df['PR Status']=status
-print(df)
 
 
 #funtion to fetch the contributors name from each pull request
@@ -137,7 +135,7 @@ for i in range(len(df)):
     pr_contributors.append(pr_names(df['PR Url'][i]))
 
 df['PR Contributors']=pr_contributors
-print(df)
+
 
 #Flushing the Pandas DataFrame to a CSV file.
 df.to_csv('pr_info.csv')
@@ -349,7 +347,6 @@ for i in merged_df['PR No']:
     seconds_list.append(abs(seconds))
 
 merged_df['Active time(in Seconds)']=seconds_list
-print(merged_df)
 
 #save all the merged PR's along with new columns into a csv file format
 merged_df.to_csv('merged_PR_active_time.csv')
