@@ -23,6 +23,18 @@ The result is zipped to a Pandas DataFrame.
 #function to fetch the all Pull Requests along with their links.
 
 def fetch_pr_links(URL):
+    """
+    Returns the number, title and link of every Pull Request.
+
+    Parameters:
+        URL (url) : Url to the Pull Requests page in the repo.
+    
+    Returns:
+        pr_number (list) : All the numbers in a list format.
+        pr_title (list) : All the PR titles in a list format.
+        pr_links (list) : All the PR links in a list format.
+
+    """
     pr_links=[]
     pr_number=[]
     pr_info=[]
@@ -127,7 +139,7 @@ for i in range(len(df)):
 df['PR Contributors']=pr_contributors
 print(df)
 
-# # Flushing the Pandas DataFrame to a CSV file.
+#Flushing the Pandas DataFrame to a CSV file.
 df.to_csv('pr_info.csv')
 
 #---------------------------------------------------------------------------------------------------------#
