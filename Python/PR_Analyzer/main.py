@@ -9,7 +9,6 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from jupyterthemes import jtplot
-from matplotlib import pyplot as plt
 from sklearn.cluster import KMeans
 
 
