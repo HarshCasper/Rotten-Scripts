@@ -8,7 +8,7 @@
 
 ## Explanation
 
-A detailed explnation is given in `EXPLANATION.md` file. [Click here]() to know more about the same.
+A detailed explnation is given in `EXPLANATION.md` file. [Click here](https://github.com/Aditya-Komaravolu/Rotten-Scripts/blob/master/Python/PR_Analyzer/EXPLANATION.md) to know more about the same.
 
 ## Output
 
