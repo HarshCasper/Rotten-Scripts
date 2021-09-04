@@ -12,7 +12,6 @@ from jupyterthemes import jtplot
 from matplotlib import pyplot as plt
 from sklearn.cluster import KMeans
 
-jtplot.style('monokai','notebook',ticks=True)
 
 
 #---------------------------------------------------------------------------------------------------------#
@@ -21,31 +20,40 @@ jtplot.style('monokai','notebook',ticks=True)
 This Section contains code block to fetch all the Pull Requests along with title.
 The result is zipped to a Pandas DataFrame.
 """
-#Code block to fetch the all Pull Requests along with their links.
-prs=[]
-no=[]
-info=[]
-pr_title=[]
-for x in range(1,30):
-    r=requests.get(url="https://github.com/HarshCasper/Rotten-Scripts/pulls?page="+str(x)+"&q=is%3Apr")
-    soup=BeautifulSoup(r.content,'html.parser')
-    div_tags=soup.findAll('div',class_="Box-row Box-row--focus-gray p-0 mt-0 js-navigation-item js-issue-row")
-    base_url="https://github.com/"
-    for _,i in enumerate(div_tags):
-        for a in i.findAll('a'):
-            newUrl=base_url+a["href"]
-        no.append(_)
-        info.append(i.text.strip())
-        prs.append(newUrl)
-for item in info:
-    pr_title.append(re.sub("\n","",item))
+#function to fetch the all Pull Requests along with their links.
+
+def fetch_pr_links(URL):
+    pr_links=[]
+    pr_number=[]
+    pr_info=[]
+    pr_title=[]
+    for x in range(1,30):    # range() --> upper limit value = total number of pages in PR (open + closed) 
+        r=requests.get(url=URL)
+        soup=BeautifulSoup(r.content,'html.parser')
+        div_tags=soup.findAll('div',class_="Box-row Box-row--focus-gray p-0 mt-0 js-navigation-item js-issue-row")
+        base_url="https://github.com/"
+        for _,i in enumerate(div_tags):
+            for a in i.findAll('a'):
+                newUrl=base_url+a["href"]
+            pr_number.append(_)
+            pr_info.append(i.text.strip())
+            pr_links.append(newUrl)
+    for item in info:
+        pr_title.append(re.sub("\n","",item))
+    
+    return pr_number,pr_title,pr_links
+
+
+base_url='https://github.com/HarshCasper/Rotten-Scripts/pulls?page=1&q=is%3Apr'
+pr_number, pr_title, pr_links = fetch_pr_links(base_url)
+    
+    
 
 #Converting the fetched information into a Python DataFrame
-data=list(zip(no,pr_title,prs))
+data=list(zip(pr_number,pr_title,pr_links))
 df=pd.DataFrame(data,columns=["No","Info","PR Url"])
 for i in range(len(df)):
     df['No'][i]=i
-
 print(df)
 
 
