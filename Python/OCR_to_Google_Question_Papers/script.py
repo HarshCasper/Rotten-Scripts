@@ -33,7 +33,7 @@ text = pytesseract.image_to_string(img, lang="eng")  # image converted to string
 tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
 
 # print('\n-----\n'.join(tokenizer.tokenize(text)))
-# text seperated into sentences.
+# text separated into sentences.
 tokenized_text = "\n \n".join(tokenizer.tokenize(text))
 print(tokenized_text)
 
@@ -44,7 +44,7 @@ print("\nDo you want to proceed with this text?(y\\n) \n")
 if input() == "y" or "Y":
     sentences = tokenized_text.split("\n \n")
     questions = []
-    # for loop to seperate questions
+    # for loop to separate questions
     for i in range(len(sentences)):
         if (
             sentences[i].endswith("?")
