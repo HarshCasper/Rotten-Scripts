@@ -1,6 +1,6 @@
 # Blur Faces
 
-This is a python script that searches for a given tweet in all the accounts the user follows.
+This is a python script that searches for a human faces in the photo and blur that.
 
 ### Requirements:
 
