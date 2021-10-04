@@ -1,6 +1,5 @@
 ## How to run:
-Just open the ```index.html``` file in the browser and start detecting your the keys you have pressed:)
-
+Just open the ```index.html``` file in the browser and start detecting the keys you have pressed:)
 ## Screenshot
 
 <img src="./images/capture.png" alt="Screenshot"/> 

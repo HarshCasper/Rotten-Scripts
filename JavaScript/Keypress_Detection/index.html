@@ -10,8 +10,8 @@
 <body>
     <p id="text">Click in here and press a key.</p>
     <script>
-        document.addEventListener("keydown", function (event) {
-        document.getElementById("text").innerHTML = `<b>Key Pressed:</b> ${event.key}`;
+        document.addEventListener("keydown", function (event) { // Keydowm event-listener
+        document.getElementById("text").innerHTML = `<b>Key Pressed:</b> ${event.key}`; // Update the text showing the current key press
         });
     </script>
 </body>
