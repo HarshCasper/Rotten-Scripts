@@ -1,0 +1,17 @@
+html {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    height: 100%;
+    background: rgba(25,225,135,0.45);
+    text-align: center;
+    font-family: monospace;
+    line-height: 1.4;
+    font-size: 25px;
+  }
+  
+  
+  
