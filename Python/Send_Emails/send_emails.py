@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import smtplib
+import getpass
 
 # The smtp module (Simple Mail Transfer Protocol) enables sending emails in python
 # The sender's email must be configured to less secure apps.
@@ -14,8 +15,8 @@ sender_email = input("Enter the sender's Email-ID : ")
 receiver = input("Enter the receiver's Email-ID : ")
 
 # "Sender's password"
-password = input("Enter the sender's password : ")
-
+password = getpass.getpass(prompt='Enter the sender's password : ')
+                           
 # "Subject of the Email"
 subject = input("Enter the subject of the email : ")
 
