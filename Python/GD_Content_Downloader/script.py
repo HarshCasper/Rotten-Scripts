@@ -77,7 +77,7 @@ def download_folder(service, folder_id, location, folder_name):
         filename = item["name"]
         mime_type = item["mimeType"]
         shortcut_details = item.get("shortcutDetails", None)
-        if shortcut_details != None:
+        if shortcut_details is not None:
             file_id = shortcut_details["targetId"]
             mime_type = shortcut_details["targetMimeType"]
         print(filename, mime_type, "({}/{})".format(current, total))

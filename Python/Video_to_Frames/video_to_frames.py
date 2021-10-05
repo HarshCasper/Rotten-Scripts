@@ -7,7 +7,7 @@ def capture(path):
     count = 0
     while video.isOpened():
         sucess, frame = video.read()
-        if sucess == False:
+        if sucess is False:
             break
         # This part of function actually saves the images.
         cv2.imwrite("frame" + str(count) + ".jpg", frame)

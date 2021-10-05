@@ -12,7 +12,7 @@ args = vars(parser.parse_args())
 json_file = args["jsonfile"]
 
 # End the program if the file extension is incorrect
-if json_file.endswith("json") == False:
+if json_file.endswith("json") is False:
     sys.exit("Please enter a json file only")
 
 # Reading the json file and ensuring the formatting

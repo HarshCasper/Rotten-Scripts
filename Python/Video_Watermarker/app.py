@@ -13,7 +13,7 @@ def capture(path, choice, margin, text):
     progress_bar = tqdm(unit=" Frames Processed", unit_scale=True)
     while video.isOpened():
         sucess, frame = video.read()
-        if sucess == False:
+        if sucess is False:
             break
         cv2.imwrite("frame" + str(countFrame) + ".jpg", frame)
         image = Image.open("frame" + str(countFrame) + ".jpg")
