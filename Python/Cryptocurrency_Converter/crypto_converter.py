@@ -88,7 +88,7 @@ def main():
                 choice = input()
                 if choice == "y":
                     continue
-                elif choice == "n":
+                if choice == "n":
                     return
                 else:
                     print("Bad Input Again!")
@@ -116,7 +116,7 @@ def main():
                 choice = input()
                 if choice == "y":
                     continue
-                elif choice == "n":
+                if choice == "n":
                     return
                 else:
                     print("Bad Input Again!")

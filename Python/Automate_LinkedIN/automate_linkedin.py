@@ -100,8 +100,7 @@ def automate_linkedin():
         send_request = input(input("Enter 1 to continue, 0 to stop "))
         if send_request == 1:
             continue
-        else:
-            return "Sent all requests"
+        return "Sent all requests"
 
 
 if __name__ == "__main__":
