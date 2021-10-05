@@ -61,7 +61,7 @@ if "ALL" in contact_name:
         time.sleep(1)
 
         # Checking whether the contact exist or not
-        if checkuser("//span[@title='{}']".format(contact)) == False:
+        if checkuser("//span[@title='{}']".format(contact)) is False:
             continue
 
         # Searching the contact and clicking on it
@@ -90,7 +90,7 @@ else:
         search.send_keys(contact)
         time.sleep(1)
 
-        if checkuser("//span[@title='{}']".format(contact)) == False:
+        if checkuser("//span[@title='{}']".format(contact)) is False:
             continue
 
         find_user = driver.find_element_by_xpath("//span[@title='{}']".format(contact))

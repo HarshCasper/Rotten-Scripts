@@ -115,14 +115,14 @@ class FetchTags:
 
         if len(h2_list) != 0:
             for line in h2_list:
-                if line != None:
+                if line is not None:
                     for word in line.split():
                         if word not in special_characteres:
                             self.h2_dict[word] = self.h2_dict.get(word, 0) + 1
 
         if len(h3_list) != 0:
             for line in h3_list:
-                if line != None:
+                if line is not None:
                     for word in line.split():
                         if word not in special_characteres:
                             self.h3_dict[word] = self.h3_dict.get(word, 0) + 1

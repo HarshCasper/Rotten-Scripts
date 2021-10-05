@@ -178,7 +178,7 @@ def finalconnectiondata(connectiondata):
             "a", {"data-control-name": "background_details_company"}
         )
 
-        if experiencecontainer == None:
+        if experiencecontainer is None:
             l_jobtitile = "Don't Have any Job Experience"
         else:
             l_jobtitile = experiencecontainer.find("h3").text.strip()

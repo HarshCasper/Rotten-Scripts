@@ -69,7 +69,7 @@ if __name__ == "__main__":
                     try_again()
                 else:
                     key = int(input("Please enter the key"))
-                    if isinstance(key, int) == False:
+                    if isinstance(key, int) is False:
                         print("Only integers are allowed for key")
                         try_again()
                     else:
@@ -83,7 +83,7 @@ if __name__ == "__main__":
                     try_again()
                 else:
                     key = int(input("Please enter the key"))
-                    if isinstance(key, int) == False:
+                    if isinstance(key, int) is False:
                         print("Only integers are allowed for key")
                         try_again()
                     else:
