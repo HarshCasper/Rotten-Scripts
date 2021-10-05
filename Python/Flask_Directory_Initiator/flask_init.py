@@ -7,7 +7,7 @@ name = input()
 print("Directory(Valid) to store the project:")
 loc = input()
 # if invalid directory, stops the program
-if os.path.isdir(loc) != True:
+if os.path.isdir(loc) is not True:
     print("Invalid Directory")
     sys.exit()
 

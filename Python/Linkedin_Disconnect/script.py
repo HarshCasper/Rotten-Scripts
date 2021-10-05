@@ -53,14 +53,14 @@ def username_disconnected(browser):
             'span[aria-label="More actions"]'
         )
         element.click()
-        if soup.find("div", {"data-control-name": "disconnect"}) != None:
+        if soup.find("div", {"data-control-name": "disconnect"}) is not None:
             element = browser.find_element_by_css_selector(
                 'div[data-control-name="disconnect"]'
             )
             element.click()
             print(f"Disconnected User {user}")
 
-        if soup.find("div", {"data-control-name": "unfollow"}) != None:
+        if soup.find("div", {"data-control-name": "unfollow"}) is not None:
             element = browser.find_element_by_css_selector(
                 'div[data-control-name="unfollow"]'
             )

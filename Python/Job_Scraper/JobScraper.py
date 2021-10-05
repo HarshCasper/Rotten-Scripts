@@ -54,7 +54,7 @@ def job_scraper():
 
                 # Getting the company location
                 company_loc = company_details.find("span", class_="location")
-                if company_loc != None:
+                if company_loc is not None:
                     company_loc = company_loc.text.strip()
                 else:
                     company_loc = loc
