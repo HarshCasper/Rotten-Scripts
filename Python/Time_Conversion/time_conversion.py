@@ -1,3 +1,5 @@
+import sys
+
 from pytz import timezone, country_timezones
 from datetime import datetime, timedelta
 import argparse
@@ -17,7 +19,7 @@ country = args.country
 
 if not location and (not country):
     print("Please enter either location or the country code")
-    exit()
+    sys.exit()
 
 if country:
     code = country_timezones(country)

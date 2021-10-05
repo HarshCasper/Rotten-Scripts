@@ -1,3 +1,4 @@
+import sys
 from smtplib import SMTP
 from email.mime.multipart import MIMEMultipart
 import mimetypes
@@ -63,7 +64,7 @@ class MailEngine:
             print(
                 "-----+------+------+------+------+------+------+------+------+------+------\n"
             )
-            exit()
+            sys.exit()
 
     def attachFile(self):
         """Attach file:

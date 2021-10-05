@@ -15,7 +15,7 @@ api_key = "c4129d312f42336xxxxxe5b8c65e3647"
 argumentList = sys.argv
 if len(argumentList) < 3:
     print("Please enter the city name and units format")
-    exit()
+    sys.exit()
 
 # base_url variable to store url
 base_url = "http://api.openweathermap.org/data/2.5/weather?"

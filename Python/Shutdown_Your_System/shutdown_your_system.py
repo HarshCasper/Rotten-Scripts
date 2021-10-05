@@ -1,4 +1,5 @@
 import os
+import sys
 
 
 def main():
@@ -8,7 +9,7 @@ def main():
     elif x == "2":
         cancel()
     elif x == "3":
-        exit()
+        sys.exit()
     else:
         print("Invalid! option")
 

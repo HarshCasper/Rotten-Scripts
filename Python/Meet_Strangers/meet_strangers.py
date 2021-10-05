@@ -1,5 +1,5 @@
 # Python Script to spot strangers on a Public WiFi Network by scrapping their MAC Addresses and storing them in a Text File
-
+import sys
 from os import path
 from re import compile, findall
 from subprocess import Popen, PIPE
@@ -36,7 +36,7 @@ def main():
             continue
 
         if user_input in "eE":
-            exit()
+            sys.exit()
         if user_input in "clipboard":
             clipboard()
 
@@ -69,4 +69,4 @@ try:
 except KeyboardInterrupt:
 
     print()
-    exit()
+    sys.exit()
