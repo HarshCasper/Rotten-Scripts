@@ -10,9 +10,8 @@ def run_query(query, token):
     )
     if res.status_code == 200:
         return res.json()
-    else:
-        raise Exception(
-            "Query failed to run by returning code of {}. {}".format(
-                res.status_code, query
-            )
+    raise Exception(
+        "Query failed to run by returning code of {}. {}".format(
+            res.status_code, query
         )
+    )

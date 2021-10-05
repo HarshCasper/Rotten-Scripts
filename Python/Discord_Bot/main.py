@@ -262,11 +262,11 @@ async def userinfo(ctx, member: discord.Member = None):
 async def on_command_error(ctx, error):
     if isinstance(error, commands.NoPrivateMessage):
         return await ctx.send("This command dont work in dms channel")
-    elif isinstance(error, commands.MissingPermissions):
+    if isinstance(error, commands.MissingPermissions):
         return await ctx.send(
             f"It looks like you are missing some permissions\n `{', '.join(error.missing_perms)}`"
         )
-    elif isinstance(error, commands.BotMissingPermissions):
+    if isinstance(error, commands.BotMissingPermissions):
         string = error.missing_perms
         return await ctx.send(f"Bot Missing Permissions\n`{','.join(string)}`")
 

@@ -136,9 +136,8 @@ def scraper():
         ans = input("Press (y) to continue or any other key to exit: ").lower()
         if ans == "y":
             continue
-        else:
-            print("Exiting..")
-            break
+        print("Exiting..")
+        break
 
 
 if __name__ == "__main__":

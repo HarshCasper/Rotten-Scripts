@@ -38,8 +38,7 @@ def generate_text(corpus, use_model=True, size=10):
 
     if use_model:
         return generate_words_markov(corpus, size=size)
-    else:
-        return select_sentence(corpus)
+    return select_sentence(corpus)
 
 
 # Word Gram Models

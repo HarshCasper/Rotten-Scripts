@@ -16,10 +16,9 @@ def run_query(token, repo):
     )
     if res.status_code == 200:
         return res.json()
-    else:
-        raise Exception(
-            "Query failed to run by returning code of {}".format(res.status_code)
-        )
+    raise Exception(
+        "Query failed to run by returning code of {}".format(res.status_code)
+    )
 
 
 def query_string(name, owner):

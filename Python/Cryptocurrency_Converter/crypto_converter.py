@@ -67,10 +67,9 @@ def validity_of_currencytype(ctype, ftype):
     available_cryptocurrencies = ["BTC", "ETH", "ETC", "BCH", "LTC", "ZEC", "ZRX"]
     if ctype not in available_cryptocurrencies:
         return 1, f"\n{ctype} is not a Cryptocurrency. Try Again!\n"
-    elif ftype in available_cryptocurrencies:
+    if ftype in available_cryptocurrencies:
         return 1, f"\n{ftype} is not a Fiat Money. Try Again!\n"
-    else:
-        return 0, "\nAll Good!"
+    return 0, "\nAll Good!"
 
 
 def main():
@@ -88,17 +87,16 @@ def main():
                 choice = input()
                 if choice == "y":
                     continue
-                elif choice == "n":
+                if choice == "n":
                     return
-                else:
-                    print("Bad Input Again!")
-                    return
+                print("Bad Input Again!")
+                return
             result = convert_crypto_to_fiat(
                 crypto_value, crypto_type.upper(), fiat_type.upper()
             )
             if result is None:
                 return
-            elif result == 1:
+            if result == 1:
                 continue
             print(
                 f"{crypto_value} {crypto_type.upper()} in {fiat_type.upper()} is  -->  {result}"
@@ -116,17 +114,16 @@ def main():
                 choice = input()
                 if choice == "y":
                     continue
-                elif choice == "n":
+                if choice == "n":
                     return
-                else:
-                    print("Bad Input Again!")
-                    return
+                print("Bad Input Again!")
+                return
             result = convert_fiat_to_crypto(
                 fiat_value, fiat_type.upper(), crypto_type.upper()
             )
             if result is None:
                 return
-            elif result == 1:
+            if result == 1:
                 continue
             print(
                 f"{fiat_value} {fiat_type.upper()} in {crypto_type.upper()} is  -->  {result}"
