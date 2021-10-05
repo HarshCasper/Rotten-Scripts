@@ -68,10 +68,10 @@ def get_scan_args():
     if len(sys.argv) == 2:
         print("\nStarting Port: {}       Ending Port: {}".format(0, 1024))
         return (sys.argv[1], 0, 1024)
-    elif len(sys.argv) == 3:
+    if len(sys.argv) == 3:
         print("\nStarting Port: {}       Ending Port: {}".format(1, sys.argv[2]))
         return (sys.argv[1], 0, int(sys.argv[2]))
-    elif len(sys.argv) == 4:
+    if len(sys.argv) == 4:
         print(
             "\nStarting Port: {}       Ending Port: {}".format(sys.argv[2], sys.argv[3])
         )

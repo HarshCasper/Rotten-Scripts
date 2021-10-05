@@ -24,9 +24,8 @@ class Stopwatch:
         if not self.state == "Stopped":
             print("Stopwatch is already running.")
             return
-        else:
-            self.__startTime__ = time.time()
-            self.state = "Started"
+        self.__startTime__ = time.time()
+        self.state = "Started"
         return
 
     def lap(self):

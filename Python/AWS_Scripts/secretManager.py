@@ -30,5 +30,4 @@ class secretManagerClass:
         else:
             if "SecretString" in getSecretValueResponse:
                 return json.loads(getSecretValueResponse["SecretString"])
-            else:
-                raise ValueError("SecretString not found in reponse")
+            raise ValueError("SecretString not found in reponse")
