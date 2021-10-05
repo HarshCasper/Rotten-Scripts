@@ -310,3 +310,7 @@ test.log
 
 # Rust Youtube Downloader
 *.mp[34]
+
+#GD_Content_Downloader
+credentials.json
+token.json

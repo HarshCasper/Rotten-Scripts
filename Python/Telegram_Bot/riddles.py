@@ -19,7 +19,7 @@ def get_riddles():
         .find("div", attrs={"class": "entry-content"})
         .find_all("p")
     ):
-        if i != None:
+        if i is not None:
             riddles.append(
                 str(i.text)
                 .replace("A", "\b")

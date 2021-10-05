@@ -70,7 +70,7 @@ def decode_string(video):
         f_name = "{}{}.png".format(root, i)
         # Revealing the message inside each string
         secret_dec = lsb.reveal(f_name)
-        if secret_dec == None:
+        if secret_dec is None:
             break
         secret.append(secret_dec)
     print("".join([i for i in secret]))
