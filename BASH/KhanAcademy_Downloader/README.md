@@ -47,7 +47,15 @@ The user can select an entry from that menu to download the corresponding video 
 
 ## Output
 
-![sample-output](https://imgur.com/zV7HCU8.png)
+Course selection from the list:
+
+![selection](./course-selection.png)
+
+Selecting a video from a given chapter and download:
+
+![download](./course-download.png)
+
+Lessons are available in the folder from which the script has been run.
 
 ## Author(s)
 
