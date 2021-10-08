@@ -14,6 +14,7 @@
 - [Automate_Image_Caption](./Automate_Image_Caption)
 - [Automate_LinkedIN](./Automate_LinkedIN)
 - [Automate_Telegram](./Automate_Telegram)
+- [Automated-PixelSorting](./Automated-PixelSorting)
 - [Automatic_Spelling_Checker_Corrector](./Automatic_Spelling_Checker_Corrector)
 - [Aws_EC2](./Aws_EC2)
 - [Background_Subtractor](./Background_Subtractor)
