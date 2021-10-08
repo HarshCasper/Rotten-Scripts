@@ -5,41 +5,7 @@ import random as r
 from PIL import Image
 from pixelsort import pixelsort
 
-# --- DEFINE ARGS AND SET DEFAULTS ---
-count = 0
-in_path = 'images/'
-out_path = 'generated/'
-argumentList = sys.argv[1:]
-options = 'hi:n:'
-
-# --- DEFINE TERMINAL ARG OPERATIONS ---
-try:
-    args, values = getopt.getopt(argumentList, options)
-    for currentArgument, currentValue in args:
-        if currentArgument in ('-h'):
-            print('-'*30)
-            print('-h : args description')
-            print('-i : pass location of input img-file')
-            print('-n : number of outputs required')
-            print('-'*30)
-        if currentArgument in ('-i'):
-            print('-'*30)
-            in_path += currentValue
-            print(f'[+] Input-file: {in_path}')
-        if currentArgument in ('-n'):
-            count = int(currentValue)
-            print(f'[+] Output-Count: {currentValue}')
-            print('-'*30)
-
-except getopt.error as e:
-    print(str(e))
-
-# --- DELETE PREVIOUS RESULTS ---
-for f in os.listdir(out_path):
-    os.remove(os.path.join(out_path, f)) 
-
-for index in range(count):
-
+def randomize_params():
     angle = r.randint(90, 359)
 
     # --- DEFINE ALL PARAMETERS ---
@@ -73,30 +39,23 @@ for index in range(count):
         if param == 'interval_function':
             interval_fns = ['random', 'threshold', 'waves']
             args['interval_function'] = r.choice(interval_fns)
-        if param == 'randomness':
+        elif param == 'randomness':
             args['randomness'] = r.uniform(0.5, 1)
-        if param == 'sorting_function':
+        elif param == 'sorting_function':
             sorting_fns = ['lightness', 'hue', 'saturation', 'intensity', 'minimum']
             args['sorting_function'] = r.choice(sorting_fns)
-        if param == 'lower_threshold':
+        elif param == 'lower_threshold':
             args['lower_threshold'] = r.uniform(0.5, 1)
-        if param == 'upper_threshold':
+        elif param == 'upper_threshold':
             up_thresh = r.uniform(0.6, 1)
             if up_thresh <= args['lower_threshold']:
                 up_thresh += r.uniform(0.1, 1 - args['lower_threshold'])
             args['upper_threshold'] = up_thresh
-        if args['upper_threshold'] - args['lower_threshold'] < 0.25:
+        elif args['upper_threshold'] - args['lower_threshold'] < 0.25:
             args['lower_threshold'] -= 0.25
+    return args
 
-    # --- PRINT THE RANDOMIZED CHOICES ---
-    for arg in args:
-        print(arg, ':', args[arg])
-
-    # --- DEFINE LOCATIONS FOR LOAD AND SAVE ---
-    in_file = in_path
-    out_file = out_path + f'result-0{index + 1}.png'
-    img = Image.open(in_file)
-
+def perform_sorting(args, img):
     # --- PERFORM PIXELSORT WITH RANDOMIZED PARAMS ---
     new_img = pixelsort(
         image = img,
@@ -107,7 +66,63 @@ for index in range(count):
         randomness = args['randomness'],
         sorting_function = args['sorting_function']
     )
+    return new_img
 
-    # --- SAVE NEW FILE ---
-    new_img.save(out_file)
-    print('-'*30)
+def Main():
+    # --- DEFINE ARGS AND SET DEFAULTS ---
+    count = 0
+    in_path = 'images/'
+    out_path = 'generated/'
+    argument_list = sys.argv[1:]
+    options = 'hi:n:'
+
+    # --- DEFINE TERMINAL ARG OPERATIONS ---
+    try:
+        args, _ = getopt.getopt(argument_list, options)
+        for current_argument, current_value in args:
+            if current_argument in ('-h'):
+                print('-'*30)
+                print('-h : args description')
+                print('-i : pass location of input img-file')
+                print('-n : number of outputs required')
+                print('-'*30)
+            if current_argument in ('-i'):
+                print('-'*30)
+                in_path += current_value
+                print(f'[+] Input-file: {in_path}')
+            if current_argument in ('-n'):
+                count = int(current_value)
+                print(f'[+] Output-Count: {current_value}')
+                print('-'*30)
+
+    except getopt.error as error:
+        print(str(error))
+
+    # --- DELETE PREVIOUS RESULTS ---
+    for file in os.listdir(out_path):
+        os.remove(os.path.join(out_path, file))
+
+    # --- GENERATE 'N=COUNT' INSTANCES ---
+    for index in range(count):
+
+        # --- CALL PARAMETER FUNCTION ---
+        args = randomize_params()
+
+        # --- PRINT RANDOMIZED CHOICES ---
+        for arg in args.items():
+            print(arg[0], ':', arg[1])
+
+        # --- DEFINE LOCATIONS FOR LOAD AND SAVE ---
+        in_file = in_path
+        out_file = out_path + f'result-0{index + 1}.png'
+        img = Image.open(in_file)
+
+        # --- CALL SORT FUNCTION ---
+        new_img = perform_sorting(args, img)
+        
+        # --- SAVE NEW FILE ---
+        new_img.save(out_file)
+        print('-'*30)
+
+if __name__ == "__main__":
+    Main()
