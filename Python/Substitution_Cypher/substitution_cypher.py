@@ -43,7 +43,6 @@ def hasNumbers(inputString):
 
 
 def try_again():
-    import sys
 
     retry = input("Do you want to try again. Enter 1 for yes and anything for no")
     if retry != "1":
