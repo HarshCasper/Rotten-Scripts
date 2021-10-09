@@ -1,0 +1,126 @@
+
+#include <unistd.h>
+
+int main(int argc, char *argv[]) {
+    char buff[100];
+    /*if no argument…*/
+    if(argc <2) {
+        printf("Syntax: %s <input string>\n", argv[0]);
+        exit(0);
+    }
+    strcpy(buff, argv[1]);
+    return 0;
+}
+
+#include<stdio.h>
+
+int main()
+{
+    printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+    int choice, num, i;
+    unsigned long int fact;
+
+    while(1)
+    {
+        printf("1. Factorial \n");
+        printf("2. Prime\n");
+        printf("3. Odd\\Even\n");
+        printf("4. Exit\n\n\n");
+        printf("Enter your choice :  ");
+        scanf("%d",&choice);
+
+        switch(choice)
+        {
+            case 1:
+                printf("Enter number:\n");
+                scanf("%d", &num);
+                fact = 1;
+                for(i = 1; i <= num; i++)
+                {
+                    fact = fact*i;
+                }
+                printf("\n\nFactorial value of %d is = %lu\n\n\n",num,fact);
+                break;
+
+            case 2:
+                printf("Enter number:\n");
+                scanf("%d", &num);
+                if(num == 1)
+                printf("\n1 is neither prime nor composite\n\n");
+                for(i = 2; i < num; i++)
+                {
+                    if(num%i == 0)
+                    {
+                        printf("\n%d is not a prime number\n\n", num);
+                        break;
+                    }
+
+                }
+                /*
+                    Not divisible by any number other
+                    than 1 and itself
+                */
+                if(i == num)
+                {
+                    printf("\n\n%d is a Prime number\n\n", num);
+                    break;
+                }
+
+            case 3:
+                printf("Enter number:\n");
+                scanf("%d", &num);
+
+                if(num%2 == 0) // 0 is considered to be an even number
+                    printf("\n\n%d is an Even number\n\n",num);
+                else
+                    printf("\n\n%d is an Odd number\n\n",num);
+                break;
+
+            case 4:
+                printf("\n\n\t\t\tCoding is Fun !\n\n\n");
+                exit(0);    // terminates the complete program execution
+        }
+    }
+    printf("\n\n\t\t\tCoding is Fun !\n\n\n");
+    return 0;
+}
+
+#include<stdio.h>
+#include<math.h>
+
+// Function prototype declaration
+int binary_decimal(int n);
+
+int main()
+{
+    printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+    int n;
+    char c;
+    printf("Enter the binary number: ");
+    scanf("%d", &n);
+    printf("\n\n\nThe decimal equivalent of %d is  %d\n\n", n, binary_decimal(n)); // function calling
+    printf("\n\n\t\t\tCoding is Fun !\n\n\n");
+    return 0;
+}
+
+// Definition of the function to convert binary to decimal.
+int binary_decimal(int n)
+{
+    int decimal = 0, i = 0, rem;
+    while(n != 0)
+    {
+        rem = n%10;   // gives the digit at the units place
+        n = n/10; // gives the number excluding its units digit
+        /*
+            pow is a system defined function that takes
+            two integers as input parameters
+        */
+        decimal += rem*pow(2, i++);
+    }
+    /*
+        return the decimal equivalent of the input
+        binary number to the function call
+    */
+    return decimal;
+}
+
