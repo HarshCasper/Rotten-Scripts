@@ -65,7 +65,7 @@ for anchor in soup.find_all("a"):
         link = path + link
 
     # add the new url to the queue if it was not in unprocessed list nor in processed list yet
-    if not link in unprocessed_urls and not link in processed_urls:
+    if link not in unprocessed_urls and link not in processed_urls:
         unprocessed_urls.append(link)
 
 # End of the script.
