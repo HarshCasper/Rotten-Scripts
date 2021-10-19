@@ -8,11 +8,11 @@
 - Adding all the directory name to README.md and linking to its location.
 
 ### Generated README file:
-- raw file
+##### raw file
 ![Image](./demo/raw.png)
 
-- preview image
-![Image](./demo/preview.png)
+##### preview image
+![Image](./demo/Preview.png)
 
 
 ###  Run the scripts using 
