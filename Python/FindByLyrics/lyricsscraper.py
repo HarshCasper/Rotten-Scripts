@@ -65,7 +65,7 @@ div:nth-child(4) > p:nth-child(3) > button:nth-child(1)"
             {} for i in range(noofparams)
         ]  # List of parameter dictionaries for multiple searches
         for i in kwargs:
-            if len(kwargs[i]):
+            if len(kwargs[i]) > 0:
                 if isinstance(kwargs[i], (tuple, list)):
                     each = int(noofparams / len(kwargs[i]))
                     k = 0
@@ -112,16 +112,15 @@ div:nth-child(4) > p:nth-child(3) > button:nth-child(1)"
         req = requests.get(full_lyric_url)
         content = req.text
         lyric = LyricsDotComScraper.extract_lyrics_remove_tags(content)
-        if download:
-            if filename == "[[auto_generate]]":
-                filename = (
-                    title.replace(" ", "_")
-                    + "-"
-                    + str(random.randrange(10000000, 99999999))
-                    + "-lyrics.txt"
-                )
-                with open(filename, "w") as f:
-                    f.write(lyric)
+        if download and filename == "[[auto_generate]]":
+            filename = (
+                title.replace(" ", "_")
+                + "-"
+                + str(random.randrange(10000000, 99999999))
+                + "-lyrics.txt"
+            )
+            with open(filename, "w") as f:
+                f.write(lyric)
 
         lyric = LyricsDotComScraper.extract_lyrics_remove_tags(content)
         return [lyric, filename] if download == "download" else lyric
@@ -136,7 +135,7 @@ div:nth-child(4) > p:nth-child(3) > button:nth-child(1)"
             lyricsbody = lyricsobj.select("#lyric-body-text")[0].text
             with open("gg.html", "w") as f:
                 f.write(lyricsbody)
-        except:
+        except Exception:
             return ""
         for opening, text, closing in remove_tags_regex.findall(lyricsbody):
             # Planning on doing something with the definitions?
