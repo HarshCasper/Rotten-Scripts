@@ -1,5 +1,3 @@
-""" g """
-
 import re
 import time
 import random
