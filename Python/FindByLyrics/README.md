@@ -2,7 +2,7 @@
 Python script to get song lyrics or find a song from
 a snippet of it's lyrics, and more.
 
-<img src="https://ik.imagekit.io/matthewwisdom/findbylyrics_k-IHrKJzK-.jpg?updatedAt=1634993639426" alt="findbylyrics">
+<img style="max-width: 480px" src="https://ik.imagekit.io/matthewwisdom/findbylyrics_k-IHrKJzK-.jpg?updatedAt=1634993639426" alt="findbylyrics">
 
 **Usage**
 <pre>usage: main.py [-h] [-e | -t] [-n GENDER] [-a] [-m] [-l] [-g GENRE]
