@@ -90,7 +90,7 @@ div:nth-child(4) > p:nth-child(3) > button:nth-child(1)"
                 message = f"Search Results: {lyrics.text} lyrics, \
                     {artists.text} artists, {albums.text} albums for search term {search_term.text}"
                 print(message)
-            except:
+            except IndexError:
                 print(f"There are no search results for request {req.url}")
 
             self.params_bs4objs.append([i, req_obj])
@@ -133,10 +133,11 @@ div:nth-child(4) > p:nth-child(3) > button:nth-child(1)"
             lyricsbody = lyricsobj.select("#lyric-body-text")[0].text
             with open("gg.html", "w") as f:
                 f.write(lyricsbody)
-        except Exception:
+        except IndexError:
             return ""
         for opening, text, closing in remove_tags_regex.findall(lyricsbody):
             # Planning on doing something with the definitions?
+            text = ""
             lyricsbody.replace(opening, "")
             lyricsbody.replace(closing, "")
         return lyricsbody
