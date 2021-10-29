@@ -73,7 +73,7 @@ const init = async () => {
     dbData = (dbData === "" || dbData.length == 0) ? "{}" : dbData;
     dbData = JSON.parse(dbData);
 
-    if (dbData.hasOwnProperty(user.name)) {
+    if (Object.prototype.hasOwnProperty.call(dbData, "user.name")) {
         // display basic info
         displayUser(user);
 
