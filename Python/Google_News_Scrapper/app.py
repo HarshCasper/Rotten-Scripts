@@ -10,8 +10,8 @@ def get_google_news_result(term, count):
     )
     items = obj.getElementsByTagName("item")
     # Storing the Titles and Links
-    titles = list()
-    links = list()
+    titles = []
+    links = []
     for item in items[:count]:
         title, link = "", ""
         for node in item.childNodes:
