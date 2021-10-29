@@ -73,7 +73,7 @@ def load_descriptions(doc):
     :param doc: Caption text files
     :return: Captions mapped to images
     """
-    mapping = dict()
+    mapping = {}
     # process lines
     for line in doc.split("\n"):
 
@@ -93,7 +93,7 @@ def load_descriptions(doc):
 
         # create the list if needed
         if image_id not in mapping:
-            mapping[image_id] = list()
+            mapping[image_id] = []
 
         # store description
         mapping[image_id].append(image_desc)
@@ -164,7 +164,7 @@ def save_descriptions(descriptions, filename):
     :param descriptions: Clean descriptions
     :param filename: Path of File
     """
-    lines = list()
+    lines = []
     for key, desc_list in descriptions.items():
         for desc in desc_list:
             lines.append(key + " " + desc)
@@ -182,7 +182,7 @@ def load_set(filename):
     :param filename: path to file to be loaded
     """
     doc = load_doc(filename)
-    dataset = list()
+    dataset = []
     # process line by line
     for line in doc.split("\n"):
         # skip empty lines
@@ -242,7 +242,7 @@ def load_clean_descriptions(filename, dataset):
     """
     # load document
     doc = load_doc(filename)
-    descriptions = dict()
+    descriptions = {}
     for line in doc.split("\n"):
         # split line by white space
         tokens = line.split()
@@ -252,7 +252,7 @@ def load_clean_descriptions(filename, dataset):
         if image_id in dataset:
             # create list
             if image_id not in descriptions:
-                descriptions[image_id] = list()
+                descriptions[image_id] = []
             # wrap description in tokens
             desc = "startseq " + " ".join(image_desc) + " endseq"
             # store
@@ -388,7 +388,7 @@ def to_lines(descriptions):
     :param descriptions: Clean Description
     :return: List of all descriptions
     """
-    all_desc = list()
+    all_desc = []
     for key, value in descriptions.keys():
         [all_desc.append(d) for d in descriptions[key]]
     return all_desc
@@ -419,7 +419,7 @@ def data_generator(descriptions, photos, wordtoix, max_length, num_photos_per_ba
     :param num_photos_per_batch: Batch Size oof images
     :return:
     """
-    X1, X2, y = list(), list(), list()
+    X1, X2, y = [], [], []
     n = 0
     # loop for ever over images
     while 1:
@@ -448,7 +448,7 @@ def data_generator(descriptions, photos, wordtoix, max_length, num_photos_per_ba
             # yield the batch data
             if n == num_photos_per_batch:
                 yield [array(X1), array(X2)], array(y)
-                X1, X2, y = list(), list(), list()
+                X1, X2, y = [], [], []
                 n = 0
 
 
