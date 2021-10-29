@@ -8,10 +8,10 @@ def get_pid():
     port = int(sys.argv[1])
     # Using psutil functionality
     for con in connections:
-        if con.raddr != tuple():
+        if con.raddr != ():
             if con.raddr.port == port:
                 return con.pid, con.status
-        if con.laddr != tuple():
+        if con.laddr != ():
             if con.laddr.port == port:
                 return con.pid, con.status
     return -1
