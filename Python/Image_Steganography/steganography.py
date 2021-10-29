@@ -30,7 +30,7 @@ def encode(img):
     len_secret_text_binary = len(secret_text_binary)
 
     imdata = iter(img.getdata())
-    changed_pixels = list()
+    changed_pixels = []
 
     for i in range(len_secret_text_binary):
         pixels = [
