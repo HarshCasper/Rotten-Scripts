@@ -45,7 +45,7 @@ class FetchTags:
         """get_html method returns the html of the url passed"""
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         try:
-            response = requests.get(url, headers=self.usr_agent, verify=False)
+            response = requests.get(url, headers=self.usr_agent, verify=True)
             response.raise_for_status()
             return response.text
         except:
