@@ -1,0 +1,15 @@
+{
+  "name": "githubuser",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node getDetials.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  },
+  "type": "module"
+}
