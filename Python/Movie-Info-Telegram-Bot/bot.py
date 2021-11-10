@@ -23,7 +23,7 @@ TOKEN = decouple.config("API_KEY")
 # context. Error handlers also receive the raised TelegramError object in error.
 
 
-def start(update, context):
+def start(update):
     """Send a message when the command /start is issued."""
     update.message.reply_text(
         "What can this bot do?\n\nThis bot gives brief information about any movie from IMDb website"
@@ -32,12 +32,12 @@ def start(update, context):
     )
 
 
-def help(update, context):
+def help(update):
     """Send a message when the command /help is issued."""
     update.message.reply_text("Help!")
 
 
-def genre(update, context):
+def genre(update):
     """Send a list of movies when the command /genre is issued."""
     url = "https://www.imdb.com/search/title/"
     genre = str(update.message.text)[7:]
@@ -65,7 +65,7 @@ def genre(update, context):
         update.message.reply_text(stri)
 
 
-def name(update, context):
+def name(update):
     """Send the first 3 search results of the movie name in IMDb site when the command /name is issued."""
     movie = str(update.message.text)[6:]
     print(movie)
