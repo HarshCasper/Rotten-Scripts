@@ -235,7 +235,6 @@ with tf.device("/gpu:0"):
     # this will provide a vectorised text corpus
     # each integer will represent token in dictionary
 
-    from keras.preprocessing.text import Tokenizer
 
     def create_tokenizer(descriptions):
         """

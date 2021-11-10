@@ -14,7 +14,6 @@ from .utils import list_corpus, list_images, get_font
 from PIL import Image, ImageDraw, ImageFont
 
 import math
-import random
 import os
 import sys
 
