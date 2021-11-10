@@ -28,7 +28,7 @@ def videos_downloader_main(browser, course_url):
     """
     login(browser, "https://www.linkedin.com/learning/")
     time.sleep(1)
-    video_urls = list()
+    video_urls = []
     browser.get(course_url)
     time.sleep(2)
 
@@ -39,7 +39,7 @@ def videos_downloader_main(browser, course_url):
         video_urls.append(video_url)
 
     # Dictionary will store name of courses and their source url
-    video_srcs_wth_name = dict()
+    video_srcs_wth_name = {}
 
     # loop through the video urls to find the source of videos
     for video_url in video_urls:

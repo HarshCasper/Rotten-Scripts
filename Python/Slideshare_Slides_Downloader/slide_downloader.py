@@ -13,7 +13,7 @@ def get_image_urls_list(url):
         r"chromedriver_win32\chromedriver.exe"
     )  # Web driver loaded
     driver.get(url)
-    url_list = list()
+    url_list = []
     for image in driver.find_elements_by_class_name("slide_image"):
         try:
             # 'data-full' contains the url of the image
@@ -31,7 +31,7 @@ def download_individual_image(url_list):
     print("Downloading individual images...")
     os.mkdir("new_folder")
     os.chdir(os.path.join(os.getcwd() + "/new_folder"))
-    image_paths = list()
+    image_paths = []
     for i, url in enumerate(url_list):
         filename = str(i) + ".jpg"
         # downloads image from url with filename to current directory
