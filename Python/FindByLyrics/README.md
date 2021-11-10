@@ -1,10 +1,11 @@
 # FindByLyrics
-Python script to get song lyrics or find a song from
-a snippet of it's lyrics, and more.
+
+Python script to get song lyrics or find a song from a snippet of it's lyrics, and more.
 
 <img style="width: 480px" src="https://ik.imagekit.io/matthewwisdom/findbylyrics_k-IHrKJzK-.jpg?updatedAt=1634993639426" alt="findbylyrics">
 
-**Usage**
+## Usage
+
 <pre>usage: main.py [-h] [-e | -t] [-n GENDER] [-a] [-m] [-l] [-g GENRE]
                [-o OUTPUT] [-d DECADE] [-c COUNT] [-y YEAR] [-s STYLE] [-b]
                [--listener] [--full-lyrics] [-p PAGE]
