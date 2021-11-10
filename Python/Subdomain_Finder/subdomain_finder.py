@@ -14,10 +14,8 @@ def readTextFile(textFilename):
     inputFile = open(os.path.join(sys.path[0], textFilename), "r")
     available_subdomains = inputFile.read().splitlines()
 
-    inputFile.close()
-    return
-
-
+    inputFile.close()\
+    
 def findSubdomains(userDomain, available_subdomains, size):
     """This function is used to find possible subdomains"""
     subdomains = []
