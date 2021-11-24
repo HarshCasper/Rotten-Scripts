@@ -2,10 +2,11 @@
 Frustrated of failing Google Drive Downloads?
 Have to restart downloading that darn file again and again?
 Well, you are in luck!!
-This script gives you peace of mind while downloading files from Google Drive. Downloads can be resumed later if your internet connection is lost!! No progress lost!!
+This script gives you peace of mind while downloading files from Google Drive. 
+Downloads can be resumed later if your internet connection is lost without loosing any progress!!
 
 ## Note: 
-The script is tested only on sharable google drive links of the following format:
+The script is tested only on google drive links of the following format:
 
 ```
 https://drive.google.com/file/d/<fileID>/view?usp=sharing
@@ -28,7 +29,7 @@ Get the file's link by right clicking on it and selecting the `Get link` option.
     </tr>
 </table>
 
-Download the file by passing the **fileID** present in the file's link (as shown above) and a **fileName** of your choice as command line arguments to the script. The **fileName** is important for resuming downloads in case they fail in the middle.
+Download the file by passing the `fileID` present in the file's link (as shown above) and a `fileName` of your choice as command line arguments to the script. `fileName` is important for resuming downloads in case they fail in the middle.
 
 ```bash
 $ chmod +x ./driveDownload.sh
