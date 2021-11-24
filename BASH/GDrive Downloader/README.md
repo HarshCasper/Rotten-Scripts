@@ -1,26 +1,28 @@
 # Google Drive Downloader
+
 Frustrated of failing Google Drive Downloads?
 Have to restart downloading that darn file again and again?
 Well, you are in luck!!
 This script gives you peace of mind while downloading files from Google Drive. Downloads can be resumed later if your internet connection is lost!! No progress lost!!
 
 ## Note: 
-The script is tested only on sharable google drive links of the following format:
+The script works only on google drive links that allow anyone on the internet to view the file and have the following format:
 
 ```
 https://drive.google.com/file/d/<fileID>/view?usp=sharing
 ```
 
-## Dependencies
+## Setup instructions
+### Dependencies
 - [cURL](https://curl.se/)
 
-## Usage
+### Usage
 Install the dependencies:
 ```bash
 $ sudo apt install curl
 ```
 
-Get the file's link by right clicking on it and selecting the `Get link` option. Copy the `fileID` portion of this link (again, this link should be of the format shown above).
+Get the file's link by right clicking on it and selecting the `Get link` option. Change the permissions as shown in the image below and copy the `fileID` portion of this link.
 <table>
     <tr>
         <td valign="top"><img src="./Images/1.png"></td>
@@ -37,4 +39,12 @@ $ ./driveDownload.sh <fileID> <fileName>
 
 In case a download fails, just rerun the above command with the same arguments and the download will resume from where it had stopped! No progress lost!!
 
-### Author: [Dhruval PB](https://github.com/Dhruval360)
+## Output
+### Without any failures:
+<img src="./Images/3.png">
+
+### Manually stopping and resuming the download:
+<img src="./Images/4.png">
+
+## Author
+[Dhruval PB](https://github.com/Dhruval360)
