@@ -7,7 +7,7 @@ This script gives you peace of mind while downloading files from Google Drive.
 Downloads can be resumed later if your internet connection is lost without loosing any progress!!
 
 ## Note: 
-The script works only on google drive links that allow anyone on the internet to view the file and have the following format:
+The script only works on google drive links that allow anyone on the internet with it to view the file and have the following format:
 
 ```
 https://drive.google.com/file/d/<fileID>/view?usp=sharing
