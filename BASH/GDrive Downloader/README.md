@@ -1,12 +1,10 @@
 # Google Drive Downloader
 
-Frustrated of failing Google Drive Downloads?
-Have to restart downloading that darn file again and again?
-Well, you are in luck!!
-This script gives you peace of mind while downloading files from Google Drive. 
-Downloads can be resumed later if your internet connection is lost without loosing any progress!!
+* A simple BASH script to download files from Google Drive that allows resuming the downloads in case of failures.
+* Uses cURL to achieve the same.
 
 ## Note: 
+
 The script only works on google drive links that allow anyone on the internet with it to view the file and have the following format:
 
 ```
@@ -14,10 +12,13 @@ https://drive.google.com/file/d/<fileID>/view?usp=sharing
 ```
 
 ## Setup instructions
+
 ### Dependencies
+
 - [cURL](https://curl.se/)
 
 ### Usage
+
 Install the dependencies:
 ```bash
 $ sudo apt install curl
@@ -26,8 +27,8 @@ $ sudo apt install curl
 Get the file's link by right clicking on it and selecting the `Get link` option. Change the permissions as shown in the image below and copy the `fileID` portion of this link.
 <table>
     <tr>
-        <td valign="top"><img src="./Images/1.png"></td>
-        <td valign="top"><img src="./Images/2.png"></td>
+        <td valign="top"><img src="https://imgur.com/uiVIR45.jpg"></td>
+        <td valign="top"><img src="https://imgur.com/wpyKx8d.jpg"></td>
     </tr>
 </table>
 
@@ -38,14 +39,19 @@ $ chmod +x ./driveDownload.sh
 $ ./driveDownload.sh <fileID> <fileName> 
 ```
 
-In case a download fails, just rerun the above command with the same arguments and the download will resume from where it had stopped! No progress lost!!
+In case a download fails, just rerun the above command with the same arguments and the download will resume from where it had stopped! 
+No progress lost!!
 
 ## Output
+
 ### Without any failures:
-<img src="./Images/3.png">
+
+<img src="https://imgur.com/NLIFvll.jpg">
 
 ### Manually stopping and resuming the download:
-<img src="./Images/4.png">
+
+<img src="https://imgur.com/BMu0nKu.jpg">
 
 ## Author
+
 [Dhruval PB](https://github.com/Dhruval360)
