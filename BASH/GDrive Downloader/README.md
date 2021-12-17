@@ -46,11 +46,11 @@ No progress lost!!
 
 ### Without any failures:
 
-<img src="https://imgur.com/NLIFvll.jpg">
+![No failures](https://imgur.com/NLIFvll.jpg)
 
 ### Manually stopping and resuming the download:
 
-<img src="https://imgur.com/BMu0nKu.jpg">
+![Resuming Failed Download](https://imgur.com/BMu0nKu.jpg)
 
 ## Author
 
