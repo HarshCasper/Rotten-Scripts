@@ -2,7 +2,7 @@
 
 a = document.getElementsByTagName("*");
 
-/* With each variable, add the HTML aiitribute that contenteditable is true */
+/* With each variable, add the HTML attribute that contenteditable is true */
 
 for (i = 0; i < a.length; i++){
     a[i].setAttribute("contenteditable", "true");
