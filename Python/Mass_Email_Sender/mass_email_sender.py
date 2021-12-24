@@ -1,4 +1,5 @@
 import argparse
+import sys
 import time
 from MassEmailSender.utils import register, sendMail
 
@@ -82,7 +83,7 @@ def main():
                 print(
                     "------+------+-------+-------+------+------+------+------+------+------"
                 )
-                exit()
+                sys.exit()
         else:
             print(
                 "------+------+-------+-------+------+------+------+------+------+------"
@@ -96,7 +97,7 @@ def main():
             print(
                 "------+------+-------+-------+------+------+------+------+------+------"
             )
-            exit()
+            sys.exit()
 
     except Exception as e:
         print("------+------+-------+-------+------+------+------+------+------+------")
@@ -104,7 +105,7 @@ def main():
         print("------+------+-------+-------+------+------+------+------+------+------")
         print("Command not found. Check the input commands again.\n")
         print("------+------+-------+-------+------+------+------+------+------+------")
-        exit()
+        sys.exit()
 
 
 if __name__ == "__main__":

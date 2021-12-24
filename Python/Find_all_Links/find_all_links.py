@@ -31,7 +31,7 @@ def extractLinks(url):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         help()
-        exit(0)
+        sys.exit(0)
 
     url = sys.argv[1]
     extractLinks(url)

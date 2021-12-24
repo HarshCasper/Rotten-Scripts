@@ -18,7 +18,7 @@ sports_dict = {
 argumentList = sys.argv
 if len(argumentList) < 2:
     print("Please enter a sport")
-    exit()
+    sys.exit()
 
 if len(argumentList) == 2:
     sport = argumentList[1].lower()

@@ -1,4 +1,6 @@
 # ALL Imports
+import sys
+
 from tqdm import tqdm
 from requests import get, HTTPError, ConnectionError
 from re import findall
@@ -19,12 +21,12 @@ def get_video_downloadlink(url):
         a = findall("/video_redirect/", r.text)
         if len(a) == 0:
             print("[!] Video Not Found...")
-            exit(0)
+            sys.exit(0)
         else:
             return unquote(r.text.split("?src=")[1].split('"')[0])
     except (HTTPError, ConnectionError):
         print("[x] Invalid URL")
-        exit(1)
+        sys.exit(1)
 
 
 def download_video(url):

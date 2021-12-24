@@ -2,6 +2,7 @@ import os.path
 import pickle
 import base64
 import argparse
+import sys
 
 from email.mime.text import MIMEText
 from googleapiclient.discovery import build
@@ -75,7 +76,7 @@ def main():
     # If there are no (valid) credentials available, let the user log in.
     if not creds or not creds.valid:
         print("Please run auth.py first to authorizer")
-        exit(1)
+        sys.exit(1)
 
     service = build("gmail", "v1", credentials=creds)
 

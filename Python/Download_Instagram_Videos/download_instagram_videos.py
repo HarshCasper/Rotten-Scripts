@@ -15,7 +15,7 @@ def downloadVideo(postId):
     # checking if the post exists
     if url.status_code == 404:
         print("Specified post not found")
-        exit()
+        sys.exit()
 
     # extracting data in json format
     jsonData = json.loads(
@@ -31,7 +31,7 @@ def downloadVideo(postId):
     isVideo = data["is_video"]
     if not isVideo and not multiplePosts:
         print("No Videos found")
-        exit()
+        sys.exit()
 
     # adding valid videos to the list named videos
     if isVideo:

@@ -2,6 +2,7 @@
 
 import hashlib
 import argparse
+import sys
 
 
 def main(text, hashType):
@@ -22,7 +23,7 @@ def main(text, hashType):
         myHash = hashlib.sha512(encoder).hexdigest()
     else:
         print("[!] The script does not support this hash type")
-        exit(0)
+        sys.exit(0)
     print("Your hash is: ", myHash)
 
 

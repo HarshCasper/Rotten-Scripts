@@ -1,3 +1,5 @@
+import sys
+
 import pandas as pd
 import os
 from pathlib import Path
@@ -85,7 +87,7 @@ def sendMail(SUBJECT, template, data_path):
         print("Check if you registered your credentials....")
         print("Check your input paths....")
         print("------+------+-------+-------+------+------+------+------+------+------")
-        exit()
+        sys.exit()
 
 
 """Render:
@@ -135,7 +137,7 @@ def render(SUBJECT, senderMail, senderPassword, reciever_email_list, template):
             print(
                 "------+------+-------+-------+------+------+------+------+------+------"
             )
-            exit()
+            sys.exit()
 
     except Exception as e:
         print("------+------+-------+-------+------+------+------+------+------+------")
@@ -144,7 +146,7 @@ def render(SUBJECT, senderMail, senderPassword, reciever_email_list, template):
         print("File not found Error")
         print("Improper file path given....Check input again")
         print("------+------+-------+-------+------+------+------+------+------+------")
-        exit()
+        sys.exit()
 
 
 """Render HTML:
@@ -194,7 +196,7 @@ def renderHTML(Subject, senderMail, senderPassword, reciever_email_list, body_ms
         print(
             "-----+------+------+------+------+------+------+------+------+------+------"
         )
-        exit()
+        sys.exit()
 
     except Exception as e:
         print(
@@ -225,7 +227,7 @@ def renderHTML(Subject, senderMail, senderPassword, reciever_email_list, body_ms
         )
         print("Exiting program...\n")
         print("------+------+-------+-------+------+------+------+------+------+------")
-        exit()
+        sys.exit()
 
 
 """Render TEXT:
@@ -275,7 +277,7 @@ def renderTXT(Subject, senderMail, senderPassword, reciever_email_list, body_msg
         print(
             "-----+------+------+------+------+------+------+------+------+------+------"
         )
-        exit()
+        sys.exit()
 
     except Exception as e:
         print(
@@ -306,4 +308,4 @@ def renderTXT(Subject, senderMail, senderPassword, reciever_email_list, body_msg
         )
         print("Exiting program...\n")
         print("------+------+-------+-------+------+------+------+------+------+------")
-        exit()
+        sys.exit()
