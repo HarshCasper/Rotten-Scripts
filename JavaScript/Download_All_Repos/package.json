@@ -13,6 +13,6 @@
     "https": "^1.0.0",
     "package.json": "^2.0.1",
     "parse-link-header": "^1.0.1",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.5"
   }
 }
