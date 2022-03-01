@@ -59,7 +59,7 @@ def main():
             for index, post in enumerate(posts):
                 try:
                     instagramBot.download_post(post, target = index)
-                except:
+                except KeyboardInterrupt:
                     break
                     print("Downloader Exited.")
             # Organizing the Directory
@@ -77,6 +77,9 @@ def main():
             print("{} Folder Created.".format(username))
         # Download Images using hashtag
         elif query == "3":
-            instaloader.Instaloader(download_videos=False, save_metadata=False, post_metadata_txt_pattern='').download_hashtag(input("Enter Hashtag: "), max_count=20)
+            try:
+                instaloader.Instaloader(download_videos=False, save_metadata=False, post_metadata_txt_pattern='').download_hashtag(input("Enter Hashtag: "), max_count=20)
+            except KeyboardInterrupt:
+                print("Downloader Exited")
 if __name__ == "__main__":
     main()
