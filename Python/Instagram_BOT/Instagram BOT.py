@@ -1,4 +1,4 @@
-import os, shutil, sys, time, instaloader
+import os, shutil, sys, instaloader
 from prettytable import PrettyTable
 instagramBot = instaloader.Instaloader(quiet = True)
 
@@ -50,18 +50,20 @@ def main():
             try : 
                 profile = instaloader.Profile.from_username(instagramBot.context, username)
             except:
-                print("Username Not Found."),exit()
-            if os.path.exists(username) == False:os.mkdir(username)
+                print("Username Not Found.")
+            if os.path.exists(username) is False:
+                os.mkdir(username)
             os.chdir(username)
-            if os.path.exists("Videos") == False:os.mkdir("Videos")
+            if os.path.exists("Videos") is False:
+                os.mkdir("Videos")
             posts = profile.get_posts()
             print("Downloading... Ctrl + C to Stop in between. Don't Open Username Folder.")
             for index, post in enumerate(posts):
                 try:
                     instagramBot.download_post(post, target = index)
                 except KeyboardInterrupt:
-                    break
                     print("Downloader Exited.")
+                    break
             # Organizing the Directory
             for folder in os.listdir():
                 if "." not in folder:
