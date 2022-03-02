@@ -1,21 +1,21 @@
 import requests
-from xml.dom.minidom import parseString
+from defusedxml.minidom import parseString
 import pandas as pd
 from bs4 import BeautifulSoup
 import re
 
 def get_google_news_result(term, count):
-    results = []
+    
     # Parses the string as xml document object
     obj = parseString(
         requests.get('http://news.google.com/news?q=%s&output=rss' %
                      term).text)
     items = obj.getElementsByTagName('item')
     # Storing the Titles , Agencies, Links and Info
-    titles = list()
-    links = list()
-    agencies = list()
-    infos = list()
+    titles = []
+    links = []
+    agencies = []
+    infos = []
     for item in items[:count]:
         title, agency , link = '', '',''
         info = {}
@@ -67,8 +67,7 @@ def view_choice(df,id):
         return
     else:
         print("\n\nPlese provide valid input!!")
-        view_choice()
-    return
+        view_choice(df,id)
 
 
 #Function to parse contents from the selected website and display it
@@ -85,7 +84,7 @@ def view_art(df):
     print("\n\nHere are the contents of the website : \n\n\n")
     print(textcontents)
     view_choice(df,anum-1)
-    return
+    
 
 #Function to generate table of articles and respective agencies from the dataframe recieved
 
@@ -95,10 +94,10 @@ def sel_art(df):
     print(df[["title","agency"]])
     print("\nDo you want to view any article ? ",end="")
     choice = input("Y : yes  N: no    ")
-    if choice == 'N' or  choice == 'n':
+    if choice in ('N','n'):
         restart_session()
         return
-    elif choice == 'Y' or  choice =='y':
+    elif choice in ('Y','y'):
         view_art(df)
         return
     else :
