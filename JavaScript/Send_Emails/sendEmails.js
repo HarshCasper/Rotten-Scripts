@@ -111,23 +111,4 @@ inquirer
         
 });
 
-//This function authorises login 
-
-function login(email, password) {
-        let login_and_auth = nodemailer.createTransport({ 
-                service: 'gmail',
-                //Any email service can be used here
-                auth: { 
-                        user: email, 
-                        pass: password
-                } 
-        }); 
-}
-
-
-
-// console.log(password + " " + email)
-
-
-
 //In order to send the email successfully, the sender needs to enable "less secure apps" settings in the mail service used.
