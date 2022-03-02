@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const nodemailer = require('nodemailer'); 
 const inquirer = require('inquirer')
 //Package that enables sending of emails in Javascript
