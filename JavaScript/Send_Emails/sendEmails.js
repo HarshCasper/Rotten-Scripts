@@ -10,30 +10,30 @@ inquirer
         {
                 type: 'input',
                 name: 'email',
-                message: 'Type your email:'
+                message: 'Enter your email:'
         },
 ])
 .then(answers => {
         let email = answers.email
-        console.info('Answer:', answers.email);
+        // console.info('Answer:', answers.email);
         
         // This function gets the password of the mail from the user
-
+        
         inquirer
         .prompt([
                 {
                         type: 'input',
                         name: 'password',
-                        message: 'Type your password:'
+                        message: 'Enter your password:'
                 },
         ])
         .then(answers => {
                 let password = answers.password
-                console.info('Answer:', answers.password);
-
+                // console.info('Answer:', answers.password);
+                
                 console.log(password + " " + email)
-
-
+                
+                // login(email, password)
                 let login_and_auth = nodemailer.createTransport({ 
                         service: 'gmail',
                         //Any email service can be used here
@@ -42,34 +42,87 @@ inquirer
                                 pass: password
                         } 
                 }); 
-
-                //This function authorises login 
-
-
-                let mailDetails = { 
-                        from: 'Rupangkan', 
-                        to: 'reposekalita@gmail.com', 
-                        subject: 'subject', 
-                        text: 'body of email'
-                };
                 
-                //This function consists of the details of the email
-                
-                login_and_auth.sendMail(mailDetails, function(err, data) { 
-                        if(err) { 
-                                console.log(err)
-                                console.log('Unable to send the email'); 
-                        } 
-                        else    { 
-                                console.log('Email sent'); 
-                        } 
-                }); 
-                
-                //This function makes a connection with the server and sends the email.
+                inquirer
+                .prompt([
+                        {
+                                type: 'input',
+                                name: 'to',
+                                message: "Enter the receiver's email:"
+                        },
+                ])
+                .then(answers => {
+                        let to = answers.to
+                        // console.info('Answer:', answers.to);
+
+                        inquirer
+                        .prompt([
+                                {
+                                        type: 'input',
+                                        name: 'subject',
+                                        message: "Enter the subject:"
+                                },
+                        ])
+                        .then(answers => {
+                                let subject = answers.subject
+                                // console.info('Answer:', answers.subject);
+
+                                inquirer
+                                .prompt([
+                                        {
+                                                type: 'input',
+                                                name: 'body',
+                                                message: "Enter the message:"
+                                        },
+                                ])
+                                .then(answers => {
+                                        let message = answers.message
+                                        // console.info('Answer:', answers.message);
+
+                                        let mailDetails = { 
+                                                from: 'every1isnotrupangkan@gmail.com', 
+                                                to: to, 
+                                                subject: subject, 
+                                                text: message
+                                        };
+
+                                        //This function consists of the details of the email
+
+                                        login_and_auth.sendMail(mailDetails, function(err, data) { 
+                                                if(err) { 
+                                                        console.log(err.message)
+                                                        console.log('Unable to send the email'); 
+                                                } 
+                                                else    { 
+                                                        console.log('Email sent'); 
+                                                } 
+                                        }); 
+                                        
+                                        //This function makes a connection with the server and sends the email.
+
+                                });
+                        });
+                });
+
+              
+                        
                 
         }); 
         
 });
+
+//This function authorises login 
+
+function login(email, password) {
+        let login_and_auth = nodemailer.createTransport({ 
+                service: 'gmail',
+                //Any email service can be used here
+                auth: { 
+                        user: email, 
+                        pass: password
+                } 
+        }); 
+}
 
 
 
