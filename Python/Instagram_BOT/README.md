@@ -1,5 +1,7 @@
-# 🍕 Instagram BOT - [Harshit Bansal](https://github.com/harshitbansall)
+# 🍕 Instagram BOT
+
 ## Prerequisites
+
 * Create Virtual Environment
 ```
 python -m venv env
@@ -12,8 +14,10 @@ env\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
+
 ## Usage
-* Start the Script <code> Instragram BOT.py</code>
+
+* Start the Script <code> instagram_bot.py</code>
 <img src = "https://user-images.githubusercontent.com/24206423/156173269-b6a641b0-6704-4fde-ac56-02a9f2763938.png" height = 300>
 
 
@@ -22,6 +26,7 @@ pip install -r requirements.txt
 * <code> 3</code> to Download Images from Hashtags
 
 ## Examples
+
 * <code>Example 1</code> - Download Profile Image of <code>jacquelinef143</code>
 <div>
 <img src = "https://user-images.githubusercontent.com/24206423/156174852-2615dd80-548e-4839-8105-a0accdefba6f.png" height = 200>
@@ -42,4 +47,4 @@ pip install -r requirements.txt
 <img src = "https://user-images.githubusercontent.com/24206423/156178673-6dc13f7b-49d6-4284-8cbd-9310356ad300.gif">
 </div>
 
-### If you liked this script and and used it, Please follow [Harshit Bansal](https://github.com/harshitbansall).
+## Author - [Harshit Bansal](https://github.com/harshitbansall)
