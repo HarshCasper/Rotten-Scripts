@@ -10,9 +10,7 @@ let { authorization } = auth
 
 inquirer
 .prompt([
-
         // Asks the user about their email
-
         {
                 type: 'input',
                 name: 'email',
@@ -21,9 +19,7 @@ inquirer
 ])
 .then(answers => {
         let email = answers.email
-                
         // Asks the user the password of their email
-
         inquirer
         .prompt([
                 {
@@ -34,9 +30,7 @@ inquirer
         ])
         .then(answers => {
                 let password = answers.password
-
                 // Asks the user about the receiver's email
-                
                 inquirer
                 .prompt([
                         {
@@ -47,9 +41,7 @@ inquirer
                 ])
                 .then(answers => {
                         let to = answers.to
-
                         // Asks the user about the subject of the mail
-
                         inquirer
                         .prompt([
                                 {
@@ -60,9 +52,7 @@ inquirer
                         ])
                         .then(answers => {
                                 let subject = answers.subject
-
                                 // Asks the user to write the message that is needed to be sent to the receiver
-
                                 inquirer
                                 .prompt([
                                         {
@@ -82,16 +72,9 @@ inquirer
                                         };
 
                                         authorization(email, password, mailDetails)
-                                        
-
                                 });
                         });
                 });
-
-              
-                        
-                
         }); 
-        
 });
 
