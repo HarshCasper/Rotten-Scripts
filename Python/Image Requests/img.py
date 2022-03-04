@@ -11,7 +11,7 @@ def img_random(txt):
     response=requests.get("https://source.unsplash.com/random?{0}".format(txt))
     file=open('sample_image.jpg','wb')
     file.write(response.content)
-    img=Image.open(r"sample_image.jpg")
+    img=Image.open(r"container.jpg")
     img.show()
     file.close
 
