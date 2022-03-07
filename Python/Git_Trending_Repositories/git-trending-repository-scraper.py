@@ -11,8 +11,6 @@ repo = soup.find(class_="position-relative container-lg p-responsive pt-6")
 
 repo_list = repo.find_all(class_='Box-row')
 
-print(len(repo_list))
-
 # Open writer with name
 file_name = "github_trending_today.csv"
 # set newline to be '' so that that new rows are appended without skipping any
