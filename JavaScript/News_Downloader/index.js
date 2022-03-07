@@ -6,9 +6,9 @@ import fs from 'fs';
 console.log("Downloading...");
 const dateTime = new Date();
 const paperName ="telegraphindia";
-const year = dateTime.getFullYear();
-const month = dateTime.getMonth()+1;
-const date = dateTime.getDate();
+const year = `${dateTime.getFullYear()}`;
+const month = `${dateTime.getMonth()+1}`;
+const date = `${dateTime.getDate()-1}`;
 const URL = `https://epaper.${paperName}.com/calcutta/${year}-${month}-${date}/71/Page-1.html`;
 
 const getRawData = async (URL) => {
@@ -22,7 +22,6 @@ const gettelegraphindia = async () => {
     const root = parse(telegraphindia);
     const totalPage = root.querySelector('#totalpages').rawAttributes.value
     const totalDate = `${date.length==2?date:"0"+date}${month.length==2?month:"0"+month}${year}`
-    var totalPageLinks = []
     const doc = new PDFDocument({
         size: [419, 673],
     });
