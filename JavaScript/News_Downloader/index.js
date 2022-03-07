@@ -8,7 +8,7 @@ const dateTime = new Date();
 const paperName ="telegraphindia";
 const year = `${dateTime.getFullYear()}`;
 const month = `${dateTime.getMonth()+1}`;
-const date = `${dateTime.getDate()-1}`;
+const date = `${dateTime.getDate()}`;
 const URL = `https://epaper.${paperName}.com/calcutta/${year}-${month}-${date}/71/Page-1.html`;
 
 const getRawData = async (URL) => {
@@ -26,16 +26,22 @@ const gettelegraphindia = async () => {
         size: [419, 673],
     });
     doc.pipe(fs.createWriteStream(`${paperName} ${date}-${month}-${year}.pdf`));
+    const newsPage = [];
     for(let i=1; i<=totalPage; i++){
-        await fetch(`https://epaper.${paperName}.com/epaperimages////${totalDate}////${totalDate}-md-hr-${i}.jpg`, {
+        newsPage.push(fetch(`https://epaper.${paperName}.com/epaperimages////${totalDate}////${totalDate}-md-hr-${i}.jpg`, {
             method: 'GET'
-        }).then(res => res.buffer().then(buffer => {
+            })
+        )
+    }
+    const newsPageResp = await Promise.all(newsPage);
+    for(let i=0; i<newsPageResp.length; i++){
+        await newsPageResp[i].buffer().then(buffer => {
             doc.image(buffer, 0, 0, {
                 width: 419,
                 height: 673
             });
-        }));
-        if(i<totalPage) {
+        });
+        if(i<newsPageResp.length) {
             doc.addPage({
                 size: [419, 673],
             });
