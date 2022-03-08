@@ -41,7 +41,6 @@
 - [Delete_Tweets](./Delete_Tweets)
 - [Desktop_Notifier](./Desktop_Notifier)
 - [Desktop_Time_Tracker](./Desktop_Time_Tracker)
-- [Discord_Bot](./Discord_Bot)
 - [Distance_Calculator_App](./Distance_Calculator_App)
 - [Domain_Name_Availability](./Domain_Name_Availability)
 - [Download_Instagram_Posts](./Download_Instagram_Posts)
