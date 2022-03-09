@@ -31,3 +31,10 @@ Adding the above command in the `crontab` will run the script at 12:00 am every 
 The only downside of the cron job is, to install all the requirements globally.
 
 
+## Output
+
+![Output Pic](https://i.imgur.com/oJyFuwP.png)
+
+## Author(s)
+
+Hi I'm [Jagruti Tiwari](https://github.com/Jagrutiti/) author of this script.
