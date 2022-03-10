@@ -7,9 +7,9 @@ floralwhite = '#FFFAF0'                   ## bacground color off app
 
 def submit(link,path):
     
+    cmmd = f'youtube-dl --prefer-ffmpeg -o "{path}/%(title)s.%(ext)s" --extract-audio --audio-format mp3 {link}'
     if path is not None:
-        run(f'youtube-dl --prefer-ffmpeg -o "{path}/%(title)s.%(ext)s" --extract-audio --audio-format mp3 {link}',
-             shell=True, capture_output=True, text=True).stdout
+        run(cmmd,shell=True, capture_output=True,check = True, text=True).stdout
     else:
          messagebox.showinfo("Downloader", "no link is specified")
             
