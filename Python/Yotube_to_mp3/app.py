@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import Entry, StringVar, ttk, messagebox , filedialog
+from tkinter import StringVar,filedialog
 from subprocess import run
 import string
 
@@ -54,7 +54,6 @@ class downloader():
         else:
              run(f'youtube-dl --prefer-ffmpeg --extract-audio --audio-format mp3 {self.link}',
                  shell=True, capture_output=True, text=True).stdout
-        # messagebox.showinfo("Downloader","The video has been converted and downloaded")
 
 
     def browse(self):
