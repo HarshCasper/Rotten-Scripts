@@ -18,7 +18,7 @@ def submit(link,path):
     save_entry.delete(0,tk.END)
 
 
-def browse(self):
+def browse():
    filename = filedialog.askdirectory()
    f_path.set(filename)
     
