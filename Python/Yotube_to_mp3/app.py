@@ -1,14 +1,13 @@
 import tkinter as tk
 from tkinter import StringVar,filedialog, messagebox
 from subprocess import run
-import string
 
 
 floralwhite = '#FFFAF0'                   ## bacground color off app
 
 def submit(link,path):
     
-    if path != None:
+    if path is not None:
         run(f'youtube-dl --prefer-ffmpeg -o "{path}/%(title)s.%(ext)s" --extract-audio --audio-format mp3 {link}',
              shell=True, capture_output=True, text=True).stdout
     else:
