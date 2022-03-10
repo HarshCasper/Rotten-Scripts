@@ -47,7 +47,7 @@ browse_btn = tk.Button(win,bg=floralwhite,border=2,text = "Browse",fg="#000000",
 browse_btn.grid(row=1,column=2,padx=5,pady=5)
 
 ## creates the download button
-submit_btn = tk.Button(win,text = "Submit", bg=floralwhite,fg='#000000',border=2,command= lambda : self.submit(url_entry.get(),save_entry.get()))
+submit_btn = tk.Button(win,text = "Submit", bg=floralwhite,fg='#000000',border=2,command= lambda : submit(url_entry.get(),save_entry.get()))
 submit_btn.grid(row=2,column=1,padx=15,pady=10)
 
 win.configure(bg=floralwhite)
