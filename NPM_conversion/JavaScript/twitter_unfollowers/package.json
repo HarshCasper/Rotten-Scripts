@@ -1,0 +1,25 @@
+{
+  "name": "twitter-unfollowers",
+  "version": "1.0.0",
+  "description": "Displays a list of users unfollowed a Twitter account.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarshCasper/Rotten-Scripts.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "jagruti tiwari <tiwarijagruti1@gmail.com> (https://github.com/HarshCasper/Rotten-Scripts)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HarshCasper/Rotten-Scripts/issues"
+  },
+  "homepage": "https://github.com/HarshCasper/Rotten-Scripts#readme",
+  "dependencies": {
+    "twitter-unfollowers": "^1.0.0"
+  }
+}
