@@ -1,0 +1,14 @@
+id: COVID19_STATS
+fileName: dist/index.js
+runFunction: main
+auths: []
+env: null
+inputs:
+  - name: country
+    type: Text
+    description: Input the country you want to see the stats of
+    required: true
+output:
+  name: covid19StatsReport
+  description: Covid-19 statistics report
+  type: JsonArray
