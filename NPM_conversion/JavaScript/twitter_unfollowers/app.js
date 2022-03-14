@@ -5,15 +5,26 @@ const twt = require("./twitterFunc")
 const dbFileLoc = "db.json";
 
 // api data
-const bearerToken = api.data.bearer;
+var bearerToken = api.data.bearer;
 
-const getUserData = async (username) => {
-    let user = new Object();
-    user.name = username;
-    let res = await twt.getUserId(user.name, bearerToken)
-    user.id = res.data[0].id;
-    user.followers = await twt.getFollowers(user.id, bearerToken);
-    return user;
+const getUserData = async (username, t) => {
+
+    try{
+        let user = new Object();
+        user.name = username;
+        let res = await twt.getUserId(user.name, bearerToken)
+        user.id = res.data[0].id;
+        user.followers = await twt.getFollowers(user.id, bearerToken);
+        return user;
+
+    }catch (error) {
+        console.error(error);
+    }
+
+}
+
+const setUserBearerKey = async(bearerKey) => {
+    bearerToken=bearerKey;
 }
 
 const displayUser = (user) => {
@@ -67,6 +78,8 @@ const updateDB = (dbData, currentData, unfollows) => {
 }
 const init = async () => {
 
+    let userBearerToken = prompt("Enter Bearer Token : ");
+    let token = await setUserBearerKey(userBearerToken);
     let username = prompt("Enter Twitter Username : "); //this info will be taken through input
     let user = await getUserData(username)
     let dbData = db.read(dbFileLoc);
