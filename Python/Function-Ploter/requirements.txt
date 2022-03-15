@@ -1,0 +1,4 @@
+Pyside2
+matplotlib
+numpy
+pytest
