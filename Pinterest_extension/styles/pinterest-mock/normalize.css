@@ -1,0 +1,22 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+        "Helvetica Neue",
+        Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #211922;
+
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #1e1e1e; */
+}
+
+body,
+div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
