@@ -1,5 +1,4 @@
 
-from shutil import ExecError
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
@@ -57,12 +56,11 @@ mlink.click()
 mlink.send_keys(val)
 mlink.send_keys(Keys.RETURN)
 
-try:
-    wait = WebDriverWait(driver,30)
-    dismiss = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,'#yDmH0d > div.llhEMd.iWO5td > div > div.g3VIld.vdySc.Up8vH.J9Nfi.iWO5td > div.XfpsVe.J9fJmf > div > span')))
-    dismiss.click()
-except Exception:
-    pass
+# waiting for the dismiss banner to appear 
+wait = WebDriverWait(driver,30)
+dismiss = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,'#yDmH0d > div.llhEMd.iWO5td > div > div.g3VIld.vdySc.Up8vH.J9Nfi.iWO5td > div.XfpsVe.J9fJmf > div > span')))
+dismiss.click()
+
 
 # clicking the join button
 wait = WebDriverWait(driver,30)
@@ -87,7 +85,6 @@ driver.find_element(By.CSS_SELECTOR, '#ow3 > div.T4LgNb > div > div:nth-child(9)
 
 wb = Workbook()                # creating a excel workbook to save the contents of the list
 sh = wb.create_sheet("Attendence")
-# ac = wb.active
 
 for i,name in enumerate(lst):
      sh.append((name,))                     #inserting the contents of the list in the excel sheet
