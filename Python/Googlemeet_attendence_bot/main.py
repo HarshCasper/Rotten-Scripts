@@ -1,4 +1,5 @@
 
+from shutil import ExecError
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
@@ -9,7 +10,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import os
 import time
-from openpyxl import load_workbook,Workbook
+from openpyxl import Workbook
 from datetime import datetime
 
 d=datetime.now()
@@ -35,9 +36,6 @@ opt.add_experimental_option("prefs", {
     "profile.default_content_setting_values.notifications": 2
     })
 
-
-pth = "chromedriver.exe"          # path to chromedriver
-# driver = webdriver.Chrome(options = opt, executable_path=pth)
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=opt)
 driver.get("https://meet.google.com")
 
@@ -63,7 +61,7 @@ try:
     wait = WebDriverWait(driver,30)
     dismiss = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,'#yDmH0d > div.llhEMd.iWO5td > div > div.g3VIld.vdySc.Up8vH.J9Nfi.iWO5td > div.XfpsVe.J9fJmf > div > span')))
     dismiss.click()
-except:
+except Exception:
     pass
 
 # clicking the join button
