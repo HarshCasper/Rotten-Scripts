@@ -1,0 +1,2 @@
+tkinter == 8.6
+textblob == 0.17
