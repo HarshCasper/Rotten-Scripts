@@ -21,9 +21,9 @@ Covid-19 statistics report as per the country provided as input.
 - Open command line and change the directory to your folder by using `cd foldername`
 - Run the command `npm intall` to import all required modules.
 - If you still face module import error, try using `npm install package-name` to install missing modules.
-- then run the script by using the command `node index.js`.
+- Then, run the script by using the command `node index.js`.
 
-this script is meant for educational purposes only.
+This script is meant for educational purposes only.
 
 # Demo
-![Screenshot (330)](https://user-images.githubusercontent.com/80174214/160258324-d09bb350-6cc5-4f41-bead-6e9dbf5373f5.png)
+[![160258324-d09bb350-6cc5-4f41-bead-6e9dbf5373f5.png](https://i.postimg.cc/VLRdw0f6/160258324-d09bb350-6cc5-4f41-bead-6e9dbf5373f5.png)](https://postimg.cc/crvsMH8y)
