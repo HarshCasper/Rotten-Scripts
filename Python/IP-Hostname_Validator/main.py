@@ -1,4 +1,6 @@
-import os, ipaddress, socket, sys 
+import ipaddress
+import socket
+import sys 
 
 if sys.argv[1]=="ip":
    ip = sys.argv[2]
@@ -7,7 +9,7 @@ if sys.argv[1]=="ip":
       print('IP Valid')
       host = socket.gethostbyaddr(ip)
       print("Host: " + str(host[0]))
-   except: 
+   except ValueError: 
       print('-' *25)
       print('IP is not valid')
    
@@ -15,9 +17,10 @@ elif sys.argv[1]=="hostname":
    host = sys.argv[2]
    try:
       print(host)
-      ip = socket.gethostbyname(host)
+      # gethostbyname() returns IPv4 address
+      ip = socket.gethostbyname(host) 
       print("IP Address: ", ip)
-   except:
+   except socket.gaierror:
       print('-' *25)
       print("Hostname does not exist")
    
