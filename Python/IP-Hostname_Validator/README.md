@@ -13,17 +13,27 @@ It mainly validates a given IP Address and Hostname. The IP Addresses are accept
 
 ### Setup instructions
 Navigate to Rotten-Scripts/Python/IP-Hostname_Validator.
+
 To validate a given IP Address and get the hostname.
+
 `
 python main.py ip 8.8.8.8
 `
+
 Output:
+
 ![image](https://user-images.githubusercontent.com/76458668/162009872-de378e0d-dc39-4894-bc6d-d9c98e538964.png)
 
 
 To find the IP Address of a given hostname.
+
 ` 
 python main.py hostname facebook.com
 `
+
 Output:
+
 ![image](https://user-images.githubusercontent.com/76458668/162010700-d61a24b9-46bb-44c8-8e24-77f0e2c2baa9.png)
+
+### Author
+[Yashesvinee](https://github.com/Yashesvinee) 
