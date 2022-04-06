@@ -1,4 +1,4 @@
-import requests, re, json, os, sys
+import requests, re, json, sys, subprocess
 from bs4 import BeautifulSoup
 
 def get_link(name):
@@ -44,7 +44,7 @@ def play(link):
 		return
 
 	print("Trying to play: ",link)
-	os.system("mpv --ytdl-format=18 "+link)
+	subprocess.run(["mpv", "--ytdl-format=18", str(link)])
 	print()
 
 # MAIN PROGRAM starts here
