@@ -23,14 +23,13 @@ def get_link(name):
 
 	for i in content:
 		for key, val in i.items():
-			if key == "videoRenderer":
-				if type(val) is dict:
-					for k,v in val.items():
-						try:
-							if k == "videoId" :
-								return "https://www.youtube.com/watch?v="+v
-						except Exception as e:
-							print("An error occured:",e)
+			if key == "videoRenderer" and type(val) is dict:
+				for k,v in val.items():
+					try:
+						if k == "videoId" :
+							return "https://www.youtube.com/watch?v="+v
+					except Exception as e:
+						print("An error occured:",e)
 
 
 def get_video_name():
@@ -43,7 +42,7 @@ def play(link):
 		return
 
 	print("Trying to play: ",link)
-	subprocess.run(["mpv", "--ytdl-format=18", str(link)])
+	subprocess.run(["mpv", "--ytdl-format=18", str(link)], check = True)
 	print()
 
 # MAIN PROGRAM starts here
