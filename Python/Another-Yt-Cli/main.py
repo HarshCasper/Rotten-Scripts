@@ -23,15 +23,14 @@ def get_link(name):
 
 	for i in content:
 		for key, val in i.items():
-			if type(val) is dict:
-				for k,v in val.items():
-					# print(k)
-					# print(v)
-					try:
-						if k == "videoId" :
-							return "https://www.youtube.com/watch?v="+v
-					except Exception as e:
-						print("An error occured:",e)
+			if key == "videoRenderer":
+				if type(val) is dict:
+					for k,v in val.items():
+						try:
+							if k == "videoId" :
+								return "https://www.youtube.com/watch?v="+v
+						except Exception as e:
+							print("An error occured:",e)
 
 
 def get_video_name():
