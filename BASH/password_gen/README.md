@@ -2,6 +2,8 @@
 
 **Run the script**
 
+cd into the directory where you have the script.Then run these two commands
+
 ```bash
 chmod +x passwordgen.sh
 ```
