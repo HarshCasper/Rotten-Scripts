@@ -1,14 +1,14 @@
 # Password Generator
 
 **Run the script**
-'''
+
+```bash
 chmod +x passwordgen.sh
-'''
+```
 
-'''
+```bash
 ./passwordgen.sh
-'''
-
+```
 
 **Output**
 
