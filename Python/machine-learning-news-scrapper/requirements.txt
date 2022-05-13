@@ -13,7 +13,7 @@ jieba3k==0.35.1
 joblib==1.0.1
 lxml==4.6.3
 newspaper3k==0.2.8
-nltk==3.5
+nltk==3.6.6
 numpy==1.19.5
 pandas==1.1.5
 Pillow==8.1.2
