@@ -2,37 +2,20 @@ import requests
 from bs4 import BeautifulSoup
 from prettytable import PrettyTable
 
-t = PrettyTable(["Code", "Name", "Start"])  # to create table
+t = PrettyTable(["Name", "Start","Link"])  # to create table
 
-# print (t)
+url = "https://www.codechef.com/"
 
-url = "https://www.codechef.com/contests"
+page = requests.get(url).text  # send request to cc srver and returns the page
 
-page = requests.get(url)  # send request to cc srver and returns the page
+soup = BeautifulSoup(page, "lxml")  # store html content in soup
 
-soup = BeautifulSoup(page.content, "html.parser")  # store html content in soup
+table = soup.findAll('div',class_='l-card-3 m-other-event-card')
 
-# print (soup.prettify()) #prettify() to print the html code in well intended form
-
-# return the tables with class=dataTable
-table = soup.findAll("table", class_="dataTable")
-
-# print (len(table))
-
-req_table = table[1]
-
-tr = req_table.tbody.findAll("tr")  # tr from all tbody tag
-
-# print (len(tr))
-
-# td = tr[0].findAll('td') #find all td from tr[0]
-
-# print (len(td))
-# print (td[0].text)
-
-for i in range(len(tr)):
-    td = tr[i].findAll("td")
-    # add_row takes a 'list' of data
-    t.add_row([td[0].text, td[1].text, td[2].text])
+for i in table:
+    nm = i.h3.text
+    dt = i.find('p',class_= 'm-card-3__day').text + i.find('p',class_= 'm-card-3__month').text + i.find('span',class_='m-card-3__time-clock').text
+    lnk =i.find('a',class_='m-card-3__dtl-btn')['href']
+    t.add_row([nm,dt,lnk])
 
 print(t)
