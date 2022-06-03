@@ -1,0 +1,4 @@
+Numpy == 1.22.03
+Vectorize == 0.2.0
+Scikit-learn == 1.0.2
+Sklearn == 0.0
