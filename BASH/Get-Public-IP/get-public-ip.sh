@@ -2,8 +2,8 @@
 
 # This script shows your public ip address
 
-CLI_ARGS=$#
-WEBSITE=$1
+CLI_ARGS="$#"
+WEBSITE="$1"
 
 function get_public_ip_addr() {
   result=$(wget https://ipinfo.io/ip -qO -)
@@ -11,9 +11,10 @@ function get_public_ip_addr() {
 }
 
 function get_website_ip_addr() {
-  nslookup $WEBSITE | grep Address: > temp.txt
+  nslookup "$WEBSITE" | grep Address: > temp.txt
 
-  filename='temp.txt'
+  filename="temp.txt"
+
   n=1
   while read line; do
   if [ "$n" == 2 ] ; then
@@ -31,7 +32,7 @@ function get_ipaddr() {
   if [ "$CLI_ARGS" -eq 0 ]; then
     get_public_ip_addr
   else
-    get_website_ip_addr $WEBSITE
+    get_website_ip_addr "$WEBSITE"
   fi
 }
 
