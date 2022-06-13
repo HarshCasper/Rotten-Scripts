@@ -2,22 +2,6 @@
 
 # This script shows your public ip address
 
-# if [ "$1" == "-help" ] || [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
-#     echo "This script shows you public IP address"
-#     exit 0;
-# fi
-
-# function help_menu() {
-#     echo "help menu.."
-#     # if [ "$1" == "-help" ] || [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
-#     #     echo "This script shows you public IP address"
-#     #     exit 0;
-#     # fi
-#     echo "Usage ./$0  : prints your public IPaddress \
-#                 ./$0 <website url> : prints website ipaddress"
-#     exit 0
-# }
-
 CLI_ARGS=$#
 WEBSITE=$1
 
@@ -41,6 +25,7 @@ function get_website_ip_addr() {
   rm temp.txt
 }
 
+
 # function to check for the ipaddress of your system as well as for websites
 function get_ipaddr() {
   if [ $CLI_ARGS -eq 0 ]; then
@@ -49,6 +34,7 @@ function get_ipaddr() {
     get_website_ip_addr $WEBSITE
   fi
 }
+
 
 function main() {
   get_ipaddr
