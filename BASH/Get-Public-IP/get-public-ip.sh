@@ -28,7 +28,7 @@ function get_website_ip_addr() {
 
 # function to check for the ipaddress of your system as well as for websites
 function get_ipaddr() {
-  if [ $CLI_ARGS -eq 0 ]; then
+  if [ "$CLI_ARGS" -eq 0 ]; then
     get_public_ip_addr
   else
     get_website_ip_addr $WEBSITE
