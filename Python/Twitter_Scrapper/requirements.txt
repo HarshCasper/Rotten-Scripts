@@ -13,4 +13,4 @@ selenium==3.141.0
 six==1.15.0
 soupsieve==2.2
 tweepy==3.10.0
-urllib3==1.26.3
+urllib3==1.26.5
