@@ -1,0 +1,70 @@
+:root {
+  --card_width: 250px;
+  --row_increment: 10px;
+  --card_border_radius: 16px;
+  --card_small: 26;
+  --card_medium: 33;
+  --card_large: 45;
+}
+
+.navigation_bar {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  top: 0;
+}
+
+.navigation_bar .add_pin {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 10%;
+  left: 90%;
+
+  transition-duration: 0.3s;
+}
+
+.navigation_bar .add_pin:hover {
+  background-color: #767676;
+  transform: scale(1.2);
+}
+
+.add_pin_modal {
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 0.5s;
+}
+
+.pin_container {
+  margin: 0;
+  padding: 0;
+  width: 80vw;
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card_width));
+  grid-auto-rows: var(--row_increment);
+  justify-content: center;
+}
+
+.card {
+  padding: 0;
+  margin: 15px 10px;
+  position: relative;
+  border-radius: var(--card_border_radius);
+  overflow: hidden;
+}
+
+.card_small {
+  grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+  grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+  grid-row-end: span var(--card_large);
+}

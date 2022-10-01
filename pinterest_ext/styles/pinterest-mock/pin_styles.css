@@ -1,0 +1,118 @@
+/* .card {
+	width: 236px;
+	height: 472px;
+	border-radius: 16px;
+	position: relative;
+	background-color: green;
+	overflow: hidden;
+} */
+
+.pin_title {
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+}
+
+.pin_modal {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	transition-duration: 0.3s;
+}
+
+.pin_modal:hover {
+	opacity: 1;
+}
+
+.pin_modal .modal_head {
+	width: 100%;
+	height: 15%;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.pin_modal .modal_head .save_card {
+	margin-right: 20px;
+	width: 53px;
+	height: 40px;
+	border-radius: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 14px;
+	font-weight: 700;
+
+	color: white;
+	background-color: #ff0000;
+	cursor: pointer;
+}
+
+.pin_modal .modal_foot {
+	width: 100%;
+	height: 15%;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.pint_mock_icon_container {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.pint_mock_icon {
+	width: 50%;
+}
+
+.pin_modal .modal_foot .destination {
+	width: 132px;
+	height: 32px;
+	border-radius: 18px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	font-size: 16px;
+	font-weight: 700;
+
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.pin_modal .modal_foot .destination span {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.pin_image {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .pin_image img {
+	max-height: 100%;
+} */

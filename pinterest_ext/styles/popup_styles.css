@@ -1,0 +1,76 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+        "Helvetica Neue",
+        Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 600px;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-color: #C6C6C6;
+    overflow: hidden;
+
+}
+
+button {
+    width: 200px;
+    height: 150px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 35px;
+    font-weight: 700;
+
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    color: #211922;
+    background-color: #F0F0F0;
+}
+
+button:hover {
+    background-color: #E60023;
+    transform: scale(1.3);
+    color: white;
+}
+
+#add_pin {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+#my_board {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+#add_pin:hover {
+    width: 150px;
+    height: 280px;
+
+    font-size: 30px;
+}
+
+#my_board:hover {
+    width: 250px;
+    height: 250px;
+
+    font-size: 30px;
+}
