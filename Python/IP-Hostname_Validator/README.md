@@ -1,5 +1,5 @@
 # IP/Hostname Validator
-### Libraries used:
+### Modules used:
 - ipaddress - Provides functions to create, manipulate and operate in IPv4 and IPv6 addresses and networks.
 - sys - Used to provide access to variables maintained by the interpreter.
 - socket - Provides functions and objects to build network applications for clients and servers. It helps access the BSD Socket interface.
