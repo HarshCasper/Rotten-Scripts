@@ -3,6 +3,10 @@ import shutil
 
 DIR_NAME = 'sorted'
 source_path = input("Please input the directory name to be sorted: ")
+
+if source_path == '.':
+    source_path = os.getcwd()
+
 path = os.path.join(source_path, DIR_NAME)
 print(source_path, path)
 
