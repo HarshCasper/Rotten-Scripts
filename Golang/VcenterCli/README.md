@@ -1,6 +1,6 @@
 # GoVcenterRESTcli
     Test enviroment: 
-    go version go1.17.2 darwin/amd64
+    go version go1.17.2 darwin/amd64 # go 1.17 or higher should work
     VsphereVcenter Version:	7.0.3 ,Build:	19234570
     
 
