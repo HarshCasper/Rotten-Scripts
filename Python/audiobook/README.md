@@ -8,14 +8,17 @@ pip install audiobook
 
 ## Usages
 
-The audiobook is a python module for listening to your favourite PDF book.
+The audiobook is also available as command line tool.
 
-```python
-from audiobook import AudioBook
-ab = AudioBook(speed="normal") # argument: Speech-Speed="slow/normal/fast"
+```bash
+audiobook -h
+```
+check [CLI Documentation ](https://audiobook.readthedocs.io/en/latest/index.html)
 
-ab.save_audio(file_path, password=None) # save audio file 
-ab.read_book(file_path, password=None) # listen to the book
+## Run with this script
+
+```bash
+python script.py <file_path>
 ```
 
 ### Linux Installation Requirements
