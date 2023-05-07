@@ -1,13 +1,12 @@
 # Automate commit using Git
 
-![image](https://steadylearner.com/static/images/post/Python/python-github-by-Steadylearner.png)
 
 Are you tired of adding, committing and pushing you code everytime you change it? If so, you can use this Python script to automate this boring stuff.
 This code is the simplest one to automate the task.
 
 ## Understanding the code
 
-![image](https://snipboard.io/iqvAFy.jpg)
+![image](https://snipboard.io/cM59xz.jpg)
 
 ```
 import subprocess
@@ -16,32 +15,47 @@ import subprocess
 The subprocess module allows us to spawn processes, connect to their input/output/error pipes, and obtain their return codes.
 
 ```
-subprocess.getoutput('git add .')
-```
-
-_subprocess.getoutput:_ Return output (stdout and stderr) of executing cmd in a shell. That means, it will execute the command `git add .`
+result = subprocess.run(["git", "add", "."])
 
 ```
-message = input("Enter commit message")
-```
 
-Now, you can simply understand that we are taking an input message to give it to the commit message in the next command.
+This line of code stages all changes made to files in the current directory using the `git add` command.
 
 ```
-subprocess.getoutput('git commit -m ' + message)
-```
-
-In this line of code, we can see that the commit message will be appended to the command `git commit -m <message>`.
+message = input("Enter commit message (or press Enter to use default): ")
 
 ```
-branchname = input("Enter branch name")
-```
 
-Then, give the branch name to which you want to push your code.
+This line of code prompts the user to enter a commit message. If the user enters nothing and presses Enter, the commit message will default to "Auto commit".
 
 ```
-subprocess.getoutput('git push origin ' + branchname)
+remote = input("Enter remote name (or press Enter to use default 'origin'): ")
+
 ```
 
-Finally, to push our code we are using, `git push origin <branch-name>`.  
-You can also add a variable to the remote url for defining the origin, but by default it is origin.
+This line of code prompts the user to enter a remote name for the repository. If the user enters nothing and presses Enter, the remote name will default to "origin".
+
+```
+branchname = input("Enter branch name (or press Enter to use default 'main'): ")
+
+```
+
+This line of code prompts the user to enter a branch name to which the changes should be pushed. If the user enters nothing and presses Enter, the branch name will default to "main".
+
+```
+result = subprocess.run(["git", "commit", "-m", message])
+
+```
+This line of code commits the staged changes using the commit message provided by the user (or the default message, if none was provided).
+
+```
+result = subprocess.run(["git", "push", remote, branchname])
+
+```
+Finally, this line of code pushes the committed changes to the specified branch and remote.
+
+## Usage
+
+To use this script, simply run it in the directory where your git repository is located. Follow the prompts to enter a commit message, remote name, and branch name, or press Enter to accept the defaults.
+## Note
+> This script assumes that you have already initialized a git repository in the directory where it is being run. If you have not done so, you will need to initialize a git repository using git init before using this script.
