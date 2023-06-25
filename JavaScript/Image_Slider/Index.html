@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">  <!--Styles and layout of the page can be changed from here -->
+</head>
+<body>
+
+    <div class="ImageSlides">
+        <div class="Images">
+            <img src="Image1.png">          <!--Images can be added as per users choice here-->
+        </div>
+        <div class="Images">
+            <img src="Image2.jpg">
+        </div>
+        <div class="Images">
+            <img src="Image3.png">
+        </div>
+
+        <a class="prev-btn slider-btn" onclick="setSlides(-1)"><</a>
+        <a class="next-btn slider-btn" onclick="setSlides(1)">></a>
+    </div>
+
+
+    <script src="slider.js"></script>
+</body>
+</html>

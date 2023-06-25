@@ -30,3 +30,5 @@
 - [Who don't follow you on Instagram](Who_Don't_Follow_You)
 - [Who unfollowed you on Github](Github_Unfollowers)
 - [LinkedIn endorsements](LinkedIn_Endorsements)
+- [Type Writer Animation](Typewriter_Animation)
+- [Image Slider](Image_Slider)

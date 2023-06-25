@@ -1,0 +1,21 @@
+*{
+    overflow: hidden;
+    background-color: bisque;
+}
+.typewriter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+#text {
+    font-family: monospace;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    border-right: 2px solid #000;
+  }
+  
