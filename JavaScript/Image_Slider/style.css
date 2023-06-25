@@ -1,0 +1,53 @@
+*{
+  overflow: hidden;
+}
+.Images {
+    display: none
+  }
+   
+  img {
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+   
+  /* Our main images-slideshow container */
+  .ImageSlides {
+    max-width: 612px;
+    position: relative;
+    margin: auto;
+  }
+   
+  /*Style for ">" next and "<" previous buttons */
+  .slider-btn{
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    width: auto;
+    padding: 8px 16px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(201, 201, 201, 0.932);
+    border-radius: 50%;
+  }
+   
+  /* setting the position of the previous button towards left */
+  .prev-btn {
+    left: 10px;
+  }
+   /* setting the position of the next button towards right */
+  .next-btn {
+    right: 10px;
+  }
+   
+  /* On hover, adding a background color */
+  .prev-btn:hover,
+  .next-btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
