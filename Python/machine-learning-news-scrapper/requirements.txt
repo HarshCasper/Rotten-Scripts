@@ -11,7 +11,7 @@ google==3.0.0
 idna==2.10
 jieba3k==0.35.1
 joblib==1.0.1
-lxml==4.6.3
+lxml==4.9.1
 newspaper3k==0.2.8
 nltk==3.5
 numpy==1.19.5
