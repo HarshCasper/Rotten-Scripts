@@ -1,0 +1,15 @@
+{
+  "name": "compress-to-zip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["zip","zlib","compress"],
+  "author": "Anirban Pratihar",
+  "license": "ISC",
+  "dependencies": {
+    "zip-lib": "^0.7.3"
+  }
+}
