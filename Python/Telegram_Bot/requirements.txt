@@ -62,5 +62,5 @@ tornado==6.0.4
 traitlets==4.3.3
 uritemplate==3.0.1
 wcwidth==0.2.4
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 wrapt==1.12.1
