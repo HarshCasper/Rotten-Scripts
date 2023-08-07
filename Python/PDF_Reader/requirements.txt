@@ -1,0 +1,4 @@
+PyPDF2==1.26.0
+pyttsx3==2.90
+SpeechRecognition==3.8.1
+virtualenv==20.2.1
