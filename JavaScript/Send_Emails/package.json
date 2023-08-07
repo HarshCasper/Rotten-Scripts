@@ -1,0 +1,19 @@
+{
+  "name": "sendmail",
+  "version": "1.0.0",
+  "main": "sendEmails.js",
+  "scripts": {
+    "start": "node ./sendEmails.js",
+    "test": "echo \"No test specified\""
+  },
+  "keywords": [
+    "cli"
+  ],
+  "bin": {
+    "sendmail": "/sendEmails.js"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "nodemailer": "^6.7.2"
+  }
+}
