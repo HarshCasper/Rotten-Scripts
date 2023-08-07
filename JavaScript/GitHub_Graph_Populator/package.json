@@ -21,6 +21,6 @@
     "moment": "^2.25.0",
     "package.json": "^2.0.1",
     "random": "^2.2.0",
-    "simple-git": "^2.2.0"
+    "simple-git": "^3.16.0"
   }
 }
