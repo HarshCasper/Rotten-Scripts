@@ -10,7 +10,7 @@ filelock==3.0.12
 google==3.0.0
 idna==2.10
 jieba3k==0.35.1
-joblib==1.0.1
+joblib==1.2.0
 lxml==4.6.3
 newspaper3k==0.2.8
 nltk==3.5
