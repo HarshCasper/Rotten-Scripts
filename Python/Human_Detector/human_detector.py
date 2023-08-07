@@ -51,10 +51,8 @@ def detect(frame):
 def humanDetector(args):
     image_path = args["image"]
     video_path = args["video"]
-    if str(args["camera"]) == "true":
-        camera = True
-    else:
-        camera = False
+
+    camera=bool(str(args["camera"]) == "true")
     writer = None
     if args["output"] is not None and image_path is None:
         writer = cv2.VideoWriter(

@@ -74,10 +74,10 @@ if __name__ == "__main__":
         app = execute_terminal_command(["ps", "-p", frpid, "-o", "comm="])
 
         # adding the app to the app list
-        if not app in applist:
+        if app not in applist:
             applist.append(app)
         checklist = [item[1] for item in winlist]
-        if not frname in checklist:
+        if frname not in checklist:
             winlist.append([app, frname, 1 * update_frequency])
         else:
             winlist[checklist.index(frname)][2] = (
