@@ -8,6 +8,10 @@ Go is a procedural programming language. It was developed in 2007 by Robert Grie
 
 | S. No | Name of Script | Script Link |  Author |
 --- | --- | --- | ---
-1 | GIF Creator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Go/GIF_Creator | [WABLE SANKET](https://github.com/Sanketwable)
-2 | GitHub Repo Issues | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Go/Github_Repo_Issues | [WABLE SANKET](https://github.com/Sanketwable)
-3 | GitHub Username Checker | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Go/Github_UserName_Checker | [WABLE SANKET](https://github.com/Sanketwable)
+1 | Bitcoin Price Tracker | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Golang/Bitcoin_Price_Tracker | [Manas Sharma](https://github.com/manas221)
+2 | EC2 Launcher | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Golang/EC2_Launcher | [fransiscus bimo](https://github.com/frbimo)
+3 | GIF Creator | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Golang/GIF_Creator | [WABLE SANKET](https://github.com/Sanketwable)
+4 | GitHub Repo Issues | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Golang/Github_Repo_Issues | [WABLE SANKET](https://github.com/Sanketwable)
+5 | GitHub Username Checker | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Golang/Github_UserName_Checker | [WABLE SANKET](https://github.com/Sanketwable)
+6 | HackerNews Comment Scrapper | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Golang/HackerNews_Comment_Scrapper | [Sukriti Sood](https://github.com/Sukriti-sood)
+7 | Port Scanner | https://github.com/HarshCasper/Rotten-Scripts/tree/master/Golang/Port_Scanner | [Pritam Pawar](https://github.com/pritamp17)
