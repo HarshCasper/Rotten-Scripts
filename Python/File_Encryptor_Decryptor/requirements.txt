@@ -1,0 +1,2 @@
+pwinput==1.0.2
+pycryptodome==3.10.1
