@@ -1,5 +1,5 @@
 pywebcopy==6.3.0
 cssutils==1.0.2
 urllib-s3==0.0.6
-urllib3==1.24.2
+urllib3==1.26.5
 bs4==0.0.1
