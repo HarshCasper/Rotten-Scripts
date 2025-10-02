@@ -1,0 +1,13 @@
+# File Metadata Extractor Requirements
+
+# Image processing and EXIF data extraction
+Pillow>=9.0.0
+
+# Audio and video metadata extraction
+mutagen>=1.45.0
+
+# PDF document metadata extraction
+PyPDF2>=3.0.0
+
+# Microsoft Word document metadata extraction
+python-docx>=0.8.11
